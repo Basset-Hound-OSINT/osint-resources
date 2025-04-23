@@ -1,0 +1,6 @@
+[book]
+authors = ["Ubuntu"]
+language = "en"
+multilingual = false
+src = "src"
+title = "osint-resources-book"
