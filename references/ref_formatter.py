@@ -9,15 +9,20 @@ content_to_remove = [
     "[↑](#-content)",
     "[](#table-of-contents)"
 ]
+
 patterns_to_replace = {
     "[![": "["
 }
+
+def header_regex_cipher_387(header_text):
+    cleaned = re.sub(r'^\s*\[.*?\]\(.*?\)\s*', '', header_text)
+    return cleaned.strip()
 
 def process_markdown(input_filename):
     with open(input_filename, 'r', encoding='utf-8') as file:
         content = file.read()
 
-    # Clean unwanted content
+    # Clean unwanted lines
     patterns_to_remove = [
         r"\[↑\]\(#-content\)",
         r"\[⇧ Top\]\(#index\)",
@@ -26,30 +31,69 @@ def process_markdown(input_filename):
     for pattern in patterns_to_remove:
         content = re.sub(rf"^-?\s*{pattern}\s*$", "", content, flags=re.MULTILINE)
 
-    # Find all headers and their positions
     header_regex = r'^(#{1,6})\s+(.*)$'
     headers = list(re.finditer(header_regex, content, re.MULTILINE))
 
-    # Process each header and its content block
     output = []
+
+    # Handle case: file has NO headers at all
+    if not headers:
+        links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', content)
+        links += [(url, url) for url in re.findall(r'(https?://[^\s]+)', content)]
+        if links:
+            output.append("# Uncategorized\n")
+            for text, url in links:
+                clean_url = url.strip().rstrip('.,!?;:')
+                clean_text = text.strip().rstrip('.,!?;:')
+                if clean_url.startswith(('http://', 'https://')):
+                    output.append(f"- [{clean_text}]({clean_url})")
+            output.append("")
+        return "\n".join(output)
+
+    # If headers exist, extract links before first header
+    pre_header_text = content[:headers[0].start()]
+    pre_links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', pre_header_text)
+    pre_links += [(url, url) for url in re.findall(r'(https?://[^\s]+)', pre_header_text)]
+    if pre_links:
+        output.append("# Uncategorized\n")
+        for text, url in pre_links:
+            clean_url = url.strip().rstrip('.,!?;:')
+            clean_text = text.strip().rstrip('.,!?;:')
+            if clean_url.startswith(('http://', 'https://')):
+                output.append(f"- [{clean_text}]({clean_url})")
+        output.append("")
+
+    # Process each header section
     for i, match in enumerate(headers):
         header_level = match.group(1)
-        header_text = match.group(2).strip()
+        original_header = match.group(2).strip()
+
+        header_links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', original_header)
+        header_links += [(url, url) for url in re.findall(r'(https?://[^\s]+)', original_header)]
+
+        cleaned_header = re.sub(r'\[.*?\]\(.*?\)', '', original_header)
+        cleaned_header = re.sub(r'https?://[^\s]+', '', cleaned_header)
+        cleaned_header = header_regex_cipher_387(cleaned_header)
+
         start = match.end()
-        end = headers[i + 1].start() if i + 1 < len(headers) else len(content)
+        end = headers[i+1].start() if i+1 < len(headers) else len(content)
         section_body = content[start:end]
 
-        # Extract links from this section
-        links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', section_body)
+        body_links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', section_body)
+        body_links += [(url, url) for url in re.findall(r'(https?://[^\s]+)', section_body)]
 
-        # Format output
-        output.append(f"{header_level} {header_text}\n")
-        if links:
-            for text, url in links:
-                output.append(f"- [{text.strip()}]({url.strip()})")
-        output.append("")  # Add a blank line
+        all_links = header_links + body_links
+        output.append(f"{header_level} {cleaned_header}\n")
+        if all_links:
+            for text, url in all_links:
+                clean_url = url.strip().rstrip('.,!?;:')
+                clean_text = text.strip().rstrip('.,!?;:')
+                if clean_url.startswith(('http://', 'https://')):
+                    output.append(f"- [{clean_text}]({clean_url})")
+        output.append("")
 
     return "\n".join(output)
+
 
 def remove_unwanted_content(file_path, content_to_remove, patterns_to_replace):
     with open(file_path, "r", encoding="utf-8") as f:
@@ -65,6 +109,62 @@ def remove_unwanted_content(file_path, content_to_remove, patterns_to_replace):
     with open(file_path, "w", encoding="utf-8") as f:
         f.writelines(cleaned_lines)
 
+def double_check(filename):
+    """Remove empty sections (headers with no following links) and fix double parentheses"""
+    with open(filename, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # First fix double parentheses
+    content = content.replace('))', ')')
+
+    # Split content into sections
+    sections = []
+    current_section = []
+    header_pattern = re.compile(r'^(#{1,6})\s+.*$')
+    link_pattern = re.compile(r'^\s*-\s*\[.*?\]\(.*?\)\s*$')
+
+    lines = content.split('\n')
+    for line in lines:
+        if header_pattern.match(line):
+            if current_section:
+                sections.append(current_section)
+                current_section = []
+        current_section.append(line)
+    
+    if current_section:
+        sections.append(current_section)
+
+    # Process sections
+    cleaned_sections = []
+    for section in sections:
+        has_links = any(link_pattern.match(line) for line in section)
+        is_uncategorized = any(line.strip().startswith('# Uncategorized') for line in section)
+        
+        # Keep section if it has links or is the only section (to prevent empty file)
+        if has_links or (is_uncategorized and len(sections) == 1):
+            cleaned_sections.append(section)
+        elif not is_uncategorized and len(section) > 0 and header_pattern.match(section[0]):
+            # Check if this is the only section with content (besides possibly Uncategorized)
+            other_sections_have_content = any(
+                any(link_pattern.match(line) for line in s) 
+                for s in sections 
+                if s != section
+            )
+            if not other_sections_have_content and any(link_pattern.match(line) for line in section):
+                cleaned_sections.append(section)
+
+    # Rebuild content
+    cleaned_content = '\n'.join(
+        '\n'.join(line for line in section if line.strip() != '')
+        for section in cleaned_sections
+    )
+
+    # Remove multiple consecutive empty lines
+    cleaned_content = re.sub(r'\n{3,}', '\n\n', cleaned_content).strip()
+
+    # Write back to file
+    with open(filename, 'w', encoding='utf-8') as f:
+        f.write(cleaned_content + '\n')
 def format_file(input_file, output_dir):
     result = process_markdown(input_file)
     base_name = os.path.splitext(os.path.basename(input_file))[0]
@@ -72,6 +172,7 @@ def format_file(input_file, output_dir):
     with open(new_file, "w", encoding="utf-8") as f:
         f.write(result)
     remove_unwanted_content(new_file, content_to_remove, patterns_to_replace)
+    double_check(new_file)  # Run the double check after all other processing
     print(f"Formatted: {input_file} -> {new_file}")
 
 if __name__ == "__main__":
