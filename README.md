@@ -8,11 +8,14 @@ organizing osint resources
 Perform formatting on all markdown file in a given directory.
 
 ```
-for file in ./folder/*.md; do python3 ref_formatter.py -o ./tmp_references/ -f "$file"; done
+for file in ./references/*.md; do python3 ./references/ref_formatter.py -o ./new_refs/tmp_refs/ -f ${file}; done
 ```
 
-or local folder
+## ref_checker.py
+
+Following the local folder example of **ref_formatter.py** for this repo
 
 ```
-for file in ./*.md; do python3 ref_formatter.py -o ./tmp_references/ -f "$file"; done
+for file in ./new_refs/tmp_refs/*.md; do python3 ./references/ref_checker.py -c ./src/ -o ./new_refs/tmp_ref_checks/ -f ${file}; done
 ```
+

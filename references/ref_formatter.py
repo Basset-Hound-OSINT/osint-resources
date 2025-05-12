@@ -165,15 +165,32 @@ def double_check(filename):
     # Write back to file
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(cleaned_content + '\n')
+
 def format_file(input_file, output_dir):
     result = process_markdown(input_file)
     base_name = os.path.splitext(os.path.basename(input_file))[0]
-    new_file = os.path.join(output_dir, f"{base_name}_new.md")
+    new_file = os.path.join(output_dir, f"{base_name}_refs.md")
     with open(new_file, "w", encoding="utf-8") as f:
         f.write(result)
     remove_unwanted_content(new_file, content_to_remove, patterns_to_replace)
     double_check(new_file)  # Run the double check after all other processing
     print(f"Formatted: {input_file} -> {new_file}")
+
+def clean_empty_fs(directory: str):
+    """Remove all empty markdown files in the given directory (recursively)."""
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if file.lower().endswith('.md'):
+                file_path = os.path.join(root, file)
+                try:
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        content = f.read().strip()
+                    if not content:
+                        os.remove(file_path)
+                        print(f"Removed empty file: {file_path}")
+                except Exception as e:
+                    print(f"Error checking/removing {file_path}: {e}")
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Format markdown files.")
@@ -187,11 +204,13 @@ if __name__ == "__main__":
     if args.file:
         output_dir = args.output or os.path.dirname(args.file) or "."
         os.makedirs(output_dir, exist_ok=True)
+        clean_empty_fs(output_dir)
         format_file(args.file, output_dir)
 
     elif args.dir:
         output_dir = args.output or args.dir
         os.makedirs(output_dir, exist_ok=True)
+        clean_empty_fs(output_dir)
         for filename in os.listdir(args.dir):
             if filename.endswith(".md"):
                 input_path = os.path.join(args.dir, filename)
