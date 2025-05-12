@@ -1,3 +1,20 @@
+- [Hashes.com](https://hashes.com)
+
+```YAML
+
+tool_info:
+    name: hashes.com
+    type: web
+    url: https://hashes.com
+    usage_url: https://tool.com/README.md
+tool_cmd:
+    login: false
+    js: window.open...
+    req_info: fullname, phonenumber, firstname, lastname
+    opt_info: dob, address, city, state, zipcode, linkedin, twitter
+
+```
+
 - [greynoise](https://viz.greynoise.io/) - Search for IPs, Tags, CVEs, vpn, dns...
   
 - [Dehashed](https://www.dehashed.com/) - You can search for your email if its leak in some databases of anything..

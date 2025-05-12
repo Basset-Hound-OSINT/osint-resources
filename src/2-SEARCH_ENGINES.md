@@ -47,8 +47,24 @@
   - window.open('http://baidu.com/s?wd=' + Search13, 'Search13window');
 
 - [Searx](https://baresearch.org)
-  - input text
-  - window.open('https://baresearch.org/?q=' + Search14, 'Search14window');
+
+
+```YAML
+tool_info:
+    name: Searx Instance
+    type: web
+    usage_url: baresearch.org
+    info_url: https://github.com/searxng/searxng
+tool_cmd:
+    login: false
+    js: function doSearch14(Search14)
+{window.open('https://baresearch.org/?q=' + Search14, 'Search14window');}
+    target_info: fullname, phonenumber, firstname, lastname
+    target_info_opt: dob, address
+    # autopopulate use of given info type in a profile, if multiple of a type, like a phonnumber, then drop down menu listing all phonenumbers
+    # comma deliminated info types, if multiple then generate more fields on rendering site, and each field has a dropdown if multiple
+   # optional targeted info does not require its field to be populated to run the tool/search
+```
 
 - [DuckDuckGo](https://duckduckgo.com)
   - input text
