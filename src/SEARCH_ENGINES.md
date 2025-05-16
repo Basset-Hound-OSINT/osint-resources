@@ -1,3 +1,7 @@
+> add yaml so that each can be incorporated as normal
+> but also make a custom html block that acts like discovery oasis
+> select which search engines to use then open new tabs with the search queries already populated
+
 - [Google](http://google.com)
   - input text
   - window.open('http://google.com/search?q=' + Search01, 'Search01window');

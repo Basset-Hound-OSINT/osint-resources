@@ -1,0 +1,43 @@
+# Summary
+
+- Search Engines
+- Custom Search Tools
+- Social Networks - Facebook
+- Social Networks - Twitter
+- Social Networks - Instagram
+- Social Networks - TikTok
+- Online Communities
+- Market Places
+- Email Addresses
+- Usernames
+- Telephone Numbers
+- Online Maps
+- File Analysis
+- Document/Text Processing
+- Images
+- Image Search
+- People Search Engines
+- Facial recognition
+- Videos
+- Broadcast Streams
+- DNS/Routing
+- Websites
+- IP Addresses
+- Government Records
+- Business Records
+- Police Records
+- Trademarks / Pattents
+- Virtual Currencies
+- Stock Exchange
+- Data Leaks
+- Data Breaches
+- Stealer Logs
+- Ransomware
+- Queries Scripts Databases Backups
+- Cloud CDN
+- Methodology Workflow
+- Documentation Reporting
+- Breaches Investigative Benefits
+- Breaches Hardware Configuration
+- Breaches Software Configuration
+- Breaches Terminal Commands
