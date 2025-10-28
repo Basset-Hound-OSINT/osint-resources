@@ -13,21 +13,21 @@
 - Telephone Numbers
 - Online Maps
 - File Analysis
-- Document/Text Processing
-- Images
+- Document / Text Processing
+- Image Files
 - Image Search
 - People Search Engines
 - Facial recognition
 - Videos
 - Broadcast Streams
-- DNS/Routing
+- DNS / Routing
 - Websites
 - IP Addresses
 - Government Records
 - Business Records
 - Police Records
 - Trademarks / Pattents
-- Virtual Currencies
+- Crypto / Virtual Currencies
 - Stock Exchange
 - Data Leaks
 - Data Breaches
@@ -35,9 +35,10 @@
 - Ransomware
 - Queries Scripts Databases Backups
 - Cloud CDN
-- Methodology Workflow
-- Documentation Reporting
 - Breaches Investigative Benefits
 - Breaches Hardware Configuration
 - Breaches Software Configuration
 - Breaches Terminal Commands
+- Tor / Dark Web
+- Methodology Workflow
+- Documentation Reporting
