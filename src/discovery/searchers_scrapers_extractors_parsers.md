@@ -8,7 +8,6 @@
 - [Scrape API](https://www.scraperapi.com/?utm_source=google&utm_medium=cpc&utm_campaign=s_proxies_for_scraping_europe&utm_term=scrape%20api&gclid=Cj0KCQjw1dGJBhD4ARIsANb6OdnurtUihUJqiJpUAtwoPqsJ1X8lSio9etK9Mgcg-fb7qp23xUF2ZscaAqcvEALw_wcB)
 - [Try.jsoup.org](https://try.jsoup.org)
 - [http://github.com/jhy/jsoup](https://github.com/jhy/jsoup)
-- [https://github.com/jhy/jsoup](http://github.com/jhy/jsoup](https://github.com/jhy/jsoup](http://github.com/jhy/jsoup)
 - [Investigo](https://github.com/tdh8316/Investigo)
 - [REXTRACT](https://github.com/iustin24/rextract)
 - [Contacts Details Scraper](https://github.com/vdrmota/Social-Media-and-Contact-Info-Extractor)

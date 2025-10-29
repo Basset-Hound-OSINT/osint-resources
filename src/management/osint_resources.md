@@ -313,3 +313,6 @@
 - [https://www.softwaresuggest.com](https://www.softwaresuggest.com)
 - [softpedia](https://www.softpedia.com)
 - [https://www.softpedia.com](https://www.softpedia.com)
+
+
+[Awesome OSINT ](https://github.com/sindresorhus/awesome)

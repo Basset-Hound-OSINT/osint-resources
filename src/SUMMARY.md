@@ -88,8 +88,6 @@
 - [Passwords & Hashes](./breaches/PASSWORDS_HASHES.md)
 - [Cryptography](./breaches/cryptography.md)
 - [Bug Bounty](./breaches/BUG_BOUNTY.md)
-- [Stealer Logs](./breaches/STEALER_LOGS.md)
-- [Queries, Scripts & Databases](./breaches/QUERIES_DATABASES.md)
 
 ---
 
