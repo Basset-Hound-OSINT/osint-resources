@@ -1,0 +1,16 @@
+### 2.9 Bluetooth
+
+- [BlueToolkit](https://github.com/sgxgsx/BlueToolkit)
+- [Bluelog](https://www.secmaniac.com/bluelog)
+- [Blueranger](https://github.com/GIJack/BlueRanger)
+- [BTScanner](https://salsa.debian.org/pkg-security-team/btscanner)
+- [UBERTOOTH](https://ubertooth.sourceforge.io)
+- [GATTacker](https://github.com/securing/gattacker)
+- [btlejuice](https://github.com/DigitalSecurity/btlejuice)
+- [crackle](https://github.com/mikeryan/crackle)
+- [spooftooph](https://www.kali.org/tools/spooftooph)
+- [bluemaho](https://github.com/zenware/bluemaho)
+- [bluepot](https://github.com/andrewmichaelsmith/bluepot)
+- [blueranger-ng](https://www.kali.org/tools/blueranger)
+- [bluesnarfer](https://github.com/kimbo/bluesnarfer)
+- [bluediving](https://github.com/balle/bluediving)

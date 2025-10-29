@@ -1,3 +1,4 @@
+## Productivity
 
 - [it-tools](https://it-tools.tech)
 - [unfurl](https://dfir.blog/unfurl)
@@ -62,3 +63,14 @@
 - [Zz.fo](https://zz.fo)
 - [Upload files to IPFS from Browser](https://anarkrypto.github.io/upload-files-to-ipfs-from-browser-panel/public)
 - [BlackHole](https://blackhole.run)
+
+
+### Visualization tools
+
+- [Jsoncrack](https://jsoncrack.com)
+- [Jsonvisio](https://jsonvisio.com)
+- [Time graphics](https://time.graphics)
+- [Gephi](https://github.com/gephi/gephi)
+- [Tobloef.com](https://tobloef.com/text2mindmap)
+- [Cheat sheet maker](https://cheatsheet-maker.herokuapp.com)
+- [JSONHero](https://jsonhero.io)

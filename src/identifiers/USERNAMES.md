@@ -31,3 +31,50 @@
 - [SimpleMail](https://www.simplemail.dev)
 - [Protonmail](https://proton.me/mail)
 - [Tuta](https://tuta.com)
+
+
+
+## Username
+
+- [En](https://en.gravatar.com)
+- [Facebook](https://facebook.com)
+- [Instantusername](https://instantusername.com/?q=)
+- [Linktr](https://linktr.ee)
+- [Medium](https://medium.com/@)
+- [Namechk](https://namechk.com/namechk-plugin-search-results/?n=)
+- [Namevine](https://namevine.com/#)
+- [Profilediscover](https://profilediscover.com)
+- [Tinder](https://tinder.com/@)
+- [Usernamechecker](https://usernamechecker.checkistan.com/#)
+- [Usersearch](https://usersearch.org/results_advanced.php?URL_username=)
+- [Usersearch](https://usersearch.org/results_advanced1.php?URL_username=)
+- [Usersearch](https://usersearch.org/results_advanced2.php?URL_username=)
+- [Usersearch](https://usersearch.org/results_advanced4.php?URL_username=)
+- [Usersearch](https://usersearch.org/results_advanced5.php?URL_username=)
+- [Usersearch](https://usersearch.org/results_advanced6.php?URL_username=)
+- [Usersearch](https://usersearch.org/results_advanced7.php?URL_username=)
+- [Usersearch](https://usersearch.org/results_crypto.php?URL_username=)
+- [Usersearch](https://usersearch.org/results_dating.php?URL_username=)
+- [Usersearch](https://usersearch.org/results_forums.php?URL_username=)
+- [Usersearch](https://usersearch.org/results_normal.php?URL_username=)
+- [Idcrawl](https://www.idcrawl.com/u)
+- [Namechecker](https://www.namechecker.org/#)
+- [Reddit](https://www.reddit.com/user)
+- [Snapchat](https://www.snapchat.com/s)
+- [Social-searcher](https://www.social-searcher.com/search-users/?ntw=&q6=)
+- [X](https://x.com)
+
+#### 1.2  Username Search
+
+- [League of Legends Archiver](https://lolarchiver.com)
+- [NameMC](https://namemc.com)
+- [Namevine](https://namevine.com)
+- [Peek You](https://peekyou.com)
+- [Social Searcher](https://social-searcher.com)
+- [UnAvatar](https://unavatar.io)
+- [Instant Username](https://instantusername.com)
+- [NamesDir](https://namesdir.com)
+- [Amazon Usernames](https://www.google.com/search?q=site:amazon.com+%3Cusername%3E)
+- [GitHub Usernames](https://api.github.com/users/%3Cusername%3E/events/public)
+- [Tinder Usernames](https://www.gotinder.com/@%3Cusername%3E)
+

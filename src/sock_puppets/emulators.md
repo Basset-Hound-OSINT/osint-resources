@@ -1,7 +1,0 @@
-- [Kasm](https://kasmweb.com)
-- [Bluestacks](https://www.bluestacks.com)
-- [Genymotion](https://www.genymotion.com)
-- [PrimeOS](https://www.primeos.in)
-- [BigNox](https://www.bignox.com)
-- [Memuplay.com](https://www.memuplay.com)
-- [Ldplayer.net](https://www.ldplayer.net)
