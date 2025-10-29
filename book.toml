@@ -6,4 +6,4 @@ src = "src"
 title = "OSINT Resources"
 
 [build]
-build-dir = "docs"
+build-dir = "book"
