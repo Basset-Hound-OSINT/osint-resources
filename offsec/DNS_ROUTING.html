@@ -1,0 +1,482 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>DNS &amp; Routing - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="whois"><a class="header" href="#whois">WHOIS</a></h2>
+<ul>
+<li><a href="https://whoismind.com">WHOIS Service</a></li>
+<li><a href="https://webwhois.verisign.com/webwhois-ui/index.jsp?language=en_US">Whois Search</a></li>
+<li><a href="https://www.whoxy.com">Whoxy</a></li>
+<li><a href="https://osint.sh/whoishistory">Whois History</a></li>
+</ul>
+<h2 id="domain"><a class="header" href="#domain">Domain</a></h2>
+<ul>
+<li><a href="https://analyzeid.com/?domain=">Analyzeid</a></li>
+<li><a href="https://analyzeid.com/id/ca-pub-">Analyzeid</a></li>
+<li><a href="https://analyzeid.com/id/ua-">Analyzeid</a></li>
+<li><a href="https://api.hackertarget.com/analyticslookup/?q=UA-">Api</a></li>
+<li><a href="https://api.hackertarget.com/analyticslookup/?q=pub-">Api</a></li>
+<li><a href="https://api.sharedcount.com/v1.0/?url=https%3A%2F%2F">Api</a></li>
+<li><a href="https://arquivo.pt/url/search?hitsPerPage=100&amp;q=">Arquivo</a></li>
+<li><a href="https://bc.linkody.com/en/seo-tools/free-backlink-checker">Bc</a></li>
+<li><a href="https://carbondate.cs.odu.edu/#">Carbondate</a></li>
+<li><a href="https://checkshorturl.com/expand.php?u=">Checkshorturl</a></li>
+<li><a href="https://ci-www.threatcrowd.org/domain.php?domain=">Ci-threatcrowd</a></li>
+<li><a href="https://columbus.elmasy.com/lookup">Columbus</a></li>
+<li><a href="https://crt.sh/?q=">Crt</a></li>
+<li><a href="https://dehashed.com/search?query=%22">Dehashed</a></li>
+<li><a href="https://dmns.app/domains?q=">Dmns</a></li>
+<li><a href="https://dnsdumpster.com/static/map">Dnsdumpster</a></li>
+<li><a href="https://dnslytics.com/domain">Dnslytics</a></li>
+<li><a href="https://dnslytics.com/reverse-adsense">Dnslytics</a></li>
+<li><a href="https://dnslytics.com/reverse-adsense/pub-">Dnslytics</a></li>
+<li><a href="https://dnslytics.com/reverse-analytics">Dnslytics</a></li>
+<li><a href="https://dnslytics.com/reverse-analytics/ua-">Dnslytics</a></li>
+<li><a href="https://files.dmns.app/screenshots">Files</a></li>
+<li><a href="https://google.com/search?q=site%3A">Google</a></li>
+<li><a href="https://host.io">Host</a></li>
+<li><a href="https://host.io/backlinks">Host</a></li>
+<li><a href="https://host.io/redirects">Host</a></li>
+<li><a href="https://hypestat.com/info">Hypestat</a></li>
+<li><a href="https://leakix.net/domain">Leakix</a></li>
+<li><a href="https://leakix.net/search?scope=leak&amp;q=">Leakix</a></li>
+<li><a href="https://moz.com/domain-analysis?site=">Moz</a></li>
+<li><a href="https://publicwww.com/websites/ua-">Publiccom</a></li>
+<li><a href="https://search.censys.io/search?resource=hosts&amp;sort=RELEVANCE&amp;per_page=100&amp;virtual_hosts=INCLUDE&amp;q=">Search</a></li>
+<li><a href="https://securitytrails.com/list/apex_domain">Securitytrails</a></li>
+<li><a href="https://themarkup.org/blacklight?url=">Themarkup</a></li>
+<li><a href="https://threatintelligenceplatform.com/report">Threatintelligenceplatform</a></li>
+<li><a href="https://timetravel.mementoweb.org/list/19991212110000/http:">Timetravel</a></li>
+<li><a href="https://urlscan.io/domain">Urlscan</a></li>
+<li><a href="https://urlscan.io/search/#page.domain%3A">Urlscan</a></li>
+<li><a href="https://viewdns.info/dnsreport/?domain=">Viewdns</a></li>
+<li><a href="https://viewdns.info/iphistory/?domain=">Viewdns</a></li>
+<li><a href="https://viewdns.info/portscan/?host=">Viewdns</a></li>
+<li><a href="https://viewdns.info/reverseip/?host=">Viewdns</a></li>
+<li><a href="https://viewdns.info/reversewhois/?q=">Viewdns</a></li>
+<li><a href="https://viewdns.info/traceroute/?domain=">Viewdns</a></li>
+<li><a href="https://viewdns.info/whois/?domain=">Viewdns</a></li>
+<li><a href="https://web.archive.org/cdx/search/cdx?url=">Web</a></li>
+<li><a href="https://web.archive.org/web/*">Web</a></li>
+<li><a href="https://web.archive.org/web/http://www.who.is/whois">Web</a></li>
+<li><a href="https://web.archive.org/web/https://domainbigdata.com">Web</a></li>
+<li><a href="https://web.archive.org/web/https://whois.domaintools.com">Web</a></li>
+<li><a href="https://web.archive.org/web/https://whoisology.com">Web</a></li>
+<li><a href="https://web.archive.org/web/https://www.whoxy.com">Web</a></li>
+<li><a href="https://webarchive.loc.gov/all/*/http:">Webarchive</a></li>
+<li><a href="https://webscout.io/lookup">Webscout</a></li>
+<li><a href="https://who.is/dns">Who</a></li>
+<li><a href="https://who.is/domain-history">Who</a></li>
+<li><a href="https://who.is/whois">Who</a></li>
+<li><a href="https://www.copyscape.com/?q=http:">Copyscape</a></li>
+<li><a href="https://www.domaincodex.com/search.php?q=">Domaincodex</a></li>
+<li><a href="https://www.domainiq.com/snapshot_history#">Domainiq</a></li>
+<li><a href="https://www.domainiq.com/snapshot_history?data=">Domainiq</a></li>
+<li><a href="https://www.easycounter.com/report">Easycounter</a></li>
+<li><a href="https://www.mywot.com/en/scorecard">Mywot</a></li>
+<li><a href="https://www.nerdydata.com/reports/new?search=%7B%22all%22%3A%5B%7B%22type%22%3A%22code%22,%22value%22%3A%22">Nerdydata</a></li>
+<li><a href="https://www.reddit.com/search?q=site">Reddit</a></li>
+<li><a href="https://www.shodan.io/domain">Shodan</a></li>
+<li><a href="https://www.skymem.info/srch?q=">Skymem</a></li>
+<li><a href="https://www.spam.org/search?type=domain&amp;convert_block=1&amp;group_ips=1&amp;data=">Spam</a></li>
+<li><a href="https://www.spyfu.com/overview/domain?query=">Spyfu</a></li>
+<li><a href="https://www.virustotal.com/#/domain">Virustotal</a></li>
+<li><a href="https://www.visualsitemapper.com/map">Visualsitemapper</a></li>
+<li><a href="https://www.wmtips.com/tools/info">Wmtips</a></li>
+</ul>
+<h3 id="redirect-lookup"><a class="header" href="#redirect-lookup">Redirect lookup</a></h3>
+<ul>
+<li><a href="https://wheregoes.com">Wheregoes.com</a></li>
+<li><a href="https://www.spyoffers.com">Spyoffers.com</a></li>
+</ul>
+<h3 id="6--dnsip"><a class="header" href="#6--dnsip">6.  DNS/IP</a></h3>
+<ul>
+<li><a href="https://www.google.com/search?btnI=1&amp;q=DnsEnum">DnsEnum</a></li>
+</ul>
+<h3 id="backlinks-analyze"><a class="header" href="#backlinks-analyze">Backlinks analyze</a></h3>
+<ul>
+<li><a href="https://www.link-assistant.com/seo-spyglass/free-backlink-checker-tool.html">SEO Spyglass Backlink checker</a></li>
+<li><a href="https://app.neilpatel.com/en/seo_analyzer/backlinks">Neilpatel backlinks analyzer</a></li>
+</ul>
+<h3 id="domainip-investigation"><a class="header" href="#domainip-investigation">Domain/IP investigation</a></h3>
+<ul>
+<li><a href="https://t.me/UniversalSearchBot">@UniversalSearchBot</a></li>
+<li><a href="https://cipher387.github.io/domain_investigation_toolbox">Domain Investigation Toolbox</a></li>
+<li><a href="https://gofindwhois.com">GoFindWhois</a></li>
+<li><a href="https://www.spyfu.com/overview/domain">Spyfu</a></li>
+<li><a href="https://github.com/spyse-com/cli">Spyse CLI</a></li>
+<li><a href="https://domaintracker.app">Domaintracker</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/sputnik/manapjdamopgbpimgojkccikaabhmocd/related">Sputnik</a></li>
+<li><a href="https://whois.marcaria.com/en">Whois Domain Search Tool</a></li>
+<li><a href="https://www.ip-neighbors.com/host">IP Neighbors</a></li>
+<li><a href="https://besticon.herokuapp.com">The Favicon Finder</a></li>
+<li><a href="https://github.com/SpiderLabs/HostHunter">HostHunter</a></li>
+<li><a href="https://torwhois.com">Tor Whois</a></li>
+<li><a href="https://my.eurodns.com/das/search">EuroDNS</a></li>
+<li><a href="https://domaincodex.com">Source code search engine (315 million domains indexed). Search by title, metadata, javascript files, server name, location and more</a></li>
+<li><a href="https://github.com/elceef/dnstwist">Dnstwist</a></li>
+<li><a href="https://github.com/evilsocket/ditto">Ditto</a></li>
+<li><a href="https://radb.net/query">RADB</a></li>
+<li><a href="https://ipinfo.io/map">IPinfo map</a></li>
+<li><a href="https://whois.whoisxmlapi.com/database/pricing">Whois XML API Whois history database</a></li>
+<li><a href="https://talosintelligence.com/reputation_center">Talos Intelligence Mail Server Reputation</a></li>
+<li><a href="https://netbootcamp.org/websitetool.html">netbootcamp.org/websitetool.html</a></li>
+<li><a href="https://github.com/devXprite/httpfy">HTTPFY</a></li>
+<li><a href="https://github.com/harshnandwana/hussh">Hussh</a></li>
+<li><a href="https://github.com/atenreiro/opensquat">OPENSQUAT</a></li>
+<li><a href="https://www.vpnmentor.com/tools/test-the-great-china-firewall">Check any website to see in real time if it is blocked in China</a></li>
+<li><a href="https://t.me/iptools_robot">@iptools_robot</a></li>
+<li><a href="https://github.com/hamza07-w/raymond">Raymond</a></li>
+<li><a href="https://github.com/s0md3v/Striker">Striker</a></li>
+<li><a href="https://github.com/Anon-Exploiter/SiteBroker">SiteBroker</a></li>
+<li><a href="https://github.com/h3x0crypt/HostSpider">FindMyAss (HostSpider)</a></li>
+<li><a href="https://github.com/indiancyberops/Drishti">Drishti</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/gotanda/jbmdcdfnnpenkgliplbglfpninigbiml">Gotanda</a></li>
+<li><a href="https://cipher387.github.io/domain_investigation_toolbox/ip.html">Ip Investigation Toolbox</a></li>
+<li><a href="https://github.com/N0tA1dan/Crab">Crab</a></li>
+<li><a href="https://github.com/dievus/msdnsscan">MayorSecDNSScan</a></li>
+<li><a href="https://github.com/mathis2001/Cert4Recon">Cert4Recon</a></li>
+<li>[https://crt.sh](http://crt.sh](https://crt.sh](http://crt.sh)</li>
+<li><a href="https://github.com/ninoseki/miteru">Miteru</a></li>
+</ul>
+<h3 id="subdomains-scanbrute"><a class="header" href="#subdomains-scanbrute">Subdomains scan/brute</a></h3>
+<ul>
+<li><a href="https://github.com/lijiejie/subDomainsBrute">SubDomainsBrute</a></li>
+<li><a href="https://github.com/jonluca/Anubis">Anubis</a></li>
+<li><a href="https://github.com/alex14324/Turbolist3r">Turbolist3r</a></li>
+<li><a href="https://github.com/v4d1/Dome">DomE</a></li>
+<li><a href="https://github.com/0xsha/CloudBrute">CloudBrute</a></li>
+<li><a href="https://github.com/punk-security/dnsReaper">dnsReaper</a></li>
+<li><a href="https://github.com/projectdiscovery/alterx">ALERTX</a></li>
+</ul>
+<h3 id="databases-of-domains"><a class="header" href="#databases-of-domains">Databases of domains</a></h3>
+<ul>
+<li><a href="https://www.ransomlook.io">RansomLook</a></li>
+<li><a href="https://whoisfreaks.com">Whois Freaks</a></li>
+<li><a href="https://www.expireddomains.net/deleted-domains">Expireddomains.net</a></li>
+<li><a href="https://instantdomainsearch.com/domain/sale">InstantDomainSearch</a></li>
+<li><a href="https://whoisds.com/newly-registered-domains">WhoisDS.com</a></li>
+<li><a href="https://api.domaindumper.com">API Domaindumper</a></li>
+<li><a href="https://www.peeringdb.com">PeeringDB</a></li>
+<li><a href="https://iqwhois.com/advanced-search">IQWhois</a></li>
+</ul>
+<h3 id="domains"><a class="header" href="#domains">Domains</a></h3>
+<ul>
+<li><a href="https://phonebook.cz/">PhoneBook</a> - Lists all domains, email addresses, or URLs for the given input domain</li>
+<li><a href="https://intelx.io/">IntelligenceX</a> - Search engine and data archive</li>
+<li><a href="https://omnisint.io/subdomain-enumeration">Omnisint</a> - Subdomain enumeration</li>
+<li><a href="https://riddler.io/">Riddler</a> - Allows you to search in a high quality dataset</li>
+<li><a href="https://www.robtex.com/">RobTex</a> - Various kinds of research of IP numbers, Domain names, etc</li>
+<li><a href="https://centralops.net/co/DomainDossier.aspx">CentralOps - DomainDossier</a> - Investigate domains and IP addresses</li>
+<li><a href="https://www.domainiq.com/">DomainIQ</a> - Comprehensive Domain Intelligence</li>
+<li><a href="https://whois.domaintools.com/">whois.domaintools.com</a> - Industry’s fastest domain discovery engine and broadest, most accurate data</li>
+<li><a href="https://shorteners.grayhatwarfare.com/domains">grayhatwarfare.com - domains</a> - How to search URLs exposed by Shortener services</li>
+<li><a href="https://whoisology.com/">whoisology.com</a> - Deep Connections Between Domain Names &amp; Their Owners</li>
+<li><a href="https://who.is/">who.is</a> - WHOIS Search, Domain Name, Website, and IP Tools</li>
+<li><a href="https://pentest-tools.com/information-gathering/find-subdomains-of-domain">pentest-tools.com</a> - Discover subdomains and determine the attack surface of an organization</li>
+<li><a href="https://builtwith.com/">BuiltWith</a> - Find out what websites are Built With</li>
+<li><a href="http://moonsearch.com/">MoonSearch</a> - Backlinks checker &amp; SEO Report</li>
+<li><a href="https://sitereport.netcraft.com/">sitereport.netcraft.com</a> - Find out the infrastructure and technologies used by any site</li>
+<li><a href="https://synapsint.com/">SynapsInt</a> - The unified OSINT research tool</li>
+<li><a href="https://www.statscrop.com/">statscrop.com</a> - Millions of amazing websites across the web are being analyzed with StatsCrop</li>
+<li><a href="https://securityheaders.com/">securityheaders.com</a> - Scan your site now</li>
+<li><a href="http://www.visualsitemapper.com/">visualsitemapper.com</a> - Create a visual map of your site</li>
+<li><a href="https://www.similarweb.com/">similarweb.com</a> - The easiest and fastest tool to find out what's really going on online</li>
+<li><a href="https://buckets.grayhatwarfare.com/">buckets.grayhatwarfare.com</a> - Public buckets</li>
+<li><a href="https://api.c99.nl/">C99.nl</a> - Over 57 quality API's and growing!</li>
+<li><a href="https://wannabe1337.xyz/">wannabe1337.xyz</a> - Online Tools</li>
+<li><a href="https://subdomainfinder.c99.nl/">subdomainfinder.c99.nl</a> - Scanner that scans an entire domain to find as many subdomains as possible</li>
+<li><a href="https://jonlu.ca/anubis/">AnubisDB</a> - Subdomain enumeration and information gathering tool</li>
+<li><a href="https://hypestat.com/">HypeStat</a> - Free statistics and analytics service, where you can find information about every website</li>
+<li><a href="https://www.pkey.in/tools-i/search-subdomains">Private Key Project</a> - Information security tools from Private Key Project</li>
+<li><a href="http://www.sitedossier.com/">SiteDossier</a> - Profiles for millions of sites on the web</li>
+<li><a href="https://spyonweb.com/">SpyOnWeb</a> - Quick and convenient search for the websites that probably belong to the same owner</li>
+<li><a href="https://www.haveibeensquatted.com/">HaveIBeenSquatted</a> - Check if a domain has been typosquatted</li>
+<li><a href="https://www.expireddomains.net/">expireddomains.net</a> - ExpiredDomains.net gathers all the information you need to find good Expired Domains that are Pending Delete and you can Backorder</li>
+<li><a href="https://subdomainradar.io">SubDomainRadar.io</a> - Discover hidden subdomains with unparalleled accuracy and speed</li>
+<li><a href="https://transparencyreport.google.com/safe-browsing/search">Google Safe Browsing</a> - Google's Safe Browsing technology examines billions of URLs per day looking for unsafe websites</li>
+</ul>
+<h3 id="urls"><a class="header" href="#urls">URLs</a></h3>
+<ul>
+<li><a href="https://phonebook.cz/">PhoneBook</a> - Lists all domains, email addresses, or URLs for the given input domain</li>
+<li><a href="https://intelx.io/">IntelligenceX</a> - Search engine and data archive</li>
+<li><a href="https://urlscan.io/">URLScan</a> - A sandbox for the web</li>
+<li><a href="https://hackertarget.com/ip-tools/">HackerTarget</a> - Collect information about IP Addresses, Networks, Web Pages and DNS records</li>
+<li><a href="https://moz.com/link-explorer">MOZ Link Explorer</a> - The world's best backlink checker with over 40 trillion links</li>
+<li><a href="https://shorteners.grayhatwarfare.com/">shorteners.grayhatwarfare.com</a> - Search URLs exposed by Shortener services</li>
+<li><a href="http://index.commoncrawl.org/">CommonCrawl Index</a> - Open repository of web crawl data</li>
+<li><a href="https://www.urlvoid.com/">URLVoid</a> - Check the online reputation/safety of a website</li>
+<li><a href="https://safeweb.norton.com/">Norton SafeWeb</a> - Look up a site, Get our rating</li>
+<li><a href="https://checkphish.bolster.ai/">CheckPhish</a> - Real-time URL and website scanner</li>
+<li><a href="https://web-check.xyz/">web-check.xyz</a> - All-in-one OSINT tool, for quickly checking a websites data</li>
+<li><a href="https://www.tiny-scan.com/">TinyScan</a> - Effortlessly Dive into URL Details</li>
+<li><a href="https://urldna.io/">urldna.io</a> - Unleash website insights! urldna.io analyzes data, monitors brands and exposes security risks</li>
+</ul>
+<h3 id="dns"><a class="header" href="#dns">DNS</a></h3>
+<ul>
+<li><a href="https://dnsdumpster.com/">DNSDumpster</a> - DNS recon &amp; research, find &amp; lookup dns records</li>
+<li><a href="https://chaos.projectdiscovery.io/#/">Chaos</a> - Enhance research and analyse changes around DNS for better insights</li>
+<li><a href="https://rapiddns.io/">RapidDNS</a> - DNS query tool which make querying subdomains or sites of a same ip easy</li>
+<li><a href="https://docs.farsightsecurity.com/#dnsdb">DNSdb</a> - Passive DNS historical database</li>
+<li><a href="https://omnisint.io/reverse-dns-lookup">Omnisint</a> - Reverse DNS lookup</li>
+<li><a href="https://hackertarget.com/ip-tools/">HackerTarget</a> - Collect information about IP Addresses, Networks, Web Pages and DNS records</li>
+<li><a href="https://passivedns.mnemonic.no/">passivedns.mnemonic.no</a> - Web interface for querying passive DNS data collected in our malware lab</li>
+<li><a href="http://ptrarchive.com/">ptrarchive.com</a> - Over 230 billion reverse DNS entries from 2008 to the present</li>
+<li><a href="http://dnshistory.org/">dnshistory.org</a> - Domain Name System Historical Record Archive</li>
+<li><a href="https://dnstwister.report/">DNSTwister</a> - The anti-phishing domain name search engine and DNS monitoring service</li>
+<li><a href="https://dnsviz.net/">DNSviz</a> - Tool for visualizing the status of a DNS zone</li>
+<li><a href="https://api.c99.nl/">C99.nl</a> - Over 57 quality API's and growing</li>
+<li><a href="https://wannabe1337.xyz/">wannabe1337.xyz</a> - Online Tools</li>
+<li><a href="https://dnslytics.com/">DNSlytics</a> - Find out everything about a domain name, IP address or provider</li>
+<li><a href="https://dnsrepo.noc.org/">dnsrepo.noc.org</a> - DNS Database Repository Search</li>
+<li><a href="https://dnsspy.io/">DNSSpy</a> - Monitor, validate and verify your DNS configurations</li>
+<li><a href="https://zetalytics.com/">ZETAlytics</a> - We offer unrivalled geographic diversity and exclusive global network visibility in searchable datasets for use by cyber security analysts</li>
+<li><a href="https://askdns.com/">AskDNS</a> - Lookup Connected Domain Names and IP Addresses</li>
+<li><a href="https://passivedns.cn/">360 PassiveDNS.CN</a> - Biggest public available db in China designed for security and research purpose</li>
+<li><a href="https://mxtoolbox.com/SuperTool.aspx">MXtoolbox</a> - All of your MX record, DNS, blacklist and SMTP diagnostics in one integrated tool</li>
+<li><a href="https://www.nslookup.io/">NSLookup.io</a> - Find all DNS records for a domain name using this online tool</li>
+<li><a href="https://www.robtex.com/dns-lookup/">Robtex DNS Lookup</a> - Get detailed information on the nameservers associated with a domain name</li>
+<li><a href="https://dnsmap.io/">DNSMap</a> - Worldwide DNS Propagation Checker</li>
+<li><a href="https://app.validin.com/">Validin</a> - Massive collection of DNS records with free DNS history search</li>
+<li><a href="https://dnslookup.pro/">dnslookup.pro</a> - Advanced DNS Record Analysis &amp; Troubleshooting</li>
+</ul>
+<h3 id="certificates"><a class="header" href="#certificates">Certificates</a></h3>
+<ul>
+<li><a href="https://crt.sh/">Crt.sh</a> - Certificate Search</li>
+<li><a href="https://ui.ctsearch.entrust.com/ui/ctsearchui">CTSearch</a> - Certificate Transparency Search Tool</li>
+<li><a href="https://tls.bufferover.run/">tls.bufferover.run</a> - Quickly find certificates in IPv4 space</li>
+<li><a href="https://sslmate.com/certspotter/">CertSpotter</a> - Monitors your domains for expiring, unauthorized, and invalid SSL certificates</li>
+<li><a href="https://synapsint.com/">SynapsInt</a> - The unified OSINT research tool</li>
+<li><a href="https://search.censys.io/#">Censys Search - Certificates</a> - Certificates Search</li>
+<li><a href="https://ciphersuite.info/">ciphersuite.info</a> - TLS Ciphersuite Search. Search for a particular cipher suite by using IANA, OpenSSL or GnuTLS name format</li>
+<li><a href="https://certificatedetails.com/">certificatedetails</a> - Online certificate viewer. Inspect and download certificates from your browser</li>
+<li><a href="https://developers.facebook.com/tools/ct/search/">FacebookCT</a> - Search for certificates issued for a given domain and subscribe to notifications from Facebook regarding new certificates</li>
+<li><a href="https://certs.io/">certs.io</a> - Search TLS certificates across the internet.</li>
+<li><a href="https://getodin.com/search/certificates">ODIN Certificates Search</a> - ODIN Certificates Search</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../offsec/IP_ADDRESSES.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../offsec/websites.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../offsec/IP_ADDRESSES.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../offsec/websites.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

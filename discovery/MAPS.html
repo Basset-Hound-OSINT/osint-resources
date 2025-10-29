@@ -1,0 +1,667 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Maps - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="maps"><a class="header" href="#maps">MAPS</a></h2>
+<ul>
+<li><a href="https://yandex.com/maps">Yandex.Maps</a></li>
+<li><a href="https://geonarrative.usgs.gov/landsat-collection">Geonarrative.com</a></li>
+<li><a href="https://www.waze.com/live-map">Waze</a></li>
+<li><a href="https://www.arcgis.com/home/webmap/viewer.html?webmap=df8bcc10430f48878b01c96e907a1fc3#">ArcGIS Wildfire Map</a></li>
+<li><a href="https://firms.modaps.eosdis.nasa.gov/map">FIRMS</a></li>
+<li><a href="https://coronavirus.jhu.edu/map.html">COVID-19 Map</a></li>
+<li><a href="https://israelpalestine.liveuamap.com">Israel-Palestine</a></li>
+<li><a href="https://umap.openstreetmap.fr/en/map/military-bases-around-the-world_510207">Military bases around the world. - uMap</a></li>
+<li><a href="https://syria.liveuamap.com">Map of Syrian Civil War</a></li>
+<li><a href="https://www.windy.com/-Webcams/webcams">Windy</a></li>
+<li><a href="https://gpx.studio">Gpx File Editor</a></li>
+<li><a href="https://jsfiddle.net/user/fgdc_gp_demos/fiddles">fgdc_gp_demos’s public fiddles</a></li>
+<li><a href="https://cse.google.com/cse?cx=013991603413798772546:mofb1uoaebi">Google Map Search Engine</a></li>
+<li><a href="https://www.arcgis.com/apps/dashboards/201fc98c0d74482d8b3acb0c4cc47f16">Power Plants in the United States</a></li>
+<li><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=29c31fa4b00248418e545d222e57ddaa">UK Onshore Oil and Gas Activity</a></li>
+<li><a href="https://www.arcgis.com/apps/dashboards/4e573c79e1224081805165d25b4f33c7">Walmart Store Status</a></li>
+<li><a href="https://www.arcgis.com/apps/dashboards/bf5df3a49a624521844a2e5e1ec7df05">MODIS Wildfire</a></li>
+<li><a href="https://www.arcgis.com/apps/dashboards/c8af9c5411814584b460cc87cb7c3780">Earthquake Watch</a></li>
+<li><a href="https://earth.nullschool.net/#current">Earth</a></li>
+<li><a href="https://www.google.com/maps/d/viewer?mid=1hE1nDR-Ff_sVgOS67IteJSxGZlvqIP3k">US Labor Strike Map</a></li>
+<li><a href="https://www.google.com/maps/d/viewer?mid=1eYVDPh5itXq5acDT9b0BVeQwmESBa4cB">Active Agency Map</a></li>
+<li><a href="https://nagix.github.io/ukraine-livecams">Ukraine Live Cams</a></li>
+<li><a href="https://traintimes.org.uk/map/tube">Live map of London Underground trains</a></li>
+<li><a href="https://www.tfljamcams.net">TfL JamCams</a></li>
+<li><a href="https://app.atlas.co">atlas.co</a></li>
+<li><a href="https://felt.com">felt</a></li>
+<li><a href="https://www.trademap.org/Index.aspx">TradeMap</a></li>
+</ul>
+<h3 id="tools"><a class="header" href="#tools">Tools</a></h3>
+<ul>
+<li><a href="https://calculator.ipvm.com">Calculator IPVM</a></li>
+<li><a href="https://jopf.re/osmaps-radius">Osmaps Radius</a></li>
+<li><a href="https://zhenyanghua.github.io/MeasureTool-GoogleMaps-V3">MeasureTool-GoogleMaps-V3</a></li>
+<li><a href="https://www.acscdg.com">ACSDG</a></li>
+<li><a href="https://app.measuremaponline.com/dashboard/overview">MeasureMapOnline</a></li>
+<li><a href="https://mapfight.xyz/browse">Map Fight</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/presto-map-lead-extractor/ljnhdpilgapdpecpbpdiideeknfpkiih/related">Presto Map lead extractor</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/g-map-extractor/eehgalnhbmkfalhdjkeenggnniebdpgi/related">Gmaps Extractor</a></li>
+<li><a href="https://osm-finder.herokuapp.com">OSM Finder</a></li>
+<li><a href="https://www.mapnificent.net">Mapnificent</a></li>
+<li><a href="https://cesium.com/ion/stories/viewer/?id=8be6f99c-0d4c-46ce-91a3-313e3cac62fe">Cesium ion</a></li>
+<li><a href="https://tankaru.github.io/OpenSwitchMapsWeb/index.html">OpenSwitchMapsWeb</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/osm-smart-menu/icipmdhgbkejfideagkhdebiaeohfijk/related">OSM Smart Menu</a></li>
+<li><a href="https://www.calcmaps.com">Calcmaps</a></li>
+<li><a href="https://www.scribblemaps.com">Scribble maps</a></li>
+<li><a href="https://gdal3.js.org">Gdal3.js.org</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/timeline-exporter/afalbippddliaaomolohcbfogogbjpkk/related">Google Maps Timeline Exporter</a></li>
+<li><a href="https://timeline.google.com/maps/timeline">https://timeline.google.com/maps/timeline</a></li>
+<li><a href="https://overpass-api.de/achavi">Overpass API</a></li>
+<li><a href="https://www.localfocus.nl/geokit">localfocus.nl/geokit</a></li>
+<li><a href="https://console.apify.com/actors/nwua9Gu5YrADL7ZDj">Google Maps Scraper</a></li>
+<li><a href="https://www.smappen.com/app">Smappen</a></li>
+<li><a href="https://github.com/DinoTools/python-overpy">Python Overpy</a></li>
+</ul>
+<h3 id="street-view"><a class="header" href="#street-view">Street View</a></h3>
+<ul>
+<li><a href="https://showmystreet.com">Show My Street</a></li>
+<li><a href="https://360cities.net/map">360cities.net/map</a></li>
+<li><a href="https://earthviewer360.com">Earthviewer360.com</a></li>
+</ul>
+<h3 id="satelliteaerial-imagery"><a class="header" href="#satelliteaerial-imagery">Satellite/aerial imagery</a></h3>
+<ul>
+<li><a href="https://observer.farearth.com/observer">Observer</a></li>
+<li><a href="https://eos.com/products/landviewer">Landviewer</a></li>
+<li><a href="https://scihub.copernicus.eu">Copernicus Open Access Hub</a></li>
+<li><a href="https://apps.sentinel-hub.com/eo-browser">Sentinel Hub EO Browser</a></li>
+<li><a href="https://search.earthdata.nasa.gov">NASA Earthdata Search</a></li>
+<li><a href="https://www.dgi.inpe.br/catalogo">INPE Image Catalog</a></li>
+<li><a href="https://coast.noaa.gov/dataviewer/#">NOAA Data Access Viewer</a></li>
+<li><a href="https://worldview.earthdata.nasa.gov">NASA WorldView</a></li>
+<li><a href="https://www.eorc.jaxa.jp/ALOS/jp/alos-4/a4_about_j.htm">ALOS</a></li>
+<li><a href="https://bhuvan.nrsc.gov.in/home/index.php">Bhuvan</a></li>
+<li><a href="https://map.openaerialmap.org/#/-90.098876953125,33.8430453147447,6?_k=huaxo6">OpenAerialMap</a></li>
+<li><a href="https://map.openaerialmap.org/#/-18.632,18.47900000000001,3?_k=3za5b4">OpenAerialMap</a></li>
+<li><a href="https://imagehunter.apollomapping.com">ApolloMapping Image Hunter</a></li>
+<li><a href="https://keyhole.engelsjk.com">keyhole engelsjk</a></li>
+<li><a href="https://discover.maxar.com">Maxar</a></li>
+</ul>
+<h3 id="military-tracking"><a class="header" href="#military-tracking">Military tracking</a></h3>
+<ul>
+<li><a href="https://www.ads-b.nl">ADS-b.nl</a></li>
+<li><a href="https://planefinder.net/flight/ARMY">Planefinder Army Live Flight Tracker</a></li>
+<li><a href="https://www.itamilradar.com">Itamilradar</a></li>
+<li><a href="https://www.marinevesseltraffic.com/2013/02/military-ship-track.html">MarineVesselFinder</a></li>
+<li><a href="https://ollielballinger.users.earthengine.app/view/bellingcat-radar-interference-tracker#lon=49.9507;lat=26.6056;zoom=4">BellingCat Radar Interfence Tracker</a></li>
+<li><a href="https://websdr.ewi.utwente.nl:8901">WEBSDR</a></li>
+<li><a href="https://www.info-res.org/map">Russia-Ukraine Monitor Map</a></li>
+<li><a href="https://liveuamap.com/ru">Ukraine liveuamap.com</a></li>
+<li><a href="https://www.nato.int/nato-on-the-map/#lat=54.6871555&amp;lon=25.2796514&amp;zoom=2&amp;layer-1">NATO.int</a></li>
+<li><a href="https://www.understandingwar.org/map-room">Understanding War Map Room</a></li>
+<li><a href="https://worldbeyondwar.org/no-bases">US Military Bases Interactive Worldwide Map</a></li>
+</ul>
+<h3 id="military-visualisation"><a class="header" href="#military-visualisation">Military visualisation</a></h3>
+<ul>
+<li><a href="https://www.map.army">Map.Army</a></li>
+<li><a href="https://mgrs-mapper.com">MGRS Mapper</a></li>
+<li><a href="https://solutions.arcgis.com/defense/help/military-overlay">ArgGis Military Overlay</a></li>
+</ul>
+<h3 id="other"><a class="header" href="#other">Other</a></h3>
+<ul>
+<li><a href="https://demo.f4map.com">Demo.4map.com</a></li>
+<li><a href="https://www.oldmapsonline.org">OldMapsOnline</a></li>
+<li><a href="https://whatiswhere.com">Whatiswhere.com</a></li>
+<li><a href="https://cipher387.github.io/collection_of_cadastral_maps">Collection of cadastral maps</a></li>
+<li><a href="https://simon04.dev.openstreetmap.org/whodidit">WhoDidIt</a></li>
+<li><a href="https://ukdataexplorer.com/european-translator">European World Translator</a></li>
+</ul>
+<h1 id="locations-data-mapping"><a class="header" href="#locations-data-mapping">Locations Data Mapping</a></h1>
+<ul>
+<li><a href="https://www.google.co.id/maps">Google maps</a></li>
+<li><a href="https://www.osintcombine.com/social-geo-lens">Social geo lens</a></li>
+<li><a href="https://www.openstreetmap.org">Open street map</a></li>
+<li><a href="https://www.openstreetmap.org">https://www.openstreetmap.org</a></li>
+<li><a href="https://www.maltego.com/transform-hub/google-maps-geocoding-transforms">Google Maps Geocoding</a></li>
+<li><a href="https://www.maltego.com/transform-hub/google-maps-geocoding-transforms">https://www.maltego.com/transform-hub/google-maps-geocoding-transforms</a></li>
+<li><a href="https://earthengine.google.com/#intro">Googleearthengine</a></li>
+<li><a href="https://osm-search.bellingcat.com">OSM Bellingcat</a></li>
+<li><a href="https://osm-search.bellingcat.com">https://osm-search.bellingcat.com</a></li>
+<li><a href="https://github.com/Yachay-AI/byt5-geotagging">byt5-geotagging</a></li>
+<li><a href="https://amti.csis.org/maps">CSIS maps</a></li>
+<li><a href="https://amti.csis.org/maps">https://amti.csis.org/maps</a></li>
+<li><a href="https://data.humdata.org/group">Humdata maps</a></li>
+<li><a href="https://www.planet.com/products">Planet - satellite maps</a></li>
+<li><a href="https://www.planet.com/products">https://www.planet.com/products</a></li>
+<li><a href="https://github.com/Xetnus/osm-finder">OSM Finder</a></li>
+<li><a href="https://osm-finder.netlify.app">OSM Finder - Web based</a></li>
+<li><a href="https://osm-finder.netlify.app">https://osm-finder.netlify.app</a></li>
+<li><a href="https://wanderlog.com">wanderlog review on Google maps</a></li>
+<li><a href="https://wanderlog.com">https://wanderlog.com</a></li>
+<li><a href="https://map-making.app">map making app</a></li>
+<li><a href="https://map-making.app">https://map-making.app</a></li>
+<li><a href="https://overpass-turbo.eu/#">Overpass turbo</a></li>
+<li><a href="https://github.com/bellingcat/ShadowFinder">Bellingcat Shadow Finder</a></li>
+<li><a href="https://colab.research.google.com/github/GalenReich/ShadowFinder/blob/main/ShadowFinderColab.ipynb#scrollTo=OBTVWE8tu2Pe">Belinggcat Shadow Finder Hosted</a></li>
+<li><a href="https://www.mooncalc.org">Moon Calc</a></li>
+<li><a href="https://www.mooncalc.org">https://www.mooncalc.org</a></li>
+<li><a href="https://www.maps.ie/coordinates.html">Coordinate Calc</a></li>
+<li><a href="https://latlongdata.com/lat-long-converter">latlongdata calc</a></li>
+<li><a href="https://latlongdata.com/lat-long-converter">https://latlongdata.com/lat-long-converter</a></li>
+<li><a href="https://overpass-api.de">Docs overpass API</a></li>
+<li><a href="https://overpass-api.de">https://overpass-api.de</a></li>
+<li><a href="https://zoom.earth">Zoom earth</a></li>
+<li><a href="https://zoom.earth">https://zoom.earth</a></li>
+<li><a href="https://satellites.pro/#">satellites</a></li>
+<li><a href="https://wikimapia.org">wikimapia</a></li>
+<li><a href="https://wikimapia.org">https://wikimapia.org</a></li>
+<li><a href="https://www.peakfinder.com">peakfinder</a></li>
+<li><a href="https://www.peakfinder.com">https://www.peakfinder.com</a></li>
+<li><a href="https://kartaview.org">kartaview</a></li>
+<li><a href="https://kartaview.org">https://kartaview.org</a></li>
+<li><a href="https://www.mapillary.com/app/?lat=20&amp;lng=0&amp;z=1.5">mapillary</a></li>
+<li><a href="https://www.calcmaps.com/map-area">calcmaps</a></li>
+<li><a href="https://www.calcmaps.com/map-area">https://www.calcmaps.com/map-area</a></li>
+<li><a href="https://nominatim.openstreetmap.org">nominatim OSM</a></li>
+<li><a href="https://nominatim.openstreetmap.org">https://nominatim.openstreetmap.org</a></li>
+<li><a href="https://moscow.flamp.ru">moscow RU</a></li>
+<li><a href="https://moscow.flamp.ru">https://moscow.flamp.ru</a></li>
+<li><a href="https://www.suncalc.org">sun calc</a></li>
+<li><a href="https://www.suncalc.org">https://www.suncalc.org</a></li>
+<li><a href="https://www.mooncalc.org">mooncalc</a></li>
+<li><a href="https://www.mooncalc.org">https://www.mooncalc.org</a></li>
+<li><a href="https://www.planetscalc.org">planetscalc</a></li>
+<li><a href="https://www.planetscalc.org">https://www.planetscalc.org</a></li>
+<li><a href="https://www.moonsighting.com">moonsighting</a></li>
+<li><a href="https://www.moonsighting.com">https://www.moonsighting.com</a></li>
+<li><a href="https://www.mooncalc.org/mooncalendar">mooncalendar</a></li>
+<li><a href="https://www.mooncalc.org/mooncalendar">https://www.mooncalc.org/mooncalendar</a></li>
+<li><a href="https://earthkit.app/satellite">earthkit</a></li>
+<li><a href="https://www.gaisma.com/en">gaisma sunrise, sunset arround world</a></li>
+<li><a href="https://www.gaisma.com/en">https://www.gaisma.com/en</a></li>
+<li><a href="https://ejatlas.org">Ej Atlas</a></li>
+<li><a href="https://ejatlas.org">https://ejatlas.org</a></li>
+</ul>
+<h1 id="osint-military"><a class="header" href="#osint-military">OSINT Military</a></h1>
+<ul>
+<li><a href="https://www.globalsecurity.org/military/index.html">globalsecurity military</a></li>
+<li><a href="https://vframe.io/3d-rendered-data">3D Rendered Synthetic Data</a></li>
+<li><a href="https://vframe.io/3d-rendered-data">https://vframe.io/3d-rendered-data</a></li>
+<li><a href="https://www.militaryfactory.com">militaryfactory</a></li>
+<li><a href="https://www.militaryfactory.com">https://www.militaryfactory.com</a></li>
+<li><a href="https://www.uniforminsignia.net">Military and other uniform badges</a></li>
+<li><a href="https://www.uniforminsignia.net">https://www.uniforminsignia.net</a></li>
+<li><a href="https://www.smallarmssurvey.org/resource/introductory-guide-identification-small-arms-light-weapons-and-associated-ammunition">SMALL ARMS SURVEY</a></li>
+<li><a href="https://dfrlab.org/research">dfrlab.org</a></li>
+<li><a href="https://dfrlab.org/research">https://dfrlab.org/research</a></li>
+<li><a href="https://www.atlanticcouncil.org">atlanticcouncil</a></li>
+<li><a href="https://www.atlanticcouncil.org">https://www.atlanticcouncil.org</a></li>
+<li><a href="https://www.earthdata.nasa.gov/learn/find-data/near-real-time/firms">NASA EARTH</a></li>
+<li><a href="https://wvs.earthdata.nasa.gov">EARTH DATA NASA</a></li>
+<li><a href="https://wvs.earthdata.nasa.gov">https://wvs.earthdata.nasa.gov</a></li>
+<li><a href="https://peakvisor.com">peakvisor</a></li>
+<li><a href="https://peakvisor.com">https://peakvisor.com</a></li>
+<li><a href="https://www.peakfinder.com">peakfinder</a></li>
+<li><a href="https://www.peakfinder.com">https://www.peakfinder.com</a></li>
+<li><a href="https://geoconfirmed.org">Geoconfirmed</a></li>
+<li><a href="https://geoconfirmed.org">https://geoconfirmed.org</a></li>
+<li><a href="https://airwars.org">Air Wars</a></li>
+<li><a href="https://airwars.org">https://airwars.org</a></li>
+<li><a href="https://atmosphere.copernicus.eu/charts/packages/cams/?facets=%7B%22Family%22%3A%5B%22Fires%22%5D%7D">Copernicus</a></li>
+<li><a href="https://ejatlas.org">Ej Atlas</a></li>
+<li><a href="https://ejatlas.org">https://ejatlas.org</a></li>
+<li><a href="https://www.linkedin.com/pulse/mastering-military-osint-comprehensive-guide-modern-niels-groeneveld">Intro OSINT Military</a></li>
+<li><a href="https://github.com/Alb-310/Geogramint">Telegram Geogramint</a></li>
+<li><a href="https://app.skylens.io">Skylens</a></li>
+<li><a href="https://app.skylens.io">https://app.skylens.io</a></li>
+<li><a href="https://www.geocreepy.com">Geocreepy</a></li>
+<li><a href="https://www.geocreepy.com">https://www.geocreepy.com</a></li>
+<li><a href="https://github.com/woj-ciech/Kamerka-GUI">Kamerka</a></li>
+<li><a href="https://www.earthcam.com/#google_vignette">Earthcam</a></li>
+<li><a href="https://onemilliontweetmap.com">onemilliontweetmap</a></li>
+<li><a href="https://onemilliontweetmap.com">https://onemilliontweetmap.com</a></li>
+<li><a href="https://birdhunt.co">birdhunt</a></li>
+<li><a href="https://birdhunt.co">https://birdhunt.co</a></li>
+<li><a href="https://www.garmin.co.id/products/outdoor/gpsmap64s-sea">garmin</a></li>
+<li><a href="https://www.garmin.co.id/products/outdoor/gpsmap64s-sea">https://www.garmin.co.id/products/outdoor/gpsmap64s-sea</a></li>
+<li><a href="https://salw-dashboard.electrifai.net/analytics/main">SALW</a></li>
+<li><a href="https://earth.esa.int/eogateway">Earth ESA</a></li>
+<li><a href="https://apps.sentinel-hub.com">APP Sentinel</a></li>
+<li><a href="https://apps.sentinel-hub.com">https://apps.sentinel-hub.com</a></li>
+<li><a href="https://firms.modaps.eosdis.nasa.gov">NASA Fire Dataset</a></li>
+<li><a href="https://firms.modaps.eosdis.nasa.gov">https://firms.modaps.eosdis.nasa.gov</a></li>
+<li><a href="https://earth.google.com/web">Google Earth Pro</a></li>
+<li><a href="https://earth.google.com/web">https://earth.google.com/web</a></li>
+<li><a href="https://www.cia.gov/the-world-factbook">CIA GOV</a></li>
+<li><a href="https://www.cia.gov/the-world-factbook">https://www.cia.gov/the-world-factbook</a></li>
+<li><a href="https://acleddata.com">Acleddata</a></li>
+<li><a href="https://acleddata.com">https://acleddata.com</a></li>
+<li><a href="https://www.cfr.org/global-conflict-tracker">Global Conflict</a></li>
+<li><a href="https://www.google.com/publicdata/directory">Google Public Data</a></li>
+<li><a href="https://www.huntintel.io">huntintel</a></li>
+<li><a href="https://www.huntintel.io">https://www.huntintel.io</a></li>
+<li><a href="https://www.planet.com">planet</a></li>
+<li><a href="https://www.planet.com">https://www.planet.com</a></li>
+<li><a href="https://map.nbr.org/interactivemap">NBR Map</a></li>
+<li><a href="https://map.nbr.org/interactivemap">https://map.nbr.org/interactivemap</a></li>
+<li><a href="https://www.ads-b.nl">ADS B</a></li>
+<li><a href="https://www.ads-b.nl">https://www.ads-b.nl</a></li>
+<li><a href="https://www.itamilradar.com">itamilradar</a></li>
+<li><a href="https://www.itamilradar.com">https://www.itamilradar.com</a></li>
+<li><a href="https://www.info-res.org">info-res</a></li>
+<li><a href="https://www.info-res.org">https://www.info-res.org</a></li>
+<li><a href="https://syria.liveuamap.com">syria.liveuamap</a></li>
+<li><a href="https://syria.liveuamap.com">https://syria.liveuamap.com</a></li>
+<li><a href="https://www.nato.int/nato-on-the-map">NATO INT</a></li>
+<li><a href="https://www.nato.int/nato-on-the-map">https://www.nato.int/nato-on-the-map</a></li>
+<li><a href="https://www.understandingwar.org/map-room">understandingwar</a></li>
+<li><a href="https://worldbeyondwar.org/no-bases">worldbeyondwar</a></li>
+<li><a href="https://worldbeyondwar.org/no-bases">https://worldbeyondwar.org/no-bases</a></li>
+<li><a href="https://planefinder.net">planefinder</a></li>
+<li><a href="https://planefinder.net">https://planefinder.net</a></li>
+<li><a href="https://websdr.ewi.utwente.nl:8901">WEB SDR</a></li>
+<li><a href="https://websdr.ewi.utwente.nl:8901">https://websdr.ewi.utwente.nl:8901</a></li>
+<li><a href="https://ollielballinger.users.earthengine.app/view/bellingcat-radar-interference-tracker">Bellingcat Radar</a></li>
+<li><a href="https://web.archive.org/web/20240000000000*/https://airrecognition.com">airrecognition</a></li>
+<li><a href="https://web.archive.org/web/20240000000000*/https://airrecognition.com">https://web.archive.org/web/20240000000000*/https://airrecognition.com</a></li>
+<li><a href="https://gpsjam.org">gpsjam</a></li>
+<li><a href="https://gpsjam.org">https://gpsjam.org</a></li>
+<li><a href="https://www.freemaptools.com">freemaptools</a></li>
+<li><a href="https://www.freemaptools.com">https://www.freemaptools.com</a></li>
+<li><a href="https://earthobservatory.nasa.gov/global-maps">earthobservatory NASA</a></li>
+<li><a href="https://www.mooncalc.org">mooncalc</a></li>
+<li><a href="https://www.mooncalc.org">https://www.mooncalc.org</a></li>
+<li><a href="https://www.suncalc.org">suncalc</a></li>
+<li><a href="https://www.suncalc.org">https://www.suncalc.org</a></li>
+<li><a href="https://www.moonsighting.com">moonsighting</a></li>
+<li><a href="https://www.moonsighting.com">https://www.moonsighting.com</a></li>
+<li><a href="https://www.mooncalc.org/mooncalendar">mooncalendar</a></li>
+<li><a href="https://www.mooncalc.org/mooncalendar">https://www.mooncalc.org/mooncalendar</a></li>
+<li><a href="https://www.conflict-damage.org">conflict-damage</a></li>
+<li><a href="https://www.conflict-damage.org">https://www.conflict-damage.org</a></li>
+<li><a href="https://liveuamap.com">Liveuamap</a></li>
+<li><a href="https://liveuamap.com">https://liveuamap.com</a></li>
+<li><a href="https://solutions.arcgis.com/defense/help/military-overlay/#requirements">Arcgis Military Overlay</a></li>
+<li><a href="https://ion.cesium.com">cesium</a></li>
+<li><a href="https://ion.cesium.com">https://ion.cesium.com</a></li>
+<li><a href="https://www.armscontrol.org">armscontrol</a></li>
+<li><a href="https://www.armscontrol.org">https://www.armscontrol.org</a></li>
+<li><a href="https://www.sipri.org/databases">sipri</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/19xNmsQpcz7UwHOPy1Zrwud-2jVdctulT5W3_0fUNn8k/edit?gid=0#gid=0">Online Identification of Explosive Ordnance: Resources</a></li>
+<li><a href="https://skyvector.com">skyvector</a></li>
+<li><a href="https://skyvector.com">https://skyvector.com</a></li>
+<li><a href="https://worldbeyondwar.org/no-bases">US Millitary Base</a></li>
+<li><a href="https://worldbeyondwar.org/no-bases">https://worldbeyondwar.org/no-bases</a></li>
+<li><a href="https://www.airspace-review.com">airspace</a></li>
+<li><a href="https://www.airspace-review.com">https://www.airspace-review.com</a></li>
+<li><a href="https://worldview.earthdata.nasa.gov">worldview NASA</a></li>
+<li><a href="https://worldview.earthdata.nasa.gov">https://worldview.earthdata.nasa.gov</a></li>
+<li><a href="https://github.com/curated-intel/Ukraine-Cyber-Operations">Ukraine Cyber Operation</a></li>
+<li><a href="https://github.com/microsoft/GlobalMLBuildingFootprints">Microsoft GlobalMLBuildingFootprints</a></li>
+<li><a href="https://ee-ollielballinger.projects.earthengine.app/view/gazadamage">Conflict Gaza damage</a></li>
+<li><a href="https://oballinger.github.io/PWTT/#ukraine-damage-assessment">Conflict Ukraine damage</a></li>
+<li><a href="https://ukraine.bellingcat.com">Ukriane Bellingcat Map</a></li>
+<li><a href="https://ukraine.bellingcat.com">https://ukraine.bellingcat.com</a></li>
+<li><a href="https://www.bulletpicker.com/celluloid.html">bulletpicker</a></li>
+<li><a href="https://osmp.ngo">Open Source Munitions Portal (OSMP)</a></li>
+<li><a href="https://osmp.ngo">https://osmp.ngo</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Table_of_explosive_detonation_velocities">Table of explosive detonation velocities</a></li>
+<li><a href="https://www.gichd.org/explosive-ordnance">Types of explosive ordnance</a></li>
+<li><a href="https://www.gichd.org/explosive-ordnance">https://www.gichd.org/explosive-ordnance</a></li>
+<li><a href="https://www.conflictarm.com">conflictarm - Weapon Documentary</a></li>
+<li><a href="https://www.conflictarm.com">https://www.conflictarm.com</a></li>
+<li><a href="https://www.jmu.edu/cisr/research/index.shtml">Guide Identification Weapon</a></li>
+<li><a href="https://ffi-publikasjoner.archive.knowledgearc.net/discover">Norwegua Defense Research &amp; Publication</a></li>
+<li><a href="https://ffi-publikasjoner.archive.knowledgearc.net/bitstream/handle/20.500.12242/2257/09-00179.pdf">The Rocket Artillery Reference Book</a></li>
+<li><a href="https://www.globalsecurity.org/military/world/index.html">globalsecurity AMMUNITION COLOR CODES</a></li>
+<li><a href="https://forensicreader.com/color-coded-bullets-tables">Color-Coded Bullets Tips</a></li>
+<li><a href="https://forensicreader.com/color-coded-bullets-tables">https://forensicreader.com/color-coded-bullets-tables</a></li>
+<li><a href="https://cat-uxo.com">cat-uxo weapon and missile</a></li>
+<li><a href="https://cat-uxo.com">https://cat-uxo.com</a></li>
+<li><a href="https://taginfo.openstreetmap.org/keys/military#map">osm-tag-info-military</a></li>
+<li><a href="https://github.com/sdr-enthusiasts/plane-alert-db">Aircraft Mil Dataset</a></li>
+<li><a href="https://www.live-military-mode-s.eu">live-military</a></li>
+<li><a href="https://www.live-military-mode-s.eu">https://www.live-military-mode-s.eu</a></li>
+<li><a href="https://www.hotgunz.com/search.php">hotgunz</a></li>
+<li><a href="https://camopedia.org/index.php/Indonesia">camopedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_comparative_military_ranks">Wikipedia Milltary Ranks</a></li>
+<li><a href="https://www.icrc.org/en">ICRC International Committee of the Red Cross</a></li>
+<li><a href="https://unsaferguard.org/un-saferguard/blast-damage-estimation">Explosive damage blast estimation</a></li>
+<li><a href="https://nuclearsecrecy.com/nukemap">nuclearsecrecy estimate calculator</a></li>
+<li><a href="https://nuclearsecrecy.com/nukemap">https://nuclearsecrecy.com/nukemap</a></li>
+<li><a href="https://nuclearweaponsedproj.mit.edu/Node/114">nuclearweaponsedproj calculator</a></li>
+<li><a href="https://outrider.org/nuclear-weapons/interactive/bomb-blast">outrider nuclear weapon calculator area with animation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Military_aircraft">Military Aircraft Wiki</a></li>
+<li><a href="https://www.globalfirepower.com">globalfirepower</a></li>
+<li><a href="https://www.globalfirepower.com">https://www.globalfirepower.com</a></li>
+<li><a href="https://www.worldatlas.com/countries">worldatlas</a></li>
+<li><a href="https://www.army-technology.com">army-technology</a></li>
+<li><a href="https://www.army-technology.com">https://www.army-technology.com</a></li>
+<li><a href="https://remm.hhs.gov/zones_nucleardetonation.htm">zones_nucleardetonation</a></li>
+<li><a href="https://nuclearsecrecy.com/missilemap">nuclearsecrecy missil map simulation</a></li>
+<li><a href="https://nuclearsecrecy.com/missilemap">https://nuclearsecrecy.com/missilemap</a></li>
+<li><a href="https://www.atomicarchive.com/resources/links/index.html">atomicarchive awesome to learn sains and chemistry</a></li>
+<li><a href="https://cryptome.org">Cryptome - search doc about publication that are prohibited by government</a></li>
+<li><a href="https://cryptome.org">https://cryptome.org</a></li>
+<li><a href="https://gijn.org/resource/tipsheet-for-investigative-journalists-on-war-crimes-and-open-source-research">Tipsheet for Investigative Journalists on War Crimes and Open Source Research</a></li>
+<li><a href="https://gijn.org/resource/tipsheet-for-investigative-journalists-on-war-crimes-and-open-source-research">https://gijn.org/resource/tipsheet-for-investigative-journalists-on-war-crimes-and-open-source-research</a></li>
+<li><a href="https://armamentresearch.com">ARES</a></li>
+<li><a href="https://armamentresearch.com">https://armamentresearch.com</a></li>
+<li><a href="https://eyesonrussia.org">eyesonrussia</a></li>
+<li><a href="https://eyesonrussia.org">https://eyesonrussia.org</a></li>
+<li><a href="https://warthunder.com/en">War Thunder</a></li>
+<li><a href="https://promo.worldofwarships.com">Modern Warship</a></li>
+<li><a href="https://promo.worldofwarships.com">https://promo.worldofwarships.com</a></li>
+<li><a href="https://www.flightsimulator.com">Microsoft Flight Simulator</a></li>
+<li><a href="https://www.flightsimulator.com">https://www.flightsimulator.com</a></li>
+<li><a href="https://www.youtube.com/@falconclaw_">FalconLaw</a></li>
+<li><a href="https://www.youtube.com/@GarandThumb">GarandThumb</a></li>
+<li><a href="https://www.youtube.com/@fieldcraftsurvival">https://www.youtube.com/@fieldcraftsurvival</a></li>
+<li><a href="https://www.youtube.com/@LycmaMilTech">ID LycmaMilTech</a></li>
+<li><a href="https://www.youtube.com/@GarandThumb">GarandThumb</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_firearm_brands">wiki firearm brands</a></li>
+</ul>
+<h1 id="osint-historical"><a class="header" href="#osint-historical">OSINT Historical</a></h1>
+<ul>
+<li><a href="https://colonialarchitecture.eu">colonialarchitecture</a></li>
+<li><a href="https://colonialarchitecture.eu">https://colonialarchitecture.eu</a></li>
+<li><a href="https://www.niod.nl">niod archive</a></li>
+<li><a href="https://www.niod.nl">https://www.niod.nl</a></li>
+<li><a href="https://digitalcollections.universiteitleiden.nl">digitalcollections</a></li>
+<li><a href="https://digitalcollections.universiteitleiden.nl">https://digitalcollections.universiteitleiden.nl</a></li>
+<li><a href="https://zoeken.beeldengeluid.nl">zoeken</a></li>
+<li><a href="https://zoeken.beeldengeluid.nl">https://zoeken.beeldengeluid.nl</a></li>
+<li><a href="https://www.nationaalarchief.nl/en/research">nationaalarchief</a></li>
+<li><a href="https://www.archives.gov">archives</a></li>
+<li><a href="https://www.archives.gov">https://www.archives.gov</a></li>
+<li><a href="https://arsip-indonesia.org/id">Arsip Indonesia</a></li>
+<li><a href="https://arsip-indonesia.org/id">https://arsip-indonesia.org/id</a></li>
+<li><a href="https://search.worldcat.org">Worldcat</a></li>
+<li><a href="https://search.worldcat.org">https://search.worldcat.org</a></li>
+<li><a href="https://mpn.kominfo.go.id/arsip">MPN SIDAK Kominfo</a></li>
+<li><a href="https://mpn.kominfo.go.id/arsip">https://mpn.kominfo.go.id/arsip</a></li>
+<li><a href="https://geheugen.delpher.nl/nl">geheugen delpher</a></li>
+<li><a href="https://www.oldmapsonline.org/en">Old maps online</a></li>
+<li><a href="https://www.oldmapsonline.org/en">https://www.oldmapsonline.org/en</a></li>
+<li><a href="https://www.delpher.nl">Delpher</a></li>
+<li><a href="https://www.delpher.nl">https://www.delpher.nl</a></li>
+<li><a href="https://pastvu.com">pastvu map</a></li>
+<li><a href="https://pastvu.com">https://pastvu.com</a></li>
+<li><a href="https://rene78.github.io/latest-changes/#5/-3.448/115.532">Latest change OSM</a></li>
+<li><a href="https://web.archive.org">Web Archive</a></li>
+<li><a href="https://web.archive.org">https://web.archive.org</a></li>
+<li><a href="https://chroniclingamerica.loc.gov">chroniclingamerica</a></li>
+<li><a href="https://chroniclingamerica.loc.gov">https://chroniclingamerica.loc.gov</a></li>
+<li><a href="https://www.britishnewspaperarchive.co.uk">britishnewspaperarchive</a></li>
+<li><a href="https://www.britishnewspaperarchive.co.uk">https://www.britishnewspaperarchive.co.uk</a></li>
+<li><a href="https://news.google.com/newspapers">Google Archive News</a></li>
+<li><a href="https://www.loc.gov/programs/veterans-history-project/about-this-program">LOC Library of Congress collects</a></li>
+<li><a href="https://www.loc.gov/programs/veterans-history-project/about-this-program">https://www.loc.gov/programs/veterans-history-project/about-this-program</a></li>
+<li><a href="https://www.europeana.eu/en/collections/topic/18-newspaper">europeana collection newspaper</a></li>
+<li><a href="https://gallica.bnf.fr/accueil/en/content/accueil-en?mode=desktop">BNF France</a></li>
+</ul>
+<h1 id="osint-measurement"><a class="header" href="#osint-measurement">OSINT Measurement</a></h1>
+<ul>
+<li><a href="https://www.timeanddate.com/moon">time&amp;date awesome calc and conveter list</a></li>
+<li><a href="https://www.timeanddate.com/moon">https://www.timeanddate.com/moon</a></li>
+<li><a href="https://www.smappen.com/app">smappen</a></li>
+<li><a href="https://www.smappen.com/app">https://www.smappen.com/app</a></li>
+<li><a href="https://earth.google.com">Google earth</a></li>
+<li><a href="https://earth.google.com">https://earth.google.com</a></li>
+<li><a href="https://imagemeasurement.online">imagemeasurement</a></li>
+<li><a href="https://imagemeasurement.online">https://imagemeasurement.online</a></li>
+<li><a href="https://support.apple.com/id-id/102468">Apple Measurement Apps</a></li>
+<li><a href="https://imagej.net/ij">imageJ</a></li>
+<li><a href="https://imagej.net/ij">https://imagej.net/ij</a></li>
+<li><a href="https://www.suncalc.org">suncalc</a></li>
+<li><a href="https://www.suncalc.org">https://www.suncalc.org</a></li>
+<li><a href="https://suncalc.net">suncalc 2</a></li>
+<li><a href="https://suncalc.net">https://suncalc.net</a></li>
+<li><a href="https://www.mooncalc.org">mooncalc</a></li>
+<li><a href="https://www.mooncalc.org">https://www.mooncalc.org</a></li>
+<li><a href="https://www.planetscalc.org">planetscalc</a></li>
+<li><a href="https://www.planetscalc.org">https://www.planetscalc.org</a></li>
+<li><a href="https://www.moonsighting.com">moonsighting</a></li>
+<li><a href="https://www.moonsighting.com">https://www.moonsighting.com</a></li>
+<li><a href="https://www.mooncalc.org/mooncalendar">mooncalendar</a></li>
+<li><a href="https://www.mooncalc.org/mooncalendar">https://www.mooncalc.org/mooncalendar</a></li>
+<li><a href="https://zhenyanghua.github.io/MeasureTool-GoogleMaps-V3">Google maps measurement</a></li>
+<li><a href="https://zhenyanghua.github.io/MeasureTool-GoogleMaps-V3">https://zhenyanghua.github.io/MeasureTool-GoogleMaps-V3</a></li>
+<li><a href="https://learn.microsoft.com/id-id/windows/powertoys/screen-ruler">Microsoft powertoys</a></li>
+<li><a href="https://www.ginifab.com/feeds/angle_measurement">Angle Measurement</a></li>
+<li><a href="https://www.ginifab.com/feeds/angle_measurement">https://www.ginifab.com/feeds/angle_measurement</a></li>
+<li><a href="https://drajmarsh.bitbucket.io/sunpath3d.html">sunpath3d</a></li>
+<li><a href="https://www.rapidtables.com/convert">rapidtables conveter calc</a></li>
+<li><a href="https://www.rapidtables.com/convert">https://www.rapidtables.com/convert</a></li>
+<li><a href="https://www.dcode.fr/en">dcode fr awesome calc and conveter</a></li>
+<li><a href="https://unsaferguard.org/un-saferguard/blast-damage-estimation">unsaferguard Blast Damage Estimation</a></li>
+<li><a href="https://nuclearsecrecy.com/nukemap">nukemap nuclear damage estimation</a></li>
+<li><a href="https://nuclearsecrecy.com/nukemap">https://nuclearsecrecy.com/nukemap</a></li>
+<li><a href="https://nuclearweaponsedproj.mit.edu/nuclear-weapons-blast-effects-calculator">nuclearweaponsedproj blast effects calc</a></li>
+<li><a href="https://nuclearweaponsedproj.mit.edu/nuclear-weapons-blast-effects-calculator">https://nuclearweaponsedproj.mit.edu/nuclear-weapons-blast-effects-calculator</a></li>
+<li><a href="https://outrider.org">outrider sains nuclear weapon estimate calc</a></li>
+<li><a href="https://outrider.org">https://outrider.org</a></li>
+<li><a href="https://www.mapchecking.com">MapChecking Crowd counting tool</a></li>
+<li><a href="https://www.mapchecking.com">https://www.mapchecking.com</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../discovery/searchers_scrapers_extractors_parsers.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../discovery/WEATHER_NATURE.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../discovery/searchers_scrapers_extractors_parsers.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../discovery/WEATHER_NATURE.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

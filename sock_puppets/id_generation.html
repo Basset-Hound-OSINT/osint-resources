@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ID Generation - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li><a href="https://www.lastpass.com/features/username-generator">Username Generator</a></li>
+<li><a href="https://www.fakenamegenerator.com">Fake Name Generator</a></li>
+<li><a href="https://thisresumedoesnotexist.com">Resume Generator</a></li>
+<li><a href="https://www.behindthename.com/random">International Name Generator</a></li>
+<li><a href="https://wpimeigenerator.github.io">Windows Phone IMEI Generator</a></li>
+<li><a href="https://dyrk.org/tools/imei">IMEI Number Generator</a></li>
+<li><a href="https://www.elfqrin.com/usssndriverlicenseidgen.php">US SSN / Driver License / State ID / Passport / Tax ID Generator</a></li>
+<li><a href="https://mmarvick.github.io/wa-drivers-license">Washington State Driver’s License Generator</a></li>
+<li><a href="https://fakeinfo.net/drivers-license-generator">Fake Drivers License Generator</a></li>
+<li><a href="https://thisrentaldoesnotexist.com">This Rental Does Not Exist</a></li>
+<li><a href="https://thispersondoesnotexist.com">Face Photo Generator</a></li>
+<li><a href="https://fakeinfo.net/random-face-generator">Random Face Generator</a></li>
+<li><a href="https://www.fakenamegenerator.com/credit-card-validator.php">Credit Card Generator</a></li>
+<li><a href="https://www.allredtech.com">PIC/CIC Code Database</a></li>
+<li><a href="https://www.fakenamegenerator.com/social-insurance-number.php">SIN Generator</a></li>
+<li><a href="https://www.fakenamegenerator.com/aba-validator.php">ABA Generator</a></li>
+<li><a href="https://www.fakenamegenerator.com/vehicle-identification-number.php">VIN Generator</a></li>
+<li><a href="https://www.fakenamegenerator.com/national-insurance-number.php">NINO Generator</a></li>
+<li><a href="https://www.fakenamegenerator.com/social-security-number.php">SSN Generator</a></li>
+<li><a href="https://georgybu.github.io/IID_Generator">IID Generator by Georgy Bunin</a></li>
+<li><a href="https://richardkundl.github.io/shortguid">GUID/UUID and short GUID generator</a></li>
+<li><a href="https://zelark.github.io/nano-id-cc">Nano ID CC</a></li>
+<li><a href="https://chris927.github.io/generate-sa-idnumbers">Generate SA ID Numbers</a></li>
+<li><a href="https://stevemorse.org/ssn/ssn.html">Decoding Social Security Numbers</a></li>
+<li><a href="https://stevemorse.org/dl/dl.html">Encoding and Decoding Driver’s License Numbers</a></li>
+<li><a href="https://www.dating-profile-generator.org.uk">Dating Profile Generator</a></li>
+<li><a href="https://www.elfqrin.com/fakeid.php">Fake Identity ID Random Name Generator</a></li>
+<li><a href="https://fakeinfo.net/company-name-generator">Fake Company Name Generator</a></li>
+<li><a href="https://fakeinfo.net/fake-twitter-profile-generator">Twitter Profile Generator</a></li>
+<li><a href="https://fakeinfo.net/fake-tiktok-profile-generator">Fake Tiktok Profile Generator</a></li>
+<li><a href="https://fakeinfo.net/fake-youtube-channel-generator">Fake Youtube Channel Generator</a></li>
+<li><a href="https://vinaysomawat.github.io/Resume-Builder">Resume Builder</a></li>
+<li><a href="https://fauxid.com/tools">Fake Generator Tools</a></li>
+</ul>
+<h1 id="build-sockpuppet-accounts"><a class="header" href="#build-sockpuppet-accounts">Build Sockpuppet Accounts</a></h1>
+<ul>
+<li><a href="https://www.osintcurio.us/2018/12/27/the-puppeteer">How to build sockpupper account</a></li>
+<li><a href="https://www.osintcurio.us/2018/12/27/the-puppeteer">https://www.osintcurio.us/2018/12/27/the-puppeteer</a></li>
+<li><a href="https://www.thispersondoesnotexist.com">Thispersondoesnotexist</a></li>
+<li><a href="https://www.thispersondoesnotexist.com">https://www.thispersondoesnotexist.com</a></li>
+<li><a href="https://protonmail.com">Protonmail</a></li>
+<li><a href="https://protonmail.com">https://protonmail.com</a></li>
+<li><a href="https://nordvpn.com">Nordvpn</a></li>
+<li><a href="https://nordvpn.com">https://nordvpn.com</a></li>
+<li><a href="https://www.bignox.com">NOX</a></li>
+<li><a href="https://www.bignox.com">https://www.bignox.com</a></li>
+<li><a href="https://nordvpn.com/blog/use-these-browser-extensions-for-your-privacy">Browser Extension</a></li>
+<li><a href="https://nordvpn.com/blog/use-these-browser-extensions-for-your-privacy">https://nordvpn.com/blog/use-these-browser-extensions-for-your-privacy</a></li>
+<li><a href="https://www.mintmobile.com">Burner Phone Number</a></li>
+<li><a href="https://www.mintmobile.com">https://www.mintmobile.com</a></li>
+<li><a href="https://www.phoneburner.com">Phone Burner</a></li>
+<li><a href="https://www.phoneburner.com">https://www.phoneburner.com</a></li>
+<li><a href="https://hushed.com">Hushed</a></li>
+<li><a href="https://hushed.com">https://hushed.com</a></li>
+<li><a href="https://temporary-phone-number.com">Temp Phone Number</a></li>
+<li><a href="https://temporary-phone-number.com">https://temporary-phone-number.com</a></li>
+<li><a href="https://sms-activate.org/en">Temp Phone Number and SMS activate</a></li>
+<li><a href="https://temp-number.org">Temp Phone Number SMS Receive</a></li>
+<li><a href="https://temp-number.org">https://temp-number.org</a></li>
+<li><a href="https://www.dingtone.me">dingtone Second Phone Number</a></li>
+<li><a href="https://www.dingtone.me">https://www.dingtone.me</a></li>
+<li><a href="https://www.call.com">call Second Phone Number</a></li>
+<li><a href="https://www.call.com">https://www.call.com</a></li>
+<li><a href="https://mail.tm/en">Temp Mail 1</a></li>
+<li><a href="https://mail.tm/en">https://mail.tm/en</a></li>
+<li><a href="https://temp-mail.org/en">Temp Mail 2</a></li>
+<li><a href="https://temp-mail.org/en">https://temp-mail.org/en</a></li>
+<li><a href="https://tempmailo.com">Temp Mail 3</a></li>
+<li><a href="https://tempmailo.com">https://tempmailo.com</a></li>
+<li><a href="https://www.guerrillamail.com">Temp Mail 4</a></li>
+<li><a href="https://www.guerrillamail.com">https://www.guerrillamail.com</a></li>
+<li><a href="https://www.mailinator.com">Temp Mail 5</a></li>
+<li><a href="https://www.mailinator.com">https://www.mailinator.com</a></li>
+<li><a href="https://tempmail.so">Temp Mail 6</a></li>
+<li><a href="https://tempmail.so">https://tempmail.so</a></li>
+<li><a href="https://www.getmonero.org">Cryptocurrency Payment Monero</a></li>
+<li><a href="https://www.getmonero.org">https://www.getmonero.org</a></li>
+<li><a href="https://bitcoin.org/en">Cryptocurrency Payment Bitcoin</a></li>
+<li><a href="https://bitcoin.org/en">https://bitcoin.org/en</a></li>
+<li><a href="https://www.openpgp.org">Openpgp</a></li>
+<li><a href="https://www.openpgp.org">https://www.openpgp.org</a></li>
+<li><a href="https://tails.boum.org">Operating System</a></li>
+<li><a href="https://tails.boum.org">https://tails.boum.org</a></li>
+<li><a href="https://zmail.sourceforge.net">Zmail</a></li>
+<li><a href="https://zmail.sourceforge.net">https://zmail.sourceforge.net</a></li>
+<li><a href="https://www.opendns.com/home-internet-security">Open DNS</a></li>
+<li><a href="https://www.opendns.com/home-internet-security">https://www.opendns.com/home-internet-security</a></li>
+<li><a href="https://geti2p.net/en">I2P</a></li>
+<li><a href="https://geti2p.net/en">https://geti2p.net/en</a></li>
+<li><a href="https://www.torproject.org/download">TOR</a></li>
+<li><a href="https://www.torproject.org/download">https://www.torproject.org/download</a></li>
+<li><a href="https://www.kali.org/tools/proxychains-ng">proxychains</a></li>
+<li><a href="https://www.kali.org/tools/proxychains-ng">https://www.kali.org/tools/proxychains-ng</a></li>
+<li><a href="https://support.apple.com/id-id/guide/iphone/iph049680987/ios">Apple Kuncitara - Securing your own device</a></li>
+<li><a href="https://www.synthesia.io/free-ai-video-demo#OptimizedForSharing_New">AI Vidio Maker</a></li>
+<li><a href="https://fakeinfo.net">fakeinfo</a></li>
+<li><a href="https://fakeinfo.net">https://fakeinfo.net</a></li>
+<li><a href="https://online-sms.org">Online SMS</a></li>
+<li><a href="https://online-sms.org">https://online-sms.org</a></li>
+<li><a href="https://www.fakepersongenerator.com/fake-name-generator">fakepersongenerator</a></li>
+<li><a href="https://github.com/freedomofpress/dangerzone">dangerzone - Securing your own device</a></li>
+<li><a href="https://coveryourtracks.eff.org">coveryourtracks - Securing your own device</a></li>
+<li><a href="https://coveryourtracks.eff.org">https://coveryourtracks.eff.org</a></li>
+<li><a href="https://nik.zakiego.com">NIK creator ID</a></li>
+<li><a href="https://nik.zakiego.com">https://nik.zakiego.com</a></li>
+<li><a href="https://web.archive.org/web/20241204174239/https://www.scribd.com/document/402863097/Nik-Kk-Generator">NIK &amp; KK ID Generator</a></li>
+<li><a href="https://github.com/veldanava/EKTP-Generator">EKTP-Generator ID</a></li>
+<li><a href="https://www.capcut.com/templates/FAKE-KTP-7231021297839475969?template_scale=360%3A227">FAKE KTP ID</a></li>
+<li><a href="https://developers.google.com/safe-browsing?hl=id">Google Safe Browsing</a></li>
+<li><a href="https://github.com/s0md3v/roop">Roop Image face swap from AI</a></li>
+<li><a href="https://github.com/iperov/DeepFaceLive">DeepFaceLive</a></li>
+<li><a href="https://github.com/iperov/DeepFaceLab">DeepFaceLab</a></li>
+<li><a href="https://docs.facefusion.io/installation/platform/windows">Facefusion</a></li>
+<li><a href="https://github.com/s0md3v/roop/wiki">Roop</a></li>
+<li><a href="https://github.com/sensity-ai/dot">Deepfake Offensive Toolkit</a></li>
+<li><a href="https://huggingface.co">huggingface</a></li>
+<li><a href="https://huggingface.co">https://huggingface.co</a></li>
+<li><a href="https://deepfakesweb.com">deepfakesweb</a></li>
+<li><a href="https://deepfakesweb.com">https://deepfakesweb.com</a></li>
+<li><a href="https://swapface.org/#/home">Swapface</a></li>
+<li><a href="https://liveportrait.org">liveportrait animate your photo</a></li>
+<li><a href="https://liveportrait.org">https://liveportrait.org</a></li>
+<li><a href="https://github.com/KwaiVGI/LivePortrait">LivePortrait</a></li>
+<li><a href="https://obsproject.com">OBS</a></li>
+<li><a href="https://obsproject.com">https://obsproject.com</a></li>
+<li><a href="https://splitcam.com">splitcam</a></li>
+<li><a href="https://splitcam.com">https://splitcam.com</a></li>
+<li><a href="https://altercam.com">altercam</a></li>
+<li><a href="https://altercam.com">https://altercam.com</a></li>
+<li><a href="https://apkcombo.com/id/virtual-camera-live-assist/virtual.camera.app/download/apk">Virtual cam apk mod</a></li>
+<li><a href="https://vcames.xyz">vcamare - CN</a></li>
+<li><a href="https://vcames.xyz">https://vcames.xyz</a></li>
+<li><a href="https://github.com/Xposed-Modules-Repo/com.example.vcam">virtual camera moudle lsposed</a></li>
+<li><a href="https://github.com/w2016561536/android_virtual_cam">android virtual cam - CN</a></li>
+<li><a href="https://github.com/hacksider/Deep-Live-Cam">Deep-Live-Cam</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../sock_puppets/throw_away.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../sock_puppets/management.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../sock_puppets/throw_away.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../sock_puppets/management.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

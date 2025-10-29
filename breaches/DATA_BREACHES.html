@@ -1,0 +1,528 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Data Breaches - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li><a href="https://scamsearch.io">ScamSearch</a></li>
+<li><a href="https://portal.spycloud.com/endpoint/enriched-stats/%5BYOUR-MAIL%5D">spycloud</a></li>
+<li><a href="https://findemail.io">Findemail.io</a></li>
+</ul>
+<h2 id="dataset"><a class="header" href="#dataset">DATASET</a></h2>
+<ul>
+<li><a href="https://datasetsearch.research.google.com">Datasetsearch.research.google.com</a></li>
+<li><a href="https://databasd.com/search">Databasd</a></li>
+<li><a href="https://www.data.gov">Data.gov</a></li>
+<li><a href="https://data.world">data.world</a></li>
+<li><a href="https://cloud.google.com/bigquery/public-data">BigQuery public datasets</a></li>
+<li><a href="https://www.datasciencecentral.com/page/search">DSC Data Science Search Engine</a></li>
+<li><a href="https://www.datasetlist.com">Datasetlist.com</a></li>
+<li><a href="https://datahub.io/search">Search Datasets</a></li>
+<li><a href="https://opensanctions.org">Opensanctions.org</a></li>
+<li><a href="https://www.kaggle.com/search?q=">Kaggle</a></li>
+</ul>
+<h2 id="data-dump"><a class="header" href="#data-dump">DATA DUMP</a></h2>
+<ul>
+<li><a href="https://xjypo5vzgmo7jca6b322dnqbsdnp3amd24ybx26x5nxbusccjkm4pwid.onion.pet">DeepSearch</a></li>
+<li><a href="https://cybernews.com/personal-data-leak-check">Personal Data Leak Checker</a></li>
+<li><a href="https://ddosecrets.com/wiki/Special:AllPages">DDoSecrets</a></li>
+<li><a href="https://www.snusbase.com">Snusbase</a></li>
+<li><a href="https://ashley.cynic.al">Ashley Madison hacked email checker</a></li>
+<li><a href="https://checkashleymadison.com">Search Ashley Madison Leaked Data</a></li>
+<li><a href="https://wikileaks.org/sony/emails">Sony Archives</a></li>
+</ul>
+<h2 id="breaches"><a class="header" href="#breaches">Breaches</a></h2>
+<ul>
+<li>
+<p><a href="https://btdig.com/search?order=0&amp;q=">Btdig</a></p>
+</li>
+<li>
+<p><a href="https://cavalier.hudsonrock.com/api/json/v2/preview/search-by-login/osint-tools?email=">Cavalier</a></p>
+</li>
+<li>
+<p><a href="https://check.cybernews.com/chk/?lang=en_US&amp;e=">Check</a></p>
+</li>
+<li>
+<p><a href="https://decrypt.tools/client-server/decrypt?type=md5&amp;string=">Decrypt</a></p>
+</li>
+<li>
+<p><a href="https://decrypt.tools/client-server/decrypt?type=sha1&amp;string=">Decrypt</a></p>
+</li>
+<li>
+<p><a href="https://dehashed.com/search?query=">Dehashed</a></p>
+</li>
+<li>
+<p><a href="https://haveibeenpwned.com/unifiedsearch">Haveibeenpwned</a></p>
+</li>
+<li>
+<p><a href="https://intelx.io/?s=">Intelx</a></p>
+</li>
+<li>
+<p><a href="https://md5.gromweb.com/?md5=">Md5</a></p>
+</li>
+<li>
+<p><a href="https://portal.spycloud.com/endpoint/enriched-stats">Portal</a></p>
+</li>
+<li>
+<p><a href="https://psbdmp.ws/api/search">Psbdmp</a></p>
+</li>
+<li>
+<p><a href="https://sha1.gromweb.com/?hash=">Sha1</a></p>
+</li>
+<li>
+<p><a href="https://www.hudsonrock.com/search?domain=">Hudsonrock</a></p>
+</li>
+<li>
+<p><a href="https://www.nitrxgen.net/md5db">Nitrxgen</a></p>
+</li>
+<li>
+<p><a href="https://www.shodan.io/search?query=product%3Aelastic+port%3A9200+">Shodan</a></p>
+</li>
+<li>
+<p><a href="https://github.com/megadose/Quidam">Quidam - Forgotten password info retrieval</a></p>
+</li>
+<li>
+<p><a href="https://github.com/unethicalnoob/BBHTv2">BBHTv2 - Bug Bounty Hunting Tools</a></p>
+</li>
+<li>
+<p><a href="https://github.com/privtools/ransomposts">Ransomware groups posts</a></p>
+</li>
+<li>
+<p><a href="https://github.com/megadose/holehe">Holehe - Email checker</a></p>
+</li>
+<li>
+<p><a href="https://github.com/megadose/holehe-maltego">Holehe Maltego Transform</a></p>
+</li>
+<li>
+<p><a href="https://github.com/amaurymartiny/check-if-email-exists">Check if email exists</a></p>
+</li>
+<li>
+<p><a href="https://github.com/loseys/Oblivion">Oblivion - Data leak monitoring</a></p>
+</li>
+</ul>
+<h3 id="credentials"><a class="header" href="#credentials">Credentials</a></h3>
+<ul>
+<li><a href="https://haveibeenpwned.com/">Have I Been Pwned</a> - Check if your email or phone is in a data breach</li>
+<li><a href="https://www.dehashed.com/">Dehashed</a> - Free deep-web scans and protection against credential leaks</li>
+<li><a href="https://leakcheck.io/">LeakCheck.io</a> - Make sure your credentials haven't been compromised</li>
+<li><a href="https://crackstation.net/">crackstation.net</a> -Massive pre-computed lookup tables to crack password hashes</li>
+<li><a href="https://hashkiller.io/listmanager">HashKiller</a> - Pre-cracked Hashes, easily searchable</li>
+<li><a href="https://leakedpassword.com/">LeakedPassword</a> - Search across multiple data breaches to see if your pass has been compromised</li>
+<li><a href="https://bugmenot.com/">BugMeNot</a> - Find and share logins</li>
+<li><a href="https://hashes.com/en/decrypt/hash">Hashes.com</a> - Decrypt and crack your MD5, SHA1, SHA256, MySQL, MD5 Email, SHA256 Email, and NTLM hashes for free online</li>
+<li><a href="https://hashmob.net/search">Hashmob</a> - The Largest Password Recovery Community</li>
+<li><a href="https://whiteintel.io/">WhiteIntel</a> - Check if a company or its customers was victim of an information stealer malware</li>
+<li><a href="https://ntlm.pw/">ntlm.pw</a> - Instantly look up NTLM hashes and resolve them to plaintext passwords using our database with 8B+ entries</li>
+<li><a href="https://www.hudsonrock.com/threat-intelligence-cybercrime-tools">Hudson Rock</a> - Use Hudson Rock’s free cybercrime intelligence tools to learn how compromised credentials are impacting your business</li>
+<li><a href="https://hackedlist.io/">hackedlist.io</a> - Enter your domain to find credentials compromised by info-stealer malware</li>
+<li><a href="https://haveibeensold.app/">HaveIBeenSold</a> - Lets you find out whether or not your email has been sold to third parties</li>
+<li><a href="https://leak.sx/">Leak.sx</a> - The best leaked accounts website you always wanted</li>
+<li><a href="https://scatteredsecrets.com/">ScatteredSecrets</a> - Search data breaches to see if your password has been compromised</li>
+</ul>
+<h3 id="leaks"><a class="header" href="#leaks">Leaks</a></h3>
+<ul>
+<li><a href="https://wikileaks.org/">WikiLeaks</a> - News leaks and classified media provided by anonymous sources</li>
+<li><a href="https://leak-lookup.com/">Leak-Lookup</a> - Search across thousands of data breaches</li>
+<li><a href="https://snusbase.com/">Snusbase</a> - Stay on top of the latest database breaches</li>
+<li><a href="https://weleakinfo.io/">Weleakinfo</a> - View dehashed breached databases</li>
+<li><a href="https://breachdirectory.org/">breachdirectory.org</a> - Check if your information was exposed in a data breach</li>
+<li><a href="https://breachforums.st/">BreachForums</a> - Breaches, Data leaks, databases and more</li>
+<li><a href="siphondkh34l5vki.onion/">Siph0n Breach DB (onionsite)</a> - Breaches, Data leaks, Exploits</li>
+<li><a href="https://exposed.vc/">Exposed Forum</a> - The premier Databreach discussion &amp; leaks forum</li>
+<li><a href="https://ddosecrets.com/">Distributed Denial of Secrets</a> - Journalist 501(c)(3) non-profit devoted to publishing and archiving leaks</li>
+<li><a href="https://haveibeenzuckered.com/">Have I Been Zuckered</a> - Facebook Data Breach Checker</li>
+<li><a href="https://cryptome.org/">Cryptome</a> - Documents for publication that are prohibited by governments worldwide</li>
+<li><a href="https://leakpeek.com/">LeakPeek</a> - Search for your publicly leaked passwords using an email or username, secure your personal data</li>
+<li><a href="https://breachcheck.io/">BreachCheck.io</a> - Free service for consumers that allows you to check and download a list of your personal data exposed in various databreaches</li>
+<li><a href="https://data.occrp.org/">OCCRP Aleph</a> - The global archive of research material for investigative reporting</li>
+<li><a href="https://leakradar.io/">LeakRadar</a> - We collect publicly published infostealer logs so you can quickly check if your email credentials have been compromised</li>
+<li><a href="https://offshoreleaks.icij.org/">Offshore Leaks</a> - Find out who's behind more than 800000 offshore companies, foundations and trusts from ICIJ's investigations</li>
+</ul>
+<h3 id="hidden-services"><a class="header" href="#hidden-services">Hidden Services</a></h3>
+<ul>
+<li><a href="https://ahmia.fi/">AHMIA</a> - Search hidden services on the Tor network</li>
+<li><a href="https://thehiddenwiki.org/">thehiddenwiki.org</a> - The darknet guide</li>
+<li><a href="https://tor.link/">tor.link</a> - Free anonymous deepweb / Darknet search engine</li>
+<li><a href="https://deepweblinks.net/">deepweblinks.net</a> - Onion Links</li>
+<li><a href="https://onionengine.com/">onionengine.com</a> - A search engine for services accessible on the Tor network</li>
+<li><a href="https://onionlandsearchengine.net/">OnionLand</a> - Discover Hidden Services and access to Tor's onion sites</li>
+</ul>
+<h1 id="collection-dataset"><a class="header" href="#collection-dataset">Collection Dataset</a></h1>
+<ul>
+<li><a href="https://www.kaggle.com">Kaggle</a></li>
+<li><a href="https://www.kaggle.com">https://www.kaggle.com</a></li>
+<li><a href="https://rapidapi.com/hub">RAPID API Collection</a></li>
+<li><a href="https://www.exploit-db.com/google-hacking-database">Exploit Database</a></li>
+<li><a href="https://registry.opendata.aws">AWS open data</a></li>
+<li><a href="https://registry.opendata.aws">https://registry.opendata.aws</a></li>
+<li><a href="https://www.opendatanetwork.com">Open Network</a></li>
+<li><a href="https://www.opendatanetwork.com">https://www.opendatanetwork.com</a></li>
+<li><a href="https://www.who.int/data/gho">WHO Data</a></li>
+<li><a href="https://www.who.int/data/gho">https://www.who.int/data/gho</a></li>
+<li><a href="https://github.com/gigz/gpt-osint">Gpt OSINT</a></li>
+<li><a href="https://data.humdata.org/dataset">Humdata</a></li>
+<li><a href="https://datasetsearch.research.google.com">datasetsearch</a></li>
+<li><a href="https://datasetsearch.research.google.com">https://datasetsearch.research.google.com</a></li>
+<li><a href="https://start.me/p/DPYPMz/the-ultimate-osint-collection">OSINT Collection</a></li>
+<li><a href="https://academictorrents.com">Academic Torrent</a></li>
+<li><a href="https://academictorrents.com">https://academictorrents.com</a></li>
+<li><a href="https://github.com/microsoft/GlobalMLBuildingFootprints">Microsoft Building Fingerprints</a></li>
+<li><a href="https://www.maxar.com/open-data">MAXAR Satellite imagery</a></li>
+<li><a href="https://www.nesdis.noaa.gov/real-time-imagery/imagery-collections">Satellite Collection</a></li>
+<li><a href="https://public.openmeasures.io">Open measure</a></li>
+<li><a href="https://public.openmeasures.io">https://public.openmeasures.io</a></li>
+<li><a href="https://fiugis.maps.arcgis.com/home/search.html?restrict=false&amp;sortField=relevance&amp;sortOrder=desc&amp;categories=%2FCategories%2FLocation#content">Fiugis</a></li>
+<li><a href="https://earth.esa.int/eogateway">Earth ESA</a></li>
+<li><a href="https://www.google.com/publicdata/directory">Google Public Data</a></li>
+<li><a href="https://paperswithcode.com">paperswithcode</a></li>
+<li><a href="https://paperswithcode.com">https://paperswithcode.com</a></li>
+<li><a href="https://www.bps.go.id/id">ID BPS</a></li>
+<li><a href="https://data.go.id/home">ID data Kementrian &amp; Lembaha Dataset</a></li>
+<li><a href="https://shadowdragon.io">ShadowDragon</a></li>
+<li><a href="https://shadowdragon.io">https://shadowdragon.io</a></li>
+<li><a href="https://www.datasetlist.com">datasetlist</a></li>
+<li><a href="https://www.datasetlist.com">https://www.datasetlist.com</a></li>
+<li><a href="https://roboflow.com">roboflow</a></li>
+<li><a href="https://roboflow.com">https://roboflow.com</a></li>
+<li><a href="https://databoks.katadata.co.id">databoks katadata ID</a></li>
+<li><a href="https://databoks.katadata.co.id">https://databoks.katadata.co.id</a></li>
+<li><a href="https://developers.google.com/earth-engine/datasets">Google Engine Dataset</a></li>
+<li><a href="https://code.highcharts.com/mapdata">All world geojson data</a></li>
+<li><a href="https://code.highcharts.com/mapdata">https://code.highcharts.com/mapdata</a></li>
+<li><a href="https://www.statista.com">statista</a></li>
+<li><a href="https://www.statista.com">https://www.statista.com</a></li>
+<li><a href="https://data.worldbank.org">World Bank Open Data</a></li>
+<li><a href="https://data.worldbank.org">https://data.worldbank.org</a></li>
+<li><a href="https://www.iceye.com/resources/datasets">iceye sat dataset</a></li>
+<li><a href="https://app.gigasheet.com/datasets">gigasheet</a></li>
+<li><a href="https://data.techforpalestine.org">techforpalestine</a></li>
+<li><a href="https://data.techforpalestine.org">https://data.techforpalestine.org</a></li>
+<li><a href="https://genocide.club">genocide</a></li>
+<li><a href="https://genocide.club">https://genocide.club</a></li>
+<li><a href="https://data.world/search?q=">data world</a></li>
+<li><a href="https://satudata.kemnaker.go.id/data">KEMNAKER ID</a></li>
+<li><a href="https://puslitdatin.bnn.go.id/portfolio/data-statistik-kasus-narkoba">BNN ID</a></li>
+<li><a href="https://puslitdatin.bnn.go.id/portfolio/data-statistik-kasus-narkoba">https://puslitdatin.bnn.go.id/portfolio/data-statistik-kasus-narkoba</a></li>
+<li><a href="https://planetarycomputer.microsoft.com/dataset/ms-buildings">Microsoft Building Dataset</a></li>
+<li><a href="https://huggingface.co">huggingface</a></li>
+<li><a href="https://huggingface.co">https://huggingface.co</a></li>
+<li><a href="https://goodstats.id">goodstats ID</a></li>
+<li><a href="https://goodstats.id">https://goodstats.id</a></li>
+<li><a href="https://ransomwhe.re/#report">ransomwhe Browse ransomware data</a></li>
+<li><a href="https://botometer.osome.iu.edu/bot-repository/datasets.html">botometer Twitter bot dataset</a></li>
+<li><a href="https://github.com/sdr-enthusiasts/plane-alert-db">Aircraft Mil Dataset</a></li>
+<li><a href="https://datareportal.com">datareportal</a></li>
+<li><a href="https://datareportal.com">https://datareportal.com</a></li>
+<li><a href="https://medgismar.rempec.org">medgismar GIS</a></li>
+<li><a href="https://medgismar.rempec.org">https://medgismar.rempec.org</a></li>
+<li><a href="https://ee-ollielballinger.projects.earthengine.app/view/gazadamage">Conflict Gaza damage</a></li>
+<li><a href="https://resourcewatch.org/data/explore">resourcewatch</a></li>
+<li><a href="https://openmeasures.io">Open Measures Database</a></li>
+<li><a href="https://openmeasures.io">https://openmeasures.io</a></li>
+<li><a href="https://planet.openstreetmap.org/planet">planet openstreetmap</a></li>
+<li><a href="https://planet.openstreetmap.org/planet">https://planet.openstreetmap.org/planet</a></li>
+<li><a href="https://hub.arcgis.com/search?collection=Dataset">arcgis dataset</a></li>
+<li><a href="https://atlasofsurveillance.org">atlasofsurveillance</a></li>
+<li><a href="https://atlasofsurveillance.org">https://atlasofsurveillance.org</a></li>
+</ul>
+<h1 id="data-breached-osint"><a class="header" href="#data-breached-osint">Data Breached OSINT</a></h1>
+<ul>
+<li><a href="https://github.com/clats97/clatscope">clatscope</a></li>
+<li><a href="https://hackedlist.io">hackedlist</a></li>
+<li><a href="https://hackedlist.io">https://hackedlist.io</a></li>
+<li><a href="https://www.dehashed.com">Dehashed</a></li>
+<li><a href="https://www.dehashed.com">https://www.dehashed.com</a></li>
+<li><a href="https://haveibeenpwned.com">Haveibeenpwned</a></li>
+<li><a href="https://haveibeenpwned.com">https://haveibeenpwned.com</a></li>
+<li><a href="https://intelx.io">Intelligence X</a></li>
+<li><a href="https://intelx.io">https://intelx.io</a></li>
+<li><a href="https://wikileaks.org">Wiki Leaks</a></li>
+<li><a href="https://wikileaks.org">https://wikileaks.org</a></li>
+<li><a href="https://ddosecrets.com/wiki/Distributed_Denial_of_Secrets">DDO Secrets</a></li>
+<li><a href="https://breached.to">Breached</a></li>
+<li><a href="https://breached.to">https://breached.to</a></li>
+<li><a href="https://www.stealthmole.com/products/darkweb-tracker">Stealthmole</a></li>
+<li><a href="https://doxbin.com">Doxbin</a></li>
+<li><a href="https://doxbin.com">https://doxbin.com</a></li>
+<li><a href="https://search.0t.rocks">Search0t</a></li>
+<li><a href="https://search.0t.rocks">https://search.0t.rocks</a></li>
+<li><a href="https://search.0t.rocks/map">Search0t MAP</a></li>
+<li><a href="https://github.com/Ekultek/WhatBreach">What Breach</a></li>
+<li><a href="https://breachdirectory.org">Breach Directory</a></li>
+<li><a href="https://breachdirectory.org">https://breachdirectory.org</a></li>
+<li><a href="https://snusbase.com">Snusbase</a></li>
+<li><a href="https://snusbase.com">https://snusbase.com</a></li>
+<li><a href="https://flare.io">Flare</a></li>
+<li><a href="https://flare.io">https://flare.io</a></li>
+<li><a href="https://leak-lookup.com">Leaklookup</a></li>
+<li><a href="https://leak-lookup.com">https://leak-lookup.com</a></li>
+<li><a href="https://github.com/carlospolop/Pastos">Pastos</a></li>
+<li><a href="https://blackkite.com/community">Blackkite</a></li>
+<li><a href="https://blackkite.com/community">https://blackkite.com/community</a></li>
+<li><a href="https://haveibeenzuckered.com">Facebook Data Breach Cheker</a></li>
+<li><a href="https://haveibeenzuckered.com">https://haveibeenzuckered.com</a></li>
+<li><a href="https://github.com/thewhiteh4t/pwnedOrNot">pwnedOrNot</a></li>
+<li><a href="https://intel471.com">Intel471</a></li>
+<li><a href="https://intel471.com">https://intel471.com</a></li>
+<li><a href="https://www.maltego.com/transform-hub/socialnet">Maltego Transform ShadowDragon</a></li>
+<li><a href="https://www.maltego.com/transform-hub/socialnet">https://www.maltego.com/transform-hub/socialnet</a></li>
+<li><a href="https://offshoreleaks.icij.org">offshoreleaks</a></li>
+<li><a href="https://offshoreleaks.icij.org">https://offshoreleaks.icij.org</a></li>
+<li><a href="https://proxynova.com/tools/comb">proxynova password breach</a></li>
+<li><a href="https://proxynova.com/tools/comb">https://proxynova.com/tools/comb</a></li>
+<li><a href="https://whiteintel.io">WhiteIntel</a></li>
+<li><a href="https://whiteintel.io">https://whiteintel.io</a></li>
+<li><a href="https://leaked.domains">Leaked Domain</a></li>
+<li><a href="https://leaked.domains">https://leaked.domains</a></li>
+<li><a href="https://cybdetective.com/pastebin.html">cybdetective pastebin</a></li>
+<li><a href="https://github.com/infobyte/emploleaks">emploleaks</a></li>
+<li><a href="https://databreaches.net">databreaches</a></li>
+<li><a href="https://databreaches.net">https://databreaches.net</a></li>
+<li><a href="https://osint.lolarchiver.com/#">lolarchiver</a></li>
+<li><a href="https://leakcheck.io">Leakcheck</a></li>
+<li><a href="https://leakcheck.io">https://leakcheck.io</a></li>
+<li><a href="https://exposed.lol">exposed</a></li>
+<li><a href="https://exposed.lol">https://exposed.lol</a></li>
+<li><a href="https://oathnet.ru">oathnet</a></li>
+<li><a href="https://oathnet.ru">https://oathnet.ru</a></li>
+<li><a href="https://sn0int.com/r/kpcyrd/pwndb-domains">sn0int pwndb-domains</a></li>
+<li><a href="https://sn0int.com/r/kpcyrd/pwndb-emails">sn0int pwndb-emails</a></li>
+<li><a href="https://trufflesecurity.com/trufflehog">trufflehog</a></li>
+<li><a href="https://9ghz.com">9ghz</a></li>
+<li><a href="https://9ghz.com">https://9ghz.com</a></li>
+<li><a href="https://leakpeek.com">leakpeek</a></li>
+<li><a href="https://leakpeek.com">https://leakpeek.com</a></li>
+<li><a href="https://weleakinfo.io">weleakinfo</a></li>
+<li><a href="https://weleakinfo.io">https://weleakinfo.io</a></li>
+<li><a href="https://leakradar.io">leakradar</a></li>
+<li><a href="https://leakradar.io">https://leakradar.io</a></li>
+<li><a href="https://leakedpassword.com">leakedpassword</a></li>
+<li><a href="https://leakedpassword.com">https://leakedpassword.com</a></li>
+<li><a href="https://scatteredsecrets.com">scatteredsecrets</a></li>
+<li><a href="https://scatteredsecrets.com">https://scatteredsecrets.com</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../political_economic/CRYPTO_CURRENCIES.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../breaches/PASSWORDS_HASHES.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../political_economic/CRYPTO_CURRENCIES.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../breaches/PASSWORDS_HASHES.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

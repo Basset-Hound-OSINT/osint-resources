@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Document &amp; Text Processing - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="documents"><a class="header" href="#documents">Documents</a></h2>
+<ul>
+<li><a href="https://archive.org/search.php?query=">Archive</a></li>
+<li><a href="https://buckets.grayhatwarfare.com/results">Buckets</a></li>
+<li><a href="https://core.ac.uk/search/?q=">Core</a></li>
+<li><a href="https://search.wikileaks.org/?query=">Search</a></li>
+<li><a href="https://www.google.com/search?q=ext%3Adoc+OR+ext%3Adocx+">Google</a></li>
+<li><a href="https://www.google.com/search?q=ext%3Ajpg+OR+ext%3Ajpeg+OR+ext%3Apng+">Google</a></li>
+<li><a href="https://www.google.com/search?q=ext%3Amp3+OR+ext%3Awav+OR+ext%3Aflac+">Google</a></li>
+<li><a href="https://www.google.com/search?q=ext%3Ampg+OR+ext%3Ampeg+OR+ext%3Amp4+">Google</a></li>
+<li><a href="https://www.google.com/search?q=ext%3Aodt+OR+ext%3Aods+OR+ext%3Aodp+">Google</a></li>
+<li><a href="https://www.google.com/search?q=ext%3Apdf+">Google</a></li>
+<li><a href="https://www.google.com/search?q=ext%3Appt+OR+ext%3Apptx+OR+ext%3Akey+">Google</a></li>
+<li><a href="https://www.google.com/search?q=ext%3Atxt+OR+ext%3Artf+OR+ext%3Axml+">Google</a></li>
+<li><a href="https://www.google.com/search?q=ext%3Axls+OR+ext%3Axlsx+OR+ext%3Acsv+">Google</a></li>
+<li><a href="https://www.google.com/search?q=ext%3Azip+OR+ext%3Arar+OR+ext%3A7z+">Google</a></li>
+<li><a href="https://www.google.com/search?q=site%3Aamazonaws.com+">Google</a></li>
+<li><a href="https://www.google.com/search?q=site%3Acloudfront.net+">Google</a></li>
+<li><a href="https://www.google.com/search?q=site%3Adocs.google.com+">Google</a></li>
+<li><a href="https://www.google.com/search?q=site%3Adocs.microsoft.com+">Google</a></li>
+<li><a href="https://www.google.com/search?q=site%3Adrive.google.com+">Google</a></li>
+<li><a href="https://www.google.com/search?q=site%3Aissuu.com+">Google</a></li>
+<li><a href="https://www.google.com/search?q=site%3Aprezi.com+">Google</a></li>
+<li><a href="https://www.google.com/search?q=site%3Ascribd.com+">Google</a></li>
+<li><a href="https://www.google.com/search?q=site%3Aslidebean.com+">Google</a></li>
+<li><a href="https://www.google.com/search?q=site%3Aslideshare.net+">Google</a></li>
+<li><a href="https://www.google.com/search?q=site%3Astorage.googleapis.com+">Google</a></li>
+<li><a href="https://www.google.com/search?tbm=bks&amp;q=">Google</a></li>
+<li><a href="https://www.pdfdrive.net/search?q=">Pdfdrive</a></li>
+<li><a href="https://www.powershow.com/search/presentations/ppt">Powershow</a></li>
+<li><a href="https://www.refseek.com/documents?q=">Refseek</a></li>
+</ul>
+<h3 id="text-analyze"><a class="header" href="#text-analyze">Text Analyze</a></h3>
+<ul>
+<li><a href="https://headlines.sharethrough.com">Headlines.Sharethrough.com</a></li>
+<li><a href="https://wordtune.com/read">Wordtune.com</a></li>
+<li><a href="https://youlean.co/online-loudness-meter">Online Loudness Meter</a></li>
+<li><a href="https://www.cignaglobal.com/stress-care/individuals/voice-tool">Voice Stress Test</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/aha-music-song-finder-for/dpacanjfikmhoddligfbehkpomnbgblf/related">AHA Music</a></li>
+<li><a href="https://academo.org/demos/spectrum-analyzer">MP3 Spectrum Analyzer</a></li>
+<li><a href="https://www.soundeffectssearch.com/find-a-sound-library">soundeffectssearch.com</a></li>
+<li><a href="https://vocalremover.org">Vocal Remover</a></li>
+<li><a href="https://t.co/jHWseS1PUP">Scene detection</a></li>
+<li><a href="https://huggingface.co/spaces/kabita-choudhary/get_text_from_video">Get text from video</a></li>
+<li><a href="https://huggingface.co/spaces/Ron0420/EfficientNetV2_Deepfakes_Video_Detector">EfficientNetV2</a></li>
+<li><a href="https://downsub.com">Downsub</a></li>
+<li><a href="https://www.subtitlevideo.com">Subtitlevideo</a></li>
+<li><a href="https://www.flexclip.com/tools/metadata-video">FlexClip</a></li>
+<li><a href="https://huggingface.co/spaces/fffiloni/Pix2Pix-Video">Pix2Pix-Video</a></li>
+<li><a href="https://www.unscreen.com">unscreen.com</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/textgrab/kbdckoabalhppclkadhabohnoihdbnja/related">TextGrab</a></li>
+<li><a href="https://github.com/mifi/lossless-cut">Lossless Cut</a></li>
+<li><a href="https://www.movio.la">Movio.la</a></li>
+<li><a href="https://targum.video">Tagrum</a></li>
+<li><a href="https://huggingface.co/spaces/fffiloni/scene-edit-detection">Scene Edit Detection</a></li>
+</ul>
+<h3 id="font-indenfication"><a class="header" href="#font-indenfication">Font Indenfication</a></h3>
+<ul>
+<li><a href="https://www.whatfontis.com">WhatFontIs</a></li>
+<li><a href="https://www.fontsquirrel.com/matcherator">Font Squirrel</a></li>
+<li><a href="https://www.fontspring.com/matcherator">Font Spring</a></li>
+<li><a href="https://www.identifont.com">Identifont.com</a></li>
+<li><a href="https://en.likefont.com">LikeFont.com</a></li>
+<li><a href="https://www.walletexplorer.com">Wallet explorer</a></li>
+<li><a href="https://blockcypher.herokuapp.com">BlockCypher</a></li>
+<li><a href="https://www.bitcoinabuse.com">Bitcoin Abuse Database</a></li>
+<li><a href="https://www.breadcrumbs.app">BreadCrumbs</a></li>
+<li><a href="https://github.com/aaarghhh/a_TON_of_privacy">A TON of Privacy</a></li>
+<li><a href="https://www.walletlabels.xyz">Wallet Labels</a></li>
+</ul>
+<h1 id="file--ftp"><a class="header" href="#file--ftp">File &amp; FTP</a></h1>
+<ul>
+<li><a href="https://www.4shared.com">4shared</a></li>
+<li><a href="https://www.filesearching.com">FileSearching</a></li>
+<li><a href="https://www.filesearching.com">https://www.filesearching.com</a></li>
+<li><a href="https://www.filechef.com">File chef</a></li>
+<li><a href="https://globalfilesearch.com">Global File Search</a></li>
+<li><a href="https://globalfilesearch.com">https://globalfilesearch.com</a></li>
+<li><a href="https://www.searchshared.info">Search Shared</a></li>
+<li><a href="https://www.mmnt.ru">MMNT</a></li>
+<li><a href="https://www.mmnt.ru">https://www.mmnt.ru</a></li>
+</ul>
+<h1 id="document-and-slides-search-osint"><a class="header" href="#document-and-slides-search-osint">Document and Slides Search OSINT</a></h1>
+<ul>
+<li><a href="https://www.findpdfdoc.com">Find-pdf-doc</a></li>
+<li><a href="https://www.findpdfdoc.com">https://www.findpdfdoc.com</a></li>
+<li><a href="https://www.freefullpdf.com">Free Full PDF</a></li>
+<li><a href="https://www.freefullpdf.com">https://www.freefullpdf.com</a></li>
+<li><a href="https://www.slideshare.net">SlideShare</a></li>
+<li><a href="https://www.slideshare.net">https://www.slideshare.net</a></li>
+<li><a href="https://www.scribd.com">Scribd</a></li>
+<li><a href="https://www.scribd.com">https://www.scribd.com</a></li>
+<li><a href="https://docdownloader.com">Scribd docdownloader</a></li>
+<li><a href="https://docdownloader.com">https://docdownloader.com</a></li>
+<li><a href="https://doclibra.com">Doclibra.com</a></li>
+<li><a href="https://doclibra.com">https://doclibra.com</a></li>
+<li><a href="https://filepursuit.com">FilePursuit</a></li>
+<li><a href="https://filepursuit.com">https://filepursuit.com</a></li>
+<li><a href="https://www.searchftps.net">NAPALM FTP Indexer</a></li>
+<li><a href="https://www.searchftps.net">https://www.searchftps.net</a></li>
+<li><a href="https://cryptome.org">Cryptome - search doc about publication that are prohibited by government</a></li>
+<li><a href="https://cryptome.org">https://cryptome.org</a></li>
+<li><a href="https://www.findapdf.com">Finda PDF</a></li>
+<li><a href="https://www.findapdf.com">https://www.findapdf.com</a></li>
+<li><a href="https://www.findpdfdoc.com">Find PDF Doc</a></li>
+<li><a href="https://www.findpdfdoc.com">https://www.findpdfdoc.com</a></li>
+<li><a href="https://pdf-analyser.edpsciences.org">Pdf analyzer</a></li>
+<li><a href="https://pdf-analyser.edpsciences.org">https://pdf-analyser.edpsciences.org</a></li>
+<li><a href="https://tools.pdf24.org/en/extract-images">Tools pdf24</a></li>
+<li><a href="https://github.com/eastrd/ArchivEye">ArchivEye</a></li>
+<li><a href="https://metashieldanalyzer.elevenpaths.com">Metashield Analyzer</a></li>
+<li><a href="https://metashieldanalyzer.elevenpaths.com">https://metashieldanalyzer.elevenpaths.com</a></li>
+<li><a href="https://github.com/ElevenPaths/FOCA">foca</a></li>
+<li><a href="https://psbdmp.ws">Psbdmp</a></li>
+<li><a href="https://psbdmp.ws">https://psbdmp.ws</a></li>
+<li><a href="https://github.com/eastrd/ArchivEye">ArchivEye</a></li>
+<li><a href="https://github.com/adrianlopezroche/fdupes">Fdupes</a></li>
+<li><a href="https://www.kaseware.com/search-query">kaseware search query</a></li>
+<li><a href="https://booleanstrings.com/hidden-resumes/#gsc.tab=0&amp;gsc.q=">CV REesume Search</a></li>
+<li><a href="https://booleanstrings.com/doc-finder-storage/#gsc.tab=0&amp;gsc.q=">booleanstrings document search</a></li>
+<li><a href="https://search.wikileaks.org">wikileaks</a></li>
+<li><a href="https://search.wikileaks.org">https://search.wikileaks.org</a></li>
+<li><a href="https://www.pdfdrive.com/search?q=password">pdfdrive</a></li>
+<li><a href="https://www.kali.org/tools/goofile">goofile</a></li>
+<li><a href="https://www.kali.org/tools/goofile">https://www.kali.org/tools/goofile</a></li>
+</ul>
+<h1 id="emoji-investigation"><a class="header" href="#emoji-investigation">Emoji Investigation</a></h1>
+<ul>
+<li><a href="https://www.dutchosintguy.com/post/cryptography-osint-can-you-read-emoji">dutchosintguy</a></li>
+<li><a href="https://emojis.wiki">Emoji Wiki</a></li>
+<li><a href="https://emojis.wiki">https://emojis.wiki</a></li>
+<li><a href="https://emojiguide.com">Emoji Guide</a></li>
+<li><a href="https://emojiguide.com">https://emojiguide.com</a></li>
+<li><a href="https://emojitracker.com/details/1F44F">Emoji Tracker</a></li>
+<li><a href="https://emojipedia.org">emojipedia</a></li>
+<li><a href="https://emojipedia.org">https://emojipedia.org</a></li>
+<li><a href="https://www.fastemoji.com">fastemoji</a></li>
+<li><a href="https://www.fastemoji.com">https://www.fastemoji.com</a></li>
+</ul>
+<h1 id="osint-language"><a class="header" href="#osint-language">OSINT Language</a></h1>
+<ul>
+<li><a href="https://www.grammarly.com">grammarly</a></li>
+<li><a href="https://www.grammarly.com">https://www.grammarly.com</a></li>
+<li><a href="https://quillbot.com/translate">quillbot</a></li>
+<li><a href="https://www.babla.co.id/pengucapan/bahasa-china">babla</a></li>
+<li><a href="https://www.babla.co.id/pengucapan/bahasa-china">https://www.babla.co.id/pengucapan/bahasa-china</a></li>
+<li><a href="https://goong.com/id">goong</a></li>
+<li><a href="https://goong.com/id">https://goong.com/id</a></li>
+<li><a href="https://translate.google.co.id/?sl=auto&amp;tl=en&amp;op=translate">Google</a></li>
+<li><a href="https://www.deepl.com/en/translator">deepl</a></li>
+<li><a href="https://id.glosbe.com">glosbe</a></li>
+<li><a href="https://id.glosbe.com">https://id.glosbe.com</a></li>
+<li><a href="https://www.key-shortcut.com/en/writing-systems/world-map-of-alphabets-scripts#map">World map Country, language, writing system</a></li>
+<li><a href="https://chatgpt.com">chatgpt</a></li>
+<li><a href="https://chatgpt.com">https://chatgpt.com</a></li>
+<li><a href="https://2lingual.com">2lingual</a></li>
+<li><a href="https://2lingual.com">https://2lingual.com</a></li>
+<li><a href="https://www.urbandictionary.com">urbandictionary</a></li>
+<li><a href="https://www.urbandictionary.com">https://www.urbandictionary.com</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../social/NEWS.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../files/IMAGES.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../social/NEWS.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../files/IMAGES.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

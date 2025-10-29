@@ -1,0 +1,805 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Global Search - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="geo"><a class="header" href="#geo">GEO</a></h2>
+<ul>
+<li><a href="https://start.me/p/W1kDAj/geoint">GEOINT</a></li>
+<li><a href="https://www.geoseer.net">Geoseer.net</a></li>
+<li><a href="https://cse.google.com/cse?cx=015328649639895072395:sbv3zyxzmji#gsc.tab=0">GeoINT Search</a></li>
+<li><a href="https://shadowcrypt.net/tools/geoip">GeoIP Tracker tool</a></li>
+<li><a href="https://developers.google.com/earth-engine/datasets">Earth Engine Dataset</a></li>
+<li><a href="https://www.geoplatform.gov">GeoPlatform Portal</a></li>
+<li><a href="https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/home">FAO Map Catalog</a></li>
+<li><a href="https://acleddata.com/special-projects/us-crisis-monitor">US Crisis Monitor</a></li>
+<li><a href="https://apps.esri.ca/torontolive">Toronto Live</a></li>
+<li><a href="https://www.arcgis.com/apps/dashboards/4d1289ab105145a1b1f80c1ad3cf19fb">Residential Fire Fatalities in Indiana</a></li>
+<li><a href="https://rapidapi.com/gisfromscratch/api/geoprotests">geoprotests API</a></li>
+<li><a href="https://github.com/gisfromscratch/geoint-py">geoint-py</a></li>
+</ul>
+<h2 id="location"><a class="header" href="#location">Location</a></h2>
+<ul>
+<li><a href="https://beta.maps.apple.com/?t=k&amp;z=1&amp;ll=">Beta</a></li>
+<li><a href="https://eos.com/landviewer/?lat=">Eos</a></li>
+<li><a href="https://kartaview.org/map/@">Kartaview</a></li>
+<li><a href="https://livingatlas.arcgis.com/wayback/#active=20337&amp;mapCenter=">Livingatlas</a></li>
+<li><a href="https://satellites.pro/USA_map#">Satellites</a></li>
+<li><a href="https://wego.here.com/?map=">Wego</a></li>
+<li><a href="https://www.acrevalue.com/map/?lat=">Acrevalue</a></li>
+<li><a href="https://www.bing.com/maps?&amp;cp=">Bing</a></li>
+<li><a href="https://www.bing.com/maps?cp=">Bing</a></li>
+<li><a href="https://www.google.com/maps/@?api=1&amp;map_action=map&amp;center=">Google</a></li>
+<li><a href="https://www.google.com/maps/@?api=1&amp;map_action=pano&amp;viewpoint=">Google</a></li>
+<li><a href="https://www.mapillary.com/app/?lat=">Mapillary</a></li>
+<li><a href="https://www.realtor.com/realestateandhomes-search/Miami_FL?view=map&amp;pos=">Realtor</a></li>
+<li><a href="https://www.trulia.com/for_sale">Trulia</a></li>
+<li><a href="https://www.zillow.com/homes/for_sale/?searchQueryState=%7B%22isMapVisible%22%3Atrue%2C%22mapBounds%22%3A%7B%22west%22%3A">Zillow</a></li>
+<li><a href="https://yandex.com/maps/?l=sat&amp;ll=">Yandex</a></li>
+<li><a href="https://zoom.earth/#view=">Zoom</a></li>
+</ul>
+<h4 id="14--geoint"><a class="header" href="#14--geoint">1.4  GEOINT</a></h4>
+<ul>
+<li><a href="https://osm-search.bellingcat.com">Bellingcat</a></li>
+<li><a href="https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/mapping-and-geospatial-intelligence-geoint">OhShint</a></li>
+<li><a href="https://geospy.ai">GeoSpy</a></li>
+<li><a href="https://picarta.ai">Picarta</a></li>
+<li><a href="https://iplogger.org">IPLogger</a></li>
+<li><a href="https://earthengine.google.com">Earth Engine Dataset</a></li>
+<li><a href="https://www.fao.org">FAO Map Catalog</a></li>
+<li><a href="https://github.com/benmcgann/geocreepy">Geocreepy</a></li>
+<li><a href="https://www.uscrisismonitor.com">US Crisis Monitor</a></li>
+<li><a href="https://www.torontolive.ca">Toronto Live</a></li>
+<li><a href="https://www.geoprotests.com">GeoProtests API</a></li>
+<li><a href="https://github.com/geoint-py">GeoINT-py</a></li>
+<li><a href="https://overpass-turbo.eu">OverPass Turbo</a></li>
+<li><a href="https://geohints.com">GeoHints</a></li>
+<li><a href="https://chatgpt.com/g/g-VcnlRdShx-geoguessr-assistant">GeoGuessr Assistant</a></li>
+<li><a href="https://geotips.net">GeoTips</a></li>
+<li><a href="https://www.plonkit.net/guide">Plonkit</a></li>
+<li><a href="https://labs.tib.eu/geoestimation">GeoEstimation Labs</a></li>
+<li><a href="https://earth.google.com">Google Earth</a></li>
+<li><a href="https://www.mapillary.com">Mapillary</a></li>
+<li><a href="https://livingatlas.arcgis.com/wayback">World Imagery Wayback</a></li>
+<li><a href="https://apps.sentinel-hub.com/sentinel-playground">Sentinel Playground</a></li>
+<li><a href="https://n2yo.com">Real-Time Satellite Tracking</a></li>
+<li><a href="https://suncalc.net">SunCalc</a></li>
+<li><a href="https://www.mapdevelopers.com">Map Developers</a></li>
+<li><a href="https://osm.org">OSM Finder</a></li>
+<li><a href="https://peakvisor.com">PeakVisor</a></li>
+<li><a href="https://www.bellingcat.com/resources/how-tos/2020/01/21/using-openstreetmap-for-geolocation-osint">Bellingcat OSM Search</a></li>
+<li><a href="https://maps.google.com">Google Maps</a></li>
+</ul>
+<h1 id="geospatial-research-and-mapping-tools"><a class="header" href="#geospatial-research-and-mapping-tools">Geospatial Research and Mapping Tools</a></h1>
+<ul>
+<li><a href="https://www.plonkit.net/guide">plonkit guide for geospatial</a></li>
+<li><a href="https://beta.maps.apple.com">Apple Maps</a></li>
+<li><a href="https://beta.maps.apple.com">https://beta.maps.apple.com</a></li>
+<li><a href="https://www.atlasify.com">Atlasify</a></li>
+<li><a href="https://www.atlasify.com">https://www.atlasify.com</a></li>
+<li><a href="https://batchgeo.com">Batchgeo</a></li>
+<li><a href="https://batchgeo.com">https://batchgeo.com</a></li>
+<li><a href="https://www.bing.com/maps">Bing Maps</a></li>
+<li><a href="https://www.bing.com/maps">https://www.bing.com/maps</a></li>
+<li><a href="https://cartodb.com">CartoDB</a></li>
+<li><a href="https://colorbrewer2.org">Colorbrewer</a></li>
+<li><a href="https://colorbrewer2.org">https://colorbrewer2.org</a></li>
+<li><a href="https://crowdmap.com">CrowdMap</a></li>
+<li><a href="https://dominoc925-pages.appspot.com/mapplets/cs_mgrs.html">Dominoc925</a></li>
+<li><a href="https://www.mapchannels.com/dualmaps7/map.htm">DualMaps</a></li>
+<li><a href="https://geogig.org">GeoGig</a></li>
+<li><a href="https://geogig.org">https://geogig.org</a></li>
+<li><a href="https://www.geonames.org">GeoNames</a></li>
+<li><a href="https://www.geonames.org">https://www.geonames.org</a></li>
+<li><a href="https://www.esri.com">Esri</a></li>
+<li><a href="https://www.esri.com">https://www.esri.com</a></li>
+<li><a href="https://www.flashearth.com">Flash Earth</a></li>
+<li><a href="https://www.flashearth.com">https://www.flashearth.com</a></li>
+<li><a href="https://www.google.com/earth">Google Earth</a></li>
+<li><a href="https://www.google.com/earth">https://www.google.com/earth</a></li>
+<li><a href="https://www.google.com/intl/en/earth/versions/#earth-pro">Google Earth Pro</a></li>
+<li><a href="https://www.google.com/maps">Google Maps</a></li>
+<li><a href="https://brianfolts.com/driver">Google Maps Streetview Player</a></li>
+<li><a href="https://brianfolts.com/driver">https://brianfolts.com/driver</a></li>
+<li><a href="https://www.google.com/maps/about/mymaps">Google My Maps</a></li>
+<li><a href="https://www.gpsvisualizer.com">GPSVisualizer</a></li>
+<li><a href="https://www.gpsvisualizer.com">https://www.gpsvisualizer.com</a></li>
+<li><a href="https://grass.osgeo.org">GrassGIS</a></li>
+<li><a href="https://grass.osgeo.org">https://grass.osgeo.org</a></li>
+<li><a href="https://here.com">Here</a></li>
+<li><a href="https://here.com">https://here.com</a></li>
+<li><a href="https://github.com/TeehanLax/Hyperlapse.js">Hyperlapse Google Street View</a></li>
+<li><a href="https://inspire-geoportal.ec.europa.eu">Inspire Geoportal</a></li>
+<li><a href="https://inspire-geoportal.ec.europa.eu">https://inspire-geoportal.ec.europa.eu</a></li>
+<li><a href="https://www.instantatlas.com">InstantAtlas</a></li>
+<li><a href="https://www.instantatlas.com">https://www.instantatlas.com</a></li>
+<li><a href="https://www.instantstreetview.com">Instant Google Street View</a></li>
+<li><a href="https://www.instantstreetview.com">https://www.instantstreetview.com</a></li>
+<li><a href="https://kartograph.org">Kartograph</a></li>
+<li><a href="https://kartograph.org">https://kartograph.org</a></li>
+<li><a href="https://leafletjs.com">Leaflet</a></li>
+<li><a href="https://leafletjs.com">https://leafletjs.com</a></li>
+<li><a href="https://mapalist.com">MapAList</a></li>
+<li><a href="https://mapalist.com">https://mapalist.com</a></li>
+<li><a href="https://www.mapbox.com">MapBox</a></li>
+<li><a href="https://mapbuildr.com">Mapbuildr</a></li>
+<li><a href="https://mapchart.net">Mapchart.net</a></li>
+<li><a href="https://maperitive.net">Maperitive</a></li>
+<li><a href="https://maperitive.net">https://maperitive.net</a></li>
+<li><a href="https://maphub.net">MapHub</a></li>
+<li><a href="https://mapjam.com">MapJam</a></li>
+<li><a href="https://mapjam.com">https://mapjam.com</a></li>
+<li><a href="https://mapline.com">Mapline</a></li>
+<li><a href="https://maps.co">Map Maker</a></li>
+<li><a href="https://www.mapquest.com">Mapquest</a></li>
+<li><a href="https://modestmaps.com">Modest Maps</a></li>
+<li><a href="https://modestmaps.com">https://modestmaps.com</a></li>
+<li><a href="https://github.com/ngageoint">NGA GEOINT</a></li>
+<li><a href="https://openlayers.org">OpenLayers</a></li>
+<li><a href="https://openlayers.org">https://openlayers.org</a></li>
+<li><a href="https://polymaps.org">Polymaps</a></li>
+<li><a href="https://polymaps.org">https://polymaps.org</a></li>
+<li><a href="https://www.lib.utexas.edu/maps">Perry Castaneda Library</a></li>
+<li><a href="https://www.openstreetmap.org">Open Street Map</a></li>
+<li><a href="https://www.openstreetmap.org">https://www.openstreetmap.org</a></li>
+<li><a href="https://qgis.org">QGIS</a></li>
+<li><a href="https://qgis.org">https://qgis.org</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/quick-maps/bgbojmobaekecckmomemopckmeipecij">QuickMaps</a></li>
+<li><a href="https://scribblemaps.com">Scribble Maps</a></li>
+<li><a href="https://scribblemaps.com">https://scribblemaps.com</a></li>
+<li><a href="https://www.terrapattern.com">Terrapattern</a></li>
+<li><a href="https://www.terrapattern.com">https://www.terrapattern.com</a></li>
+<li><a href="https://www.tableausoftware.com">Tableau</a></li>
+<li><a href="https://www.tableausoftware.com">https://www.tableausoftware.com</a></li>
+<li><a href="https://www.timescape.io">Timescape</a></li>
+<li><a href="https://www.mgmaps.com/kml/#view">View in Google Earth</a></li>
+<li><a href="https://www.mgmaps.com/kml/#view">https://www.mgmaps.com/kml/#view</a></li>
+<li><a href="https://wikimapia.org">Wikimapia</a></li>
+<li><a href="https://wikimapia.org">https://wikimapia.org</a></li>
+<li><a href="https://worldaerodata.com">World Aeronautical Database</a></li>
+<li><a href="https://worldaerodata.com">https://worldaerodata.com</a></li>
+<li><a href="https://worldmap.harvard.edu">WorldMap Harvard</a></li>
+<li><a href="https://worldmap.harvard.edu">https://worldmap.harvard.edu</a></li>
+<li><a href="https://www.viamichelin.com">ViaMichelin</a></li>
+<li><a href="https://www.viamichelin.com">https://www.viamichelin.com</a></li>
+<li><a href="https://maps.yahoo.com">Yahoo Maps</a></li>
+<li><a href="https://www.zeemaps.com">Zeemaps</a></li>
+<li><a href="https://www.sentinel-hub.com/explore/sentinelplayground">Sentinel Hub</a></li>
+<li><a href="https://www.sentinel-hub.com/explore/sentinelplayground">https://www.sentinel-hub.com/explore/sentinelplayground</a></li>
+<li><a href="https://discover.digitalglobe.com">Maxar</a></li>
+<li><a href="https://discover.digitalglobe.com">https://discover.digitalglobe.com</a></li>
+<li><a href="https://zoom.earth">Zoom Earth</a></li>
+<li><a href="https://zoom.earth">https://zoom.earth</a></li>
+<li><a href="https://remotepixel.ca/projects/index.html">Remote Pixel</a></li>
+<li><a href="https://www.suncalc.org">SunCalc</a></li>
+<li><a href="https://www.suncalc.org">https://www.suncalc.org</a></li>
+<li><a href="https://www.mooncalc.org">mooncalc</a></li>
+<li><a href="https://www.mooncalc.org">https://www.mooncalc.org</a></li>
+<li><a href="https://www.planetscalc.org">planetscalc</a></li>
+<li><a href="https://www.planetscalc.org">https://www.planetscalc.org</a></li>
+<li><a href="https://www.moonsighting.com">moonsighting</a></li>
+<li><a href="https://www.moonsighting.com">https://www.moonsighting.com</a></li>
+<li><a href="https://www.mooncalc.org/mooncalendar">mooncalendar</a></li>
+<li><a href="https://www.mooncalc.org/mooncalendar">https://www.mooncalc.org/mooncalendar</a></li>
+<li><a href="https://livingatlas.arcgis.com/en/browse">ArcGIS</a></li>
+<li><a href="https://livingatlas.arcgis.com/en/browse">https://livingatlas.arcgis.com/en/browse</a></li>
+<li><a href="https://www.pic2map.com">Pic2Map</a></li>
+<li><a href="https://www.pic2map.com">https://www.pic2map.com</a></li>
+<li><a href="https://www.mapillary.com/app">Mapillary</a></li>
+<li><a href="https://www.mapillary.com/app">https://www.mapillary.com/app</a></li>
+<li><a href="https://kartaview.org/map">KartaView</a></li>
+<li><a href="https://kartaview.org/map">https://kartaview.org/map</a></li>
+<li><a href="https://satellites.pro">Satellites Pro</a></li>
+<li><a href="https://satellites.pro">https://satellites.pro</a></li>
+<li><a href="https://liveuamap.com">Liveuamap</a></li>
+<li><a href="https://liveuamap.com">https://liveuamap.com</a></li>
+<li><a href="https://maps.descarteslabs.com">Descartes Labs</a></li>
+<li><a href="https://maps.descarteslabs.com">https://maps.descarteslabs.com</a></li>
+<li><a href="https://map.baidu.com">Baidu Maps</a></li>
+<li><a href="https://map.baidu.com">https://map.baidu.com</a></li>
+<li><a href="https://www.mapchecking.com">MapChecking</a></li>
+<li><a href="https://www.mapchecking.com">https://www.mapchecking.com</a></li>
+<li><a href="https://www.windy.com">Windy</a></li>
+<li><a href="https://www.windy.com">https://www.windy.com</a></li>
+<li><a href="https://soar.earth">SOAR</a></li>
+<li><a href="https://soar.earth">https://soar.earth</a></li>
+<li><a href="https://www.digikam.org">digiKam</a></li>
+<li><a href="https://www.digikam.org">https://www.digikam.org</a></li>
+<li><a href="https://github.com/ngageoint/geoq">geoq</a></li>
+<li><a href="https://github.com/GONZOsint/gvision">gvision</a></li>
+<li><a href="https://osm-search.bellingcat.com">OSM Bellingcat</a></li>
+<li><a href="https://osm-search.bellingcat.com">https://osm-search.bellingcat.com</a></li>
+<li><a href="https://labs.tib.eu/geoestimation">labs.tib.eu</a></li>
+<li><a href="https://labs.tib.eu/geoestimation">https://labs.tib.eu/geoestimation</a></li>
+<li><a href="https://sketchmapper.cellgrid.co">sketchmapper</a></li>
+<li><a href="https://sketchmapper.cellgrid.co">https://sketchmapper.cellgrid.co</a></li>
+<li><a href="https://github.com/mlkin/sketchmapper">github sketchmapper</a></li>
+<li><a href="https://github.com/Yachay-AI/byt5-geotagging">byt-georagging</a></li>
+<li><a href="https://amti.csis.org/maps">CSIS maps</a></li>
+<li><a href="https://amti.csis.org/maps">https://amti.csis.org/maps</a></li>
+<li><a href="https://data.humdata.org/group">Humdata maps</a></li>
+<li><a href="https://www.planet.com/products">Planet - satellite maps</a></li>
+<li><a href="https://www.planet.com/products">https://www.planet.com/products</a></li>
+<li><a href="https://github.com/Xetnus/osm-finder">OSM Finder</a></li>
+<li><a href="https://osm-finder.netlify.app">OSM Finder - Web based</a></li>
+<li><a href="https://osm-finder.netlify.app">https://osm-finder.netlify.app</a></li>
+<li><a href="https://livingatlas.arcgis.com/wayback">Wayback Geospatial</a></li>
+<li><a href="https://geosocialfootprint.com">Twitter Geo</a></li>
+<li><a href="https://geosocialfootprint.com">https://geosocialfootprint.com</a></li>
+<li><a href="https://github.com/bellingcat/instagram-location-search">Insta Geo</a></li>
+<li><a href="https://www.earthdata.nasa.gov/learn/find-data/near-real-time/firms">NASA EARTH</a></li>
+<li><a href="https://wvs.earthdata.nasa.gov">EARTH DATA NASA</a></li>
+<li><a href="https://wvs.earthdata.nasa.gov">https://wvs.earthdata.nasa.gov</a></li>
+<li><a href="https://peakvisor.com">peakvisor</a></li>
+<li><a href="https://peakvisor.com">https://peakvisor.com</a></li>
+<li><a href="https://www.peakfinder.com">peakfinder</a></li>
+<li><a href="https://www.peakfinder.com">https://www.peakfinder.com</a></li>
+<li><a href="https://www.calcmaps.com/map-coordinates">Calc Map Coordinate</a></li>
+<li><a href="https://www.calcmaps.com/map-coordinates">https://www.calcmaps.com/map-coordinates</a></li>
+<li><a href="https://www.latlong.net">Latlong Calc</a></li>
+<li><a href="https://www.latlong.net">https://www.latlong.net</a></li>
+<li><a href="https://www.gpsvisualizer.com/calculators">Gps Visualizer</a></li>
+<li><a href="https://www.iqair.com/id">Iq Air</a></li>
+<li><a href="https://www.iqair.com/id">https://www.iqair.com/id</a></li>
+<li><a href="https://search.earthdata.nasa.gov/search">NASA Earth Data</a></li>
+<li><a href="https://worldview.earthdata.nasa.gov">NASA World View</a></li>
+<li><a href="https://worldview.earthdata.nasa.gov">https://worldview.earthdata.nasa.gov</a></li>
+<li><a href="https://earthexplorer.usgs.gov">Earth Exploer</a></li>
+<li><a href="https://earthexplorer.usgs.gov">https://earthexplorer.usgs.gov</a></li>
+<li><a href="https://skywatch.com/earthcache">Sky Watch Earth Cache</a></li>
+<li><a href="https://skywatch.com/earthcache">https://skywatch.com/earthcache</a></li>
+<li><a href="https://www.sentinel-hub.com">Sentinel Hub</a></li>
+<li><a href="https://app.skylens.io">Skylens</a></li>
+<li><a href="https://app.skylens.io">https://app.skylens.io</a></li>
+<li><a href="https://www.geocreepy.com">Geocreepy</a></li>
+<li><a href="https://www.geocreepy.com">https://www.geocreepy.com</a></li>
+<li><a href="https://www.garmin.co.id/products/outdoor/gpsmap64s-sea">garmin</a></li>
+<li><a href="https://www.garmin.co.id/products/outdoor/gpsmap64s-sea">https://www.garmin.co.id/products/outdoor/gpsmap64s-sea</a></li>
+<li><a href="https://corona.cast.uark.edu">Corona Atlsa</a></li>
+<li><a href="https://corona.cast.uark.edu">https://corona.cast.uark.edu</a></li>
+<li><a href="https://www.bmkg.go.id">BMKG RI</a></li>
+<li><a href="https://www.bmkg.go.id">https://www.bmkg.go.id</a></li>
+<li><a href="https://tanahair.indonesia.go.id/portal-web">GIS INA</a></li>
+<li><a href="https://tanahair.indonesia.go.id/portal-web">https://tanahair.indonesia.go.id/portal-web</a></li>
+<li><a href="https://www.kpler.com">Kpler</a></li>
+<li><a href="https://www.kpler.com">https://www.kpler.com</a></li>
+<li><a href="https://wanderlog.com">wanderlog review on Google maps</a></li>
+<li><a href="https://wanderlog.com">https://wanderlog.com</a></li>
+<li><a href="https://www.planet.com">planet</a></li>
+<li><a href="https://map.nbr.org/interactivemap">NBR Map</a></li>
+<li><a href="https://map.nbr.org/interactivemap">https://map.nbr.org/interactivemap</a></li>
+<li><a href="https://geohints.com">geohints</a></li>
+<li><a href="https://geohints.com">https://geohints.com</a></li>
+<li><a href="https://geotips.net">geotips</a></li>
+<li><a href="https://geotips.net">https://geotips.net</a></li>
+<li><a href="https://shademap.app">shademap</a></li>
+<li><a href="https://shademap.app">https://shademap.app</a></li>
+<li><a href="https://shadowmap.org">shadowmap</a></li>
+<li><a href="https://shadowmap.org">https://shadowmap.org</a></li>
+<li><a href="https://livingatlas.arcgis.com/wayback">livingatlas wayback</a></li>
+<li><a href="https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/mapping/use-world-imagery-wayback">livingatlas wayback Guide</a></li>
+<li><a href="https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/mapping/use-world-imagery-wayback">https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/mapping/use-world-imagery-wayback</a></li>
+<li><a href="https://www.supermapol.com">supermapol</a></li>
+<li><a href="https://www.supermapol.com">https://www.supermapol.com</a></li>
+<li><a href="https://doc.supermapol.com/en/Introduction/Introduction.html">supermapol docs</a></li>
+<li><a href="https://gpsjam.org">gpsjam</a></li>
+<li><a href="https://gpsjam.org">https://gpsjam.org</a></li>
+<li><a href="https://www.freemaptools.com">freemaptools</a></li>
+<li><a href="https://www.freemaptools.com">https://www.freemaptools.com</a></li>
+<li><a href="https://mc.bbbike.org/mc">bbbike</a></li>
+<li><a href="https://mc.bbbike.org/mc">https://mc.bbbike.org/mc</a></li>
+<li><a href="https://geojson.io">geojson</a></li>
+<li><a href="https://geojson.io">https://geojson.io</a></li>
+<li><a href="https://www.mooncalc.org">mooncalc</a></li>
+<li><a href="https://www.timeanddate.com">moon timeanddate</a></li>
+<li><a href="https://www.timeanddate.com">https://www.timeanddate.com</a></li>
+<li><a href="https://urbanaccessregulations.eu/userhome/map">urbanaccessregulations</a></li>
+<li><a href="https://mapsm.com">mapsm</a></li>
+<li><a href="https://mapsm.com">https://mapsm.com</a></li>
+<li><a href="https://picarta.ai">picarta</a></li>
+<li><a href="https://picarta.ai">https://picarta.ai</a></li>
+<li><a href="https://www.kaseware.com/geospatial-analysis-software">Kaseware Geospatial</a></li>
+<li><a href="https://nominatim.openstreetmap.org">nominatim OSM</a></li>
+<li><a href="https://nominatim.openstreetmap.org">https://nominatim.openstreetmap.org</a></li>
+<li><a href="https://calculator.ipvm.com">Calculator IPVM</a></li>
+<li><a href="https://calculator.ipvm.com">https://calculator.ipvm.com</a></li>
+<li><a href="https://demo.f4map.com">f4map</a></li>
+<li><a href="https://demo.f4map.com">https://demo.f4map.com</a></li>
+<li><a href="https://osmbuildings.org">osmbuildings</a></li>
+<li><a href="https://osmbuildings.org">https://osmbuildings.org</a></li>
+<li><a href="https://geospy.ai">geospy</a></li>
+<li><a href="https://geospy.ai">https://geospy.ai</a></li>
+<li><a href="https://unwiredlabs.com/products">unwiredlabs</a></li>
+<li><a href="https://copernix.io">copernix</a></li>
+<li><a href="https://copernix.io">https://copernix.io</a></li>
+<li><a href="https://www.skydb.net">skydb DB for building</a></li>
+<li><a href="https://www.skydb.net">https://www.skydb.net</a></li>
+<li><a href="https://browser.dataspace.copernicus.eu">dataspace copernicus EU</a></li>
+<li><a href="https://browser.dataspace.copernicus.eu">https://browser.dataspace.copernicus.eu</a></li>
+<li><a href="https://openinframap.org/#2/57.92/72.82/L,O">openinframap</a></li>
+<li><a href="https://map.openseamap.org">openseamap</a></li>
+<li><a href="https://map.openseamap.org">https://map.openseamap.org</a></li>
+<li><a href="https://openstreetbrowser.org">openstreetbrowser</a></li>
+<li><a href="https://openstreetbrowser.org">https://openstreetbrowser.org</a></li>
+<li><a href="https://maproulette.org">maproulette</a></li>
+<li><a href="https://maproulette.org">https://maproulette.org</a></li>
+<li><a href="https://www.oldmapsonline.org/en">Old maps online</a></li>
+<li><a href="https://www.oldmapsonline.org/en">https://www.oldmapsonline.org/en</a></li>
+<li><a href="https://graylark.io">graylark</a></li>
+<li><a href="https://graylark.io">https://graylark.io</a></li>
+<li><a href="https://earthkit.app">earthkit</a></li>
+<li><a href="https://earthkit.app">https://earthkit.app</a></li>
+<li><a href="https://www.drivingdirectionsandmaps.com">drivingdirectionsandmaps</a></li>
+<li><a href="https://www.drivingdirectionsandmaps.com">https://www.drivingdirectionsandmaps.com</a></li>
+<li><a href="https://virtualglobetrotting.com">virtualglobetrotting</a></li>
+<li><a href="https://virtualglobetrotting.com">https://virtualglobetrotting.com</a></li>
+<li><a href="https://landscan.ornl.gov">Population Count</a></li>
+<li><a href="https://landscan.ornl.gov">https://landscan.ornl.gov</a></li>
+<li><a href="https://grid.bellingcat.com">grid Area mapping</a></li>
+<li><a href="https://grid.bellingcat.com">https://grid.bellingcat.com</a></li>
+<li><a href="https://www.lightphotos.net/photos/map_all.php">Maritim world lightphotos</a></li>
+<li><a href="https://geohack.toolforge.org">geohack</a></li>
+<li><a href="https://geohack.toolforge.org">https://geohack.toolforge.org</a></li>
+<li><a href="https://www.alltrails.com">alltrails</a></li>
+<li><a href="https://www.alltrails.com">https://www.alltrails.com</a></li>
+<li><a href="https://pastvu.com">pastvu map</a></li>
+<li><a href="https://pastvu.com">https://pastvu.com</a></li>
+<li><a href="https://rene78.github.io/latest-changes/#5/-3.448/115.532">Latest change OSM</a></li>
+<li><a href="https://www.os-surveillance.io/#choose-plan">Offensive OSINT</a></li>
+<li><a href="https://taginfo.openstreetmap.org/keys">OSM - Taginfo</a></li>
+<li><a href="https://www.bellingcat.com/resources/2024/10/15/google-maps-image-filename-finder-tool">Bellingcat Google Maps review Filename Chrome Extension</a></li>
+<li><a href="https://www.bellingcat.com/resources/2024/10/15/google-maps-image-filename-finder-tool">https://www.bellingcat.com/resources/2024/10/15/google-maps-image-filename-finder-tool</a></li>
+<li><a href="https://soar.earth/maps">SOAR Earth</a></li>
+<li><a href="https://soar.earth/maps">https://soar.earth/maps</a></li>
+<li><a href="https://github.com/woj-ciech/Kamerka-GUI">Kamerka</a></li>
+<li><a href="https://data.mashedworld.com/dualmaps/map.htm">dual maps</a></li>
+<li><a href="https://www.instantstreetview.com">instantstreetview</a></li>
+<li><a href="https://www.instantstreetview.com">https://www.instantstreetview.com</a></li>
+<li><a href="https://www.skyscrapercenter.com/buildings">skyscrapercenter Buildings</a></li>
+<li><a href="https://harita.istanbul">Geo and 3D building in Istanbul</a></li>
+<li><a href="https://harita.istanbul">https://harita.istanbul</a></li>
+<li><a href="https://anvaka.github.io/city-roads">anvaka city road creator</a></li>
+<li><a href="https://apps.microsoft.com/detail/9wzdncrdtbvb?hl=en-US&amp;gl=US">Windows mapp</a></li>
+<li><a href="https://www.worldatlas.com/countries">worldatlas</a></li>
+<li><a href="https://www.usgs.gov/programs/earthquake-hazards">earthquake hazards USGS</a></li>
+<li><a href="https://www.bmkg.go.id/gempabumi">ID earthquake bmkg</a></li>
+<li><a href="https://www.bmkg.go.id/gempabumi">https://www.bmkg.go.id/gempabumi</a></li>
+<li><a href="https://mapcreator.io">mapcreator</a></li>
+<li><a href="https://mapcreator.io">https://mapcreator.io</a></li>
+<li><a href="https://newsinitiative.withgoogle.com/resources/trainings/introduction-to-google-earth-engine">google initiative news - Basic GEE</a></li>
+<li><a href="https://newsinitiative.withgoogle.com/resources/trainings/introduction-to-google-earth-engine">https://newsinitiative.withgoogle.com/resources/trainings/introduction-to-google-earth-engine</a></li>
+<li><a href="https://www.shadowbreakintl.com/#products">shadowbreakintl</a></li>
+<li><a href="https://agent.earthkit.app">earthkit</a></li>
+<li><a href="https://agent.earthkit.app">https://agent.earthkit.app</a></li>
+<li><a href="https://mygeodata.cloud/converter/shp-to-kml">SHP to KML Converrt</a></li>
+<li><a href="https://mygeodata.cloud/converter/geojson-to-kml">Geojson to KML Convert</a></li>
+<li><a href="https://geojson.io/#map=5.37/-4.098/137.614">geojson</a></li>
+<li><a href="https://geojson.tools">geojson</a></li>
+<li><a href="https://geojson.tools">https://geojson.tools</a></li>
+<li><a href="https://mapshaper.org">mapshaper</a></li>
+<li><a href="https://mapshaper.org">https://mapshaper.org</a></li>
+<li><a href="https://osm-3d.org/screenshots.en.htm">osm-3d globe</a></li>
+<li><a href="https://wiki.openstreetmap.org/wiki/3D">OSM 3D Map Lists Awesome</a></li>
+<li><a href="https://streets.gl">streets gl</a></li>
+<li><a href="https://streets.gl">https://streets.gl</a></li>
+<li><a href="https://maps.google.com/maps">G maps</a></li>
+<li><a href="https://earth.google.com/web">G earth</a></li>
+<li><a href="https://demo.f4map.com">F4maps</a></li>
+<li><a href="https://demo.f4map.com">https://demo.f4map.com</a></li>
+<li><a href="https://www.arcgis.com/home/webscene/viewer.html?layers=ca0470dbbddb4db28bad74ed39949e25">arcgis</a></li>
+<li><a href="https://hub.arcgis.com/maps/ca0470dbbddb4db28bad74ed39949e25/about">hub arcgis</a></li>
+<li><a href="https://onegeo.co/data">onegeo</a></li>
+<li><a href="https://onegeo.co/data">https://onegeo.co/data</a></li>
+<li><a href="https://osmbuildings.org/?lat=31.54568&amp;lon=34.45578&amp;zoom=16.8&amp;tilt=30">osmbuildings</a></li>
+<li><a href="https://www.mapbox.com">mapbox</a></li>
+<li><a href="https://www.mapbox.com">https://www.mapbox.com</a></li>
+<li><a href="https://www.maptoolkit.com">maptoolkit</a></li>
+<li><a href="https://www.maptoolkit.com">https://www.maptoolkit.com</a></li>
+<li><a href="https://www.maptiler.com/maps">maptiler</a></li>
+<li><a href="https://www.maptiler.com/maps">https://www.maptiler.com/maps</a></li>
+<li><a href="https://3d-mapper.com">3D mapper</a></li>
+<li><a href="https://3d-mapper.com">https://3d-mapper.com</a></li>
+<li><a href="https://peakvisor.com">peakvisor</a></li>
+<li><a href="https://peakvisor.com">https://peakvisor.com</a></li>
+<li><a href="https://www.blender.org">Blender 3D maker</a></li>
+<li><a href="https://www.blender.org">https://www.blender.org</a></li>
+<li><a href="https://osmbuildings.org/documentation/leaflet">3D Maker by OSM</a></li>
+<li><a href="https://osmbuildings.org/documentation/leaflet">https://osmbuildings.org/documentation/leaflet</a></li>
+<li><a href="https://github.com/microsoft/GlobalMLBuildingFootprints">Microsoft GlobalMLBuildingFootprints</a></li>
+<li><a href="https://www.flightsimulator.com">Microsoft flightsimulator</a></li>
+<li><a href="https://www.flightsimulator.com">https://www.flightsimulator.com</a></li>
+<li><a href="https://wego.here.com">wego here</a></li>
+<li><a href="https://wego.here.com">https://wego.here.com</a></li>
+<li><a href="https://drajmarsh.bitbucket.io/sunpath3d.html">sunpath3d</a></li>
+<li><a href="https://planetarycomputer.microsoft.com/dataset/ms-buildings">Microsoft Building Dataset</a></li>
+<li><a href="https://osm-3d.org/screenshots.en.htm">osm-3d globe</a></li>
+<li><a href="https://maps3d.io">maps3d</a></li>
+<li><a href="https://maps3d.io">https://maps3d.io</a></li>
+<li><a href="https://osm2world.org">osm2world</a></li>
+<li><a href="https://osm2world.org">https://osm2world.org</a></li>
+<li><a href="https://www.euspaceimaging.com/products/3d-products">euspaceimaging</a></li>
+<li><a href="https://www.euspaceimaging.com/products/3d-products">https://www.euspaceimaging.com/products/3d-products</a></li>
+<li><a href="https://map.baidu.com">Baidu maps</a></li>
+<li><a href="https://map.baidu.com">https://map.baidu.com</a></li>
+<li><a href="https://developers.google.com/earth-engine/guides/getstarted">Earth Engine Doc</a></li>
+<li><a href="https://gisgeography.com/google-earth-engine">Google Earth Engine: A Quick Guide for Beginners</a></li>
+<li><a href="https://gisgeography.com/google-earth-engine">https://gisgeography.com/google-earth-engine</a></li>
+</ul>
+<h1 id="nearby-map-from-geospatial"><a class="header" href="#nearby-map-from-geospatial">Nearby Map From Geospatial</a></h1>
+<ul>
+<li><a href="https://virtualglobetrotting.com">virtualglobetrotting</a></li>
+<li><a href="https://virtualglobetrotting.com">https://virtualglobetrotting.com</a></li>
+<li><a href="https://location.foursquare.com">foursquare</a></li>
+<li><a href="https://location.foursquare.com">https://location.foursquare.com</a></li>
+<li><a href="https://www.tripadvisor.com">tripadvisor</a></li>
+<li><a href="https://www.tripadvisor.com">https://www.tripadvisor.com</a></li>
+<li><a href="https://booking.com">booking</a></li>
+<li><a href="https://agoda.com">agoda</a></li>
+<li><a href="https://wanderlog.com">wanderlog review on Google maps</a></li>
+<li><a href="https://wanderlog.com">https://wanderlog.com</a></li>
+<li><a href="https://www.airbnb.co.id">airbnb</a></li>
+<li><a href="https://www.airbnb.co.id">https://www.airbnb.co.id</a></li>
+<li><a href="https://copernix.io">copernix</a></li>
+<li><a href="https://copernix.io">https://copernix.io</a></li>
+<li><a href="https://www.trip.com">trip</a></li>
+<li><a href="https://www.trip.com">https://www.trip.com</a></li>
+<li><a href="https://www.traveloka.com">traveloka</a></li>
+<li><a href="https://www.traveloka.com">https://www.traveloka.com</a></li>
+<li><a href="https://id.hotels.com">hotels</a></li>
+<li><a href="https://id.hotels.com">https://id.hotels.com</a></li>
+<li><a href="https://www.booking.com">booking</a></li>
+<li><a href="https://www.booking.com">https://www.booking.com</a></li>
+<li><a href="https://www.yelp.com">yelp</a></li>
+<li><a href="https://www.yelp.com">https://www.yelp.com</a></li>
+<li><a href="https://wikinearby.toolforge.org">wikinearby</a></li>
+<li><a href="https://wikinearby.toolforge.org">https://wikinearby.toolforge.org</a></li>
+<li><a href="https://wikimapia.org">Wikimapia</a></li>
+<li><a href="https://wikimapia.org">https://wikimapia.org</a></li>
+<li><a href="https://www.vrbo.com">vrbo</a></li>
+<li><a href="https://www.vrbo.com">https://www.vrbo.com</a></li>
+</ul>
+<h1 id="osint-satellite"><a class="header" href="#osint-satellite">OSINT Satellite</a></h1>
+<ul>
+<li><a href="https://search.earthdata.nasa.gov/search">NASA Earth Data</a></li>
+<li><a href="https://soar.earth/maps">SOAR Earth</a></li>
+<li><a href="https://soar.earth/maps">https://soar.earth/maps</a></li>
+<li><a href="https://apollomapping.com">apollomapping</a></li>
+<li><a href="https://apollomapping.com">https://apollomapping.com</a></li>
+<li><a href="https://modis.gsfc.nasa.gov/gallery">MODIS NASA</a></li>
+<li><a href="https://modis.gsfc.nasa.gov/gallery">https://modis.gsfc.nasa.gov/gallery</a></li>
+<li><a href="https://geoxc-apps.bd.esri.com">ESRI</a></li>
+<li><a href="https://geoxc-apps.bd.esri.com">https://geoxc-apps.bd.esri.com</a></li>
+<li><a href="https://www.n2yo.com">n2yo</a></li>
+<li><a href="https://www.n2yo.com">https://www.n2yo.com</a></li>
+<li><a href="https://satellitemap.space/?constellation=starlink">satellitemap</a></li>
+<li><a href="https://www.planet.com">planet</a></li>
+<li><a href="https://www.planet.com">https://www.planet.com</a></li>
+<li><a href="https://www.space-track.org/auth/login">space track</a></li>
+<li><a href="https://earth.google.com">google earth</a></li>
+<li><a href="https://earth.google.com">https://earth.google.com</a></li>
+<li><a href="https://satellitetracker.net">satellitetracker</a></li>
+<li><a href="https://satellitetracker.net">https://satellitetracker.net</a></li>
+<li><a href="https://www.starlink.com/map">starlink</a></li>
+<li><a href="https://www.orbtrack.org">orbtrack</a></li>
+<li><a href="https://www.orbtrack.org">https://www.orbtrack.org</a></li>
+<li><a href="https://isstracker.pl/en/satelity">isstracker database</a></li>
+<li><a href="https://zoom.earth">Zoom Earth</a></li>
+<li><a href="https://zoom.earth">https://zoom.earth</a></li>
+<li><a href="https://in-the-sky.org/satmap_worldmap.php">In the sky</a></li>
+<li><a href="https://www.maxar.com">Maxar</a></li>
+<li><a href="https://www.maxar.com">https://www.maxar.com</a></li>
+<li><a href="https://www.windy.com">Windy</a></li>
+<li><a href="https://www.windy.com">https://www.windy.com</a></li>
+<li><a href="https://satellites.pro">Satellites Pro</a></li>
+<li><a href="https://satellites.pro">https://satellites.pro</a></li>
+<li><a href="https://livingatlas.arcgis.com">livingatlas</a></li>
+<li><a href="https://livingatlas.arcgis.com">https://livingatlas.arcgis.com</a></li>
+<li><a href="https://platform.leolabs.space/visualization">platform leo labs</a></li>
+<li><a href="https://earthobservatory.nasa.gov/global-maps">earthobservatory NASA</a></li>
+<li><a href="https://apps.sentinel-hub.com/eo-browser">EO Browser</a></li>
+<li><a href="https://apps.sentinel-hub.com/eo-browser">https://apps.sentinel-hub.com/eo-browser</a></li>
+<li><a href="https://firms.modaps.eosdis.nasa.gov">NASA Firms</a></li>
+<li><a href="https://firms.modaps.eosdis.nasa.gov">https://firms.modaps.eosdis.nasa.gov</a></li>
+<li><a href="https://www.bmkg.go.id/satelit">BMKG</a></li>
+<li><a href="https://www.bmkg.go.id/satelit">https://www.bmkg.go.id/satelit</a></li>
+<li><a href="https://earthengine.google.com">GEE Google Earth Engine</a></li>
+<li><a href="https://earthengine.google.com">https://earthengine.google.com</a></li>
+<li><a href="https://worldview.earthdata.nasa.gov">NASA Worldview</a></li>
+<li><a href="https://worldview.earthdata.nasa.gov">https://worldview.earthdata.nasa.gov</a></li>
+<li><a href="https://browser.dataspace.copernicus.eu">dataspace</a></li>
+<li><a href="https://browser.dataspace.copernicus.eu">https://browser.dataspace.copernicus.eu</a></li>
+<li><a href="https://imagehunter.apollomapping.com">imagehunter</a></li>
+<li><a href="https://imagehunter.apollomapping.com">https://imagehunter.apollomapping.com</a></li>
+<li><a href="https://earthkit.app/satellite">earthkit</a></li>
+<li><a href="https://www.arcgis.com/apps/View/index.html">arcgis</a></li>
+<li><a href="https://evdc.esa.int/orbit">evdc ESA Orbit</a></li>
+<li><a href="https://evdc.esa.int/orbit">https://evdc.esa.int/orbit</a></li>
+<li><a href="https://cerulean.skytruth.org">skytruth</a></li>
+<li><a href="https://cerulean.skytruth.org">https://cerulean.skytruth.org</a></li>
+<li><a href="https://monitor.skytruth.org">Alert skytruth</a></li>
+<li><a href="https://monitor.skytruth.org">https://monitor.skytruth.org</a></li>
+<li><a href="https://github.com/microsoft/GlobalMLBuildingFootprints">Microsoft GlobalMLBuildingFootprints</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_satellite_map_images_with_missing_or_unclear_data">List of satellite map images with missing or unclear data</a></li>
+<li><a href="https://www.ventusky.com/?p=-6.6;115.7;4&amp;l=satellite">ventusky</a></li>
+<li><a href="https://www.satdump.org/about">satdump</a></li>
+<li><a href="https://www.satdump.org/about">https://www.satdump.org/about</a></li>
+<li><a href="https://space-solutions.airbus.com">airbus sat</a></li>
+<li><a href="https://space-solutions.airbus.com">https://space-solutions.airbus.com</a></li>
+<li><a href="https://www.blacksky.com">blacksky</a></li>
+<li><a href="https://www.blacksky.com">https://www.blacksky.com</a></li>
+<li><a href="https://eos.com/landviewer">EOS LAND SAT</a></li>
+<li><a href="https://eos.com/landviewer">https://eos.com/landviewer</a></li>
+<li><a href="https://www.eorc.jaxa.jp/ALOS/en/index_e.htm">eorc JP</a></li>
+<li><a href="https://atmosphere.copernicus.eu/charts/packages/cams/?facets=%7B%22Family%22%3A%5B%22Fires%22%5D%7D">Copernicus</a></li>
+<li><a href="https://www.data.jma.go.jp/mscweb/data/himawari">Meteorological Satellite Center Himawari Sat</a></li>
+<li><a href="https://www.data.jma.go.jp/mscweb/data/himawari">https://www.data.jma.go.jp/mscweb/data/himawari</a></li>
+<li><a href="https://earth.esa.int/eogateway/missions/planetscope#instruments-section">Earth ESA sat</a></li>
+<li><a href="https://www.euspaceimaging.com">euspaceimaging</a></li>
+<li><a href="https://www.euspaceimaging.com">https://www.euspaceimaging.com</a></li>
+<li><a href="https://medgismar.rempec.org">medgismar GIS</a></li>
+<li><a href="https://medgismar.rempec.org">https://medgismar.rempec.org</a></li>
+<li><a href="https://umbra.space/open-data">umbra open data</a></li>
+<li><a href="https://umbra.space/open-data">https://umbra.space/open-data</a></li>
+<li><a href="https://github.com/bellingcat/umbra-open-data-tracker?tab=readme-ov-file">Bellingcat Monitor the Umbra open data catalogue</a></li>
+<li><a href="https://www.ghgsat.com/en">ghgsat</a></li>
+<li><a href="https://www.ghgsat.com/en">https://www.ghgsat.com/en</a></li>
+<li><a href="https://earth.jpl.nasa.gov/emit">NASA EMIT</a></li>
+<li><a href="https://earth.jpl.nasa.gov/emit">https://earth.jpl.nasa.gov/emit</a></li>
+<li><a href="https://neo.gsfc.nasa.gov">NASA NEO</a></li>
+<li><a href="https://neo.gsfc.nasa.gov">https://neo.gsfc.nasa.gov</a></li>
+<li><a href="https://aws.amazon.com/earth">AWS Earth</a></li>
+<li><a href="https://aws.amazon.com/earth">https://aws.amazon.com/earth</a></li>
+<li><a href="https://coast.noaa.gov/dataviewer/#">NOAA Data Access Viewer</a></li>
+<li><a href="https://coast.noaa.gov/dataviewer/#">https://coast.noaa.gov/dataviewer/#</a></li>
+<li><a href="https://www.capellaspace.com">capellaspace</a></li>
+<li><a href="https://www.capellaspace.com">https://www.capellaspace.com</a></li>
+<li><a href="https://www.shadowbreakintl.com/#products">shadowbreakintl</a></li>
+<li><a href="https://www.globalforestwatch.org/map">globalforestwatch</a></li>
+<li><a href="https://www.globalforestwatch.org/map">https://www.globalforestwatch.org/map</a></li>
+<li><a href="https://id.wikipedia.org/wiki/Program_Landsat">Landsat Sat</a></li>
+<li><a href="https://id.wikipedia.org/wiki/Moderate-Resolution_Imaging_Spectroradiometer">MODIS Sat</a></li>
+<li><a href="https://fi.wikipedia.org/wiki/Suomi_NPP">Suomi NPP Sat</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sentinel-3">Sentinel-3 Sat</a></li>
+<li><a href="https://bellingcat.github.io/RS4OSINT/A2_Remote_Sensing.html">Guide Remote Sensing</a></li>
+<li><a href="https://gisgeography.com/sentinel-2-bands-combinations">Sentinel 2 Bands and Combinations</a></li>
+<li><a href="https://gisgeography.com/sentinel-2-bands-combinations">https://gisgeography.com/sentinel-2-bands-combinations</a></li>
+<li><a href="https://medium.com/@anapau_diazg/visualizing-a-marine-oil-spill-with-sentinel-2-msi-imagery-cb0aaa2045b">Visualizing a Marine Oil Spill with Sentinel-2 MSI Imagery</a></li>
+<li><a href="https://www.planet.com/pulse/noaa-contracts-with-planet-to-gain-situational-awareness-of-oil-spills-marine-debris-and-marine-life">NOAA Contracts with Planet to Gain Situational Awareness of Oil Spills, Marine Debris, and Marine Life</a></li>
+<li><a href="https://www.planet.com/pulse/noaa-contracts-with-planet-to-gain-situational-awareness-of-oil-spills-marine-debris-and-marine-life">https://www.planet.com/pulse/noaa-contracts-with-planet-to-gain-situational-awareness-of-oil-spills-marine-debris-and-marine-life</a></li>
+<li><a href="https://www.amsa.gov.au/sites/default/files/2014-01-mp-amsa22-identification-oil-on-water.pdf">Aerial Observation and Identification Guide</a></li>
+<li><a href="https://skywatch.com/real-time-satellite-data">What does real-time satellite data really look like</a></li>
+<li><a href="https://skywatch.com/real-time-satellite-data">https://skywatch.com/real-time-satellite-data</a></li>
+<li><a href="https://exposingtheinvisible.org/en/guides/starting-satellite-investigations">Starting Satellite Investigations</a></li>
+<li><a href="https://exposingtheinvisible.org/en/guides/starting-satellite-investigations">https://exposingtheinvisible.org/en/guides/starting-satellite-investigations</a></li>
+<li><a href="https://aifromabove.notion.site/A-Journalist-s-Guide-to-using-AI-Satellite-Imagery-for-Storytelling-c32a310269124f069da96b73e872e574">A Journalist's Guide to using AI + Satellite Imagery for Storytelling</a></li>
+<li><a href="https://institute.aljazeera.net/en/ajr/article/2191">How to analyse satellite imagery</a></li>
+<li><a href="https://citizenevidence.org/2023/03/21/summit-series-a-beginners-guide-to-sentinel-hub">A Beginner’s Guide to Sentinel Hub</a></li>
+<li><a href="https://citizenevidence.org/2023/03/21/summit-series-a-beginners-guide-to-sentinel-hub">https://citizenevidence.org/2023/03/21/summit-series-a-beginners-guide-to-sentinel-hub</a></li>
+<li><a href="https://gijn.org/resource/guide-acquire-free-satellite-images">Reporter’s Tipsheet for Acquiring Free Satellite Images</a></li>
+<li><a href="https://gijn.org/resource/guide-acquire-free-satellite-images">https://gijn.org/resource/guide-acquire-free-satellite-images</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../discovery/WEATHER_NATURE.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../discovery/THREATS.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../discovery/WEATHER_NATURE.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../discovery/THREATS.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

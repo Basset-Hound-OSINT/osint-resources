@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Vehicle Information - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li><a href="https://platerecognizer.com">Plate Recognizer</a></li>
+<li><a href="https://www.vindecoderz.com">VIN decoder</a></li>
+<li><a href="https://poctra.com">Poctra.com</a></li>
+<li><a href="https://www.autocheck.com">AutoCheck</a></li>
+<li><a href="https://www.nicb.org/vincheck">VINCheck®</a></li>
+<li><a href="https://www.nomerogram.ru">Nomerogram.ru</a></li>
+<li><a href="https://www.google.com/maps/d/viewer?mid=1zXYL2BF2MByEduLzYN5brVnli9J3cIlv">🚗License Plates in Canada 🇨🇦</a></li>
+<li><a href="https://www.vehicleinfo.in">Vehical Info</a></li>
+<li><a href="https://www.carinfo.app">CarInfo</a></li>
+</ul>
+<h2 id="vehicle"><a class="header" href="#vehicle">Vehicle</a></h2>
+<ul>
+<li><a href="https://checkthatvin.com/ctv/#/vin-search">Checkthatvin</a></li>
+<li><a href="https://csps.con.rcmp-grc.gc.ca/queryVehicles?vin=">Csps</a></li>
+<li><a href="https://infotracer.com/loading/?type=plate-lookup&amp;mercSubId=plate&amp;plate=">Infotracer</a></li>
+<li><a href="https://recordsfinder.com/search/plate/loader/?flow=plate&amp;plateNumber=">Recordsfinder</a></li>
+<li><a href="https://recordsfinder.com/search/vin-check/loader/?flow=vin-check&amp;vin=">Recordsfinder</a></li>
+<li><a href="https://vincheck.info/check/report-summary.php?vin=">Vincheck</a></li>
+<li><a href="https://www.carvana.com/sell-my-car/getoffer/vehicle?licensePlate=">Carvana</a></li>
+<li><a href="https://www.cyclevin.com/vin-report/?vin=">Cyclevin</a></li>
+<li><a href="https://www.faxvin.com/order/decoding?vin=">Faxvin</a></li>
+<li><a href="https://www.searchquarry.com/vehicle_records/lregister?sqtb=license_plate&amp;license_plates=">Searchquarry</a></li>
+<li><a href="https://www.searchquarry.com/vin-decoder/search">Searchquarry</a></li>
+<li><a href="https://www.vindecoderz.com/EN/check-lookup">Vindecoderz</a></li>
+</ul>
+<h1 id="vehicle-osint"><a class="header" href="#vehicle-osint">Vehicle OSINT</a></h1>
+<ul>
+<li><a href="https://licenseplatemania.com">licenseplatemania</a></li>
+<li><a href="https://licenseplatemania.com">https://licenseplatemania.com</a></li>
+<li><a href="https://worldlicenseplates.com">worldlicenseplates</a></li>
+<li><a href="https://worldlicenseplates.com">https://worldlicenseplates.com</a></li>
+<li><a href="https://platesmania.com/uk/search?&amp;lang=en">platesmania</a></li>
+<li><a href="https://findbyplate.com">findbyplate</a></li>
+<li><a href="https://findbyplate.com">https://findbyplate.com</a></li>
+<li><a href="https://www.google.com/imghp?hl=en">google image</a></li>
+<li><a href="https://wikiroutes.info/en/padang">Wiki Routes</a></li>
+<li><a href="https://carnet.ai">Carnet</a></li>
+<li><a href="https://carnet.ai">https://carnet.ai</a></li>
+<li><a href="https://auto2000.co.id/berita-dan-tips/plat-nomor-seluruh-indonesia">ID number plate</a></li>
+<li><a href="https://id.wikipedia.org/wiki/Tanda_Nomor_Kendaraan_Bermotor_Indonesia">ID number wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_car_brands">World Car Brand Wikipedia</a></li>
+<li><a href="https://www.licenseplatelookup.org">License Plate Lookup</a></li>
+<li><a href="https://www.carlogos.org/car-brands">carlogos</a></li>
+<li><a href="https://www.carlogos.org/car-brands">https://www.carlogos.org/car-brands</a></li>
+<li><a href="https://www.commercialtrucktrader.com">commercialtrucktrader</a></li>
+<li><a href="https://www.commercialtrucktrader.com">https://www.commercialtrucktrader.com</a></li>
+<li><a href="https://github.com/winter2897/Real-time-Auto-License-Plate-Recognition-with-Jetson-Nano">License Plate AI Recognition</a></li>
+<li><a href="https://www.vehicleregistrationapi.com">vehicleregistrationapi</a></li>
+<li><a href="https://www.vehicleregistrationapi.com">https://www.vehicleregistrationapi.com</a></li>
+<li><a href="https://www.vehiclehistory.com/license-plate-search">vehiclehistory</a></li>
+<li><a href="https://www.faxvin.com/license-plate-lookup">faxvin</a></li>
+<li><a href="https://www.worldlicenseplates.com">worldlicenseplates</a></li>
+<li><a href="https://www.worldlicenseplates.com">https://www.worldlicenseplates.com</a></li>
+<li><a href="https://autotraveler.ru/en/spravka/vehicle-registration-codes-in-the-world.html#.Y3R6BnbMJPY">autotraveler</a></li>
+<li><a href="https://cipher387.github.io/venicle_number_search_toolbox">cipher387</a></li>
+<li><a href="https://cipher387.github.io/venicle_number_search_toolbox">https://cipher387.github.io/venicle_number_search_toolbox</a></li>
+<li><a href="https://inteltechniques.com/tools/Vehicle.html">inteltechniques</a></li>
+<li><a href="https://avtocod.ru">avtocod</a></li>
+<li><a href="https://avtocod.ru">https://avtocod.ru</a></li>
+<li><a href="https://dmvcivls-wselfservice.ct.gov/Registration/VerifyRegistration">dmvcivls.gov</a></li>
+<li><a href="https://prodpci.etimspayments.com/pbw/include/dc_parking/input.jsp?ticketType=P">etimspayments</a></li>
+<li><a href="https://platerecognizer.com">platerecognizer</a></li>
+<li><a href="https://platerecognizer.com">https://platerecognizer.com</a></li>
+<li><a href="https://www.partialnumberplate.co.uk">partialnumberplate UK</a></li>
+<li><a href="https://www.partialnumberplate.co.uk">https://www.partialnumberplate.co.uk</a></li>
+<li><a href="https://samsat.info/cek-pajak-kendaraan-bermotor-online">ID Samsat</a></li>
+<li><a href="https://motorscan.co.uk">Free Car Check UK</a></li>
+<li><a href="https://motorscan.co.uk">https://motorscan.co.uk</a></li>
+<li><a href="https://www.faxvin.com">faxvin</a></li>
+<li><a href="https://www.vehiclehistory.com">vehiclehistory</a></li>
+<li><a href="https://www.vindecoderz.com">vindecoderz</a></li>
+<li><a href="https://www.vindecoderz.com">https://www.vindecoderz.com</a></li>
+<li><a href="https://www.fordvinlookup.com">fordvinlookup</a></li>
+<li><a href="https://www.fordvinlookup.com">https://www.fordvinlookup.com</a></li>
+<li><a href="https://chevroletforum.com/forum/vindecoder.php">chevroletforum</a></li>
+<li><a href="https://www.hyundaiforum.com/forum/vindecoder.php">hyundaiforum</a></li>
+<li><a href="https://www.nissanusa.com/recalls-vin.html">nissanusa</a></li>
+<li><a href="https://www.cadillacforum.com/forum/vindecoder.php">cadillacforum</a></li>
+<li><a href="https://dodgeforum.com/forum/vindecoder.php">dodgeforum</a></li>
+<li><a href="https://www.toyota.com/owners/my-vehicle/vehicle-specification.html">toyota</a></li>
+<li><a href="https://www.audiworld.com/forums/vindecoder.php">audiworld</a></li>
+<li><a href="https://vinpit.com/vin-decoder/yamaha">vinpit</a></li>
+<li><a href="https://www.scionlife.com/forums/vindecoder.php">scionlife</a></li>
+<li><a href="https://www.nhtsa.gov/vin-decoder">nhtsa</a></li>
+<li><a href="https://bigrigvin.com">bigrigvin</a></li>
+<li><a href="https://bigrigvin.com">https://bigrigvin.com</a></li>
+<li><a href="https://www.cartell.ie/japanese-import">cartell Japan</a></li>
+<li><a href="https://www.cartell.ie/japanese-import">https://www.cartell.ie/japanese-import</a></li>
+<li><a href="https://carvx.jp">carvx JP</a></li>
+<li><a href="https://carvx.jp">https://carvx.jp</a></li>
+<li><a href="https://cyclevin.com">cyclevin</a></li>
+<li><a href="https://cyclevin.com">https://cyclevin.com</a></li>
+<li><a href="https://epicvin.com">epicvin</a></li>
+<li><a href="https://epicvin.com">https://epicvin.com</a></li>
+<li><a href="https://vpic.nhtsa.dot.gov/decoder">VIN Decoder</a></li>
+<li><a href="https://moovitapp.com/index/id/Tranportasi_Umum-countries">moovitapp (Global)</a></li>
+<li><a href="https://commuterline.id/perjalanan-krl/peta-rute">KAI ID ROUTE</a></li>
+<li><a href="https://transjakarta.co.id/rute">transjakarta ID ROUTE</a></li>
+<li><a href="https://www.jaklingkoindonesia.co.id/id/map">Jaklingko ID MAP</a></li>
+<li><a href="https://geoportal.palembang.go.id/pencarian?kategori=Transportasi">Palembang ID Pub Transport</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../identifiers/TELEPHONE_NUMBERS.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../identifiers/FLIGHTS_MARITIME_Railway_Biking.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../identifiers/TELEPHONE_NUMBERS.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../identifiers/FLIGHTS_MARITIME_Railway_Biking.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

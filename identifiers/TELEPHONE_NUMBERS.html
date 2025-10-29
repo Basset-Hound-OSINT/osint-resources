@@ -1,0 +1,552 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Telephone Numbers - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li><a href="https://sundowndev.github.io/phoneinfoga">PhoneInfoga</a></li>
+<li><a href="https://www.martinvigo.com/tools/phonerator">Phonerator</a></li>
+<li><a href="https://www.idcrawl.com/phone">Reverse Phone Lookup</a></li>
+<li><a href="https://nuwber.com">Nuwber</a></li>
+<li><a href="https://pypi.org/project/ignorant">ignorant</a></li>
+<li><a href="https://shadowcrypt.net/tools/phone">Phone Number Lookup Tool</a></li>
+<li><a href="https://opencellid.org">OpenCelliD</a></li>
+<li><a href="https://github.com/AzizKpln/Moriarty-Project">Moriarty-Project</a></li>
+<li><a href="https://www.phonescoop.com/phones">Phone Scoop</a></li>
+<li><a href="https://www.gsmarena.com">GSM Arena</a></li>
+<li><a href="https://www.carrierlookup.com">carrier lookup</a></li>
+<li><a href="https://spydialer.com/default.aspx">Free Reverse Phone Lookup</a></li>
+</ul>
+<h2 id="telephone"><a class="header" href="#telephone">Telephone</a></h2>
+<ul>
+<li><a href="https://800notes.com/Phone.aspx/1-">800notes</a></li>
+<li><a href="https://infotracer.com/phone-lookup/results/?phone=">Infotracer</a></li>
+<li><a href="https://mbasic.facebook.com/login/device-based/ar/login/?multiple_results=0&amp;scp=1&amp;pls=">Mbasic</a></li>
+<li><a href="https://numpi.com/phone-info">Numpi</a></li>
+<li><a href="https://nuwber.com/search/phone?phone=">Nuwber</a></li>
+<li><a href="https://people.yellowpages.com/whitepages/phone-lookup?phone=">People</a></li>
+<li><a href="https://phoneowner.com/phone">Phoneowner</a></li>
+<li><a href="https://sync.me/search/?number=1">Sync</a></li>
+<li><a href="https://thatsthem.com/phone">Thatsthem</a></li>
+<li><a href="https://whatsapp.checkleaked.cc/1">Whatsapp</a></li>
+<li><a href="https://www.411.com/phone/1-">411</a></li>
+<li><a href="https://www.americaphonebook.com/reverse.php?number=">Americaphonebook</a></li>
+<li><a href="https://www.bing.com/search?q=">Bing</a></li>
+<li><a href="https://www.bing.com/search?q=%22">Bing</a></li>
+<li>[Bing](https://www.bing.com/search?q=%22()</li>
+<li><a href="https://www.bing.com/search?q=site%3Acraigslist.org+%22">Bing</a></li>
+<li>[Bing](https://www.bing.com/search?q=site%3Acraigslist.org+%22()</li>
+<li><a href="https://www.callersmart.com/phone-number">Callersmart</a></li>
+<li><a href="https://www.cyberbackgroundchecks.com/phone">Cyberbackgroundchecks</a></li>
+<li><a href="https://www.google.com/search?q=%22">Google</a></li>
+<li>[Google](https://www.google.com/search?q=%22()</li>
+<li><a href="https://www.google.com/search?q=site%3Acraigslist.org+%22">Google</a></li>
+<li>[Google](https://www.google.com/search?q=site%3Acraigslist.org+%22()</li>
+<li><a href="https://www.okcaller.com">Okcaller</a></li>
+<li><a href="https://www.oldphonebook.com/searchphone2.php?syear=1994&amp;sphone=">Oldphonebook</a></li>
+<li><a href="https://www.oldphonebook.com/searchphone2.php?syear=1995&amp;sphone=">Oldphonebook</a></li>
+<li><a href="https://www.oldphonebook.com/searchphone2.php?syear=1996&amp;sphone=">Oldphonebook</a></li>
+<li><a href="https://www.oldphonebook.com/searchphone2.php?syear=1997&amp;sphone=">Oldphonebook</a></li>
+<li><a href="https://www.oldphonebook.com/searchphone2.php?syear=1998&amp;sphone=">Oldphonebook</a></li>
+<li><a href="https://www.oldphonebook.com/searchphone2.php?syear=2001&amp;sphone=">Oldphonebook</a></li>
+<li><a href="https://www.oldphonebook.com/searchphone2.php?syear=2002&amp;sphone=">Oldphonebook</a></li>
+<li><a href="https://www.oldphonebook.com/searchphone2.php?syear=2003&amp;sphone=">Oldphonebook</a></li>
+<li><a href="https://www.oldphonebook.com/searchphone2.php?syear=2007&amp;sphone=">Oldphonebook</a></li>
+<li><a href="https://www.oldphonebook.com/searchphone2.php?syear=2008&amp;sphone=">Oldphonebook</a></li>
+<li><a href="https://www.oldphonebook.com/searchphone2.php?syear=2013&amp;sphone=">Oldphonebook</a></li>
+<li><a href="https://www.oldphonebook.com/searchphone2.php?syear=2014&amp;sphone=">Oldphonebook</a></li>
+<li><a href="https://www.peoplesearchnow.com/phone">Peoplesearchnow</a></li>
+<li><a href="https://www.spytox.com/people/search?phone=">Spytox</a></li>
+<li><a href="https://www.truepeoplesearch.com/results?phoneno=()">Truepeoplesearch</a></li>
+<li><a href="https://www.whitepages.com/phone/1-">Whitepages</a></li>
+<li><a href="https://www.whoseno.com/US">Whoseno</a></li>
+<li><a href="https://www.zabasearch.com/phone">Zabasearch</a></li>
+<li><a href="https://github.com/HackUnderway/OsintNum">OsintNum - Phone number OSINT</a></li>
+<li><a href="https://github.com/AzizKpln/Moriarty-Project">Moriarty-Project - Phone number information</a></li>
+</ul>
+<h3 id="phone-numbers"><a class="header" href="#phone-numbers">Phone Numbers</a></h3>
+<ul>
+<li><a href="https://www.numlookup.com/">NumLookup</a> - Free reverse phone lookup</li>
+<li><a href="https://spydialer.com/">SpyDialer</a> - Free Reverse Lookup Search</li>
+<li><a href="https://www.whitepages.com/">WhitePages</a> - Find people, contact info &amp; background checks</li>
+<li><a href="https://www.nationalcellulardirectory.com/">National Cellular Directory</a> - Begin your comprehensive people search now</li>
+<li><a href="https://www.phonevalidator.com/">Phone Validator</a> - Is it a cell phone or is it a landline or is it a fake?</li>
+<li><a href="https://freecarrierlookup.com/">Free Carrier Lookup</a> - Enter a phone number and we'll return the carrier name</li>
+<li><a href="https://rocketreach.co/">RocketReach</a> - Your first-degree connection to any professional</li>
+<li><a href="https://sync.me/">sync.me</a> - Find out who called</li>
+<li><a href="https://www.emobiletracker.com/">EmobileTracker</a> - Track Mobile Owner Name, Location and Mobile Service Provider</li>
+<li><a href="https://www.reversephonelookup.com/">Reverse Phone Lookup</a> - Find Out The Owner Of A Phone Number</li>
+<li><a href="https://thatsthem.com/reverse-phone-lookup">ThatsThem</a> - Reverse phone lookup</li>
+<li><a href="https://www.thisnumber.com/">thisnumber.com</a> - International Phone Directories</li>
+<li><a href="https://www.usphonebook.com/">usphonebook.com</a> - Free Reverse Phone Number Lookup</li>
+<li><a href="https://www.truepeoplesearch.com/#">truepeoplesearch.com</a> - Get current address, cell phone number, email address, relatives, friends and a lot more</li>
+<li><a href="https://www.tellows.com/">Tellows</a> - Who is calling? The phone number reverse search</li>
+<li><a href="https://synapsint.com/">SynapsInt</a> - The unified OSINT research tool</li>
+<li><a href="https://api.c99.nl/">C99.nl</a> - Over 57 quality API's and growing</li>
+<li><a href="https://validnumber.com/">ValidNumber.com</a> - Free reverse phone lookup service to let you identify a caller associated with any 10-digit phone number from the US and Canada</li>
+<li><a href="https://cellidfinder.com/">CellIdFinder</a> - Nonprofit project which helps you to find GSM BTS by MCC, MNC, LAC and CellID</li>
+<li><a href="http://www.oldphonebook.com/">OldPhoneBook</a> - Instantly search a large selection from the past 20 years of USA phone listings</li>
+<li><a href="https://www.spokeo.com/">Spokeo</a> - Search by name, phone, address, or email to confidentially lookup information about people you know</li>
+<li><a href="https://www.intelius.com/reverse-phone-lookup/">Intelius Phone Lookup</a> - Look up a phone number to find owner information, carrier details, and more</li>
+<li><a href="https://www.zabasearch.com/reverse-phone-lookup/">ZabaSearch Phone Lookup</a> - Reverse Phone Lookup Tool Can Uncover Personal Information, Social Media Data, Online Activity, Photos, and More</li>
+<li><a href="https://www.anywho.com/reverse-phone-lookup/">AnyWho Phone Lookup</a> - Find out information associated with a phone number</li>
+<li><a href="https://radaris.com/#findPhoneH">Radaris Phone Lookup</a> - Look up any phone number to see its owner and identify who's calling or texting you</li>
+<li><a href="https://www.reversephonecheck.com/">Reverse Phone Lookup</a> - Reverse phone number lookup with millions of listings including name or address</li>
+</ul>
+<h1 id="phone-numbers-1"><a class="header" href="#phone-numbers-1">Phone Numbers</a></h1>
+<ul>
+<li><a href="https://www.predictasearch.com">predictasearch</a></li>
+<li><a href="https://www.predictasearch.com">https://www.predictasearch.com</a></li>
+<li><a href="https://www.argali.com">argali</a></li>
+<li><a href="https://www.argali.com">https://www.argali.com</a></li>
+<li><a href="https://www.ciddb.com/index.php">ciddb</a></li>
+<li><a href="https://www.ciddb.com/index.php">https://www.ciddb.com/index.php</a></li>
+<li><a href="https://www.cellrevealer.com">cellrevealer</a></li>
+<li><a href="https://www.cellrevealer.com">https://www.cellrevealer.com</a></li>
+<li><a href="https://www.spydialer.com">spydialer</a></li>
+<li><a href="https://www.spydialer.com">https://www.spydialer.com</a></li>
+<li><a href="https://www.twilio.com/lookup">Twilio</a></li>
+<li><a href="https://www.reversephonelookup.com">Reverse lookup</a></li>
+<li><a href="https://www.reversephonelookup.com">https://www.reversephonelookup.com</a></li>
+<li><a href="https://github.com/sundowndev/PhoneInfoga">PhoneInfoga</a></li>
+<li><a href="https://sync.me">Sync</a></li>
+<li><a href="https://sync.me">https://sync.me</a></li>
+<li><a href="https://www.nationalcellulardirectory.com">National cell</a></li>
+<li><a href="https://www.nationalcellulardirectory.com">https://www.nationalcellulardirectory.com</a></li>
+<li><a href="https://www.getcontact.com/id">Getcontact</a></li>
+<li><a href="https://www.getcontact.com/id">https://www.getcontact.com/id</a></li>
+<li><a href="https://github.com/AzizKpln/Moriarty-Project">Moriarty-Project</a></li>
+<li><a href="https://www.getcontact.com/en">Get Contact</a></li>
+<li><a href="https://www.getcontact.com/en">https://www.getcontact.com/en</a></li>
+<li><a href="https://www.truecaller.com">True Caller</a></li>
+<li><a href="https://www.truecaller.com">https://www.truecaller.com</a></li>
+<li><a href="https://www.reskrim.com/cek.php">Cell Id Lookup</a></li>
+<li><a href="https://www.deviceinfo.me">Device Info</a></li>
+<li><a href="https://www.deviceinfo.me">https://www.deviceinfo.me</a></li>
+<li><a href="https://www.unknownphone.com">Unkownphone</a></li>
+<li><a href="https://www.unknownphone.com">https://www.unknownphone.com</a></li>
+<li><a href="https://whocallsme.com">Whocallsme</a></li>
+<li><a href="https://whocallsme.com">https://whocallsme.com</a></li>
+<li><a href="https://www.elenchitelefonici.it">elenchitelefonici</a></li>
+<li><a href="https://www.elenchitelefonici.it">https://www.elenchitelefonici.it</a></li>
+<li><a href="https://www.nationalcellulardirectory.com">nationalcellulardirectory</a></li>
+<li><a href="https://www.nationalcellulardirectory.com">https://www.nationalcellulardirectory.com</a></li>
+<li><a href="https://www.phonebooks.com">phonebooks</a></li>
+<li><a href="https://www.phonebooks.com">https://www.phonebooks.com</a></li>
+<li><a href="https://www.thisnumber.com">International Phone Directories</a></li>
+<li><a href="https://www.thisnumber.com">https://www.thisnumber.com</a></li>
+<li><a href="https://demo.phoneinfoga.crvx.fr/#">PhoneInfoga</a></li>
+<li><a href="https://demo.phoneinfoga.crvx.fr/#">https://demo.phoneinfoga.crvx.fr/#</a></li>
+<li><a href="https://spydialer.com">Spy Dialer</a></li>
+<li><a href="https://spydialer.com">https://spydialer.com</a></li>
+<li><a href="https://www.phonevalidator.com">Phone Validator</a></li>
+<li><a href="https://www.phonevalidator.com">https://www.phonevalidator.com</a></li>
+<li><a href="https://www.fonefinder.net">Fone finder</a></li>
+<li><a href="https://www.fonefinder.net">https://www.fonefinder.net</a></li>
+<li><a href="https://www.411.com/reverse-phone">411 reverse phone</a></li>
+<li><a href="https://www.numberguru.com">Number guru</a></li>
+<li><a href="https://www.numberguru.com">https://www.numberguru.com</a></li>
+<li><a href="https://www.zabasearch.com/reverse-phone-lookup">Zaba reverse phone</a></li>
+<li><a href="https://www.zabasearch.com/reverse-phone-lookup">https://www.zabasearch.com/reverse-phone-lookup</a></li>
+<li><a href="https://www.maltego.com/transform-hub/full-contact">FullContact</a></li>
+<li><a href="https://www.maltego.com/transform-hub/full-contact">https://www.maltego.com/transform-hub/full-contact</a></li>
+<li><a href="https://www.hlrlookup.com">HLR Lookup</a></li>
+<li><a href="https://www.hlrlookup.com">https://www.hlrlookup.com</a></li>
+<li><a href="https://ceebydith.com/cek-hlr-lokasi-hp.html">Ceebydith HLR Lookup</a></li>
+<li><a href="https://www.free-hlr.com">Free HLR</a></li>
+<li><a href="https://www.free-hlr.com">https://www.free-hlr.com</a></li>
+<li><a href="https://www.hlr-lookups.com">HLR Lookup API</a></li>
+<li><a href="https://www.hlr-lookups.com">https://www.hlr-lookups.com</a></li>
+<li><a href="https://www.maltego.com/transform-hub/phonesearch">Maltego Phone Search</a></li>
+<li><a href="https://www.maltego.com/transform-hub/phonesearch">https://www.maltego.com/transform-hub/phonesearch</a></li>
+<li><a href="https://www.signalhire.com">SignalHire</a></li>
+<li><a href="https://www.signalhire.com">https://www.signalhire.com</a></li>
+<li><a href="https://www.emobiletracker.com">Emobiletracker</a></li>
+<li><a href="https://www.emobiletracker.com">https://www.emobiletracker.com</a></li>
+<li><a href="https://docs.maltego.com/support/solutions/articles/15000045282-maltego-opencnam-transforms">OpenCNAM</a></li>
+<li><a href="https://www.fullcontact.com">Fullcontact</a></li>
+<li><a href="https://www.fullcontact.com">https://www.fullcontact.com</a></li>
+<li><a href="https://seon.io/resources/the-ultimate-guide-to-free-email-lookup-and-reverse-email-lookup-tools">seon</a></li>
+<li><a href="https://seon.io/resources/the-ultimate-guide-to-free-email-lookup-and-reverse-email-lookup-tools">https://seon.io/resources/the-ultimate-guide-to-free-email-lookup-and-reverse-email-lookup-tools</a></li>
+<li><a href="https://thatsthem.com">Thatsthem</a></li>
+<li><a href="https://thatsthem.com">https://thatsthem.com</a></li>
+<li><a href="https://freepeoplesearch.com">Freepeoplesearch</a></li>
+<li><a href="https://freepeoplesearch.com">https://freepeoplesearch.com</a></li>
+<li><a href="https://epieos.com">Epios</a></li>
+<li><a href="https://epieos.com">https://epieos.com</a></li>
+<li><a href="https://anymailfinder.com">anymailfinder</a></li>
+<li><a href="https://anymailfinder.com">https://anymailfinder.com</a></li>
+<li><a href="https://getprospect.com">getprospect</a></li>
+<li><a href="https://getprospect.com">https://getprospect.com</a></li>
+<li><a href="https://www.zoominfo.com">ZoomInfo</a></li>
+<li><a href="https://www.zoominfo.com">https://www.zoominfo.com</a></li>
+<li><a href="https://spamcalls.net/en">Spam Calls</a></li>
+<li><a href="https://spamcalls.net/en">https://spamcalls.net/en</a></li>
+<li><a href="https://inteltechniques.com/tools/Telephone.html">inteltechniques</a></li>
+<li><a href="https://pipl.com">pipl</a></li>
+<li><a href="https://pipl.com">https://pipl.com</a></li>
+<li><a href="https://phonebook.cz">phonebook</a></li>
+<li><a href="https://phonebook.cz">https://phonebook.cz</a></li>
+<li><a href="https://callapp.com/app-features">CALL APP</a></li>
+<li><a href="https://apps.apple.com/us/app/number-finder-caller-id-book/id1324048797?platform=iphone">Number Finder IOS</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=dalily.caller.ids&amp;hl=en&amp;gl=US">Dalily Android Apps</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=id.caller.viewcaller&amp;hl=en_US">ViewCaller</a></li>
+<li><a href="https://github.com/bgwastu/inspektur">inspektur</a></li>
+<li><a href="https://osint.lolarchiver.com/#">lolarchiver</a></li>
+<li><a href="https://countrycode.org">countrycode</a></li>
+<li><a href="https://countrycode.org">https://countrycode.org</a></li>
+<li><a href="https://web.archive.org/web/20240730155821/http://www.ppipuskrip.com/cek-kode-hlr-telkomsel.html">HLR Tsel Code Area</a></li>
+<li><a href="https://web.archive.org/web/20240730160717/https://kumparan.com/how-to-tekno/cara-mengetahui-kode-area-no-hp-orang-lain-1yzrnn0bUx1">HLR Tsel Area Code</a></li>
+<li><a href="https://panduanbs.com/kode-area-wilayah-hlr-nomor-indosat-ooredo">Indosat HLR</a></li>
+<li><a href="https://panduanbs.com/kode-area-wilayah-hlr-nomor-indosat-ooredo">https://panduanbs.com/kode-area-wilayah-hlr-nomor-indosat-ooredo</a></li>
+<li><a href="https://www.idcrawl.com/phone">idcrawl</a></li>
+<li><a href="https://github.com/MatejKovacic/silent-sms-ping">SMS PING</a></li>
+<li><a href="https://f-droid.org/id/packages/com.itds.sms.ping">SMS PING APK</a></li>
+<li><a href="https://f-droid.org/id/packages/com.itds.sms.ping">https://f-droid.org/id/packages/com.itds.sms.ping</a></li>
+<li><a href="https://app.osint.industries">Ghunt online tools</a></li>
+<li><a href="https://app.osint.industries">https://app.osint.industries</a></li>
+<li><a href="https://numpi.com">numpi</a></li>
+<li><a href="https://numpi.com">https://numpi.com</a></li>
+<li><a href="https://github.com/N0rz3/Phunter">Phunter</a></li>
+<li><a href="https://www.numlookup.com">numlookup</a></li>
+<li><a href="https://www.numlookup.com">https://www.numlookup.com</a></li>
+<li><a href="https://haveibeenzuckered.com">haveibeenzuckered</a></li>
+<li><a href="https://haveibeenzuckered.com">https://haveibeenzuckered.com</a></li>
+<li><a href="https://github.com/piaolin/DetectDee">DetectDee</a></li>
+<li><a href="https://espysys.com">espysys</a></li>
+<li><a href="https://espysys.com">https://espysys.com</a></li>
+<li><a href="https://www.infobel.com/fr/world">infobel</a></li>
+<li><a href="https://github.com/martinvigo/email2phonenumber">email2phonenumber</a></li>
+<li><a href="https://www.truepeoplesearch.com">truepeoplesearch</a></li>
+<li><a href="https://www.truepeoplesearch.com">https://www.truepeoplesearch.com</a></li>
+<li><a href="https://www.spokeo.com">spokeo</a></li>
+<li><a href="https://www.spokeo.com">https://www.spokeo.com</a></li>
+<li><a href="https://t.me/TrueCaller_Z_Bot">TrueCaller Tele Bot</a></li>
+</ul>
+<h1 id="cell-investigation"><a class="header" href="#cell-investigation">Cell Investigation</a></h1>
+<ul>
+<li><a href="https://wigle.net">wigle</a></li>
+<li><a href="https://wigle.net">https://wigle.net</a></li>
+<li><a href="https://opencellid.org">Opencellid</a></li>
+<li><a href="https://opencellid.org">https://opencellid.org</a></li>
+<li><a href="https://www.cell2gps.com">CellTower Locator - Cell2gps</a></li>
+<li><a href="https://www.cell2gps.com">https://www.cell2gps.com</a></li>
+<li><a href="https://www.cell-id.info/?lang=en">Cell-id Query</a></li>
+<li><a href="https://www.cellmapper.net">Cell Mapping</a></li>
+<li><a href="https://www.cellmapper.net">https://www.cellmapper.net</a></li>
+<li><a href="https://www.infrapedia.com">Global Internet Infrastructure Map</a></li>
+<li><a href="https://www.infrapedia.com">https://www.infrapedia.com</a></li>
+<li><a href="https://spydialer.com">Spy Dialer</a></li>
+<li><a href="https://spydialer.com">https://spydialer.com</a></li>
+<li><a href="https://www.phonevalidator.com">Phone Validator</a></li>
+<li><a href="https://www.phonevalidator.com">https://www.phonevalidator.com</a></li>
+<li><a href="https://freecarrierlookup.com">Free Operator Search</a></li>
+<li><a href="https://freecarrierlookup.com">https://freecarrierlookup.com</a></li>
+<li><a href="https://www.hlrlookup.com">HLR Lookup</a></li>
+<li><a href="https://www.hlrlookup.com">https://www.hlrlookup.com</a></li>
+<li><a href="https://ceebydith.com/cek-hlr-lokasi-hp.html">Ceebydith HLR Lookup</a></li>
+<li><a href="https://www.free-hlr.com">Free HLR</a></li>
+<li><a href="https://www.free-hlr.com">https://www.free-hlr.com</a></li>
+<li><a href="https://www.hlr-lookups.com">HLR Lookup API</a></li>
+<li><a href="https://www.hlr-lookups.com">https://www.hlr-lookups.com</a></li>
+<li><a href="https://www.maltego.com/transform-hub/phonesearch">Maltego Phone Search</a></li>
+<li><a href="https://www.maltego.com/transform-hub/phonesearch">https://www.maltego.com/transform-hub/phonesearch</a></li>
+<li><a href="https://www.emobiletracker.com">Emobiletracker</a></li>
+<li><a href="https://www.emobiletracker.com">https://www.emobiletracker.com</a></li>
+<li><a href="https://www.phonevalidator.com/index.aspx">Phone Validator</a></li>
+<li><a href="https://www.reversephonecheck.com">Reverse Phone</a></li>
+<li><a href="https://www.reversephonecheck.com">https://www.reversephonecheck.com</a></li>
+<li><a href="https://www.reversephonelookup.com">Reverse Phone Lookup</a></li>
+<li><a href="https://www.reversephonelookup.com">https://www.reversephonelookup.com</a></li>
+<li><a href="https://docs.maltego.com/support/solutions/articles/15000045282-maltego-opencnam-transforms">OpenCNAM</a></li>
+<li><a href="https://www.heicard.com/en/operator.html">Search Country Operator (IMSI)</a></li>
+<li><a href="https://www.numberingplans.com/?page=analysis&amp;sub=imsinr">Analysis of IMSI numbers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mobile_country_code">World MCC &amp; MNC Code</a></li>
+<li><a href="https://www.mcc-mnc.com">World MCC &amp; MNC Code 2</a></li>
+<li><a href="https://www.mcc-mnc.com">https://www.mcc-mnc.com</a></li>
+<li>[World Mobile Network Code](https://en.wikipedia.org/wiki/Mobile_network_codes_in_ITU_region_5xx_(Oceania)</li>
+<li><a href="https://www.nperf.com/en/map/ID/-/-/signal/?ll=-2.5678942164342513&amp;lg=118.01999999999998&amp;zoom=5">World Network Coverage</a></li>
+<li><a href="https://cellphonetrackers.org/gsm/gsm-tracker.php">Profone GSM Tracker</a></li>
+<li><a href="https://thatsthem.com">Thatsthem</a></li>
+<li><a href="https://thatsthem.com">https://thatsthem.com</a></li>
+<li><a href="https://freepeoplesearch.com">Freepeoplesearch</a></li>
+<li><a href="https://freepeoplesearch.com">https://freepeoplesearch.com</a></li>
+<li><a href="https://www.imei.info/imsi">IMSI imei info</a></li>
+<li><a href="https://www.imei.info/imsi">https://www.imei.info/imsi</a></li>
+<li><a href="https://cellebrite.com/en/ufed">cellebrite</a></li>
+<li><a href="https://cellebrite.com/en/ufed">https://cellebrite.com/en/ufed</a></li>
+<li><a href="https://docs.routee.net/docs/list-of-mccmnc-codes">LIST MCC &amp; MNC World</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cell_Global_Identity">Cell Global Identity World</a></li>
+<li><a href="https://mcc-mnc.net">MCC MNC World Net</a></li>
+<li><a href="https://mcc-mnc.net">https://mcc-mnc.net</a></li>
+<li><a href="https://medium.com/@fthcknmz/cell-global-identity-cgi-407ea0288943">Cell Global Identity Article</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GSM_Cell_ID">GSM Cell ID</a></li>
+<li><a href="https://www.predictasearch.com">predictasearch</a></li>
+<li><a href="https://www.predictasearch.com">https://www.predictasearch.com</a></li>
+<li><a href="https://callapp.com/app-features">CALL APP</a></li>
+<li><a href="https://apps.apple.com/us/app/number-finder-caller-id-book/id1324048797?platform=iphone">Number Finder IOS</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=dalily.caller.ids&amp;hl=en&amp;gl=US">Dalily Android Apps</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=id.caller.viewcaller&amp;hl=en_US">ViewCaller</a></li>
+<li><a href="https://ipinfo.io">ip info</a></li>
+<li><a href="https://ipinfo.io">https://ipinfo.io</a></li>
+<li><a href="https://countrycode.org">countrycode</a></li>
+<li><a href="https://countrycode.org">https://countrycode.org</a></li>
+<li><a href="https://www.evrytania.com/lte-tools">evrytania</a></li>
+<li><a href="https://www.evrytania.com/lte-tools">https://www.evrytania.com/lte-tools</a></li>
+<li><a href="https://www.sqimway.com">sqimway</a></li>
+<li><a href="https://www.sqimway.com">https://www.sqimway.com</a></li>
+<li><a href="https://cell2gps.net">cell2gps</a></li>
+<li><a href="https://cell2gps.net">https://cell2gps.net</a></li>
+<li><a href="https://unwiredlabs.com/products">unwiredlabs</a></li>
+<li><a href="https://cellphonetrackers.org/gsm/gsm-tracker.php">cellphonetrackers</a></li>
+<li><a href="https://netmonster.app">netmonster</a></li>
+<li><a href="https://netmonster.app">https://netmonster.app</a></li>
+<li><a href="https://github.com/MatejKovacic/silent-sms-ping">SMS PING</a></li>
+<li><a href="https://f-droid.org/id/packages/com.itds.sms.ping">SMS PING APK</a></li>
+<li><a href="https://f-droid.org/id/packages/com.itds.sms.ping">https://f-droid.org/id/packages/com.itds.sms.ping</a></li>
+<li><a href="https://wiki.wireshark.org/VoIP_calls">Wireshark wiki voip call</a></li>
+<li><a href="https://www.opensignal.com">opensignal</a></li>
+<li><a href="https://www.opensignal.com">https://www.opensignal.com</a></li>
+<li><a href="https://osmocom.org/projects/baseband">osmocom</a></li>
+<li><a href="https://dtmf.netlify.app">DTMF Decoder</a></li>
+<li><a href="https://dtmf.netlify.app">https://dtmf.netlify.app</a></li>
+</ul>
+<h1 id="imei-investigation"><a class="header" href="#imei-investigation">IMEI Investigation</a></h1>
+<ul>
+<li><a href="https://sndeep.info">SNDeepinfo</a></li>
+<li><a href="https://sndeep.info">https://sndeep.info</a></li>
+<li><a href="https://imei-number.com">Imei Numbers</a></li>
+<li><a href="https://imei-number.com">https://imei-number.com</a></li>
+<li><a href="https://www.nobbi.com">Nobbi</a></li>
+<li><a href="https://www.nobbi.com">https://www.nobbi.com</a></li>
+<li><a href="https://www.imei.info">IMEI Info</a></li>
+<li><a href="https://www.imei.info">https://www.imei.info</a></li>
+<li><a href="https://www.numberingplans.com">International Numberingplans</a></li>
+<li><a href="https://www.numberingplans.com">https://www.numberingplans.com</a></li>
+<li><a href="https://iunlocker.com/en/check_imei.php">IPhone IMEI</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../identifiers/USERNAMES.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../identifiers/VEHICLES.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../identifiers/USERNAMES.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../identifiers/VEHICLES.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

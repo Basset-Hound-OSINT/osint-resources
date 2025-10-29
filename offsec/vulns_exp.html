@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Vulnerabilities and Exploits - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3 id="vulnerabilities"><a class="header" href="#vulnerabilities">Vulnerabilities</a></h3>
+<ul>
+<li><a href="https://nvd.nist.gov/vuln/search">NIST NVD</a> - US National Vulnerability Database</li>
+<li><a href="https://cve.mitre.org/cve/search_cve_list.html">MITRE CVE</a> - Identify, define, and catalog publicly disclosed cybersecurity vulnerabilities</li>
+<li><a href="https://github.com/advisories">GitHub Advisory Database</a> - Security vulnerability database inclusive of CVEs and GitHub originated security advisories</li>
+<li><a href="https://www.cloudvulndb.org/">cloudvulndb.org</a> - The Open Cloud Vulnerability &amp; Security Issue Database</li>
+<li><a href="https://osv.dev/list">osv.dev</a> - Open Source Vulnerabilities</li>
+<li><a href="https://vulners.com/">Vulners.com</a> - Your Search Engine for Security Intelligence</li>
+<li><a href="https://www.opencve.io/cve">opencve.io</a> - Easiest way to track CVE updates and be alerted about new vulnerabilities</li>
+<li><a href="https://security.snyk.io/">security.snyk.io</a> - Open Source Vulnerability Database</li>
+<li><a href="https://www.mend.io/vulnerability-database/">Mend Vulnerability Database</a> - The largest open source vulnerability DB</li>
+<li><a href="https://www.rapid7.com/db/">Rapid7 - DB</a> - Vulnerability &amp; Exploit Database</li>
+<li><a href="https://www.cvedetails.com/">CVEDetails</a> - The ultimate security vulnerability datasource</li>
+<li><a href="https://vulniq.com/">VulnIQ</a> - Vulnerability intelligence and management solution</li>
+<li><a href="https://synapsint.com/">SynapsInt</a> - The unified OSINT research tool</li>
+<li><a href="https://avd.aquasec.com/">Aqua Vulnerability Database</a> - Vulnerabilities and weaknesses in open source applications and cloud native infrastructure</li>
+<li><a href="https://vulmon.com/">Vulmon</a> - Vulnerability and exploit search engine</li>
+<li><a href="https://vuldb.com/">VulDB</a> - Number one vulnerability database</li>
+<li><a href="https://in.scanfactory.io/cvemon.html">ScanFactory</a> - Realtime Security Monitoring</li>
+<li><a href="https://www.zerodayinitiative.com/advisories/published/">Trend Micro Zero Day Initiative</a> - Publicly disclosed vulnerabilities discovered by Zero Day Initiative researchers</li>
+<li><a href="https://bugs.chromium.org/p/project-zero/issues/list?can=1&amp;q=&amp;sort=-id&amp;colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary">Google Project Zero</a> - Vulnerabilities including Zero Days</li>
+<li><a href="https://github.com/trickest/cve">Trickest CVE Repository</a> - Gather and update all available and newest CVEs with their PoC</li>
+<li><a href="https://www.cnvd.org.cn/">cnvd.org.cn</a> - Chinese National Vulnerability Database</li>
+<li><a href="https://inthewild.io/feed">InTheWild.io</a> - Check CVEs in our free, open source feed of exploited vulnerabilities</li>
+<li><a href="https://www.vulnerability-lab.com/">Vulnerability Lab</a> - Vulnerability research, bug bounties and vulnerability assessments</li>
+<li><a href="https://access.redhat.com/security/security-updates/">Red Hat Security Advisories</a> - Information about security flaws that affect Red Hat products and services in the form of security advisories</li>
+<li><a href="https://sec.cloudapps.cisco.com/security/center/publicationListing.x">Cisco Security Advisories</a> - Security advisories and vulnerability information for Cisco products, including network equipment and software</li>
+<li><a href="https://msrc.microsoft.com/update-guide/en-us">Microsoft Security Response Center</a> - Reports of security vulnerabilities affecting Microsoft products and services</li>
+<li><a href="https://www.variotdbs.pl/vulns/">VARIoT</a> - VARIoT IoT Vulnerabilities Database</li>
+<li><a href="https://lambdawatchdog.com/">Lambda Watchdog</a> - Your CVE dashboard for AWS Lambda</li>
+<li><a href="https://cvefeed.io/">cvefeed.io</a> - Comprehensive and up-to-date feed of the latest CVEs, security advisories, and other vulnerabilities</li>
+<li><a href="https://cvecrowd.com/">CVE Crowd</a> - Keep track of actively discussed CVEs and integrate them into your application or business</li>
+</ul>
+<h3 id="exploits"><a class="header" href="#exploits">Exploits</a></h3>
+<ul>
+<li><a href="https://www.exploit-db.com/">Exploit-DB</a> - Exploit Database</li>
+<li><a href="https://sploitus.com/">Sploitus</a> - Convenient central place for identifying the newest exploits</li>
+<li><a href="https://www.rapid7.com/db/">Rapid7 - DB</a> - Vulnerability &amp; Exploit Database</li>
+<li><a href="https://vulmon.com/">Vulmon</a> - Vulnerability and exploit search engine</li>
+<li><a href="https://packetstormsecurity.com/">packetstormsecurity.com</a> - Information Security Services, News, Files, Tools, Exploits, Advisories and Whitepapers</li>
+<li><a href="https://0day.today/">0day.today</a> - Ultimate database of exploits and vulnerabilities</li>
+<li><a href="https://lolbas-project.github.io/">Living Off The Land Binaries, Scripts and Libraries</a> - Living Off The Land Binaries, Scripts and Libraries</li>
+<li><a href="https://gtfobins.github.io/">GTFOBins</a> - Curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems</li>
+<li><a href="https://swisskyrepo.github.io/PayloadsAllTheThings/">Payloads All The Things</a> - A list of useful payloads and bypasses for Web Application Security</li>
+<li><a href="http://www.xss-payloads.com/">XSS Payloads</a> - The wonderland of JavaScript unexpected usages, and more</li>
+<li><a href="https://www.exploitalert.com/search-results.html">exploitalert.com</a> - Database of Exploits</li>
+<li><a href="https://www.revshells.com/">Reverse Shell generator</a> - Online Reverse Shell generator with Local Storage functionality, URI &amp; Base64 Encoding, MSFVenom Generator, and Raw Mode</li>
+<li><a href="https://hackerone.com/hacktivity">HackerOne hacktivity</a> - See the latest hacker activity on HackerOne</li>
+<li><a href="https://bugcrowd.com/crowdstream">Bugcrowd Crowdstream</a> - Showcase of accepted and disclosed submissions on Bugcrowd programs</li>
+<li><a href="https://gtfoargs.github.io/">GTFOArgs</a> - Curated list of Unix binaries that can be manipulated for argument injection</li>
+<li><a href="https://shell-storm.org/shellcode/index.html">shell-storm.org/shellcode</a> - Shellcodes database for study cases</li>
+<li><a href="https://hackingthe.cloud/">Hacking the Cloud</a> - Encyclopedia of the attacks/tactics/techniques that offensive security professionals can use on their next cloud exploitation adventure</li>
+<li><a href="https://www.loldrivers.io/">Living Off The Land Drivers</a> - Open-source project that brings together vulnerable, malicious, and known malicious Windows drivers</li>
+<li><a href="http://pwnwiki.io/">PwnWiki</a> - Collection of TTPs (tools, tactics, and procedures) for what to do after access has been gained</li>
+<li><a href="https://cvexploits.io/">CVExploits Search</a> - Your comprehensive database for CVE exploits from across the internet</li>
+<li><a href="https://www.variotdbs.pl/exploits/">VARIoT</a> - VARIoT IoT exploits database</li>
+<li><a href="https://www.loobins.io/">Living Off the Orchard: macOS Binaries</a> - Detailed information on various built-in macOS binaries and how they can be used by threat actors for malicious purposes</li>
+<li><a href="https://ess.coalitioninc.com/">Coalition Exploit Scoring System</a> - Model that dynamically scores new and existing vulnerabilities to reflect their exploit likelihood</li>
+<li><a href="https://wadcoms.github.io/">WADComs</a> - Interactive cheat sheet containing a curated list of offensive security tools and their respective commands to be used against Windows/AD environments</li>
+<li><a href="https://lolapps-project.github.io/">Living Off The Land Applications</a> - Compendium of applications that can be used to carry out day-to-day exploitation</li>
+<li><a href="https://lothardware.com.tr/">Living off the Hardware</a> - Resource collection that provides guidance on identifying and utilizing malicious hardware and malicious devices</li>
+<li><a href="https://boostsecurityio.github.io/lotp/">Living Off the Pipeline</a> - How development tools commonly used in CI/CD pipelines can be used to achieve arbitrary code execution</li>
+<li><a href="https://hackyx.io/">hackyx.io</a> - The aim of this project is to easily find any resource related to IT security like CTF writeups, articles or Bug Bounty reports</li>
+<li><a href="https://www.exploit.observer/">exploit.observer</a> - The World's Largest Exploit &amp; Vulnerability Intelligence Database and is freely accessible to all</li>
+<li><a href="https://vulncheck.com/xdb/">VulnCheck XDB</a> - An index of exploit proof-of-concept code in Git repositories</li>
+<li><a href="https://sploitify.haxx.it/">Sploitify</a> - Interactive cheat sheet, containing a curated list of public server-side exploits (mostly)</li>
+<li><a href="https://lolesxi-project.github.io/LOLESXi/">Living Off The Land ESXi</a> - Comprehensive list of binaries/scripts natively available in VMware ESXi that adversaries have utilised in their operations</li>
+<li><a href="https://lolad-project.github.io/">Living Off The Land and Exploitation Active Directory</a> - Comprehensive collection of Active Directory techniques, commands, and functions that can be used natively to support offensive security operations and Red Team exercises</li>
+<li><a href="https://0xanalyst.github.io/Project-Lost/">Living Off The Land Security Tools</a> - Curated list of Security Tools used by adversaries to bypass security controls and carry out attacks</li>
+<li><a href="https://cspbypass.com/">cspbypass.com</a> - Search for Content Security Policy Bypasses</li>
+<li><a href="https://lottunnels.github.io/#">Living Off The Tunnels</a> - Community driven project to document digital tunnels that can be abused by threat actors as well by insiders for data exfiltrations, persistence, shell access etc</li>
+</ul>
+<h1 id="zero-day"><a class="header" href="#zero-day">Zero Day</a></h1>
+<ul>
+<li><a href="https://0day.today">0day</a></li>
+<li><a href="https://0day.today">https://0day.today</a></li>
+<li><a href="https://zerodium.com">Zerodium</a></li>
+<li><a href="https://zerodium.com">https://zerodium.com</a></li>
+<li><a href="https://0dayfans.com">0day fans</a></li>
+<li><a href="https://0dayfans.com">https://0dayfans.com</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../offsec/network.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../offsec/wifi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../offsec/network.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../offsec/wifi.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

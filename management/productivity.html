@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Productivity - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="productivity"><a class="header" href="#productivity">Productivity</a></h2>
+<ul>
+<li><a href="https://it-tools.tech">it-tools</a></li>
+<li><a href="https://dfir.blog/unfurl">unfurl</a></li>
+<li><a href="https://cryptpad.fr">Cryptpad.fr</a></li>
+<li><a href="https://recontool.org">Recontool.org</a></li>
+<li><a href="https://app.mindmup.com/map/new">MindMup 2</a></li>
+<li><a href="https://www.forensicdots.de">Dotspotter</a></li>
+<li><a href="https://defuse.ca/pastebin.htm">Encrypted Pastebin</a></li>
+<li><a href="https://privatebin.net">PrivateBin</a></li>
+<li><a href="https://bin.disroot.org">Bin.disroot.org</a></li>
+<li><a href="https://framadrop.org/en"><del>Framadrop</del></a></li>
+<li><a href="https://pad.riseup.net">Pad.riseup.net</a></li>
+<li><a href="https://ethercalc.net">EtherCalc</a></li>
+<li><a href="https://proofreadbot.com">Proofread Bot</a></li>
+<li><a href="https://write.as">Write.as</a></li>
+<li><a href="https://crypt.ee">Cryptee</a></li>
+<li><a href="https://dudle.inf.tu-dresden.de/anonymous">dudle</a></li>
+<li><a href="https://www.airborn.io">Airborn.io</a></li>
+<li><a href="https://skyzh.github.io/zoom-url-generator">ZOOM URL Generator</a></li>
+<li><a href="https://www.tor2web.org">Tor2web</a></li>
+<li><a href="https://pypi.org/project/waybackpy">waybackpy</a></li>
+<li><a href="https://oldweb.today">Oldweb.today</a></li>
+<li><a href="https://unpaywall.org/products/extension">Unpaywall</a></li>
+<li><a href="https://www.deepl.com/translator">DeepL</a></li>
+<li><a href="https://projectcsv.github.io">Project CSV</a></li>
+<li><a href="https://codepen.io/RYJASM/pen/LVEWgV">CSV to HTML</a></li>
+<li><a href="https://microsoft.github.io/monaco-editor/playground.html">Monaco Editor</a></li>
+<li><a href="https://mermaid-js.github.io/mermaid-live-editor">Online FlowChart Editor</a></li>
+<li><a href="https://markdown-editor.github.io">Markdown Editor</a></li>
+<li><a href="https://www.mycompiler.io/new/sql">SQL Editor</a></li>
+<li><a href="https://inloop.github.io/sqlite-viewer">SQLite Viewer</a></li>
+<li><a href="https://osint.sh/ocr">OCR Text Extractor</a></li>
+<li><a href="https://www.wetranscriber.com">Wetranscriber</a></li>
+<li><a href="https://tophonetics.com">Tophonetics.com</a></li>
+<li><a href="https://translate.google.com">Google Translate</a></li>
+<li><a href="https://translate.mix.pink">Multi Translate</a></li>
+<li><a href="https://translate.yandex.com">Yandex.Translate</a></li>
+<li><a href="https://www.bing.com/translator">Bing Microsoft Translator</a></li>
+<li><a href="https://www.reverso.net/text_translation.aspx?lang=EN">Reverso</a></li>
+<li><a href="https://www.translatedict.com">Translate</a></li>
+<li><a href="https://www.naturalreaders.com/online">text to speech online</a></li>
+<li><a href="https://ttsreader.com">TTSReader</a></li>
+<li><a href="https://onlinesequencer.net">Online Sequencer</a></li>
+<li><a href="https://sci-hub.st">Sci-hub</a></li>
+<li><a href="https://libgen.fun">Libgen.fun</a></li>
+<li><a href="https://zlibrary24tuxziyiyfr7zd46ytefdqbqd2axkmxm4o5374ptpc52fad.onion.pet">Z-lib.org</a></li>
+<li><a href="https://www.pdfdrive.com">PDF Drive</a></li>
+<li><a href="https://arxiv.org">arXiv.org</a></li>
+<li><a href="https://www.biorxiv.org">bioRxiv.org</a></li>
+<li><a href="https://www.gutenberg.org">Project Gutenberg</a></li>
+<li><a href="https://trantor.is">Trantor.is</a></li>
+<li><a href="https://shadowlibraries.github.io">Shadowlibraries.github.io</a></li>
+<li><a href="https://editor.typely.com">Editor.typely.com</a></li>
+<li><a href="https://challenge.bellingcat.com">billingcat</a></li>
+<li><a href="https://whatsapp.checkleaked.cc">checkleaked</a></li>
+<li><a href="https://mega.io">MEGA</a></li>
+<li><a href="https://transfer.sh">transfer.sh</a></li>
+<li><a href="https://disroot.org/en/services/upload">Upload | Disroot</a></li>
+<li><a href="https://chibisafe.moe">Chibisafe.moe</a></li>
+<li><a href="https://bunker.is">Bunker.is</a></li>
+<li><a href="https://send.actionsack.com">Send</a></li>
+<li><a href="https://zz.fo">Zz.fo</a></li>
+<li><a href="https://anarkrypto.github.io/upload-files-to-ipfs-from-browser-panel/public">Upload files to IPFS from Browser</a></li>
+<li><a href="https://blackhole.run">BlackHole</a></li>
+</ul>
+<h3 id="visualization-tools"><a class="header" href="#visualization-tools">Visualization tools</a></h3>
+<ul>
+<li><a href="https://jsoncrack.com">Jsoncrack</a></li>
+<li><a href="https://jsonvisio.com">Jsonvisio</a></li>
+<li><a href="https://time.graphics">Time graphics</a></li>
+<li><a href="https://github.com/gephi/gephi">Gephi</a></li>
+<li><a href="https://tobloef.com/text2mindmap">Tobloef.com</a></li>
+<li><a href="https://cheatsheet-maker.herokuapp.com">Cheat sheet maker</a></li>
+<li><a href="https://jsonhero.io">JSONHero</a></li>
+</ul>
+<h2 id="management"><a class="header" href="#management">Management</a></h2>
+<ul>
+<li>
+<p><a href="https://github.com/dev-lu/osint_toolkit">Osint_toolkit - Full stack OSINT web app</a></p>
+</li>
+<li>
+<p><a href="https://github.com/dev-lu/osint_toolkit">OSINT Toolkit - Security analyst tool</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Alfredredbird/alfred">Alfred - Social media account finder</a></p>
+</li>
+<li>
+<p><a href="https://github.com/AnonCatalyst/Ominis-Osint">Ominis OSINT - Google search intelligence</a></p>
+</li>
+<li>
+<p><a href="https://piratemoo.gitbook.io/moo/moosint/osint">Cheat Sheet - OSINT</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cipher387/linux-for-OSINT-21-day">Linux for OSINT - 21-day course</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cipher387/python-for-OSINT-21-days">Python for OSINT - 21-day course</a></p>
+</li>
+<li>
+<p><a href="https://github.com/OhShINT/ohshint.gitbook.io">OhShINT - OSINT blog and resources</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cartographia/geospatial-intelligence-library">Geospatial Intelligence Library</a></p>
+</li>
+<li>
+<p><a href="https://github.com/C3n7ral051nt4g3ncy/OSINT_Inception-links">OSINT Inception links</a></p>
+</li>
+<li>
+<p><a href="https://github.com/C3n7ral051nt4g3ncy/cURL_for_OSINT">cURL for OSINT</a></p>
+</li>
+<li>
+<p><a href="https://github.com/CScorza/DistroForensics">DistroForensics - OSINT distros list</a></p>
+</li>
+<li>
+<p><a href="https://github.com/LinaYorda/OSINTtools">OSINT tools - Trace Labs tools</a></p>
+</li>
+<li>
+<p><a href="https://github.com/romz0mbie/OSINT-Lists">OSINT Lists</a></p>
+</li>
+<li>
+<p><a href="https://www.offensiveosint.io/">Offensive OSINT Blog</a></p>
+</li>
+<li>
+<p><a href="https://github.com/OhShINT/ohshint.gitbook.io">Collection OSINT resources</a></p>
+</li>
+<li>
+<p><a href="https://github.com/megadose/quidam-maltego">Quidam maltego transform</a></p>
+</li>
+<li>
+<p><a href="https://app.netlas.io/asd/">Netlas - Investigation visualization tool</a></p>
+</li>
+</ul>
+<h1 id="data-visualization"><a class="header" href="#data-visualization">Data Visualization</a></h1>
+<ul>
+<li><a href="https://www.maltego.com">Maltego</a></li>
+<li><a href="https://www.maltego.com">https://www.maltego.com</a></li>
+<li><a href="https://github.com/jerlendds/osintbuddy">osintbuddy Node graphs</a></li>
+<li><a href="https://mgrs-mapper.com/app">Mgrs Mapper</a></li>
+<li><a href="https://neo4j.com">Neo4j</a></li>
+<li><a href="https://neo4j.com">https://neo4j.com</a></li>
+<li><a href="https://kepler.gl/demo">Kepler Mapping</a></li>
+<li><a href="https://kepler.gl/demo">https://kepler.gl/demo</a></li>
+<li><a href="https://developers.google.com/chart">Google Chart</a></li>
+<li><a href="https://www.chartjs.org">Chart JS</a></li>
+<li><a href="https://www.chartjs.org">https://www.chartjs.org</a></li>
+<li><a href="https://fiugis.maps.arcgis.com/home/index.html">fiugis</a></li>
+<li><a href="https://maphub.net/map">Map Hub</a></li>
+<li><a href="https://docs.maltego.com/support/solutions/articles/15000018948-what-is-maltego-casefile-">Maltego Casefile</a></li>
+<li><a href="https://www.anychart.com">Any Chart</a></li>
+<li><a href="https://www.anychart.com">https://www.anychart.com</a></li>
+<li><a href="https://www.highcharts.com">High Charts</a></li>
+<li><a href="https://www.highcharts.com">https://www.highcharts.com</a></li>
+<li><a href="https://anylogic.help">Any Logic</a></li>
+<li><a href="https://anylogic.help">https://anylogic.help</a></li>
+<li><a href="https://gojs.net">GO js Charts</a></li>
+<li><a href="https://gojs.net">https://gojs.net</a></li>
+<li><a href="https://js.cytoscape.org">cytoscape</a></li>
+<li><a href="https://js.cytoscape.org">https://js.cytoscape.org</a></li>
+<li><a href="https://www.sigmajs.org">sigmajs</a></li>
+<li><a href="https://www.sigmajs.org">https://www.sigmajs.org</a></li>
+<li><a href="https://d3-graph-gallery.com/network.html">graph-gallery</a></li>
+<li><a href="https://r-graph-gallery.com/network">R lib</a></li>
+<li><a href="https://d3js.org">D3 js</a></li>
+<li><a href="https://d3js.org">https://d3js.org</a></li>
+<li><a href="https://python-visualization.github.io/folium/latest/getting_started.html">Folium</a></li>
+<li><a href="https://gephi.org/features">Gephi</a></li>
+<li><a href="https://gephi.org/features">https://gephi.org/features</a></li>
+<li><a href="https://leafletjs.com">leafletjs</a></li>
+<li><a href="https://leafletjs.com">https://leafletjs.com</a></li>
+<li><a href="https://www.qgis.org">QGIS</a></li>
+<li><a href="https://www.qgis.org">https://www.qgis.org</a></li>
+<li><a href="https://app.diagrams.net">Flowchart maker</a></li>
+<li><a href="https://app.diagrams.net">https://app.diagrams.net</a></li>
+</ul>
+<h1 id="maltego-transform-list"><a class="header" href="#maltego-transform-list">Maltego Transform List</a></h1>
+<ul>
+<li><a href="https://github.com/INTERPOL-Innovation-Centre/GraphSense-Maltego-transform">GraphSense-Maltego-transform</a></li>
+<li><a href="https://www.maltego.com/transform-hub">Offical Maltego Transform List</a></li>
+<li><a href="https://www.maltego.com/transform-hub">https://www.maltego.com/transform-hub</a></li>
+<li><a href="https://github.com/cipher387/maltego-transforms-list">Github cipher387 maltego transforms list</a></li>
+<li><a href="https://github.com/megadose/holehe-maltego">Holehe Maltego Transforms</a></li>
+<li><a href="https://www.maltego.com/transform-hub/farsight-dnsdb">Farsight DNSDB Transforms for Maltego</a></li>
+<li><a href="https://www.maltego.com/transform-hub/farsight-dnsdb">https://www.maltego.com/transform-hub/farsight-dnsdb</a></li>
+<li><a href="https://github.com/TURROKS/Maltego_Web2Screenshot">Web Screnshhot Maltego Transforms</a></li>
+<li><a href="https://www.maltego.com/transform-hub/socialnet">Maltego Transform ShadowDragon</a></li>
+<li><a href="https://www.maltego.com/transform-hub/socialnet">https://www.maltego.com/transform-hub/socialnet</a></li>
+<li><a href="https://www.maltego.com/transform-hub/social-links-pro">Maltego Social Links Pro</a></li>
+<li><a href="https://www.maltego.com/transform-hub/social-links-pro">https://www.maltego.com/transform-hub/social-links-pro</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../management/METHODOLOGY_WORKFLOW.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../management/DORKS_QUERY_AUTOMATION.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../management/METHODOLOGY_WORKFLOW.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../management/DORKS_QUERY_AUTOMATION.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>IOT - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="iot"><a class="header" href="#iot">IoT</a></h2>
+<ul>
+<li><a href="https://cse.google.com/cse?cx=013991603413798772546:gjcdtyiytey#gsc.tab=0">Webcam Search Engine</a></li>
+<li><a href="https://www.insecam.org">Insecam</a></li>
+<li><a href="https://www.camhacker.com">Camhacker.com</a></li>
+<li><a href="https://airportwebcams.net">Airport Webcams</a></li>
+<li><a href="https://www.the-webcam-network.com">The Webcam Network</a></li>
+<li><a href="https://www.webcamsabroad.com">Webcams Abroad live images</a></li>
+<li><a href="https://www.whatsupcams.com/en">WEBCAM LIVE</a></li>
+<li><a href="https://city-webcams.com">city-webcams.com</a></li>
+<li><a href="https://www.thingful.net">thingful</a></li>
+<li><a href="https://liveworldwebcam.net">Live World Webcam</a></li>
+<li><a href="https://explorecams.com">Explorecams.com</a></li>
+<li><a href="https://www.opentopia.com">Opentopia</a></li>
+<li><a href="https://goakamai.org/home">Hawaii Traffic Cameras</a></li>
+<li><a href="https://gtaupdate.com/traffic">Toronto area Live Traffic Cams</a></li>
+<li><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=0f7aa08cc4b74fc6a0c4308d4eace6b3">Lake County Fire Cameras</a></li>
+<li><a href="https://www.arcgis.com/apps/dashboards/a0d3fb34cda44f5b8b10be1b245f24a3">VDOT Traffic Cams</a></li>
+<li><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=affe50ac55824c7a8c757d3980787e31">Lubbock Live Traffic Cameras</a></li>
+<li><a href="https://www.arcgis.com/apps/dashboards/47be6372a0434beaba99ae9c9f1d598d">Hong Kong Traffic Data &amp; Cams</a></li>
+<li><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=0ec05ffb0d2d4735a969e8f31f820a7b">Baton Rouge Traffic Cams</a></li>
+</ul>
+<h3 id="worldwide-street-webcams"><a class="header" href="#worldwide-street-webcams">Worldwide street webcams</a></h3>
+<ul>
+<li><a href="https://camstreamer.com/live/map">Camstreamer</a></li>
+<li><a href="https://www.webcamtaxi.com/en/map.html">Webcamtaxi</a></li>
+<li><a href="https://www.skylinewebcams.com/webcam.html">Skyline Webcams</a></li>
+<li><a href="https://www.livebeaches.com/australia">Live beaches</a></li>
+<li><a href="https://www.mangolinkworld.com">MangolinkWorld</a></li>
+<li><a href="https://www.foxmonitor.com">FoxMonitor</a></li>
+<li><a href="https://cipher387.github.io/webcamcse">WEBCAM CSE</a></li>
+</ul>
+<h3 id="surveillance-cameras"><a class="header" href="#surveillance-cameras">Surveillance cameras</a></h3>
+<ul>
+<li><a href="http://www.insecam.org/en/">Insecam.org</a> - The world biggest directory of online surveillance security cameras</li>
+<li><a href="https://sunders.uber.space/">Surveillance under Surveillance</a> - Cameras and guards watching you almost everywhere</li>
+<li><a href="https://worldcams.tv/">World Cams</a> - Live Streaming Webcams Like Never Seen Before</li>
+<li><a href="https://www.skylinewebcams.com/">Skylinewebcams</a> - Live HD webcams broadcasting from the world's best attractions and destinations</li>
+<li><a href="https://www.webkams.com/">WebKams</a> - Live Web Cameras Everywhere</li>
+<li><a href="https://worldcam.eu/">WorldCam</a> - Webcams from around the world</li>
+<li><a href="https://www.webcamhopper.com/">Webcam Hopper</a> - Live Webcams from around the world</li>
+<li><a href="https://livetraffic.eu/">Live Traffic</a> - Real-time monitoring of Europe’s live traffic cameras</li>
+<li><a href="https://www.geocam.ru/en/">Geocam.ru</a> - Webcams of the world</li>
+<li><a href="https://www.border.gov.md/camere-web">Moldova's borders webcams</a> - Official list of webcams at various border crossings around Moldova</li>
+<li><a href="https://www.earthcam.com/">Earth Cam</a> - Leading network of live streaming webcams for tourism and entertainment</li>
+<li><a href="https://www.webcamtaxi.com/en/">Webcam Taxi</a> - Live Virtual Travel</li>
+<li><a href="https://liveworldwebcams.com/">LiveWorldWebcams</a> - Live streaming webcams from around the world</li>
+<li><a href="https://www.allecam.com/">AlleCam</a> - Webcam live from Europe and the whole world</li>
+<li><a href="https://wxyzwebcams.com/">WXYZ Webcams</a> - Real-time webcams</li>
+</ul>
+<h1 id="iot-search-engines"><a class="header" href="#iot-search-engines">IoT Search Engines</a></h1>
+<ul>
+<li><a href="https://www.criminalip.io">criminalip</a></li>
+<li><a href="https://www.criminalip.io">https://www.criminalip.io</a></li>
+<li><a href="https://leakix.net">LeakIX</a></li>
+<li><a href="https://www.binaryedge.io">Binary Edge</a></li>
+<li><a href="https://www.shodan.io">Shodan</a></li>
+<li><a href="https://github.com/T43cr0wl3r/shodan-filters">Shodan Filters</a></li>
+<li><a href="https://github.com/random-robbie/My-Shodan-Scripts">Shodan Scripts</a></li>
+<li><a href="https://github.com/woj-ciech/Kamerka-GUI">Kamerka</a></li>
+<li><a href="https://airportwebcams.net">airportwebcams</a></li>
+<li><a href="https://airportwebcams.net">https://airportwebcams.net</a></li>
+<li><a href="https://www.earthcam.com/#google_vignette">Earthcam</a></li>
+<li><a href="https://tvway.ru">tvway</a></li>
+<li><a href="https://tvway.ru">https://tvway.ru</a></li>
+<li><a href="https://www.cameraftp.com/cameraftp/publish/publishedcameras.aspx">Cameraftp</a></li>
+<li><a href="https://Insecam.org">Insecam</a></li>
+<li><a href="https://Insecam.org">https://Insecam.org</a></li>
+<li><a href="https://github.com/pbkompasz/webcams">Webcams</a></li>
+<li><a href="https://www.molecool.id">Molecool CCTV and Nearby</a></li>
+<li><a href="https://www.molecool.id">https://www.molecool.id</a></li>
+<li><a href="https://calculator.ipvm.com">Calculator IPVM</a></li>
+<li><a href="https://calculator.ipvm.com">https://calculator.ipvm.com</a></li>
+<li><a href="https://www.webcamtaxi.com/en">webcamtaxi</a></li>
+<li><a href="https://www.webcamtaxi.com/en">https://www.webcamtaxi.com/en</a></li>
+<li><a href="https://www.weatherbug.com/traffic-cam">weatherbug</a></li>
+<li><a href="https://www.weatherbug.com/traffic-cam">https://www.weatherbug.com/traffic-cam</a></li>
+<li><a href="https://github.com/IvanGlinkin/CCTV">CCTV location tracking</a></li>
+<li><a href="https://www.geocam.ru/en">Rusia pub CCTV</a></li>
+<li><a href="https://www.geocam.ru/en">https://www.geocam.ru/en</a></li>
+<li><a href="https://www.livebeaches.com/australia">lIVE CAM beach Australia</a></li>
+<li><a href="https://www.livebeaches.com/australia">https://www.livebeaches.com/australia</a></li>
+<li><a href="https://cipher387.github.io/webcamcse">webcamcse cipher387</a></li>
+<li><a href="https://cipher387.github.io/webcamcse">https://cipher387.github.io/webcamcse</a></li>
+<li><a href="https://sunders.uber.space/?lat=-2.4833826&amp;lon=117.8902853&amp;zoom=11">Sunder Survilance Cam</a></li>
+<li><a href="https://www.os-surveillance.io">Offensive OSINT OS - Surveillance</a></li>
+<li><a href="https://www.os-surveillance.io">https://www.os-surveillance.io</a></li>
+<li><a href="https://wiki.openstreetmap.org/wiki/Tag:man_made=surveillance">OSM Query surveillance cam</a></li>
+<li><a href="https://cwwp2.dot.ca.gov/vm/iframemap.htm">cwwp2 surveillance map</a></li>
+<li><a href="https://hacked.camera/map">hacked surveillance map</a></li>
+<li><a href="https://hacked.camera/map">https://hacked.camera/map</a></li>
+<li><a href="https://www.listentothepeople.net/#info">listentothepeople surveillance map</a></li>
+<li><a href="https://mapcomplete.org/surveillance.html">mapcomplete surveillance map</a></li>
+<li><a href="https://osmcamera.dihe.de">osmcamera surveillance map</a></li>
+<li><a href="https://osmcamera.dihe.de">https://osmcamera.dihe.de</a></li>
+<li><a href="https://atlasofsurveillance.org">atlasofsurveillance</a></li>
+<li><a href="https://atlasofsurveillance.org">https://atlasofsurveillance.org</a></li>
+<li><a href="https://www.offensiveosint.io/offensive-osint-s04e07-open-source-surveillance-cameras">offensiveosint</a></li>
+<li><a href="https://www.offensiveosint.io/offensive-osint-s04e07-open-source-surveillance-cameras">https://www.offensiveosint.io/offensive-osint-s04e07-open-source-surveillance-cameras</a></li>
+<li><a href="https://app.netlas.io/host">netlas.io</a></li>
+<li><a href="https://app.netlas.io/host">https://app.netlas.io/host</a></li>
+<li><a href="https://camstreamer.com/live/map">camstreamer</a></li>
+<li><a href="https://worldcams.tv">worldcams</a></li>
+<li><a href="https://worldcams.tv">https://worldcams.tv</a></li>
+<li><a href="https://cipher387.github.io/webcamcse">webcamcse CSE</a></li>
+<li><a href="https://cipher387.github.io/webcamcse">https://cipher387.github.io/webcamcse</a></li>
+<li><a href="https://cse.google.com/cse?cx=013991603413798772546:gjcdtyiytey#gsc.tab=0&amp;gsc.sort=">CSE Webcam search</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../specialized/MOBILE.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../specialized/RADIO.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../specialized/MOBILE.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../specialized/RADIO.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

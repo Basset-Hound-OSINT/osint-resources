@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Code Analysis / Management - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3 id="code"><a class="header" href="#code">Code</a></h3>
+<ul>
+<li><a href="https://github.com/search?type=code">GitHub Code Search</a> - Search globally across all of GitHub, or scope your search to a particular repository or organization</li>
+<li><a href="https://gitlab.com/">GitLab Code Search</a> - Advanced search for faster, more efficient search across the entire GitLab instance</li>
+<li><a href="https://sourceforge.net/">Sourceforge</a> - Complete Open-Source and Business Software Platform</li>
+<li><a href="https://grep.app/">grep.app</a> - Search across a half million git repos</li>
+<li><a href="https://publicwww.com/">publicwww.com</a> - Find any alphanumeric snippet, signature or keyword in the web pages HTML, JS and CSS code</li>
+<li><a href="https://searchcode.com/">SearchCode</a> - Search 75 billion lines of code from 40 million projects</li>
+<li><a href="https://www.nerdydata.com/">NerdyData</a> - Find companies based on their website's tech stack or code</li>
+<li><a href="http://codefinder.org/">RepoSearch</a> - Source code search engine that helps you find implementation details, example usages or just analyze code</li>
+<li><a href="https://about.sourcegraph.com/">SourceGraph</a> - Understand and search across your entire codebase</li>
+<li><a href="https://hotexamples.com/">HotExamples</a> - Search code examples from over 1 million projects</li>
+<li><a href="https://wpdirectory.net/">WP Directory</a> - Lightning fast regex searching of code in the WordPress Plugin and Theme Directories</li>
+<li><a href="https://gist.github.com/discover">GitHub Gists</a> - Instantly share code, notes, and snippets</li>
+<li><a href="https://codeberg.org/explore/repos">CodeBerg</a> - Collaboration platform and Git hosting for free and open source software, content and projects</li>
+<li><a href="https://pagure.io/browse/projects/">Fedora Pagure</a> - Open Source software code hosting system</li>
+<li><a href="https://launchpad.net/">LaunchPad</a> - Software collaboration platform that provides: Bug tracking, Code hosting, Code reviews, Ubuntu package building and hosting, Translations...</li>
+<li><a href="https://repo.or.cz/?a=project_list">repo.or.cz</a> - Public Git hosting site</li>
+<li><a href="https://gitorious.org/">gitorious.org</a> - Read-only mirror of the former gitorious.org code hosting website</li>
+<li><a href="https://sr.ht/projects">Sourcehut</a> - Collection of tools useful for software development</li>
+<li><a href="https://android.googlesource.com/">android.googlesource.com</a> - Git repositories on android</li>
+<li><a href="https://deps.dev/">deps.dev</a> - Service developed and hosted by Google to help developers better understand the structure, construction, and security of open source software packages</li>
+<li><a href="https://webfinery.com/search">WebFinery</a> - Search the source code of the web</li>
+<li><a href="https://code.google.com/archive/">Google Code Archive</a> - Data found on the Google Code Project Hosting Service, which was turned down in early 2016</li>
+<li><a href="https://snipplr.com/all">Snipplr</a> - Code snippet search engine that allows users to search and share code snippets across various programming languages and frameworks</li>
+<li><a href="https://www.postman.com/explore/collections">Postman Public Collections</a> - Explore the best APIs, collections, workspaces in the world on the Postman Public API Network</li>
+<li><a href="https://scriptmafia.org">ScriptMafia</a> - Download full nulled scripts</li>
+<li><a href="https://www.searchftps.net/">SearchFTPs</a> - The most advanced FTP Search Engine service maintained by members</li>
+<li><a href="https://ecosyste.ms/">Ecosyste.ms</a> - An open API service providing package, version and dependency metadata of many open source software ecosystems and registries</li>
+<li><a href="https://app.swaggerhub.com/search">SwaggerHub</a> - Search public APIs and Domains in SwaggerHub</li>
+</ul>
+<h1 id="github"><a class="header" href="#github">Github</a></h1>
+<ul>
+<li><a href="https://caius.github.io/github_id">Github search name</a></li>
+<li><a href="https://caius.github.io/github_id">https://caius.github.io/github_id</a></li>
+<li><a href="https://www.gharchive.org">Github Archive</a></li>
+<li><a href="https://www.gharchive.org">https://www.gharchive.org</a></li>
+<li><a href="https://github.com/techgaun/github-dorks">Github Dork</a></li>
+<li><a href="https://github.com/adrianlopezroche/fdupes">Fdupes</a></li>
+<li><a href="https://docs.github.com/en/rest/activity/events?apiVersion=2022-11-28">Github API (view owner repo and etc)</a></li>
+<li><a href="https://github.com/advisories">Github advisories DB</a></li>
+<li><a href="https://sn0int.com/r/kpcyrd/github">sn0int github profil extractor</a></li>
+<li><a href="https://trendingrepos.com">Github Trending Repo</a></li>
+<li><a href="https://trendingrepos.com">https://trendingrepos.com</a></li>
+<li><a href="https://github.com/bellingcat/octosuite">Octosuite Github</a></li>
+<li><a href="https://anvaka.github.io/map-of-github/#2/0/0">Github find project map</a></li>
+<li><a href="https://github.com/search/advanced">Advanced Search</a></li>
+<li><a href="https://github.com/obheda12/GitDorker">GitDorker</a></li>
+<li><a href="https://github.com/damit5/gitdorks_go">gitdorks_go</a></li>
+</ul>
+<h1 id="secure-code--application"><a class="header" href="#secure-code--application">Secure Code &amp; Application</a></h1>
+<ul>
+<li><a href="https://www.veracode.com/products/binary-static-analysis-sast">veracode</a></li>
+<li><a href="https://snyk.io/product/snyk-code">snyk</a></li>
+<li><a href="https://snyk.io/product/snyk-code">https://snyk.io/product/snyk-code</a></li>
+<li><a href="https://www.opentext.com/products/fortify-static-code-analyzer">fortify-static-code-analyzer</a></li>
+<li><a href="https://www.tenable.com">tenable</a></li>
+<li><a href="https://www.tenable.com">https://www.tenable.com</a></li>
+<li><a href="https://github.com/ZupIT/horusec">horusec</a></li>
+<li><a href="https://github.com/bearer/bearer">bearer</a></li>
+<li><a href="https://github.com/GaloisInc/MATE">MATE</a></li>
+<li><a href="https://github.com/github/codeql">codeql</a></li>
+<li><a href="https://www.sonarsource.com/solutions/security">Sonar</a></li>
+<li><a href="https://www.sonarsource.com/solutions/security">https://www.sonarsource.com/solutions/security</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../files/forensics.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../files/REVERSE_ENGINEERING.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../files/forensics.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../files/REVERSE_ENGINEERING.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

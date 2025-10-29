@@ -1,0 +1,448 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Tor &amp; Dark Web - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="darknet"><a class="header" href="#darknet">DARKNET</a></h2>
+<ul>
+<li><a href="https://danex.io">Danex.io</a></li>
+<li><a href="https://github.com/01Kevin01/OnionLinksV3">OnionLinksV3</a></li>
+<li><a href="https://darktracer.io">Dark Tracer</a></li>
+<li><a href="https://ransomwatch.telemetry.ltd/#/INDEX">ransomwatch 👀 🦅</a></li>
+<li><a href="https://sizeof.cat/post/ransomware-darknet-websites">Ransomware Darknet websites</a></li>
+<li><a href="https://onionsearchengine.com">Onion search engine</a></li>
+<li><a href="https://pypi.org/project/onionsearch">onionsearch</a></li>
+<li><a href="https://tor2web.onionsearchengine.com">Tor2Web: Tor Hidden Services Gateway</a></li>
+<li><a href="https://ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd.onion.pet">Ransomware Group Sites</a></li>
+<li><a href="https://blockpath.com">Blockpath.com</a></li>
+<li><a href="https://darknetlive.com/onions">Onions - Darknetlive</a></li>
+<li><a href="https://darknetlive.com/forums">Darkweb Forums</a></li>
+<li><a href="https://onion.pet">Onion.pet</a></li>
+<li><a href="https://learnmeabitcoin.com/tools/path">Tool | path</a></li>
+<li><a href="https://p53lf57qovyuvwsc6xnrppyply3vtqm7l6pcobkmyqsiofyeznfu5uqd.onion">ProPublica</a></li>
+<li><a href="https://scihub22266oqcxt.onion">Sci-Hub</a></li>
+<li><a href="https://answerszuvs3gg2l64e6hmnryudl5zgrmwm3vh65hzszdghblddvfiqd.onion">Hidden Answers</a></li>
+<li><a href="https://tor2web.activetk.jp">tor2web</a></li>
+<li><a href="https://www.browserling.com">browserling</a></li>
+<li><a href="https://www.4everproxy.com/tor-proxy">4everproxy</a></li>
+</ul>
+<h3 id="darknetdeepweb-search-tools"><a class="header" href="#darknetdeepweb-search-tools">Darknet/deepweb search tools</a></h3>
+<ul>
+<li>
+<p><a href="https://github.com/rlyonheart/thedevilseye">TheDevilsEye</a></p>
+</li>
+<li>
+<p><a href="https://dnmugu4755642434.onion.pet/captcha">KILOS Darknet Search Engine</a></p>
+</li>
+<li>
+<p><a href="https://ahmia.fi/stats/link_graph">Ahmia Link Graph</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Kr0ff/Pasta">Pasta</a></p>
+</li>
+<li>
+<p><a href="https://apify.com/epcsht/darkweb-scraper#dark-web-scraper">Dark Web Scraper</a></p>
+</li>
+<li>
+<p><a href="https://github.com/bbbbbrie/pastebin-bisque">Pastebin-Bisque</a></p>
+</li>
+<li>
+<p><a href="https://dark.fail">Dark Fail</a></p>
+</li>
+<li>
+<p><a href="https://darkweb-archive.activetk.jp">Darkweb archive</a></p>
+</li>
+<li>
+<p><a href="https://github.com/megadose/OnionSearch">OnionSearch - .onion search engine scraper</a></p>
+</li>
+</ul>
+<h3 id="hidden-services"><a class="header" href="#hidden-services">Hidden Services</a></h3>
+<ul>
+<li><a href="https://ahmia.fi/">AHMIA</a> - Search hidden services on the Tor network</li>
+<li><a href="https://thehiddenwiki.org/">thehiddenwiki.org</a> - The darknet guide</li>
+<li><a href="https://tor.link/">tor.link</a> - Free anonymous deepweb / Darknet search engine</li>
+<li><a href="https://deepweblinks.net/">deepweblinks.net</a> - Onion Links</li>
+<li><a href="https://onionengine.com/">onionengine.com</a> - A search engine for services accessible on the Tor network</li>
+<li><a href="https://onionlandsearchengine.net/">OnionLand</a> - Discover Hidden Services and access to Tor's onion sites</li>
+</ul>
+<h1 id="darkweb-search-engines"><a class="header" href="#darkweb-search-engines">Darkweb Search Engines</a></h1>
+<ul>
+<li><a href="https://thehiddenwiki.org">Thehiddenwiki</a></li>
+<li><a href="https://thehiddenwiki.org">https://thehiddenwiki.org</a></li>
+<li><a href="https://www.onion.link">Onion Link</a></li>
+<li><a href="https://www.onion.link">https://www.onion.link</a></li>
+<li><a href="https://memex.garden">MEMEX</a></li>
+<li><a href="https://memex.garden">https://memex.garden</a></li>
+<li><a href="https://onion.cab">Onion</a></li>
+<li><a href="https://onion.city">Onion city</a></li>
+<li><a href="https://onion.city">https://onion.city</a></li>
+<li><a href="https://ahmia.fi">Ahmia</a></li>
+<li><a href="https://ahmia.fi">https://ahmia.fi</a></li>
+<li><a href="https://github.com/DedSecInside/TorBot">TorBot</a></li>
+<li><a href="https://darkfeed.io">Darkfeed</a></li>
+<li><a href="https://darkfeed.io">https://darkfeed.io</a></li>
+<li><a href="https://github.com/megadose/OnionSearch">Onionsearch</a></li>
+<li><a href="https://github.com/darknet-book/tor-guide">Darknet Book</a></li>
+<li><a href="https://www.immuniweb.com/darkweb">immuniweb</a></li>
+<li><a href="https://www.immuniweb.com/darkweb">https://www.immuniweb.com/darkweb</a></li>
+<li><a href="https://darknetlive.com/onions">darknetlive</a></li>
+<li><a href="https://ransomwatch.telemetry.ltd/#">ransomwatch</a></li>
+<li><a href="https://ransomwatch.telemetry.ltd/#">https://ransomwatch.telemetry.ltd/#</a></li>
+<li><a href="https://www.watchguard.com/wgrd-security-hub/ransomware-tracker">watchguard ransomtracker</a></li>
+<li><a href="https://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion">Ahmia Onion Site</a></li>
+<li><a href="https://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion">https://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion</a></li>
+<li><a href="https://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion">Haystak Onion Site</a></li>
+<li><a href="https://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion">https://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion</a></li>
+<li><a href="https://darkschn4iw2hxvpv2vy2uoxwkvs2padb56t3h4wqztre6upoc5qwgid.onion">Dark Search Onion Site</a></li>
+<li><a href="https://darkschn4iw2hxvpv2vy2uoxwkvs2padb56t3h4wqztre6upoc5qwgid.onion">https://darkschn4iw2hxvpv2vy2uoxwkvs2padb56t3h4wqztre6upoc5qwgid.onion</a></li>
+<li><a href="https://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion">Tor66 Onion Site</a></li>
+<li><a href="https://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion">https://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion</a></li>
+<li><a href="https://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega">Torch</a></li>
+<li><a href="https://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega">https://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega</a></li>
+<li><a href="https://www.darkowl.com">Darkowl</a></li>
+<li><a href="https://www.darkowl.com">https://www.darkowl.com</a></li>
+<li><a href="https://www.maltego.com/transform-hub/digital-shadows">Digital Shadows</a></li>
+<li><a href="https://www.maltego.com/transform-hub/digital-shadows">https://www.maltego.com/transform-hub/digital-shadows</a></li>
+<li><a href="https://onion.live">Onion Live</a></li>
+<li><a href="https://onion.live">https://onion.live</a></li>
+<li><a href="https://followmoneyfightslavery.org">ATII</a></li>
+<li><a href="https://followmoneyfightslavery.org">https://followmoneyfightslavery.org</a></li>
+<li><a href="https://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion">Onion Land Search</a></li>
+<li><a href="https://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion">https://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion</a></li>
+<li><a href="https://www.hunch.ly">hunchly</a></li>
+<li><a href="https://www.hunch.ly">https://www.hunch.ly</a></li>
+<li><a href="https://www.hunch.ly/resources/Hunchly-Dark-Web-Setup.pdf">hunch darkweb guide</a></li>
+<li><a href="https://darkweblinks.io">darkweblinks</a></li>
+<li><a href="https://darkweblinks.io">https://darkweblinks.io</a></li>
+<li><a href="https://onionscan.org">onion scan</a></li>
+<li><a href="https://onionscan.org">https://onionscan.org</a></li>
+<li><a href="https://www.hunch.ly/darkweb-osint">hunch ly</a></li>
+<li><a href="https://www.hunch.ly/darkweb-osint">https://www.hunch.ly/darkweb-osint</a></li>
+<li><a href="https://darkweb-archive.activetk.jp">DarkWeb Archive - Active Japan lang</a></li>
+<li><a href="https://darkweb-archive.activetk.jp">https://darkweb-archive.activetk.jp</a></li>
+<li><a href="https://iaca-darkweb-tools.com/search-darkweb">iaca-darkweb-tools</a></li>
+<li><a href="https://iaca-darkweb-tools.com/search-darkweb">https://iaca-darkweb-tools.com/search-darkweb</a></li>
+</ul>
+<h1 id="darkweb-intelligence"><a class="header" href="#darkweb-intelligence">Darkweb Intelligence</a></h1>
+<ul>
+<li><a href="https://whiteintel.io">WhiteIntel</a></li>
+<li><a href="https://whiteintel.io">https://whiteintel.io</a></li>
+<li><a href="https://www.darkradar.io">darkradar</a></li>
+<li><a href="https://www.darkradar.io">https://www.darkradar.io</a></li>
+<li><a href="https://www.stealthmole.com/products/darkweb-tracker">Stealthmole</a></li>
+<li><a href="https://www.osintcombine.com/dw-osint-bookmarks">Darkweb bookmarks</a></li>
+<li><a href="https://www.maltego.com/transform-hub/digital-shadows">Maltego digital shadows transform</a></li>
+<li><a href="https://www.maltego.com/transform-hub/digital-shadows">https://www.maltego.com/transform-hub/digital-shadows</a></li>
+<li><a href="https://www.maltego.com/transform-hub/cybersixgill">Maltego cybersixgill transform</a></li>
+<li><a href="https://www.maltego.com/transform-hub/cybersixgill">https://www.maltego.com/transform-hub/cybersixgill</a></li>
+<li><a href="https://github.com/pielco11/DOGE">Doge Darknet Osint Graph Explorer</a></li>
+<li><a href="https://www.maltego.com/transform-hub/social-links-pro">Maltego social links professional transform</a></li>
+<li><a href="https://www.maltego.com/transform-hub/social-links-pro">https://www.maltego.com/transform-hub/social-links-pro</a></li>
+<li><a href="https://github.com/DedSecInside/TorBot">TorBot</a></li>
+<li><a href="https://darkfeed.io">Darkfeed</a></li>
+<li><a href="https://darkfeed.io">https://darkfeed.io</a></li>
+<li><a href="https://flare.io">Flare</a></li>
+<li><a href="https://flare.io">https://flare.io</a></li>
+<li><a href="https://github.com/iudicium/pryingdeep">pryingdeep</a></li>
+<li><a href="https://www.maltego.com">Maltego</a></li>
+<li><a href="https://github.com/darknet-book/tor-guide">Darknet Book</a></li>
+<li><a href="https://github.com/s-rah/onionscan">Onios Scan</a></li>
+<li><a href="https://cyberint.com/platform/threat-intelligence">Cyber Int Darkweb Intel Platform</a></li>
+<li><a href="https://cyberint.com/platform/threat-intelligence">https://cyberint.com/platform/threat-intelligence</a></li>
+<li><a href="https://socradar.io/products/dark-web-monitoring">SOC Radar Darkweb Int Monitoring</a></li>
+<li><a href="https://socradar.io/products/dark-web-monitoring">https://socradar.io/products/dark-web-monitoring</a></li>
+<li><a href="https://geti2p.net/en">I2P Download</a></li>
+<li><a href="https://geti2p.net/en">https://geti2p.net/en</a></li>
+<li><a href="https://www.zerofox.com/platform">zerofox</a></li>
+<li><a href="https://www.zerofox.com/platform">https://www.zerofox.com/platform</a></li>
+<li><a href="https://shadowdragon.io">ShadowDragon</a></li>
+<li><a href="https://shadowdragon.io">https://shadowdragon.io</a></li>
+<li><a href="https://sociallinks.io">sociallinks</a></li>
+<li><a href="https://sociallinks.io">https://sociallinks.io</a></li>
+<li><a href="https://sociallinks.io/products/sl-crimewall">Crimewall</a></li>
+<li><a href="https://sizeof.cat/archive">sizeof</a></li>
+<li><a href="https://sizeof.cat/archive">https://sizeof.cat/archive</a></li>
+<li><a href="https://dailydarkweb.net">dailydarkweb</a></li>
+<li><a href="https://dailydarkweb.net">https://dailydarkweb.net</a></li>
+<li><a href="https://darkwebinformer.com">darkwebinformer</a></li>
+<li><a href="https://darkwebinformer.com">https://darkwebinformer.com</a></li>
+<li><a href="https://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion">Ahmia Onion Site</a></li>
+<li><a href="https://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion">https://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion</a></li>
+<li><a href="https://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion">Haystak Onion Site</a></li>
+<li><a href="https://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion">https://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion</a></li>
+<li><a href="https://darkschn4iw2hxvpv2vy2uoxwkvs2padb56t3h4wqztre6upoc5qwgid.onion">Dark Search Onion Site</a></li>
+<li><a href="https://darkschn4iw2hxvpv2vy2uoxwkvs2padb56t3h4wqztre6upoc5qwgid.onion">https://darkschn4iw2hxvpv2vy2uoxwkvs2padb56t3h4wqztre6upoc5qwgid.onion</a></li>
+<li><a href="https://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion">Tor66 Onion Site</a></li>
+<li><a href="https://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion">https://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion</a></li>
+<li><a href="https://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega">Torch</a></li>
+<li><a href="https://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega">https://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega</a></li>
+<li><a href="https://www.darkowl.com">Darkowl</a></li>
+<li><a href="https://www.darkowl.com">https://www.darkowl.com</a></li>
+<li><a href="https://www.maltego.com/transform-hub/digital-shadows">Digital Shadows</a></li>
+<li><a href="https://www.maltego.com/transform-hub/digital-shadows">https://www.maltego.com/transform-hub/digital-shadows</a></li>
+<li><a href="https://onion.live">Onion Live</a></li>
+<li><a href="https://onion.live">https://onion.live</a></li>
+<li><a href="https://followmoneyfightslavery.org">ATII</a></li>
+<li><a href="https://followmoneyfightslavery.org">https://followmoneyfightslavery.org</a></li>
+<li><a href="https://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion">Onion Land Search</a></li>
+<li><a href="https://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion">https://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion</a></li>
+<li><a href="https://www.hunch.ly">hunchly</a></li>
+<li><a href="https://www.hunch.ly">https://www.hunch.ly</a></li>
+<li><a href="https://www.hunch.ly/resources/Hunchly-Dark-Web-Setup.pdf">hunch darkweb guide</a></li>
+<li><a href="https://darkweblinks.io">darkweblinks</a></li>
+<li><a href="https://darkweblinks.io">https://darkweblinks.io</a></li>
+<li><a href="https://www.hunch.ly/darkweb-osint">hunch ly</a></li>
+<li><a href="https://www.hunch.ly/darkweb-osint">https://www.hunch.ly/darkweb-osint</a></li>
+<li><a href="https://www.darknetstats.com">darknetstats</a></li>
+<li><a href="https://www.darknetstats.com">https://www.darknetstats.com</a></li>
+<li><a href="https://darknetlive.com">darknetlive</a></li>
+<li><a href="https://darknetlive.com">https://darknetlive.com</a></li>
+<li><a href="https://whitepapers.virtualprivatelibrary.net/DeepWeb.pdf">Deepweb more resouces</a></li>
+<li><a href="https://whitepapers.virtualprivatelibrary.net/DeepWeb.pdf">https://whitepapers.virtualprivatelibrary.net/DeepWeb.pdf</a></li>
+<li><a href="https://tormap.org">TOR map</a></li>
+<li><a href="https://tormap.org">https://tormap.org</a></li>
+<li><a href="https://github.com/0xSojalSec/read-dark-web">Read Darkweb</a></li>
+<li><a href="https://deepweblinks.net">deepweblinks</a></li>
+<li><a href="https://deepweblinks.net">https://deepweblinks.net</a></li>
+<li><a href="https://onionlandsearchengine.net">onionlandsearchengine</a></li>
+<li><a href="https://onionlandsearchengine.net">https://onionlandsearchengine.net</a></li>
+<li><a href="https://tor.link">tor link</a></li>
+<li><a href="https://tor.link">https://tor.link</a></li>
+<li><a href="https://iaca-darkweb-tools.com/search-darkweb">iaca-darkweb-tools</a></li>
+<li><a href="https://iaca-darkweb-tools.com/search-darkweb">https://iaca-darkweb-tools.com/search-darkweb</a></li>
+</ul>
+<h1 id="torrent"><a class="header" href="#torrent">Torrent</a></h1>
+<ul>
+<li><a href="https://www.utorrent.com">utorrent</a></li>
+<li><a href="https://www.utorrent.com">https://www.utorrent.com</a></li>
+<li><a href="https://www.bittorrent.com">bittorrent</a></li>
+<li><a href="https://www.bittorrent.com">https://www.bittorrent.com</a></li>
+<li><a href="https://github.com/Jackett/Jackett">Jacket</a></li>
+<li><a href="https://github.com/cipher387/API-s-for-OSINT/blob/main/README.md">API OSINT TORRENT</a></li>
+<li><a href="https://github.com/sergiotapia/torrentinim">torrentinim</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../breaches/QUERIES_DATABASES.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../specialized/CLOUD_CDN.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../breaches/QUERIES_DATABASES.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../specialized/CLOUD_CDN.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

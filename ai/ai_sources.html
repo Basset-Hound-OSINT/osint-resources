@@ -1,0 +1,411 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Artificial Intelligence - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li><a href="https://www.decktopus.com">Decktopus</a></li>
+<li><a href="https://monica.im">Monica</a></li>
+<li><a href="https://www.poised.com">Poised</a></li>
+<li><a href="https://stockimg.ai">StockimgAI</a></li>
+<li><a href="https://www.chatpdf.com">ChatPDF</a></li>
+<li><a href="https://sheetplus.ai">SheetplusAI</a></li>
+<li><a href="https://10web.io">10web</a></li>
+<li><a href="https://agentgpt.reworkd.ai">AgentGPT</a></li>
+<li><a href="https://leonardo.ai">LonardoAI</a></li>
+<li><a href="https://firefly.adobe.com">Adobe FireFly</a></li>
+<li><a href="https://groq.com">Groq</a></li>
+<li><a href="https://www.youlearn.ai">YouLearn</a></li>
+</ul>
+<h3 id="71--ai-programming"><a class="header" href="#71--ai-programming">7.1  AI Programming</a></h3>
+<ul>
+<li><a href="https://cursor.sh">Cursor</a></li>
+<li><a href="https://www.windsurf.io">WindSurf</a></li>
+<li><a href="https://boltai.com">Bolt</a></li>
+<li><a href="https://github.com/features/copilot">GitHub Copilot</a></li>
+<li><a href="https://www.tabnine.com">Tabnine</a></li>
+<li><a href="https://github.com/brunoooost/AISources">AISources</a></li>
+</ul>
+<h3 id="72--ai-cybersecurity"><a class="header" href="#72--ai-cybersecurity">7.2  AI Cybersecurity</a></h3>
+<ul>
+<li>
+<p><a href="https://www.darktrace.com">Darktrace</a></p>
+</li>
+<li>
+<p><a href="https://www.crowdstrike.com">CrowdStrike Falcon</a></p>
+</li>
+<li>
+<p><a href="https://www.vectra.ai">Vectra AI</a></p>
+</li>
+<li>
+<p><a href="https://www.cynet.com">Cynet 360</a></p>
+</li>
+<li>
+<p><a href="https://www.alsego.com/reveelium">Reveelium</a></p>
+</li>
+<li>
+<p><a href="https://pentestgpt.ai">PentestGPT</a></p>
+</li>
+<li>
+<p><a href="https://flowgpt.com/p/wormgpt-6">WormGPT- 6</a></p>
+</li>
+<li>
+<p><a href="https://www.os-surveillance.io/">OS - Surveillance</a></p>
+</li>
+</ul>
+<h1 id="gpt-osint-ai"><a class="header" href="#gpt-osint-ai">GPT OSINT (AI)</a></h1>
+<ul>
+<li><a href="https://claude.ai/login">claude</a></li>
+<li><a href="https://www.deepseek.com">deepseek</a></li>
+<li><a href="https://www.deepseek.com">https://www.deepseek.com</a></li>
+<li><a href="https://github.com/gigz/gpt-osint">Gpt osint</a></li>
+<li><a href="https://www.cursor.com/features">cursor</a></li>
+<li><a href="https://lmstudio.ai">lmstudio</a></li>
+<li><a href="https://lmstudio.ai">https://lmstudio.ai</a></li>
+<li><a href="https://ollama.com/library/llama2-uncensored">ollama uncensored</a></li>
+<li><a href="https://chat.hackerai.co/id/login">Hacker AI</a></li>
+<li><a href="https://www.blackbox.ai">Blackbox AI</a></li>
+<li><a href="https://www.blackbox.ai">https://www.blackbox.ai</a></li>
+<li><a href="https://openai.com/chatgpt">Chat GPT</a></li>
+<li><a href="https://openai.com/chatgpt">https://openai.com/chatgpt</a></li>
+<li><a href="https://poe.com/login">poe AI</a></li>
+<li><a href="https://www.chatpdf.com">Chat-PDF</a></li>
+<li><a href="https://www.chatpdf.com">https://www.chatpdf.com</a></li>
+<li><a href="https://www.perplexity.ai">perplexity</a></li>
+<li><a href="https://www.perplexity.ai">https://www.perplexity.ai</a></li>
+<li><a href="https://www.osint-tool.com/unravel-help">UBIKRON</a></li>
+<li><a href="https://www.osint-tool.com/unravel-help">https://www.osint-tool.com/unravel-help</a></li>
+<li><a href="https://agent.earthkit.app">earthkit</a></li>
+<li><a href="https://agent.earthkit.app">https://agent.earthkit.app</a></li>
+</ul>
+<h1 id="osint-detect-deepfake"><a class="header" href="#osint-detect-deepfake">OSINT Detect Deepfake</a></h1>
+<ul>
+<li><a href="https://scanner.deepware.ai">scanner deepfake</a></li>
+<li><a href="https://scanner.deepware.ai">https://scanner.deepware.ai</a></li>
+<li><a href="https://www.aiornot.com">aiornot</a></li>
+<li><a href="https://www.aiornot.com">https://www.aiornot.com</a></li>
+<li><a href="https://sensity.ai">sensity.ai</a></li>
+<li><a href="https://sensity.ai">https://sensity.ai</a></li>
+<li><a href="https://seintpl.github.io/AmIReal">AmIReal</a></li>
+<li><a href="https://seintpl.github.io/AmIReal">https://seintpl.github.io/AmIReal</a></li>
+<li><a href="https://www.invid-project.eu/tools-and-services/invid-verification-plugin">invid-project</a></li>
+<li><a href="https://www.invid-project.eu/tools-and-services/invid-verification-plugin">https://www.invid-project.eu/tools-and-services/invid-verification-plugin</a></li>
+<li><a href="https://gptzero.com">gptzero</a></li>
+<li><a href="https://gptzero.com">https://gptzero.com</a></li>
+<li><a href="https://isitai.com/ai-image-detector">isitai</a></li>
+<li><a href="https://isitai.com/ai-image-detector">https://isitai.com/ai-image-detector</a></li>
+<li><a href="https://hivemoderation.com/ai-generated-content-detection">hivemoderation</a></li>
+<li><a href="https://scanner.deepware.ai">deepware</a></li>
+<li><a href="https://scanner.deepware.ai">https://scanner.deepware.ai</a></li>
+<li><a href="https://elevenlabs.io/ai-speech-classifier">audio elevenlabs</a></li>
+<li><a href="https://gijn.org/resource/tipsheet-investigating-ai-audio-deepfakes">GIJN Investigate AI Deepfake</a></li>
+<li><a href="https://gijn.org/resource/tipsheet-investigating-ai-audio-deepfakes">https://gijn.org/resource/tipsheet-investigating-ai-audio-deepfakes</a></li>
+<li><a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/6-how-to-think-about-deepfakes-and-emerging-manipulation-technologie">datajournalism AI Deepfake</a></li>
+<li><a href="https://www.dw.com/en/fact-check-how-do-i-spot-a-deepfake/a-60029650">DW Guide Investigate Deepfake</a></li>
+<li><a href="https://sightengine.com">sightengine</a></li>
+<li><a href="https://sightengine.com">https://sightengine.com</a></li>
+<li><a href="https://wasitai.com">wasitai</a></li>
+<li><a href="https://wasitai.com">https://wasitai.com</a></li>
+</ul>
+<h1 id="osint-similarity-plagiarism"><a class="header" href="#osint-similarity-plagiarism">OSINT Similarity (Plagiarism)</a></h1>
+<ul>
+<li><a href="https://1text.com">1text</a></li>
+<li><a href="https://1text.com">https://1text.com</a></li>
+<li><a href="https://gptzero.me">gptzero</a></li>
+<li><a href="https://gptzero.me">https://gptzero.me</a></li>
+<li><a href="https://www.grammarly.com">grammarly</a></li>
+<li><a href="https://www.grammarly.com">https://www.grammarly.com</a></li>
+<li><a href="https://www.duplichecker.com">duplichecker</a></li>
+<li><a href="https://www.duplichecker.com">https://www.duplichecker.com</a></li>
+<li><a href="https://smallseotools.com/plagiarism-checker">smallseotools</a></li>
+<li><a href="https://smallseotools.com/plagiarism-checker">https://smallseotools.com/plagiarism-checker</a></li>
+<li><a href="https://www.turnitin.com/products/similarity">turnitin</a></li>
+<li><a href="https://www.turnitin.com/products/similarity">https://www.turnitin.com/products/similarity</a></li>
+<li><a href="https://hivemoderation.com/ai-generated-content-detection">hivemoderation</a></li>
+<li><a href="https://www.humata.ai">humata</a></li>
+<li><a href="https://www.humata.ai">https://www.humata.ai</a></li>
+<li><a href="https://www.kipper.ai">kipper</a></li>
+<li><a href="https://www.kipper.ai">https://www.kipper.ai</a></li>
+<li><a href="https://sintelix.com">sintelix</a></li>
+<li><a href="https://sintelix.com">https://sintelix.com</a></li>
+<li><a href="https://www.nltk.org">ntlk</a></li>
+<li><a href="https://www.nltk.org">https://www.nltk.org</a></li>
+<li><a href="https://voyant-tools.org">voyant</a></li>
+<li><a href="https://voyant-tools.org">https://voyant-tools.org</a></li>
+<li><a href="https://brandmentions.com">brandmentions</a></li>
+<li><a href="https://brandmentions.com">https://brandmentions.com</a></li>
+<li><a href="https://copyleaks.com">copyleaks</a></li>
+<li><a href="https://copyleaks.com">https://copyleaks.com</a></li>
+<li><a href="https://gowinston.ai">gowinston</a></li>
+<li><a href="https://gowinston.ai">https://gowinston.ai</a></li>
+<li><a href="https://humbot.ai">humbot</a></li>
+<li><a href="https://humbot.ai">https://humbot.ai</a></li>
+<li><a href="https://hivemoderation.com/ai-generated-content-detection">hivemoderation</a></li>
+<li><a href="https://www.youtube.com">Youtube search with voice</a></li>
+<li><a href="https://www.youtube.com">https://www.youtube.com</a></li>
+<li><a href="https://www.google.com">Google search with voice</a></li>
+<li><a href="https://www.google.com">https://www.google.com</a></li>
+<li><a href="https://hivemoderation.com/ai-generated-content-detection">hivemoderation</a></li>
+<li><a href="https://www.shutterstock.com/search/like-video">shutterstock</a></li>
+<li><a href="https://www.google.com/videohp?hl=id">Google Vidio Search</a></li>
+<li><a href="https://www.invid-project.eu/tools-and-services/invid-verification-plugin">invid-project</a></li>
+<li><a href="https://www.invid-project.eu/tools-and-services/invid-verification-plugin">https://www.invid-project.eu/tools-and-services/invid-verification-plugin</a></li>
+<li><a href="https://facecomparison.toolpie.com">Face Similarity Test Online</a></li>
+<li><a href="https://facecomparison.toolpie.com">https://facecomparison.toolpie.com</a></li>
+<li><a href="https://www.similarweb.com/website">similarweb</a></li>
+<li><a href="https://www.similarweb.com/website">https://www.similarweb.com/website</a></li>
+<li><a href="https://www.similarsites.com">similarsites</a></li>
+<li><a href="https://www.similarsites.com">https://www.similarsites.com</a></li>
+<li><a href="https://www.sitelike.org">sitelike</a></li>
+<li><a href="https://www.sitelike.org">https://www.sitelike.org</a></li>
+<li><a href="https://pr-cy.io/tools/similar-websites">pr-cy.io</a></li>
+<li><a href="https://pr-cy.io/tools/similar-websites">https://pr-cy.io/tools/similar-websites</a></li>
+<li><a href="https://clone-ui.design">Clone UI Design</a></li>
+<li><a href="https://clone-ui.design">https://clone-ui.design</a></li>
+<li><a href="https://website.informer.com">Website informer</a></li>
+<li><a href="https://website.informer.com">https://website.informer.com</a></li>
+<li><a href="https://vstat.info">vstat</a></li>
+<li><a href="https://vstat.info">https://vstat.info</a></li>
+<li><a href="https://www.siteslike.com">siteslike</a></li>
+<li><a href="https://www.siteslike.com">https://www.siteslike.com</a></li>
+<li><a href="https://www.domains.ch/en">domains - search similarity domain and niche web</a></li>
+<li><a href="https://smallseotools.com/similar-sites">smallseotools compare web similar</a></li>
+<li><a href="https://smallseotools.com/similar-sites">https://smallseotools.com/similar-sites</a></li>
+<li><a href="https://www.ventureradar.com/search">Venture Radar</a></li>
+<li><a href="https://tracxn.com/?redirect=false">tracxn</a></li>
+<li><a href="https://www.similarweb.com/website">similarweb</a></li>
+<li><a href="https://www.similarweb.com/website">https://www.similarweb.com/website</a></li>
+<li><a href="https://website.informer.com">Website informer</a></li>
+<li><a href="https://website.informer.com">https://website.informer.com</a></li>
+<li><a href="https://vstat.info">vstat</a></li>
+<li><a href="https://vstat.info">https://vstat.info</a></li>
+<li><a href="https://www.sgpbusiness.com">sgpbusiness</a></li>
+<li><a href="https://www.sgpbusiness.com">https://www.sgpbusiness.com</a></li>
+<li><a href="https://socialblade.com">socialblade similarity</a></li>
+<li><a href="https://socialblade.com">https://socialblade.com</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../specialized/BROADCAST_STREAMS.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../offsec/IP_ADDRESSES.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../specialized/BROADCAST_STREAMS.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../offsec/IP_ADDRESSES.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

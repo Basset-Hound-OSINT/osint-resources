@@ -1,0 +1,382 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Crypto &amp; Virtual Currencies - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="cryptocurrency"><a class="header" href="#cryptocurrency">CRYPTOCURRENCY</a></h2>
+<ul>
+<li><a href="https://cryptocurrencyalerting.com">Cryptocurrency Alerting</a></li>
+<li><a href="https://blockchair.com/bitcoin">Bitcoin Explorer</a></li>
+<li><a href="https://etherscan.io">Ethereum Block Explorer</a></li>
+<li><a href="https://flowscan.org">Flowscan.org</a></li>
+<li><a href="https://cse.google.com/cse?cx=f49f9d5e679b15787">Bitcoin Forums Search Engine</a></li>
+<li><a href="https://www.blockchain.com/explorer">Blockchain Explorer</a></li>
+<li><a href="https://addresschecker.eu">Addresschecker.eu</a></li>
+<li><a href="https://coinwink.com">Coinwink.com</a></li>
+</ul>
+<h2 id="currencies"><a class="header" href="#currencies">Currencies</a></h2>
+<ul>
+<li><a href="https://api.coinconvert.net/convert/btc/usd?amount=">Api</a></li>
+<li><a href="https://api.exchangerate.host/convert?from=SAT&amp;to=USD&amp;amount=">Api</a></li>
+<li><a href="https://api.exchangerate.host/convert?from=USD&amp;to=SAT&amp;amount=">Api</a></li>
+<li><a href="https://bitcoinwhoswho.com/address">Bitcoinwhoswho</a></li>
+<li><a href="https://blockchain.info/q/24hrprice">Blockchain</a></li>
+<li><a href="https://blockchain.info/q/addressbalance">Blockchain</a></li>
+<li><a href="https://blockchain.info/q/addressfirstseen">Blockchain</a></li>
+<li><a href="https://blockchain.info/q/getreceivedbyaddress">Blockchain</a></li>
+<li><a href="https://blockchain.info/q/getsentbyaddress">Blockchain</a></li>
+<li><a href="https://blockchain.info/tobtc?currency=USD&amp;value=">Blockchain</a></li>
+<li><a href="https://blockchair.com/bitcoin-cash/address">Blockchair</a></li>
+<li><a href="https://blockchair.com/bitcoin/address">Blockchair</a></li>
+<li><a href="https://blockchair.com/dash/address">Blockchair</a></li>
+<li><a href="https://blockchair.com/dogecoin/address">Blockchair</a></li>
+<li><a href="https://blockchair.com/ethereum/address">Blockchair</a></li>
+<li><a href="https://blockchair.com/litecoin/address">Blockchair</a></li>
+<li><a href="https://blockexplorer.com/api/addr">Blockexplorer</a></li>
+<li><a href="https://explorer.cloverpool.com/btc/address">Explorer</a></li>
+<li><a href="https://oxt.me/address">Oxt</a></li>
+<li><a href="https://scamsearch.io/search_report?searchoption=all&amp;search=">Scamsearch</a></li>
+<li><a href="https://www.blockchain.com/btc/address">Blockchain</a></li>
+<li><a href="https://www.chainabuse.com/address">Chainabuse</a></li>
+<li><a href="https://www.walletexplorer.com/address">Walletexplorer</a></li>
+</ul>
+<h3 id="81-cryptocurrency"><a class="header" href="#81-cryptocurrency">8.1 Cryptocurrency</a></h3>
+<ul>
+<li><a href="https://chainz.cryptoid.info/ltc">CryptoID</a></li>
+<li><a href="https://www.cointracker.io/wallets/2/7d1bdc76-c995-4739-b7ab-dbe8c52f6305">CoinTracker</a></li>
+<li><a href="https://www.coinwink.com">Coinwink</a></li>
+<li><a href="https://www.flowscan.org">Flowscan</a></li>
+<li><a href="https://www.bitcoinexplorer.org">Bitcoin Explorer</a></li>
+<li><a href="https://www.etherscan.io">Ethereum Block Explorer</a></li>
+<li><a href="https://www.blockcypher.com">Blockcypher</a></li>
+<li><a href="https://www.addresschecker.eu">Addresschecker.eu</a></li>
+<li><a href="https://www.cryptocurrencyalerting.com">Cryptocurrency Alerting</a></li>
+</ul>
+<h3 id="crypto"><a class="header" href="#crypto">Crypto</a></h3>
+<ul>
+<li><a href="https://www.chainabuse.com/">ChainAbuse</a> - Report malicious crypto activity</li>
+<li><a href="https://blockchair.com/">BlockChair</a> - Blockchain explorer, analytics and web services</li>
+<li><a href="https://live.blockcypher.com/">BlockCypher</a> - Search the block chain</li>
+</ul>
+<h1 id="cryptocurrency-investigation"><a class="header" href="#cryptocurrency-investigation">Cryptocurrency Investigation</a></h1>
+<ul>
+<li><a href="https://explorer.bitquery.io">bitquery</a></li>
+<li><a href="https://explorer.bitquery.io">https://explorer.bitquery.io</a></li>
+<li><a href="https://www.blockchain.com">Blockchain</a></li>
+<li><a href="https://www.blockchain.com">https://www.blockchain.com</a></li>
+<li><a href="https://flashpoint.io/resources/research/flashpoint-and-chainalysis-investigate-hydra-where-cryptocurrency-cybercrime-goes-dark">Flashpoint</a></li>
+<li><a href="https://flashpoint.io/resources/research/flashpoint-and-chainalysis-investigate-hydra-where-cryptocurrency-cybercrime-goes-dark">https://flashpoint.io/resources/research/flashpoint-and-chainalysis-investigate-hydra-where-cryptocurrency-cybercrime-goes-dark</a></li>
+<li><a href="https://intel471.com">Intel471</a></li>
+<li><a href="https://intel471.com">https://intel471.com</a></li>
+<li><a href="https://tatum.io">Tatum</a></li>
+<li><a href="https://tatum.io">https://tatum.io</a></li>
+<li><a href="https://www.bitquery.io">bitquery</a></li>
+<li><a href="https://www.bitquery.io">https://www.bitquery.io</a></li>
+<li><a href="https://www.bitcoinabuse.com">Bitcoin Abuse</a></li>
+<li><a href="https://www.bitcoinabuse.com">https://www.bitcoinabuse.com</a></li>
+<li><a href="https://github.com/INTERPOL-Innovation-Centre/GraphSense-Maltego-transform">GraphSense</a></li>
+<li><a href="https://www.blockexplorer.com/l/en-US">Blockhain Explorer</a></li>
+<li><a href="https://www.blockexplorer.com/l/en-US">https://www.blockexplorer.com/l/en-US</a></li>
+<li><a href="https://live.blockcypher.com">blockcypher</a></li>
+<li><a href="https://live.blockcypher.com">https://live.blockcypher.com</a></li>
+<li><a href="https://btcscan.org">BTC Scan</a></li>
+<li><a href="https://btcscan.org">https://btcscan.org</a></li>
+<li><a href="https://github.com/aaarghhh/a_TON_of_privacy">TON of privacy</a></li>
+<li><a href="https://oxt.me">OXT</a></li>
+<li><a href="https://oxt.me">https://oxt.me</a></li>
+<li><a href="https://etherscan.io">etherscan</a></li>
+<li><a href="https://etherscan.io">https://etherscan.io</a></li>
+<li><a href="https://www.maltego.com/transform-hub/socialnet">Maltego Transform ShadowDragon</a></li>
+<li><a href="https://www.maltego.com/transform-hub/socialnet">https://www.maltego.com/transform-hub/socialnet</a></li>
+<li><a href="https://www.maltego.com/transform-hub/social-links-pro">Maltego Social Links Pro</a></li>
+<li><a href="https://www.maltego.com/transform-hub/social-links-pro">https://www.maltego.com/transform-hub/social-links-pro</a></li>
+<li><a href="https://github.com/kennbroorg/trackenn?tab=readme-ov-file">trackenn</a></li>
+<li><a href="https://tokensniffer.com">tokensniffer</a></li>
+<li><a href="https://tokensniffer.com">https://tokensniffer.com</a></li>
+<li><a href="https://opensea.io">opensea</a></li>
+<li><a href="https://opensea.io">https://opensea.io</a></li>
+<li><a href="https://www.nyckel.com/nft-finder">nyckel NFT Finder</a></li>
+<li><a href="https://www.chainabuse.com">chainabuse</a></li>
+<li><a href="https://www.chainabuse.com">https://www.chainabuse.com</a></li>
+<li><a href="https://bitinfocharts.com">bitinfocharts</a></li>
+<li><a href="https://bitinfocharts.com">https://bitinfocharts.com</a></li>
+<li><a href="https://blockchair.com">blockchair</a></li>
+<li><a href="https://blockchair.com">https://blockchair.com</a></li>
+<li><a href="https://github.com/INTERPOL-Innovation-Centre/GraphSense-Maltego-transform">GraphSense-Maltego-transform</a></li>
+<li><a href="https://www.chainalysis.com/blockchain-intelligence">chainalysis</a></li>
+<li><a href="https://www.chainalysis.com/blockchain-intelligence">https://www.chainalysis.com/blockchain-intelligence</a></li>
+<li><a href="https://www.onchain.industries">onchain industries</a></li>
+<li><a href="https://www.onchain.industries">https://www.onchain.industries</a></li>
+<li><a href="https://www.breadcrumbs.app">breadcrumbs</a></li>
+<li><a href="https://www.breadcrumbs.app">https://www.breadcrumbs.app</a></li>
+</ul>
+<h1 id="crypto-market--analysis"><a class="header" href="#crypto-market--analysis">Crypto Market &amp; Analysis</a></h1>
+<ul>
+<li><a href="https://coinmarketcap.com">coinmarketcap</a></li>
+<li><a href="https://coinmarketcap.com">https://coinmarketcap.com</a></li>
+<li><a href="https://www.coinbase.com/explore">coinbase</a></li>
+<li><a href="https://www.binance.com/en/markets">binance</a></li>
+<li><a href="https://tronscan.org/#">tronscan</a></li>
+<li><a href="https://tronscan.org/#">https://tronscan.org/#</a></li>
+<li><a href="https://www.walletexplorer.com">walletexplorer</a></li>
+<li><a href="https://www.walletexplorer.com">https://www.walletexplorer.com</a></li>
+<li><a href="https://bitref.com">bitref</a></li>
+<li><a href="https://bitref.com">https://bitref.com</a></li>
+<li><a href="https://www.blockchain.com/explorer">blockchain</a></li>
+<li><a href="https://blockexplorer.com">blockexplorer</a></li>
+<li><a href="https://blockexplorer.com">https://blockexplorer.com</a></li>
+<li><a href="https://live.blockcypher.com">blockcypher</a></li>
+<li><a href="https://live.blockcypher.com">https://live.blockcypher.com</a></li>
+<li><a href="https://intelx.io">intelx</a></li>
+<li><a href="https://intelx.io">https://intelx.io</a></li>
+<li><a href="https://oxt.me">oxt</a></li>
+<li><a href="https://oxt.me">https://oxt.me</a></li>
+<li><a href="https://www.bitcoinwhoswho.com">bitcoinwhoswho</a></li>
+<li><a href="https://www.bitcoinwhoswho.com">https://www.bitcoinwhoswho.com</a></li>
+<li><a href="https://etherscan.io">etherscan</a></li>
+<li><a href="https://etherscan.io">https://etherscan.io</a></li>
+<li><a href="https://www.etherchain.org">etherchain</a></li>
+<li><a href="https://www.etherchain.org">https://www.etherchain.org</a></li>
+<li><a href="https://app.ens.domains">web3 username search</a></li>
+<li><a href="https://app.ens.domains">https://app.ens.domains</a></li>
+<li><a href="https://www.chainabuse.com">chainabuse</a></li>
+<li><a href="https://www.chainabuse.com">https://www.chainabuse.com</a></li>
+<li><a href="https://bitinfocharts.com">bitinfocharts</a></li>
+<li><a href="https://bitinfocharts.com">https://bitinfocharts.com</a></li>
+<li><a href="https://blockchair.com">blockchair</a></li>
+<li><a href="https://blockchair.com">https://blockchair.com</a></li>
+<li><a href="https://bitaps.com">bitaps</a></li>
+<li><a href="https://bitaps.com">https://bitaps.com</a></li>
+<li><a href="https://3xpl.com/bitcoin">3pxl</a></li>
+<li><a href="https://intel.arkm.com">ARKHAM INTEL</a></li>
+<li><a href="https://intel.arkm.com">https://intel.arkm.com</a></li>
+<li><a href="https://www.onchain.industries">onchain industries</a></li>
+<li><a href="https://www.onchain.industries">https://www.onchain.industries</a></li>
+<li><a href="https://www.breadcrumbs.app">breadcrumbs</a></li>
+<li><a href="https://www.breadcrumbs.app">https://www.breadcrumbs.app</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../political_economic/INVESTING.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../breaches/DATA_BREACHES.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../political_economic/INVESTING.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../breaches/DATA_BREACHES.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

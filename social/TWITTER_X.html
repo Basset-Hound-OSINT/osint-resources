@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Twitter / X - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="twitter"><a class="header" href="#twitter">Twitter</a></h2>
+<ul>
+<li><a href="https://api.memory.lol/v1/tw">Api</a></li>
+<li><a href="https://api.memory.lol/v1/tw/id">Api</a></li>
+<li><a href="https://google.com/search?q=site%3Atwitter.com%2F">Google</a></li>
+<li><a href="https://twitter.com/i/lists">Twitter</a></li>
+<li><a href="https://twitter.com/search?q=from%3A">Twitter</a></li>
+<li><a href="https://twitter.com/search?q=to%3A">Twitter</a></li>
+<li><a href="https://web.archive.org/web/*/twitter.com">Web</a></li>
+<li><a href="https://www.bing.com/search?q=twitter.com">Bing</a></li>
+<li><a href="https://www.google.com/search?q=site%3Atwitter.com%2F">Google</a></li>
+<li><a href="https://www.yandex.com/search/?text=https%3A%2F%2Ftwitter.com%2F">Yandex</a></li>
+</ul>
+<h3 id="twitter-1"><a class="header" href="#twitter-1">Twitter</a></h3>
+<ul>
+<li><a href="https://github.com/markowanga/stweet">Stweet</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/twitter-account-detector/papcdbgfejihdinhieggiamjnkclhkck/related">Twitter account detector</a></li>
+<li><a href="https://followerwonk.com/compare">Follower Wonk/Compare</a></li>
+<li><a href="https://tweepsmap.com/dash/unfollows">Tweepsmap Unfollows</a></li>
+<li><a href="https://app.truthnest.com">app.truthnest.com</a></li>
+<li><a href="https://en.whotwi.com">Whotwi</a></li>
+<li><a href="https://treeverse.app">Treeverse.app</a></li>
+<li><a href="https://www.scoutzen.com/twitter-lists/search">Scoutzen</a></li>
+<li><a href="https://www.csc2.ncsu.edu/faculty/healey/tweet_viz/tweet_app">Tweet Sentiment Visualization</a></li>
+<li><a href="https://tweetbeaver.com/friendsfollowing.php">Tweet Beaver Friends Following</a></li>
+<li><a href="https://tweettopicexplorer.neoformix.com/#n=NYTimes">Tweet Topic Explorer</a></li>
+<li><a href="https://influencermarketinghub.com/twitter-money-calculator">Twitter Money Calculator</a></li>
+<li><a href="https://analytics.twitter.com">Twitter Analytics</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/twemex-sidebar-for-twitte/amoldiondpmjdnllknhklocndiibkcoe/related">Twemex</a></li>
+<li><a href="https://www.vicinitas.io/free-tools/download-twitter-followers">Vicintias.io</a></li>
+<li><a href="https://shadowban.yuzurisa.com">Twitter Shadow Ban Checker</a></li>
+<li><a href="https://www.twitonomy.com/mentions-map.php">Twitter Mentions Map</a></li>
+<li><a href="https://apify.com/zuzka/twitter-url-scraper">Twitter URL Scraper</a></li>
+<li><a href="https://doesfollow.com">DO ES FOLLOW</a></li>
+<li><a href="https://sleepingtime.org">Sleeping Time</a></li>
+<li><a href="https://tweettunnel.com/reverse.php">Tweet Tunnel</a></li>
+<li><a href="https://twitter.com/i/directory">Twitter users directory</a></li>
+<li><a href="https://us.trend-calendar.com">US Twitter Trend Calendar</a></li>
+<li><a href="https://projects.noahliebman.net/listcopy/connect.php">projects.noahliebman.net/listcopy</a></li>
+<li><a href="https://unfollowerstats.com">Unfollower Stats</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/twish/afpegchfbaddfmenhkajjggbnjfjejeh/related">Twish</a></li>
+<li><a href="https://console.apify.com/actors/u6ppkMWAx2E2MpEuF">Twitter Scraper</a></li>
+<li><a href="https://archive.twitter-trending.com">Twiiter Trending Archive</a></li>
+<li><a href="https://tweeview.ml">Tweeview</a></li>
+<li><a href="https://www.tweeplers.com/?cc=GB">Tweeplers</a></li>
+<li><a href="https://www.flock.network">FlockNet</a></li>
+<li><a href="https://orbit.livasch.com">Orbit livasch</a></li>
+<li><a href="https://archive.org/details/twitterstream">The Twitter Stream Grab</a></li>
+<li><a href="https://twitter.jeffprod.com">Twitter 3D</a></li>
+<li><a href="https://github.com/wseagar/eight-dollars">Eight Dollars</a></li>
+<li><a href="https://github.com/timhutton/twitter-archive-parser">Twitter Archive Parser</a></li>
+<li><a href="https://twitter-tools.rootonline.de/removeTweets">removeTweets</a></li>
+<li><a href="https://github.com/achyuthjoism/tweeds">TWEEDS</a></li>
+<li><a href="https://perplexity.ai/sql">BirdSQL</a></li>
+<li><a href="https://spacesdown.com">Spaces Down</a></li>
+<li><a href="https://github.com/insin/control-panel-for-twitter">Twitter Control Panel</a></li>
+</ul>
+<h1 id="twitter-2"><a class="header" href="#twitter-2">Twitter</a></h1>
+<ul>
+<li><a href="https://hoaxy.osome.iu.edu">Hoaxy</a></li>
+<li><a href="https://hoaxy.osome.iu.edu">https://hoaxy.osome.iu.edu</a></li>
+<li><a href="https://developer.x.com/en/docs/twitter-api/getting-started/about-twitter-api">Twitter API</a></li>
+<li><a href="https://twitter.com/search-home">search.twitter.com</a></li>
+<li><a href="https://www.twitter.com/search-advanced">twitter advanced</a></li>
+<li><a href="https://www.twitter.com/who_to_follow">twitter who_to_follow</a></li>
+<li><a href="https://backtweets.com">Backtweets</a></li>
+<li><a href="https://backtweets.com">https://backtweets.com</a></li>
+<li><a href="https://ctrlq.org/first">First Tweet</a></li>
+<li><a href="https://ctrlq.org/first">https://ctrlq.org/first</a></li>
+<li><a href="https://foller.me">Foller.me</a></li>
+<li><a href="https://foller.me">https://foller.me</a></li>
+<li><a href="https://followerwonk.com">Followerwonk</a></li>
+<li><a href="https://followerwonk.com">https://followerwonk.com</a></li>
+<li><a href="https://geosocialfootprint.com">GeoSocial Footprint</a></li>
+<li><a href="https://geosocialfootprint.com">https://geosocialfootprint.com</a></li>
+<li><a href="https://gigatweeter.com">Gigatweeter</a></li>
+<li><a href="https://gigatweeter.com">https://gigatweeter.com</a></li>
+<li><a href="https://worldmap.harvard.edu/tweetmap">Harvard TweetMap</a></li>
+<li><a href="https://worldmap.harvard.edu/tweetmap">https://worldmap.harvard.edu/tweetmap</a></li>
+<li><a href="https://hashtagify.me">Hashtagify</a></li>
+<li><a href="https://hashtagify.me">https://hashtagify.me</a></li>
+<li><a href="https://www.hashtags.org">Hashtags.org</a></li>
+<li><a href="https://www.hashtags.org">https://www.hashtags.org</a></li>
+<li><a href="https://www.mytweetalerts.com">MyTweetAlerts</a></li>
+<li><a href="https://www.mytweetalerts.com">https://www.mytweetalerts.com</a></li>
+<li><a href="https://onemilliontweetmap.com">OneMillionTweetMap</a></li>
+<li><a href="https://onemilliontweetmap.com">https://onemilliontweetmap.com</a></li>
+<li><a href="https://www.socialbearing.com">Social Bearing</a></li>
+<li><a href="https://www.socialbearing.com">https://www.socialbearing.com</a></li>
+<li><a href="https://socialrank.com/firstfollower">Social Rank First Follower</a></li>
+<li><a href="https://socialrank.com/firstfollower">https://socialrank.com/firstfollower</a></li>
+<li><a href="https://spoonbill.io">Spoonbill</a></li>
+<li><a href="https://spoonbill.io">https://spoonbill.io</a></li>
+<li><a href="https://tagdef.com">Tagdef</a></li>
+<li><a href="https://tinfoleak.com">Tinfoleak</a></li>
+<li><a href="https://trends24.in">Trends24</a></li>
+<li><a href="https://trends24.in">https://trends24.in</a></li>
+<li><a href="https://trendsmap.com">TrendsMap</a></li>
+<li><a href="https://trendsmap.com">https://trendsmap.com</a></li>
+<li><a href="https://twchat.com">TwChat</a></li>
+<li><a href="https://twchat.com">https://twchat.com</a></li>
+<li><a href="https://www.tweetarchivist.com">TweetArchivist</a></li>
+<li><a href="https://www.tweetarchivist.com">https://www.tweetarchivist.com</a></li>
+<li><a href="https://www.tweetdeck.com">TweetDeck</a></li>
+<li><a href="https://mapd.csail.mit.edu/tweetmap">TweetMap</a></li>
+<li><a href="https://mapd.csail.mit.edu/tweetmap">https://mapd.csail.mit.edu/tweetmap</a></li>
+<li><a href="https://worldmap.harvard.edu/tweetmap">TweetMap</a></li>
+<li><a href="https://worldmap.harvard.edu/tweetmap">https://worldmap.harvard.edu/tweetmap</a></li>
+<li><a href="https://www.twiangulate.com">Twiangulate</a></li>
+<li><a href="https://www.twiangulate.com">https://www.twiangulate.com</a></li>
+<li><a href="https://www.twitonomy.com">Twitonomy</a></li>
+<li><a href="https://www.twitonomy.com">https://www.twitonomy.com</a></li>
+<li><a href="https://twitter.com/search-advanced?lang=en">Twitter Advanced Search</a></li>
+<li><a href="https://www.twitteraudit.com">Twitter Audit</a></li>
+<li><a href="https://tweetreports.com/twitter-chat-schedule">Twitter Chat Schedule</a></li>
+<li><a href="https://tweetreports.com/twitter-chat-schedule">https://tweetreports.com/twitter-chat-schedule</a></li>
+<li><a href="https://search.twitter.com">Twitter Search</a></li>
+<li><a href="https://search.twitter.com">https://search.twitter.com</a></li>
+<li><a href="https://github.com/twintproject/twint">Twint</a></li>
+<li><a href="https://github.com/atmoner/TwitWork">Twitwork</a></li>
+<li><a href="https://www.sotwe.com">Twitter Account Profiler</a></li>
+<li><a href="https://www.sotwe.com">https://www.sotwe.com</a></li>
+<li><a href="https://twstalker.com">Twitter Account Profiler</a></li>
+<li><a href="https://twstalker.com">https://twstalker.com</a></li>
+<li><a href="https://github.com/humandecoded/twayback">Twitter Archive</a></li>
+<li><a href="https://memory.lol/app">History Twitter</a></li>
+<li><a href="https://memory.lol/app">https://memory.lol/app</a></li>
+<li><a href="https://waybacktweets.streamlit.app">Wayback Twitter</a></li>
+<li><a href="https://waybacktweets.streamlit.app">https://waybacktweets.streamlit.app</a></li>
+<li><a href="https://botometer.osome.iu.edu">Twitter BOT</a></li>
+<li><a href="https://botometer.osome.iu.edu">https://botometer.osome.iu.edu</a></li>
+<li><a href="https://botometer.osome.iu.edu/bot-repository/datasets.html">botometer Twitter dataset</a></li>
+<li><a href="https://github.com/paulgb/Treeverse/blob/master/README.md?utm_content=buffer33d48&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer#readme">Treverse</a></li>
+<li><a href="https://www.tweetbinder.com">Tweetbinder</a></li>
+<li><a href="https://www.tweetbinder.com">https://www.tweetbinder.com</a></li>
+<li><a href="https://onemilliontweetmap.com">onemilliontweetmap</a></li>
+<li><a href="https://onemilliontweetmap.com">https://onemilliontweetmap.com</a></li>
+<li><a href="https://birdhunt.co">birdhunt</a></li>
+<li><a href="https://birdhunt.co">https://birdhunt.co</a></li>
+<li><a href="https://exportcomments.com">exportcomments</a></li>
+<li><a href="https://exportcomments.com">https://exportcomments.com</a></li>
+<li><a href="https://www.followeraudit.com">followeraudit</a></li>
+<li><a href="https://www.followeraudit.com">https://www.followeraudit.com</a></li>
+<li><a href="https://github.com/markowanga/stweet">stweet</a></li>
+<li><a href="https://www.tweepy.org">tweepy</a></li>
+<li><a href="https://www.tweepy.org">https://www.tweepy.org</a></li>
+<li><a href="https://www.twtdata.com">twtdata</a></li>
+<li><a href="https://www.twtdata.com">https://www.twtdata.com</a></li>
+<li><a href="https://botsentinel.com/dashboard">botsentinel</a></li>
+<li><a href="https://github.com/Linus2punkt0/bluesky-crossposter">bluesky-crossposter</a></li>
+<li><a href="https://commentpicker.com">Get account ID Facebook</a></li>
+<li><a href="https://commentpicker.com">https://commentpicker.com</a></li>
+<li><a href="https://inteltechniques.com/osint/twitter.html">inteltechniques</a></li>
+<li><a href="https://inteltechniques.com/osint/twitter.html">https://inteltechniques.com/osint/twitter.html</a></li>
+<li><a href="https://twitter.lolarchiver.com">twitter lolarchiver</a></li>
+<li><a href="https://twitter.lolarchiver.com">https://twitter.lolarchiver.com</a></li>
+<li><a href="https://cse.google.com/cse?cx=015328649639895072395:sbv3zyxzmji#gsc.tab=0&amp;gsc.sort=">Geoint CSE search</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../social/FACEBOOK.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../social/INSTAGRAM.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../social/FACEBOOK.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../social/INSTAGRAM.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

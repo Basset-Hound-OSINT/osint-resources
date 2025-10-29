@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Custom Search Tools - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li>
+<p><a href="https://infotracer.com">InfoTracer</a></p>
+</li>
+<li>
+<p><a href="https://www.spytox.com">SpyTox</a></p>
+</li>
+<li>
+<p><a href="https://effectgroup.io">Effect Group</a></p>
+</li>
+<li>
+<p><a href="https://pypi.org/project/osrframework">osrframework</a></p>
+</li>
+<li>
+<p><a href="https://cse.google.com/cse?cx=017648920863780530960:lddgpbzqgoi">Google Custom Search</a></p>
+</li>
+<li>
+<p><a href="https://cse.google.com/cse/publicurl?cx=006290531980334157382:qcaf4enph7i">OSINT Search Engine</a></p>
+</li>
+<li>
+<p><a href="https://www.io-archive.org">IOA</a></p>
+</li>
+<li>
+<p><a href="https://dashboard.clearbit.com/lookup">Clearbit</a></p>
+</li>
+<li>
+<p><a href="https://dashboard.fullcontact.com/login">FullContact API</a></p>
+</li>
+<li>
+<p><a href="https://aeroleads.com">Aeroleads.com</a></p>
+</li>
+</ul>
+<h2 id="google-cse"><a class="header" href="#google-cse">GOOGLE CSE</a></h2>
+<ul>
+<li><a href="https://cse.google.com/cse?cx=005797772976587943970:3tu7im1-rdg#gsc.tab=0">Homepage Search Engine</a></li>
+<li><a href="https://cse.google.com/cse?cx=005797772976587943970:g-6ohngosio#gsc.tab=0">Amazon Cloud Search Engine</a></li>
+<li><a href="https://cse.google.com/cse?cx=009462381166450434430:vggeu3dhhgg#gsc.tab=0">Google CSE instances Search Engine</a></li>
+<li><a href="https://cse.google.com/cse?cx=013991603413798772546:zu7epjqvunu">Robots.txt Search Engine</a></li>
+<li><a href="https://cse.google.com/cse?cx=017261104271573007538:magh-vr6t6g#gsc.tab=0">Short URL Search Engine</a></li>
+<li><a href="https://cse.google.com/cse/publicurl?cx=005797772976587943970:afbre9pr2ly">Wikispaces Search Engine</a></li>
+<li><a href="https://cse.google.com/cse?cx=partner-pub-8216357153102971:3267723418">Dog Bites Search Engine</a></li>
+<li><a href="https://cse.google.com/cse/publicurl?cx=005797772976587943970:ca2hiy6hmri">Google Domain Hacker</a></li>
+<li><a href="https://cse.google.com/cse/publicurl?cx=013991603413798772546:nwzqlcysx_w">Google Drive Folder Search Engine</a></li>
+<li><a href="https://cse.google.com/cse/publicurl?cx=000501358716561852263:h-5uyshsclq">Chrome Extension Archive Search Engine</a></li>
+<li><a href="https://cse.google.com/cse/publicurl?cx=017261104271573007538:fqn_jyftcdq">Github with Awesome-List Search Engine</a></li>
+<li><a href="https://cse.google.com/cse/publicurl?cx=006205189065513216365:pn3lumi80ne">Better Chrome Web Store Search Engine</a></li>
+<li><a href="https://cse.google.com/cse/publicurl?cx=006205189065513216365:aqogom-kfne">App Store Custom Search Engine</a></li>
+<li><a href="https://cse.google.com/cse/publicurl?cx=017648920863780530960:lddgpbzqgoi">Google.com Hack Attack</a></li>
+<li><a href="https://cse.google.com/cse/publicurl?cx=013991603413798772546:mu-oio3a980">Search by FileType</a></li>
+<li><a href="https://cse.google.com/cse?cx=016621447308871563343:nyvaorurd5l">Search Engine Finder</a></li>
+<li><a href="https://cse.google.com/cse?cx=013991603413798772546:gj6rx9spox8#gsc.tab=0">Mindmap Search Engine</a></li>
+</ul>
+<h3 id="music"><a class="header" href="#music">Music</a></h3>
+<ul>
+<li><a href="https://musgle.com">Free Music Search</a></li>
+<li><a href="https://www.midomi.com">Search for Music Using Your Voice</a></li>
+<li><a href="https://www.listennotes.com">Listen Notes</a></li>
+<li><a href="https://podsearch.com">Discover Podcasts Here</a></li>
+</ul>
+<h2 id="open-directory"><a class="header" href="#open-directory">OPEN DIRECTORY</a></h2>
+<ul>
+<li><a href="https://neonpangolin.github.io/FilePhish">FilePhish</a></li>
+<li><a href="https://odfinder.github.io">Open Directory Finder</a></li>
+<li><a href="https://opendirsearch.abifog.com">Opendirsearch.abifog.com</a></li>
+<li><a href="https://odcrawler.xyz">Odcrawler.xyz</a></li>
+<li><a href="https://cse.google.com/cse/publicurl?cx=013991603413798772546:rse-4irjrn8#gsc.tab=0">Google Docs CSE</a></li>
+<li><a href="https://cse.google.com/cse?cx=e6756edc507bcfa91">Documents Search Engine</a></li>
+<li><a href="https://cse.google.com/cse?cx=013991603413798772546:ekjmizm8vus#gsc.tab=0">Cybersec Documents Search Engine</a></li>
+<li><a href="https://cse.google.com/cse?cx=c64ba311eb8c31896">GoogleDrive Search Engine</a></li>
+<li><a href="https://cse.google.com/cse?cx=465eeeb114c7f523f">SlideShare Search Engine</a></li>
+<li><a href="https://one-plus.github.io/DocumentSearch">Document Search</a></li>
+<li><a href="https://www.pdfsearch.io">Pdfsearch.io</a></li>
+<li><a href="https://github.com/awesomedata/awesome-public-datasets">awesome-public-datasets</a></li>
+<li><a href="https://drivesearch.kwebpia.net">Drivesearch.kwebpia.net</a></li>
+<li><a href="https://eyeofjustice.com/od">Open Directory Search</a></li>
+<li><a href="https://lendx.org">LENDX</a></li>
+<li><a href="https://ewasion.github.io/opendirectory-finder">Direct Download Almost Anything</a></li>
+</ul>
+<h2 id="source-codes"><a class="header" href="#source-codes">SOURCE CODES</a></h2>
+<ul>
+<li><a href="https://cse.google.com/cse?cx=661713d0371832a02">Pastes Search Engine</a></li>
+<li><a href="https://cse.google.com/cse?cx=006896442834264595052:fawrl1rug9e">Pastes Search Engine 2</a></li>
+<li><a href="https://cse.google.com/cse?cx=1b053c8ec746d6611">GitHub Search Engine</a></li>
+<li><a href="https://recruitin.net/github.php">Google to search profiles on GitHub</a></li>
+<li><a href="https://psbdmp.ws">Paste Search</a></li>
+<li><a href="https://github.com/search">GitHub Code Search</a></li>
+<li><a href="https://bitbucket.org/repo/all">Bitbucket Repo Search</a></li>
+<li><a href="https://github.com/eth0izzle/shhgit">Shhgit</a></li>
+<li><a href="https://redhuntlabs.com/online-ide-search">Online IDE and Paste Search Engine</a></li>
+<li><a href="https://awesomeopensource.com">Awesome Open Source</a></li>
+<li><a href="https://github.com/obheda12/GitDorker">GitDorker</a></li>
+</ul>
+<h2 id="search"><a class="header" href="#search">Search</a></h2>
+<ul>
+<li><a href="https://2fd6cemt4gmccflhm6imvdfvli3nf7zn6rfrwpsy7uhxrgbypvwf5fad.onion/search">2fd6cemt4gmccflhm6imvdfvli3nf7zn6rfrwpsy7uhxrgbypvwf5fad</a></li>
+<li><a href="https://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=">3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad</a></li>
+<li><a href="https://5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion/index.php?a=search&amp;q=">5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid</a></li>
+<li><a href="https://ahmia.fi/search/?q=">Ahmia</a></li>
+<li><a href="https://baidu.com/s?wd=">Baidu</a></li>
+<li><a href="https://baresearch.org/?q=">Baresearch</a></li>
+<li><a href="https://bing.com/news/search?q=">Bing</a></li>
+<li><a href="https://duckduckgo.com/?q=">Duckduckgo</a></li>
+<li><a href="https://freshonifyfe4rmuh6qwpsexfhdrww7wnt5qmkoertwxmcuvm4woo4ad.onion/?query=">Freshonifyfe4rmuh6qwpsexfhdrww7wnt5qmkoertwxmcuvm4woo4ad</a></li>
+<li><a href="https://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=">Haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid</a></li>
+<li><a href="https://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/search/?q=">Juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd</a></li>
+<li><a href="https://no6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad.onion/search.php?term=">No6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad</a></li>
+<li><a href="https://patents.google.com/?q=">Patents</a></li>
+<li><a href="https://phobosxilamwcg75xt22id7aywkzol6q6rfl2flipcqoc4e4ahima5id.onion/search?query=">Phobosxilamwcg75xt22id7aywkzol6q6rfl2flipcqoc4e4ahima5id</a></li>
+<li><a href="https://scholar.google.com/scholar?&amp;q=">Scholar</a></li>
+<li><a href="https://search.brave.com/search?q=">Search</a></li>
+<li><a href="https://search.yahoo.com/search?p=">Search</a></li>
+<li><a href="https://searchgf7gdtauh7bhnbyed4ivxqmuoat3nm6zfrg3ymkq6mtnpye3ad.onion/search?q=">Searchgf7gdtauh7bhnbyed4ivxqmuoat3nm6zfrg3ymkq6mtnpye3ad</a></li>
+<li><a href="https://srcdemonm74icqjvejew6fprssuolyoc2usjdwflevbdpqoetw4x3ead.onion/search?q=">Srcdemonm74icqjvejew6fprssuolyoc2usjdwflevbdpqoetw4x3ead</a></li>
+<li><a href="https://startpage.com/do/search?q=">Startpage</a></li>
+<li><a href="https://tor.link/?q=">Tor</a></li>
+<li><a href="https://torch4st4l57l2u2vr5wqwvwyueucvnrao4xajqr2klmcmicrv7ccaad.onion/search?query=">Torch4st4l57l2u2vr5wqwvwyueucvnrao4xajqr2klmcmicrv7ccaad</a></li>
+<li><a href="https://u5lyidiw4lpkonoctpqzxgyk6xop7w7w3oho4dzzsi272rwnjhyx7ayd.onion/?s=">U5lyidiw4lpkonoctpqzxgyk6xop7w7w3oho4dzzsi272rwnjhyx7ayd</a></li>
+<li><a href="https://www.google.com/search?q=intitle%3Aindex.of+">Google</a></li>
+<li>[Google](https://www.google.com/search?q=inurl%3Aftp%20-inurl%3A(http|https)</li>
+<li><a href="https://www.google.com/search?tbm=nws&amp;q=">Google</a></li>
+<li><a href="https://www.qwant.com/?q=">Qwant</a></li>
+<li><a href="https://www.tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=">Tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid</a></li>
+<li><a href="https://www.yandex.com/yandsearch?text=">Yandex</a></li>
+<li><a href="https://zb2jtkhnbvhkya3d46twv3g7lkobi4s62tjffqmafjibixk6pmq75did.onion/gdark/search.php?query=">Zb2jtkhnbvhkya3d46twv3g7lkobi4s62tjffqmafjibixk6pmq75did</a></li>
+</ul>
+<h3 id="64--search-engines"><a class="header" href="#64--search-engines">6.4  Search Engines</a></h3>
+<ul>
+<li><a href="https://truepeoplesearch.net">True People Search</a></li>
+<li><a href="https://ussearch.com">Ussearch</a></li>
+<li><a href="https://metager.org">MetaGer</a></li>
+<li><a href="https://www.startpage.com">Startpage</a></li>
+<li><a href="https://www.searchengineindex.com">Search Engines Index</a></li>
+<li><a href="https://www.cachedviews.com">CachedViews</a></li>
+<li><a href="https://www.alienvault.com">AlienVault</a></li>
+<li><a href="https://polyswarm.io">PolySwarm</a></li>
+<li><a href="https://www.greynoise.io">GreyNoise</a></li>
+<li><a href="https://archive.org/web">WayBackMachine</a></li>
+<li><a href="https://github.com/adnane-X-tebbaa/Katana">Katana</a></li>
+<li><a href="https://github.com/megadose/OnionSearch">OnionSearch</a></li>
+<li><a href="https://github.com/josh0xA/darkdump">Darkdump</a></li>
+<li><a href="https://github.com/Lucksi/Darkus">Darkus</a></li>
+<li><a href="https://kn3hl4xwon63tc6hpjrwza2npb7d4w5yhbzq7jjewpfzyhsd65tm6dad.onion">Link 1</a></li>
+<li><a href="https://zgphrnyp45suenks3jcscwvc5zllyk3vz4izzw67puwlzabw4wvwufid.onion">Link 2</a></li>
+<li><a href="https://github.com/DedSecInside/TorBot">TorBot</a></li>
+<li><a href="https://github.com/JarryShaw/darc">Darc</a></li>
+<li><a href="https://github.com/iudicium/pryingdeep">Prying Deep</a></li>
+<li><a href="https://backgroundchecks.org">Sex offenders background check</a></li>
+<li><a href="https://metaosint.com">MetaOSINT</a></li>
+<li><a href="https://github.com">File Finder · GitHub</a></li>
+<li><a href="https://osint.lolarchiver.com">OSINT Tools</a></li>
+<li><a href="https://youtube.com">YouTube Metadata</a></li>
+<li><a href="https://www.jetphotos.com">JetPhotos</a></li>
+<li><a href="https://www.familywatchdog.us">Family Watchdog</a></li>
+<li><a href="https://www.bop.gov">BOP: Federal Bureau of Prisons</a></li>
+<li><a href="https://locator.ice.gov">Online Detainee Locator System</a></li>
+<li><a href="https://inteltechniques.com/tools.html">IntelTechniques OSINT Tool</a></li>
+<li><a href="https://osint.link">OSINT.link</a></li>
+<li><a href="https://cylect.io">Cylect.io</a></li>
+<li><a href="https://www.dorkgpt.com">DorkGPT</a></li>
+<li><a href="https://ZoomEye.ai">ZoomEye</a></li>
+<li><a href="https://breachdetective.com">Breach Detective</a></li>
+</ul>
+<h3 id="yandex"><a class="header" href="#yandex">Yandex</a></h3>
+<ul>
+<li><a href="https://github.com/HowToFind-bot/YaSeeker">YaSeeker</a></li>
+<li><a href="https://Yandex.ru">http://Yandex.ru</a></li>
+<li>[https://Yandex.ru](http://Yandex.ru](https://Yandex.ru](http://Yandex.ru)</li>
+</ul>
+<h3 id="servers"><a class="header" href="#servers">Servers</a></h3>
+<ul>
+<li><a href="https://shodan.io">Shodan</a> - Search Engine for the Internet of Everything</li>
+<li><a href="https://search.censys.io/">Censys Search</a> - Search Engine for every server on the Internet to reduce exposure and improve security</li>
+<li><a href="https://www.onyphe.io/">Onyphe.io</a> - Cyber Defense Search Engine for open-source and cyber threat intelligence data</li>
+<li><a href="https://www.zoomeye.org/">ZoomEye</a> - Global cyberspace mapping</li>
+<li><a href="https://viz.greynoise.io/">GreyNoise</a> - The source for understanding internet noise</li>
+<li><a href="https://natlas.io/">Natlas</a> - Scaling Network Scanning</li>
+<li><a href="https://netlas.io/">Netlas.io</a> - Discover, Research and Monitor any Assets Available Online</li>
+<li><a href="https://fofa.info/">FOFA</a> - Cyberspace mapping</li>
+<li><a href="https://quake.360.net/quake/#/index">Quake</a> - Cyberspace surveying and mapping system</li>
+<li><a href="https://hunter.how/">Hunter</a> - Internet Search Engines For Security Researchers</li>
+<li><a href="https://getodin.com/">ODIN</a> - One of the most powerful search engines for Scanned Internet Assets</li>
+</ul>
+<h1 id="shodan-query-options"><a class="header" href="#shodan-query-options">Shodan Query Options</a></h1>
+<ul>
+<li><a href="https://pen-testing.sans.org/blog/2015/12/08/effective-shodan-searches">https://pen-testing.sans.org/blog/2015/12/08/effective-shodan-searches</a></li>
+<li><a href="https://danielmiessler.com/study/shodan/#gs.VBVsyo0">https://danielmiessler.com/study/shodan/#gs.VBVsyo0</a></li>
+</ul>
+<h1 id="custom-cse-search-engine-cse"><a class="header" href="#custom-cse-search-engine-cse">Custom CSE Search Engine (CSE)</a></h1>
+<ul>
+<li><a href="https://start.me/p/EL84Km/cse-utopia">CSE-UTOPIA LISTS</a></li>
+<li><a href="https://booleanstrings.com/all-the-40-forty-custom-search-engines">40 Custom Search Engines</a></li>
+<li><a href="https://booleanstrings.com/all-the-40-forty-custom-search-engines">https://booleanstrings.com/all-the-40-forty-custom-search-engines</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../discovery/SEARCH_ENGINES.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../discovery/PEOPLE_SEARCH.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../discovery/SEARCH_ENGINES.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../discovery/PEOPLE_SEARCH.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Public Records - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="public-records"><a class="header" href="#public-records">PUBLIC RECORDS</a></h2>
+<ul>
+<li><a href="https://www.courtlistener.com">CourtListener</a></li>
+<li><a href="https://pacer.uscourts.gov">Public Access to Court Electronic Records</a></li>
+<li><a href="https://parallelsearch.casetext.com">Parallelsearch case law</a></li>
+<li><a href="https://www.canlii.org/en">Canadian Legal Information Institute</a></li>
+<li><a href="https://www.scc-csc.ca/case-dossier/index-eng.aspx">Supreme Court of Canada - Cases</a></li>
+<li><a href="https://mdocweb.state.mi.us/OTIS2/otis2.aspx">Offender Tracking Information System (OTIS)</a></li>
+<li><a href="https://stevemorse.org/prison/prison.html">New York State Prison Records</a></li>
+<li><a href="https://publicrecords.searchsystems.net/United_States_Free_Public_Records_by_State/Texas_Public_Records">Texas Public Records Search</a></li>
+<li><a href="https://b2.caspio.com/dp/a1a3100009b7083c53a9405f8c6b">Arrest Bookings Search and Report</a></li>
+<li><a href="https://projects.propublica.org/credibly-accused">Credibly Accused</a></li>
+<li><a href="https://sortedbybirthdate.com">Sortedbybirthdate</a></li>
+<li><a href="https://njparcels.com/property">NJParcels.com</a></li>
+<li><a href="https://ssdmf.info">Social Security Death Master File</a></li>
+<li><a href="https://cemetery.directory">Cemetery.directory</a></li>
+<li><a href="https://stevemorse.org/ssdi/ssdi.html">Social Security Death Index</a></li>
+<li><a href="https://stevemorse.org/fhl/websitesunitedstates.html">FamilySearch’s United States Record Collections</a></li>
+<li><a href="https://stevemorse.org/vital/cook.html">Chicago Cook County Genealogy</a></li>
+<li><a href="https://www.boatinfoworld.com">BoatInfoWorld</a></li>
+<li><a href="https://stevemorse.org/census/changes.html">Street Name Changes</a></li>
+<li><a href="https://bklyn-genealogy-info.stevemorse.org/index.html">Brooklyn Genealogy</a></li>
+<li><a href="https://b2.caspio.com/dp.asp?AppKey=88321000961d92fc4ed343f38a0e">Little Rock AR Crime Search</a></li>
+<li><a href="https://newenglandfacts.com">New England Facts</a></li>
+<li><a href="https://michigan.staterecords.org">Michigan State Records</a></li>
+<li><a href="https://cancelthesefunerals.com">Cancelthesefunerals.com</a></li>
+<li><a href="https://datawrapper.dwcdn.net/UyECh/20">Independent fundamental Baptist sexual misconduct database</a></li>
+<li><a href="https://b2.caspio.com/dp/0a9210000bece9f2f50642ff9cac">York County PA 2017 Write in Report</a></li>
+<li><a href="https://b2.caspio.com/dp/0a921000a059622d4771466aab79">PA teacher salary average</a></li>
+<li><a href="https://b4.caspio.com/dp/55073000c492127ebd8d4a03a06a">High schools that received NRA grants 2010-2016</a></li>
+<li><a href="https://b2.caspio.com/dp/0a921000cae47f9702f44d2bb94b">Corrections Books Approval Search</a></li>
+<li><a href="https://c3cqk813.caspio.com/dp/b201500011643c5f4c7f4bfba7d1">Wisconsin Fox River Veterans’ Grave Registration Database</a></li>
+<li><a href="https://c0eru132.caspio.com/dp/95d310003d6c2e38182a48ef9bb2">OH marijuana docs</a></li>
+<li><a href="https://c0dcb948.caspio.com/dp/726780004ccd83a96316450caead">FAFSA Search and Report</a></li>
+<li><a href="https://c0gaf106.caspio.com/dp/2d4e1000c7506b7686a540d3b10f">AL Local Surety Association Directory</a></li>
+<li><a href="https://c0abe732.caspio.com/dp/679e5000cbc8c6a587bb42efa9ef">Ohio obituaries, death &amp; marriage Search</a></li>
+<li><a href="https://c0esh132.caspio.com/dp/9040200005c29c35a74342e2b357">SECO Verification of Course Attendance 2018</a></li>
+<li><a href="https://c0acy802.caspio.com/dp/cf3b6000f61f1e0724984cb28f5c">IUS The Horizon Search and Report</a></li>
+<li><a href="https://b2.caspio.com/dp/a4321000cb4905373d1946e5b33f">Katrina Spending Search</a></li>
+<li><a href="https://b2.caspio.com/dp.asp?AppKey=883210005c5e51279b424364aab2">AR College University 2017 Salaries</a></li>
+<li><a href="https://www.smallarmssurvey.org/weapons-and-markets/tools/weapons-id-database.html">The Weapons ID Database</a></li>
+</ul>
+<h3 id="tools-for-working-with-web-archives"><a class="header" href="#tools-for-working-with-web-archives">Tools for working with web archives</a></h3>
+<ul>
+<li><a href="https://github.com/anmolksachan/TheTimeMachine">The Time Machine</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/web-archives/hkligngkgcpcolhcnkgccglchdafcnao/related">Web Archives</a></li>
+<li><a href="https://gaetanlhf.github.io/EasyCache">EasyCache</a></li>
+<li><a href="https://cachedview.b4your.com/en">cachedview.b4your.com</a></li>
+<li><a href="https://tools.digitalmethods.net/beta/internetArchiveWaybackMachineLinkRipper/#">Internet Archive Wayback Machine Link Ripper</a></li>
+<li><a href="https://wayback.archive.org">http://wayback.archive.org</a></li>
+<li>[https://wayback.archive.org](http://wayback.archive.org](https://wayback.archive.org](http://wayback.archive.org)</li>
+<li><a href="https://archivebox.io">Archivebox</a></li>
+<li><a href="https://github.com/Haax9/WaybackPDF">WaybackPDF</a></li>
+<li><a href="https://github.com/MiniGlome/Archive.org-Downloader">Archive-org-Downloader</a></li>
+<li><a href="https://github.com/xnl-h4ck3r/waymore">WayMore</a></li>
+<li><a href="https://github.com/lorenzoromani1983/wayback-keyword-search">Wayback Keywords Search</a></li>
+</ul>
+<h3 id="tools-for-working-with-warc-webarchive-files"><a class="header" href="#tools-for-working-with-warc-webarchive-files">Tools for working with WARC (WebARChive) files</a></h3>
+<ul>
+<li><a href="https://github.com/chfoo/warcat">Warcat</a></li>
+<li><a href="https://github.com/webrecorder/replayweb.page">Replayweb</a></li>
+<li><a href="https://github.com/datacoon/metawarc">Metawarc</a></li>
+<li><a href="https://webrecorder.net/tools">Webrecorder tools</a></li>
+<li><a href="https://github.com/ArchiveTeam/grab-site">GRAB SITE</a></li>
+<li><a href="https://github.com/webrecorder/har2warc">har2warc</a></li>
+<li><a href="https://nationalarchives.gov.uk">UK National Archives</a></li>
+<li><a href="https://doaj.org/search/journals">Directory of Open Access Journals</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov">National Center for Biotechnology</a></li>
+<li><a href="https://industrydocuments.ucsf.edu">industrydocuments.ucsf.edu</a></li>
+<li><a href="https://vault.fbi.gov/search">Vault.fbi.gov</a></li>
+<li><a href="https://projects.icij.org/luxembourg-leaks/viz/industries/index.html">Lux Leaks</a></li>
+<li><a href="https://rootssearch.io/search">RootsSearch</a></li>
+<li><a href="https://news-navigator.labs.loc.gov/search">Newspaper navigator</a></li>
+<li><a href="https://annas-archive.org/search">Anna's Archive</a></li>
+<li><a href="https://worldcat.org">World Cat</a></li>
+<li><a href="https://www.vialibri.net">visLibri</a></li>
+<li><a href="https://factinsect.com">FACTINSECT</a></li>
+<li><a href="https://www.connectedpapers.com">ConnectedPapers</a></li>
+<li><a href="https://academictree.org">AcademicTree</a></li>
+<li><a href="https://clinicaltrials.gov">clinicaltrials.gov</a></li>
+<li><a href="https://elicit.org">Elicit</a></li>
+<li><a href="https://www.explainpaper.com">ExplainPaper</a></li>
+<li><a href="https://scite.ai">Scite.ai</a></li>
+<li><a href="https://article-summarizer.scholarcy.com">Scholarcy</a></li>
+<li><a href="https://researchrabbitapp.com/home">Research Rabbit</a></li>
+<li><a href="https://trinka.ai">Trinka</a></li>
+<li><a href="https://zendy.io">Zendy.io</a></li>
+<li><a href="https://scinapse.io">Scinapse.io</a></li>
+<li><a href="https://poloclub.github.io/argo-scholar">Argo Scholar</a></li>
+<li><a href="https://inciteful.xyz">INCITEFUL</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/paperpanda-%E2%80%94-get-millions/ggjlkinaanncojaippgbndimlhcdlohf/related?utm_source=web">PaperPanda</a></li>
+<li><a href="https://afrobarometer.org/online-data-analysis/analyse-online">Afrobarometer</a></li>
+<li><a href="https://www.arabbarometer.org/survey-data/data-analysis-tool">Arabbarometer</a></li>
+<li><a href="https://dataset.domainsproject.org">dataset.domainsproject.org</a></li>
+<li><a href="https://ukcensusonline.com/search">UK Census Online</a></li>
+<li><a href="https://variable-search.ipums.org/#">IPUMS Variable Search</a></li>
+<li><a href="https://www.cleancss.com/router-default">Reference of default settings of different router models (IP, username, password)</a></li>
+<li><a href="https://many-passwords.github.io">Many Passwords</a></li>
+<li><a href="https://github.com/Viralmaniar/Passhunt">PassHunt</a></li>
+<li><a href="https://github.com/HashPals/Search-That-Hash">Search-That-Hash</a></li>
+<li><a href="https://github.com/dievus/geeMailUserFinder">geeMail User Finder</a></li>
+<li><a href="https://breachchecker.com">Breachchecker.com</a></li>
+<li><a href="https://github.com/WildSiphon/Mailfoguess">Mailfoguess</a></li>
+<li><a href="https://github.com/sharsil/mailcat">Mailcat</a></li>
+<li><a href="https://mailboxlayer.com">MailBoxLayer API</a></li>
+<li><a href="https://tools.emailhippo.com/email">EmailHippo</a></li>
+<li><a href="https://spycloud.com/check-your-exposure">Spycloud.com</a></li>
+<li><a href="https://en.gravatar.com/site/check">Gravatar check</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/17URMtNmXfEZEW9oUL_taLpGaqTDcMkA79J8TRw4xnz8/edit#gid=0">Email Permutator</a></li>
+<li><a href="https://github.com/gr33nm0nk2802/mailMeta">mailMeta</a></li>
+<li><a href="https://github.com/keraattin/EmailAnalyzer">EmailAnalyzer</a></li>
+<li><a href="https://avatarapi.com">Avatar API</a></li>
+<li><a href="https://defastra.com">Defastra</a></li>
+<li><a href="https://osint.industries/email">OSINT Industries</a></li>
+<li><a href="https://github.com/z0m31en7/WhatMail">What Mail</a></li>
+<li><a href="https://github.com/N0rz3/Zehef">ZEHEF</a></li>
+<li><a href="https://t.me/maigret_osint_bot">@maigret_osint_bot</a></li>
+<li><a href="https://github.com/CYB3R-G0D/SPY">Spy</a></li>
+<li><a href="https://github.com/BLINKING-IDIOT/Aliens_eye">Aliens eye</a></li>
+<li><a href="https://github.com/rlyonheart/thorndyke">Thorndyke</a></li>
+<li><a href="https://github.com/soxoj/marple">Marple</a></li>
+<li><a href="https://github.com/mishakorzik/UserFinder">UserFinder</a></li>
+<li><a href="https://github.com/d8rkmind/Pyosint">Pyosint</a></li>
+<li><a href="https://datayze.com/alternate-spelling-finder">Alternate Spelling Finder</a></li>
+<li><a href="https://translit.net">Translit.net</a></li>
+<li><a href="https://seintpl.github.io/NAMINT">NAMINT</a></li>
+<li><a href="https://username-check.herokuapp.com">Username Availability Checker</a></li>
+<li><a href="https://nameberry.com/search?q=john">Nameberry</a></li>
+<li><a href="https://github.com/Longwater1234/go-sherlock">Go Sherlock</a></li>
+<li><a href="https://github.com/sherlock-project/sherlock%E2%80%A6">https://github.com/sherlock-project/sherlock…</a></li>
+<li><a href="https://digitalfootprintcheck.com/checks/free-checker.html">Digital Footprint Check</a></li>
+<li><a href="https://www.loc.gov/collections/united-states-telephone-directory-collection">USA Telephone Directory Collection</a></li>
+<li><a href="https://github.com/s41r4j/phomber">Phomber</a></li>
+<li><a href="https://numverify.com">Numverify API</a></li>
+<li><a href="https://github.com/Lexxrt/FireFly">FireFly</a></li>
+<li><a href="https://github.com/spider863644/PhoneNumber-OSINT">PhoneNumber OSINT</a></li>
+<li><a href="https://github.com/TheRealDalunacrobate/DaProfiler">DaProfiler</a></li>
+<li><a href="https://www.signalhire.com/candidates/47dc037faace4abeb0727d6f4d0f3079">SingleHire</a></li>
+<li><a href="https://github.com/qeeqbox/social-analyzer">Social Analyzer</a></li>
+<li><a href="https://sovaweb.herokuapp.com">SovaWeb</a></li>
+<li><a href="https://www.behindthename.com">BehindTheNames</a></li>
+<li><a href="https://cipher387.github.io/pastebinsearchengines">My CSE for search in 48 pastebin sites</a></li>
+<li><a href="https://anywho.com">Anywho</a></li>
+<li><a href="https://usersearch.org/index.php">Usersearch.org</a></li>
+<li><a href="https://heritage.statueofliberty.org">Ellis Island</a></li>
+<li><a href="https://recordsearch.naa.gov.au/SearchNRetrieve/Interface/SearchScreens/PassengerSearch.aspx">recordsearch.naa.gov.au</a></li>
+<li><a href="https://www.spydialer.com">SpyDialer</a></li>
+<li><a href="https://inmateinfo.indy.gov/IML">Inmate Database Search</a></li>
+<li><a href="https://scamdigger.com">Scamdigger.com</a></li>
+<li><a href="https://www.cloob.com/profile/search/index">Cloob.com</a></li>
+<li><a href="https://slavevoyages.org/resources/names-database">SlaveVoyages.org</a></li>
+<li><a href="https://data.fei.org/Person/Search.aspx">FEI Database Person Search</a></li>
+<li><a href="https://bellingcat.github.io/name-variant-search/#gsc.tab=0">Name Variant Search</a></li>
+<li><a href="https://github.com/rly0nheart/rug">Rug</a></li>
+<li><a href="https://generated.photos/face-generator">Face Generator</a></li>
+<li><a href="https://generated.photos/faces">2,682,783 free AI generated photos</a></li>
+<li><a href="https://www.voicebooking.com/en/free-voice-over-generator">VoiceBooking</a></li>
+<li><a href="https://thisxdoesnotexist.com">ThisXDoesNotExist</a></li>
+<li><a href="https://www.thexifer.net">TheXifer</a></li>
+<li><a href="https://geotagonline.com">GeoTagOnline</a></li>
+<li><a href="https://t.me/TempMail_org_bot">@TempMail_org_bot</a></li>
+<li><a href="https://deepai.org/machine-learning-model/text2img">Text2img</a></li>
+<li><a href="https://generated.photos/anonymizer">Face Anonimyzer</a></li>
+<li><a href="https://www.synthesia.io/free-ai-video-demo">AI video generator</a></li>
+<li><a href="https://massless.io/tool/face-maker-ai">AI Face maker</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/sessionbox-multi-login-to/megbklhjamjbcafknkgmokldgolkdfig?hl=ru">SessionBox</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/multilogin/ijfgglilaeakmoilplpcjcgjaoleopfi?hl=ru">MultiLogin</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/freshstart-cross-browser/nmidkjogcjnnlfimjcedenagjfacpobb?hl=ru">FreshStart</a></li>
+<li><a href="https://boredhumans.com/faces.php">BoredHumans</a></li>
+<li><a href="https://deepfakesweb.com">Deepfakesweb</a></li>
+<li><a href="https://github.com/iperov/DeepFaceLive">Deep Face Live</a></li>
+<li><a href="https://fakeinfo.net">Fakeinfo</a></li>
+<li><a href="https://github.com/David-Lor/ThisPersonDoesNotExistAPI">ThisPersonDoesNotExistAPI (unofficial)</a></li>
+<li>[https://thispersondoesnotexist.com](http://thispersondoesnotexist.com](https://thispersondoesnotexist.com](http://thispersondoesnotexist.com)</li>
+<li><a href="https://thisbaseballplayerdoesnotexist.com">This Baseball Player Does Not Exist</a></li>
+<li><a href="https://cardgenerator.org">Cardgenerator.org</a></li>
+<li><a href="https://vccgenerator.org">VCC Generator</a></li>
+<li><a href="https://cardguru.io">CardGuru</a></li>
+<li><a href="https://cardgenerator.io">CardGenerator</a></li>
+<li><a href="https://github.com/joke2k/faker">Faker</a></li>
+<li><a href="https://generatedata.com/generator">Generate Data</a></li>
+<li><a href="https://annotely.com/editor">Annotely</a></li>
+<li><a href="https://www.pramp.com">Pramp</a></li>
+<li><a href="https://www.remindmewhen.io">RemindWhen</a></li>
+<li><a href="https://web--proxy.herokuapp.com">Web--proxy</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/record-voice-comments-in/lbfofpndjldbnhnhibhmggblcbpoomon">Google Docs Voice Comments</a></li>
+<li><a href="https://patorjk.com/software/taag/#p=display&amp;f=Graffiti&amp;t=Type%20Something%20">Text to ASCII Art Generator (TAAG)</a></li>
+<li><a href="https://workspace.google.com/u/0/marketplace/app/show/82177279234?hl=ru&amp;pann=docs_addon_widget">Snow</a></li>
+<li><a href="https://crontab.guru">Crontab guru</a></li>
+<li><a href="https://chmod-calculator.com">Chmod calculator</a></li>
+<li><a href="https://ray.so">Ray So</a></li>
+<li><a href="https://www.ultimatewindowssecurity.com">Windows Event Collection</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/hack-this-page/nbfegodimhenhkghjeppighcbpdinhdp/related">Hack This Page</a></li>
+<li><a href="https://soundraw.io">Soundraw</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/screen-recorder/jgmmgiojkjopgnanopiamhbhnpaednfg/related">Screenshot - Full Page Screen Capture</a></li>
+<li><a href="https://github.com/securisec/chepy">Chepy</a></li>
+<li><a href="https://www.typeit.org">Typeit</a></li>
+<li><a href="https://transform.tools">Transform Tools</a></li>
+<li><a href="https://www.autoregex.xyz">Autoregex</a></li>
+<li><a href="https://markmap.js.org">MARKMAP</a></li>
+<li><a href="https://xmind.works">Xmind Works</a></li>
+<li><a href="https://github.com/paij0se/cligpt">CLIGPT</a></li>
+<li><a href="https://markwhen.com">MarkWhen</a></li>
+</ul>
+<h2 id="records"><a class="header" href="#records">Records</a></h2>
+<ul>
+<li><a href="https://github.com/vadimkantorov/natudump">Natudump - LegiFrance naturalisation scraping</a></li>
+<li><a href="https://github.com/CarlaAstudillo/ArreStats">ArreStats - FBI arrest file search</a></li>
+<li><a href="https://github.com/18F/crime-data-explorer">Crime data explorer - FBI crime data</a></li>
+</ul>
+<h1 id="internet-archive"><a class="header" href="#internet-archive">Internet Archive</a></h1>
+<ul>
+<li><a href="https://lumendatabase.org">DMCA Lumen DB</a></li>
+<li><a href="https://lumendatabase.org">https://lumendatabase.org</a></li>
+<li><a href="https://web.archive.org">Wayback Machine</a></li>
+<li><a href="https://web.archive.org">https://web.archive.org</a></li>
+<li><a href="https://intelx.io">Intelligence X</a></li>
+<li><a href="https://intelx.io">https://intelx.io</a></li>
+<li><a href="https://openlibrary.org">Openlibrary</a></li>
+<li><a href="https://openlibrary.org">https://openlibrary.org</a></li>
+<li><a href="https://archive.fo">Archive Fo</a></li>
+<li><a href="https://archive.fo">https://archive.fo</a></li>
+<li><a href="https://www.webarchive.org.uk/ukwa">UKWA</a></li>
+<li><a href="https://www.webarchive.org.uk/ukwa">https://www.webarchive.org.uk/ukwa</a></li>
+<li><a href="https://archive.vn">Archive today</a></li>
+<li><a href="https://archive.vn">https://archive.vn</a></li>
+<li><a href="https://forum.seccodeid.com/d/waymore-find-way-more-from-the-wayback-machine">Waymore</a></li>
+<li><a href="https://www.cachedpages.com">Cached Pages</a></li>
+<li><a href="https://www.cachedpages.com">https://www.cachedpages.com</a></li>
+<li><a href="https://cachedview.com">cachedview</a></li>
+<li><a href="https://cachedview.com">https://cachedview.com</a></li>
+<li><a href="https://github.com/eastrd/ArchivEye">ArchivEye</a></li>
+<li><a href="https://github.com/humandecoded/twayback">Twitter Archive</a></li>
+<li><a href="https://archive.is">Archive Today</a></li>
+<li><a href="https://archive.is">https://archive.is</a></li>
+<li><a href="https://github.com/hartator/wayback-machine-downloader">Wayback Downloader</a></li>
+<li><a href="https://www.bellingcat.com/resources/how-tos/2022/03/08/how-to-archive-telegram-content-to-document-russias-invasion-of-ukraine">How to archive tele content</a></li>
+<li><a href="https://www.bellingcat.com/resources/how-tos/2022/03/08/how-to-archive-telegram-content-to-document-russias-invasion-of-ukraine">https://www.bellingcat.com/resources/how-tos/2022/03/08/how-to-archive-telegram-content-to-document-russias-invasion-of-ukraine</a></li>
+<li><a href="https://cybdetective.com/webarchiveviewer">webarchiveviewer</a></li>
+<li><a href="https://cybdetective.com/webarchiveviewer">https://cybdetective.com/webarchiveviewer</a></li>
+<li><a href="https://shadowdragon.io">ShadowDragon</a></li>
+<li><a href="https://shadowdragon.io">https://shadowdragon.io</a></li>
+<li><a href="https://osint.lolarchiver.com/#">lolarchiver</a></li>
+<li><a href="https://timetravel.mementoweb.org">Time Travel</a></li>
+<li><a href="https://timetravel.mementoweb.org">https://timetravel.mementoweb.org</a></li>
+<li><a href="https://github.com/bellingcat/wayback-google-analytics">bellingcat wayback-google-analytics</a></li>
+<li><a href="https://github.com/jsvine/waybackpack">waybackpack download wayback archive url</a></li>
+<li><a href="https://archive-it.org">archive-it</a></li>
+<li><a href="https://archive-it.org">https://archive-it.org</a></li>
+</ul>
+<h1 id="public-records-1"><a class="header" href="#public-records-1">Public Records</a></h1>
+<ul>
+<li><a href="https://publicrecords.searchsystems.net">Public Record</a></li>
+<li><a href="https://publicrecords.searchsystems.net">https://publicrecords.searchsystems.net</a></li>
+<li><a href="https://Familywatchdog.us">Fam Watchdog</a></li>
+<li><a href="https://Familywatchdog.us">https://Familywatchdog.us</a></li>
+<li><a href="https://www.crimereports.com">Crime Reports</a></li>
+<li><a href="https://www.crimereports.com">https://www.crimereports.com</a></li>
+</ul>
+<h1 id="capturing-information"><a class="header" href="#capturing-information">Capturing Information</a></h1>
+<ul>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/exif-viewer">Exif Viewer</a></li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/exif-viewer">https://addons.mozilla.org/en-US/firefox/addon/exif-viewer</a></li>
+<li><a href="https://www.httrack.com">HTTrack</a></li>
+<li><a href="https://www.httrack.com">https://www.httrack.com</a></li>
+<li><a href="https://archive.org/web">Wayback Machine</a></li>
+<li><a href="https://archive.org/web">https://archive.org/web</a></li>
+<li><a href="https://cachedview.com">cachedview</a></li>
+<li><a href="https://cachedview.com">https://cachedview.com</a></li>
+<li><a href="https://www.url2png.com">url png</a></li>
+<li><a href="https://www.url2png.com">https://www.url2png.com</a></li>
+<li><a href="https://github.com/bellingcat/auto-archiver">Bellingcat Auto Archive</a></li>
+<li><a href="https://archive.ph">Archive today</a></li>
+<li><a href="https://archive.ph">https://archive.ph</a></li>
+<li><a href="https://flameshot.org">flameshot</a></li>
+<li><a href="https://flameshot.org">https://flameshot.org</a></li>
+<li><a href="https://earth.google.com/web">Googl earth pro</a></li>
+</ul>
+<h1 id="fraud-checker"><a class="header" href="#fraud-checker">Fraud Checker</a></h1>
+<ul>
+<li><a href="https://www.scamsearch.io">scamsearch</a></li>
+<li><a href="https://www.scamsearch.io">https://www.scamsearch.io</a></li>
+<li><a href="https://scamdb.net">ScamDB</a></li>
+<li><a href="https://scamdb.net">https://scamdb.net</a></li>
+<li><a href="https://cekrekening.id/home">Cek Rekening</a></li>
+<li><a href="https://www.kredibel.com">Kredibel</a></li>
+<li><a href="https://www.kredibel.com">https://www.kredibel.com</a></li>
+<li><a href="https://verihubs.com">Verihub</a></li>
+<li><a href="https://verihubs.com">https://verihubs.com</a></li>
+<li><a href="https://www.maltego.com/transform-hub/scamadviser">Scamadviser</a></li>
+<li><a href="https://www.maltego.com/transform-hub/scamadviser">https://www.maltego.com/transform-hub/scamadviser</a></li>
+<li><a href="https://docs.maltego.com/support/solutions/articles/15000041408-maltego-ipqualityscore-transforms#overview-0-0">Ipqualityscore</a></li>
+<li><a href="https://docs.maltego.com/support/solutions/articles/15000045282-maltego-opencnam-transforms">OpenCNAM</a></li>
+<li><a href="https://www.fullcontact.com">Fullcontact</a></li>
+<li><a href="https://www.fullcontact.com">https://www.fullcontact.com</a></li>
+<li><a href="https://spamcalls.net/en">Spam Calls</a></li>
+<li><a href="https://spamcalls.net/en">https://spamcalls.net/en</a></li>
+<li><a href="https://www.maltego.com/transform-hub/socialnet">Maltego Transform ShadowDragon</a></li>
+<li><a href="https://www.maltego.com/transform-hub/socialnet">https://www.maltego.com/transform-hub/socialnet</a></li>
+<li><a href="https://sociallinks.io/products/sl-crimewall">Crimewall</a></li>
+<li><a href="https://scamsearch.io">scamsearch global scam database</a></li>
+<li><a href="https://scamsearch.io">https://scamsearch.io</a></li>
+<li><a href="https://getcontact.com/en">getcontact</a></li>
+<li><a href="https://getcontact.com/en">https://getcontact.com/en</a></li>
+<li><a href="https://seon.io">SEON</a></li>
+<li><a href="https://seon.io">https://seon.io</a></li>
+<li><a href="https://snusbase.com">snusbase</a></li>
+<li><a href="https://snusbase.com">https://snusbase.com</a></li>
+</ul>
+<h1 id="medical-osint"><a class="header" href="#medical-osint">Medical OSINT</a></h1>
+<ul>
+<li><a href="https://www.who.int">WHO</a></li>
+<li><a href="https://www.who.int">https://www.who.int</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov">PUB MED</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov">https://pubmed.ncbi.nlm.nih.gov</a></li>
+<li><a href="https://worldwidescience.org/index.html">worldwidescience</a></li>
+<li><a href="https://www.icrc.org/en">ICRC International Committee of the Red Cross</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../records/REAL_ESTATE.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../records/GOVERNMENT_RECORDS.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../records/REAL_ESTATE.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../records/GOVERNMENT_RECORDS.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,756 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Search Engines - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <blockquote>
+<p>add yaml so that each can be incorporated as normal
+but also make a custom html block that acts like discovery oasis
+select which search engines to use then open new tabs with the search queries already populated</p>
+</blockquote>
+<ul>
+<li>
+<p><a href="http://google.com">Google</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://google.com/search?q=' + Search01, 'Search01window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://google.com">Google Date</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://google.com/search?q=' + Search02 + '&amp;tbs=cdr:1,cd_min:1/1/0,sbd:1', 'Search02window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://www.google.com">Google News</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://www.google.com/search?tbm=nws&amp;q=' + Search03, 'Search03window');</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.google.com">Google FTP</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('https://www.google.com/search?q=inurl%3Aftp%20-inurl%3A(http|https)%20' + Search05, 'Search05window');</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.google.com">Google Index</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('https://www.google.com/search?q=intitle%3Aindex.of+' + Search06, 'Search06window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://scholar.google.com">Google Scholar</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://scholar.google.com/scholar?&amp;q=' + Search07, 'Search07window');</li>
+</ul>
+</li>
+<li>
+<p><a href="https://patents.google.com">Google Patents</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('https://patents.google.com/?q=' + Search08, 'Search08window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://bing.com">Bing</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://bing.com/search?q="' + Search09 + '"', 'Search09window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://bing.com">Bing News</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://bing.com/news/search?q="' + Search10 + '"', 'Search10window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://search.yahoo.com">Yahoo</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://search.yahoo.com/search?p=' + Search11, 'Search11window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://www.yandex.com">Yandex</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://www.yandex.com/yandsearch?text=' + Search12, 'Search12window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://baidu.com">Baidu</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://baidu.com/s?wd=' + Search13, 'Search13window');</li>
+</ul>
+</li>
+<li>
+<p><a href="https://baresearch.org">Searx</a></p>
+</li>
+</ul>
+<pre><code class="language-YAML">tool_info:
+    name: Searx Instance
+    type: web
+    usage_url: baresearch.org
+    info_url: https://github.com/searxng/searxng
+tool_cmd:
+    login: false
+    js: function doSearch14(Search14)
+{window.open('https://baresearch.org/?q=' + Search14, 'Search14window');}
+    target_info: fullname, phonenumber, firstname, lastname
+    target_info_opt: dob, address
+    # autopopulate use of given info type in a profile, if multiple of a type, like a phonnumber, then drop down menu listing all phonenumbers
+    # comma deliminated info types, if multiple then generate more fields on rendering site, and each field has a dropdown if multiple
+   # optional targeted info does not require its field to be populated to run the tool/search
+</code></pre>
+<ul>
+<li>
+<p><a href="https://duckduckgo.com">DuckDuckGo</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('https://duckduckgo.com/?q=' + Search16, 'Search16window');</li>
+</ul>
+</li>
+<li>
+<p><a href="https://startpage.com">StartPage</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('https://startpage.com/do/search?q=' + Search17, 'Search17window');</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.qwant.com">Qwant</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('https://www.qwant.com/?q=' + Search18, 'Search18window');</li>
+</ul>
+</li>
+<li>
+<p><a href="https://search.brave.com">Brave</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('https://search.brave.com/search?q=' + Search19, 'Search19window');</li>
+</ul>
+</li>
+<li>
+<p><a href="https://web.archive.org">Wayback</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('https://web.archive.org/web/*/' + Search20, 'Search20window');</li>
+</ul>
+</li>
+<li>
+<p><a href="https://ahmia.fi">Ahmia</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('https://ahmia.fi/search/?q=' + Search21, 'Search21window');</li>
+</ul>
+</li>
+<li>
+<p><a href="https://tor.link">Onion - Tor.link</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('https://tor.link/?q=' + Search37, 'Search37window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://torch4st4l57l2u2vr5wqwvwyueucvnrao4xajqr2klmcmicrv7ccaad.onion">Onion - Torch</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://torch4st4l57l2u2vr5wqwvwyueucvnrao4xajqr2klmcmicrv7ccaad.onion/search?query=' + Search23 + '&amp;action=search', 'Search23window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://www.tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion">Onion - Tor66</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://www.tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=' + Search24, 'Search24window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion">Onion - Haystack</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=' + Search25, 'Search25window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion">Onion - Ahmia</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/search/?q=' + Search26, 'Search26window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://srcdemonm74icqjvejew6fprssuolyoc2usjdwflevbdpqoetw4x3ead.onion">Onion - SearchDemon</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://srcdemonm74icqjvejew6fprssuolyoc2usjdwflevbdpqoetw4x3ead.onion/search?q=' + Search27, 'Search27window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://2fd6cemt4gmccflhm6imvdfvli3nf7zn6rfrwpsy7uhxrgbypvwf5fad.onion">Onion - Excavator</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://2fd6cemt4gmccflhm6imvdfvli3nf7zn6rfrwpsy7uhxrgbypvwf5fad.onion/search/' + Search28, 'Search28window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://zb2jtkhnbvhkya3d46twv3g7lkobi4s62tjffqmafjibixk6pmq75did.onion">Onion - GDark</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://zb2jtkhnbvhkya3d46twv3g7lkobi4s62tjffqmafjibixk6pmq75did.onion/gdark/search.php?query=' + Search29 + '&amp;search=1', 'Search29window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://u5lyidiw4lpkonoctpqzxgyk6xop7w7w3oho4dzzsi272rwnjhyx7ayd.onion">Onion - Hidden Reviews</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://u5lyidiw4lpkonoctpqzxgyk6xop7w7w3oho4dzzsi272rwnjhyx7ayd.onion/?s=' + Search30, 'Search30window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion">Onion - OnionLand</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=' + Search31, 'Search31window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://phobosxilamwcg75xt22id7aywkzol6q6rfl2flipcqoc4e4ahima5id.onion">Onion - Phobos</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://phobosxilamwcg75xt22id7aywkzol6q6rfl2flipcqoc4e4ahima5id.onion/search?query=' + Search32, 'Search32window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://no6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad.onion">Onion - Submarine</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://no6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad.onion/search.php?term=' + Search33, 'Search33window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://searchgf7gdtauh7bhnbyed4ivxqmuoat3nm6zfrg3ymkq6mtnpye3ad.onion">Onion - DeepSearch</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://searchgf7gdtauh7bhnbyed4ivxqmuoat3nm6zfrg3ymkq6mtnpye3ad.onion/search?q=' + Search34, 'Search34window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion">Onion - OnionCenter</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion/index.php?a=search&amp;q=' + Search35, 'Search35window');</li>
+</ul>
+</li>
+<li>
+<p><a href="http://freshonifyfe4rmuh6qwpsexfhdrww7wnt5qmkoertwxmcuvm4woo4ad.onion">Onion - FreshOnion</a></p>
+<ul>
+<li>input text</li>
+<li>window.open('http://freshonifyfe4rmuh6qwpsexfhdrww7wnt5qmkoertwxmcuvm4woo4ad.onion/?query=' + Search36, 'Search36window');</li>
+</ul>
+</li>
+</ul>
+<h2 id="search-engines"><a class="header" href="#search-engines">SEARCH ENGINES</a></h2>
+<ul>
+<li><a href="https://www.google.com/advanced_search">Google Advanced Search</a></li>
+<li><a href="https://metager3.de/en">MetaGer: Privacy Protected Search</a></li>
+<li><a href="https://www.searchenginesindex.com">Search Engines Index</a></li>
+<li><a href="https://search.carrot2.org/#/search/web">carrot2</a></li>
+<li><a href="https://startpage.com">Startpage</a></li>
+<li><a href="https://search.crossref.org">Crossref</a></li>
+<li><a href="https://search.yahoo.com">Yahoo Search</a></li>
+<li><a href="https://www.ecosia.org">Ecosia</a></li>
+<li><a href="https://www.dogpile.com">Dogpile</a></li>
+<li><a href="https://www.metacrawler.com">Zoo Search</a></li>
+<li><a href="https://fnd.io">App Store and iTunes search engine</a></li>
+<li><a href="https://www.search.ask.com">Ask</a></li>
+<li><a href="https://zorexeye.com">ZorexEye</a></li>
+<li><a href="https://keys.openpgp.org">keys.openpgp.org</a></li>
+<li><a href="https://pgp.mit.edu">MIT PGP Key Server</a></li>
+<li><a href="https://ipfs-search.com/#/search">Ipfs-search.com</a></li>
+<li><a href="https://debate.cards">Debate.cards</a></li>
+<li><a href="https://argumentsearch.com">Argumentsearch.com</a></li>
+<li><a href="https://www.meganzsearch.com">Meganzsearch.com</a></li>
+<li><a href="https://engine.presearch.org">Engine.presearch.org</a></li>
+<li><a href="https://blockscan.com">Blockscan.com</a></li>
+<li><a href="https://publc.com">Publc.com</a></li>
+<li><a href="https://cachedviews.com">CachedViews.com</a></li>
+<li><a href="https://www.exploit-db.com/google-hacking-database">Google Hacking Database</a></li>
+<li><a href="https://one-plus.github.io/GoogleBing">Google &amp; Bing</a></li>
+<li><a href="https://libgen.rs">Libgen.rs</a></li>
+<li><a href="https://stacksear.ch">Stacksearch</a></li>
+<li><a href="https://www.searchtempest.com">SearchTempest</a></li>
+<li><a href="https://2lingual.com">2lingual</a></li>
+<li><a href="https://milled.com/search">Milled</a></li>
+<li><a href="https://btdig.com">btdig</a></li>
+<li><a href="https://monstercrawler.com">Monster Crawler Search</a></li>
+<li><a href="https://arabo.com">Arabo.com</a></li>
+<li><a href="https://en.search.wordpress.com">WordPress.com</a></li>
+<li><a href="https://octosearch.dootech.com">Octosearch.dootech.com</a></li>
+<li><a href="https://searchcraigslist.org">Search craigslist</a></li>
+<li><a href="https://osint.sh/buckets">Public Buckets</a></li>
+<li><a href="https://searchatlas.org">Search Atlas</a></li>
+<li><a href="https://dorki.io">Dorki</a></li>
+<li><a href="https://hackxy.io">Hackxy</a></li>
+</ul>
+<h3 id="universal-search-tools"><a class="header" href="#universal-search-tools">Universal search tools</a></h3>
+<ul>
+<li><a href="https://github.com/zquestz/s">S</a></li>
+<li><a href="https://searchall.net">searchall.net</a></li>
+<li><a href="https://query-server.herokuapp.com">Query-server</a></li>
+<li><a href="https://github.com/tasos-py/Search-Engines-Scraper">Search Engines Scraper</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/trufflepiggy-context-sear/chffnhocnckigoapjdienmaphjnljpmo">Trufflepiggy (Context Search)</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/search-patterns/hjlahhonnlceifaecpjejlhhgjkipnbj/related?hl=zh-CN&amp;gl=001">Search Patterns</a></li>
+<li><a href="https://github.com/davemolk/searcher">Searcher</a></li>
+<li><a href="https://github.com/knassar702/startpage-parser">Startpage Parser</a></li>
+<li><a href="https://github.com/garywill/BigSearch">BigSearch</a></li>
+</ul>
+<h3 id="filesharing-search-engines"><a class="header" href="#filesharing-search-engines">Filesharing Search Engines</a></h3>
+<ul>
+<li><a href="https://filesearching.com">Filesearching</a></li>
+<li><a href="https://snowfl.com">Snowfl.com</a></li>
+<li><a href="https://torrends.to">Torrents.me</a></li>
+<li><a href="https://ewasion.github.io/opendirectory-finder/#">Open Directory Finder</a></li>
+<li><a href="https://www.mmnt.net">Mamont's open FTP indexer</a></li>
+<li><a href="https://orionoid.com">Orion Media Indexer</a></li>
+<li><a href="https://sunxdcc.com">Sunxdcc</a></li>
+<li><a href="https://www.xdcc.eu">Xdcc.eu</a></li>
+<li><a href="https://ddlsearch.free.fr">DDL Search</a></li>
+<li><a href="https://www.sharedigger.com">Sharedigger</a></li>
+<li><a href="https://www.xtorx.com">Xtorx</a></li>
+<li><a href="https://torrentseeker.com">Torrent Seeker</a></li>
+<li><a href="https://www.freewareweb.com/ftpsearch.shtml">FreeWare web FTP file search</a></li>
+<li><a href="https://search-22.com/ftp-search-tools">Search 22</a></li>
+<li><a href="https://heystacks.com">Heystack</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/duckduckgo-bangs/hdjfebkndhmegijlghjcdghdbealibeb/related">DuckDuckGo !bangs</a></li>
+<li><a href="https://github.com/jarun/ddgr">DDGR</a></li>
+<li><a href="https://apify.com/apify/google-search-scraper">Google Search Scraper</a></li>
+<li><a href="https://github.com/jarun/googler">Googler</a></li>
+<li><a href="https://goosh.org">goosh.org</a></li>
+<li><a href="https://github.com/infokiller/web-search-navigator">Web Search Navigator</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/overload-search-advanced/knihkdaajdhpjgeiadaefmjmpbnlojbg/related">Overload Search</a></li>
+<li><a href="https://tools.digitalmethods.net/beta/scrapeGoogle/autocomplete.php">Google Autocomplete Scraper</a></li>
+<li><a href="https://github.com/TheSpeedX/SDorker">SDorker</a></li>
+<li><a href="https://github.com/XAMFRA/XGS">XGS</a></li>
+<li><a href="https://onion.cab">http://onion.cab</a></li>
+<li><a href="https://onion.city">http://onion.city</a></li>
+<li>[https://onion.cab](http://onion.cab](https://onion.cab](http://onion.cab)</li>
+<li>[https://onion.city](http://onion.city](https://onion.city](http://onion.city)</li>
+<li><a href="https://chrome.google.com/webstore/detail/google-email-extractor/aabpdmlmkpedpigeignclfmodjhplllj/related">Google Email Extractor</a></li>
+<li><a href="https://seqe.me">SEQE.me</a></li>
+<li><a href="https://www.brightlocal.com/local-search-results-checker">Bright Local Search Result Checker</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/auto-searcher/hhggekcjcdgenbgejmkhineppclnkbkn/related">Auto Searcher</a></li>
+<li><a href="https://isearchfrom.com">I search from</a></li>
+<li><a href="https://github.com/370rokas/anonscraper">Anon Scraper</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/search-commands/ggjakfijchdkbmmhbfemjciidhnipgoe/related">Search Commands</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1v27Oybrv9H5sn3MMD76clLp2B4mwhA7OtUkfQzlNu8w/edit#gid=940516593">Boolean Builder theBalazs</a></li>
+<li><a href="https://github.com/opsdisk/yagooglesearch">Yagooglesearch</a></li>
+<li><a href="https://googlewordsniper.eu">Google Word Sniper</a></li>
+</ul>
+<h3 id="iot-ip-search-engines"><a class="header" href="#iot-ip-search-engines">IOT (ip search engines)</a></h3>
+<ul>
+<li><a href="https://github.com/rlyonheart/thelordseye">TheLordEye</a></li>
+<li><a href="https://quickcacheandarchivesearch.onrender.com">Quick Cache and Archive search</a></li>
+<li><a href="https://trove.nla.gov.au/search/category/websites">Trove</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/vandal/knoccgahmcfhngbjhdbcodajdioedgdo/related">Vandal</a></li>
+<li>[https://archive.org](http://archive.org](https://archive.org](http://archive.org)</li>
+<li><a href="https://theoldnet.com">TheOldNet.com</a></li>
+<li><a href="https://carbondate.cs.odu.edu">Carbon Dating The Web</a></li>
+<li><a href="https://archive.md">Archive.md</a></li>
+<li><a href="https://webarchive.loc.gov">Webarchive.loc.gov</a></li>
+<li><a href="https://swap.stanford.edu">Swap.stanford.edu</a></li>
+<li><a href="https://wayback.archive-it.org">Wayback.archive-it.org</a></li>
+<li><a href="https://vefsafn.is">Vefsafn.is</a></li>
+<li><a href="https://web.archive.bibalex.org">web.archive.bibalex.org</a></li>
+<li><a href="https://archive.vn">Archive.vn</a></li>
+<li><a href="https://www.webarchive.org.uk">UKWA</a></li>
+</ul>
+<h3 id="general-search-engines"><a class="header" href="#general-search-engines">General Search Engines</a></h3>
+<ul>
+<li><a href="https://www.google.com/">Google</a></li>
+<li><a href="https://www.bing.com/">Bing</a></li>
+<li><a href="http://www.yahoo.com/">Yahoo!</a></li>
+<li><a href="https://yandex.com/">Yandex</a></li>
+<li><a href="https://www.ask.com/">Ask</a></li>
+<li><a href="https://www.baidu.com/">Baidu</a></li>
+<li><a href="https://searx.be/?q=">SearXNG</a></li>
+<li><a href="http://www.exalead.com/search/web/">EXALead</a></li>
+<li><a href="https://duckduckgo.com/">DuckDuckGo</a></li>
+<li><a href="https://swisscows.com/en">Swisscows</a></li>
+<li><a href="https://www.naver.com/">Naver</a></li>
+<li><a href="https://search.aol.com">AOL</a></li>
+<li><a href="https://search.brave.com/">Brave</a></li>
+<li><a href="https://yep.com/">Yep</a></li>
+<li><a href="https://gibiru.com/">Gibiru</a></li>
+<li><a href="https://kagi.com/">Kagi</a></li>
+<li><a href="https://stract.com/">Stract</a></li>
+</ul>
+<h3 id="files"><a class="header" href="#files">Files</a></h3>
+<ul>
+<li><a href="https://pastebin.com/">Pastebin</a> - Website where you can store text online for a set period of time</li>
+<li><a href="https://mega.nz/">Mega</a> - Secure and private cloud storage for everyone. Store and share files, chat, meet, back up, sync, and more</li>
+<li><a href="https://www.4s.io/">4Shared</a> - Search, Store and Share easily. Upload, discover and share files without a hitch</li>
+<li><a href="https://files.fm/discover">files.fm</a> - Explore content shared by community</li>
+<li><a href="https://www.edisk.cz/">edisk.cz</a> - Online storage for backing up, sharing and searching for photos, videos, music and other files</li>
+<li><a href="https://doodstream.com.tr/search-engine/">doodstream</a> - DoodStream Search Engine</li>
+<li><a href="http://www.uvrx.com/">UVRX Search</a> - Most comprehensive online file storage search engine</li>
+<li><a href="https://filesearch.link/">filesearch.link</a> - You can search archives, programs, videos, music, books and more</li>
+<li><a href="https://rapidgators.net/file-search/">RapidGators Search</a> - Search for files stored on the rapidgator cloud</li>
+</ul>
+<h1 id="meta-search"><a class="header" href="#meta-search">Meta Search</a></h1>
+<ul>
+<li><a href="https://www.100searchengines.com">100SearchEngines</a></li>
+<li><a href="https://bvsg.org">Bing vs. Google</a></li>
+<li><a href="https://bvsg.org">https://bvsg.org</a></li>
+<li><a href="https://dadgogo.com">DADgogo</a></li>
+<li><a href="https://dadgogo.com">https://dadgogo.com</a></li>
+<li><a href="https://www.etools.ch">Etools</a></li>
+<li><a href="https://www.etools.ch">https://www.etools.ch</a></li>
+<li><a href="https://www.webcrawler.com">WebCrawler</a></li>
+<li><a href="https://www.webcrawler.com">https://www.webcrawler.com</a></li>
+</ul>
+<h1 id="code-search"><a class="header" href="#code-search">Code Search</a></h1>
+<ul>
+<li><a href="https://source.chromium.org/chromium">Chromium Code Search</a></li>
+<li><a href="https://codefinder.dev">Code Finder</a></li>
+<li><a href="https://codefinder.dev">https://codefinder.dev</a></li>
+<li><a href="https://codefinder.org">codefinder org</a></li>
+<li><a href="https://codefinder.org">https://codefinder.org</a></li>
+<li><a href="https://cs.android.com">Android Code Search</a></li>
+<li><a href="https://www.codeseek.co">CodeSeek</a></li>
+<li><a href="https://codesearch.debian.net">Debian Code Search</a></li>
+<li><a href="https://codesearch.debian.net">https://codesearch.debian.net</a></li>
+<li><a href="https://www.programcreek.com/scala">Scala</a></li>
+<li><a href="https://searchcode.com">SearchCode</a></li>
+<li><a href="https://www.sourcecodeonline.com">SourceCodeOnline</a></li>
+<li><a href="https://www.sourcecodeonline.com">https://www.sourcecodeonline.com</a></li>
+<li><a href="https://code.woboq.org">Woboq</a></li>
+<li><a href="https://publicwww.com">publicwww</a></li>
+<li><a href="https://publicwww.com">https://publicwww.com</a></li>
+<li><a href="https://devsecopsguides.com/docs/rules">DevsecOps Secure Code</a></li>
+<li><a href="https://awesomeopensource.com">awesomeopensource</a></li>
+<li><a href="https://awesomeopensource.com">https://awesomeopensource.com</a></li>
+<li><a href="https://www.nerdydata.com/reports/new">nerdydata</a></li>
+<li><a href="https://github.com/search?type=code">Github code search</a></li>
+<li><a href="https://sourcegraph.com/search">sourcegraph</a></li>
+<li><a href="https://cybdetective.com/codesearch.html">cybdetective code search</a></li>
+<li><a href="https://www.postman.com/explore/collections">postman</a></li>
+<li><a href="https://app.swaggerhub.com/search">swaggerhub</a></li>
+<li><a href="https://ecosyste.ms">ecosyste</a></li>
+<li><a href="https://ecosyste.ms">https://ecosyste.ms</a></li>
+<li><a href="https://wpdirectory.net">wpdirectory</a></li>
+<li><a href="https://wpdirectory.net">https://wpdirectory.net</a></li>
+<li><a href="https://launchpad.net">launchpad</a></li>
+<li><a href="https://launchpad.net">https://launchpad.net</a></li>
+<li><a href="https://snipplr.com/all">snipplr</a></li>
+</ul>
+<h1 id="other-search-engines"><a class="header" href="#other-search-engines">Other Search Engines</a></h1>
+<ul>
+<li><a href="https://www.criminalip.io">criminalip</a></li>
+<li><a href="https://www.criminalip.io">https://www.criminalip.io</a></li>
+<li><a href="https://us.searchboth.net">us.searchboth.net</a></li>
+<li><a href="https://us.searchboth.net">https://us.searchboth.net</a></li>
+<li><a href="https://www.arhive.org">Archive.org</a></li>
+<li><a href="https://www.arhive.org">https://www.arhive.org</a></li>
+<li><a href="https://yandex.com">Yandex</a></li>
+<li><a href="https://www.pastebin.com">Pastebin</a></li>
+<li><a href="https://www.pastebin.com">https://www.pastebin.com</a></li>
+<li><a href="https://www.topix.com">Topix.com</a></li>
+<li><a href="https://www.topix.com">https://www.topix.com</a></li>
+<li><a href="https://www.shodan.io">Shodan</a></li>
+<li><a href="https://www.shodan.io">https://www.shodan.io</a></li>
+<li><a href="https://thepiratebays.com">Piratebays</a></li>
+<li><a href="https://thepiratebays.com">https://thepiratebays.com</a></li>
+<li><a href="https://www.onesearch.com">Onesearch</a></li>
+<li><a href="https://www.onesearch.com">https://www.onesearch.com</a></li>
+<li><a href="https://www.searchencrypt.com/home">Searchencrypt</a></li>
+<li><a href="https://duckduckgo.com">Duckgo</a></li>
+<li><a href="https://duckduckgo.com">https://duckduckgo.com</a></li>
+<li><a href="https://forum.seccodeid.com/d/waymore-find-way-more-from-the-wayback-machine">Waymore</a></li>
+<li><a href="https://www.startpage.com">StartPage</a></li>
+<li><a href="https://www.startpage.com">https://www.startpage.com</a></li>
+<li><a href="https://searx.space">Searx</a></li>
+<li><a href="https://searx.space">https://searx.space</a></li>
+<li><a href="https://commoncrawl.org/latest-crawl">CommonCrawl</a></li>
+<li><a href="https://www.similarsites.com">Similar Sites</a></li>
+<li><a href="https://www.similarsites.com">https://www.similarsites.com</a></li>
+<li><a href="https://www.zapmeta.com">Zap Meta</a></li>
+<li><a href="https://www.zapmeta.com">https://www.zapmeta.com</a></li>
+<li><a href="https://search.carrot2.org/#/search/web">Carrot Search</a></li>
+<li><a href="https://www.goo.ne.jp">Goo Search</a></li>
+<li><a href="https://www.goo.ne.jp">https://www.goo.ne.jp</a></li>
+<li><a href="https://swisscows.com/en">swisscows</a></li>
+<li><a href="https://www.odp.org/homepage.php">odp</a></li>
+<li><a href="https://www.odp.org/homepage.php">https://www.odp.org/homepage.php</a></li>
+<li><a href="https://www.yippysearchengine.com">Yiipy Search</a></li>
+<li><a href="https://www.yippysearchengine.com">https://www.yippysearchengine.com</a></li>
+<li><a href="https://cybdetective.com/webarchiveviewer">webarchiveviewer</a></li>
+<li><a href="https://cybdetective.com/webarchiveviewer">https://cybdetective.com/webarchiveviewer</a></li>
+<li><a href="https://duckduckgo.com/bangs">duckduckgo Bangs</a></li>
+<li><a href="https://search.mediasova.com/en/index">mediasova</a></li>
+<li><a href="https://www.mojeek.com">mojeek</a></li>
+<li><a href="https://www.mojeek.com">https://www.mojeek.com</a></li>
+<li><a href="https://boardreader.com">boardreader</a></li>
+<li><a href="https://boardreader.com">https://boardreader.com</a></li>
+<li><a href="https://cse.google.com/cse?cx=015328649639895072395:sbv3zyxzmji#gsc.tab=0&amp;gsc.sort=">Geoint CSE search</a></li>
+<li><a href="https://osint.lolarchiver.com/#">lolarchiver</a></li>
+<li><a href="https://webmii.com">wbmii</a></li>
+<li><a href="https://webmii.com">https://webmii.com</a></li>
+<li><a href="https://wikileaks.org">Wiki Leaks</a></li>
+<li><a href="https://wikileaks.org">https://wikileaks.org</a></li>
+<li><a href="https://github.com/bellingcat/wayback-google-analytics">bellingcat wayback-google-analytics</a></li>
+<li><a href="https://www.yamli.com">yamli Arabic search</a></li>
+<li><a href="https://www.yamli.com">https://www.yamli.com</a></li>
+<li><a href="https://www.ask.com">ASK</a></li>
+<li><a href="https://www.ask.com">https://www.ask.com</a></li>
+<li><a href="https://www.baidu.com">Baidu</a></li>
+<li><a href="https://www.baidu.com">https://www.baidu.com</a></li>
+<li><a href="https://www.infospace.com">Infospace</a></li>
+<li><a href="https://www.infospace.com">https://www.infospace.com</a></li>
+<li><a href="https://gibiru.com">gibiru</a></li>
+<li><a href="https://gibiru.com">https://gibiru.com</a></li>
+<li><a href="https://kagi.com">kagi</a></li>
+<li><a href="https://kagi.com">https://kagi.com</a></li>
+<li><a href="https://search.brave.com">brave</a></li>
+<li><a href="https://search.brave.com">https://search.brave.com</a></li>
+<li><a href="https://stract.com">stract</a></li>
+<li><a href="https://stract.com">https://stract.com</a></li>
+<li><a href="https://developers.google.com/safe-browsing/reference?hl=id">Google Safe Browsing</a></li>
+<li><a href="https://www.qwant.com">qwant</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../identifiers/FLIGHTS_MARITIME_Railway_Biking.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../discovery/CUSTOM_SEARCH.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../identifiers/FLIGHTS_MARITIME_Railway_Biking.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../discovery/CUSTOM_SEARCH.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

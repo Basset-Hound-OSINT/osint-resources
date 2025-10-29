@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>More / Other - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="43--execution-logging-and-tracing"><a class="header" href="#43--execution-logging-and-tracing">4.3  Execution logging and tracing</a></h2>
+<ul>
+<li><a href="https://github.com/mitmproxy/mitmproxy">mitmproxy</a></li>
+<li><a href="https://charlesproxy.com">Charles Proxy</a></li>
+<li><a href="https://www.kernel.org/doc/Documentation/usb/usbmon.txt">usbmon</a></li>
+<li><a href="https://github.com/desowin/usbpcap">USBPcap</a></li>
+<li><a href="https://github.com/ampotos/dynStruct">dynStruct</a></li>
+<li><a href="https://github.com/mxmssh/drltrace">drltrace</a></li>
+<li><a href="https://msitpros.com/?p=3960">Research on CMSTP.exe</a></li>
+<li><a href="https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code">Windows oneliners to download remote payload and execute arbitrary code</a></li>
+<li><a href="https://bohops.com/2017/12/02/clickonce-twice-or-thrice-a-technique-for-social-engineering-and-untrusted-command-execution">Executing Commands and Bypassing AppLocker with PowerShell Diagnostic Scripts</a></li>
+<li><a href="https://posts.specterops.io/wsh-injection-a-case-study-fd35f79d29dd">WSH Injection: A Case Study</a></li>
+<li><a href="https://lockboxx.blogspot.com/2018/02/intro-to-using-gscript-for-red-teams.html">Gscript Dropper</a></li>
+</ul>
+<h2 id="offsec"><a class="header" href="#offsec">Offsec</a></h2>
+<ul>
+<li><a href="https://github.com/LinaYorda/OSINTko">OSINTko - Kali Linux ISO with OSINT packages</a></li>
+<li><a href="https://github.com/cyberpunkOS/CyberPunkOS">CyberPunkOS - OSINT VM for fake news</a></li>
+<li><a href="https://github.com/iudicium/pryingdeep">Prying Deep - Dark web intelligence</a></li>
+<li><a href="https://github.com/cloudtracer/ThreatPinchLookup">ThreatPinch Lookup - Chrome &amp; Firefox Extension</a></li>
+<li><a href="https://github.com/Bevigil/BeVigil-OSINT-CLI">BeVigil-OSINT-CLI</a></li>
+<li><a href="https://github.com/HarryLudemann/Ngoto">Ngoto - Python Pentester Tool</a></li>
+<li><a href="https://github.com/tracelabs/tlosint-live">Tlosint live - Trace Labs OSINT Linux</a></li>
+<li><a href="https://github.com/delikely/OSINT-JUMP">OSINT JUMP - OSINT reconnaissance VM</a></li>
+<li><a href="https://github.com/simeononsecurity/FireFox-Security-Researcher">FireFox Security Researcher</a></li>
+<li><a href="https://github.com/D4Vinci/Chrome-Extractor">Chrome Extractor - Extract Chrome passwords</a></li>
+<li><a href="https://github.com/unode/firefox_decrypt">Firefox Decrypt - Extract Firefox passwords</a></li>
+<li><a href="https://github.com/woj-ciech/Kamerka-GUI">Kamerka GUI - IoT/ICS reconnaissance</a></li>
+</ul>
+<h1 id="ctf-analysis--exploit"><a class="header" href="#ctf-analysis--exploit">CTF Analysis &amp; Exploit</a></h1>
+<ul>
+<li><a href="https://gchq.github.io/CyberChef">Cybercheff</a></li>
+<li><a href="https://gchq.github.io/CyberChef">https://gchq.github.io/CyberChef</a></li>
+<li><a href="https://www.dcode.fr/cipher-identifier">dcode</a></li>
+<li><a href="https://github.com/bettercap/bettercap">Bettercap</a></li>
+<li><a href="https://github.com/tomac/yersinia">Yersinia</a></li>
+<li><a href="https://github.com/nccgroup/featherduster">FeatherDuster</a></li>
+<li><a href="https://github.com/iagox86/hash_extender">Hash Extender</a></li>
+<li><a href="https://hashcat.net/hashcat">Hashcat</a></li>
+<li><a href="https://hashcat.net/hashcat">https://hashcat.net/hashcat</a></li>
+<li><a href="https://github.com/OpenSecurityResearch/dllinjector">DLLInjector</a></li>
+<li><a href="https://www.metasploit.com">Metasploit</a></li>
+<li><a href="https://www.metasploit.com">https://www.metasploit.com</a></li>
+<li><a href="https://github.com/Gallopsled/pwntools">Pwntools</a></li>
+<li><a href="https://github.com/JonathanSalwan/ROPgadget">ROPgadget</a></li>
+<li><a href="https://exiftool.org">Exiftool</a></li>
+<li><a href="https://exiftool.org">https://exiftool.org</a></li>
+<li><a href="https://malzilla.sourceforge.net/downloads.html">Malzilla</a></li>
+<li><a href="https://zmap.io">Zmap</a></li>
+<li><a href="https://zmap.io">https://zmap.io</a></li>
+<li><a href="https://nmap.org">Nmap</a></li>
+<li><a href="https://nmap.org">https://nmap.org</a></li>
+<li><a href="https://www.wireshark.org">Wireshark</a></li>
+<li><a href="https://www.wireshark.org">https://www.wireshark.org</a></li>
+<li><a href="https://ibotpeaches.github.io/Apktool">Apktool</a></li>
+<li><a href="https://ibotpeaches.github.io/Apktool">https://ibotpeaches.github.io/Apktool</a></li>
+<li><a href="https://binary.ninja">Ninja Binary</a></li>
+<li><a href="https://binary.ninja">https://binary.ninja</a></li>
+<li><a href="https://github.com/ReFirmLabs/binwalk">Binwalk</a></li>
+<li><a href="https://www.sourceware.org/gdb">GDB</a></li>
+<li><a href="https://www.sourceware.org/gdb">https://www.sourceware.org/gdb</a></li>
+<li><a href="https://github.com/hugsy/gef">GEF</a></li>
+<li><a href="https://www.hex-rays.com/ida-pro">IDA</a></li>
+<li><a href="https://www.hex-rays.com/ida-pro">https://www.hex-rays.com/ida-pro</a></li>
+<li><a href="https://github.com/longld/peda">PEDA</a></li>
+<li><a href="https://github.com/radareorg/radare2">Radare2</a></li>
+<li><a href="https://www.windbg.org">Windbg</a></li>
+<li><a href="https://www.windbg.org">https://www.windbg.org</a></li>
+<li><a href="https://github.com/BoomerangDecompiler/boomerang">Boomerang</a></li>
+<li><a href="https://relentless-coding.org/projects/jsdetox/install">Detox</a></li>
+<li><a href="https://relentless-coding.org/projects/jsdetox/install">https://relentless-coding.org/projects/jsdetox/install</a></li>
+<li><a href="https://github.com/Y-Vladimir/SmartDeblur">SmartDeblur</a></li>
+<li><a href="https://online.hitpaw.com/online-photo-enhancer.html?linksource=header">HitPaw</a></li>
+<li><a href="https://www.imagemagick.org/script/index.php">ImageMagick</a></li>
+<li><a href="https://www.imagemagick.org/script/index.php">https://www.imagemagick.org/script/index.php</a></li>
+<li><a href="https://exiv2.org/manpage.html">Exiv2</a></li>
+<li><a href="https://linux.die.net/man/1/stegbreak">Stegbreak</a></li>
+<li><a href="https://steghide.sourceforge.net">Steghide</a></li>
+<li><a href="https://steghide.sourceforge.net">https://steghide.sourceforge.net</a></li>
+<li><a href="https://github.com/zardus/ctf-tools/blob/master/stegsolve/install">Stegsolve</a></li>
+<li><a href="https://www.exploit-db.com/searchsploit">SearchSploit</a></li>
+<li><a href="https://www.exploitalert.com/browse-exploit.html">Exploitalert</a></li>
+<li><a href="https://lolbas-project.github.io">Lollabs</a></li>
+<li><a href="https://lolbas-project.github.io">https://lolbas-project.github.io</a></li>
+<li><a href="https://gtfobins.github.io">GtfoBins</a></li>
+<li><a href="https://gtfobins.github.io">https://gtfobins.github.io</a></li>
+<li><a href="https://book.hacktricks.xyz/welcome/readme">Hacktricks</a></li>
+<li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings">Payload all the things</a></li>
+<li><a href="https://github.com/daffainfo/AllAboutBugBounty">All about bug bounty</a></li>
+<li><a href="https://github.com/Yudha-ard/Bug-Bounty">Bug Bounty</a></li>
+<li><a href="https://github.com/dnSpy/dnSpy">DnsSpy</a></li>
+<li><a href="https://regex101.com">regex101</a></li>
+<li><a href="https://regex101.com">https://regex101.com</a></li>
+<li><a href="https://ctfsearch.hackmap.win">Search CTF Writeups</a></li>
+<li><a href="https://ctfsearch.hackmap.win">https://ctfsearch.hackmap.win</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../offsec/radio_rfid.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../sock_puppets/throw_away.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../offsec/radio_rfid.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../sock_puppets/throw_away.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

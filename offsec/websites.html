@@ -1,0 +1,541 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Websites - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3 id="urls"><a class="header" href="#urls">URL's</a></h3>
+<ul>
+<li>
+<p><a href="https://www.favihash.com">favihash</a></p>
+</li>
+<li>
+<p><a href="https://digger.tools">domain digger</a></p>
+</li>
+<li>
+<p><a href="https://dnstwist.it">dnstwist</a></p>
+</li>
+<li>
+<p><a href="https://internetdb.shodan.io">Internetdb.shodan.io</a></p>
+</li>
+<li>
+<p><a href="https://www.greynoise.io/viz">GreyNoise Intelligence</a></p>
+</li>
+<li>
+<p><a href="https://fofa.so">FOFA</a></p>
+</li>
+<li>
+<p><a href="https://censys.io/domain">Censys</a></p>
+</li>
+<li>
+<p><a href="https://census2012.sourceforge.net/paper.html">Internet Census 2012</a></p>
+</li>
+<li>
+<p><a href="https://ipleak.net">IPLeak</a></p>
+</li>
+<li>
+<p><a href="https://www.wappalyzer.com/lookup">Wappalyzer</a></p>
+</li>
+<li>
+<p><a href="https://pypi.org/project/photon">photon</a></p>
+</li>
+<li>
+<p><a href="https://osint.sh/stack">Technology Lookup</a></p>
+</li>
+<li>
+<p><a href="https://shadowcrypt.net/tools/nmap">Nmap Checker Tool</a></p>
+</li>
+<li>
+<p><a href="https://centralops.net/co">Free online network tools</a></p>
+</li>
+<li>
+<p><a href="https://transparencyreport.google.com/https/certificates">Google Transparency Report</a></p>
+</li>
+<li>
+<p><a href="https://osint.sh/crt">Certificate Search</a></p>
+</li>
+<li>
+<p><a href="https://www.domaincodex.com/search.php">Domain Codex</a></p>
+</li>
+<li>
+<p><a href="https://nerd.cesnet.cz/nerd/ips">IP search - Network Entity Reputation Database</a></p>
+</li>
+<li>
+<p><a href="https://osint.sh/domain">Reverse Domain</a></p>
+</li>
+<li>
+<p><a href="https://www.iana.org/domains/root/db">IANA — Root Zone Database</a></p>
+</li>
+<li>
+<p><a href="https://punkspider.org">Punkspider</a></p>
+</li>
+<li>
+<p><a href="https://github.com/j3ssie/metabigor">metabigor</a></p>
+</li>
+<li>
+<p><a href="https://api.opencnam.com/v2/phone/+1">Api</a></p>
+</li>
+<li>
+<p><a href="https://api.peopledatalabs.com/v5/person/enrich?pretty=true&amp;api_key=">Api</a></p>
+</li>
+<li>
+<p><a href="https://api.whoxy.com/?key=">Api</a></p>
+</li>
+<li>
+<p><a href="https://cnam.bulkcnam.com/?id=">Cnam</a></p>
+</li>
+<li>
+<p><a href="https://cnam.calleridservice.com/query?u=">Cnam</a></p>
+</li>
+<li>
+<p><a href="https://dip.cidname.com">Dip</a></p>
+</li>
+<li>
+<p><a href="https://trial.serviceobjects.com/gppl2/api.svc/GetPhoneInfo?PhoneNumber=">Trial</a></p>
+</li>
+<li>
+<p><a href="https://whois-history.whoisxmlapi.com/api/v1?apiKey=">Whois-history</a></p>
+</li>
+</ul>
+<h3 id="25--web"><a class="header" href="#25--web">2.5  Web</a></h3>
+<ul>
+<li><a href="https://github.com/lanmaster53/recon-ng">recon-ng</a></li>
+<li><a href="https://github.com/projectdiscovery/katana">Katana</a></li>
+<li><a href="https://github.com/tomnomnom/waybackurls">Waybackurls</a></li>
+<li><a href="https://spyse.com">SpySe</a></li>
+<li><a href="https://github.com/HightechSec/git-scanner">Git-Scanner</a></li>
+<li><a href="https://github.com/SpectralOps/keyscope">Keyscope</a></li>
+<li><a href="https://github.com/codingo/VHostScan">VHostScan</a></li>
+<li><a href="https://github.com/subfinder/subfinder">SubFinder</a></li>
+<li><a href="https://github.com/sqlmapproject/sqlmap">sqlmap</a></li>
+<li><a href="https://github.com/OJ/gobuster/releases/tag/v3.6.0">Gobuster</a></li>
+<li><a href="https://github.com/ffuf/ffuf">Ffuf</a></li>
+<li><a href="https://github.com/projectdiscovery/httpx">Httpx</a></li>
+<li><a href="https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install">Burp Suite</a></li>
+<li><a href="https://github.com/c0dejump/HExHTTP">HExHTTP</a></li>
+<li><a href="https://github.com/trap-bytes/403jump">403JUMP</a></li>
+<li><a href="https://github.com/ivanbg2004/0BL1V10N-CVE-2024-25600-Bricks-Builder-plugin-for-WordPress">0BL1V10N CVE-2024-25600 (Bricks Builder Plugin Exploit)</a></li>
+</ul>
+<h3 id="cookies-analyze"><a class="header" href="#cookies-analyze">Cookies analyze</a></h3>
+<ul>
+<li><a href="https://www.cookiemetrix.com">Determines if website is not comply with EU Cookie Law and gives you insight about cookies installed from website before the visitors consent</a></li>
+<li><a href="https://2gdpr.com">Audits website cookies, online tracking and HTTPS usage for GDPR compliance</a></li>
+<li><a href="https://www.webemailextractor.com">Webemailextractor.com</a></li>
+<li><a href="https://www.cookieserve.com">cookieserve.com</a></li>
+<li><a href="https://webkay.robinlinus.com">What every Browser knows about you</a></li>
+<li><a href="https://developers.whatismybrowser.com/useragents/parse">User Agent Parser</a></li>
+</ul>
+<h3 id="website-analyze"><a class="header" href="#website-analyze">Website analyze</a></h3>
+<ul>
+<li><a href="https://app.buzzsumo.com/content/web">AppSumo Content Analyzer</a></li>
+<li><a href="https://openlinkprofiler.org">OpenLinkProfiles</a></li>
+<li><a href="https://lookyloo.circl.lu">Lookyloo</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/core-serp-vitals/oipmhlkineglclpndlecjmbleapbcilf/related">Core SERP Vitals</a></li>
+<li><a href="https://tosdr.org">Terms of Service Didn't Read</a></li>
+<li><a href="https://mmhdan.herokuapp.com">MMHDAN</a></li>
+<li><a href="https://github.com/imtiazsec/favhash">Favhash</a></li>
+<li><a href="https://faviconhasher.codejavu.tech">Favicon Hasher</a></li>
+<li><a href="https://github.com/devanshbatham/FavFreak">FavFreak</a></li>
+<li><a href="https://github.com/pyhackertarget/hackertarget">Hackertarget</a></li>
+<li><a href="https://hackertarget.com">http://hackertarget.com</a></li>
+<li>[https://hackertarget.com](http://hackertarget.com](https://hackertarget.com](http://hackertarget.com)</li>
+<li><a href="https://github.com/Josue87/AnalyticsRelationships">AnalyticsRelationships</a></li>
+<li><a href="https://github.com/dhn/udon">UDON</a></li>
+<li><a href="https://github.com/enemy-submarine/pidrila">Pidrila</a></li>
+<li><a href="https://osint.sh/adsense">Adsense Identiicator Finder</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/smart-ruler/npgpdlfoflcfcohplcdclmocfemgpdga/related">Smart ruler</a></li>
+<li><a href="https://github.com/ksharinarayanan/SourceWolf">SourceWolf</a></li>
+<li><a href="https://stylifyme.com">Stylifyme</a></li>
+<li><a href="https://cspvalidator.org/#url=https://cspvalidator.org">Content Security Policy (CSP) Validator</a></li>
+<li><a href="https://nibbler.insites.com">Nibbler</a></li>
+<li><a href="https://github.com/mathis2001/WebHackUrls">WebHackUrls</a></li>
+<li><a href="https://visualsitemapper.com">Visual Site Mapper</a></li>
+<li><a href="https://github.com/Malwarize/webpalm">WEBPALM</a></li>
+</ul>
+<h3 id="website-traffic-look-up"><a class="header" href="#website-traffic-look-up">Website traffic look up</a></h3>
+<ul>
+<li><a href="https://www.alexa.com">Alexa</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/hypestat-analyzer-plugin/fmebbkhpaallipfibkfnajnlimgaoefp/related">HypeStat Analyzer Plugin</a></li>
+<li><a href="https://vstat.info">vstat.info</a></li>
+<li><a href="https://w3snoop.com">w3snoop</a></li>
+</ul>
+<h3 id="website-technology-look-up"><a class="header" href="#website-technology-look-up">Website technology look up</a></h3>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/whatruns/cmkdbmfndkfgebldhnkbfhlneefdaaip/related">WhatRuns</a></li>
+<li><a href="https://w3techs.com/sites">w3techs</a></li>
+<li><a href="https://hexometer.com/stack-checker">Hexometer stack checker</a></li>
+<li><a href="https://webtechsurvey.com/website">Web Tech Survey</a></li>
+<li><a href="https://awesometechstack.com">Awesome Tech Stack</a></li>
+<li><a href="https://www.larger.io">Larger.io</a></li>
+<li><a href="https://tools.cmlabs.co/en/technology-lookup">CMLabs Tools</a></li>
+<li><a href="https://app.snov.io/techcheck/main">Snov.io technology checker</a></li>
+</ul>
+<h3 id="source-code-analyzes"><a class="header" href="#source-code-analyzes">Source Code Analyzes</a></h3>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/view-rendered-source/ejgngohbdedoabanmclafpkoogegdpob">View Rendered Source</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/retirejs/moibopkbhjceeedibkbkbchbjnkadmom/related">Retire.js</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/openlink-structured-data/egdaiaihbdoiibopledjahjaihbmjhdj/related">OpenLink Structured Data Sniffer</a></li>
+<li><a href="https://github.com/gildas-lormeau/SingleFile">SIngle File</a></li>
+<li><a href="https://github.com/Cillian-Collins/dirscraper">Dirscraper</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/analyzer/bmbhpmmhjkbmcachipmccnlcemaoiiji/related">Ericom Page Risk Analysis</a></li>
+<li><a href="https://github.com/m4ll0k/SecretFinder">SecretFinder</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/copy-all-links-and-image/ccddopnnikeeoogpfbnfommfoeliaidg/related">Copy all links and image links to CSV or JSON</a></li>
+<li><a href="https://archiveready.com">ArchiveReady</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm/related?hl=ru">Talend API Tester Free Edition</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf/related">uMatrix</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/openlink-structured-data/egdaiaihbdoiibopledjahjaihbmjhdj">Open Link Structured Data Sniffer</a></li>
+<li><a href="https://rdfa.info">http://rdfa.info</a></li>
+<li>[https://rdfa.info](http://rdfa.info](https://rdfa.info](http://rdfa.info)</li>
+<li><a href="https://regexper.com">REGEXPER</a></li>
+<li><a href="https://github.com/GerbenJavado/LinkFinder">LinkFinder</a></li>
+</ul>
+<h3 id="broken-links-checkers"><a class="header" href="#broken-links-checkers">Broken Links Checkers</a></h3>
+<ul>
+<li><a href="https://github.com/MayankPandey01/BrokenLinkHijacker">Broken Link Hijacker</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/broken-link-checker/nibppfobembgfmejpjaaeocbogeonhch/related">Broken Link Checker</a></li>
+<li><a href="https://www.scrapersnbots.com/webtools/open-multiple-links-one-click.php">Open Multiple Links ☷ One Click</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/check-my-links/ojkcdipcgfaekbeaelaapakgnjflfglf/related">Check my links</a></li>
+</ul>
+<h3 id="url-unshorteners"><a class="header" href="#url-unshorteners">URL unshorteners</a></h3>
+<ul>
+<li><a href="https://www.getlinkinfo.com">Get Link Info</a></li>
+<li><a href="https://unshorten.me">Unshorten.me</a></li>
+<li><a href="https://urlxray.com">Urlxray</a></li>
+<li><a href="https://unshorten.it">Unshorten.it</a></li>
+</ul>
+<h3 id="web-history"><a class="header" href="#web-history">Web History</a></h3>
+<ul>
+<li><a href="https://web.archive.org/">Web Archive</a> - Explore more than 702 billion web pages saved over time</li>
+<li><a href="https://archive.ph/">Archive.ph</a> - Create a copy of a webpage that will always be up even if the original link is down</li>
+<li><a href="http://www.cachedpages.com/">CachedPages</a> - Get the cached page of any URL</li>
+<li><a href="https://stored.website/">stored.website</a> - View cached web pages/website</li>
+<li><a href="https://commoncrawl.org/">CommonCrawl</a> - Open repository of web crawl data</li>
+<li><a href="https://www.webarchive.org.uk/ukwa/">UK Web Archive</a> - Collects millions of websites each year, preserving them for future generations</li>
+<li><a href="https://arquivo.pt/">Arquivo</a> - Non-profit service that maintains information published on the web of interest to the Portuguese community</li>
+<li><a href="https://archive-it.org/">Archive-It</a> - An archive of digital government and non-government organization (NGO) documents and reports</li>
+<li><a href="https://haw.nsk.hr/en/">HAW</a> - Croatian Web Archive</li>
+</ul>
+<h3 id="unclassified"><a class="header" href="#unclassified">Unclassified</a></h3>
+<ul>
+<li><a href="https://dorksearch.com/">DorkSearch</a> - Speed up your Dorking</li>
+<li><a href="https://usersearch.org/">usersearch.org</a> - Find someone by username or email on Social Networks, Dating Sites, Forums, Crypto Forums, Chat Sites and Blogs</li>
+<li><a href="https://www.wappalyzer.com/">Wappalyzer</a> - Instant access to website technology stacks, company and contact details, social media profiles, email verification and more</li>
+<li><a href="https://awakari.com">Awakari</a> - Real-Time Search from unlimited sources like RSS, Fediverse, Telegram, etc. Filter events by keywords, numeric conditions, condition groups</li>
+<li><a href="https://caniuse.com/">CanIUse.com</a> - Browser support tables for modern web technologies</li>
+<li><a href="https://darkvisitors.com/">Dark Visitors</a> - Track and Control Artificial Agents Crawling Your Website</li>
+</ul>
+<h1 id="analysing-urls"><a class="header" href="#analysing-urls">Analysing URLs</a></h1>
+<ul>
+<li><a href="https://osint.sh/dnshistory">dnshistory</a></li>
+<li><a href="https://osint.sh/dnshistory">https://osint.sh/dnshistory</a></li>
+<li><a href="https://github.com/obsidianforensics/unfurl">Unfurl</a></li>
+<li><a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a></li>
+<li><a href="https://archive.org/web">Archive Org</a></li>
+<li><a href="https://archive.org/web">https://archive.org/web</a></li>
+<li><a href="https://iplocation.io/website-link-analyzer">Iplocation</a></li>
+<li><a href="https://smallseotools.com/website-link-analyzer-tool">Smallseotools</a></li>
+<li><a href="https://smallseotools.com/website-link-analyzer-tool">https://smallseotools.com/website-link-analyzer-tool</a></li>
+<li><a href="https://www.abuseipdb.com">Abuse IP</a></li>
+<li><a href="https://www.abuseipdb.com">https://www.abuseipdb.com</a></li>
+<li><a href="https://check-the-sum.fr">Check-The-Sum</a></li>
+<li><a href="https://check-the-sum.fr">https://check-the-sum.fr</a></li>
+<li><a href="https://checkphish.ai">Check Phish</a></li>
+<li><a href="https://checkphish.ai">https://checkphish.ai</a></li>
+<li><a href="https://radar.cloudflare.com">Radar By Cloudflare</a></li>
+<li><a href="https://radar.cloudflare.com">https://radar.cloudflare.com</a></li>
+<li><a href="https://isitphishing.org">Is it Phishing</a></li>
+<li><a href="https://isitphishing.org">https://isitphishing.org</a></li>
+<li><a href="https://opentip.kaspersky.com">Kaspersky</a></li>
+<li><a href="https://opentip.kaspersky.com">https://opentip.kaspersky.com</a></li>
+<li><a href="https://polyswarm.network">PolySwarm</a></li>
+<li><a href="https://polyswarm.network">https://polyswarm.network</a></li>
+<li><a href="https://www.threatminer.org">Threat Miner</a></li>
+<li><a href="https://www.threatminer.org">https://www.threatminer.org</a></li>
+<li><a href="https://www.netcraft.com/tools">Netcraft</a></li>
+<li><a href="https://www.netcraft.com/tools">https://www.netcraft.com/tools</a></li>
+<li><a href="https://malwareworld.com">Malwareworld</a></li>
+<li><a href="https://malwareworld.com">https://malwareworld.com</a></li>
+<li><a href="https://github.com/elceef/dnstwist">DNS TWIST</a></li>
+<li><a href="https://github.com/urbanadventurer/urlcrazy">URL CRAZY - Phishing detector</a></li>
+<li><a href="https://crt.sh">CRT - Find cert ssl and etc</a></li>
+<li><a href="https://crt.sh">https://crt.sh</a></li>
+<li><a href="https://github.com/x0rz/phishing_catcher">Phishing catcher</a></li>
+<li><a href="https://openphish.com/phishing_feeds.html">Open Phish</a></li>
+<li><a href="https://www.phishtank.com/phish_archive.php">Phishtalk</a></li>
+<li><a href="https://urlhaus.abuse.ch">URL Haus</a></li>
+<li><a href="https://urlhaus.abuse.ch">https://urlhaus.abuse.ch</a></li>
+<li><a href="https://www.expandurl.net">Expand Url</a></li>
+<li><a href="https://www.expandurl.net">https://www.expandurl.net</a></li>
+<li><a href="https://www.tiny-scan.com">Tiny Scan</a></li>
+<li><a href="https://redirectdetective.com">redirectdetective</a></li>
+<li><a href="https://redirectdetective.com">https://redirectdetective.com</a></li>
+<li><a href="https://wheregoes.com">wheregoes</a></li>
+<li><a href="https://wheregoes.com">https://wheregoes.com</a></li>
+<li><a href="https://www.spyoffers.com">spyoffers</a></li>
+<li><a href="https://www.spyoffers.com">https://www.spyoffers.com</a></li>
+<li><a href="https://vx-underground.org">vx-underground</a></li>
+<li><a href="https://vx-underground.org">https://vx-underground.org</a></li>
+<li><a href="https://shadowdragon.io">ShadowDragon</a></li>
+<li><a href="https://shadowdragon.io">https://shadowdragon.io</a></li>
+<li><a href="https://metadefender.opswat.com">metadefender</a></li>
+<li><a href="https://metadefender.opswat.com">https://metadefender.opswat.com</a></li>
+<li><a href="https://en.fofa.info">fofa</a></li>
+<li><a href="https://en.fofa.info">https://en.fofa.info</a></li>
+<li><a href="https://safeweb.norton.com">safeweb norton</a></li>
+<li><a href="https://safeweb.norton.com">https://safeweb.norton.com</a></li>
+<li><a href="https://www.haveibeensquatted.com">haveibeensquatted</a></li>
+<li><a href="https://www.haveibeensquatted.com">https://www.haveibeensquatted.com</a></li>
+<li><a href="https://www.favihash.com">favihash</a></li>
+<li><a href="https://www.favihash.com">https://www.favihash.com</a></li>
+<li><a href="https://github.com/jsvine/waybackpack">waybackpack download wayback archive url</a></li>
+<li><a href="https://developers.google.com/safe-browsing?hl=id">Google Safe Browsing</a></li>
+</ul>
+<h1 id="tracking-website-changes"><a class="header" href="#tracking-website-changes">Tracking Website Changes</a></h1>
+<ul>
+<li><a href="https://www.changedetection.com">Changedetection</a></li>
+<li><a href="https://www.changedetection.com">https://www.changedetection.com</a></li>
+<li><a href="https://www.followthatpage.com">Followthatpage</a></li>
+<li><a href="https://www.followthatpage.com">https://www.followthatpage.com</a></li>
+<li><a href="https://visualping.io">visualping</a></li>
+<li><a href="https://visualping.io">https://visualping.io</a></li>
+</ul>
+<h1 id="web-directory"><a class="header" href="#web-directory">Web Directory</a></h1>
+<ul>
+<li><a href="https://vlib.org">Vlib</a></li>
+<li><a href="https://vlib.org">https://vlib.org</a></li>
+<li><a href="https://web.archive.org/web/20240000000000*/http:/www.dmoz.org">Dmoz</a></li>
+<li><a href="https://web.archive.org/web/20240000000000*/http:/www.dmoz.org">https://web.archive.org/web/20240000000000*/http:/www.dmoz.org</a></li>
+</ul>
+<h1 id="shortlink-for-osint"><a class="header" href="#shortlink-for-osint">Shortlink for OSINT</a></h1>
+<ul>
+<li><a href="https://t.ly">t.ly</a></li>
+<li><a href="https://t.ly">https://t.ly</a></li>
+<li><a href="https://bitly.com">bit.ly</a></li>
+<li><a href="https://bitly.com">https://bitly.com</a></li>
+<li><a href="https://tinyurl.com">tiny url</a></li>
+<li><a href="https://tinyurl.com">https://tinyurl.com</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../offsec/DNS_ROUTING.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../offsec/network.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../offsec/DNS_ROUTING.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../offsec/network.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

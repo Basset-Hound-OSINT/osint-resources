@@ -1,0 +1,855 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Threat Discover - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li><a href="https://threatbutt.com/map">Threatbutt</a></li>
+<li><a href="https://cybermap.kaspersky.com">Cyberthreat Real-Time Map</a></li>
+<li><a href="https://www.checkpoint.com/ThreatPortal/livemap.html">Live Cyber Attack Threat Map</a></li>
+<li><a href="https://www.digitalattackmap.com">Digital Attack Map</a></li>
+<li><a href="https://www.fireeye.com/cyber-map/threat-map.html">Cyber Threat Map</a></li>
+<li><a href="https://threatmap.bitdefender.com">Bitdefender Threat Map</a></li>
+<li><a href="https://threatmap.fortiguard.com">Fortinet Threat Map</a></li>
+<li><a href="https://www.fortiguard.com">FortiGuard</a></li>
+<li><a href="https://www.hunt.io">Hunt</a></li>
+<li><a href="https://cymon.io">cymon</a></li>
+<li><a href="https://www.akamai.com/us/en/solutions/intelligent-platform/visualizing-akamai/real-time-web-monitor.jsp">Visualizing Global Internet Performance</a></li>
+<li><a href="https://map.lookingglasscyber.com">THREAT MAP by LookingGlass</a></li>
+<li><a href="https://horizon.netscout.com">NETSCOUT Cyber Threat Horizon</a></li>
+<li><a href="https://github.com/aptnotes/data">APTnotes</a></li>
+<li><a href="https://cryptome.wikileaks.org">https://cryptome.wikileaks.org/</a></li>
+<li><a href="https://cryptome.wikileaks.org">https://cryptome.wikileaks.org/</a>(</li>
+<li><a href="https://nextstrain.org">Nextstrain</a></li>
+</ul>
+<h3 id="politics-conflicts-and-crisis"><a class="header" href="#politics-conflicts-and-crisis">Politics, conflicts and crisis</a></h3>
+<ul>
+<li><a href="https://twitter.com/cyb_detective/status/1578772549919559681">Global Terriorism Database</a></li>
+<li><a href="https://freedomhouse.org/explore-the-map">Freedomhouse.org</a></li>
+<li><a href="https://www.crimemapping.com">Crimemapping.com</a></li>
+<li><a href="https://citizen.com/explore">Citizen.com</a></li>
+<li><a href="https://map.nbr.org/interactivemap">MARITIME AWARENESS PROJECT</a></li>
+<li><a href="https://monitor.civicus.org">Monitor Tracking Civic Space Worldwide Map</a></li>
+<li><a href="https://hungermap.wfp.org">Hungermap</a></li>
+<li><a href="https://native-land.ca">Native-land.ca</a></li>
+<li><a href="https://www.riskmap.com">RiskMap</a></li>
+<li><a href="https://www.crisisgroup.org/crisiswatch">Crisisgroup</a></li>
+<li><a href="https://www.splcenter.org/hate-map">Hate Map</a></li>
+<li><a href="https://emmeline.carto.com/me">emmeline.carto.com</a></li>
+<li><a href="https://www.cfr.org/global-conflict-tracker/?category=us">Global Conflict Tracker</a></li>
+<li><a href="https://acleddata.com/dashboard/#/dashboard">Acled data crisis map</a></li>
+<li><a href="https://frontex.europa.eu/we-know/migratory-map">Frontex Migratory Map</a></li>
+<li><a href="https://safeairspace.net">Safe Airspace</a></li>
+<li><a href="https://www.globaldetentionproject.org/detention-centres/map-view">Worldwide Detention Centres Map</a></li>
+</ul>
+<h3 id="culture"><a class="header" href="#culture">Culture</a></h3>
+<ul>
+<li><a href="https://www.tasteatlas.com">Taste Atlas</a></li>
+</ul>
+<h3 id="threat-intelligence"><a class="header" href="#threat-intelligence">Threat Intelligence</a></h3>
+<ul>
+<li><a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a> - Globally-accessible knowledge base of adversary tactics and techniques</li>
+<li><a href="https://pulsedive.com/">PulseDive</a> - Threat intelligence made easy</li>
+<li><a href="https://threatcrowd.org/">ThreatCrowd</a> - A Search Engine for Threats</li>
+<li><a href="https://www.threatminer.org/">ThreatMiner</a> - Data Mining for Threat Intelligence</li>
+<li><a href="https://www.virustotal.com/">VirusTotal</a> - Analyze suspicious files, domains, IPs and URLs to detect malware and other breaches</li>
+<li><a href="https://vx-underground.org/">vx-underground.org</a> - The largest collection of malware source code, samples, and papers on the internet</li>
+<li><a href="https://bazaar.abuse.ch/browse/">bazaar.abuse.ch</a> - Malware sample database</li>
+<li><a href="https://feodotracker.abuse.ch/browse/">feodotracker.abuse.ch</a> - List of botnet Command&amp;Control servers</li>
+<li><a href="https://www.joesandbox.com/">Joe Sandbox</a> - Threat hunting &amp; search engine</li>
+<li><a href="https://sslbl.abuse.ch/ssl-certificates/">sslbl.abuse.ch</a> - All malicious SSL certificates</li>
+<li><a href="https://urlhaus.abuse.ch/browse/">urlhaus.abuse.ch</a> - Propose new malware urls</li>
+<li><a href="https://threatfox.abuse.ch/browse/">threatfox.abuse.ch</a> - Indicator Of Compromise (IOC) database</li>
+<li><a href="https://yaraify.abuse.ch/">yaraify.abuse.ch</a> - Scan suspicious files such as malware samples or process dumps against a large repository of YARA rules</li>
+<li><a href="https://rescure.me/">Rescure</a> - Curated cyber threat intelligence for everyone</li>
+<li><a href="https://otx.alienvault.com/">otx.alienvault</a> - The World's First Truly Open Threat Intelligence Community</li>
+<li><a href="https://urlquery.net/">urlquery.net</a> - Service for detecting and analyzing web-based malware</li>
+<li><a href="https://socradar.io/">socradar.io</a> - Extension to your SOC team</li>
+<li><a href="https://virusshare.com/">VirusShare</a> - System currently contains 48 million malware samples</li>
+<li><a href="https://www.riskiq.com/products/passivetotal/">PassiveTotal</a> - Security intelligence that scales security operations and response</li>
+<li><a href="https://malapi.io/">malapi.io</a> - Windows APIs used for malicious purposes</li>
+<li><a href="https://filesec.io/">filesec.io</a> - Latest file extensions being used by attackers</li>
+<li><a href="https://leakix.net/">leakix.net</a> - Search engine indexing public information and an open reporting platform linked to the results</li>
+<li><a href="https://tria.ge/s">tria.ge</a> - Fully automated solution for high-volume malware analysis using advanced sandboxing technology</li>
+<li><a href="https://polyswarm.network/">Polyswarm</a> - Launchpad for new technologies and innovative threat detection methods</li>
+<li><a href="https://talosintelligence.com/">Cisco Talos</a> - The threat intelligence organization at the center of the Cisco Security portfolio</li>
+<li><a href="https://scamsearch.io/#anchorCeckNow">scamsearch.io</a> - Find your scammer online &amp; report them</li>
+<li><a href="http://www.cybercampaigns.net/">CyberCampaigns</a> - Threat Actor information and Write-Ups</li>
+<li><a href="https://orkl.eu/">ORKL</a> - The Community Driven Cyber Threat Intelligence Library</li>
+<li><a href="https://maltiverse.com/search">Maltiverse</a> - Data from more than 100 different Threat Intelligence sources</li>
+<li><a href="https://labs.inquest.net/">Inquest Labs</a> - Threat intelligence from hundreds of public, private, and internal sources to develop new FDR signatures and rules</li>
+<li><a href="https://phishtank.org/">PhishTank</a> - Collaborative clearing house for data and information about phishing on the Internet</li>
+<li><a href="https://github.com/intelowlproject/IntelOwl">IntelOwl</a> - Open Source Intelligence, or OSINT solution to get threat intelligence data about a specific file, an IP or a domain from a single API at scale</li>
+<li><a href="https://prowl.lupovis.io/">Lupovis</a> - Analyze and collect data on Internet-wide scans and attacks in real-time. We use this data to identify and classify malicious actors</li>
+<li><a href="https://www.abuseipdb.com/">AbuseIPDB</a> - Check the report history of any IP address to see if anyone else has reported malicious activities</li>
+<li><a href="https://sitecheck.sucuri.net/">Sucuri SiteCheck</a> - Check websites for known malware, viruses, blacklisting status, website errors, out-of-date software, and malicious code</li>
+<li><a href="https://spamhaus.com">Spamhaus</a> - Protect and investigate using IP and domain reputation data</li>
+<li><a href="https://threatbook.io/">ThreatBook</a> - One step ahead of your adversary with high-fidelity, efficient and actionable cyber threat intelligence</li>
+<li><a href="https://www.shadowserver.org/">ShadowServer</a> - Nonprofit security organization working altruistically behind the scenes to make the Internet more secure for everyone</li>
+<li><a href="https://www.team-cymru.com/">Team Cymru</a> - Global leader in cyber threat intelligence and attack surface management</li>
+<li><a href="https://bevigil.com/">BeVigil</a> - Search engine for mobile application security testing</li>
+<li><a href="https://www.circl.lu/">CIRCL</a> - The Computer Incident Response Center Luxembourg is a government-driven initiative designed to gather, review, report and respond to computer security threats and incidents</li>
+<li><a href="https://metadefender.opswat.com/">MetaDefender Cloud</a> - Advanced threat detection and prevention platform</li>
+<li><a href="https://cybersixgill.com/">Cybersixgill</a> - Threat intelligence platform that provides access to a wide range of cybersecurity information, including dark web monitoring and threat actor analysis</li>
+<li><a href="https://www.hybrid-analysis.com/">Hybrid Analysis</a> - Free malware analysis service for the community that detects and analyzes unknown threats using a unique Hybrid Analysis technology</li>
+<li><a href="https://exchange.xforce.ibmcloud.com/">IBM X-Force Exchange</a> - Threat intelligence sharing platform enabling research on security threats, aggregation of intelligence, and collaboration with peers</li>
+<li><a href="https://thedfirreport.com/">The DFIR Report</a> - Real Intrusions by Real Attackers, The Truth Behind the Intrusion</li>
+<li><a href="https://detection.fyi/">Detection.FYI</a> - Search Sigma rules</li>
+<li><a href="https://www.whoisxmlapi.com/">WhoisXMLAPI</a> - Domain &amp; IP Data Intelligence for Greater Enterprise Security</li>
+<li><a href="https://www.apivoid.com/">APIVoid</a> - Threat analysis centered on IP and Domain reputation, along with additional services</li>
+<li><a href="https://app.any.run/submissions">AnyRun</a> - Browse thousands of malware samples in our database</li>
+<li><a href="https://www.filescan.io/reports">Filescan.io</a> - Search reports for file name, URL, IP, Domain or Hash</li>
+<li><a href="https://malshare.com/">MalShare</a> - Community driven public malware repository that works to provide free access to malware samples</li>
+<li><a href="https://opentip.kaspersky.com/requests">Kaspersky TIP</a> - Scan files, domains, IP addresses, and URLs for threats, malware, viruses</li>
+<li><a href="https://malwares.com/">Malwares.com</a> - Search malwares online</li>
+<li><a href="https://www.apklab.io/">ApkLab</a> - Mobile threat intelligence platform designed to provide the most relevant information for Android security researchers</li>
+<li><a href="https://www.scumware.org/search.php">Scumware</a> - Find latest reports about malware and other threats</li>
+<li><a href="https://br0k3nlab.com/LoFP/">Living off the False Positive</a> - Autogenerated collection of false positives sourced from some of the most popular rule sets</li>
+<li><a href="https://hijacklibs.net/">HijackLibs</a> - Project for tracking publicly disclosed DLL Hijacking opportunities</li>
+<li><a href="https://www.bootloaders.io/">bootloaders.io</a> - Curated list of known malicious bootloaders for various operating systems</li>
+<li><a href="https://wtfbins.wtf/">WTFBins</a> - Catalogue benign applications that exhibit suspicious behavior. These binaries can emit noise and false positives in threat hunting and automated detections</li>
+<li><a href="https://lofl-project.github.io/">LOFLCAB</a> - Document every cmdlet, binary, script, and WMI class that can be used for Living Off the Foreign Land techniques</li>
+<li><a href="https://opsecfail.github.io/">OpSecFailure</a> - Site that lists how individuals messed up their opsec, no personal info is shared on this site</li>
+<li><a href="https://traildiscover.cloud/">TrailDiscover</a> - An evolving repository of CloudTrail events with detailed descriptions, MITRE ATT&amp;CK insights, real-world incidents, references and security implications</li>
+<li><a href="https://www.scamdb.net/">scamdb.net</a> - Report and Search Online Scams</li>
+<li><a href="https://openphish.com/">OpenPhish</a> - Actionable intelligence data on active phishing threats</li>
+<li><a href="https://threatintelligenceplatform.com/">ThreatIntelligencePlatform.com</a> - Data, tool, and API provider that specializes in automated threat detection, security analysis and threat intelligence solutions</li>
+<li><a href="https://hunt.io/">Hunt.io</a> - Service that provides threat intelligence data about observed network scanning and cyberattacks</li>
+<li><a href="https://lolc2.github.io/">LOLC2</a> - Collection of C2 frameworks that leverage legitimate services to evade detection</li>
+</ul>
+<h1 id="web-intelligence"><a class="header" href="#web-intelligence">Web Intelligence</a></h1>
+<ul>
+<li><a href="https://github.com/jonluca/anubis">anubis</a></li>
+<li><a href="https://www.robtex.com">robtex</a></li>
+<li><a href="https://www.robtex.com">https://www.robtex.com</a></li>
+<li><a href="https://www.aware-online.com/en/osint-tools/website-search-tool">aware-online</a></li>
+<li><a href="https://www.aware-online.com/en/osint-tools/website-search-tool">https://www.aware-online.com/en/osint-tools/website-search-tool</a></li>
+<li><a href="https://subdomainfinder.c99.nl">subdomainfinder search history subdomain</a></li>
+<li><a href="https://subdomainfinder.c99.nl">https://subdomainfinder.c99.nl</a></li>
+<li><a href="https://awseye.com">awseye - search AWS</a></li>
+<li><a href="https://awseye.com">https://awseye.com</a></li>
+<li><a href="https://radar.cloudflare.com">cloudflare radar</a></li>
+<li><a href="https://radar.cloudflare.com">https://radar.cloudflare.com</a></li>
+<li><a href="https://webscout.io">webscout</a></li>
+<li><a href="https://webscout.io">https://webscout.io</a></li>
+<li><a href="https://fullhunt.io">fullhunt</a></li>
+<li><a href="https://fullhunt.io">https://fullhunt.io</a></li>
+<li><a href="https://hunter.how">hunter</a></li>
+<li><a href="https://hunter.how">https://hunter.how</a></li>
+<li><a href="https://search.odin.io">odin</a></li>
+<li><a href="https://search.odin.io">https://search.odin.io</a></li>
+<li><a href="https://www.domaincodex.com">domaincodex</a></li>
+<li><a href="https://www.domaincodex.com">https://www.domaincodex.com</a></li>
+<li><a href="https://dnslytics.com">dnslytics</a></li>
+<li><a href="https://dnslytics.com">https://dnslytics.com</a></li>
+<li><a href="https://www.betterwhois.com">Better Whois</a></li>
+<li><a href="https://www.betterwhois.com">https://www.betterwhois.com</a></li>
+<li><a href="https://lookup.icann.org/en">ican whois</a></li>
+<li><a href="https://osint.sh/whoishistory">whoishistory osint</a></li>
+<li><a href="https://osint.sh/whoishistory">https://osint.sh/whoishistory</a></li>
+<li><a href="https://dnshistory.org">DNS History</a></li>
+<li><a href="https://dnshistory.org">https://dnshistory.org</a></li>
+<li><a href="https://dnsspy.io">DNS Spy</a></li>
+<li><a href="https://dnschecker.org">DNS Checker</a></li>
+<li><a href="https://hackertarget.com/ip-tools">HackerTarget</a></li>
+<li><a href="https://devportal.redhuntlabs.com/home">RedHunt Labs Attack Surface Recon API</a></li>
+<li><a href="https://www.shodan.io">Shodan</a></li>
+<li><a href="https://www.wappalyzer.com">Wappalyzer</a></li>
+<li><a href="https://www.wappalyzer.com">https://www.wappalyzer.com</a></li>
+<li><a href="https://github.com/screetsec/Sudomy">Sudomy</a></li>
+<li><a href="https://testssl.sh">Testssl</a></li>
+<li><a href="https://testssl.sh">https://testssl.sh</a></li>
+<li><a href="https://nmap.org">Nmap</a></li>
+<li><a href="https://nmap.org">https://nmap.org</a></li>
+<li><a href="https://builtwith.com">builtwith</a></li>
+<li><a href="https://builtwith.com">https://builtwith.com</a></li>
+<li><a href="https://www.virustotal.com/gui">VirusTotal</a></li>
+<li><a href="https://www.virustotal.com/gui">https://www.virustotal.com/gui</a></li>
+<li><a href="https://www.tenable.com/products/nessus">Nessus</a></li>
+<li><a href="https://cirt.net/Nikto2">Nikto</a></li>
+<li><a href="https://github.com/wereallfeds/webshag">Webshag</a></li>
+<li><a href="https://archive.org/web">wayback machine</a></li>
+<li><a href="https://archive.org/web">https://archive.org/web</a></li>
+<li><a href="https://www.maltego.com/transform-hub/farsight-dnsdb">Farsight DNSDB Transforms for Maltego</a></li>
+<li><a href="https://www.maltego.com/transform-hub/farsight-dnsdb">https://www.maltego.com/transform-hub/farsight-dnsdb</a></li>
+<li><a href="https://github.com/TURROKS/Maltego_Web2Screenshot">Web Screnshhot Maltego Transforms</a></li>
+<li><a href="https://github.com/projectdiscovery/nuclei">Nuclei</a></li>
+<li><a href="https://www.netcraft.com/tools">Netcraft</a></li>
+<li><a href="https://www.netcraft.com/tools">https://www.netcraft.com/tools</a></li>
+<li><a href="https://github.com/projectdiscovery/dnsx">DNSX</a></li>
+<li><a href="https://cachedview.com">cachedview</a></li>
+<li><a href="https://cachedview.com">https://cachedview.com</a></li>
+<li><a href="https://zoomeye.org">Zoomeye</a></li>
+<li><a href="https://zoomeye.org">https://zoomeye.org</a></li>
+<li><a href="https://securitytrails.com">securitytrails</a></li>
+<li><a href="https://securitytrails.com">https://securitytrails.com</a></li>
+<li><a href="https://github.com/hakluke/hakrawler">hakrawler</a></li>
+<li><a href="https://github.com/rtwillett/DorkLab">Dork Lab</a></li>
+<li><a href="https://github.com/maaaaz/webscreenshot">Websecreenshoot</a></li>
+<li><a href="https://github.com/carlospolop/Leakos">Leakos</a></li>
+<li><a href="https://github.com/carlospolop/Pastos">Pastos</a></li>
+<li><a href="https://www.similarsites.com">Similar Sites</a></li>
+<li><a href="https://www.similarsites.com">https://www.similarsites.com</a></li>
+<li><a href="https://www.similarweb.com">Similar Web</a></li>
+<li><a href="https://www.similarweb.com">https://www.similarweb.com</a></li>
+<li><a href="https://smallseotools.com/similar-sites">smallseotools compare web similar</a></li>
+<li><a href="https://smallseotools.com/similar-sites">https://smallseotools.com/similar-sites</a></li>
+<li><a href="https://spyonweb.com">spyonweb</a></li>
+<li><a href="https://spyonweb.com">https://spyonweb.com</a></li>
+<li><a href="https://analyzeid.com">analyzeid</a></li>
+<li><a href="https://analyzeid.com">https://analyzeid.com</a></li>
+<li><a href="https://github.com/Ekultek/Zeus-Scanner">Zeus-Scanner</a></li>
+<li><a href="https://github.com/m0rtem/CloudFail.git">CloudFail</a></li>
+<li><a href="https://github.com/elefr3n/real_ip_discover.git">Real IP Discover</a></li>
+<li><a href="https://www.mend.io/vulnerability-database">Mend Io</a></li>
+<li><a href="https://ahrefs.com/backlink-checker">A href Backlink Checker</a></li>
+<li><a href="https://neilpatel.com/backlinks">Neil Patel Backlink</a></li>
+<li><a href="https://neilpatel.com/backlinks">https://neilpatel.com/backlinks</a></li>
+<li><a href="https://www.semrush.com/analytics/backlinks">Semrush Backlink</a></li>
+<li><a href="https://www.semrush.com/analytics/backlinks">https://www.semrush.com/analytics/backlinks</a></li>
+<li><a href="https://smallseotools.com/backlink-checker">Small SEO Tool Backlink</a></li>
+<li><a href="https://smallseotools.com/backlink-checker">https://smallseotools.com/backlink-checker</a></li>
+<li><a href="https://www.seobility.net/en/backlinkchecker">SEO Backlink Check</a></li>
+<li><a href="https://www.seobility.net/en/backlinkchecker">https://www.seobility.net/en/backlinkchecker</a></li>
+<li><a href="https://moz.com/link-explorer">Moz Backlink</a></li>
+<li><a href="https://www.dapachecker.org/spam-score-checker">SPAM Check Score</a></li>
+<li><a href="https://moz.com/help/link-explorer/link-building/spam-score">MOZ Spam Check</a></li>
+<li><a href="https://web-check.xyz">WEB Check</a></li>
+<li><a href="https://web-check.xyz">https://web-check.xyz</a></li>
+<li><a href="https://www.brightcloud.com/tools/url-ip-lookup.php">brightcloud ip lookup</a></li>
+<li><a href="https://urlfiltering.paloaltonetworks.com">Url Filltering</a></li>
+<li><a href="https://urlfiltering.paloaltonetworks.com">https://urlfiltering.paloaltonetworks.com</a></li>
+<li><a href="https://github.com/projectdiscovery/katana">Katana</a></li>
+<li><a href="https://github.com/chiasmod0n/chiasmodon?tab=readme-ov-file">chiasmod0n</a></li>
+<li><a href="https://redirectdetective.com">redirectdetective</a></li>
+<li><a href="https://redirectdetective.com">https://redirectdetective.com</a></li>
+<li><a href="https://wheregoes.com">wheregoes</a></li>
+<li><a href="https://wheregoes.com">https://wheregoes.com</a></li>
+<li><a href="https://www.spyoffers.com">spyoffers</a></li>
+<li><a href="https://www.spyoffers.com">https://www.spyoffers.com</a></li>
+<li><a href="https://github.com/h4x0r-dz/Leaked-Credentials">Web Leaked Credentials</a></li>
+<li><a href="https://github.com/h4x0r-dz/Leaked-Credentials">https://github.com/h4x0r-dz/Leaked-Credentials</a></li>
+<li><a href="https://www.host-tracker.com/en">host tracker</a></li>
+<li><a href="https://crt.sh">crt.sh</a></li>
+<li><a href="https://crt.sh">https://crt.sh</a></li>
+<li><a href="https://www.merklemap.com">merklemap.com</a></li>
+<li><a href="https://www.merklemap.com">https://www.merklemap.com</a></li>
+<li><a href="https://viewdns.info">view DNS</a></li>
+<li><a href="https://viewdns.info">https://viewdns.info</a></li>
+<li><a href="https://visualping.io">visualping</a></li>
+<li><a href="https://visualping.io">https://visualping.io</a></li>
+<li><a href="https://jam.dev">jam dev browser extension</a></li>
+<li><a href="https://jam.dev">https://jam.dev</a></li>
+<li><a href="https://www.whoxy.com/whois-history">Whoxy Whois History</a></li>
+<li><a href="https://www.whoxy.com/whois-history">https://www.whoxy.com/whois-history</a></li>
+<li><a href="https://whoisfreaks.com">whoisfreaks Whois History</a></li>
+<li><a href="https://whoisfreaks.com">https://whoisfreaks.com</a></li>
+<li><a href="https://research.domaintools.com/research/whois-history">domaintools Whois History</a></li>
+<li><a href="https://research.domaintools.com/research/whois-history">https://research.domaintools.com/research/whois-history</a></li>
+<li><a href="https://whois-history.whoisxmlapi.com">whoisxmlapi Whois History</a></li>
+<li><a href="https://whois-history.whoisxmlapi.com">https://whois-history.whoisxmlapi.com</a></li>
+<li><a href="https://en.fofa.info">fofa</a></li>
+<li><a href="https://en.fofa.info">https://en.fofa.info</a></li>
+<li><a href="https://www.nerdydata.com/reports/new">nerdydata</a></li>
+<li><a href="https://urlquery.net">urlquery</a></li>
+<li><a href="https://urlquery.net">https://urlquery.net</a></li>
+<li><a href="https://transparencyreport.google.com/safe-browsing/search">transparencyreport Google</a></li>
+<li><a href="https://stat.ripe.net">stat ripe</a></li>
+<li><a href="https://stat.ripe.net">https://stat.ripe.net</a></li>
+<li><a href="https://favicon-hash.kmsec.uk">favicon-hash</a></li>
+<li><a href="https://favicon-hash.kmsec.uk">https://favicon-hash.kmsec.uk</a></li>
+<li><a href="https://github.com/devanshbatham/FavFreak">FavFreak</a></li>
+<li><a href="https://leakix.net">LeakIX</a></li>
+<li><a href="https://vstat.info">vstat</a></li>
+<li><a href="https://vstat.info">https://vstat.info</a></li>
+<li><a href="https://forum.seccodeid.com/d/waymore-find-way-more-from-the-wayback-machine">Waymore</a></li>
+<li><a href="https://lumendatabase.org">DMCA Lumen DB</a></li>
+<li><a href="https://lumendatabase.org">https://lumendatabase.org</a></li>
+<li><a href="https://subdomainradar.io">SubDomainRadar</a></li>
+<li><a href="https://osint.sh/dnshistory">dnshistory</a></li>
+<li><a href="https://osint.sh/dnshistory">https://osint.sh/dnshistory</a></li>
+<li><a href="https://github.com/bellingcat/wayback-google-analytics">bellingcat wayback-google-analytics</a></li>
+<li><a href="https://dnsdumpster.com">dnsdumpster</a></li>
+<li><a href="https://dnsdumpster.com">https://dnsdumpster.com</a></li>
+<li><a href="https://www.domains.ch/en">domains - search similarity domain and niche web</a></li>
+<li><a href="https://www.favihash.com">favihash</a></li>
+<li><a href="https://www.favihash.com">https://www.favihash.com</a></li>
+<li><a href="https://subdosec.vulnshot.com">subdosec vulnshot</a></li>
+<li><a href="https://subdosec.vulnshot.com">https://subdosec.vulnshot.com</a></li>
+<li><a href="https://github.com/jsvine/waybackpack">waybackpack download wayback archive url</a></li>
+<li><a href="https://www.urlvoid.com">urlvoid</a></li>
+<li><a href="https://www.urlvoid.com">https://www.urlvoid.com</a></li>
+<li><a href="https://app.netlas.io/host">netlas.io</a></li>
+<li><a href="https://app.netlas.io/host">https://app.netlas.io/host</a></li>
+</ul>
+<h1 id="researching-cyber-threats"><a class="header" href="#researching-cyber-threats">Researching Cyber Threats</a></h1>
+<ul>
+<li><a href="https://otx.alienvault.com">Alien Vault</a></li>
+<li><a href="https://censys.io">Censys</a></li>
+<li><a href="https://www.cvedetails.com">CVE Details</a></li>
+<li><a href="https://exchange.xforce.ibmcloud.com">IBM X-Force Exchange</a></li>
+<li><a href="https://www.joesandbox.com">JoeSandbox Cloud</a></li>
+<li><a href="https://www.isithacked.com">Is It Hacked</a></li>
+<li><a href="https://www.isithacked.com">https://www.isithacked.com</a></li>
+<li><a href="https://isitphishing.org">Is It Phishing</a></li>
+<li><a href="https://opentip.kaspersky.com">Kaspersky Threat</a></li>
+<li><a href="https://www.malwaredomainlist.com/mdl.php">Malware Domain List</a></li>
+<li><a href="https://www.malwaredomainlist.com/mdl.php">https://www.malwaredomainlist.com/mdl.php</a></li>
+<li><a href="https://www.malwareurl.com/listing-urls.php">Malware URL Website</a></li>
+<li><a href="https://quttera.com">Quttera</a></li>
+<li><a href="https://www.virustotal.com/gui/home/upload">Virus total</a></li>
+<li><a href="https://virusshare.com">Virus Share</a></li>
+<li><a href="https://yara.readthedocs.io/en/stable">Yara Doc</a></li>
+<li><a href="https://yara.readthedocs.io/en/stable">https://yara.readthedocs.io/en/stable</a></li>
+<li><a href="https://yaraify.abuse.ch/yarahub">Yara Hub</a></li>
+<li><a href="https://yaraify.abuse.ch/yarahub">https://yaraify.abuse.ch/yarahub</a></li>
+<li><a href="https://www.spiderfoot.net">Spiderfoot</a></li>
+<li><a href="https://www.spiderfoot.net">https://www.spiderfoot.net</a></li>
+<li><a href="https://nvd.nist.gov/search">NVD</a></li>
+<li><a href="https://seclists.org/fulldisclosure">Seclist</a></li>
+<li><a href="https://seclists.org/fulldisclosure">https://seclists.org/fulldisclosure</a></li>
+<li><a href="https://cve.mitre.org/cve/search_cve_list.html">CVE Mitre</a></li>
+<li><a href="https://forum.seccodeid.com/d/phishing-email-analysis-tools">Malicious Check</a></li>
+<li><a href="https://mxtoolbox.com/EmailHeaders.aspx">Email Header Analysis</a></li>
+<li><a href="https://emailanalytics.com/email-headers">Email-Analytics</a></li>
+<li><a href="https://emailanalytics.com/email-headers">https://emailanalytics.com/email-headers</a></li>
+<li><a href="https://toolbox.googleapps.com/apps/messageheader">Email Header Analisis Toolbox</a></li>
+<li><a href="https://toolbox.googleapps.com/apps/messageheader">https://toolbox.googleapps.com/apps/messageheader</a></li>
+<li><a href="https://urlscan.io">Url Scan</a></li>
+<li><a href="https://urlscan.io">https://urlscan.io</a></li>
+<li><a href="https://any.run">AnyRun</a></li>
+<li><a href="https://any.run">https://any.run</a></li>
+<li><a href="https://www.hybrid-analysis.com">Hybrid Analysis</a></li>
+<li><a href="https://www.hybrid-analysis.com">https://www.hybrid-analysis.com</a></li>
+<li><a href="https://www.vmray.com">VMRay Sandbox</a></li>
+<li><a href="https://www.vmray.com">https://www.vmray.com</a></li>
+<li><a href="https://www.browserling.com">Browser Sandbox</a></li>
+<li><a href="https://www.browserling.com">https://www.browserling.com</a></li>
+<li><a href="https://www.locabrowser.com">locabrowser sandbox</a></li>
+<li><a href="https://www.locabrowser.com">https://www.locabrowser.com</a></li>
+<li><a href="https://www.filterbypass.me/id">Fillter Bypass</a></li>
+<li><a href="https://www.abuseipdb.com">Abuse IP DB</a></li>
+<li><a href="https://www.abuseipdb.com">https://www.abuseipdb.com</a></li>
+<li><a href="https://check-the-sum.fr">Check-The-Sum</a></li>
+<li><a href="https://check-the-sum.fr">https://check-the-sum.fr</a></li>
+<li><a href="https://www.talosintelligence.com">Talos CTI</a></li>
+<li><a href="https://www.talosintelligence.com">https://www.talosintelligence.com</a></li>
+<li><a href="https://www.phishtool.com">Phishing Analysis Tool</a></li>
+<li><a href="https://www.phishtool.com">https://www.phishtool.com</a></li>
+<li><a href="https://phishtank.org">Phish Verification System</a></li>
+<li><a href="https://phishtank.org">https://phishtank.org</a></li>
+<li><a href="https://www.maltego.com/transform-hub/polyswarm">PolySwarm</a></li>
+<li><a href="https://www.maltego.com/transform-hub/polyswarm">https://www.maltego.com/transform-hub/polyswarm</a></li>
+<li><a href="https://www.maltego.com/transform-hub/threatcrowd">ThreatCrowd</a></li>
+<li><a href="https://www.maltego.com/transform-hub/threatcrowd">https://www.maltego.com/transform-hub/threatcrowd</a></li>
+<li><a href="https://www.maltego.com/transform-hub/hyas-insight">HYAS Insight</a></li>
+<li><a href="https://www.maltego.com/transform-hub/hyas-insight">https://www.maltego.com/transform-hub/hyas-insight</a></li>
+<li><a href="https://phishstats.info">Phishstats</a></li>
+<li><a href="https://phishstats.info">https://phishstats.info</a></li>
+<li><a href="https://www.gitguardian.com/monitor-public-github-for-secrets">GitGuardian</a></li>
+<li><a href="https://rescure.me/feeds.html">Rescure</a></li>
+<li><a href="https://polyswarm.network">PolySwarm</a></li>
+<li><a href="https://polyswarm.network">https://polyswarm.network</a></li>
+<li><a href="https://darkfeed.io">Darkfeed</a></li>
+<li><a href="https://darkfeed.io">https://darkfeed.io</a></li>
+<li><a href="https://github.com/umair9747/headmail">Header Email</a></li>
+<li><a href="https://apk.ibnux.com/?s=0">Badan Pemeriksa APK</a></li>
+<li><a href="https://www.spamhaus.org">SPAMHAUS</a></li>
+<li><a href="https://www.spamhaus.org">https://www.spamhaus.org</a></li>
+<li><a href="https://www.spiderfoot.net/open-source-vs-hx">Spiderfoot HX</a></li>
+<li><a href="https://www.spiderfoot.net/open-source-vs-hx">https://www.spiderfoot.net/open-source-vs-hx</a></li>
+<li><a href="https://flare.io">Flare</a></li>
+<li><a href="https://flare.io">https://flare.io</a></li>
+<li><a href="https://malwareworld.com">Malwareworld</a></li>
+<li><a href="https://malwareworld.com">https://malwareworld.com</a></li>
+<li><a href="https://github.com/elceef/dnstwist">DNS TWIST</a></li>
+<li><a href="https://github.com/urbanadventurer/urlcrazy">URL CRAZY - Phishing detector</a></li>
+<li><a href="https://crt.sh">CRT - Find cert ssl and etc</a></li>
+<li><a href="https://crt.sh">https://crt.sh</a></li>
+<li><a href="https://github.com/x0rz/phishing_catcher">Phishing catcher</a></li>
+<li><a href="https://blackkite.com/community">Blackite</a></li>
+<li><a href="https://blackkite.com/community">https://blackkite.com/community</a></li>
+<li><a href="https://openphish.com/phishing_feeds.html">Open Phish</a></li>
+<li><a href="https://www.phishtank.com/phish_archive.php">Phish Talk</a></li>
+<li><a href="https://threatfeeds.io">Threat Feeds</a></li>
+<li><a href="https://threatfeeds.io">https://threatfeeds.io</a></li>
+<li><a href="https://www.threatminer.org">Threat Miner</a></li>
+<li><a href="https://www.threatminer.org">https://www.threatminer.org</a></li>
+<li><a href="https://github.com/intelowlproject/IntelOwl">Intel OWL</a></li>
+<li><a href="https://github.com/intelowlproject/IntelOwl">https://github.com/intelowlproject/IntelOwl</a></li>
+<li><a href="https://community.riskiq.com">RiskIQ</a></li>
+<li><a href="https://community.riskiq.com">https://community.riskiq.com</a></li>
+<li><a href="https://github.com/Neo23x0/Loki">LOKI</a></li>
+<li><a href="https://www.mandiant.com/advantage/threat-intelligence">Mandiant</a></li>
+<li><a href="https://www.mend.io/vulnerability-database">Mend Io</a></li>
+<li><a href="https://tria.ge/reports/public">TRIAGE</a></li>
+<li><a href="https://eml-analyzer.herokuapp.com/#">EML Analyzer</a></li>
+<li><a href="https://eml-analyzer.herokuapp.com/#">https://eml-analyzer.herokuapp.com/#</a></li>
+<li><a href="https://gchq.github.io/CyberChef">Cyber Chef</a></li>
+<li><a href="https://gchq.github.io/CyberChef">https://gchq.github.io/CyberChef</a></li>
+<li><a href="https://www.expandurl.net">Expand Url</a></li>
+<li><a href="https://www.expandurl.net">https://www.expandurl.net</a></li>
+<li><a href="https://www.wannabrowser.net">Wanna Browser Sandbox</a></li>
+<li><a href="https://www.wannabrowser.net">https://www.wannabrowser.net</a></li>
+<li><a href="https://www.winitor.com/download">pestudio</a></li>
+<li><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/procmon">procmon</a></li>
+<li><a href="https://github.com/montysecurity/C2-Tracker">C2-Tracker</a></li>
+<li><a href="https://malpedia.caad.fkie.fraunhofer.de">malpedia</a></li>
+<li><a href="https://malpedia.caad.fkie.fraunhofer.de">https://malpedia.caad.fkie.fraunhofer.de</a></li>
+<li><a href="https://vx-underground.org">vx-underground</a></li>
+<li><a href="https://vx-underground.org">https://vx-underground.org</a></li>
+<li><a href="https://n.shellpub.com/en">shellpub</a></li>
+<li><a href="https://ti.qianxin.com/en">qianxin</a></li>
+<li><a href="https://github.com/mandiant/capa">CAPA MANDIANT</a></li>
+<li><a href="https://shadowdragon.io">ShadowDragon</a></li>
+<li><a href="https://shadowdragon.io">https://shadowdragon.io</a></li>
+<li><a href="https://www.decompiler.com">decompiler</a></li>
+<li><a href="https://www.decompiler.com">https://www.decompiler.com</a></li>
+<li><a href="https://github.com/fastfire/deepdarkCTI">deepdarkCTI</a></li>
+<li><a href="https://metadefender.opswat.com">metadefender</a></li>
+<li><a href="https://metadefender.opswat.com">https://metadefender.opswat.com</a></li>
+<li><a href="https://www.ctx.io">CTX</a></li>
+<li><a href="https://www.ctx.io">https://www.ctx.io</a></li>
+<li><a href="https://security.snyk.io">SNYK</a></li>
+<li><a href="https://security.snyk.io">https://security.snyk.io</a></li>
+<li><a href="https://github.com/advisories">Github advisoreis</a></li>
+<li><a href="https://github.com/advisories">https://github.com/advisories</a></li>
+<li><a href="https://www.openwall.com">Openwall</a></li>
+<li><a href="https://www.openwall.com">https://www.openwall.com</a></li>
+<li><a href="https://falconfeeds.io">Falcon Feeds</a></li>
+<li><a href="https://falconfeeds.io">https://falconfeeds.io</a></li>
+<li><a href="https://www.filescan.io/scan">filescan</a></li>
+<li><a href="https://urlquery.net">urlquery</a></li>
+<li><a href="https://urlquery.net">https://urlquery.net</a></li>
+<li><a href="https://transparencyreport.google.com/safe-browsing/search">transparencyreport google</a></li>
+<li><a href="https://trustpositif.kominfo.go.id">trustpositif Kominfo ID</a></li>
+<li><a href="https://trustpositif.kominfo.go.id">https://trustpositif.kominfo.go.id</a></li>
+<li><a href="https://bazaar.abuse.ch/browse">Malware Bazaar</a></li>
+<li><a href="https://bazaar.abuse.ch/browse">https://bazaar.abuse.ch/browse</a></li>
+<li><a href="https://tria.ge">tria</a></li>
+<li><a href="https://safeweb.norton.com">safeweb norton</a></li>
+<li><a href="https://safeweb.norton.com">https://safeweb.norton.com</a></li>
+<li><a href="https://threatbook.io">threatbook</a></li>
+<li><a href="https://threatbook.io">https://threatbook.io</a></li>
+<li><a href="https://pulsedive.com/dashboard">pulsedive</a></li>
+<li><a href="https://pulsedive.com/dashboard">https://pulsedive.com/dashboard</a></li>
+<li><a href="https://cuckoo.cert.ee">cuckoo</a></li>
+<li><a href="https://cuckoo.cert.ee">https://cuckoo.cert.ee</a></li>
+<li><a href="https://tip.neiki.dev">neiki</a></li>
+<li><a href="https://tip.neiki.dev">https://tip.neiki.dev</a></li>
+<li><a href="https://www.criminalip.io">criminalip</a></li>
+<li><a href="https://www.criminalip.io">https://www.criminalip.io</a></li>
+<li><a href="https://hackedlist.io">hackedlist</a></li>
+<li><a href="https://hackedlist.io">https://hackedlist.io</a></li>
+<li><a href="https://cybersixgill.com">cybersixgill</a></li>
+<li><a href="https://cybersixgill.com">https://cybersixgill.com</a></li>
+<li><a href="https://exchange.xforce.ibmcloud.com">ibmcloud exchange</a></li>
+<li><a href="https://exchange.xforce.ibmcloud.com">https://exchange.xforce.ibmcloud.com</a></li>
+<li><a href="https://www.favihash.com">favihash</a></li>
+<li><a href="https://www.favihash.com">https://www.favihash.com</a></li>
+<li><a href="https://developers.google.com/safe-browsing?hl=id">Google Safe Browsing</a></li>
+<li><a href="https://www.greynoise.io">greynoise</a></li>
+<li><a href="https://www.greynoise.io">https://www.greynoise.io</a></li>
+<li><a href="https://intel471.com">Intel471</a></li>
+<li><a href="https://intel471.com">https://intel471.com</a></li>
+</ul>
+<h1 id="soc--threat-hunting"><a class="header" href="#soc--threat-hunting">SOC &amp; Threat Hunting</a></h1>
+<ul>
+<li><a href="https://grafana.com">grafana</a></li>
+<li><a href="https://grafana.com">https://grafana.com</a></li>
+<li><a href="https://wazuh.com">wazuh</a></li>
+<li><a href="https://wazuh.com">https://wazuh.com</a></li>
+<li><a href="https://www.hudsonrock.com/threat-intelligence-cybercrime-tools">Hudson Rock Cybercrime Intelligence Free Tools</a></li>
+<li><a href="https://otx.alienvault.com">Alien Vault</a></li>
+<li><a href="https://otx.alienvault.com">https://otx.alienvault.com</a></li>
+<li><a href="https://www.exploit-db.com">Exploit db</a></li>
+<li><a href="https://www.exploit-db.com">https://www.exploit-db.com</a></li>
+<li><a href="https://cybersecurity.att.com/resource-center#content_analyst-reports">AT&amp;T</a></li>
+<li><a href="https://yara.readthedocs.io/en/stable">Yara</a></li>
+<li><a href="https://yara.readthedocs.io/en/stable">https://yara.readthedocs.io/en/stable</a></li>
+<li><a href="https://yaraify.abuse.ch/yarahub">Yara Hub</a></li>
+<li><a href="https://yaraify.abuse.ch/yarahub">https://yaraify.abuse.ch/yarahub</a></li>
+<li><a href="https://www.virustotal.com/gui/home/upload">Virustotal</a></li>
+<li><a href="https://www.joesandbox.com/#windows">Joesandbox</a></li>
+<li><a href="https://www.spiderfoot.net">Spiderfoot</a></li>
+<li><a href="https://www.spiderfoot.net">https://www.spiderfoot.net</a></li>
+<li><a href="https://github.com/OpenCTI-Platform/opencti">Open CTI</a></li>
+<li><a href="https://www.solarwinds.com">Solarwinds</a></li>
+<li><a href="https://www.solarwinds.com">https://www.solarwinds.com</a></li>
+<li><a href="https://www.vmware.com/products/carbon-black-cloud-endpoint.html">VMware Carbon Black Endpoint</a></li>
+<li><a href="https://www.rapid7.com/products/insightidr">Insightidr</a></li>
+<li><a href="https://www.rapid7.com/products/insightidr">https://www.rapid7.com/products/insightidr</a></li>
+<li><a href="https://www.misp-project.org">MISP</a></li>
+<li><a href="https://www.misp-project.org">https://www.misp-project.org</a></li>
+<li><a href="https://nvd.nist.gov/search">NVD</a></li>
+<li><a href="https://seclists.org/fulldisclosure">Seclist</a></li>
+<li><a href="https://seclists.org/fulldisclosure">https://seclists.org/fulldisclosure</a></li>
+<li><a href="https://cve.mitre.org/cve/search_cve_list.html">CVE Mitre</a></li>
+<li><a href="https://centralops.net/co">Whois Record</a></li>
+<li><a href="https://centralops.net/co">https://centralops.net/co</a></li>
+<li><a href="https://www.abuseipdb.com">Abuse IP DB</a></li>
+<li><a href="https://www.abuseipdb.com">https://www.abuseipdb.com</a></li>
+<li><a href="https://check-the-sum.fr">Check-The-Sum</a></li>
+<li><a href="https://check-the-sum.fr">https://check-the-sum.fr</a></li>
+<li><a href="https://www.talosintelligence.com">Talos CTI</a></li>
+<li><a href="https://www.talosintelligence.com">https://www.talosintelligence.com</a></li>
+<li><a href="https://darkfeed.io">Darkfeed</a></li>
+<li><a href="https://darkfeed.io">https://darkfeed.io</a></li>
+<li><a href="https://flare.io">Flare</a></li>
+<li><a href="https://flare.io">https://flare.io</a></li>
+<li><a href="https://github.com/ninoseki/mihari">Mihari</a></li>
+<li><a href="https://processhacker.sourceforge.io">Processhacker</a></li>
+<li><a href="https://processhacker.sourceforge.io">https://processhacker.sourceforge.io</a></li>
+<li><a href="https://koodous.com">Koodous</a></li>
+<li><a href="https://koodous.com">https://koodous.com</a></li>
+<li><a href="https://blackkite.com/community">Blackite</a></li>
+<li><a href="https://blackkite.com/community">https://blackkite.com/community</a></li>
+<li><a href="https://openphish.com/phishing_feeds.html">Open Phish</a></li>
+<li><a href="https://www.phishtank.com/phish_archive.php">Phish Talk</a></li>
+<li><a href="https://www.sophos.com/en-us/intelix">Sophos</a></li>
+<li><a href="https://github.com/Neo23x0/signature-base">Signature Base</a></li>
+<li><a href="https://www.siemrules.com">SIEM Rules</a></li>
+<li><a href="https://www.siemrules.com">https://www.siemrules.com</a></li>
+<li><a href="https://threatfeeds.io">Threat Feed</a></li>
+<li><a href="https://threatfeeds.io">https://threatfeeds.io</a></li>
+<li><a href="https://threatconnect.com/threat-intelligence-operations-platform">Threat Connect</a></li>
+<li><a href="https://threatconnect.com/threat-intelligence-operations-platform">https://threatconnect.com/threat-intelligence-operations-platform</a></li>
+<li><a href="https://www.threatminer.org">Threat Miner</a></li>
+<li><a href="https://www.threatminer.org">https://www.threatminer.org</a></li>
+<li><a href="https://virusshare.com">Virus Share</a></li>
+<li><a href="https://virusshare.com">https://virusshare.com</a></li>
+<li><a href="https://github.com/intelowlproject/IntelOwl">Intel OWL</a></li>
+<li><a href="https://github.com/intelowlproject/IntelOwl">https://github.com/intelowlproject/IntelOwl</a></li>
+<li><a href="https://community.riskiq.com">RiskIQ</a></li>
+<li><a href="https://community.riskiq.com">https://community.riskiq.com</a></li>
+<li><a href="https://github.com/typedb-osi/typedb-cti">TypeDB</a></li>
+<li><a href="https://github.com/ciscocsirt/gosint">Goosint</a></li>
+<li><a href="https://cse.google.com/cse?cx=003248445720253387346:turlh5vi4xc">Google APT search</a></li>
+<li><a href="https://github.com/Neo23x0/Loki">LOKI</a></li>
+<li><a href="https://www.mandiant.com/advantage/threat-intelligence">Mandiant</a></li>
+<li><a href="https://fireeye.market/apps/S7cWpi9W">IoC Editor</a></li>
+<li><a href="https://www.crest-approved.org/wp-content/uploads/2022/04/CREST-Cyber-Threat-Intelligence.pdf?ref=secjuice.com">CREST Threat Intel</a></li>
+<li><a href="https://intel471.com">Intel471</a></li>
+<li><a href="https://intel471.com">https://intel471.com</a></li>
+<li><a href="https://flashpoint.io">flashpoint</a></li>
+<li><a href="https://flashpoint.io">https://flashpoint.io</a></li>
+<li><a href="https://www.winitor.com/download">pestudio</a></li>
+<li><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/procmon">procmon</a></li>
+<li><a href="https://www.zerofox.com/platform">zerofox</a></li>
+<li><a href="https://www.zerofox.com/platform">https://www.zerofox.com/platform</a></li>
+<li><a href="https://malpedia.caad.fkie.fraunhofer.de">malpedia</a></li>
+<li><a href="https://malpedia.caad.fkie.fraunhofer.de">https://malpedia.caad.fkie.fraunhofer.de</a></li>
+<li><a href="https://vx-underground.org">vx-underground</a></li>
+<li><a href="https://vx-underground.org">https://vx-underground.org</a></li>
+<li><a href="https://n.shellpub.com/en">shellpub</a></li>
+<li><a href="https://ti.qianxin.com/en">qianxin</a></li>
+<li><a href="https://github.com/mandiant/capa">CAPA MANDIANT</a></li>
+<li><a href="https://shadowdragon.io">ShadowDragon</a></li>
+<li><a href="https://shadowdragon.io">https://shadowdragon.io</a></li>
+<li><a href="https://sociallinks.io">sociallinks</a></li>
+<li><a href="https://sociallinks.io">https://sociallinks.io</a></li>
+<li><a href="https://www.decompiler.com">decompiler</a></li>
+<li><a href="https://www.decompiler.com">https://www.decompiler.com</a></li>
+<li><a href="https://github.com/fastfire/deepdarkCTI">deepdarkCTI</a></li>
+<li><a href="https://metadefender.opswat.com">metadefender</a></li>
+<li><a href="https://metadefender.opswat.com">https://metadefender.opswat.com</a></li>
+<li><a href="https://www.ctx.io">CTX</a></li>
+<li><a href="https://www.ctx.io">https://www.ctx.io</a></li>
+<li><a href="https://falconfeeds.io">Falcon Feeds</a></li>
+<li><a href="https://falconfeeds.io">https://falconfeeds.io</a></li>
+<li><a href="https://github.com/jokob-sk/NetAlertX">NetAlertX</a></li>
+<li><a href="https://www.filescan.io/scan">filescan</a></li>
+<li><a href="https://bazaar.abuse.ch/browse">Malware Bazaar</a></li>
+<li><a href="https://bazaar.abuse.ch/browse">https://bazaar.abuse.ch/browse</a></li>
+<li><a href="https://www.greynoise.io">greynoise</a></li>
+<li><a href="https://www.greynoise.io">https://www.greynoise.io</a></li>
+<li><a href="https://darktrace.com">darktrace</a></li>
+<li><a href="https://darktrace.com">https://darktrace.com</a></li>
+<li><a href="https://threatbook.io">threatbook</a></li>
+<li><a href="https://threatbook.io">https://threatbook.io</a></li>
+<li><a href="https://pulsedive.com/dashboard">pulsedive</a></li>
+<li><a href="https://pulsedive.com/dashboard">https://pulsedive.com/dashboard</a></li>
+<li><a href="https://cuckoo.cert.ee">cuckoo</a></li>
+<li><a href="https://cuckoo.cert.ee">https://cuckoo.cert.ee</a></li>
+<li><a href="https://polyswarm.io">polyswarm</a></li>
+<li><a href="https://polyswarm.io">https://polyswarm.io</a></li>
+<li><a href="https://www.recordedfuture.com/vulnerability-database">recordedfuture</a></li>
+<li><a href="https://tip.neiki.dev">neiki</a></li>
+<li><a href="https://tip.neiki.dev">https://tip.neiki.dev</a></li>
+<li><a href="https://lab.dynamite.ai">dynamite.ai search pcap file</a></li>
+<li><a href="https://lab.dynamite.ai">https://lab.dynamite.ai</a></li>
+<li><a href="https://app.packetsafari.com">packetsafari analys pcap file</a></li>
+<li><a href="https://app.packetsafari.com">https://app.packetsafari.com</a></li>
+<li><a href="https://cybersixgill.com">cybersixgill</a></li>
+<li><a href="https://cybersixgill.com">https://cybersixgill.com</a></li>
+<li><a href="https://developers.google.com/safe-browsing/reference?hl=id">Google Safe Browsing</a></li>
+</ul>
+<h1 id="monitoring--alerting"><a class="header" href="#monitoring--alerting">Monitoring &amp; Alerting</a></h1>
+<ul>
+<li><a href="https://pastebin.com/u/alerts">Pastebin Alerts</a></li>
+<li><a href="https://pastebin.com/u/alerts">https://pastebin.com/u/alerts</a></li>
+<li><a href="https://www.haveIbeenpwned.com">HaveIBeenPwned</a></li>
+<li><a href="https://www.haveIbeenpwned.com">https://www.haveIbeenpwned.com</a></li>
+<li><a href="https://www.hudsonrock.com/threat-intelligence-cybercrime-tools">Hudson Rock Cybercrime Intelligence Free Tools</a></li>
+<li><a href="https://brandmentions.com">brandmentions</a></li>
+<li><a href="https://brandmentions.com">https://brandmentions.com</a></li>
+<li><a href="https://www.google.com/alerts?hl=en">Google Alert</a></li>
+<li><a href="https://flashpoint.io">flashpoint</a></li>
+<li><a href="https://flashpoint.io">https://flashpoint.io</a></li>
+<li><a href="https://canarytokens.org/nest">canarytokens</a></li>
+<li><a href="https://canarytokens.org/nest">https://canarytokens.org/nest</a></li>
+<li><a href="https://intel471.com">Intel471</a></li>
+<li><a href="https://intel471.com">https://intel471.com</a></li>
+</ul>
+<h1 id="threat-actor--criminal"><a class="header" href="#threat-actor--criminal">Threat Actor &amp; Criminal</a></h1>
+<ul>
+<li><a href="https://eumostwanted.eu">eumostwanted EU</a></li>
+<li><a href="https://eumostwanted.eu">https://eumostwanted.eu</a></li>
+<li><a href="https://www.nationalcrimeagency.gov.uk/most-wanted">nationalcrimeagency UK</a></li>
+<li><a href="https://web.archive.org/web/20030315000000*/https://www.fbi.gov/wanted/cyber">FBI Most Wanted</a></li>
+<li><a href="https://www.fbi.gov/wanted">FBI</a></li>
+<li><a href="https://www.secretservice.gov/investigations/mostwanted">secretservice</a></li>
+<li><a href="https://pusiknas.polri.go.id/dpo">pusiknas Polri ID</a></li>
+<li><a href="https://pelayanan.kejaksaan.go.id/layanan/permohonan/dpo">kejaksaan ID</a></li>
+<li><a href="https://web.archive.org/web/20220124010657/https://reskrimum.metro.polri.go.id/dpo">reskrimum Polri ID</a></li>
+<li><a href="https://web.archive.org/web/20220124010657/https://reskrimum.metro.polri.go.id/dpo">https://web.archive.org/web/20220124010657/https://reskrimum.metro.polri.go.id/dpo</a></li>
+<li><a href="https://reskrimum.metro.polri.go.id/dpo">reskrimum Metro Polri ID</a></li>
+<li><a href="https://reskrimum.metro.polri.go.id/dpo">https://reskrimum.metro.polri.go.id/dpo</a></li>
+<li><a href="https://www.maltego.com/transform-hub/socialnet">Maltego Transform ShadowDragon</a></li>
+<li><a href="https://www.maltego.com/transform-hub/socialnet">https://www.maltego.com/transform-hub/socialnet</a></li>
+<li><a href="https://www.stealthmole.com">stealthmole</a></li>
+<li><a href="https://www.stealthmole.com">https://www.stealthmole.com</a></li>
+<li><a href="https://nationalcrimeagency.gov.uk/most-wanted-search">NCA most wanted</a></li>
+<li><a href="https://shadowdragon.io">ShadowDragon</a></li>
+<li><a href="https://shadowdragon.io">https://shadowdragon.io</a></li>
+<li><a href="https://sociallinks.io">sociallinks</a></li>
+<li><a href="https://sociallinks.io">https://sociallinks.io</a></li>
+<li><a href="https://sociallinks.io/products/sl-crimewall">Crimewall</a></li>
+<li><a href="https://breach-hq.com/threat-actors">breach-hq</a></li>
+<li><a href="https://main.un.org/securitycouncil/en/content/un-sc-consolidated-list">United Nation PBB</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../discovery/GLOBAL_GEO.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../social/FACEBOOK.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../discovery/GLOBAL_GEO.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../social/FACEBOOK.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

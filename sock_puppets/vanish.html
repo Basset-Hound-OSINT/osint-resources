@@ -1,0 +1,584 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Delete / Disappear / Vanish - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3 id="51-delete-your-trace"><a class="header" href="#51-delete-your-trace">5.1 Delete Your Trace</a></h3>
+<ul>
+<li><a href="https://redact.dev">Redact</a></li>
+<li><a href="https://joindeleteme.com">DeleteMe</a></li>
+<li><a href="https://incogni.com">incogni</a></li>
+<li><a href="https://justdeleteme.xyz">JustDeleteMe</a></li>
+</ul>
+<h3 id="53-vpns"><a class="header" href="#53-vpns">5.3 VPNs</a></h3>
+<ul>
+<li><a href="https://mullvad.net">Mullvad VPN</a></li>
+<li><a href="https://www.ivpn.net">IVPN</a></li>
+</ul>
+<h1 id="securing-your-privacy"><a class="header" href="#securing-your-privacy">Securing Your Privacy</a></h1>
+<ul>
+<li><a href="https://eraser.heidi.ie">Eraser</a></li>
+<li><a href="https://eraser.heidi.ie">https://eraser.heidi.ie</a></li>
+<li><a href="https://www.thunderbird.net/en-US">Thunderbird</a></li>
+<li><a href="https://www.thunderbird.net/en-US">https://www.thunderbird.net/en-US</a></li>
+<li><a href="https://github.com/gorhill/uBlock">Ublock origin</a></li>
+<li><a href="https://zmail.sourceforge.net">Zmail</a></li>
+<li><a href="https://zmail.sourceforge.net">https://zmail.sourceforge.net</a></li>
+<li><a href="https://www.opendns.com/home-internet-security">Open DNS</a></li>
+<li><a href="https://www.opendns.com/home-internet-security">https://www.opendns.com/home-internet-security</a></li>
+<li><a href="https://geti2p.net/en">I2P</a></li>
+<li><a href="https://geti2p.net/en">https://geti2p.net/en</a></li>
+<li><a href="https://gnupg.org">Gnupg</a></li>
+<li><a href="https://gnupg.org">https://gnupg.org</a></li>
+<li><a href="https://www.eff.org/https-everywhere">HTTPS Everywhere</a></li>
+<li><a href="https://www.eff.org/https-everywhere">https://www.eff.org/https-everywhere</a></li>
+<li><a href="https://www.pelock.com/products/steganography-online-codec">Pelock</a></li>
+<li><a href="https://tails.boum.org">Tails OS</a></li>
+<li><a href="https://tails.boum.org">https://tails.boum.org</a></li>
+<li><a href="https://www.mywot.com">WOT</a></li>
+<li><a href="https://www.mywot.com">https://www.mywot.com</a></li>
+<li><a href="https://mail.tm/en">Temp Mail 1</a></li>
+<li><a href="https://mail.tm/en">https://mail.tm/en</a></li>
+<li><a href="https://temp-mail.org/en">Temp Mail 2</a></li>
+<li><a href="https://temp-mail.org/en">https://temp-mail.org/en</a></li>
+<li><a href="https://tempmailo.com">Temp Mail 3</a></li>
+<li><a href="https://tempmailo.com">https://tempmailo.com</a></li>
+<li><a href="https://www.phoneburner.com">Phone Burner</a></li>
+<li><a href="https://www.phoneburner.com">https://www.phoneburner.com</a></li>
+<li><a href="https://hushed.com">Hushed</a></li>
+<li><a href="https://hushed.com">https://hushed.com</a></li>
+<li><a href="https://privacybadger.org">Privacy Badger</a></li>
+<li><a href="https://privacybadger.org">https://privacybadger.org</a></li>
+<li><a href="https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en">U block origin</a></li>
+<li><a href="https://chromewebstore.google.com/detail/blur-the-image-and-video/aikjogmpaoaookmacnkbenekcnkjlkmi?hl=en-US&amp;authuser=0">Blur IMG Extension</a></li>
+<li><a href="https://support.apple.com/id-id/guide/iphone/iph049680987/ios">Apple Kuncitara</a></li>
+<li><a href="https://support.apple.com/id-id/guide/iphone/iphd6288a67f/17.0/ios/17.0">Apple Focus Mode</a></li>
+<li><a href="https://bitcoin.org/id">Bitcoin</a></li>
+<li><a href="https://bitcoin.org/id">https://bitcoin.org/id</a></li>
+<li><a href="https://www.getmonero.org">Monero</a></li>
+<li><a href="https://www.getmonero.org">https://www.getmonero.org</a></li>
+<li><a href="https://keepass.info">Keepas</a></li>
+<li><a href="https://keepass.info">https://keepass.info</a></li>
+<li><a href="https://www.dashlane.com">Dashlane</a></li>
+<li><a href="https://www.dashlane.com">https://www.dashlane.com</a></li>
+<li><a href="https://nordpass.com">Nordpass</a></li>
+<li><a href="https://nordpass.com">https://nordpass.com</a></li>
+<li><a href="https://cybernews.com/secure-email-providers/find-all-accounts-linked-to-email-address">Securing your email</a></li>
+<li><a href="https://cybernews.com/secure-email-providers/find-all-accounts-linked-to-email-address">https://cybernews.com/secure-email-providers/find-all-accounts-linked-to-email-address</a></li>
+</ul>
+<h1 id="content-removal--strict-media-content"><a class="header" href="#content-removal--strict-media-content">Content Removal &amp; Strict Media Content</a></h1>
+<ul>
+<li><a href="https://support.google.com/websearch/answer/4628134">Google image removal</a></li>
+<li><a href="https://joindeleteme.com">Delete Me</a></li>
+<li><a href="https://joindeleteme.com">https://joindeleteme.com</a></li>
+<li><a href="https://backgroundchecks.org/justdeleteme/#go">backgroundchecks</a></li>
+<li><a href="https://followmoneyfightslavery.org">ATII</a></li>
+<li><a href="https://followmoneyfightslavery.org">https://followmoneyfightslavery.org</a></li>
+<li><a href="https://stopncii.org">Stopncii</a></li>
+<li><a href="https://www.bing.com/webmasters/help/bing-content-removal-tool-cb6c294d">here</a></li>
+<li><a href="https://search.google.com/search-console/remove-outdated-content">Google content removal</a></li>
+<li><a href="https://support.google.com/websearch/troubleshooter/3111061?hl=id">here</a></li>
+<li><a href="https://help.archive.org/help/how-do-i-request-to-remove-something-from-archive-org">Web archiver remover</a></li>
+<li><a href="https://help.archive.org/help/how-do-i-request-to-remove-something-from-archive-org">https://help.archive.org/help/how-do-i-request-to-remove-something-from-archive-org</a></li>
+<li><a href="https://help.archive.org/help/removing-your-item-pages-from-archive-org">here</a></li>
+<li><a href="https://www.joshualowcock.com/guide/how-to-delete-your-site-from-the-internet-archive-wayback-machine-archive-org">here</a></li>
+<li><a href="https://help.archive.org">Help web archive</a></li>
+<li><a href="https://help.archive.org/help/removing-your-item-pages-from-archive-org">https://help.archive.org/help/removing-your-item-pages-from-archive-org</a></li>
+<li><a href="https://www.joshualowcock.com/guide/how-to-delete-your-site-from-the-internet-archive-wayback-machine-archive-org">https://www.joshualowcock.com/guide/how-to-delete-your-site-from-the-internet-archive-wayback-machine-archive-org</a></li>
+<li><a href="https://www.facebook.com/help/124518907626945">Facebook Privacy</a></li>
+<li><a href="https://www.zerofox.com">zerofox</a></li>
+<li><a href="https://www.zerofox.com">https://www.zerofox.com</a></li>
+<li><a href="https://help.instagram.com/147542625391305">Instagram Privacy</a></li>
+<li><a href="https://www.missingkids.org/gethelpnow/isyourexplicitcontentoutthere">Missing Kids</a></li>
+<li><a href="https://takeitdown.ncmec.org">Takeit Down</a></li>
+<li><a href="https://takeitdown.ncmec.org">https://takeitdown.ncmec.org</a></li>
+<li><a href="https://www.inhope.org/EN#hotlineReferral">Inhope</a></li>
+<li><a href="https://report.iwf.org.uk/id">ReportIWF Indonesia</a></li>
+<li><a href="https://www.iwf.org.uk/our-technology/report-remove">ReportIWF</a></li>
+<li><a href="https://www.iwf.org.uk/our-technology/report-remove">https://www.iwf.org.uk/our-technology/report-remove</a></li>
+<li><a href="https://www.kemenpppa.go.id">kemenpppa Indonesia</a></li>
+<li><a href="https://www.kemenpppa.go.id">https://www.kemenpppa.go.id</a></li>
+<li><a href="https://report.cybertip.org">National Center for Missing and Exploited Children</a></li>
+<li><a href="https://report.cybertip.org">https://report.cybertip.org</a></li>
+<li><a href="https://inhope.org">Inhope</a></li>
+<li><a href="https://inhope.org">https://inhope.org</a></li>
+<li><a href="https://report.cybertip.org">cybertip US</a></li>
+<li><a href="https://report.cybertip.org">https://report.cybertip.org</a></li>
+<li><a href="https://www.cybertip.ca/en">cybertip Canada</a></li>
+<li><a href="https://www.cybertip.ca/en">https://www.cybertip.ca/en</a></li>
+<li><a href="https://www.internethotline.jp">internethotline Japan</a></li>
+<li><a href="https://www.internethotline.jp">https://www.internethotline.jp</a></li>
+<li><a href="https://www.safekaznet.kz/en/report-2">safekaznet Kazakhstan</a></li>
+<li><a href="https://www.safekaznet.kz/en/report-2">https://www.safekaznet.kz/en/report-2</a></li>
+<li><a href="https://ligainternet.ru/hotline">Liga Internet Russia</a></li>
+<li><a href="https://ligainternet.ru/hotline">https://ligainternet.ru/hotline</a></li>
+<li><a href="https://www.kocsc.or.kr/mainPage.do">Kocs Korean</a></li>
+<li><a href="https://www.thaihotline.org">Thailand Internet Hotline</a></li>
+<li><a href="https://www.thaihotline.org">https://www.thaihotline.org</a></li>
+<li><a href="https://www.jugendschutz.net">Jugendschutz Germany</a></li>
+<li><a href="https://www.jugendschutz.net">https://www.jugendschutz.net</a></li>
+<li><a href="https://www.fsm.de">FSM Germany</a></li>
+<li><a href="https://www.fsm.de">https://www.fsm.de</a></li>
+<li><a href="https://www.internet-beschwerdestelle.de/de/index.html">ECO Germany</a></li>
+<li><a href="https://endsexualexploitation.org/about">NCOSE</a></li>
+<li><a href="https://endsexualexploitation.org/about">https://endsexualexploitation.org/about</a></li>
+<li><a href="https://support.google.com/websearch/answer/148666?hl=id">More info all region</a></li>
+<li><a href="https://www.whitepages.com/suppression-requests">411 white pages</a></li>
+<li><a href="https://411.info/manage">411 Info</a></li>
+<li><a href="https://411.info/manage">https://411.info/manage</a></li>
+<li><a href="https://absolutepeoplesearch.com/optout">Absolute People Search</a></li>
+<li><a href="https://isapps.acxiom.com/optout/optout.aspx">Acxiom</a></li>
+<li><a href="https://www.intelius.com/opt-out/submit">Addresses</a></li>
+<li><a href="https://www.intelius.com/opt-out/submit">https://www.intelius.com/opt-out/submit</a></li>
+<li><a href="https://addresssearch.com/remove-info.php">Address Search</a></li>
+<li><a href="https://archives.com/optout">Archives</a></li>
+<li><a href="https://www.apollo.io/privacy-policy/remove">Apollo</a></li>
+<li><a href="https://www.apollo.io/privacy-policy/remove">https://www.apollo.io/privacy-policy/remove</a></li>
+<li><a href="https://www.arivify.com/removal">Arivify</a></li>
+<li><a href="https://www.azerch.com/Policies/Privacy">Azerch</a></li>
+<li><a href="https://www.backgroundalert.com/optout">Background Alert</a></li>
+<li><a href="https://www.backgroundalert.com/optout">https://www.backgroundalert.com/optout</a></li>
+<li><a href="https://backgroundcheck.run/ng/control/privacy">Background Check</a></li>
+<li><a href="https://www.backgroundcheckers.net/optOut/name/landing">Background Checkers</a></li>
+<li><a href="https://batchskiptracing.com/personal-information">BatchSkipTracing</a></li>
+<li><a href="https://batchleads.io/personal-information">BatchLeads</a></li>
+<li><a href="https://batchdialer.com/personal-information">BatchDialer</a></li>
+<li><a href="https://batchdriven.com/personal">BatchDriven</a></li>
+<li><a href="https://www.beenverified.com/faq/opt-out">Been Verified</a></li>
+<li><a href="https://www.beenverified.com/faq/opt-out">https://www.beenverified.com/faq/opt-out</a></li>
+<li><a href="https://www.buzzfile.com/Company/Remove">Buzzfile</a></li>
+<li><a href="https://www.buzzfile.com/Company/Remove">https://www.buzzfile.com/Company/Remove</a></li>
+<li><a href="https://www.calltruth.com/opt_out.php">Call Truth</a></li>
+<li><a href="https://www.callersmart.com/opt-out">Caller Smart</a></li>
+<li><a href="https://centeda.com/ng/control/privacy">Centeda</a></li>
+<li><a href="https://www.checkpeople.com/opt-out">Check People</a></li>
+<li><a href="https://www.checksecrets.com/optOut/name/landing">Check Secrets</a></li>
+<li><a href="https://candidate.checkr.com/privacy/delete">Checkr</a></li>
+<li><a href="https://www.city-data.com/privacy-form.php?w=usget">City-Data</a></li>
+<li><a href="https://clicksearch.us/optout">ClickSearch</a></li>
+<li><a href="https://clustrmaps.com/bl/opt-out">Clustr Maps</a></li>
+<li><a href="https://www.cisworldwide.com/search/index.php?xpath=lp_optout">Complete Investigation Services</a></li>
+<li><a href="https://www.cisworldwide.com/search/index.php?xpath=lp_optout">https://www.cisworldwide.com/search/index.php?xpath=lp_optout</a></li>
+<li><a href="https://www.confidentialphonelookup.com">Confidential Phone Lookup</a></li>
+<li><a href="https://contactout.com/optout">Contact Out</a></li>
+<li><a href="https://connectedinvestors.com/content/do-not-sell">Connected Investors</a></li>
+<li><a href="https://www.corporationwiki.com/profiles/public">Corporation Wiki</a></li>
+<li><a href="https://councilon.com/ex/control/privacy">Councilon</a></li>
+<li><a href="https://www.cyberbackgroundchecks.com/removal">Cyber Background Checks</a></li>
+<li><a href="https://www.data-axle.com/do-not-sell-my-data">Data Axle</a></li>
+<li><a href="https://www.data-axle.com/do-not-sell-my-data">https://www.data-axle.com/do-not-sell-my-data</a></li>
+<li><a href="https://dataveria.com/ng/control/privacy">DataVeria</a></li>
+<li><a href="https://www.datacheckinc.com/contact">DataChk</a></li>
+<li><a href="https://www.datacheckinc.com/contact">https://www.datacheckinc.com/contact</a></li>
+<li><a href="https://dehashed.com">Dehashed</a></li>
+<li><a href="https://dehashed.com">https://dehashed.com</a></li>
+<li><a href="https://www.delvepoint.com">DelvePoint</a></li>
+<li><a href="https://tinyurl.com/dexknowscom">DexKnows</a></li>
+<li><a href="https://www.directmail.com/mail_preference">DirectMail</a></li>
+<li><a href="https://www.directmail.com/mail_preference">https://www.directmail.com/mail_preference</a></li>
+<li><a href="https://www.ims-dm.com/cgi/dncc.php">DMA Choice</a></li>
+<li><a href="https://www.ims-dm.com/cgi/optoutemps.php">DMA Choice</a></li>
+<li><a href="https://www.epsilon.com/privacy-policy">Epsilon-Main</a></li>
+<li><a href="https://www.epsilon.com/privacy-policy">https://www.epsilon.com/privacy-policy</a></li>
+<li><a href="https://www.epsilon.com/privacy-policy">Epsilon-Abacus</a></li>
+<li><a href="https://www.epsilon.com/privacy-policy">https://www.epsilon.com/privacy-policy</a></li>
+<li><a href="https://www.epsilon.com/privacy-policy">Epsilon-CFD</a></li>
+<li><a href="https://www.epsilon.com/privacy-policy">https://www.epsilon.com/privacy-policy</a></li>
+<li><a href="https://www.epsilon.com/privacy-policy">Epsilon-Shopper</a></li>
+<li><a href="https://www.epsilon.com/privacy-policy">https://www.epsilon.com/privacy-policy</a></li>
+<li><a href="https://fama.io/privacy">Fama</a></li>
+<li><a href="https://fama.io/privacy">https://fama.io/privacy</a></li>
+<li><a href="https://familysearch.org/privacy">FamilySearch</a></li>
+<li><a href="https://www.familytreenow.com/optout">Family Tree Now</a></li>
+<li><a href="https://findpeoplefast.net/company/remove-my-info">Fast People Fast</a></li>
+<li><a href="https://www.fastpeoplesearch.com/removal">Fast People Search</a></li>
+<li><a href="https://www.faxvin.com/company/privacy">Fax VIN</a></li>
+<li><a href="https://findpeoplesearch.com/customerservice">Find People Search</a></li>
+<li><a href="https://findpeoplesearch.com/customerservice">https://findpeoplesearch.com/customerservice</a></li>
+<li><a href="https://www.infopay.com/privacy">Free Background Checks</a></li>
+<li><a href="https://www.freepeopledirectory.com/optout">Free People Directory</a></li>
+<li><a href="https://www.freepublicprofile.com/Removal">Free Public Profile</a></li>
+<li><a href="https://findrec.com/ng/control/privacy">FindRec</a></li>
+<li><a href="https://gladiknow.com/opt-out">Glad I Know</a></li>
+<li><a href="https://golookup.com/support/optout">GoLookup</a></li>
+<li><a href="https://www.grey-pages.com/removal">Grey Pages</a></li>
+<li><a href="https://www.haines.com/privacy-policy">Haines &amp; Company</a></li>
+<li><a href="https://www.haines.com/privacy-policy">https://www.haines.com/privacy-policy</a></li>
+<li><a href="https://homemetry.com/control/privacy">Hometry</a></li>
+<li><a href="https://www.hpcc-usa.org/research/change-listing.html">HPCC-USA</a></li>
+<li><a href="https://www.idcrawl.com/opt-out">ID Crawl</a></li>
+<li><a href="https://www.idtrue.com/optout">ID True</a></li>
+<li><a href="https://www.idtrue.com/optout">https://www.idtrue.com/optout</a></li>
+<li><a href="https://infospace.intelius.com/optout.php">Infospace</a></li>
+<li><a href="https://infotracer.com/optout">Infotracer</a></li>
+<li><a href="https://infotracer.com/optout">Infotracer UK</a></li>
+<li><a href="https://infotracer.com/optout">https://infotracer.com/optout</a></li>
+<li><a href="https://instantcheckmate.com/optout">Instant Check Mate</a></li>
+<li><a href="https://www.intelius.com/opt-out">InstantPeopleFinder</a></li>
+<li><a href="https://www.intelius.com/opt-out">Intelius</a></li>
+<li><a href="https://intelx.io/abuse">IntelligenceX</a></li>
+<li><a href="https://kiwisearches.com/optout">Kiwi Searches</a></li>
+<li><a href="https://optout.lexisnexis.com">LexisNexis/Accurint</a></li>
+<li><a href="https://www.lexisnexis.com/privacy/directmarketingopt-out.aspx">LexisNexis Direct Marketing</a></li>
+<li><a href="https://www.locatefamily.com/removal2.html">Locate Family</a></li>
+<li><a href="https://www.locatepeople.org/optout">Locate People</a></li>
+<li><a href="https://www.mashpanel.com/remove.php">MashPanel</a></li>
+<li><a href="https://www.mastercard.us/en-us/vision/corp-responsibility/commitment-to-privacy/privacy/data-analytics-opt-out.html">Mastercard</a></li>
+<li><a href="https://www.mastercard.us/en-us/vision/corp-responsibility/commitment-to-privacy/privacy/email-opt-out.html">Mastercard</a></li>
+<li><a href="https://www.mugshotlook.com/optOut/name/landing">MugshotLook</a></li>
+<li><a href="https://faq.myheritage.com/en/article/how-do-i-delete-my-account-on-myheritage">MyHeritage</a></li>
+<li><a href="https://www.mylife.com/ccpa/index.pubview">MyLife</a></li>
+<li><a href="https://www.nationalcellulardirectory.com/optout">National Cellular Directory</a></li>
+<li><a href="https://www.nationalcellulardirectory.com/optout">https://www.nationalcellulardirectory.com/optout</a></li>
+<li><a href="https://neighbor.report/remove">Neighbor Report</a></li>
+<li><a href="https://newenglandfacts.com/ng/control/privacy">NewEnglandFacts</a></li>
+<li><a href="https://numberville.com/opt-out.html">Numberville</a></li>
+<li><a href="https://nuwber.com/removal/link">Nuwber</a></li>
+<li><a href="https://www.officialusa.com/opt-out">Official USA</a></li>
+<li><a href="https://old-friends.co">Old Friends</a></li>
+<li><a href="https://old-friends.co">https://old-friends.co</a></li>
+<li><a href="https://www.peekyou.com/about/contact/optout">PeekYou</a></li>
+<li><a href="https://www.peekyou.com/about/contact/optout">https://www.peekyou.com/about/contact/optout</a></li>
+<li><a href="https://www.peeplookup.com/opt_out">Peep Lookup</a></li>
+<li><a href="https://people-background-check.com/ng/control/privacy">PeopleBackgroundCheck</a></li>
+<li><a href="https://www.peoplebyname.com/remove.php">People By Name</a></li>
+<li><a href="https://www.peoplebyphone.com/remove-my-number">People By Phone</a></li>
+<li><a href="https://www.peoplebyphone.com/remove-my-number">https://www.peoplebyphone.com/remove-my-number</a></li>
+<li><a href="https://www.peopledatalabs.com/opt-out-form">People Data Labs</a></li>
+<li><a href="https://peoplefinder.com/optout.php">People Finder</a></li>
+<li><a href="https://www.peoplefinders.com/opt-out#IT">People Finders</a></li>
+<li><a href="https://www.peoplelooker.com/f/optout/search">People Looker</a></li>
+<li><a href="https://www.peoplesearch123.com/optOut/name/landing">People Search 123</a></li>
+<li><a href="https://www.peoplesearchexpert.com">People Search Expert</a></li>
+<li><a href="https://peoplefinder.com/optout.php">People Finder</a></li>
+<li><a href="https://www.peoplefinders.com/opt-out#IT">People Finders</a></li>
+<li><a href="https://www.peoplelooker.com/f/optout/search">People Looker</a></li>
+<li><a href="https://www.peoplesearch123.com/optOut/name/landing">People Search 123</a></li>
+<li><a href="https://www.peoplesearchnow.com/opt-out">People Search Now</a></li>
+<li><a href="https://www.peoplesearcher.com/optOut/name/landing">People Searcher</a></li>
+<li><a href="https://www.peoplesmart.com/app/optout/search">People Smart</a></li>
+<li><a href="https://www.peopletraceuk.com/RequestRecordRemoval.asp">People Trace UK</a></li>
+<li><a href="https://www.peoplescheck.com/optout">People’s Check</a></li>
+<li><a href="https://www.peoplescheck.com/optout">https://www.peoplescheck.com/optout</a></li>
+<li><a href="https://www.peoplewhiz.com/remove-my-info">People Whiz</a></li>
+<li><a href="https://www.productsandservices.bt.com/consumer/edw/privacypolicy/copyform/bt/#">Phonebook BT</a></li>
+<li><a href="https://www.productsandservices.bt.com/consumer/edw/privacypolicy/copyform/bt/#">https://www.productsandservices.bt.com/consumer/edw/privacypolicy/copyform/bt/#</a></li>
+<li><a href="https://pub360.com/ng/control/privacy">Pub360</a></li>
+<li><a href="https://publicdatadigger.com/removeprofile">Public Data Digger</a></li>
+<li><a href="https://publicdatausa.com/optout.php">Public Data USA</a></li>
+<li><a href="https://www.publicinfoservices.com/help-center/remove-my-public-record">Public Info Services</a></li>
+<li><a href="https://publicrecords.directory/contact.php">Public Records</a></li>
+<li><a href="https://www.publicrecordsnow.com/static/view/optout">Public Records Now</a></li>
+<li><a href="https://www.publicrecordsnow.com/static/view/optout">https://www.publicrecordsnow.com/static/view/optout</a></li>
+<li><a href="https://www.peoplefinders.com/opt-out#IT">Quick People Trace</a></li>
+<li><a href="https://radaris.com/control/privacy">Radaris</a></li>
+<li><a href="https://www.revealname.com/opt_out">Reveal Name</a></li>
+<li><a href="https://www.revealphoneowner.com/data-removal">Reveal Phone Owner</a></li>
+<li><a href="https://salespidermedia.com/opt-out-and-information-removal.php">Sales Spider</a></li>
+<li><a href="https://salespidermedia.com/opt-out-and-information-removal.php">https://salespidermedia.com/opt-out-and-information-removal.php</a></li>
+<li><a href="https://www.searchbug.com/peoplefinder/how-to-remove.aspx">Search Bug</a></li>
+<li><a href="https://www.searchpeoplefree.com/opt-out">Search People Free</a></li>
+<li><a href="https://www.spokeo.com/optout">Selfie Systems</a></li>
+<li><a href="https://www.smartbackgroundchecks.com/optout">Smart Background Checks</a></li>
+<li><a href="https://socialcatfish.com/opt-out">Social Catfish</a></li>
+<li><a href="https://socialcatfish.com/opt-out">https://socialcatfish.com/opt-out</a></li>
+<li><a href="https://www.spydialer.com/optout.aspx">Spy Dialer</a></li>
+<li><a href="https://www.spokeo.com/optout">Spokeo</a></li>
+<li><a href="https://www.spyfly.com/help-center/remove-info">SpyFly</a></li>
+<li><a href="https://www.spytox.com/opt_out">Spytox</a></li>
+<li><a href="https://infotracer.com/optout">State Records</a></li>
+<li><a href="https://infotracer.com/optout">https://infotracer.com/optout</a></li>
+<li><a href="https://tinyurl.com/dexknowscom">Super Pages</a></li>
+<li><a href="https://sync.me/optout">Sync Me</a></li>
+<li><a href="https://sync.me/optout">https://sync.me/optout</a></li>
+<li><a href="https://www.telephonedirectories.us/Edit_Records">Telephone Directories</a></li>
+<li><a href="https://www.tennhelp.com/public-resources/change-listing.html">Tenn Help</a></li>
+<li><a href="https://thatsthem.com/optout">That’s Them</a></li>
+<li><a href="https://tinyurl.com/dexknowscom">The Real Yellow Pages</a></li>
+<li><a href="https://privacyportal-cdn.onetrust.com/dsarwebform/dbf5ae8a-0a6a-4f4b-b527-7f94d0de6bbc/5dc91c0f-f1b7-4b6e-9d42-76043adaf72d.html">Thomson Reuters/Westlaw/CLEAR</a></li>
+<li><a href="https://service.transunion.com/dss/ccpa_optout.page">TLO</a></li>
+<li><a href="https://dashboard.towerdata.com/optout">Tower Data</a></li>
+<li><a href="https://dashboard.towerdata.com/optout">https://dashboard.towerdata.com/optout</a></li>
+<li><a href="https://www.truecaller.com/unlisting">True Caller</a></li>
+<li><a href="https://www.truepeoplesearch.com/removal">True People Search</a></li>
+<li><a href="https://truepeoplesearch.net/remove-my-info">True People Search.net</a></li>
+<li><a href="https://www.truthfinder.com/opt-out">Truth Finder</a></li>
+<li><a href="https://www.truthfinder.com/opt-out">https://www.truthfinder.com/opt-out</a></li>
+<li><a href="https://www.unitedstatesphonebook.com/contact.php">United States Phonebook</a></li>
+<li><a href="https://www.unitedstatesphonebook.com/contact.php">https://www.unitedstatesphonebook.com/contact.php</a></li>
+<li><a href="https://unmask.com/opt-out">Unmask</a></li>
+<li><a href="https://www.usa-people-search.com/manage">USA People Search</a></li>
+<li><a href="https://www.usa-people-search.com/manage">https://www.usa-people-search.com/manage</a></li>
+<li><a href="https://www.usphonepro.com/opt_out">US Phone Pro</a></li>
+<li><a href="https://www.usphonebook.com/opt-out">US Phonebook</a></li>
+<li><a href="https://www.peoplefinders.com/opt-out#IT">USA Trace</a></li>
+<li><a href="https://www.ussearch.com/opt-out/submit">US Search</a></li>
+<li><a href="https://www.ussearch.com/opt-out/submit">https://www.ussearch.com/opt-out/submit</a></li>
+<li><a href="https://valassis.com/do-not-sell-my-personal-information">Valassis</a></li>
+<li><a href="https://valassis.com/do-not-sell-my-personal-information">https://valassis.com/do-not-sell-my-personal-information</a></li>
+<li><a href="https://www.valpak.com/coupons/show/mailinglistsuppression">Valpak/Cox</a></li>
+<li><a href="https://findrec.com/page/privacy">Verecor</a></li>
+<li><a href="https://vericora.com/ng/control/privacy">Vericora</a></li>
+<li><a href="https://veriforia.com/ng/control/privacy">Veriforia</a></li>
+<li><a href="https://veripages.com/page/contact">Veripages</a></li>
+<li><a href="https://www.dataaccessmanagement.com/verispy">Verispy</a></li>
+<li><a href="https://www.dataaccessmanagement.com/verispy">https://www.dataaccessmanagement.com/verispy</a></li>
+<li><a href="https://federal-data.com/control/profile?url=">Veritora</a></li>
+<li><a href="https://marketingreportoptout.visa.com/OPTOUT/request.do">Visa</a></li>
+<li><a href="https://voterrecords.com/faq">Voter Records</a></li>
+<li><a href="https://www.whitepages.com/suppression_requests">White Pages</a></li>
+<li><a href="https://www.whitepages.com/suppression_requests">https://www.whitepages.com/suppression_requests</a></li>
+<li><a href="https://www.wyty.com/remove">WYTY</a></li>
+<li><a href="https://www.wyty.com/remove">https://www.wyty.com/remove</a></li>
+<li><a href="https://www.xlek.com/optout.php">XLEK</a></li>
+<li><a href="https://www.beenverified.com/app/optout/search">Yellow Book</a></li>
+<li><a href="https://tinyurl.com/dexknowscom">Yellow Pages</a></li>
+<li><a href="https://www.zoominfo.com/about-zoominfo/privacy-manage-profile">ZoomInfo</a></li>
+<li><a href="https://getcontact.com/en/manage">Get Contact Unlisting</a></li>
+<li><a href="https://www.interpol.int/en/How-we-work/Notices/Yellow-Notices/View-Yellow-Notices">Interpol int</a></li>
+</ul>
+<h1 id="osint-opsec"><a class="header" href="#osint-opsec">OSINT OPSEC</a></h1>
+<ul>
+<li><a href="https://github.com/Anon-Planet/thgtoa">thgtoa</a></li>
+<li><a href="https://github.com/aforensics/HiddenVM">HiddenVM</a></li>
+<li><a href="https://github.com/OffcierCia/Crypto-OpSec-SelfGuard-RoadMap">OPSEC Roadmap</a></li>
+<li><a href="https://github.com/RistBS/Awesome-RedTeam-Cheatsheet/blob/master/Miscs/OPSEC%20Guide.md">OPSEC Guides</a></li>
+<li><a href="https://github.com/D00Movenok/BounceBack">BounceBack</a></li>
+<li><a href="https://github.com/BushidoUK/Operational-Security-101">OPSEC 101</a></li>
+<li><a href="https://www.cqcore.uk">cqcore UK</a></li>
+<li><a href="https://www.cqcore.uk">https://www.cqcore.uk</a></li>
+<li><a href="https://github.com/OffcierCia/Crypto-OpSec-SelfGuard-RoadMap">Crypto OpSec SelfGuard RoadMap</a></li>
+<li><a href="https://github.com/slowmist/Blockchain-dark-forest-selfguard-handbook/blob/main/README_ID.md">Blockchain-dark-forest-selfguard-handbook</a></li>
+</ul>
+<h1 id="osint-data-broker-list"><a class="header" href="#osint-data-broker-list">OSINT Data Broker List</a></h1>
+<ul>
+<li><a href="https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List">yaelwrites Data-Broker-Opt-Out-List</a></li>
+<li><a href="https://github.com/glamrock/data-brokers">glamrock data-brokers</a></li>
+<li><a href="https://privacyrights.org/data-brokers">privacyrights</a></li>
+<li><a href="https://github.com/troy/simpleoptout">simpleoptout</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../sock_puppets/vms_emulators.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../management/METHODOLOGY_WORKFLOW.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../sock_puppets/vms_emulators.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../management/METHODOLOGY_WORKFLOW.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

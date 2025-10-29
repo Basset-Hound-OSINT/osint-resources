@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Metadata &amp; Stegonography - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3 id="32-steganographic"><a class="header" href="#32-steganographic">3.2 Steganographic</a></h3>
+<ul>
+<li><a href="https://www.jjtc.com/Steganography/tools.html">110 steganographic tools</a></li>
+<li><a href="https://github.com/TryCatchHCF/Cloakify">Cloakify</a></li>
+<li><a href="https://github.com/ahhh/Stego_Dropper">Stego_Dropper</a></li>
+<li><a href="https://github.com/achorein/silenteye">silenteye</a></li>
+<li><a href="https://github.com/alexandremuzio/deep-steg">deep-steg</a></li>
+<li><a href="https://github.com/Heisenberk/StegX">StegX</a></li>
+<li><a href="https://github.com/owencm/js-steg">js-steg</a></li>
+<li><a href="https://github.com/surg0r/steg">steg</a></li>
+<li><a href="https://github.com/LabunskyA/StegoProxy">StegoProxy</a></li>
+<li><a href="https://github.com/adityangud/Video-Steganography-for-Piracy-Prevention">Video-Steganography-for-Piracy-Prevention</a></li>
+<li><a href="https://github.com/syvaidya/openstego">openstego</a></li>
+<li><a href="https://github.com/beatsbears/steg">steg</a></li>
+<li><a href="https://github.com/lozarcher/Stegbook">Stegbook</a></li>
+<li><a href="https://github.com/thoppe/PDF_steganography">PDF_steganography</a></li>
+<li><a href="https://github.com/raulfraile/steganography_talk">steganography_talk</a></li>
+<li><a href="https://github.com/vgmoose/ascii-steganography">ascii-steganography</a></li>
+<li><a href="https://github.com/gitbrew/voices">voices</a></li>
+<li><a href="https://github.com/daniellerch/stego-retweet">stego-retweet</a></li>
+<li><a href="https://github.com/adyra/ARMS">ARMS</a></li>
+<li><a href="https://github.com/h-lame/stegosaurus">stegosaurus</a></li>
+<li><a href="https://github.com/Rbcafe/Outguess">Outguess</a></li>
+<li><a href="https://github.com/manmar92/BitStegNet">BitStegNet</a></li>
+<li><a href="https://github.com/pboueke/stego-wave">stego-wave</a></li>
+<li><a href="https://github.com/maksimvrs/StegoMP3">StegoMP3</a></li>
+<li><a href="https://github.com/Epredator/jSteganographiX">jSteganographiX</a></li>
+<li><a href="https://github.com/RobinDavid/LSB-Steganography">LSB-Steganography</a></li>
+<li><a href="https://github.com/lukechampine/jsteg">jsteg</a></li>
+<li><a href="https://github.com/DominicBreuker/stego-toolkit">stego-toolkit</a></li>
+<li><a href="https://code.google.com/archive/p/f5-steganography">f5-steganography</a></li>
+<li><a href="https://github.com/fbngrm/Matroschka">Matroschka</a></li>
+<li><a href="https://github.com/harveyslash/Deep-Steganography">Deep-Steganography</a></li>
+<li><a href="https://github.com/danielcardeenas/AudioStego">AudioStego</a></li>
+<li><a href="https://github.com/ktekeli/audio-steganography-algorithms">audio-steganography-algorithms</a></li>
+<li><a href="https://github.com/h3xx/jphs">jphs</a></li>
+<li><a href="https://github.com/fredley/StegDroid">StegDroid</a></li>
+<li><a href="https://github.com/cryptolok/SteCoSteg">SteCoSteg</a></li>
+<li><a href="https://github.com/AlphaDelta/PNG-Mask">PNG-Mask</a></li>
+<li><a href="https://github.com/jes/chess-steg">chess-steg</a></li>
+<li><a href="https://github.com/jbochi/strogonoff">strogonoff</a></li>
+<li><a href="https://github.com/MrAdamBoyd/Pictograph">Pictograph</a></li>
+<li><a href="https://github.com/bannsec/stegoVeritas">stegoVeritas</a></li>
+<li><a href="https://github.com/owencm/secretbook">secretbook</a></li>
+<li><a href="https://github.com/beardog108/snow10">snow10</a></li>
+<li><a href="https://www.petitcolas.net/fabien/steganography/mp3stego">mp3stego</a></li>
+<li><a href="https://compression.ru/video/stego_video">stego_video</a></li>
+<li><a href="https://diit.sourceforge.net">diit</a></li>
+<li><a href="https://stegosploit.info">stegosploit</a></li>
+<li><a href="https://github.com/daniellerch/stegolab">stegolab</a></li>
+<li><a href="https://github.com/daniellerch/stego-book-2014">stego-book-2014</a></li>
+<li><a href="https://github.com/anfractuosity/timeshifter">timeshifter</a></li>
+<li><a href="https://github.com/LabunskyA/covertele">covertele</a></li>
+<li><a href="https://github.com/cdpxe/CCEAP">CCEAP</a></li>
+<li><a href="https://github.com/bsteen/cloud-covert-channels">cloud-covert-channels</a></li>
+<li><a href="https://github.com/Arno0x/DNSExfiltrator">DNSExfiltrator</a></li>
+<li><a href="https://sourceforge.net/p/stegpage/wiki/Home">StegPage</a></li>
+<li><a href="https://sourceforge.net/projects/camerashy">CameraShy</a></li>
+<li><a href="https://github.com/mindcrypt/stegUnicode">stegUnicode</a></li>
+<li><a href="https://stelin.sourceforge.net">stelin</a></li>
+<li><a href="https://www.crazyboy.com/hydan">Hydan</a></li>
+<li><a href="https://hord.ca/projects/deogol/intro.html">deogol</a></li>
+<li><a href="https://jabriffa.wordpress.com/other/hugo-source-code">Hugo source code</a></li>
+<li><a href="https://dde.binghamton.edu/download/stego_algorithms">WOW</a></li>
+<li><a href="https://github.com/DimitarPetrov/stegify">stegify</a></li>
+<li><a href="https://pequalsnp-team.github.io/cheatsheet/steganography-101">Steganography 101</a></li>
+<li><a href="https://github.com/peewpw/Invoke-PSImage">Invoke-PSImage</a></li>
+<li><a href="https://github.com/endgameinc/instegogram">instegogram</a></li>
+</ul>
+<h3 id="33-steganalysis"><a class="header" href="#33-steganalysis">3.3 Steganalysis</a></h3>
+<ul>
+<li><a href="https://vsl.sourceforge.net">VSL</a></li>
+<li><a href="https://book.hacktricks.xyz/stego/stego-tricks">HackTricks - Stego Tricks</a></li>
+<li><a href="https://github.com/zed-0xff/zsteg">zsteg</a></li>
+<li><a href="https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve">Stegsolve</a></li>
+<li><a href="https://github.com/th3gundy/stegCracker">StegCracker</a></li>
+<li><a href="https://github.com/RickdeJager/stegseek">StegSeek</a></li>
+<li><a href="https://www.jjtc.com/Steganalysis">JJTC Steganalysis</a></li>
+<li><a href="https://www.guillermito2.net/stegano">Guillermito's Steganography</a></li>
+<li><a href="https://www.outguess.org">Stegdetect</a></li>
+<li><a href="https://www.spy-hunter.com/stegspydownload.htm">Spy Hunter</a></li>
+<li><a href="https://www.sbir.gov/sbirsearch/detail/151266">Stegkit</a></li>
+<li><a href="https://www.sarc-wv.com/products/stegalyzeras.aspx">Stegalyzer</a></li>
+<li><a href="https://www.wetstonetech.com/cgi-bin/shop.cgi?view,1">Stego Suite</a></li>
+<li><a href="https://stegsecret.sourceforge.net">Stegsecret</a></li>
+<li><a href="https://github.com/b3dk7/StegExpose">StegExpose</a></li>
+<li><a href="https://cryptonibbles.blogspot.com/2016/05/why-mr-robot-does-not-know-steganography.html?m=1">Cryptonibbles - Mr. Robot Steganography</a></li>
+<li><a href="https://www.researchgate.net/publication/277621523_Forensic_analysis_of_video_steganography_tools/download">Forensics Analysis of Video Steganography Tools</a></li>
+<li><a href="https://github.com/daniellerch/aletheia">Aletheia</a></li>
+<li><a href="https://github.com/daniellerch/papers">Danielle Lerch's Papers</a></li>
+<li><a href="https://github.com/rcouturier/steganalysis_with_CNN_for_same_key_images">Steganalysis with CNN for Same Key Images</a></li>
+<li><a href="https://www.deepsteg.com">DeepSteg</a></li>
+<li><a href="https://github.com/Charleswyt/tf_audio_steganalysis">tf_audio_steganalysis</a></li>
+<li><a href="https://github.com/rabi3elbeji/SteganalysisCNN">SteganalysisCNN</a></li>
+<li><a href="https://github.com/YassineYousfi/alaska">ALASKA</a></li>
+<li><a href="https://github.com/YangzlTHU/IStego100K">IStego100K</a></li>
+<li><a href="https://github.com/Ge0rg3/StegOnline">StegOnline</a></li>
+<li><a href="https://github.com/quangntenemy/Steganabara">Steganabara</a></li>
+<li><a href="https://github.com/rokkuran/stegasawus">Stegasawus</a></li>
+<li><a href="https://github.com/rabi3elbeji/udss">UDSS</a></li>
+<li><a href="https://github.com/Chenlang2018/BreakingSteganalysisGAN">BreakingSteganalysisGAN</a></li>
+<li><a href="https://github.com/jessica0x73/steganalyse">Steganalyse</a></li>
+<li><a href="https://github.com/Paradoxis/StegCracker">StegCracker</a></li>
+<li><a href="https://github.com/welloworld/welloganography-solver">Welloganography Solver</a></li>
+<li><a href="https://www.mcafee.com/enterprise/en-sg/downloads/free-tools/steganography.html">McAfee Free Tools - Steganography</a></li>
+<li><a href="https://github.com/IncideDigital/Mistica">Mistica</a></li>
+<li><a href="https://github.com/javierwilson/cookie-stego">Cookie Stego</a></li>
+<li><a href="https://github.com/Zeecka/AperiSolve">AperiSolve</a></li>
+<li><a href="https://github.com/librauee/Steganalysis">Steganalysis</a></li>
+<li><a href="https://github.com/Caenorst/YeNet-Pytorch">YeNet-Pytorch</a></li>
+<li><a href="https://github.com/yedmed/steganalysis_with_CNN_Yedroudj-Net">Steganalysis with CNN - Yedroudj-Net</a></li>
+<li><a href="https://github.com/brijeshiitg/Pytorch-implementation-of-SRNet">Pytorch implementation of SRNet</a></li>
+<li><a href="https://github.com/luca-m/lsb-toolkit">LSB Toolkit</a></li>
+<li><a href="https://github.com/jiangszzzzz/CAECNNcode">CAECNNcode</a></li>
+<li><a href="https://github.com/aminfazy/DL_steganalysis">DL Steganalysis</a></li>
+<li><a href="https://github.com/Linyuzhen/audio_steganalysis">Audio Steganalysis</a></li>
+<li><a href="https://github.com/bolin-chen/audio-steganalysis-cnn">Audio Steganalysis CNN</a></li>
+<li><a href="https://github.com/deepsteg/deepsteg">DeepSteg</a></li>
+<li><a href="https://github.com/dfish13/Stegasaurus2">Stegasaurus2</a></li>
+</ul>
+<h3 id="websites-files-metadata-analyze-and-files-downloads"><a class="header" href="#websites-files-metadata-analyze-and-files-downloads">Website's files metadata analyze and files downloads</a></h3>
+<ul>
+<li><a href="https://github.com/laramies/metagoofil">Metagoofil</a></li>
+<li><a href="https://github.com/ferreiraklet/Aline">Aline</a></li>
+<li><a href="https://github.com/loseys/Goblyn">Goblyn</a></li>
+<li><a href="https://github.com/dievus/msdorkdump">DORK DUMP</a></li>
+<li><a href="https://products.groupdocs.app/metadata/total">VERY QUICK and SIMPLE metadata online editor and remover</a></li>
+<li><a href="https://github.com/SirCryptic/autoexif">AutoExif</a></li>
+<li><a href="https://github.com/vstinner/hachoir">HACHOIR</a></li>
+</ul>
+<h2 id="exif-tag-name-and-data-type"><a class="header" href="#exif-tag-name-and-data-type">Exif tag name and data type</a></h2>
+<ul>
+<li><a href="https://exiftool.org">Exiftool</a></li>
+<li><a href="https://exiftool.org">https://exiftool.org</a></li>
+<li><a href="https://exiftool.org/TagNames">List tagname</a></li>
+<li><a href="https://exiftool.org/TagNames">https://exiftool.org/TagNames</a></li>
+<li><a href="https://metacpan.org/dist/Image-ExifTool/view/lib/Image/ExifTool/TagNames.pod">List tagnme 2</a></li>
+<li><a href="https://manpages.org/imageexiftooltagnames/3">List tagname 3</a></li>
+</ul>
+<h2 id="delete-mass-metadata"><a class="header" href="#delete-mass-metadata">Delete mass metadata</a></h2>
+<ul>
+<li><a href="https://github.com/davidbombal/red-python-scripts/blob/main/remove_exif.py">Exif python script remover</a></li>
+</ul>
+<h1 id="exif-analysis"><a class="header" href="#exif-analysis">EXIF Analysis</a></h1>
+<ul>
+<li><a href="https://regex.info/exif.cgi">regex</a></li>
+<li><a href="https://regex.info/exif.cgi">https://regex.info/exif.cgi</a></li>
+<li><a href="https://www.findexif.com">FindExif</a></li>
+<li><a href="https://www.findexif.com">https://www.findexif.com</a></li>
+<li><a href="https://metapicz.com">metapicz</a></li>
+<li><a href="https://metapicz.com">https://metapicz.com</a></li>
+<li><a href="https://www.imageforensic.org">imageforensic</a></li>
+<li><a href="https://www.imageforensic.org">https://www.imageforensic.org</a></li>
+<li><a href="https://metapicz.com">metapicz</a></li>
+<li><a href="https://metapicz.com">https://metapicz.com</a></li>
+<li><a href="https://jimpl.com">jimpl</a></li>
+<li><a href="https://jimpl.com">https://jimpl.com</a></li>
+<li><a href="https://www.pic2map.com">pic2map</a></li>
+<li><a href="https://www.pic2map.com">https://www.pic2map.com</a></li>
+<li><a href="https://labs.tib.eu/geoestimation">labs.tib.eu</a></li>
+<li><a href="https://labs.tib.eu/geoestimation">https://labs.tib.eu/geoestimation</a></li>
+<li><a href="https://github.com/redaelli/imago-forensics">imago-forensics</a></li>
+<li><a href="https://github.com/andy-shev/RenRot">Renrot Exif</a></li>
+<li><a href="https://vsudo.net/tools/geotag">Geotag</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/photosint/gonhdjmkgfkokhkflfhkbiagbmoolhcd/related?hl=nl">PhotOSINT Browser Extension</a></li>
+<li><a href="https://github.com/davidbombal/red-python-scripts/blob/main/exif.py">Python exif extractor</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../files/AUDIO_ANALYSIS.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../files/forensics.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../files/AUDIO_ANALYSIS.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../files/forensics.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

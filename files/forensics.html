@@ -1,0 +1,465 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Forensics - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3 id="41--forensic"><a class="header" href="#41--forensic">4.1  Forensic</a></h3>
+<ul>
+<li><a href="https://www.sleuthkit.org/autopsy">Autopsy</a></li>
+<li><a href="https://github.com/sleuthkit/sleuthkit">sleuthkit</a></li>
+<li><a href="https://www.guidancesoftware.com/products/Pages/encase-forensic/overview.aspx">EnCase</a></li>
+<li><a href="https://malzilla.sourceforge.net">malzilla</a></li>
+<li><a href="https://servicos.dpf.gov.br/ferramentas/IPED">IPED - Indexador e Processador de Evidências Digitais</a></li>
+<li><a href="https://github.com/orlikoski/CyLR">CyLR</a></li>
+<li><a href="https://www.caine-live.net">CAINE</a></li>
+<li><a href="https://www.volatilityfoundation.org">Volatility</a></li>
+<li><a href="https://www.fireeye.com/services/freeware/redline.html">Redline</a></li>
+<li><a href="https://github.com/google/rekall">REKALL</a></li>
+<li><a href="https://plaso.readthedocs.io">Log2Timeline (Plaso)</a></li>
+<li><a href="https://cybersectools.com/tools/cyber-triage">Cyber Triage</a></li>
+<li><a href="https://cybersectools.com/tools/dumpzilla">Dumpzilla</a></li>
+<li><a href="https://cybersectools.com/tools/dftimewolf">DFTimewolf</a></li>
+<li><a href="https://cybersectools.com/tools/iped-digital-forensic-tool">IPED Digital Forensic Tool</a></li>
+<li><a href="https://cybersectools.com/tools/volatility-3">Volatility 3</a></li>
+<li><a href="https://cybersectools.com/tools/binalyze-air">Binalyze AIR</a></li>
+<li><a href="https://cybersectools.com/tools/testdisk">TestDisk</a></li>
+<li><a href="https://cybersectools.com/tools/winhex">WinHex</a></li>
+<li><a href="https://cybersectools.com/tools/skadi">Skadi</a></li>
+<li><a href="https://cybersectools.com/tools/hoarder">Hoarder</a></li>
+<li><a href="https://cybersectools.com/tools/libregf">libregf</a></li>
+<li><a href="https://cybersectools.com/tools/radare2">Radare2</a></li>
+<li><a href="https://cybersectools.com/tools/silk-guardian">Silk Guardian</a></li>
+<li><a href="https://cybersectools.com/tools/evtkit">evtkit</a></li>
+<li><a href="https://cybersectools.com/tools/pancake-viewer">Pancake Viewer</a></li>
+<li><a href="https://cybersectools.com/tools/mobile-verification-toolkit">Mobile Verification Toolkit (MVT)</a></li>
+<li><a href="https://cybersectools.com/tools/turbinia">Turbinia</a></li>
+<li><a href="https://cybersectools.com/tools/belkasoft-evidence-center">Belkasoft Evidence Center</a></li>
+<li><a href="https://cybersectools.com/tools/libevt">libevt</a></li>
+<li><a href="https://github.com/GuidoBartoli/sherloq">Sherloq</a></li>
+<li><a href="https://github.com/DFIRKuiper/Kuiper">Kuiper</a></li>
+<li><a href="https://github.com/keydet89/RegRipper4.0">RegRipper4.0</a></li>
+</ul>
+<h2 id="mobile-forensics"><a class="header" href="#mobile-forensics">Mobile Forensics</a></h2>
+<ul>
+<li><a href="https://github.com/CScorza/OSINT-FORENSICS-MOBILE">OSINT/FORENSICS MOBILE - Cell phone investigations</a></li>
+<li><a href="https://github.com/mvt-project/mvt">MVT - Mobile Verification Toolkit</a></li>
+<li><a href="https://github.com/jfarley248/MEAT">MEAT - iOS acquisition toolkit</a></li>
+<li><a href="https://github.com/den4uk/andriller">Andriller - Android forensic acquisition</a></li>
+<li><a href="https://github.com/scorelab/ANDROPHSY">ANDROPHSY - Android forensic tool</a></li>
+<li><a href="https://github.com/botherder/androidqf">Androidqf - Android Quick Forensics</a></li>
+<li><a href="https://github.com/mac4n6/iOS-Frequent-Locations-Dumper">iOS Frequent Locations Dumper</a></li>
+</ul>
+<h2 id="dockercontainer-forensics"><a class="header" href="#dockercontainer-forensics">Docker/Container Forensics</a></h2>
+<ul>
+<li>
+<p><a href="https://github.com/docker-forensics-toolkit/toolkit">Docker Forensics Toolkit</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Vault-Cyber-Security/osint">OSINT Docker image</a></p>
+</li>
+<li>
+<p><a href="https://github.com/redaelli/imago-forensics">Imago-forensics - Digital evidence extraction</a></p>
+</li>
+<li>
+<p><a href="https://github.com/patronuscode/awesome-forensics">Awesome forensics</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Yamato-Security/hayabusa">Hayabusa - Windows event log analyzer</a></p>
+</li>
+<li>
+<p><a href="https://github.com/AdamWhiteHat/Judge-Jury-and-Executable">Judge Jury and Executable - File system forensics</a></p>
+</li>
+<li>
+<p><a href="https://github.com/mesquidar/ForensicsTools">Forensics Tools</a></p>
+</li>
+<li>
+<p><a href="https://github.com/intezer/linux-explorer">Linux explorer - Live forensics toolbox</a></p>
+</li>
+<li>
+<p><a href="https://github.com/karthik997/Forensic_Toolkit">Forensic Toolkit - Image, audio, network analysis</a></p>
+</li>
+<li>
+<p><a href="https://github.com/aquasecurity/tracee">TRACEE - Runtime Security and Forensics</a></p>
+</li>
+<li>
+<p><a href="https://github.com/elfmaster/libelfmaster">Secure ELF - ELF parsing/loading library</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ChmaraX/forensix">Forensix - Chrome forensic tool</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Johnng007/Live-Forensicator">Live Forensicator - Powershell IR tool</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Invoke-IR/PowerForensics">Power Forensic - Live forensic analysis</a></p>
+</li>
+<li>
+<p><a href="https://github.com/google/turbinia">Turbinia - Digital forensic automation</a></p>
+</li>
+<li>
+<p><a href="https://github.com/CScorza/Analisi-Digital-Forense">Analisi Digital Forense - Forensic acquisition tools</a></p>
+</li>
+<li>
+<p><a href="https://github.com/HSNHK/Computer-forensics">Computer forensics - Best tools and resources</a></p>
+</li>
+<li>
+<p><a href="https://github.com/shadawck/awesome-anti-forensic">Awesome anti-forensic</a></p>
+</li>
+<li>
+<p><a href="https://github.com/QXJ6YW4/SimpleImager">Simple Imager - Live Windows acquisition</a></p>
+</li>
+<li>
+<p><a href="https://github.com/thedfirofficer/sabonis">Sabonis - DFIR pivoting tool</a></p>
+</li>
+<li>
+<p><a href="https://github.com/aydinnyunus/exifLooter">Exif Looter - Image geolocation finder</a></p>
+</li>
+<li>
+<p><a href="https://github.com/SirCryptic/autoexif">Autoexif - Remove sensitive photo data</a></p>
+</li>
+<li>
+<p><a href="https://github.com/glutanimate/PDFMtEd">PDFMtEd - PDF Metadata Editor</a></p>
+</li>
+<li>
+<p><a href="https://github.com/tmont/audio-metadata">Audio metadata - Extract metadata</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Microsoft/app-metadata">App Metadata - Mobile package metadata</a></p>
+</li>
+<li>
+<p><a href="https://github.com/BSI-Bund/RdpCacheStitcher">RdpCacheStitcher - RDP cache bitmap reconstruction</a></p>
+</li>
+<li>
+<p><a href="https://github.com/sepinf-inc/IPED">IPED - Digital evidence processing</a></p>
+</li>
+</ul>
+<h1 id="digital-forensics"><a class="header" href="#digital-forensics">Digital Forensics</a></h1>
+<ul>
+<li><a href="https://github.com/Jarl-Bjoern/Yggdrasil">Yggdrasil</a></li>
+<li><a href="https://github.com/Jarl-Bjoern/Yggdrasil">https://github.com/Jarl-Bjoern/Yggdrasil</a></li>
+<li><a href="https://www.misp-project.org">MISP</a></li>
+<li><a href="https://www.misp-project.org">https://www.misp-project.org</a></li>
+<li><a href="https://www.maltego.com">Maltego</a></li>
+<li><a href="https://www.maltego.com">https://www.maltego.com</a></li>
+<li><a href="https://filesec.io">Filesec</a></li>
+<li><a href="https://filesec.io">https://filesec.io</a></li>
+<li><a href="https://www.elastic.co/logstash">Logstash kibana</a></li>
+<li><a href="https://www.elastic.co/logstash">https://www.elastic.co/logstash</a></li>
+<li><a href="https://www.elastic.co/kibana">Kibana</a></li>
+<li><a href="https://www.elastic.co/kibana">https://www.elastic.co/kibana</a></li>
+<li><a href="https://extundelete.sourceforge.net">Extundelete Ext3 or ext4 partition recovery</a></li>
+<li><a href="https://extundelete.sourceforge.net">https://extundelete.sourceforge.net</a></li>
+<li><a href="https://www.cgsecurity.org/wiki/TestDisk_Download">TestDisk</a></li>
+<li><a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a></li>
+<li><a href="https://forum.seccodeid.com/d/avillaforensics-mobile-digital-forensics">Avilla Forensics</a></li>
+<li><a href="https://www.autopsy.com">Autopsy</a></li>
+<li><a href="https://www.autopsy.com">https://www.autopsy.com</a></li>
+<li><a href="https://www.ccleaner.com/recuva">Recuva</a></li>
+<li><a href="https://www.magnetforensics.com/free-tools">Magnetforensics</a></li>
+<li><a href="https://www.magnetforensics.com/free-tools">https://www.magnetforensics.com/free-tools</a></li>
+<li><a href="https://www.opentext.com/products/security-cloud">Opentxt</a></li>
+<li><a href="https://forum.seccodeid.com/d/ntfstool-forensics-tool-for-ntfs-parser-mft-bitlocker-deleted-files">Ntfstool Forensics</a></li>
+<li><a href="https://www.sleuthkit.org/sleuthkit">Sleuthkit</a></li>
+<li><a href="https://www.sleuthkit.org/sleuthkit">https://www.sleuthkit.org/sleuthkit</a></li>
+<li><a href="https://www.sans.org/tools/sift-workstation">SIFT SANS</a></li>
+<li><a href="https://www.sans.org/tools/sift-workstation">https://www.sans.org/tools/sift-workstation</a></li>
+<li><a href="https://github.com/teamdfir/sift-cli/releases/tag/v1.8.5">SIFT CLI</a></li>
+<li><a href="https://www.maltego.com/transform-hub/hyas-insight">HYAS Insight</a></li>
+<li><a href="https://www.maltego.com/transform-hub/hyas-insight">https://www.maltego.com/transform-hub/hyas-insight</a></li>
+<li><a href="https://github.com/redaelli/imago-forensics">imago-forensics</a></li>
+<li><a href="https://github.com/QXJ6YW4/SimpleImager">SimpleImager</a></li>
+<li><a href="https://processhacker.sourceforge.io">Processhacker</a></li>
+<li><a href="https://processhacker.sourceforge.io">https://processhacker.sourceforge.io</a></li>
+<li><a href="https://koodous.com">Koodous</a></li>
+<li><a href="https://koodous.com">https://koodous.com</a></li>
+<li><a href="https://www.nirsoft.net/utils/browsing_history_view.html">Nirsoft Bwowsing History</a></li>
+<li><a href="https://dfrlab.org/research">dfrlab.org</a></li>
+<li><a href="https://dfrlab.org/research">https://dfrlab.org/research</a></li>
+<li><a href="https://www.atlanticcouncil.org">atlanticcouncil</a></li>
+<li><a href="https://www.atlanticcouncil.org">https://www.atlanticcouncil.org</a></li>
+<li><a href="https://mever.iti.gr/forensics">Mever</a></li>
+<li><a href="https://mever.iti.gr/forensics">https://mever.iti.gr/forensics</a></li>
+<li><a href="https://cellebrite.com/en/ufed">cellebrite</a></li>
+<li><a href="https://cellebrite.com/en/ufed">https://cellebrite.com/en/ufed</a></li>
+<li><a href="https://github.com/MobSF/Mobile-Security-Framework-MobSF">MOBSF</a></li>
+<li><a href="https://github.com/m0bilesecurity/RMS-Runtime-Mobile-Security">RMS - Mobile Pentest</a></li>
+<li><a href="https://github.com/dwisiswant0/apkleaks">APK Leaks</a></li>
+<li><a href="https://github.com/cristianzsh/forensictools">forensictools</a></li>
+<li><a href="https://github.com/k1nd0ne/VolWeb">VolWeb</a></li>
+<li><a href="https://github.com/montysecurity/C2-Tracker">C2-Tracker</a></li>
+<li><a href="https://www.wannabrowser.net">Wanna Browser Sandbox</a></li>
+<li><a href="https://www.wannabrowser.net">https://www.wannabrowser.net</a></li>
+<li><a href="https://www.winitor.com/download">pestudio</a></li>
+<li><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/procmon">procmon</a></li>
+<li><a href="https://fireeye.market/apps/S7cWpi9W">IoC Editor</a></li>
+<li><a href="https://gtfobins.github.io">Gfobins</a></li>
+<li><a href="https://gtfobins.github.io">https://gtfobins.github.io</a></li>
+<li><a href="https://lolbas-project.github.io">Lolbas</a></li>
+<li><a href="https://lolbas-project.github.io">https://lolbas-project.github.io</a></li>
+<li><a href="https://www.loobins.io/tactics/collection">Loonbins</a></li>
+<li><a href="https://www.loobins.io/tactics/collection">https://www.loobins.io/tactics/collection</a></li>
+<li><a href="https://sociallinks.io">sociallinks</a></li>
+<li><a href="https://sociallinks.io">https://sociallinks.io</a></li>
+<li><a href="https://www.decompiler.com">decompiler</a></li>
+<li><a href="https://www.decompiler.com">https://www.decompiler.com</a></li>
+<li><a href="https://www.exterro.com/digital-forensics-software/ftk-imager">exterro</a></li>
+<li><a href="https://www.wireshark.org">wireshark</a></li>
+<li><a href="https://www.wireshark.org">https://www.wireshark.org</a></li>
+<li><a href="https://www.kali.org/tools/bulk-extractor">bulk-extractor</a></li>
+<li><a href="https://www.kali.org/tools/bulk-extractor">https://www.kali.org/tools/bulk-extractor</a></li>
+<li><a href="https://www.sleuthkit.org">sleuthkit</a></li>
+<li><a href="https://recoverit.wondershare.net/ad/data-recovery.html?gad_source=1">recoverit</a></li>
+<li><a href="https://www.easeus.com">easeus</a></li>
+<li><a href="https://www.easeus.com">https://www.easeus.com</a></li>
+<li><a href="https://belkasoft.com/x">belkasoft</a></li>
+<li><a href="https://www.domaintools.com">domaintools</a></li>
+<li><a href="https://www.domaintools.com">https://www.domaintools.com</a></li>
+<li><a href="https://www.imperva.com/products/attack-analytics">Imperva</a></li>
+<li><a href="https://www.imperva.com/products/attack-analytics">https://www.imperva.com/products/attack-analytics</a></li>
+<li><a href="https://www.magnetforensics.com">magnetforensics</a></li>
+<li><a href="https://www.ibm.com/products/qradar-siem">IBM</a></li>
+<li><a href="https://github.com/Keidan/HexViewer">Hex viewer</a></li>
+<li><a href="https://www.ghidra-sre.org">Ghidra</a></li>
+<li><a href="https://www.ghidra-sre.org">https://www.ghidra-sre.org</a></li>
+<li><a href="https://hex-rays.com/ida-free">IDA</a></li>
+<li><a href="https://hex-rays.com/ida-free">https://hex-rays.com/ida-free</a></li>
+<li><a href="https://github.com/DominicBreuker/pspy">PSPY Linux</a></li>
+<li><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer">Process explorer Windows</a></li>
+<li><a href="https://github.com/volatilityfoundation">volatilityfoundation</a></li>
+<li><a href="https://fireeye.market">Fire eye tool</a></li>
+<li><a href="https://assets.contentstack.io/v3/assets/blt36c2e63521272fdc/bltd8ba96a0fce78883/Free_Faculty_Tools.pdf">SANS Faculty Free Tools</a></li>
+<li><a href="https://29a.ch/photo-forensics">Forensically</a></li>
+<li><a href="https://29a.ch/photo-forensics">https://29a.ch/photo-forensics</a></li>
+<li><a href="https://www.garykessler.net/library/file_sigs.html">GCK'S FILE SIGNATURES TABLE</a></li>
+<li><a href="https://stylesuxx.github.io/steganography">stylesuxx Steganography Online</a></li>
+<li><a href="https://stylesuxx.github.io/steganography">https://stylesuxx.github.io/steganography</a></li>
+<li><a href="https://github.com/adrianlopezroche/fdupes">fdupes</a></li>
+<li><a href="https://georgeom.net/StegOnline/upload">georgeom</a></li>
+<li><a href="https://fotoforensics.com">fotoforensics</a></li>
+<li><a href="https://fotoforensics.com">https://fotoforensics.com</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../files/METADATA_STEGO.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../files/code.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../files/METADATA_STEGO.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../files/code.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

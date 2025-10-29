@@ -1,0 +1,755 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Random Tools Collection - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3 id="61--utility"><a class="header" href="#61--utility">6.1  Utility</a></h3>
+<ul>
+<li><a href="https://hashcat.net/cap2hashcat">Hashcat Pass Recovery</a></li>
+<li><a href="https://browserleaks.com">BrowserLeaks</a></li>
+<li><a href="https://www.hudsonrock.com/cavaliergpt">CavalierGPT - The First Comprehensive Infostealers AI Bot</a></li>
+<li><a href="https://www.gravwell.io/gravwell-community-edition-plan">Gravwell Community Edition</a></li>
+<li><a href="https://github.com/andreyglauzer/VigilantOnion">VigilantOnion</a></li>
+<li><a href="https://github.com/danieleperera/OnionIngestor">OnionIngestor</a></li>
+<li><a href="https://github.com/securing/DumpsterDiver">DumpsterDiver</a></li>
+<li><a href="https://github.com/factionsecurity/faction">Faction</a></li>
+</ul>
+<h3 id="62--miscellaneous"><a class="header" href="#62--miscellaneous">6.2  Miscellaneous</a></h3>
+<ul>
+<li><a href="https://cybersectools.com/tools/getallurls-gau">GetAllURLs (gau)</a></li>
+<li><a href="https://cybersectools.com/tools/guardey">Guardey</a></li>
+<li><a href="https://cybersectools.com/tools/nightshade">NightShade</a></li>
+<li><a href="https://cybersectools.com/tools/smali-baksmali-mode-for-emacs">Smali/Baksmali mode for Emacs</a></li>
+<li><a href="https://cybersectools.com/tools/ctf-writeups">Ctf-writeups</a></li>
+<li><a href="https://cybersectools.com/tools/secrets-of-a-high-performance-security-focused-agile-team">Secrets of a High Performance Security-Focused Agile Team</a></li>
+<li><a href="https://cybersectools.com/tools/dalvik-opcodes">Dalvik Opcodes</a></li>
+<li><a href="https://cybersectools.com/tools/aws-config">AWS Config</a></li>
+<li><a href="https://github.com/fastfire/deepdarkCTI">DeepDarkCTI</a></li>
+</ul>
+<h3 id="routinedata-extraction-automation"><a class="header" href="#routinedata-extraction-automation">Routine/Data Extraction Automation</a></h3>
+<ul>
+<li><a href="https://www.scrapersnbots.com/webtools">Scrapersnbots</a></li>
+<li><a href="https://manytools.org">Manytools</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/webdext/jkgddhdaaejpmlmddpbedgnkdgiacblk/related">Webdext</a></li>
+<li><a href="https://www.cloudhq.net/apps">CloudHQ</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/magical-text-expander/iibninhmiggehlcdolcilmhacighjamp/related">Magical. Text Expander</a></li>
+<li><a href="https://emn178.github.io/online-tools/index.html">Online tools</a></li>
+<li><a href="https://shadowcrypt.net/tools">Shadowcrypt Tools</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/web-history-stat/fccaimiahhpljpnlnheimldcfhdhjgdl/related">Web history stat</a></li>
+<li><a href="https://coveryourtracks.eff.org">coveryourtracks.eff.org</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/webmapper/foachceonkmkeiigdbkjcihnaabppicf/related">Webmapper</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/export-historybookmarks-t/dcoegfodcnjofhjfbhegcgjgapeichlf">Export Chrome History</a></li>
+<li><a href="https://github.com/cipher387/grep_for_osint">Grep for OSINT</a></li>
+<li><a href="https://diffnow.com">Diffnow.com</a></li>
+<li><a href="https://github.com/mnismt/CompressedCrack">CompressedCrack</a></li>
+<li><a href="https://www.protectedzip.com">Encrytped ZIP file creator</a></li>
+<li><a href="https://github.com/metachris/pdfx">PDFX</a></li>
+<li><a href="https://t.me/mediainforobot">@mediainforobot</a></li>
+<li><a href="https://github.com/quodlibet/mutagen">Mutagen</a></li>
+<li><a href="https://voyant-tools.org">voyant-tools.org</a></li>
+<li><a href="https://www.aconvert.com/analyze.html">Analyze file format online</a></li>
+<li><a href="https://www.toolsley.com/file.html">ToolSley: analyze file format online</a></li>
+<li><a href="https://recoverytoolbox.com">RecoveryToolBox</a></li>
+<li><a href="https://mr0grog.github.io/google-docs-to-markdown">Google Docs to Markdown online converter</a></li>
+<li><a href="https://binvis.io">Binvis</a></li>
+<li><a href="https://script.google.com/macros/s/AKfycbxbGNGajrxv-HbX2sVY2OTu7yj9VvxlOMOeQblZFuq7rYm7uyo/exec">Gdrive-copy</a></li>
+<li><a href="https://siftrss.com">Siftrss.com</a></li>
+<li><a href="https://json-csv.com">JSON to CSV</a></li>
+<li><a href="https://www.textise.net">Textise.net</a></li>
+<li><a href="https://www.checkmi.info">Checking MI account</a></li>
+<li><a href="https://contex.com/serial-number-lookup">Contex condoms serial number lookup</a></li>
+<li><a href="https://www.imeipro.info/check_imei_iphone.html">iPhone IMEI Checker</a></li>
+<li><a href="https://sndeep.info/en">SNDeepInfo</a></li>
+<li><a href="https://nonfungible.com">Nonfungible.com</a></li>
+<li><a href="https://nftsearch.site">Numbers</a></li>
+<li><a href="https://fingible.nftport.xyz">Fingble Nftport</a></li>
+<li><a href="https://wordstat.yandex.ru">Wordstat.yandex.ru</a></li>
+<li><a href="https://trends.google.com/trends">Trends Google</a></li>
+<li><a href="https://keywordtool.io/search/keywords">Keywordtool.io</a></li>
+<li><a href="https://books.google.com/ngrams">Google Books Ngram Viewer</a></li>
+<li><a href="https://news-explorer.mybluemix.net">News Explorer BlueMix</a></li>
+<li><a href="https://trends.pinterest.com">Pinterest Trends</a></li>
+<li><a href="https://github.com/GeneralMills/pytrends">PyTrends</a></li>
+<li><a href="https://keywordspeopleuse.com">KeyWordPeopleUse</a></li>
+<li><a href="https://github.com/facundoolano/google-play-scraper">Google Play Scraper</a></li>
+<li><a href="https://github.com/facundoolano/app-store-scraper">App Store Scraper</a></li>
+<li><a href="https://lei.bloomberg.com/search?.=1&amp;.=-lastUpdateDate&amp;.=&amp;.=&amp;.=%5B%5D&amp;ts=2447821118">Lei.bloomberg.com</a></li>
+<li><a href="https://candid.org/research-and-verify-nonprofits/990-finder">990 finder</a></li>
+<li><a href="https://github.com/rlyonheart/occli">Open Corporates Command Line Client (Occli)</a></li>
+<li><a href="https://emm.newsbrief.eu/NewsBrief/clusteredition/ru/latest.html">NewsBrief</a></li>
+<li><a href="https://relateoak2hkvdty6ldp7x67hys7pzaeax3hwhidbqkjzva3223jpxqd.onion.pet">Related List</a></li>
+<li><a href="https://www.investing.com">Investing.com</a></li>
+<li><a href="https://fccid.io">FCCID.IO</a></li>
+<li><a href="https://tradint.io/tradint-researcher">Tradeint</a></li>
+<li><a href="https://cipher387.github.io/corporative_registry_worldwide_catalog">Corporative Registry Catalog</a></li>
+<li><a href="https://search.gleif.org/#/search">LEI search</a></li>
+<li><a href="https://openownership.org">openownership.org</a></li>
+<li><a href="https://oec.world">Oec World</a></li>
+<li><a href="https://skymem.info">Skymem</a></li>
+<li><a href="https://banks.data.fdic.gov/bankfind-suite/bankfind">FDIC search</a></li>
+<li><a href="https://www.iban.com/iban-checker">Iban.com</a></li>
+<li><a href="https://api.freebinchecker.com/bin/658205">Freebin Checker</a></li>
+<li><a href="https://github.com/krdsploit/Credit-OSINT">Credit OSINT</a></li>
+<li><a href="https://www.tmdn.org/tmdsview-web">TMDN Design View</a></li>
+<li><a href="https://tmsearch.uspto.gov/bin/gate.exe?f=login&amp;p_lang=english&amp;p_d=trmk">TESS</a></li>
+<li><a href="https://www.tendersinfo.com">TendersInfo</a></li>
+<li><a href="https://www.barcodelookup.com">Barcode lookup</a></li>
+<li><a href="https://panjiva.com">Panjiva.com</a></li>
+<li><a href="https://en.52wmb.com">en.52wmb.com</a></li>
+</ul>
+<h3 id="amazon"><a class="header" href="#amazon">Amazon</a></h3>
+<ul>
+<li><a href="https://github.com/scrapehero-code/amazon-scraper">Amazon Scraper</a></li>
+<li><a href="https://amazon-asin.com">Amazon ASIN Finder</a></li>
+<li><a href="https://www.sellerapp.com/amazon-reverse-asin.html">Sellerapp.com. Amazon Reverse ASIN search</a></li>
+<li><a href="https://reelgood.com">Reelgood.com</a></li>
+<li><a href="https://imcdb.org">IMCDB</a></li>
+<li><a href="https://frinkiac.com">Sympsons screencaps search</a></li>
+<li><a href="https://morbotron.com">Search Futuruma screencaps</a></li>
+<li><a href="https://masterofallscience.com">Rick and Morty screencaps search</a></li>
+<li><a href="https://www.subzin.com">Subzin.com</a></li>
+<li><a href="https://www.doesthedogdie.com">Doesthedogdie</a></li>
+<li><a href="https://playphrase.me">PlayPhrase</a></li>
+</ul>
+<h3 id="netflix"><a class="header" href="#netflix">Netflix</a></h3>
+<ul>
+<li>
+<p><a href="https://unogs.com">Unogs.com</a></p>
+</li>
+<li>
+<p><a href="https://flixable.com">flixable.com</a></p>
+</li>
+<li>
+<p><a href="https://flixwatch.co">flixwatch.co</a></p>
+</li>
+<li>
+<p><a href="https://flicksurfer.com">flicksurfer.com</a></p>
+</li>
+<li>
+<p><a href="https://flixboss.com">flixboss.com</a></p>
+</li>
+<li>
+<p><a href="https://flickmetrix.com">flickmetrix.com</a></p>
+</li>
+<li>
+<p><a href="https://whatthehellshouldiwatchonnetflix.com">whatthehellshouldiwatchonnetflix.com</a></p>
+</li>
+<li>
+<p><a href="https://netflix-codes.com">netflix-codes.com</a></p>
+</li>
+<li>
+<p><a href="https://www.radio.net/local-stations">Radion.net</a></p>
+</li>
+<li>
+<p><a href="https://americanarchive.org">American Archive of Public Broadcasting</a></p>
+</li>
+<li>
+<p><a href="https://rx.linkfanel.net">Wideband shortware radio receiver map</a></p>
+</li>
+<li>
+<p><a href="https://iptv-org.github.io">IPTV org</a></p>
+</li>
+<li>
+<p><a href="https://osint.hopain.cyou/index.html">Osint Search Tools</a></p>
+</li>
+<li>
+<p><a href="https://github.com/matamorphosis/Scrummage">Scrummage</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Lucksi/Mr.Holmes">Mr.Holmes</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Himatric/SEMID">SEMID osint framework</a></p>
+</li>
+<li>
+<p><a href="https://github.com/MR-NULL666/NAZAR">NAZAR</a></p>
+</li>
+<li>
+<p><a href="https://github.com/C0MPL3XDEV/E4GL30S1NT">E4GL30S1NT</a></p>
+</li>
+<li>
+<p><a href="https://github.com/bhavsec/reconspider">Recon Spider</a></p>
+</li>
+<li>
+<p><a href="https://nitinpandey.in/ihunt">Hunt Osint Framework</a></p>
+</li>
+<li>
+<p><a href="https://github.com/nodauf/GoMapEnum">GoMapEnum</a></p>
+</li>
+<li>
+<p><a href="https://extendsclass.com">ExtendClass</a></p>
+</li>
+<li>
+<p><a href="https://addons.mozilla.org/ru/firefox/addon/foxyrecon">FoxyRecon</a></p>
+</li>
+<li>
+<p><a href="https://github.com/termuxhackers-id/SIGIT">S.I.G.I.T</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ByDog3r/GvngSearch">GVNG Search</a></p>
+</li>
+<li>
+<p><a href="https://github.com/saeeddhqan/Maryam">Owasp Maryam</a></p>
+</li>
+<li>
+<p><a href="https://github.com/hitesh22rana/ghoulbond">Ghoulbond</a></p>
+</li>
+<li>
+<p><a href="https://gf.dev/toolbox">Geekflare Tools</a></p>
+</li>
+<li>
+<p><a href="https://docs.google.com/spreadsheets/d/1_x3PXGOahhKT3-ePaWhb3hM1dVxjmBvsVlw6D6lilTQ/edit#gid=1116439221">Oryon OSINT query tool</a></p>
+</li>
+<li>
+<p><a href="https://github.com/leebaird/discover">Discover</a></p>
+</li>
+<li>
+<p><a href="https://t.me/HowToFindBot">Telegram HowToFindBot</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Te-k/harpoon">Harpoon</a></p>
+</li>
+<li>
+<p><a href="https://researchbuzz.github.io">ResearchBuzz</a></p>
+</li>
+<li>
+<p><a href="https://github.com/d8rkmind/Profounder">Profounder</a></p>
+</li>
+<li>
+<p><a href="https://osintcombine.tools">Osintcombine Tools</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Bafomet666/OSINT-SAN">OSINT-SAN</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ninoseki/mihari">Mihari</a></p>
+</li>
+<li>
+<p><a href="https://github.com/umair9747/vichiti">Vichiti</a></p>
+</li>
+<li>
+<p><a href="https://github.com/pawlaczyk/sarenka">Sarenka</a></p>
+</li>
+<li>
+<p><a href="https://www.vedbex.com/tools/home">Vedbex.com</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ankitdobhal/Ashok">Ashok</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ivre/ivre">IVRE</a></p>
+</li>
+<li>
+<p><a href="https://chrome.google.com/webstore/detail/search-investigative-and/idgjbdfnngdcenpahfalcamfmcjdfbcj/related">SEARCH Investigative and Forensic Toolbar</a></p>
+</li>
+<li>
+<p><a href="https://github.com/thenurhabib/tenssens">Tenssens</a></p>
+</li>
+<li>
+<p><a href="https://github.com/galihap76/collector">Collector</a></p>
+</li>
+<li>
+<p><a href="https://github.com/devXprite/infoooze">Infooze</a></p>
+</li>
+<li>
+<p><a href="https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke/related">ThreatPinch Lookup</a></p>
+</li>
+<li>
+<p><a href="https://osint-tool.com">Osint tool</a></p>
+</li>
+<li>
+<p><a href="https://chrome.google.com/webstore/detail/hackers-toolkit/iebkeiopbbfnmieadmojmocohdmaghmb/related">Hackers toolkit</a></p>
+</li>
+<li>
+<p><a href="https://botster.io/bots">BOTSTER</a></p>
+</li>
+<li>
+<p><a href="https://github.com/TheEyeOfCyber/Magnifier">Magnifier</a></p>
+</li>
+<li>
+<p><a href="https://github.com/dmw94/bazzellpy">BazzellPy</a></p>
+</li>
+<li>
+<p><a href="https://inteltechniques.com/tools">https://inteltechniques.com/tools</a></p>
+</li>
+<li>
+<p><a href="https://github.com/blacklanternsecurity/bbot">BBOT</a></p>
+</li>
+<li>
+<p><a href="https://github.com/theahmadov/slash">SLASH</a></p>
+</li>
+<li>
+<p><a href="https://www.howtoverify.info">How to verify</a></p>
+</li>
+<li>
+<p><a href="https://www.godaddy.com/forsale/cyclect.io?utm_source=TDFS_BINNS&amp;utm_medium=BINNS&amp;utm_campaign=TDFS_BINNS&amp;traffic_type=TDFS_BINNS&amp;traffic_id=binns&amp;">Cyclect</a></p>
+</li>
+<li>
+<p><a href="https://shrewdeye.app">ShrewdEye</a></p>
+</li>
+<li>
+<p><a href="https://github.com/dev-lu/osint_toolkit">OSINT Toolkit</a></p>
+</li>
+<li>
+<p><a href="https://app.osintracker.com">OSINTTracker</a></p>
+</li>
+<li>
+<p><a href="https://github.com/alephdata/cronodump">Cronodump</a></p>
+</li>
+<li>
+<p><a href="https://github.com/soxoj/1c-database-converter">1C Database Converter</a></p>
+</li>
+<li>
+<p><a href="https://insightjini.com">Insight Jini</a></p>
+</li>
+<li>
+<p><a href="https://diagramify.agiliq.com">DIAGRAMIFY</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Yakitrak/obsidian-cli">OBSIDIAN CLI</a></p>
+</li>
+<li>
+<p><a href="https://www.onworks.net/runos/create-os.html?os=win10_emulator&amp;home=init">Windows 10 Online Emulator</a></p>
+</li>
+<li>
+<p><a href="https://www.onworks.net/os-distributions/special-os/free-parrot-security-os-online">Parrot Security OS Online Emulator</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Double2Sky/OffenOsint">Offen Osint</a></p>
+</li>
+<li>
+<p><a href="https://www.blackarch.org">BlackArch Linux</a></p>
+</li>
+<li>
+<p><a href="https://csilinux.com">CSI Linux</a></p>
+</li>
+<li>
+<p><a href="https://labs.fedoraproject.org/security/download/index.html">Fedora Security Lab</a></p>
+</li>
+<li>
+<p><a href="https://github.com/HuronOsint/OsintDistro">Huron Osint</a></p>
+</li>
+<li>
+<p><a href="https://tsurugi-linux.org">Tsurugi Linux</a></p>
+</li>
+<li>
+<p><a href="https://www.osintux.org">Osintux</a></p>
+</li>
+<li>
+<p><a href="https://www.tracelabs.org/initiatives/osint-vm">TraceLabs OSINT VM</a></p>
+</li>
+<li>
+<p><a href="https://dracos-linux.org">Dracos Linux</a></p>
+</li>
+<li>
+<p><a href="https://archstrike.org">ArchStrike</a></p>
+</li>
+<li>
+<p><a href="https://septor.sourceforge.io">Septor Linux</a></p>
+</li>
+<li>
+<p><a href="https://twitter.com/ParrotSec">Parrot Security</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Dimaslg/osintBOX">osintBOX</a></p>
+</li>
+<li>
+<p><a href="https://www.pentoo.ch">Pentoo Linux</a></p>
+</li>
+<li>
+<p><a href="https://deftlinux.net">Deft Linux</a></p>
+</li>
+<li>
+<p><a href="https://www.backbox.org">BackBox</a></p>
+</li>
+<li>
+<p><a href="https://sourceforge.net/projects/falcon-archlinux">Falcon Arch Linux</a></p>
+</li>
+<li>
+<p><a href="https://github.com/adi0x90/attifyos">AttifyOS</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cipher387/Python-osint-automation-examples">Python OSINT automation examples</a></p>
+</li>
+<li>
+<p><a href="https://cipher387.github.io/hashtags_and_keywords_social_media_quick_search">Quick hashtags and keywords search</a></p>
+</li>
+<li>
+<p><a href="https://cipher387.github.io/quickgeolocationsearch">Quick geolocation search</a></p>
+</li>
+<li>
+<p><a href="https://cipher387.github.io/phonenumberqueryconstructor">Phone Number Search Constructor</a></p>
+</li>
+<li>
+<p><a href="https://cipher387.github.io/quickcacheandarchivesearch">Quick Cache and Archive search</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cipher387/Dorks-collections-list">Dorks collections list</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cipher387/API-s-for-OSINT">APIs for OSINT</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced Search Operators List</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cipher387/code-understanding-tools">Code understanding tools list</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cipher387/awesome-grep">Awesome grep</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cipher387/maltego-transforms-list">Maltego transforms list</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Coordinate-Cat">Coordinat Cat</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Coordinate-Cat/OSINT-TOOLS-CLI">OSINT TOOLS CLI</a></p>
+</li>
+<li>
+<p><a href="https://cybdetective.com">@cyb_detective</a></p>
+</li>
+<li>
+<p><a href="https://dns.bufferover.run/">DNS.BufferOver.run</a></p>
+</li>
+<li>
+<p><a href="https://netograph.io/">NetoGraph</a> - Captures and indexes detailed, low-level snapshots of website behaviour</p>
+</li>
+<li>
+<p><a href="https://hashdd.com/">Hashdd</a> - Known Good Cryptographic Hashes</p>
+</li>
+<li>
+<p><a href="https://cvetrends.com/">CVE Trends</a> - Monitor trending CVEs in real-time; crowdsourced intel sourced from Twitter, NIST NVD, Reddit, and GitHub</p>
+</li>
+</ul>
+<h1 id="osint-network"><a class="header" href="#osint-network">OSINT Network</a></h1>
+<ul>
+<li><a href="https://spur.us">Spur</a></li>
+<li><a href="https://spur.us">https://spur.us</a></li>
+<li><a href="https://focsec.com">FocSec</a></li>
+<li><a href="https://focsec.com">https://focsec.com</a></li>
+<li><a href="https://ip.teoh.io/vpn-detection">IP VPN detector</a></li>
+<li><a href="https://www.ipqualityscore.com/vpn-ip-address-check">IPQS</a></li>
+<li><a href="https://ipinfo.io">ip info</a></li>
+<li><a href="https://ipinfo.io">https://ipinfo.io</a></li>
+<li><a href="https://urlquery.net">urlquery</a></li>
+<li><a href="https://urlquery.net">https://urlquery.net</a></li>
+<li><a href="https://bgp.he.net">bgp</a></li>
+<li><a href="https://bgp.he.net">https://bgp.he.net</a></li>
+<li><a href="https://stat.ripe.net">stat ripe</a></li>
+<li><a href="https://stat.ripe.net">https://stat.ripe.net</a></li>
+<li><a href="https://unwiredlabs.com/products">unwiredlabs</a></li>
+<li><a href="https://bgp.tools">bgp</a></li>
+<li><a href="https://bgp.tools">https://bgp.tools</a></li>
+<li><a href="https://viz.greynoise.io">greynoise</a></li>
+<li><a href="https://viz.greynoise.io">https://viz.greynoise.io</a></li>
+<li><a href="https://bgpview.io">bgpview</a></li>
+<li><a href="https://bgpview.io">https://bgpview.io</a></li>
+<li><a href="https://wigle.net">wigle</a></li>
+<li><a href="https://wigle.net">https://wigle.net</a></li>
+<li><a href="https://macaddress.io">macaddress</a></li>
+<li><a href="https://macaddress.io">https://macaddress.io</a></li>
+<li><a href="https://lab.dynamite.ai">dynamite.ai search pcap file</a></li>
+<li><a href="https://lab.dynamite.ai">https://lab.dynamite.ai</a></li>
+<li><a href="https://app.packetsafari.com">packetsafari analys pcap file</a></li>
+<li><a href="https://app.packetsafari.com">https://app.packetsafari.com</a></li>
+<li><a href="https://www.wireshark.org">wireshark</a></li>
+<li><a href="https://www.wireshark.org">https://www.wireshark.org</a></li>
+<li><a href="https://hackertarget.com/as-ip-lookup">hackertarget</a></li>
+<li><a href="https://hackertarget.com/as-ip-lookup">https://hackertarget.com/as-ip-lookup</a></li>
+<li><a href="https://mac-address.whoisxmlapi.com/api">whoisxmlapi</a></li>
+<li><a href="https://www.macaddresslookup.org">macaddresslookup</a></li>
+<li><a href="https://www.macaddresslookup.org">https://www.macaddresslookup.org</a></li>
+</ul>
+<h1 id="api-for-osint"><a class="header" href="#api-for-osint">API for OSINT</a></h1>
+<ul>
+<li><a href="https://github.com/cipher387/API-s-for-OSINT/blob/main/README.md">API Resoruces OSINT - For Your Private Tool</a></li>
+<li><a href="https://github.com/cipher387/API-s-for-OSINT">API for OSINT</a></li>
+<li><a href="https://api.c99.nl">C99's API Service</a></li>
+<li><a href="https://api.c99.nl">https://api.c99.nl</a></li>
+</ul>
+<h1 id="osint-branding--verify"><a class="header" href="#osint-branding--verify">OSINT Branding &amp; Verify</a></h1>
+<ul>
+<li><a href="https://keyhole.co">keyhole</a></li>
+<li><a href="https://keyhole.co">https://keyhole.co</a></li>
+<li><a href="https://www.trustpilot.com">Trus Pilot</a></li>
+<li><a href="https://www.trustpilot.com">https://www.trustpilot.com</a></li>
+<li><a href="https://www.google.com/alerts">Google Alert</a></li>
+<li><a href="https://www.whitepages.com">White Pages</a></li>
+<li><a href="https://www.whitepages.com">https://www.whitepages.com</a></li>
+<li><a href="https://www.tripadvisor.com">Tripadvisor</a></li>
+<li><a href="https://www.tripadvisor.com">https://www.tripadvisor.com</a></li>
+<li><a href="https://www.trustindex.io">Trustindex</a></li>
+<li><a href="https://www.trustindex.io">https://www.trustindex.io</a></li>
+<li><a href="https://www.google.com/maps">G Map Review</a></li>
+<li><a href="https://www.google.com/maps">https://www.google.com/maps</a></li>
+<li><a href="https://www.provenexpert.com">Provenexpert</a></li>
+<li><a href="https://www.provenexpert.com">https://www.provenexpert.com</a></li>
+<li><a href="https://umrahcerdas.kemenag.go.id">SIMPU RI</a></li>
+<li><a href="https://umrahcerdas.kemenag.go.id">https://umrahcerdas.kemenag.go.id</a></li>
+<li><a href="https://www.jobstreet.co.id">Jobstreet.co.id</a></li>
+<li><a href="https://www.jobstreet.co.id">https://www.jobstreet.co.id</a></li>
+<li><a href="https://web-check.xyz">WEB Check</a></li>
+<li><a href="https://web-check.xyz">https://web-check.xyz</a></li>
+<li><a href="https://www.brightcloud.com/tools/url-ip-lookup.php">brightcloud ip lookup</a></li>
+<li><a href="https://urlfiltering.paloaltonetworks.com">Url Filltering</a></li>
+<li><a href="https://urlfiltering.paloaltonetworks.com">https://urlfiltering.paloaltonetworks.com</a></li>
+<li><a href="https://ahrefs.com/backlink-checker">A href Backlink Checker</a></li>
+<li><a href="https://neilpatel.com/backlinks">Neil Patel Backlink</a></li>
+<li><a href="https://neilpatel.com/backlinks">https://neilpatel.com/backlinks</a></li>
+<li><a href="https://www.semrush.com/analytics/backlinks">Semrush Backlink</a></li>
+<li><a href="https://www.semrush.com/analytics/backlinks">https://www.semrush.com/analytics/backlinks</a></li>
+<li><a href="https://smallseotools.com/backlink-checker">Small SEO Tool Backlink</a></li>
+<li><a href="https://smallseotools.com/backlink-checker">https://smallseotools.com/backlink-checker</a></li>
+<li><a href="https://www.seobility.net/en/backlinkchecker">SEO Backlink Check</a></li>
+<li><a href="https://www.seobility.net/en/backlinkchecker">https://www.seobility.net/en/backlinkchecker</a></li>
+<li><a href="https://moz.com/link-explorer">Moz Backlink</a></li>
+<li><a href="https://www.dapachecker.org/spam-score-checker">SPAM Check Score</a></li>
+<li><a href="https://moz.com/help/link-explorer/link-building/spam-score">MOZ Spam Check</a></li>
+<li><a href="https://github.com/bachors/nik_parse.js?tab=readme-ov-file#nik_parsejs">NIK PARSE</a></li>
+<li><a href="https://github.com/audhiaprilliant/indonesian-id-card-identification">API for Indonesian ID card (KTP) identification</a></li>
+<li><a href="https://www.maltego.com/transform-hub/socialnet">Maltego Transform ShadowDragon</a></li>
+<li><a href="https://www.maltego.com/transform-hub/socialnet">https://www.maltego.com/transform-hub/socialnet</a></li>
+<li><a href="https://www.kaseware.com/link-analysis">Kaseware</a></li>
+<li><a href="https://opentender.net">opentender ID</a></li>
+<li><a href="https://opentender.net">https://opentender.net</a></li>
+<li><a href="https://lpse.lkpp.go.id/eproc4">lpse lkpp ID</a></li>
+<li><a href="https://ahu.go.id/pencarian/profil-pt">ahu ID</a></li>
+<li><a href="https://momi.minerba.esdm.go.id/gisportal/home">Minerba ESDM ID</a></li>
+<li><a href="https://momi.minerba.esdm.go.id/gisportal/home">https://momi.minerba.esdm.go.id/gisportal/home</a></li>
+<li><a href="https://modi.esdm.go.id/portal/dataPerusahaan">MODI ID</a></li>
+<li><a href="https://pdki-indonesia.dgip.go.id/search?type=trademark&amp;keyword=">HAKI ID</a></li>
+<li><a href="https://databoks.katadata.co.id">Katadata ID</a></li>
+<li><a href="https://databoks.katadata.co.id">https://databoks.katadata.co.id</a></li>
+<li><a href="https://pddikti.kemdikbud.go.id">pddikti ID</a></li>
+<li><a href="https://pddikti.kemdikbud.go.id">https://pddikti.kemdikbud.go.id</a></li>
+<li><a href="https://pipl.com">pipl</a></li>
+<li><a href="https://pipl.com">https://pipl.com</a></li>
+<li><a href="https://www.ipqualityscore.com">ipqs</a></li>
+<li><a href="https://www.ipqualityscore.com">https://www.ipqualityscore.com</a></li>
+<li><a href="https://sociallinks.io">sociallinks</a></li>
+<li><a href="https://sociallinks.io">https://sociallinks.io</a></li>
+<li><a href="https://www.urlvoid.com">urlvoid</a></li>
+<li><a href="https://www.urlvoid.com">https://www.urlvoid.com</a></li>
+<li><a href="https://www.howtoverify.info/Image/Where/Geolocation/Manual_geolocation">How to Verify Guide</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../management/auxiliary_tools.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../management/auxiliary_tools.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

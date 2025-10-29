@@ -1,0 +1,440 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Auxilliary Tools - OSINT Resources</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OSINT Resources</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li><a href="https://www.shell.how">shell.how</a></li>
+<li><a href="https://gchq.github.io/CyberChef">CyberChef</a></li>
+<li><a href="https://dencode.com">Dencode.com</a></li>
+<li><a href="https://github.com/ninoseki/mitaka">mitaka</a></li>
+<li><a href="https://pypi.org/project/pywhat">pywhat</a></li>
+<li><a href="https://pypi.org/project/theHarvester">theHarvester</a></li>
+<li><a href="https://emn178.github.io/online-tools">Online Tools</a></li>
+<li><a href="https://dreampuf.github.io/GraphvizOnline">Graphviz Online</a></li>
+<li><a href="https://codepen.io">CodePen</a></li>
+<li><a href="https://www.rempe.us/diceware/#eff">Diceware Generator</a></li>
+<li><a href="https://checkphish.ai">Checkphish.ai</a></li>
+<li><a href="https://defuse.ca/online-x86-assembler.htm">x86 and x64 Intel Assembler</a></li>
+<li><a href="https://defuse.ca/big-number-calculator.htm">Big Number Calculator</a></li>
+<li><a href="https://defuse.ca/checksums.htm">Text and File Hash Calculator</a></li>
+<li><a href="https://defuse.ca/html-sanitize.htm">HTML Sanitizer Tool</a></li>
+<li><a href="https://meyerweb.com/eric/tools/dencoder">URL Decoder/Encoder</a></li>
+<li><a href="https://onlinedisassembler.com/odaweb">ODA - The Online Disassembler</a></li>
+<li><a href="https://disasm.pro">Disasm.pro</a></li>
+<li><a href="https://www.fotor.com/photo-editor-app/editor/basic">Fotor</a></li>
+<li><a href="https://www.decompiler.com">Decompiler.com</a></li>
+<li><a href="https://colab.research.google.com/notebooks/intro.ipynb">Google Colaboratory</a></li>
+<li><a href="https://godbolt.org">Compiler Explorer</a></li>
+<li><a href="https://onlinehtmleditor.dev">HTML editor</a></li>
+<li><a href="https://colorpicker.me">Online Color Picker</a></li>
+<li><a href="https://text2image.com/en">Convert text to image file</a></li>
+<li><a href="https://dbis-uibk.github.io/relax/calc/local/uibk/local/0">relational algebra calculator</a></li>
+<li><a href="https://raj457036.github.io/Simple-Tools/prefixAndPostfixConvertor.html">Data Structure : Infix Postfix Prefix - Converter &amp; Evaluator</a></li>
+<li><a href="https://canihavesomecoffee.github.io/js-rsa-tool">RSA encryption, decryption and prime calculator</a></li>
+<li><a href="https://tools.digitalmethods.net/beta/searchEngineScraper">Tools.digitalmethods.net</a></li>
+<li><a href="https://stylesuxx.github.io/steganography">Steganography Online</a></li>
+<li><a href="https://nutbread.github.io/t2m">Torrent to Magnet</a></li>
+<li><a href="https://neverducky.github.io/anonymous-youtube-playlists">Anonymous YouTube Playlists</a></li>
+<li><a href="https://vega.github.io/editor/#">Vega Editor</a></li>
+<li><a href="https://duncanford.github.io/disa-code-generator">DISA Code Template Generator</a></li>
+<li><a href="https://canarytokens.org/generate">Canary Tokens</a></li>
+<li><a href="https://explainshell.com">explainshell.com</a></li>
+<li><a href="https://showthedocs.com">ShowTheDocs</a></li>
+<li><a href="https://pypi.org/project/osint-cli-tool-skeleton">osint-cli-tool-skeleton</a></li>
+<li><a href="https://www.wiman.me">Wiman</a></li>
+</ul>
+<h3 id="urban-and-industrial-infrastructure"><a class="header" href="#urban-and-industrial-infrastructure">Urban and industrial infrastructure</a></h3>
+<ul>
+<li><a href="https://wheelmap.org">Wheelmap.org</a></li>
+<li><a href="https://pedestriansfirst.itdp.org">Pedestriansfirst</a></li>
+<li><a href="https://luminocity3d.org/WorldPopDen">World Population Density Map</a></li>
+<li><a href="https://www.emporis.com/buildings/map">Emporis Buildings Map</a></li>
+<li><a href="https://osmbuildings.org">Osmbuildings.org</a></li>
+<li><a href="https://findfoodsupport.withgoogle.com">Find Food Support</a></li>
+<li><a href="https://aqicn.org/map/world">Aqicn</a></li>
+<li><a href="https://eea.government.bg/eea/main-site/bg/output/daily/bulletin-en.html">Average Gamma Dose Rate Map</a></li>
+<li><a href="https://app.openindoor.io/#17/48.11915/-1.70188">OpenIndoor</a></li>
+<li><a href="https://poweroutage.com">Poweroutage</a></li>
+<li><a href="https://openbenches.org">Open Benches</a></li>
+<li><a href="https://sondehub.org">Sondehub</a></li>
+<li><a href="https://bikesharingworldmap.com">The Meddin Bike-sharing World Map</a></li>
+<li><a href="https://www.rally-maps.com/map">Rally Maps</a></li>
+<li><a href="https://www.skydb.net">SKYDB</a></li>
+</ul>
+<h3 id="communications-internet-technologies"><a class="header" href="#communications-internet-technologies">Communications, Internet, Technologies</a></h3>
+<ul>
+<li><a href="https://www.cellmapper.net/map?MCC=null&amp;MNC=null&amp;type=undefined&amp;latitude=0&amp;longitude=0&amp;zoom=11&amp;showTowers=true&amp;showIcons=true&amp;showTowerLabels=true&amp;clusterEnabled=true&amp;tilesEnabled=true&amp;showOrphans=false&amp;showNoFrequencyOnly=false&amp;showFrequencyOnly=false&amp;showBandwidthOnly=false&amp;DateFilterType=None&amp;showHex=false&amp;showVerifiedOnly=false&amp;showUnverifiedOnly=false&amp;showLTECAOnly=false&amp;showENDCOnly=false&amp;showBand=0&amp;showSectorColours=true&amp;mapType=roadmap">CellMapper</a></li>
+<li><a href="https://nperf.com/en/map">nperf.com/map</a></li>
+<li><a href="https://www.nperf.com/en/map/5g">nperf.com/map/5g</a></li>
+<li><a href="https://www.webcamtaxi.com/en/russia/moscow-province/badoo-office.html">Web Cam Taxi</a></li>
+<li><a href="https://radio.garden/visit/moscow/MQfEnBji">Radio Garden</a></li>
+<li><a href="https://twitter.com/cyb_detective/status/1536682540265873408">TorMap</a></li>
+<li><a href="https://github.com/GONZOsint/geowifi">GeoWiFi</a></li>
+<li><a href="https://gpsjam.org">GPSJam</a></li>
+<li><a href="https://www.infrapedia.com">Infrapedia</a></li>
+<li><a href="https://explorer.ooni.org/search">OONI Explorer</a></li>
+</ul>
+<h3 id="anomalies-and-lost-places"><a class="header" href="#anomalies-and-lost-places">Anomalies and "Lost Places"</a></h3>
+<ul>
+<li><a href="https://www.arcgis.com/apps/View/index.html?appid=6cd609921ebc44ff914a4e8059813b16">Argis UFO map</a></li>
+<li><a href="https://www.google.com/maps/d/viewer?msa=0&amp;mid=1PX4dE4ZRFR8pEnc2xHATGQe1rDA&amp;ll=33.679013212530805%2C-38.36085893876531&amp;z=3">Bigfoot and UFO map</a></li>
+<li><a href="https://www.google.com/maps/d/viewer?mid=1PdxFMPxgBmXdjMsusb-O2k074ok&amp;hl=en&amp;ll=45.17177063794067%2C7.41628581553573&amp;z=5">The Haunted map</a></li>
+<li><a href="https://ghostresearchinternational.com">https://ghostresearchinternational.com</a></li>
+<li><a href="https://www.google.com/maps/d/viewer?mid=1M6OeH-DCWCLHGLQ2_CiGPd0aO7IjPHqo&amp;hl=de&amp;ll=50.06460483234834%2C8.681870511153518&amp;z=10">Lost places map</a></li>
+<li><a href="https://www.arcgis.com/apps/View/index.html?appid=f987f36187c140aeab6eb157e909eb64">Bigfoot Sightings and Density of the US with Biomes</a></li>
+<li><a href="https://www.bfro.net/gdb">BFRO bigfoot sightings database</a></li>
+<li><a href="https://earth.google.com/web/@-7.15227307,116.57647982,-5437.85537383a,22257190.23309946d,35y,0h,0t,0r/data=CjoSOBIgNzgxN2E2YmFhZTA3MTFlN2E3Y2M3M2UxNjM3ZTRhMjMiFGVmX2djc19sb2NhbGd1aWRlc182">Haunted places</a></li>
+<li><a href="https://youmap.com/app/2-ufo-reporting/posts">UFO reporting map</a></li>
+<li><a href="https://www.google.com/maps/d/viewer?ie=UTF8&amp;hl=en&amp;msa=0&amp;ll=-23.514388807757186%2C138.76867076517286&amp;spn=45.197878%2C67.324219&amp;source=embed&amp;mid=1VYlDMJCmxaFm-uOfDfN74Cdr6Vg&amp;z=4">Australia UFO map 2008</a></li>
+<li><a href="https://www.urbex.nl/map">URBEX database map</a></li>
+<li><a href="https://www.google.com/maps/d/viewer?mid=1yRkY_mc-IpSVTfQgR3G6Pvjno3w&amp;hl=en_US&amp;ll=36.86911339765801%2C22.7511350249344&amp;z=4">Lostplace atlas</a></li>
+<li><a href="https://virtualglobetrotting.com">Virtual Globe Trotting</a></li>
+</ul>
+<h2 id="multi-purposeframework-tools"><a class="header" href="#multi-purposeframework-tools">Multi-Purpose/Framework Tools</a></h2>
+<ul>
+<li><a href="https://github.com/MustafaAP/pinosint">Pinosint - Investigation framework</a></li>
+<li><a href="https://github.com/DR34M-M4K3R/GhostRecon">Ghost Recon - OSINT framework</a></li>
+<li><a href="https://github.com/Hack23/cia">Citizen Intelligence Agency - OSINT project</a></li>
+<li><a href="https://github.com/west-wind/abuse-insights">Abuse Insight - Abuse IP DB analysis</a></li>
+</ul>
+<h2 id="browser-extensions"><a class="header" href="#browser-extensions">Browser Extensions</a></h2>
+<ul>
+<li>
+<p><a href="https://github.com/CScorza/EstensioniChromeOSINT">Chrome OSINT Extensions</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Lissy93/web-check">web-check - All-in-one OSINT tool</a></p>
+</li>
+<li>
+<p><a href="https://github.com/yogeshojha/rengine">reNgine - Web Reconnaissance &amp; Vulnerability Scanner</a></p>
+</li>
+<li>
+<p><a href="https://github.com/smicallef/spiderfoot">SpiderFoot - Threat intelligence</a></p>
+</li>
+<li>
+<p><a href="https://github.com/blacklanternsecurity/bbot">BBOT - OSINT automation for hackers</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ninoseki/mihari">Mihari - Threat hunting tool</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ericalexanderorg/should-i-trust">Should i trust - Company trustworthiness</a></p>
+</li>
+<li>
+<p><a href="https://github.com/m3n0sd0n4ld/GooFuzz">GooFuzz - OSINT fuzzing tool</a></p>
+</li>
+<li>
+<p><a href="https://github.com/mxrch/GHunt">GHunt - Offensive Google framework</a></p>
+</li>
+<li>
+<p><a href="https://github.com/twelvesec/gasmask">Gasmask - Information gathering tool</a></p>
+</li>
+<li>
+<p><a href="https://github.com/3nock/sub3suite">Sub3suite - Intelligence gathering tool</a></p>
+</li>
+<li>
+<p><a href="https://github.com/7ORP3DO/infoooze">Infoooze - OSINT tool in NodeJs</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Lucksi/Mr.Holmes">Mr.Holmes - Complete OSINT Tool</a></p>
+</li>
+<li>
+<p><a href="https://github.com/galihap76/collector">Collector - OSINT tool</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Nhoya/gOSINT">gOSINT - OSINT Swiss Army Knife</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Dheerajmadhukar/karma_v2">Karma v2 - Passive OSINT Framework</a></p>
+</li>
+<li>
+<p><a href="https://github.com/chiasmod0n/chiasmodon">Chiasmodon - Domain information gathering</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Stuub/SquatSquasher">SquatSquasher - Domain squatting finder</a></p>
+</li>
+<li>
+<p><a href="https://github.com/atenreiro/opensquat">Opensquat - Phishing domain detection</a></p>
+</li>
+<li>
+<p><a href="https://github.com/woj-ciech/kupa3">Kupa3 - Track website scripts and domains</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kitabisa/teler">Teler - Real-time HTTP Intrusion Detection</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Ullaakut/cameradar">Cameradar - RTSP camera hacking</a></p>
+</li>
+<li>
+<p><a href="https://github.com/maldevel/IPGeoLocation">IP Geolocation</a></p>
+</li>
+<li>
+<p><a href="https://github.com/MetaOSINT/MetaOSINT.github.io">MetaOSINT - OSINT resources</a></p>
+</li>
+<li>
+<p><a href="https://metaosint.github.io/table/">MetaOSINT - 4000+ OSINT resources</a></p>
+</li>
+<li>
+<p><a href="https://github.com/7WaySecurity/cloud_osint">Cloud OSINT - Tools and techniques</a></p>
+</li>
+<li>
+<p><a href="https://github.com/tg12/rapid7_OSINT">Rapid7 OSINT</a></p>
+</li>
+<li>
+<p><a href="https://github.com/x1sec/commit-stream">Commit-stream - Github repository finder</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cipher387/osint_stuff_tool_collection">OSINT stuff tool collection</a></p>
+</li>
+</ul>
+<h3 id="attack-surface"><a class="header" href="#attack-surface">Attack Surface</a></h3>
+<ul>
+<li><a href="https://fullhunt.io/">FullHunt.io</a> - Attack surface database of the entire Internet</li>
+<li><a href="https://www.binaryedge.io/">BinaryEdge</a> - We scan the web and gather data for you</li>
+<li><a href="https://censys.io/">Censys ASM</a> - Attack Surface Management Solutions</li>
+<li><a href="https://redhuntlabs.com/">RedHunt Labs</a> - Discover your Attack Surface, Continuously</li>
+<li><a href="https://securitytrails.com/">SecurityTrails</a> - The Total Internet Inventory</li>
+<li><a href="https://overcast-security.com/">overcast-security.com</a> - We make tracking your external attack surface easy</li>
+<li><a href="https://ipinfo.io/">IPInfo.io</a> - The trusted source for IP address data</li>
+<li><a href="https://ipdata.co/">IPData.co</a> - IP Geolocation and Threat Intelligence API</li>
+<li><a href="https://networksdb.io/">NetworksDB</a> - Information about the public IPv4 and IPv6 addresses, networks and domains owned by companies and organisations across the world</li>
+<li><a href="https://asnlookup.com/">ASNlookup</a> - Quickly lookup updated information about specific Autonomous System Number (ASN), Organization, CIDR, or registered IP addresses (IPv4 and IPv6) among other relevant data</li>
+<li><a href="https://bgp.tools/">BGPtools</a> - Browse the Internet ecosystem</li>
+<li><a href="https://bgpview.io/">BGPview</a> - Debug and investigate information about IP addresses, ASN, IXs, BGP, ISPs, Prefixes and Domain names</li>
+<li><a href="https://www.bigdatacloud.com/">BigDataCloud</a> - The API provides comprehensive location and network data</li>
+<li><a href="https://www.radb.net/query">RADb</a> - The world's largest public routing registry</li>
+<li><a href="https://www.deepinfo.com/">Deepinfo</a> - Empower your security with the most comprehensive Internet data</li>
+<li><a href="https://radar.cloudflare.com/">CloudFlare Radar</a> - Global Internet traffic, attack, and technology trends and insights</li>
+<li><a href="https://en.ipip.net/">IPIP</a> - The only IP Database based on real time BGP/ASN data analytics</li>
+<li><a href="https://bgp.he.net/">Hurricane Electric BGP</a> - The Hurricane Electric BGP Toolkit is free to use. Look up ASN from IP address</li>
+<li><a href="https://webscout.io/">Webscout</a> - From threat intelligence to attack surface discovery, asset management, and brand protection</li>
+<li><a href="https://awseye.com/">Awseye</a> - Open-source intelligence (OSINT) and reconnaissance service tracking publicly accessible AWS data</li>
+<li><a href="https://app.s4e.io/">S4E</a> - Continuous Threat Exposure Management platform that offers a web-based cybersecurity solution for comprehensive scanning and vulnerability detection of digital assets like domains, subdomains, IP addresses, and web apps</li>
+<li><a href="https://ipquery.io/">ipquery.io</a> - The IP Address API for Developers</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../management/osint_resources.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../management/random.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../management/osint_resources.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../management/random.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
