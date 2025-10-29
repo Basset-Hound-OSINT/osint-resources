@@ -90,15 +90,16 @@ def parse_markdown_with_sections(content: str) -> Dict[str, Tuple[str, List[Tupl
     return sections
 
 def get_existing_urls_from_output(output_dir: str) -> Set[str]:
-    """Get all URLs that already exist in the output directory."""
+    """Get all URLs that already exist in the unique output directory."""
     existing_urls = set()
     
-    if not os.path.exists(output_dir):
+    unique_dir = os.path.join(output_dir, 'unique')
+    if not os.path.exists(unique_dir):
         return existing_urls
     
-    for filename in os.listdir(output_dir):
+    for filename in os.listdir(unique_dir):
         if filename.endswith('.md'):
-            filepath = os.path.join(output_dir, filename)
+            filepath = os.path.join(unique_dir, filename)
             try:
                 with open(filepath, 'r', encoding='utf-8') as f:
                     content = f.read()
@@ -108,54 +109,10 @@ def get_existing_urls_from_output(output_dir: str) -> Set[str]:
     
     return existing_urls
 
-def process_markdown_file(input_file: str, output_dir: str):
-    """Process a single markdown file and extract unique links."""
-    
-    # Read input file
-    try:
-        with open(input_file, 'r', encoding='utf-8') as f:
-            content = f.read()
-    except Exception as e:
-        print(f"Error reading {input_file}: {e}")
-        return
-    
-    # Get existing URLs from output directory
-    existing_urls = get_existing_urls_from_output(output_dir)
-    
-    # Parse the markdown file
-    sections = parse_markdown_with_sections(content)
-    
-    # Filter out URLs that already exist
-    filtered_sections = {}
-    new_urls_count = 0
-    
-    for section, (header_level, links) in sections.items():
-        unique_links = []
-        for link_text, url in links:
-            clean_url = url.strip().rstrip('.,!?;:"\'')
-            if clean_url not in existing_urls:
-                unique_links.append((link_text, url))
-                existing_urls.add(clean_url)  # Add to set to prevent duplicates within this file
-                new_urls_count += 1
-        
-        if unique_links:
-            filtered_sections[section] = (header_level, unique_links)
-    
-    # Generate output
-    if not filtered_sections:
-        print(f"No new unique links found in {input_file}")
-        return
-    
-    # Create output directory if it doesn't exist
-    os.makedirs(output_dir, exist_ok=True)
-    
-    # Determine output filename
-    base_name = os.path.splitext(os.path.basename(input_file))[0]
-    output_file = os.path.join(output_dir, f"{base_name}_refs.md")
-    
-    # Write output
+def write_output_file(filepath: str, sections: Dict[str, Tuple[str, List[Tuple[str, str]]]]):
+    """Write sections to an output file."""
     output_lines = []
-    for section, (header_level, links) in filtered_sections.items():
+    for section, (header_level, links) in sections.items():
         output_lines.append(f"{header_level} {section}\n")
         for link_text, url in links:
             # Ensure clean link text and URL
@@ -166,12 +123,78 @@ def process_markdown_file(input_file: str, output_dir: str):
     
     output_content = "\n".join(output_lines).strip() + "\n"
     
-    with open(output_file, 'w', encoding='utf-8') as f:
+    with open(filepath, 'w', encoding='utf-8') as f:
         f.write(output_content)
+
+def process_markdown_file(input_file: str, output_dir: str):
+    """Process a single markdown file and extract links."""
     
+    # Read input file
+    try:
+        with open(input_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+    except Exception as e:
+        print(f"Error reading {input_file}: {e}")
+        return
+    
+    # Parse the markdown file
+    sections = parse_markdown_with_sections(content)
+    
+    if not sections:
+        print(f"No links found in {input_file}")
+        return
+    
+    # Create output directories
+    os.makedirs(output_dir, exist_ok=True)
+    unique_dir = os.path.join(output_dir, 'unique')
+    os.makedirs(unique_dir, exist_ok=True)
+    
+    # Determine output filename
+    base_name = os.path.splitext(os.path.basename(input_file))[0]
+    raw_output_file = os.path.join(output_dir, f"{base_name}_refs.md")
+    unique_output_file = os.path.join(unique_dir, f"{base_name}_refs.md")
+    
+    # Write raw output (all links from this file)
+    total_links = sum(len(links) for _, links in sections.values())
+    write_output_file(raw_output_file, sections)
+    
+    # Get existing URLs from unique directory
+    existing_urls = get_existing_urls_from_output(output_dir)
+    
+    # Filter out URLs that already exist for unique output
+    unique_sections = {}
+    new_urls_count = 0
+    
+    for section, (header_level, links) in sections.items():
+        unique_links = []
+        for link_text, url in links:
+            # Normalize URL for comparison
+            clean_url = url.strip().rstrip('.,!?;:"\'')
+            if clean_url.startswith('http://'):
+                clean_url = 'https://' + clean_url[7:]
+            clean_url = clean_url.rstrip('/')
+            
+            # Only add if URL doesn't exist in any unique output file
+            if clean_url not in existing_urls:
+                unique_links.append((link_text, url))
+                existing_urls.add(clean_url)  # Prevent duplicates within this file
+                new_urls_count += 1
+        
+        if unique_links:
+            unique_sections[section] = (header_level, unique_links)
+    
+    # Write unique output (only new links)
+    if unique_sections:
+        write_output_file(unique_output_file, unique_sections)
+    
+    # Print summary
     print(f"Processed: {input_file}")
-    print(f"  -> {output_file}")
-    print(f"  New unique links: {new_urls_count}\n")
+    print(f"  Raw output: {raw_output_file} ({total_links} links)")
+    if unique_sections:
+        print(f"  Unique output: {unique_output_file} ({new_urls_count} new links)")
+    else:
+        print(f"  Unique output: No new unique links")
+    print()
 
 def process_directory(input_dir: str, output_dir: str):
     """Process all markdown files in a directory."""
@@ -193,7 +216,8 @@ def process_directory(input_dir: str, output_dir: str):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Extract unique links from markdown files, organized by section headers."
+        description="Extract links from markdown files. Creates both raw output (all links) "
+                    "and unique output (deduplicated links in 'unique/' subdirectory)."
     )
     parser.add_argument(
         '-i', '--input',

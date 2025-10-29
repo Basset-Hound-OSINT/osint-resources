@@ -52,7 +52,9 @@
 - [Search Engines](./discovery/SEARCH_ENGINES.md)
 - [Custom Search Tools](./discovery/CUSTOM_SEARCH.md)
 - [People Search Engines](./discovery/PEOPLE_SEARCH.md)
-- [Online Maps](./discovery/ONLINE_MAPS.md)
+- [Maps](./discovery/MAPS.md)
+- [Weather](./discovery/WEATHER.md)
+- [Global Findings](./discovery/GLOBAL.md)
 
 ---
 
@@ -75,7 +77,6 @@
 # Breach & Leak Intelligence
 
 - [Data Breaches](./breaches/DATA_BREACHES.md)
-- [Data Leaks](./breaches/DATA_LEAKS.md)
 - [Passwords & Hashes](./breaches/PASSWORDS_HASHES.md)
 - [Stealer Logs](./breaches/STEALER_LOGS.md)
 - [Ransomware Intelligence](./breaches/RANSOMWARE.md)
@@ -99,11 +100,32 @@
 
 ---
 
+# Artificial Intelligence
+
+- [Artificial Intelligence](./ai/ai_sources.md)
+
+---
+
+# Offensive Security
+
+- [Offensive Security](./offsec/offensive_tools.md)
+
+---
+
+# Sock Puppets
+
+- [Throw Away Contacts](./sock_puppets/throw_away.md)
+- [ID Generation](./sock_puppets/id_generation.md)
+- [Emulators](./sock_puppets/emulators.md)
+
+---
+
 # Intelligence Management
 
 - [Methodology & Workflow](./management/METHODOLOGY_WORKFLOW.md)
 - [Query Building & Automation](./management/QUERY_AUTOMATION.md)
 - [Productivity](./management/productivity.md)
+- [Auxilliary Tools](./management/auxiliary_tools.md)
 
 ---
 
@@ -115,7 +137,7 @@
 
 # More OSINT Resources
 
-- [Documentation & Reporting](./resources/resources.md)
+- [More OSINT Resources](./resources/osint_resources.md)
 
 ---
 

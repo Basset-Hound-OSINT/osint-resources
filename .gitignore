@@ -1,8 +1,9 @@
-**/book/
-**/tools/
-**/_MACOSX/
-**/._tools
-**/tmp_references/
-**/tmp_refs/
-**/tmp_ref_checks/
-**/new_refs/
+**book/
+**tools/
+**_MACOSX/
+**._tools
+**tmp_references/
+**tmp_refs/
+**tmp_ref_checks/
+**new_refs/
+**tmp/

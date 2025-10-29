@@ -89,3 +89,94 @@ markdown## PRODUCTIVITY
 
 - [Link 3](...)
 This way you keep the full structure and context of your documentation! Does this work better for you?
+
+
+
+
+
+
+
+
+
+Now i need some help sorting tools. for my osint toolkit. i am making documentation for various tools and using mdbook to compile markdown into a website. I have large lists of links in various markdown files. I want to be able to sort each tool into the proper category of documentation. this is the file structure for my tool categories so far:
+
+
+dev@DB-78GB094:~/osint-resources/src$ tree
+.
+├── SUMMARY.md
+├── breaches
+│   ├── DATA_BREACHES.md
+│   ├── DATA_LEAKS.md
+│   ├── HARDWARE_CONFIG.md
+│   ├── PASSWORDS_HASHES.md
+│   ├── QUERIES_DATABASES.md
+│   ├── RANSOMWARE.md
+│   ├── SOFTWARE_CONFIG.md
+│   ├── STEALER_LOGS.md
+│   └── TERMINAL_COMMANDS.md
+├── digital
+│   ├── FACEBOOK.md
+│   ├── INSTAGRAM.md
+│   ├── LINKEDIN.md
+│   ├── MARKETPLACES.md
+│   ├── ONLINE_COMMUNITIES.md
+│   ├── TIKTOK.md
+│   └── TWITTER.md
+├── discovery
+│   ├── CUSTOM_SEARCH.md
+│   ├── MAPS.md
+│   ├── PEOPLE_SEARCH.md
+│   └── SEARCH_ENGINES.md
+├── files
+│   ├── DOCUMENT_PROCESSING.md
+│   ├── FACIAL_RECOGNITION.md
+│   ├── FILE_ANALYSIS.md
+│   ├── IMAGE_ANALYSIS.md
+│   ├── IMAGE_SEARCH.md
+│   ├── REVERSE_ENGINEERING.md
+│   └── VIDEO_ANALYSIS.md
+├── financial
+│   ├── CRYPTO_CURRENCIES.md
+│   └── STOCK_EXCHANGE.md
+├── identifiers
+│   ├── DATES_OF_BIRTH.md
+│   ├── EMAIL_ADDRESSES.md
+│   ├── NAMES.md
+│   ├── TELEPHONE_NUMBERS.md
+│   ├── USERNAMES.md
+│   └── VEHICLES.md
+├── infrastructure
+│   └── CLOUD_CDN.md
+├── management
+│   ├── METHODOLOGY_WORKFLOW.md
+│   └── QUERY_AUTOMATION.md
+├── records
+│   ├── BUSINESS_RECORDS.md
+│   ├── GOVERNMENT_RECORDS.md
+│   ├── POLICE_RECORDS.md
+│   └── TRADEMARKS_PATENTS.md
+├── reporting
+│   └── osint_resources.md
+├── resources
+│   └── resources.md
+├── specialized
+│   ├── BROADCAST_STREAMS.md
+│   └── TOR_DARKWEB.md
+├── technical
+│   ├── DNS_ROUTING.md
+│   ├── IP_ADDRESSES.md
+│   └── WEBSITES.md
+├── template.md
+└── tmp_categories.md
+
+13 directories, 52 files
+dev@DB-78GB094:~/osint-resources/src$
+
+
+
+
+
+My ideas is to upload my documentation and let you help me know what tools go into what category or what file, and make simple bash scripts to append these links to these category files. what do you think?
+
+
+

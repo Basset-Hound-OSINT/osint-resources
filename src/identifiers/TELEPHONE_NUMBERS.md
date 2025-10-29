@@ -1,0 +1,13 @@
+
+- [PhoneInfoga](https://sundowndev.github.io/phoneinfoga)
+- [Phonerator](https://www.martinvigo.com/tools/phonerator)
+- [Reverse Phone Lookup](https://www.idcrawl.com/phone)
+- [Nuwber](https://nuwber.com)
+- [ignorant](https://pypi.org/project/ignorant)
+- [Phone Number Lookup Tool](https://shadowcrypt.net/tools/phone)
+- [OpenCelliD](https://opencellid.org)
+- [Moriarty-Project](https://github.com/AzizKpln/Moriarty-Project)
+- [Phone Scoop](https://www.phonescoop.com/phones)
+- [GSM Arena](https://www.gsmarena.com)
+- [carrier lookup](https://www.carrierlookup.com)
+- [Free Reverse Phone Lookup](https://spydialer.com/default.aspx)
