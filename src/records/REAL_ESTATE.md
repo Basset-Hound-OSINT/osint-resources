@@ -26,3 +26,10 @@
 - [Usa-people-search](https://www.usa-people-search.com/address)
 - [Whitepages](https://www.whitepages.com/address)
 - [Zillow](https://www.zillow.com/homes)
+
+# OSINT Property
+
+- [ZILLOW](https://www.zillow.com/homes/for_sale)
+- [https://www.zillow.com/homes/for_sale](https://www.zillow.com/homes/for_sale)
+- [trulia](https://www.trulia.com)
+- [https://www.trulia.com](https://www.trulia.com)

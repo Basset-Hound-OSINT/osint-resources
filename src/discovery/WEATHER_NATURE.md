@@ -33,3 +33,47 @@
 - [Global Flood Database (and interactive map)](https://global-flood-database.cloudtostreet.ai)
 - [Gaisma](https://www.gaisma.com/en)
 - [https://timeanddate.com](https://timeanddate.com)
+
+
+# OSINT Shadow Analysis
+
+- [suncalc](https://www.suncalc.org)
+- [https://www.suncalc.org](https://www.suncalc.org)
+- [timeanddate](https://www.timeanddate.com/weather/indonesia/jakarta/historic)
+- [sunearthtools](https://www.sunearthtools.com/dp/tools/pos_sun.php)
+- [academo azimuth calc](https://academo.org/demos/azimuth-calculator)
+- [https://academo.org/demos/azimuth-calculator](https://academo.org/demos/azimuth-calculator)
+- [findmyshadow](https://www.findmyshadow.com)
+- [https://www.findmyshadow.com](https://www.findmyshadow.com)
+- [shadowcalculator](https://shadowcalculator.eu/#/lat/50.08/lng/19.9)
+- [https://shadowcalculator.eu/#/lat/50.08/lng/19.9](https://shadowcalculator.eu/#/lat/50.08/lng/19.9)
+- [shademap](https://shademap.app)
+- [https://shademap.app](https://shademap.app)
+- [bellingcat shadow finder](https://github.com/bellingcat/ShadowFinder)
+- [Moon Calc](https://www.mooncalc.org)
+- [https://www.mooncalc.org](https://www.mooncalc.org)
+- [moonsighting](https://www.moonsighting.com)
+- [https://www.moonsighting.com](https://www.moonsighting.com)
+- [mooncalendar](https://www.mooncalc.org/mooncalendar)
+- [https://www.mooncalc.org/mooncalendar](https://www.mooncalc.org/mooncalendar)
+- [Dcode Azimuth Calc](https://www.dcode.fr/azimuth)
+- [carbidedepot Trigonometry Calculator](https://www.carbidedepot.com/formulas-trigright.asp)
+- [shadowmap](https://app.shadowmap.org)
+- [https://app.shadowmap.org](https://app.shadowmap.org)
+- [gaisma sunrise, sunset arround world](https://www.gaisma.com/en)
+- [https://www.gaisma.com/en](https://www.gaisma.com/en)
+- [sunpath3d](https://drajmarsh.bitbucket.io/sunpath3d.html)
+
+
+# OSINT Wildlife
+
+- [SIKU](https://siku.org/project-management)
+- [globalforestwatch](https://www.globalforestwatch.org/map)
+- [https://www.globalforestwatch.org/map](https://www.globalforestwatch.org/map)
+- [oxpeckers](https://oxpeckers.org/tools)
+- [https://oxpeckers.org/tools](https://oxpeckers.org/tools)
+- [viirs skytruth](https://viirs.skytruth.org/apps/heatmap/flaringmap.html#lat=33.85472&lon=35.86229&zoom=8&offset=27)
+- [protectedplanet](https://www.protectedplanet.net)
+- [https://www.protectedplanet.net](https://www.protectedplanet.net)
+- [globalfishingwatch](https://globalfishingwatch.org)
+- [https://globalfishingwatch.org](https://globalfishingwatch.org)

@@ -10,48 +10,8 @@
 - [Email Addresses](./identifiers/EMAIL_ADDRESSES.md)
 - [Usernames](./identifiers/USERNAMES.md)
 - [Telephone Numbers](./identifiers/TELEPHONE_NUMBERS.md)
-- [Dates of Birth](./identifiers/DATES_OF_BIRTH.md)
 - [Vehicle Information](./identifiers/VEHICLES.md)
-- [Flight and Maritime Information](./identifiers/FLIGHTS_MARITIME.md)
-
----
-
-# Social Presence
-
-- [Social Networks - Facebook](./social/FACEBOOK.md)
-- [Social Networks - Twitter / X](./social/TWITTER_X.md)
-- [Social Networks - Instagram](./social/INSTAGRAM.md)
-- [Social Networks - TikTok](./social/TIKTOK.md)
-- [Social Networks - LinkedIn](./social/LINKEDIN.md)
-- [Social Networks - Youtube](./social/YOUTUBE.md)
-- [Social Networks - Reddit](./social/REDDIT.md)
-- [Social Networks - Discord](./social/DISCORD.md)
-- [Social Networks - Twitch](./social/TWITCH.md)
-- [Social Media Other](./social/social.md)
-- [Online Communities](./social/ONLINE_COMMUNITIES.md)
-- [Market Places](./social/MARKETPLACES.md)
-- [News](./social/NEWS.md)
-
----
-
-# Technical Identifiers
-
-- [IP Addresses](./technical/IP_ADDRESSES.md)
-- [DNS & Routing](./technical/DNS_ROUTING.md)
-
----
-
-# File & Media Analysis
-
-- [Document & Text Processing](./files/DOCUMENT_PROCESSING.md)
-- [File Analysis](./files/FILE_ANALYSIS.md)
-- [Image Search / Analysis](./files/IMAGES.md)
-- [Facial Recognition](./files/FACIAL_RECOGNITION.md)
-- [Video Analysis](./files/VIDEO_ANALYSIS.md)
-- [Metadata & Stegonography](./files/METADATA_STEGO.md)
-- [Forensics](./files/forensics.md)
-- [Reverse Engineering](./files/REVERSE_ENGINEERING.md)
-- [Malware Analysis](./files/MALWARE.md)
+- [Flights, Maritime, Railway, Biking](./identifiers/FLIGHTS_MARITIME_Railway_Biking.md)
 
 ---
 
@@ -60,12 +20,46 @@
 - [Search Engines](./discovery/SEARCH_ENGINES.md)
 - [Custom Search Tools](./discovery/CUSTOM_SEARCH.md)
 - [People Search Engines](./discovery/PEOPLE_SEARCH.md)
-- [Dorking](./discovery/DORKS.md)
 - [searchers scrapers extractors parsers](./discovery/searchers_scrapers_extractors_parsers.md)
 - [Maps](./discovery/MAPS.md)
 - [Weather & Nature](./discovery/WEATHER_NATURE.md)
 - [Global Search](./discovery/GLOBAL_GEO.md)
 - [Threat Discover](./discovery/THREATS.md)
+
+
+---
+
+# Social Presence / Networks
+
+- [Facebook](./social/FACEBOOK.md)
+- [Twitter / X](./social/TWITTER_X.md)
+- [Instagram](./social/INSTAGRAM.md)
+- [TikTok](./social/TIKTOK.md)
+- [LinkedIn](./social/LINKEDIN.md)
+- [Youtube](./social/YOUTUBE.md)
+- [Reddit](./social/REDDIT.md)
+- [Discord](./social/DISCORD.md)
+- [Telegram](./social/TELEGRAM.md)
+- [Twitch](./social/TWITCH.md)
+- [Other Social Medias](./social/social.md)
+- [Online Communities](./social/ONLINE_COMMUNITIES.md)
+- [Market Places](./social/MARKETPLACES.md)
+- [Publications](./social/PUBLICATIONS.md)
+- [News](./social/NEWS.md)
+
+---
+
+# File & Media Analysis
+
+- [Document & Text Processing](./files/DOCUMENT_PROCESSING.md)
+- [Image Search / Analysis](./files/IMAGES.md)
+- [Video Analysis](./files/VIDEO_ANALYSIS.md)
+- [Audio Analysis](./files/AUDIO_ANALYSIS.md)
+- [Metadata & Stegonography](./files/METADATA_STEGO.md)
+- [Forensics](./files/forensics.md)
+- [Code Analysis / Management](./files/code.md)
+- [Reverse Engineering](./files/REVERSE_ENGINEERING.md)
+- [Malware Analysis](./files/MALWARE.md)
 
 ---
 
@@ -80,10 +74,11 @@
 
 ---
 
-# Financial Intelligence
+# Political, Economic, and Financial Intelligence
 
-- [Investing / Stock Exchange / Trading](./financial/INVESTING.md)
-- [Crypto & Virtual Currencies](./financial/CRYPTO_CURRENCIES.md)
+- [politics](./political_economic/politics.md)
+- [Investing / Stock Exchange / Trading](./political_economic/INVESTING.md)
+- [Crypto & Virtual Currencies](./political_economic/CRYPTO_CURRENCIES.md)
 
 ---
 
@@ -94,10 +89,6 @@
 - [Cryptography](./breaches/cryptography.md)
 - [Bug Bounty](./breaches/BUG_BOUNTY.md)
 - [Stealer Logs](./breaches/STEALER_LOGS.md)
-- [Ransomware Intelligence](./breaches/RANSOMWARE.md)
-- [Breach Analysis - Hardware Configuration](./breaches/HARDWARE_CONFIG.md)
-- [Breach Analysis - Software Configuration](./breaches/SOFTWARE_CONFIG.md)
-- [Breach Analysis - Terminal Commands](./breaches/TERMINAL_COMMANDS.md)
 - [Queries, Scripts & Databases](./breaches/QUERIES_DATABASES.md)
 
 ---
@@ -106,6 +97,7 @@
 
 - [Tor & Dark Web](./specialized/TOR_DARKWEB.md)
 - [Cloud & CDN Analysis](./specialized/CLOUD_CDN.md)
+- [Mobile Devices](./specialized/MOBILE.md)
 - [IOT](./specialized/IOT.md)
 - [Radio](./specialized/RADIO.md)
 - [Broadcast Streams](./specialized/BROADCAST_STREAMS.md)
@@ -120,11 +112,14 @@
 
 # Offensive Security
 
+- [IP Addresses](./offsec/IP_ADDRESSES.md)
+- [DNS & Routing](./offsec/DNS_ROUTING.md)
 - [Websites](./offsec/websites.md)
 - [Networks](./offsec/network.md)
+- [Vulnerabilities and Exploits](./offsec/vulns_exp.md)
 - [WIFI](./offsec/wifi.md)
 - [Bluetooth](./offsec/bluetooth.md)
-- [Radio / RFID](./offsec/radio_rfid.md)
+- [SDR / RFID](./offsec/radio_rfid.md)
 - [More / Other](./offsec/misc.md)
 
 ---
@@ -142,19 +137,9 @@
 # Intelligence Management, Methods, Guides, Playbooks, & Reporting
 
 - [Methodology & Workflow](./management/METHODOLOGY_WORKFLOW.md)
-- [Query Building & Automation](./management/QUERY_AUTOMATION.md)
 - [Productivity](./management/productivity.md)
+- [Dorking & Query Automation](./management/DORKS_QUERY_AUTOMATION.md)
+- [Reporting](./management/reporting.md)
 - [More OSINT Resources](./management/osint_resources.md)
 - [Auxilliary Tools](./management/auxiliary_tools.md)
-
----
-
-# Reporting
-
-- [Documentation & Reporting](./reporting/DOCUMENTATION_REPORTING.md)
-
----
-
-# Random
-
-- [random](./random.md)
+- [Random Tools Collection](./management/random.md)

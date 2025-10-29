@@ -11,3 +11,9 @@
 - [Cloudmare](https://github.com/MrH0wl/Cloudmare)
 - [CloudUnflare](https://github.com/greycatz/CloudUnflare)
 
+
+# OSINT Cloud
+
+- [Google CSE search drive](https://cse.google.com/cse?cx=013991603413798772546:nwzqlcysx_w)
+- [cloud enum](https://github.com/initstring/cloud_enum)
+- [dedigger](https://www.dedigger.com/#gsc.tab=0)

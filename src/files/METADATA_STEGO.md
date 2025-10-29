@@ -131,3 +131,42 @@
 - [AutoExif](https://github.com/SirCryptic/autoexif)
 - [HACHOIR](https://github.com/vstinner/hachoir)
 
+
+
+## Exif tag name and data type
+
+- [Exiftool](https://exiftool.org)
+- [https://exiftool.org](https://exiftool.org)
+- [List tagname](https://exiftool.org/TagNames)
+- [https://exiftool.org/TagNames](https://exiftool.org/TagNames)
+- [List tagnme 2](https://metacpan.org/dist/Image-ExifTool/view/lib/Image/ExifTool/TagNames.pod)
+- [List tagname 3](https://manpages.org/imageexiftooltagnames/3)
+
+## Delete mass metadata
+
+- [Exif python script remover](https://github.com/davidbombal/red-python-scripts/blob/main/remove_exif.py)
+
+
+# EXIF Analysis
+
+- [regex](https://regex.info/exif.cgi)
+- [https://regex.info/exif.cgi](https://regex.info/exif.cgi)
+- [FindExif](https://www.findexif.com)
+- [https://www.findexif.com](https://www.findexif.com)
+- [metapicz](https://metapicz.com)
+- [https://metapicz.com](https://metapicz.com)
+- [imageforensic](https://www.imageforensic.org)
+- [https://www.imageforensic.org](https://www.imageforensic.org)
+- [metapicz](https://metapicz.com)
+- [https://metapicz.com](https://metapicz.com)
+- [jimpl](https://jimpl.com)
+- [https://jimpl.com](https://jimpl.com)
+- [pic2map](https://www.pic2map.com)
+- [https://www.pic2map.com](https://www.pic2map.com)
+- [labs.tib.eu](https://labs.tib.eu/geoestimation)
+- [https://labs.tib.eu/geoestimation](https://labs.tib.eu/geoestimation)
+- [imago-forensics](https://github.com/redaelli/imago-forensics)
+- [Renrot Exif](https://github.com/andy-shev/RenRot)
+- [Geotag](https://vsudo.net/tools/geotag)
+- [PhotOSINT Browser Extension](https://chrome.google.com/webstore/detail/photosint/gonhdjmkgfkokhkflfhkbiagbmoolhcd/related?hl=nl)
+- [Python exif extractor](https://github.com/davidbombal/red-python-scripts/blob/main/exif.py)

@@ -32,3 +32,30 @@
 - [BigNox](https://www.bignox.com)
 - [Memuplay.com](https://www.memuplay.com)
 - [Ldplayer.net](https://www.ldplayer.net)
+
+
+# Linux Distribution For OSINT
+
+- [tlosint-live](https://github.com/tracelabs/tlosint-live)
+- [tails](https://tails.net)
+- [HiddenVM](https://github.com/aforensics/HiddenVM)
+- [https://tails.net](https://tails.net)
+- [qubes](https://www.qubes-os.org/doc)
+- [https://www.qubes-os.org/doc](https://www.qubes-os.org/doc)
+- [parrot sec](https://www.parrotsec.org)
+- [https://www.parrotsec.org](https://www.parrotsec.org)
+- [csi linux](https://csilinux.com/csi-linux-downloads)
+- [https://csilinux.com/csi-linux-downloads](https://csilinux.com/csi-linux-downloads)
+
+
+# Linux Distribution Package Search
+
+- [Redhat Linux](https://access.redhat.com/search/?q=packages&documentKind=Solution%26Article)
+- [Debian Linux](https://packages.debian.org/index)
+- [Arch Linux](https://archlinux.org/packages)
+- [https://archlinux.org/packages](https://archlinux.org/packages)
+- [pkgs](https://pkgs.org)
+- [https://pkgs.org](https://pkgs.org)
+- [Ubbuntu Package](https://packages.ubuntu.com)
+- [https://packages.ubuntu.com](https://packages.ubuntu.com)
+- [Boot-Repair ubuntu](https://help.ubuntu.com/community/Boot-Repair)

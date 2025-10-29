@@ -284,3 +284,18 @@
 
 - [Mohamed Hamdi Ouardi](https://www.linkedin.com/in/ouardi-mohamed-hamdi)
 - [Dan Nanni](https://www.linkedin.com/in/xmodulo)
+
+
+# Competitive Programming
+
+- [Hackerrank](https://www.hackerrank.com)
+- [https://www.hackerrank.com](https://www.hackerrank.com)
+- [Code chef](https://www.codechef.com)
+- [https://www.codechef.com](https://www.codechef.com)
+- [Code war](https://www.codewars.com)
+- [https://www.codewars.com](https://www.codewars.com)
+
+
+# OSINT Jobs
+
+- [OSINT Jobs](https://www.osint-jobs.com/applicants)

@@ -144,3 +144,121 @@
 - [Unshorten.me](https://unshorten.me)
 - [Urlxray](https://urlxray.com)
 - [Unshorten.it](https://unshorten.it)
+
+
+### Web History
+
+- [Web Archive](https://web.archive.org/) - Explore more than 702 billion web pages saved over time
+- [Archive.ph](https://archive.ph/) - Create a copy of a webpage that will always be up even if the original link is down
+- [CachedPages](http://www.cachedpages.com/) - Get the cached page of any URL
+- [stored.website](https://stored.website/) - View cached web pages/website
+- [CommonCrawl](https://commoncrawl.org/) - Open repository of web crawl data
+- [UK Web Archive](https://www.webarchive.org.uk/ukwa/) - Collects millions of websites each year, preserving them for future generations
+- [Arquivo](https://arquivo.pt/) - Non-profit service that maintains information published on the web of interest to the Portuguese community
+- [Archive-It](https://archive-it.org/) - An archive of digital government and non-government organization (NGO) documents and reports
+- [HAW](https://haw.nsk.hr/en/) - Croatian Web Archive
+
+
+### Unclassified
+
+- [DorkSearch](https://dorksearch.com/) - Speed up your Dorking
+- [usersearch.org](https://usersearch.org/) - Find someone by username or email on Social Networks, Dating Sites, Forums, Crypto Forums, Chat Sites and Blogs
+- [Wappalyzer](https://www.wappalyzer.com/) - Instant access to website technology stacks, company and contact details, social media profiles, email verification and more
+- [Awakari](https://awakari.com) - Real-Time Search from unlimited sources like RSS, Fediverse, Telegram, etc. Filter events by keywords, numeric conditions, condition groups
+- [CanIUse.com](https://caniuse.com/) - Browser support tables for modern web technologies
+- [Dark Visitors](https://darkvisitors.com/) - Track and Control Artificial Agents Crawling Your Website
+
+
+# Analysing URLs
+
+- [dnshistory](https://osint.sh/dnshistory)
+- [https://osint.sh/dnshistory](https://osint.sh/dnshistory)
+- [Unfurl](https://github.com/obsidianforensics/unfurl)
+- [VirusTotal](https://www.virustotal.com/gui/home/upload)
+- [Archive Org](https://archive.org/web)
+- [https://archive.org/web](https://archive.org/web)
+- [Iplocation](https://iplocation.io/website-link-analyzer)
+- [Smallseotools](https://smallseotools.com/website-link-analyzer-tool)
+- [https://smallseotools.com/website-link-analyzer-tool](https://smallseotools.com/website-link-analyzer-tool)
+- [Abuse IP](https://www.abuseipdb.com)
+- [https://www.abuseipdb.com](https://www.abuseipdb.com)
+- [Check-The-Sum](https://check-the-sum.fr)
+- [https://check-the-sum.fr](https://check-the-sum.fr)
+- [Check Phish](https://checkphish.ai)
+- [https://checkphish.ai](https://checkphish.ai)
+- [Radar By Cloudflare](https://radar.cloudflare.com)
+- [https://radar.cloudflare.com](https://radar.cloudflare.com)
+- [Is it Phishing](https://isitphishing.org)
+- [https://isitphishing.org](https://isitphishing.org)
+- [Kaspersky](https://opentip.kaspersky.com)
+- [https://opentip.kaspersky.com](https://opentip.kaspersky.com)
+- [PolySwarm](https://polyswarm.network)
+- [https://polyswarm.network](https://polyswarm.network)
+- [Threat Miner](https://www.threatminer.org)
+- [https://www.threatminer.org](https://www.threatminer.org)
+- [Netcraft](https://www.netcraft.com/tools)
+- [https://www.netcraft.com/tools](https://www.netcraft.com/tools)
+- [Malwareworld](https://malwareworld.com)
+- [https://malwareworld.com](https://malwareworld.com)
+- [DNS TWIST](https://github.com/elceef/dnstwist)
+- [URL CRAZY - Phishing detector](https://github.com/urbanadventurer/urlcrazy)
+- [CRT - Find cert ssl and etc](https://crt.sh)
+- [https://crt.sh](https://crt.sh)
+- [Phishing catcher](https://github.com/x0rz/phishing_catcher)
+- [Open Phish](https://openphish.com/phishing_feeds.html)
+- [Phishtalk](https://www.phishtank.com/phish_archive.php)
+- [URL Haus](https://urlhaus.abuse.ch)
+- [https://urlhaus.abuse.ch](https://urlhaus.abuse.ch)
+- [Expand Url](https://www.expandurl.net)
+- [https://www.expandurl.net](https://www.expandurl.net)
+- [Tiny Scan](https://www.tiny-scan.com)
+- [redirectdetective](https://redirectdetective.com)
+- [https://redirectdetective.com](https://redirectdetective.com)
+- [wheregoes](https://wheregoes.com)
+- [https://wheregoes.com](https://wheregoes.com)
+- [spyoffers](https://www.spyoffers.com)
+- [https://www.spyoffers.com](https://www.spyoffers.com)
+- [vx-underground](https://vx-underground.org)
+- [https://vx-underground.org](https://vx-underground.org)
+- [ShadowDragon](https://shadowdragon.io)
+- [https://shadowdragon.io](https://shadowdragon.io)
+- [metadefender](https://metadefender.opswat.com)
+- [https://metadefender.opswat.com](https://metadefender.opswat.com)
+- [fofa](https://en.fofa.info)
+- [https://en.fofa.info](https://en.fofa.info)
+- [safeweb norton](https://safeweb.norton.com)
+- [https://safeweb.norton.com](https://safeweb.norton.com)
+- [haveibeensquatted](https://www.haveibeensquatted.com)
+- [https://www.haveibeensquatted.com](https://www.haveibeensquatted.com)
+- [favihash](https://www.favihash.com)
+- [https://www.favihash.com](https://www.favihash.com)
+- [waybackpack download wayback archive url](https://github.com/jsvine/waybackpack)
+- [Google Safe Browsing](https://developers.google.com/safe-browsing?hl=id)
+
+
+# Tracking Website Changes
+
+- [Changedetection](https://www.changedetection.com)
+- [https://www.changedetection.com](https://www.changedetection.com)
+- [Followthatpage](https://www.followthatpage.com)
+- [https://www.followthatpage.com](https://www.followthatpage.com)
+- [visualping](https://visualping.io)
+- [https://visualping.io](https://visualping.io)
+
+
+# Web Directory
+
+- [Vlib](https://vlib.org)
+- [https://vlib.org](https://vlib.org)
+- [Dmoz](https://web.archive.org/web/20240000000000*/http:/www.dmoz.org)
+- [https://web.archive.org/web/20240000000000*/http:/www.dmoz.org](https://web.archive.org/web/20240000000000*/http:/www.dmoz.org)
+
+
+# Shortlink for OSINT
+
+- [t.ly](https://t.ly)
+- [https://t.ly](https://t.ly)
+- [bit.ly](https://bitly.com)
+- [https://bitly.com](https://bitly.com)
+- [tiny url](https://tinyurl.com)
+- [https://tinyurl.com](https://tinyurl.com)

@@ -38,3 +38,12 @@
 - [Sniffnet](https://github.com/GyulyVGC/sniffnet)
 - [Uptime-Kuma](https://github.com/louislam/uptime-kuma)
 - [Nope Proxy](https://github.com/summitt/Nope-Proxy)
+
+
+### Device Information
+
+- [MACVendorLookup.com](https://www.macvendorlookup.com/) - Look up the vendor for a specific MAC Address
+- [macvendors.com](https://macvendors.com/) - Find MAC Address Vendors. Now
+- [macaddress.io](https://macaddress.io/) - MAC address vendor lookup
+- [maclookup.app](https://maclookup.app/) - Find the vendor name of a device by entering an OUI or a MAC address
+- [macvendors.co](https://macvendors.co/) - Get vendor name of your network device using its mac address

@@ -35,3 +35,22 @@
 ### Linkedin
 
 - [Linkedin Datahub](https://github.com/linkedin/datahub/blob/master/docs/faq.md)
+- [CrossLinked - LinkedIn enumeration](https://github.com/m8sec/CrossLinked)
+
+
+# LinkedIn
+
+- [LinkedInDumper](https://github.com/l4rm4nd/LinkedInDumper)
+- [Weakestlink](https://github.com/shellfarmer/WeakestLink)
+- [GatherContacts](https://github.com/clr2of8/GatherContacts)
+- [Rocket reach](https://rocketreach.co/person)
+- [Phantom Buster](https://phantombuster.com/phantombuster)
+- [reversecontact](https://www.reversecontact.com)
+- [https://www.reversecontact.com](https://www.reversecontact.com)
+- [Linkedin Search OSINT](https://cse.google.com/cse?cx=daaf18e804f81bed0)
+- [Linkedin Google Search Custom](https://cse.google.com/cse?cx=002879889969213338875:ykfcyju2xe8)
+- [Linkedin Google Search Custom 2](https://cse.google.com/cse?cx=012951739560700154499:8rl_7tkzjgq#gsc.tab=0)
+- [coresignal](https://coresignal.com)
+- [https://coresignal.com](https://coresignal.com)
+- [Linkedin Attack Vector](https://www.osintdojo.com/diagrams/linkedin)
+- [CrossLinked](https://github.com/m8sec/CrossLinked)

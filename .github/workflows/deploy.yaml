@@ -1,0 +1,38 @@
+name: Deploy mdBook
+
+on:
+  push:
+    branches:
+      - main  # or "master", depending on your repo
+  workflow_dispatch:  # allows manual trigger
+
+permissions:
+  contents: write  # needed to push to gh-pages
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install mdBook
+        run: cargo install mdbook
+
+      # Optional: install mdBook plugins if you use them
+      # - name: Install plugins
+      #   run: cargo install mdbook-toc mdbook-mermaid mdbook-katex mdbook-linkcheck
+
+      - name: Build the book
+        run: mdbook build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.BUILD_TOKEN }}
+          publish_dir: ./book
+          publish_branch: gh-pages

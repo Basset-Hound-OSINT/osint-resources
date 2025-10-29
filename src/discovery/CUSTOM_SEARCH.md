@@ -158,3 +158,31 @@
 - [YaSeeker](https://github.com/HowToFind-bot/YaSeeker)
 - [http://Yandex.ru](https://Yandex.ru)
 - [https://Yandex.ru](http://Yandex.ru](https://Yandex.ru](http://Yandex.ru)
+
+
+### Servers
+
+- [Shodan](https://shodan.io) - Search Engine for the Internet of Everything
+- [Censys Search](https://search.censys.io/) - Search Engine for every server on the Internet to reduce exposure and improve security
+- [Onyphe.io](https://www.onyphe.io/) - Cyber Defense Search Engine for open-source and cyber threat intelligence data
+- [ZoomEye](https://www.zoomeye.org/) - Global cyberspace mapping
+- [GreyNoise](https://viz.greynoise.io/) - The source for understanding internet noise
+- [Natlas](https://natlas.io/) - Scaling Network Scanning
+- [Netlas.io](https://netlas.io/) - Discover, Research and Monitor any Assets Available Online
+- [FOFA](https://fofa.info/) - Cyberspace mapping
+- [Quake](https://quake.360.net/quake/#/index) - Cyberspace surveying and mapping system
+- [Hunter](https://hunter.how/) - Internet Search Engines For Security Researchers
+- [ODIN](https://getodin.com/) - One of the most powerful search engines for Scanned Internet Assets
+
+
+# Shodan Query Options
+
+- [https://pen-testing.sans.org/blog/2015/12/08/effective-shodan-searches](https://pen-testing.sans.org/blog/2015/12/08/effective-shodan-searches)
+- [https://danielmiessler.com/study/shodan/#gs.VBVsyo0](https://danielmiessler.com/study/shodan/#gs.VBVsyo0)
+
+
+# Custom CSE Search Engine (CSE)
+
+- [CSE-UTOPIA LISTS](https://start.me/p/EL84Km/cse-utopia)
+- [40 Custom Search Engines](https://booleanstrings.com/all-the-40-forty-custom-search-engines)
+- [https://booleanstrings.com/all-the-40-forty-custom-search-engines](https://booleanstrings.com/all-the-40-forty-custom-search-engines)

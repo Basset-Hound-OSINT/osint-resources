@@ -31,3 +31,152 @@
 - [MailScrap](https://mailscrap.com)
 - [Check-if-email-exists](https://github.com/reacherhq/check-if-email-exists)
 
+- [Infoga - Email information collection](https://github.com/m4ll0k/Infoga)
+- [Profil3r - Find accounts and breached emails](https://github.com/Greyjedix/Profil3r)
+- [IKy - Email investigations](https://github.com/kennbroorg/iKy)
+
+
+### Email Addresses
+
+- [Hunter.io](https://hunter.io/) - Find professional email addresses in seconds
+- [PhoneBook](https://phonebook.cz/) - Lists all domains, email addresses, or URLs for the given input domain
+- [IntelligenceX](https://intelx.io/) - Search engine and data archive
+- [Reacher.email](https://reacher.email/) - Open-Source Email Verification
+- [RocketReach](https://rocketreach.co/) - Your first-degree connection to any professional
+- [email-format.com](https://www.email-format.com/) - Find the email address formats in use at thousands of companies
+- [EmailHippo](https://tools.emailhippo.com/) - Email address verification technology
+- [ThatsThem](https://thatsthem.com/reverse-email-lookup) - Reverse email lookup
+- [verify-email.org](https://verify-email.org/) - Checks whether the mailbox exists or not
+- [Melissa - Emailcheck](https://www.melissa.com/v2/lookups/emailcheck/email/) - Check email addresses and verify they are live
+- [VoilaNorbert](https://www.voilanorbert.com/) - I can find anyone's email address
+- [SynapsInt](https://synapsint.com/) - The unified OSINT research tool
+- [skymem.info](http://www.skymem.info/) - Find email addresses of companies and people
+- [findemails.com](https://www.findemails.com/) - Find Anyone's Email Address in Seconds
+- [Experte email finder](https://www.experte.com/email-finder) - Find the right email address, even if you only know the name and the company
+- [EmailSherlock](https://www.emailsherlock.com/) - Search for the Person behind the Email address and find our reputation score
+- [Anymail Finder](https://anymailfinder.com/) - Find verified emails
+- [Tomba.io](https://tomba.io/) - With 430+ million email addresses indexed, effective search filters, and deliverability checks, Tomba's email finder is its most powerful tool
+- [Snov Email Finder](https://snov.io/email-finder) Find any email. Anywhere
+- [EmailSearch.io](https://emailsearch.io/) - Find any emails and phones from a domain, Linkedin, name, and company
+- [Email Permutator+](http://metricsparrow.com/toolkit/email-permutator/#) - Find potential email addresses permutating different combinations
+- [Emailrep.io](https://emailrep.io/) - Simple Email Reputation
+- [Mailboxvalidator](https://www.mailboxvalidator.com/) - Secure and reliable email validation service to check for invalid email addresses
+- [ContactOut](https://contactout.com/) - Most accurate email finder for personal and work email outreach
+- [validemail.io](https://validemail.io/) - Validate email addresses for deliverability with our Email Validation API
+- [Predicta Search](https://www.predictasearch.com/) - Reverse lookup search engine for email and phone numbers
+- [Infoga.io](Infoga.io) - Find out all email for a certain domain using search engines
+
+
+# Email Tracking
+
+- [Mailcat](https://github.com/sharsil/mailcat)
+- [OSINT indsutries](https://www.osint.industries)
+- [https://www.osint.industries](https://www.osint.industries)
+- [lullar](https://lullar-com-3.appspot.com/en)
+- [ip-adress](https://www.ip-adress.com/trace_email)
+- [https://www.ip-adress.com/trace_email](https://www.ip-adress.com/trace_email)
+- [whatismyipaddress](https://www.whatismyipaddress.com/trace-email)
+- [https://www.whatismyipaddress.com/trace-email](https://www.whatismyipaddress.com/trace-email)
+- [hunter](https://hunter.io)
+- [https://hunter.io](https://hunter.io)
+- [Website informer](https://website.informer.com)
+- [https://website.informer.com](https://website.informer.com)
+- [email-checker](https://email-checker.net)
+- [https://email-checker.net](https://email-checker.net)
+- [verifyemailaddress](https://www.verifyemailaddress.org)
+- [https://www.verifyemailaddress.org](https://www.verifyemailaddress.org)
+- [SignalHire](https://www.signalhire.com)
+- [https://www.signalhire.com](https://www.signalhire.com)
+- [Holehe](https://github.com/megadose/holehe)
+- [Holehe Maltego Transforms](https://github.com/megadose/holehe-maltego)
+- [Spokeo](https://www.spokeo.com/email-search)
+- [Mx Toolbox - Header Email](https://mxtoolbox.com/EmailHeaders.aspx)
+- [getnotify](https://www.getnotify.com)
+- [https://www.getnotify.com](https://www.getnotify.com)
+- [epieos](https://epieos.com)
+- [https://epieos.com](https://epieos.com)
+- [seon](https://seon.io/resources/the-ultimate-guide-to-free-email-lookup-and-reverse-email-lookup-tools)
+- [https://seon.io/resources/the-ultimate-guide-to-free-email-lookup-and-reverse-email-lookup-tools](https://seon.io/resources/the-ultimate-guide-to-free-email-lookup-and-reverse-email-lookup-tools)
+- [Eye](https://github.com/N0rz3/Eyes)
+- [Thatsthem](https://thatsthem.com)
+- [https://thatsthem.com](https://thatsthem.com)
+- [Freepeoplesearch](https://freepeoplesearch.com)
+- [https://freepeoplesearch.com](https://freepeoplesearch.com)
+- [Headmail](https://github.com/umair9747/headmail)
+- [Poastal](https://github.com/jakecreps/poastal)
+- [anymailfinder](https://anymailfinder.com)
+- [https://anymailfinder.com](https://anymailfinder.com)
+- [getprospect](https://getprospect.com)
+- [https://getprospect.com](https://getprospect.com)
+- [Email Hippo](https://tools.emailhippo.com)
+- [https://tools.emailhippo.com](https://tools.emailhippo.com)
+- [Buster](https://github.com/sham00n/buster)
+- [Gravatar Email Cheker](https://gravatar.com/site/check)
+- [https://gravatar.com/site/check](https://gravatar.com/site/check)
+- [EmailRep](https://emailrep.io)
+- [https://emailrep.io](https://emailrep.io)
+- [pwnedOrNot](https://github.com/thewhiteh4t/pwnedOrNot)
+- [Email-Analytics](https://emailanalytics.com/email-headers)
+- [https://emailanalytics.com/email-headers](https://emailanalytics.com/email-headers)
+- [Email Header Analisis Toolbox](https://toolbox.googleapps.com/apps/messageheader)
+- [https://toolbox.googleapps.com/apps/messageheader](https://toolbox.googleapps.com/apps/messageheader)
+- [Sherlock Eye](https://sherlockeye.io)
+- [https://sherlockeye.io](https://sherlockeye.io)
+- [Ghunt](https://github.com/mxrch/GHunt)
+- [Email Format](https://www.email-format.com/i/search)
+- [https://www.email-format.com/i/search](https://www.email-format.com/i/search)
+- [predictasearch](https://www.predictasearch.com)
+- [https://www.predictasearch.com](https://www.predictasearch.com)
+- [emailsearch](https://emailsearch.io)
+- [https://emailsearch.io](https://emailsearch.io)
+- [inspektur](https://github.com/bgwastu/inspektur)
+- [lolarchiver](https://osint.lolarchiver.com/#)
+- [Proxynova](https://www.proxynova.com/tools/comb)
+- [https://www.proxynova.com/tools/comb](https://www.proxynova.com/tools/comb)
+- [Leakcheck](https://leakcheck.io)
+- [https://leakcheck.io](https://leakcheck.io)
+- [exposed](https://exposed.lol)
+- [https://exposed.lol](https://exposed.lol)
+- [findemail](https://findemail.io)
+- [https://findemail.io](https://findemail.io)
+- [skymem](https://www.skymem.info)
+- [https://www.skymem.info](https://www.skymem.info)
+- [idcrawl](https://www.idcrawl.com/email-lookup)
+- [Ghunt online tools](https://app.osint.industries)
+- [https://app.osint.industries](https://app.osint.industries)
+- [Hashes email](https://hashes.com/en/emails/md5)
+- [sn0int protonmail-pks](https://sn0int.com/r/kpcyrd/protonmail-pks)
+- [checkcybersecurity](https://checkcybersecurity.service.ncsc.gov.uk/email-security-check/form)
+- [Proton mail tracking](https://github.com/pixelbubble/ProtOSINT)
+- [Proton Protintelligence](https://github.com/C3n7ral051nt4g3ncy/Prot1ntelligence)
+- [Ghunt online Japanese Lang](https://gmail-osint.activetk.jp)
+- [https://gmail-osint.activetk.jp](https://gmail-osint.activetk.jp)
+- [OSINT rocks](https://osint.rocks)
+- [https://osint.rocks](https://osint.rocks)
+- [email-permutator perform possible email addresses](https://metricsparrow.com/toolkit/email-permutator)
+- [https://metricsparrow.com/toolkit/email-permutator](https://metricsparrow.com/toolkit/email-permutator)
+- [salesblink email-permutator perform possible email addresses](https://salesblink.io/email-permutator)
+- [ipkzone email generator](https://ipkzone.my.id/gmail)
+- [https://ipkzone.my.id/gmail](https://ipkzone.my.id/gmail)
+- [snov.io](https://snov.io/email-finder)
+- [experte](https://www.experte.com/email-finder)
+- [Josue87 EmailFinder](https://github.com/Josue87/EmailFinder)
+- [infoga](https://www.infoga.io)
+- [https://www.infoga.io](https://www.infoga.io)
+- [findemail](https://findemail.io)
+- [https://findemail.io](https://findemail.io)
+- [minelead](https://minelead.io)
+- [https://minelead.io](https://minelead.io)
+- [espysys](https://espysys.com)
+- [https://espysys.com](https://espysys.com)
+- [hackcheck](https://hackcheck.io)
+- [https://hackcheck.io](https://hackcheck.io)
+- [h8mail](https://github.com/khast3x/h8mail)
+- [lampyre](https://lampyre.io)
+- [https://lampyre.io](https://lampyre.io)
+- [onchain](https://www.onchain.industries)
+- [https://www.onchain.industries](https://www.onchain.industries)
+- [email2phonenumber](https://github.com/martinvigo/email2phonenumber)
+- [lullar like a dork](https://com.lullar.com)
+- [https://com.lullar.com](https://com.lullar.com)
+- [clatscope](https://github.com/clats97/clatscope)

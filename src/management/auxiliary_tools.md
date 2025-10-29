@@ -89,3 +89,69 @@
 - [Lostplace atlas](https://www.google.com/maps/d/viewer?mid=1yRkY_mc-IpSVTfQgR3G6Pvjno3w&hl=en_US&ll=36.86911339765801%2C22.7511350249344&z=4)
 - [Virtual Globe Trotting](https://virtualglobetrotting.com)
 
+## Multi-Purpose/Framework Tools
+- [Pinosint - Investigation framework](https://github.com/MustafaAP/pinosint)
+- [Ghost Recon - OSINT framework](https://github.com/DR34M-M4K3R/GhostRecon)
+- [Citizen Intelligence Agency - OSINT project](https://github.com/Hack23/cia)
+- [Abuse Insight - Abuse IP DB analysis](https://github.com/west-wind/abuse-insights)
+
+## Browser Extensions
+- [Chrome OSINT Extensions](https://github.com/CScorza/EstensioniChromeOSINT)
+
+
+
+- [web-check - All-in-one OSINT tool](https://github.com/Lissy93/web-check)
+- [reNgine - Web Reconnaissance & Vulnerability Scanner](https://github.com/yogeshojha/rengine)
+- [SpiderFoot - Threat intelligence](https://github.com/smicallef/spiderfoot)
+- [BBOT - OSINT automation for hackers](https://github.com/blacklanternsecurity/bbot)
+- [Mihari - Threat hunting tool](https://github.com/ninoseki/mihari)
+- [Should i trust - Company trustworthiness](https://github.com/ericalexanderorg/should-i-trust)
+- [GooFuzz - OSINT fuzzing tool](https://github.com/m3n0sd0n4ld/GooFuzz)
+- [GHunt - Offensive Google framework](https://github.com/mxrch/GHunt)
+- [Gasmask - Information gathering tool](https://github.com/twelvesec/gasmask)
+- [Sub3suite - Intelligence gathering tool](https://github.com/3nock/sub3suite)
+- [Infoooze - OSINT tool in NodeJs](https://github.com/7ORP3DO/infoooze)
+- [Mr.Holmes - Complete OSINT Tool](https://github.com/Lucksi/Mr.Holmes)
+- [Collector - OSINT tool](https://github.com/galihap76/collector)
+- [gOSINT - OSINT Swiss Army Knife](https://github.com/Nhoya/gOSINT)
+- [Karma v2 - Passive OSINT Framework](https://github.com/Dheerajmadhukar/karma_v2)
+- [Chiasmodon - Domain information gathering](https://github.com/chiasmod0n/chiasmodon)
+- [SquatSquasher - Domain squatting finder](https://github.com/Stuub/SquatSquasher)
+- [Opensquat - Phishing domain detection](https://github.com/atenreiro/opensquat)
+- [Kupa3 - Track website scripts and domains](https://github.com/woj-ciech/kupa3)
+- [Teler - Real-time HTTP Intrusion Detection](https://github.com/kitabisa/teler)
+- [Cameradar - RTSP camera hacking](https://github.com/Ullaakut/cameradar)
+- [IP Geolocation](https://github.com/maldevel/IPGeoLocation)
+- [MetaOSINT - OSINT resources](https://github.com/MetaOSINT/MetaOSINT.github.io)
+- [MetaOSINT - 4000+ OSINT resources](https://metaosint.github.io/table/)
+- [Cloud OSINT - Tools and techniques](https://github.com/7WaySecurity/cloud_osint)
+- [Rapid7 OSINT](https://github.com/tg12/rapid7_OSINT)
+- [Commit-stream - Github repository finder](https://github.com/x1sec/commit-stream)
+- [OSINT stuff tool collection](https://github.com/cipher387/osint_stuff_tool_collection)
+
+
+
+### Attack Surface
+
+- [FullHunt.io](https://fullhunt.io/) - Attack surface database of the entire Internet
+- [BinaryEdge](https://www.binaryedge.io/) - We scan the web and gather data for you
+- [Censys ASM](https://censys.io/) - Attack Surface Management Solutions
+- [RedHunt Labs](https://redhuntlabs.com/) - Discover your Attack Surface, Continuously
+- [SecurityTrails](https://securitytrails.com/) - The Total Internet Inventory
+- [overcast-security.com](https://overcast-security.com/) - We make tracking your external attack surface easy
+- [IPInfo.io](https://ipinfo.io/) - The trusted source for IP address data
+- [IPData.co](https://ipdata.co/) - IP Geolocation and Threat Intelligence API
+- [NetworksDB](https://networksdb.io/) - Information about the public IPv4 and IPv6 addresses, networks and domains owned by companies and organisations across the world
+- [ASNlookup](https://asnlookup.com/) - Quickly lookup updated information about specific Autonomous System Number (ASN), Organization, CIDR, or registered IP addresses (IPv4 and IPv6) among other relevant data
+- [BGPtools](https://bgp.tools/) - Browse the Internet ecosystem
+- [BGPview](https://bgpview.io/) - Debug and investigate information about IP addresses, ASN, IXs, BGP, ISPs, Prefixes and Domain names
+- [BigDataCloud](https://www.bigdatacloud.com/) - The API provides comprehensive location and network data
+- [RADb](https://www.radb.net/query) - The world's largest public routing registry
+- [Deepinfo](https://www.deepinfo.com/) - Empower your security with the most comprehensive Internet data
+- [CloudFlare Radar](https://radar.cloudflare.com/) - Global Internet traffic, attack, and technology trends and insights
+- [IPIP](https://en.ipip.net/) - The only IP Database based on real time BGP/ASN data analytics
+- [Hurricane Electric BGP](https://bgp.he.net/) - The Hurricane Electric BGP Toolkit is free to use. Look up ASN from IP address
+- [Webscout](https://webscout.io/) - From threat intelligence to attack surface discovery, asset management, and brand protection
+- [Awseye](https://awseye.com/) - Open-source intelligence (OSINT) and reconnaissance service tracking publicly accessible AWS data
+- [S4E](https://app.s4e.io/) - Continuous Threat Exposure Management platform that offers a web-based cybersecurity solution for comprehensive scanning and vulnerability detection of digital assets like domains, subdomains, IP addresses, and web apps
+- [ipquery.io](https://ipquery.io/) - The IP Address API for Developers

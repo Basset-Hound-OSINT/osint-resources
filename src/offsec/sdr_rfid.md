@@ -15,3 +15,16 @@
 - [PicoPass](https://lab.flipper.net/apps/picopass)
 - [Mifare Fuzzer](https://lab.flipper.net/apps/mifare_fuzzer)
 - [MFKey](https://lab.flipper.net/apps/mfkey)
+
+
+# SDR OSINT
+
+- [map sdr points](https://rx-tx.info/map-sdr-points)
+- [Airspy SDR RADIO](https://www.sdr-radio.com/airspy-server)
+- [AirSpy MAP](https://airspy.com/directory)
+- [https://airspy.com/directory](https://airspy.com/directory)
+- [WEB SDR](https://websdr.ewi.utwente.nl:8901)
+- [https://websdr.ewi.utwente.nl:8901](https://websdr.ewi.utwente.nl:8901)
+- [Bellingcat Radar](https://ollielballinger.users.earthengine.app/view/bellingcat-radar-interference-tracker)
+- [Wireshark](https://www.wireshark.org)
+- [https://www.wireshark.org](https://www.wireshark.org)

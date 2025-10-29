@@ -202,3 +202,124 @@
 - [Xmind Works](https://xmind.works)
 - [CLIGPT](https://github.com/paij0se/cligpt)
 - [MarkWhen](https://markwhen.com)
+
+
+## Records
+- [Natudump - LegiFrance naturalisation scraping](https://github.com/vadimkantorov/natudump)
+- [ArreStats - FBI arrest file search](https://github.com/CarlaAstudillo/ArreStats)
+- [Crime data explorer - FBI crime data](https://github.com/18F/crime-data-explorer)
+
+
+
+
+# Internet Archive
+
+- [DMCA Lumen DB](https://lumendatabase.org)
+- [https://lumendatabase.org](https://lumendatabase.org)
+- [Wayback Machine](https://web.archive.org)
+- [https://web.archive.org](https://web.archive.org)
+- [Intelligence X](https://intelx.io)
+- [https://intelx.io](https://intelx.io)
+- [Openlibrary](https://openlibrary.org)
+- [https://openlibrary.org](https://openlibrary.org)
+- [Archive Fo](https://archive.fo)
+- [https://archive.fo](https://archive.fo)
+- [UKWA](https://www.webarchive.org.uk/ukwa)
+- [https://www.webarchive.org.uk/ukwa](https://www.webarchive.org.uk/ukwa)
+- [Archive today](https://archive.vn)
+- [https://archive.vn](https://archive.vn)
+- [Waymore](https://forum.seccodeid.com/d/waymore-find-way-more-from-the-wayback-machine)
+- [Cached Pages](https://www.cachedpages.com)
+- [https://www.cachedpages.com](https://www.cachedpages.com)
+- [cachedview](https://cachedview.com)
+- [https://cachedview.com](https://cachedview.com)
+- [ArchivEye](https://github.com/eastrd/ArchivEye)
+- [Twitter Archive](https://github.com/humandecoded/twayback)
+- [Archive Today](https://archive.is)
+- [https://archive.is](https://archive.is)
+- [Wayback Downloader](https://github.com/hartator/wayback-machine-downloader)
+- [How to archive tele content](https://www.bellingcat.com/resources/how-tos/2022/03/08/how-to-archive-telegram-content-to-document-russias-invasion-of-ukraine)
+- [https://www.bellingcat.com/resources/how-tos/2022/03/08/how-to-archive-telegram-content-to-document-russias-invasion-of-ukraine](https://www.bellingcat.com/resources/how-tos/2022/03/08/how-to-archive-telegram-content-to-document-russias-invasion-of-ukraine)
+- [webarchiveviewer](https://cybdetective.com/webarchiveviewer)
+- [https://cybdetective.com/webarchiveviewer](https://cybdetective.com/webarchiveviewer)
+- [ShadowDragon](https://shadowdragon.io)
+- [https://shadowdragon.io](https://shadowdragon.io)
+- [lolarchiver](https://osint.lolarchiver.com/#)
+- [Time Travel](https://timetravel.mementoweb.org)
+- [https://timetravel.mementoweb.org](https://timetravel.mementoweb.org)
+- [bellingcat wayback-google-analytics](https://github.com/bellingcat/wayback-google-analytics)
+- [waybackpack download wayback archive url](https://github.com/jsvine/waybackpack)
+- [archive-it](https://archive-it.org)
+- [https://archive-it.org](https://archive-it.org)
+
+
+# Public Records
+
+- [Public Record](https://publicrecords.searchsystems.net)
+- [https://publicrecords.searchsystems.net](https://publicrecords.searchsystems.net)
+- [Fam Watchdog](https://Familywatchdog.us)
+- [https://Familywatchdog.us](https://Familywatchdog.us)
+- [Crime Reports](https://www.crimereports.com)
+- [https://www.crimereports.com](https://www.crimereports.com)
+
+
+# Capturing Information
+
+- [Exif Viewer](https://addons.mozilla.org/en-US/firefox/addon/exif-viewer)
+- [https://addons.mozilla.org/en-US/firefox/addon/exif-viewer](https://addons.mozilla.org/en-US/firefox/addon/exif-viewer)
+- [HTTrack](https://www.httrack.com)
+- [https://www.httrack.com](https://www.httrack.com)
+- [Wayback Machine](https://archive.org/web)
+- [https://archive.org/web](https://archive.org/web)
+- [cachedview](https://cachedview.com)
+- [https://cachedview.com](https://cachedview.com)
+- [url png](https://www.url2png.com)
+- [https://www.url2png.com](https://www.url2png.com)
+- [Bellingcat Auto Archive](https://github.com/bellingcat/auto-archiver)
+- [Archive today](https://archive.ph)
+- [https://archive.ph](https://archive.ph)
+- [flameshot](https://flameshot.org)
+- [https://flameshot.org](https://flameshot.org)
+- [Googl earth pro](https://earth.google.com/web)
+
+
+# Fraud Checker
+
+- [scamsearch](https://www.scamsearch.io)
+- [https://www.scamsearch.io](https://www.scamsearch.io)
+- [ScamDB](https://scamdb.net)
+- [https://scamdb.net](https://scamdb.net)
+- [Cek Rekening](https://cekrekening.id/home)
+- [Kredibel](https://www.kredibel.com)
+- [https://www.kredibel.com](https://www.kredibel.com)
+- [Verihub](https://verihubs.com)
+- [https://verihubs.com](https://verihubs.com)
+- [Scamadviser](https://www.maltego.com/transform-hub/scamadviser)
+- [https://www.maltego.com/transform-hub/scamadviser](https://www.maltego.com/transform-hub/scamadviser)
+- [Ipqualityscore](https://docs.maltego.com/support/solutions/articles/15000041408-maltego-ipqualityscore-transforms#overview-0-0)
+- [OpenCNAM](https://docs.maltego.com/support/solutions/articles/15000045282-maltego-opencnam-transforms)
+- [Fullcontact](https://www.fullcontact.com)
+- [https://www.fullcontact.com](https://www.fullcontact.com)
+- [Spam Calls](https://spamcalls.net/en)
+- [https://spamcalls.net/en](https://spamcalls.net/en)
+- [Maltego Transform ShadowDragon](https://www.maltego.com/transform-hub/socialnet)
+- [https://www.maltego.com/transform-hub/socialnet](https://www.maltego.com/transform-hub/socialnet)
+- [Crimewall](https://sociallinks.io/products/sl-crimewall)
+- [scamsearch global scam database](https://scamsearch.io)
+- [https://scamsearch.io](https://scamsearch.io)
+- [getcontact](https://getcontact.com/en)
+- [https://getcontact.com/en](https://getcontact.com/en)
+- [SEON](https://seon.io)
+- [https://seon.io](https://seon.io)
+- [snusbase](https://snusbase.com)
+- [https://snusbase.com](https://snusbase.com)
+
+
+# Medical OSINT
+
+- [WHO](https://www.who.int)
+- [https://www.who.int](https://www.who.int)
+- [PUB MED](https://pubmed.ncbi.nlm.nih.gov)
+- [https://pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov)
+- [worldwidescience](https://worldwidescience.org/index.html)
+- [ICRC International Committee of the Red Cross](https://www.icrc.org/en)
