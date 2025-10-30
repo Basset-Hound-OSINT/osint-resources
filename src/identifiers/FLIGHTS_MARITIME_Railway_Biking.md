@@ -208,3 +208,67 @@
 - [Railway zugfinder](https://www.zugfinder.net)
 - [https://www.zugfinder.net](https://www.zugfinder.net)
 - [KAI ID ROUTE](https://commuterline.id/perjalanan-krl/peta-rute)
+
+
+## Maritime
+
+- [VesselFinder](https://www.vesselfinder.com)
+
+
+## FLIGHT TRACKER
+
+- [FlightAirMap](https://www.flightairmap.com)
+- [https://www.flightairmap.com](https://www.flightairmap.com)
+- [ADS-B Exchange](https://globe.adsbexchange.com)
+- [https://globe.adsbexchange.com](https://globe.adsbexchange.com)
+- [Icarus.flights](https://icarus.flights)
+- [https://icarus.flights](https://icarus.flights)
+- [FlightAware](https://flightaware.com)
+- [https://flightaware.com](https://flightaware.com)
+- [Flightradar24](https://www.flightradar24.com)
+- [https://www.flightradar24.com](https://www.flightradar24.com)
+- [Live Air Traffic Control](https://www.liveatc.net)
+- [https://www.liveatc.net](https://www.liveatc.net)
+- [Planespotters.net](https://www.planespotters.net)
+- [https://www.planespotters.net](https://www.planespotters.net)
+- [Skyscanner](https://www.skyscanner.com)
+- [https://www.skyscanner.com](https://www.skyscanner.com)
+- [RadarBox](https://www.radarbox.com)
+- [https://www.radarbox.com](https://www.radarbox.com)
+- [ICAO Civil and Military airspace SUASHP](https://www.arcgis.com/apps/webappviewer/index.html?id=5db021bcb221498f81be055b3e238bf8)
+
+
+## MARITIME
+
+- [Marine Traffic](https://www.marinetraffic.com)
+- [https://www.marinetraffic.com](https://www.marinetraffic.com)
+- [VesselFinder](https://www.vesselfinder.com)
+- [https://www.vesselfinder.com](https://www.vesselfinder.com)
+- [FlightAirMap](https://www.flightairmap.com)
+- [https://www.flightairmap.com](https://www.flightairmap.com)
+- [OSINT on the Ocean](https://wondersmithrae.medium.com/osint-on-the-ocean-maritime-intelligence-gathering-techniques-2ee39e554fe1)
+- [ShipAIS.uk](https://shipais.uk)
+- [https://shipais.uk](https://shipais.uk)
+- [FleetMon](https://www.fleetmon.com)
+- [https://www.fleetmon.com](https://www.fleetmon.com)
+- [AIS Ships Map](https://www.shipfinder.com/Monitor/Index)
+- [Ais.boatnerd.com](https://ais.boatnerd.com)
+- [https://ais.boatnerd.com](https://ais.boatnerd.com)
+- [Live Cruise Ship Tracker](https://www.livecruiseshiptracker.com)
+- [https://www.livecruiseshiptracker.com](https://www.livecruiseshiptracker.com)
+- [ShippingExplorer](https://www.shippingexplorer.net/en/map)
+- [SUBMARINE TRACKER](https://www.marinevesseltraffic.com/submarine-vessels-tracking-map)
+- [Maritime Awareness Project](https://map.nbr.org/interactivemap)
+- [https://map.nbr.org/interactivemap](https://map.nbr.org/interactivemap)
+- [Shipping Database](https://theshippingdatabase.com)
+- [https://theshippingdatabase.com](https://theshippingdatabase.com)
+- [Crewlist.org.uk](https://www.crewlist.org.uk/#Data)
+- [Live Piracy Map](https://www.icc-ccs.org/piracy-reporting-centre/live-piracy-map)
+- [Military Ship Tracker](https://www.marinevesseltraffic.com/2013/02/military-ship-track.html)
+- [Container Tracking](https://container-tracking.org)
+- [https://container-tracking.org](https://container-tracking.org)
+- [Container tracking](https://www.track-trace.com/container)
+- [Maersk Tracking](https://www.maersk.com/tracking)
+- [https://www.maersk.com/tracking](https://www.maersk.com/tracking)
+- [Global Fishing Watch](https://globalfishingwatch.org/map)
+- [https://globalfishingwatch.org/map](https://globalfishingwatch.org/map)

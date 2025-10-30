@@ -19,7 +19,6 @@
 
 - [Search Engines](./discovery/SEARCH_ENGINES.md)
 - [Custom Search Tools](./discovery/CUSTOM_SEARCH.md)
-- [People Search Engines](./discovery/PEOPLE_SEARCH.md)
 - [searchers scrapers extractors parsers](./discovery/searchers_scrapers_extractors_parsers.md)
 - [Maps](./discovery/MAPS.md)
 - [Weather & Nature](./discovery/WEATHER_NATURE.md)
@@ -41,6 +40,10 @@
 - [Discord](./social/DISCORD.md)
 - [Telegram](./social/TELEGRAM.md)
 - [Twitch](./social/TWITCH.md)
+- [Github](./social/GITHUB.md)
+- [Onlyfans](./social/ONLYFANS.md)
+- [Pinterest](./social/PINTREST.md)
+- [Snapchat](./social/SNAPCHAT.md)
 - [Other Social Medias](./social/social.md)
 - [Online Communities](./social/ONLINE_COMMUNITIES.md)
 - [Market Places](./social/MARKETPLACES.md)
@@ -58,8 +61,7 @@
 - [Metadata & Stegonography](./files/METADATA_STEGO.md)
 - [Forensics](./files/forensics.md)
 - [Code Analysis / Management](./files/code.md)
-- [Reverse Engineering](./files/REVERSE_ENGINEERING.md)
-- [Malware Analysis](./files/MALWARE.md)
+- [Reverse Engineering & Malware](./files/REVERSE_ENGINEERING.md)
 
 ---
 

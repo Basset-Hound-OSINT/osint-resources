@@ -154,3 +154,28 @@
 - [https://www.onchain.industries](https://www.onchain.industries)
 - [breadcrumbs](https://www.breadcrumbs.app)
 - [https://www.breadcrumbs.app](https://www.breadcrumbs.app)
+
+
+## CRYPTOCURRENCY
+
+- [Cryptocurrency Alerting](https://cryptocurrencyalerting.com)
+- [https://cryptocurrencyalerting.com](https://cryptocurrencyalerting.com)
+- [Bitcoin Explorer](https://blockchair.com/bitcoin)
+- [Ethereum Block Explorer](https://etherscan.io)
+- [https://etherscan.io](https://etherscan.io)
+- [Flowscan.org](https://flowscan.org)
+- [https://flowscan.org](https://flowscan.org)
+- [Bitcoin Forums Search Engine](https://cse.google.com/cse?cx=f49f9d5e679b15787)
+- [Blockchain Explorer](https://www.blockchain.com/explorer)
+- [Blockcypher](https://live.blockcypher.com)
+- [https://live.blockcypher.com](https://live.blockcypher.com)
+- [Addresschecker.eu](https://addresschecker.eu)
+- [https://addresschecker.eu](https://addresschecker.eu)
+- [Coinwink.com](https://coinwink.com)
+- [https://coinwink.com](https://coinwink.com)
+- [Cryptocurrency search tool](https://www.aware-online.com/en/osint-tools/cryptocurrency-search-tool)
+- [https://www.aware-online.com/en/osint-tools/cryptocurrency-search-tool](https://www.aware-online.com/en/osint-tools/cryptocurrency-search-tool)
+- [OSINT cryptocurrencies](https://www.aware-online.com/en/osint-tools/cryptocurrency-tools)
+- [https://www.aware-online.com/en/osint-tools/cryptocurrency-tools](https://www.aware-online.com/en/osint-tools/cryptocurrency-tools)
+
+

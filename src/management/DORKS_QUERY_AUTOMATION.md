@@ -88,3 +88,17 @@
 - [Google Scholar](https://scholar.google.com)
 - [Google Alerts](https://www.google.com/alerts)
 - [Google Search History](https://myactivity.google.com/myactivity)
+
+
+## DORKING
+
+- [DorkSearch](https://dorksearch.com)
+- [https://dorksearch.com](https://dorksearch.com)
+- [Google Dork Cheatsheet](https://github.com/robyfirnandoyusuf/Google-Dork-Cheatsheet)
+- [Google Hacking Database](https://www.exploit-db.com/google-hacking-database)
+- [theHarvester](https://pypi.org/project/theHarvester)
+- [https://pypi.org/project/theHarvester](https://pypi.org/project/theHarvester)
+- [metagoofil](https://github.com/opsdisk/metagoofil)
+- [webdork](https://github.com/HACKE-RC/webdork)
+- [ATSCAN](https://github.com/AlisamTechnology/ATSCAN)
+- [pagodo](https://github.com/opsdisk/pagodo)

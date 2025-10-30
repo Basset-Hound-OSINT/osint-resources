@@ -77,3 +77,19 @@
 - [https://www.protectedplanet.net](https://www.protectedplanet.net)
 - [globalfishingwatch](https://globalfishingwatch.org)
 - [https://globalfishingwatch.org](https://globalfishingwatch.org)
+
+
+
+## WEATHER
+
+- [OpenWeatherMap](https://openweathermap.org)
+- [https://openweathermap.org](https://openweathermap.org)
+- [Weather History & Data Archive](https://www.wunderground.com/history)
+- [World Temperatures — Weather Around The World](https://www.timeanddate.com/weather)
+- [https://www.timeanddate.com/weather](https://www.timeanddate.com/weather)
+- [AccuWeather](https://www.accuweather.com)
+- [https://www.accuweather.com](https://www.accuweather.com)
+- [Meteostat](https://meteostat.net)
+- [https://meteostat.net](https://meteostat.net)
+- [Zoom.Earth](https://zoom.earth)
+- [https://zoom.earth](https://zoom.earth)

@@ -54,3 +54,46 @@
 - [https://coresignal.com](https://coresignal.com)
 - [Linkedin Attack Vector](https://www.osintdojo.com/diagrams/linkedin)
 - [CrossLinked](https://github.com/m8sec/CrossLinked)
+
+
+## LinkedIn -
+
+- [RecruitEm](https://recruitin.net)
+- [https://recruitin.net](https://recruitin.net)
+- [RocketReach](https://rocketreach.co/person)
+- [Phantom Buster](https://phantombuster.com/phantombuster)
+- [LinkedIn Boolean Search](https://linkedprospect.com/linkedin-boolean-search-tool/#tool)
+- [Reverse Email Lookup](https://www.reversecontact.com)
+- [https://www.reversecontact.com](https://www.reversecontact.com)
+- [Programmable Search Engine](https://cse.google.com/cse?cx=daaf18e804f81bed0)
+- [Free People Search Tool](https://freepeoplesearchtool.com/#gsc.tab=0)
+- [IntelligenceX Linkedin](https://intelx.io/tools?tab=linkedin)
+- [Linkedin Search Tool](https://inteltechniques.com/tools/Linkedin.html)
+- [LinkedInt](https://github.com/vysecurity/LinkedInt)
+- [InSpy](https://github.com/jobroche/InSpy)
+- [CrossLinked](https://github.com/m8sec/CrossLinked)
+
+
+## LINKEDIN
+
+- [LinkedIn Email Reverse Lookup](https://osint.support/chrome-extensions/2019/09/03/linkedin-email-reverse-lookup.html)
+- [Proxycurl](https://nubela.co/proxycurl)
+
+
+## LINKEDIN
+
+- [LinkedIn Search](https://recruitin.net)
+- [https://recruitin.net](https://recruitin.net)
+- [LinkedIn X-Ray Search Tool](https://www.lisearcher.com)
+- [https://www.lisearcher.com](https://www.lisearcher.com)
+- [LinkedProspect](https://linkedprospect.com/linkedin-boolean-search-tool)
+- [https://linkedprospect.com/linkedin-boolean-search-tool](https://linkedprospect.com/linkedin-boolean-search-tool)
+- [LinkedIn Search Engine](https://cse.google.com/cse?cx=daaf18e804f81bed0)
+- [LinkedIn Search Engine (with Images)](https://cse.google.com/cse?cx=40126f0af1aff84f8)
+- [Chartloop](https://buildorgchart.herokuapp.com)
+- [https://buildorgchart.herokuapp.com](https://buildorgchart.herokuapp.com)
+- [Proxycurl](https://nubela.co/proxycurl)
+- [https://nubela.co/proxycurl](https://nubela.co/proxycurl)
+- [nqntnqnqmb](https://pypi.org/project/nqntnqnqmb)
+- [https://pypi.org/project/nqntnqnqmb](https://pypi.org/project/nqntnqnqmb)
+- [LinkedIn Email Reverse Lookup](https://osint.support/chrome-extensions/2019/09/03/linkedin-email-reverse-lookup.html)

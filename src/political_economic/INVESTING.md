@@ -46,3 +46,20 @@
 - [https://data.worldbank.org](https://data.worldbank.org)
 - [sayari](https://sayari.com)
 - [https://sayari.com](https://sayari.com)
+
+
+## FINANCE
+
+- [Greylist Trace](https://greylisttrace.com)
+- [https://greylisttrace.com](https://greylisttrace.com)
+- [Tradint Research Tool](https://tradint.io)
+- [https://tradint.io](https://tradint.io)
+- [analytics-engine](https://github.com/mashiox/analytics-engine)
+- [Ppp.adatascienti.st](https://ppp.adatascienti.st)
+- [https://ppp.adatascienti.st](https://ppp.adatascienti.st)
+- [CoVi Analytics](https://www.covianalytics.com)
+- [https://www.covianalytics.com](https://www.covianalytics.com)
+- [Search Our PPP Loan Database](https://ppp.directory/search)
+- [TMX](https://www.m-x.ca/en/trading/data/quotes?symbol=)
+- [TMX TSX](https://www.tsx.com/listings/listing-with-us/listed-company-directory)
+- [Search for Investment Fund Documents](https://www.sedar.com/search/search_form_mf_en.htm)

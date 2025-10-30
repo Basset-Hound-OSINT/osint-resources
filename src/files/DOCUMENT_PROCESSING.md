@@ -163,3 +163,8 @@
 - [https://2lingual.com](https://2lingual.com)
 - [urbandictionary](https://www.urbandictionary.com)
 - [https://www.urbandictionary.com](https://www.urbandictionary.com)
+
+
+## Language Tools
+
+- [Awesome Translations list](https://github.com/mbiesiad/awesome-translations#tools)
