@@ -419,7 +419,7 @@
 # Introduction: Civil OSINT
 
 - [OSINT Is A State Of Mind](https://medium.com/secjuice/osint-as-a-mindset-7d42ad72113d)
-- [Cognitive Bias and Critical Thinking in Open Source Intelligence (OSINT)](https://deepsec.net/docs/Slides/2014/Cognitive_Bias_and_Critical_Thinking_in_Open_Source_Intelligence_(OSINT)
+- [Cognitive Bias and Critical Thinking in Open Source Intelligence (OSINT)](https://deepsec.net/docs/Slides/2014/Cognitive_Bias_and_Critical_Thinking_in_Open_Source_Intelligence_(OSINT))
 - [A Brief History of Open Source Intelligence](https://www.bellingcat.com/resources/articles/2016/07/14/a-brief-history-of-open-source-intelligence)
 - [https://www.bellingcat.com/resources/articles/2016/07/14/a-brief-history-of-open-source-intelligence](https://www.bellingcat.com/resources/articles/2016/07/14/a-brief-history-of-open-source-intelligence)
 - [How OSINT powered the largest criminal investigation in US history](https://www.isdglobal.org/digital_dispatches/jan-6-series-how-osint-powered-the-largest-criminal-investigation-in-us-history)

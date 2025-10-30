@@ -135,7 +135,7 @@
 - [Crab](https://github.com/N0tA1dan/Crab)
 - [MayorSecDNSScan](https://github.com/dievus/msdnsscan)
 - [Cert4Recon](https://github.com/mathis2001/Cert4Recon)
-- [https://crt.sh](http://crt.sh](https://crt.sh](http://crt.sh)
+- [https://crt.sh](https://crt.sh)
 - [Miteru](https://github.com/ninoseki/miteru)
 
 ### Subdomains scan/brute

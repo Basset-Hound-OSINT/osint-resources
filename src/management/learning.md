@@ -216,7 +216,7 @@
 - [Advanced Penetration Testing: Hacking the World's Most Secure Networks](https://www.amazon.com/Advanced-Penetration-Testing-Hacking-Networks/dp/1119367689)
 - [Social Engineers' Playbook: Practical Pretexting](https://www.amazon.com/Social-Engineers-Playbook-Practical-Pretexting/dp/0692306617)
 - [The Hacker Playbook 3: Practical Guide To Penetration Testing](https://www.amazon.com/Hacker-Playbook-Practical-Penetration-Testing-ebook/dp/B07CSPFYZ2)
-- [https://www.amazon.com](https://www.amazon.com/How-Hack-Like-PORNSTAR-breaking-ebook/dp/B01MTDLGQ](https://www.amazon.com](https://www.amazon.com/How-Hack-Like-PORNSTAR-breaking-ebook/dp/B01MTDLGQ)
+- [https://www.amazon.com](https://www.amazon.com)
 - [**Penetration Testing: A Hands-On Introduction to Hacking**](https://www.amazon.com/Penetration-Testing-Hands-Introduction-Hacking/dp/1593275641)
 - [**Kali Linux Revealed**](https://www.amazon.com/Kali-Linux-Revealed-Penetration-Distribution/dp/0997615605)
 - [PDF](https://kali.training/downloads/Kali-Linux-Revealed-1st-edition.pdf)

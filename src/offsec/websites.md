@@ -80,7 +80,7 @@
 - [FavFreak](https://github.com/devanshbatham/FavFreak)
 - [Hackertarget](https://github.com/pyhackertarget/hackertarget)
 - [http://hackertarget.com](https://hackertarget.com)
-- [https://hackertarget.com](http://hackertarget.com](https://hackertarget.com](http://hackertarget.com)
+- [https://hackertarget.com](https://hackertarget.com)
 - [AnalyticsRelationships](https://github.com/Josue87/AnalyticsRelationships)
 - [UDON](https://github.com/dhn/udon)
 - [Pidrila](https://github.com/enemy-submarine/pidrila)
@@ -127,7 +127,7 @@
 - [uMatrix](https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf/related)
 - [Open Link Structured Data Sniffer](https://chrome.google.com/webstore/detail/openlink-structured-data/egdaiaihbdoiibopledjahjaihbmjhdj)
 - [http://rdfa.info](https://rdfa.info)
-- [https://rdfa.info](http://rdfa.info](https://rdfa.info](http://rdfa.info)
+- [https://rdfa.info](https://rdfa.info)
 - [REGEXPER](https://regexper.com)
 - [LinkFinder](https://github.com/GerbenJavado/LinkFinder)
 

@@ -263,7 +263,7 @@
 - [World MCC & MNC Code](https://en.wikipedia.org/wiki/Mobile_country_code)
 - [World MCC & MNC Code 2](https://www.mcc-mnc.com)
 - [https://www.mcc-mnc.com](https://www.mcc-mnc.com)
-- [World Mobile Network Code](https://en.wikipedia.org/wiki/Mobile_network_codes_in_ITU_region_5xx_(Oceania)
+- [World Mobile Network Code](https://en.wikipedia.org/wiki/Mobile_network_codes_in_ITU_region_5xx_(Oceania))
 - [World Network Coverage](https://www.nperf.com/en/map/ID/-/-/signal/?ll=-2.5678942164342513&lg=118.01999999999998&zoom=5)
 - [Profone GSM Tracker](https://cellphonetrackers.org/gsm/gsm-tracker.php)
 - [Thatsthem](https://thatsthem.com)

@@ -271,7 +271,7 @@
 - [Z History Dump](https://chrome.google.com/webstore/detail/z-history-dump/ahpkicobhkchblogldpjchdhmdnblpkm/related)
 - [Megatools](https://megous.com/git/megatools)
 - [http://Mega.nz](https://Mega.nz)
-- [https://Mega.nz](http://Mega.nz](https://Mega.nz](http://Mega.nz)
+- [https://Mega.nz](https://Mega.nz)
 - [You Get](https://github.com/soimort/you-get)
 - [SoundScrape](https://github.com/Miserlou/SoundScrape)
 - [Stream Downloader](https://github.com/lunnlew/stream-downloader)

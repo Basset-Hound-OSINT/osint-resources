@@ -105,7 +105,7 @@
 - [Torch4st4l57l2u2vr5wqwvwyueucvnrao4xajqr2klmcmicrv7ccaad](https://torch4st4l57l2u2vr5wqwvwyueucvnrao4xajqr2klmcmicrv7ccaad.onion/search?query=)
 - [U5lyidiw4lpkonoctpqzxgyk6xop7w7w3oho4dzzsi272rwnjhyx7ayd](https://u5lyidiw4lpkonoctpqzxgyk6xop7w7w3oho4dzzsi272rwnjhyx7ayd.onion/?s=)
 - [Google](https://www.google.com/search?q=intitle%3Aindex.of+)
-- [Google](https://www.google.com/search?q=inurl%3Aftp%20-inurl%3A(http|https)
+- [Google](https://www.google.com/search?q=inurl%3Aftp%20-inurl%3A(http|https))
 - [Google](https://www.google.com/search?tbm=nws&q=)
 - [Qwant](https://www.qwant.com/?q=)
 - [Tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid](https://www.tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=)
@@ -157,7 +157,7 @@
 
 - [YaSeeker](https://github.com/HowToFind-bot/YaSeeker)
 - [http://Yandex.ru](https://Yandex.ru)
-- [https://Yandex.ru](http://Yandex.ru](https://Yandex.ru](http://Yandex.ru)
+- [https://Yandex.ru](https://Yandex.ru)
 
 
 ### Servers

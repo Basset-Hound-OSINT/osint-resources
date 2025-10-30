@@ -677,6 +677,6 @@
 ## OTHER
 
 - [https://cryptome.wikileaks.org/](https://cryptome.wikileaks.org)
-- [https://cryptome.wikileaks.org/](https://cryptome.wikileaks.org](https://cryptome.wikileaks.org/](https://cryptome.wikileaks.org)
+- [https://cryptome.wikileaks.org/](https://cryptome.wikileaks.org/)
 - [Nextstrain](https://nextstrain.org)
 - [https://nextstrain.org](https://nextstrain.org)

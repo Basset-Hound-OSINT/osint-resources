@@ -15,7 +15,7 @@
 - [GO DORK](https://github.com/dwisiswant0/go-dork)
 - [Dork Scanner](https://github.com/Balgogan/dorkscanner)
 - [http://WoW.com](https://WoW.com)
-- [https://WoW.com](http://WoW.com](https://WoW.com](http://WoW.com)
+- [https://WoW.com](https://WoW.com)
 - [ixss.warsong.pw](https://ixss.warsong.pw/xssor)
 - [ReconFTW](https://github.com/six2dez/reconftw)
 - [LFITester](https://github.com/kostas-pa/LFITester)
