@@ -27,3 +27,6 @@
 - [https://www.kali.org/tools/hash-identifier](https://www.kali.org/tools/hash-identifier)
 - [rapidtables](https://www.rapidtables.com/convert)
 - [https://www.rapidtables.com/convert](https://www.rapidtables.com/convert)
+
+
+- [dcode](https://www.dcode.fr/en)

@@ -525,3 +525,6 @@
 - [https://worldview.earthdata.nasa.gov](https://worldview.earthdata.nasa.gov)
 - [OpenAerialMap](https://openaerialmap.org)
 - [https://openaerialmap.org](https://openaerialmap.org)
+
+
+- [3D open streetmap](https://wiki.openstreetmap.org/wiki/3D)
