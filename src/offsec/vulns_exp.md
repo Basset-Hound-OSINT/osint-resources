@@ -79,3 +79,52 @@
 - [https://zerodium.com](https://zerodium.com)
 - [0day fans](https://0dayfans.com)
 - [https://0dayfans.com](https://0dayfans.com)
+
+
+
+https://attack.mitre.org/
+https://www.exploit-db.com/google-hacking-database
+
+
+https://www.cve.org/
+https://www.cvedetails.com/
+https://osv.dev/list
+https://www.rapid7.com/db/
+https://www.exploit-db.com/
+https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+https://www.tenable.com/cve
+https://nvd.nist.gov/vuln/search#/nvd/home?resultType=records
+https://security.snyk.io/
+https://vuldb.com/
+https://catalog.data.gov/dataset/national-vulnerability-database-8ebf8
+
+
+
+
+malware collection
+
+https://vx-underground.org/
+https://github.com/topics/malware-samples
+https://bazaar.abuse.ch/browse/
+https://gtidocs.virustotal.com/reference/threat-actors-malware-tools-campaigns-ioc-collections
+https://www.virustotal.com/gui/home/upload
+https://www.virussign.com/malware-scan/
+https://hybrid-analysis.com/
+https://urlhaus.abuse.ch/browse/
+https://github.com/sophos/SOREL-20M
+https://virusshare.com/
+https://github.com/InQuest/malware-samples
+https://github.com/ytisf/theZoo
+https://www.comodo.com/home/internet-security/updates/vdp/database.php
+
+
+
+
+
+
+methodologies
+
+https://attack.mitre.org/
+https://www.cisa.gov/resources-tools/services/malware-next-generation-analysis
+
+
