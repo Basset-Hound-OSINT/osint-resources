@@ -337,6 +337,13 @@
 - [Interpol int](https://www.interpol.int/en/How-we-work/Notices/Yellow-Notices/View-Yellow-Notices)
 
 
+## Content Removal & Strict Media Content
+
+- [Bing content removal](www.bing.com/webmasters/tools/contentremoval)
+- [IRBSearch](mailto:customercare@irbsearch.com)
+- [Infopay](mailto:privacy@infopay.com)
+
+
 # OSINT OPSEC
 
 - [thgtoa](https://github.com/Anon-Planet/thgtoa)

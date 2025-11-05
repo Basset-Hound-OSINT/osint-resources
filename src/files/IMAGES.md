@@ -620,3 +620,6 @@
 - [https://hue.tools](https://hue.tools)
 - [ExifTool](https://exiftool.org)
 - [https://exiftool.org](https://exiftool.org)
+
+
+- [Image verification assisant](https://mever.gr/forensics/)

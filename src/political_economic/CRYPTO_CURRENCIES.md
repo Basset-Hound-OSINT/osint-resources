@@ -179,3 +179,193 @@
 - [https://www.aware-online.com/en/osint-tools/cryptocurrency-tools](https://www.aware-online.com/en/osint-tools/cryptocurrency-tools)
 
 
+
+
+
+## ADA Blockchain explorers
+
+- [Adapool](https://adapools.org/)
+- [Adastat](https://adastat.net/)
+- [Blockchain.com](https://www.blockchain.com/explorer/assets/ada)
+- [Blockchair](https://blockchair.com/cardano)
+- [Cardano explorer](https://explorer.cardano.org/en)
+
+## BTC Blockchain Databases and Analyzers
+
+- [Bad Bitcoin](https://badbitcoin.org/)
+- [CryptoBlacklist](https://www.cryptoblacklist.io/en/bitcoin-blacklist/)
+- [Cryptoscamdb](https://cryptoscamdb.org/scams)
+- [Know Your Coin Privacy](https://kycp.org/)
+- [SPLcenter Addresslist](https://www.splcenter.org/cryptocurrency-report)
+- [Scamalert](https://scam-alert.io/)
+- [Vivigle](https://vivigle.com/)
+
+## BTC Blockchain explorers
+
+- [Arkhamintelligence](https://platform.arkhamintelligence.com)
+- [Awebanalysis](https://awebanalysis.com/en/bitcoin-address-validate/)
+- [BTCparser](https://btcparser.com/)
+- [Blockchain.com](https://www.blockchain.com/explorer/assets/btc)
+- [Ciphertrace](https://www.ciphertrace.com/)
+- [Coincodex](https://coincodex.com/crypto/bitcoin/historical-data/)
+- [Coinfirm](https://www.coinfirm.com/)
+- [Crystalblockchain](https://explorer.crystalblockchain.com/)
+- [Graphsense](https://graphsense.github.io/)
+- [Metasleuth](https://metasleuth.io/)
+- [SpyderLab](https://www.spyderlab.org/)
+- [TRM](https://www.trmlabs.com/)
+- [Tokenview](https://tokenview.io/)
+- [Whalealert](https://whale-alert.io/alerts)
+
+## BTC Other
+
+- [Antianalysis (DARK)](http://pdcdvggsz5vhzbtxqn2rh27qovzga4pnrygya4ossewu64dqh2tvhsyd.onion/about)
+- [Antianalysis](https://antinalysis.org/example)
+- [CriminalIP](https://www.criminalip.io/login?h=/asset/search?query=%22Bitcoin%22%20port:%208333)
+- [Cryptocurrencyalerting](https://cryptocurrencyalerting.com/wallet-watch.html)
+- [Mempool Space](https://mempool.space/it/)
+- [Paxful](https://paxful.com/it/user/XXX)
+
+## CCTP EXPLORERS
+
+- [Range](https://explorer.range.org/)
+
+## CRYPTO-OPSEC Methodologies and Info
+
+- [Anubitux](https://github.com/AnuBitux-project/build)
+- [Slowmist Blockchain Darkforest](https://github.com/slowmist/Blockchain-dark-forest-selfguard-handbook)
+
+## DEFI
+
+- [Sonar.watch](https://sonar.watch)
+
+## ETH Blockchain Databases and Analyzers
+
+- [CryptoBlacklist](https://www.cryptoblacklist.io/en/ethereum-blacklist/)
+- [Cryptoscam](https://cryptscam.com/)
+- [Dune](https://dune.com/browse/dashboards)
+
+## ETH Blockchain explorers
+
+- [3xpl.com](https://3xpl.com/ethereum)
+- [BitQuery](https://explorer.bitquery.io/bitcoin?theme=dark)
+- [Blockchain.com](https://www.blockchain.com/explorer/assets/eth)
+- [Blockscout](https://blockscout.com/eth/mainnet/)
+- [Ethective](https://ethtective.com/)
+- [Ethplorer](https://ethplorer.io/)
+- [Socketscan](https://www.socketscan.io/)
+- [TrackEnn](https://github.com/kennbroorg/trackenn)
+- [Ward Graph](https://wardgraph.com/)
+- [Watchers.pro](https://watchers.pro)
+
+## ETH Other
+
+- [Chat Blockscan](https://chat.blockscan.com/index)
+- [Cielo](https://app.cielo.finance/)
+- [CriminalIP](https://www.criminalip.io/login?h=/asset/search?query=%22Ethereum%22%20port:%208545)
+- [Demixing Tornado cash bot](https://flipsidecrypto.xyz/AMLBot/demixin-eth-for-tornadocash-JCcIiS)
+- [Etherscan Transforms for Maltego](https://www.maltego.com/transform-hub/etherscan/)
+- [Naddison36](https://github.com/naddison36/tx2uml)
+
+## IPFS
+
+- [IPFS browser](https://ipfsbrowser.com/)
+- [IPFS scanner](https://github.com/cryptodashie/ipfs/tree/fda709851b21d9ef82eb246da6f96667f14f3ae8)
+
+## METAVERSE - WEB3
+
+- [Debank](https://debank.com/)
+- [Scamsniffer](https://www.scamsniffer.io/extension/)
+- [Spatial](https://www.spatial.io)
+- [Zapper](https://zapper.xyz/)
+
+## NFT
+
+- [Binance NFT](https://www.binance.com/en/nft/)
+- [Coinbase](https://nft.coinbase.com/)
+- [Compass](https://compass.art/pulse)
+- [Context.app](https://context.app)
+- [Crypto.com](https://crypto.com/nft)
+- [Disintar](https://beta.disintar.io/)
+- [Luckyblock](https://nft.luckyblock.com/explore/collections)
+- [NFT Analyst Starter Pack](https://github.com/a16z/nft-analyst-starter-pack)
+- [NFT Calendar](https://nftcalendar.io/)
+- [NFT scan](https://www.nftscan.com/)
+- [NFTGO.io](https://nftgo.io/)
+- [Nftfreeviewer](https://www.freenftviewer.io/)
+- [Rarible](https://rarible.com/)
+- [Tonnft](https://explorer.tonnft.tools/)
+- [ZORA](https://zora.co/collect/eth:0x054460490780a6eb15625d703db1754e0b78d846)
+
+## NFT API
+
+- [Alchemy API](https://www.alchemy.com/nft-api)
+
+## NFT Databases and Analyzers
+
+- [Scamsniffer](https://explorer.scamsniffer.io/?sort=30DayVolume)
+
+## NOTABLE ACCOUNT TO FOLLOW
+
+- [CIA_Officer](https://twitter.com/officer_cia)
+- [Rugpullfinder-(Inactive)](https://twitter.com/rugpullfinder)
+- [ZachXBT](https://twitter.com/zachxbt)
+
+## SMARTCONTRACTS
+
+- [EIS3](https://github.com/salaheldinaz/EIS3)
+- [Ethereum Signature Database](https://www.4byte.directory/)
+- [Grep.app](https://grep.app/search?q=solidity)
+- [PALKEO](https://oko.palkeo.com/)
+
+## SOL Blockchain explorers
+
+- [Blockchair](https://blockchair.com/solana)
+- [Solana Explorer](https://explorer.solana.com/)
+- [Solscan.io](https://solscan.io/)
+
+## TON Address Regex
+
+- [Wallets](https://docs.ton.org/participate/wallets/contracts)
+
+## TON Blockchain Databases and Analyzers
+
+- [Ton known addresses](https://catchain.github.io/tonscan/src/addrbook.json)
+
+## TON Blockchain explorers
+
+- [3xpl.com](https://3xpl.com/ton)
+- [GetGems](https://getgems.io/top-collections/)
+- [Ton.cx](https://ton.cx/)
+- [Ton.page](https://ton.page/)
+- [Ton.sh](https://ton.sh)
+- [TonAPI](https://tonapi.io/swagger-ui)
+- [Toncoin](https://explorer.toncoin.org/)
+- [Tonmoon](https://tonmoon.org/explorer/)
+- [Tonscan](https://tonscan.org/)
+- [Youton](https://youton.org/)
+- [re:doubt](https://redoubt.online/)
+
+## TON OTHER
+
+- [Fragment](https://fragment.com/numbers)
+- [TON Forbes](https://tonforbes.com)
+- [TONmeterbot](https://tonometerbot.com/)
+- [TONwhale](https://tonwhales.com/it/explorer/top)
+- [Ton place](https://ton.place/)
+- [Tonex](https://tonex.app/)
+- [Tonwine](https://ton.wine/)
+- [re:doubt](https://beta.redoubt.online/scam-abuse/#search)
+
+## TOOLS
+
+- [EMER name (Maltego Transform)](https://github.com/Tomasuh/Maltego_Transform_Blockchain_DNS/tree/63e6fb152a75893103ec038b9974db937ba21baa)
+- [Eth Explorers Extension](https://github.com/apoorvlathey/eth-explorers-extension)
+- [Impersonator](https://chromewebstore.google.com/detail/impersonator/hgihfkmoibhccfdohjdbklmmcknjjmgl)
+- [Mugetsu](https://t.me/the_mugetsu_bot)
+- [Obsidian templates Cryptocurrencies](https://github.com/theNerdInTheHighCastle/obsidian-osint-templates/blob/main/--%20templates/crypto-address.md)
+- [Obsidian templates NFT](https://github.com/theNerdInTheHighCastle/obsidian-osint-templates/blob/main/--%20templates/NFT.md)
+
+## XMR Blockchain Explorers
+
+- [Blockchair](https://blockchair.com/monero)

@@ -327,3 +327,7 @@
 - [https://qoob.keybase.pub](https://qoob.keybase.pub)
 - [Facebook Data Breach Checker](https://haveibeenzuckered.com)
 - [https://haveibeenzuckered.com](https://haveibeenzuckered.com)
+
+## Breaches and Leaks
+
+- [LibraryOfLeaks](https://search.libraryofleaks.org)

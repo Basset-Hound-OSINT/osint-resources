@@ -21,6 +21,15 @@
 - [Interpol Most Wanted Search Engine](https://cse.google.com/cse?cx=b1746754c83012613)
 - [Europol Most Wanted Search Engine](https://cse.google.com/cse?cx=f08e8dc2172da1ba8)
 
+## EXTREMIST / FAR-RIGHT
+
+- [8chan/8kun QResearch Board Search](https://qresear.ch/)
+- [Extremist Groups](https://www.splcenter.org/fighting-hate/extremist-files/groups)
+- [GUTTR](https://github.com/VVX7/GUTTR)
+- [Ironmarch.exposed](https://www.ironmarch.exposed/)
+- [Parler Archive Search](https://parler.adatascienti.st/research)
+- [Terrorism Incidents Database](http://smapp.rand.org/rwtid/search_form.php)
+
 
 
 

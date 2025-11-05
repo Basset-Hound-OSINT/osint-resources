@@ -1,3 +1,9 @@
+## AI
+
+- [ai-toolkit](https://huggingface.co/spaces/JournalistsonHF/ai-toolkit)
+- [anonchatgpt](https://anonchatgpt.com)
+
+
 - [Decktopus](https://www.decktopus.com)
 - [Monica](https://monica.im)
 - [Poised](https://www.poised.com)

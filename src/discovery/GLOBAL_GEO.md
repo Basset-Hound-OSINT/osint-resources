@@ -13,6 +13,9 @@
 - [geoprotests API](https://rapidapi.com/gisfromscratch/api/geoprotests)
 - [geoint-py](https://github.com/gisfromscratch/geoint-py)
 
+## OSINT Satellite
+
+- [skywatch](explore.skywatch.com)
 
 ## Location
 

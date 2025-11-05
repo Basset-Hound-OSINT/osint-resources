@@ -1158,3 +1158,14 @@
 - [How to Build an OSINT Super Machine for People Surveillance and Sourcing](https://outline.com/GZbkZA)
 - [How to find anyone with an advanced LinkedIn People Search](https://nubela.co/blog/how-to-find-anyone-with-an-advanced-linkedin-people-search)
 - [https://nubela.co/blog/how-to-find-anyone-with-an-advanced-linkedin-people-search](https://nubela.co/blog/how-to-find-anyone-with-an-advanced-linkedin-people-search)
+
+
+## 📖 RESOURCES, REFERENCES, READING
+
+- [Cia Operator Start.me](https://cia.start.me/p/dlaxD0/ciaofficerv2)
+- [Crypto Mindmaps](https://cryptoengineer.notion.site/cryptoengineer/9f1668632aa04a0a83a311a86e799254?v=f7c5c49231f44b91a44021411fa27e28)
+- [LeHACK Video](https://www.youtube.com/watch?v=MVHHokKEp7s&t=1101s)
+- [The Nerd in the high castle](https://thenerdinthehighcastle.wordpress.com)
+- [Tornadocash after censorship](https://hackmd.io/@gozzy/tornado-cash-post-censorship)
+- [WEB3 is going great](https://web3isgoinggreat.com/)
+

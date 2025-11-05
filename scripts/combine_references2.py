@@ -53,6 +53,7 @@ def ensure_dir(path: str):
 def normalize_url(url: str) -> str:
     """
     Normalize URL for comparison:
+    - Add https:// if no scheme present
     - Lowercase the entire URL
     - Remove trailing slashes from path
     - Normalize http/https (treat as same)
@@ -60,6 +61,10 @@ def normalize_url(url: str) -> str:
     - Keep ALL subdomains intact (tool1.google.com ≠ tool2.google.com)
     """
     url = url.strip().lower()
+    
+    # Add scheme if missing (assume https)
+    if not url.startswith(('http://', 'https://', 'ftp://', 'file://')):
+        url = 'https://' + url
     
     # Parse the URL
     try:

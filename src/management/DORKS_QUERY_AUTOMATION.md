@@ -102,3 +102,5 @@
 - [webdork](https://github.com/HACKE-RC/webdork)
 - [ATSCAN](https://github.com/AlisamTechnology/ATSCAN)
 - [pagodo](https://github.com/opsdisk/pagodo)
+
+- [Dorking list](Script/Google-Dork/README.md)
