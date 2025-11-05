@@ -8,3 +8,8 @@
 **new_refs/
 **tmp/
 **docs/
+**/venv/
+**/__pycache__/
+**tmp_pwnbox/
+**tmp_revbox/
+**tmp_webbox/

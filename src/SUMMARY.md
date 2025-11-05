@@ -61,7 +61,10 @@
 - [Metadata & Stegonography](./files/METADATA_STEGO.md)
 - [Forensics](./files/forensics.md)
 - [Code Analysis / Management](./files/code.md)
-- [Reverse Engineering & Malware](./files/REVERSE_ENGINEERING.md)
+- [MALWARE_ANALYSIS](./files/MALWARE_ANALYSIS.md)
+- [REVERSE ENGINEERING ON LINUX](./files/REVERSE_ENGINEERING_ON_LINUX.md)
+- [REVERSE ENGINEERING ON WINDOWS](./files/REVERSE_ENGINEERING_ON_WINDOWS.md)
+- [More Reverse Engineering Tools](./files/REVERSE_MORE.md)
 
 ---
 

@@ -1,0 +1,18 @@
+### Binary Analysis Frameworks
+
+*   [Angr](https://github.com/angr/angr)
+*   [BinCAT](https://github.com/airbus-seclab/bincat)
+*   [Cutter](https://github.com/radareorg/cutter)
+*   [DynamoRIO](https://github.com/dynamorio/dynamorio)
+*   [Gdbgui](https://github.com/cs01/gdbgui)
+*   [Kaitai Struct](https://github.com/kaitai-io/kaitai_struct)
+*   [LIEF (Library to Instrument Executable Formats)](https://github.com/lief-project/lief)
+*   [Manticore](https://github.com/trailofbits/manticore)
+*   [Mcsema](https://github.com/lifting-bits/mcsema)
+*   [Medusa](https://github.com/wisk/medusa)
+*   [MemProcFS](https://github.com/ufrisk/MemProcFS)
+*   [Panopticon](https://github.com/das-labor/panopticon)
+*   [Ponce](https://github.com/illera88/ponce)
+*   [REDasm](https://github.com/redasmorg/redasm)
+*   [Simplify](https://github.com/calebfenton/simplify)
+*   [SymGDB](https://github.com/sqlab/symgdb)
