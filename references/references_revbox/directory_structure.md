@@ -210,13 +210,13 @@ script-directory/
 │       └── report_template.md
 │
 └── Automation_Scripts/
-    ├── pe_analyzer.py
-    ├── string_analyzer.py
-    ├── dynamic_monitor.py
-    ├── memory_analyzer.py
-    ├── network_parser.py
-    ├── ioc_extractor.py
-    └── report_generator.py
+├── pe_analyzer.py
+├── string_analyzer.py
+├── dynamic_monitor.py
+├── memory_analyzer.py
+├── network_parser.py
+├── ioc_extractor.py
+└── report_generator.py
 ```
 
 ## Environment Variables

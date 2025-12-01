@@ -20,4 +20,3 @@
 *   [mthawkeye](https://github.com/meitu/mthawkeye)
 *   [winheap-explorer](https://github.com/winheapexplorer/winheap-explorer)
 *   [memdump_conglomerate](https://github.com/dzzie/re_plugins)
-*   [memdump_embedder](https://github.com/dzzie/re_plugins)

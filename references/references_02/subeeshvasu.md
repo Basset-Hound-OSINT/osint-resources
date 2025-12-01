@@ -1,15 +1,15 @@
 <!--A curated list of resources for Image and Video Deblurring-->
 <!-- PROJECT LOGO -->
 <p align="center">
-  <h3 align="center">Image and Video Deblurring</h3>
-  <p align="center">A curated list of resources for Image and Video Deblurring
-    <br />
-    <br />
-    <br />
-    <a href="https://github.com/subeeshvasu/Awesome-Deblurring/pulls/new">Suggest new item</a>
-    <br />
-    <a href="https://github.com/subeeshvasu/Awesome-Deblurring/issues/new">Report Bug</a>
-  </p>
+<h3 align="center">Image and Video Deblurring</h3>
+<p align="center">A curated list of resources for Image and Video Deblurring
+<br />
+<br />
+<br />
+<a href="https://github.com/subeeshvasu/Awesome-Deblurring/pulls/new">Suggest new item</a>
+<br />
+<a href="https://github.com/subeeshvasu/Awesome-Deblurring/issues/new">Report Bug</a>
+</p>
 </p>
 
 ## Table of contents
@@ -139,7 +139,6 @@
 |2020|IEEEAccess|[Scale-Iterative Upscaling Network for Image Deblurring](https://ieeexplore.ieee.org/document/8963625)|[Code](https://github.com/minyuanye/SIUN)|
 |2020|ACCV|[Human Motion Deblurring using Localized Body Prior](https://openaccess.thecvf.com/content/ACCV2020/html/Lumentut_Human_Motion_Deblurring_using_Localized_Body_Prior_ACCV_2020_paper.html)||
 |2020|TPAMI|[Physics-Based Generative Adversarial Models for Image Restoration and Beyond](https://arxiv.org/abs/1808.00605)|[Code](https://jspan.github.io/projects/physicsgan/)|
-|2020|TCI|[Blind Image Deconvolution using Deep Generative Priors](https://arxiv.org/abs/1802.04073)||
 |2020|TMM|[Raw Image Deblurring](https://arxiv.org/abs/2012.04264)|[Dataset](https://github.com/bob831009/raw_image_deblurring)|
 |2020|Arxiv|[Blur Invariant Kernel-Adaptive Network for Single Image Blind deblurring](https://arxiv.org/abs/2007.04543)||
 |2021|TPAMI|[Exposure Trajectory Recovery from Motion Blur](https://arxiv.org/abs/2010.02484)|[Code](https://github.com/yjzhang96/Motion-ETR)|
@@ -190,7 +189,6 @@
 |2022|ACCV|[Learning to Predict Decomposed Dynamic Filters for Single Image Motion Deblurring](https://openaccess.thecvf.com/content/ACCV2022/papers/Hu_Learning_to_Predict_Decomposed_Dynamic_Filters_for_Single_Image_Motion_ACCV_2022_paper.pdf)|[Code](https://github.com/ZHIQIANGHU2021/DecomposedDynamicFilters)|
 |2022|Arxiv|[Multi-scale-stage network for single image deblurring](https://arxiv.org/abs/2202.09652)||
 |2023|AAAI|[Real-world deep local motion deblurring](https://arxiv.org/abs/2204.08179)|[Code&Dataset](https://github.com/LeiaLi/ReLoBlur)|
-|2023|AAAI|[Intriguing Findings of Frequency Selection for Image Deblurring](https://arxiv.org/abs/2111.11745)|[Code](https://github.com/DeepMed-Lab-ECNU/DeepRFT-AAAI2023)|
 |2023|AAAI|[Dual-domain Attention for Image Deblurring](https://ojs.aaai.org/index.php/AAAI/article/view/25122/24894)||
 |2023|CVPR|[Self-Supervised Non-Uniform Kernel Estimation With Flow-Based Motion Prior for Blind Image Deblurring](https://openaccess.thecvf.com/content/CVPR2023/html/Fang_Self-Supervised_Non-Uniform_Kernel_Estimation_With_Flow-Based_Motion_Prior_for_Blind_CVPR_2023_paper.html)|[Code](https://github.com/Fangzhenxuan/UFPDeblur)|
 |2023|CVPR|[Efficient Frequency Domain-Based Transformers for High-Quality Image Deblurring](https://openaccess.thecvf.com/content/CVPR2023/html/Kong_Efficient_Frequency_Domain-Based_Transformers_for_High-Quality_Image_Deblurring_CVPR_2023_paper.html)|[Code](https://github.com/kkkls/FFTformer)|
@@ -296,7 +294,6 @@
 |2014|CVPR|[Multi-Shot Imaging: Joint Alignment, Deblurring and Resolution Enhancement](http://openaccess.thecvf.com/content_cvpr_2014/html/Zhang_Multi-Shot_Imaging_Joint_2014_CVPR_paper.html)|[Project page](https://sites.google.com/site/hczhang1/projects/multi-shot-imaging)|
 |2014|CVPR|[Gyro-Based Multi-Image Deconvolution for Removing Handshake Blur](http://graphics.stanford.edu/papers/gyrodeblur/gyrodeblur_park_cvpr14.pdf)|[Project Page](http://graphics.stanford.edu/papers/gyrodeblur/)|
 |2014|ECCV|[Modeling Blurred Video with Layers](http://files.is.tue.mpg.de/black/papers/WulffECCV2014.pdf)|[Project page, Results & Dataset](http://ps.is.tuebingen.mpg.de/research_projects/motion-blur-in-layers)|
-|2015|CVPR|[Burst Deblurring: Removing Camera Shake Through Fourier Burst Accumulation](http://dev.ipol.im/~mdelbra/fba/FBA_cvpr2015_preprint.pdf)||
 |2015|TCI|[Hand-held video deblurring via efficient fourier aggregation](http://arxiv.org/pdf/1509.05251)|[Project page & Results](http://iie.fing.edu.uy/~mdelbra/videoFA/)||
 |2015|TIP|[Removing camera shake via weighted fourier burst accumulation](https://arxiv.org/abs/1505.02731)||
 |2015|CVPR|[Generalized Video Deblurring for Dynamic Scenes](http://cv.snu.ac.kr/publication/conf/2015/VD_CVPR2015.pdf)|[Code & Project page](https://cv.snu.ac.kr/research/~VD/)||
@@ -334,8 +331,6 @@
 |2021|ICCV|[Multi-Scale Separable Network for Ultra-High-Definition Video Deblurring](https://openaccess.thecvf.com/content/ICCV2021/html/Deng_Multi-Scale_Separable_Network_for_Ultra-High-Definition_Video_Deblurring_ICCV_2021_paper.html)||
 |2022|AAAI|[Deep Recurrent Neural Network with Multi-Scale Bi-Directional Propagation for Video Deblurring](https://aaai-2022.virtualchair.net/poster_aaai3124)||
 |2022|CVPR|[Deblur-NeRF: Neural Radiance Fields From Blurry Images](https://openaccess.thecvf.com/content/CVPR2022/papers/Ma_Deblur-NeRF_Neural_Radiance_Fields_From_Blurry_Images_CVPR_2022_paper.pdf)|[Code](https://github.com/limacv/Deblur-NeRF)|
-|2022|ECCV|[Improving Image Restoration by Revisiting Global Information Aggregation](https://arxiv.org/abs/2112.04491)|[Code](https://github.com/megvii-research/TLC)|
-|2022|ECCV|[Animation from Blur: Multi-modal Blur Decomposition with Motion Guidance](https://arxiv.org/abs/2207.10123)|[Code](https://github.com/zzh-tech/Animation-from-Blur)|
 |2022|ECCV|[Efficient Video Deblurring Guided by Motion Magnitude](https://arxiv.org/abs/2207.13374)|[Code](https://github.com/sollynoay/MMP-RNN)|
 |2022|ECCV|[Spatio-Temporal Deformable Attention Network for Video Deblurring](https://arxiv.org/abs/2207.10852)|[Code](https://github.com/huicongzhang/STDAN)|
 |2022|ECCV|[ERDN: Equivalent Receptive Field Deformable Network for Video Deblurring](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4085_ECCV_2022_paper.php)|[Code](https://github.com/TencentCloud/ERDN)|
@@ -374,8 +369,6 @@
 |2012|ICCP|[Depth-aware motion deblurring](https://ieeexplore.ieee.org/document/6215220)||
 |2014|CVPR|[Joint Depth Estimation and Camera Shake Removal from Single Blurry Image](https://www.cv-foundation.org/openaccess/content_cvpr_2014/html/Hu_Joint_Depth_Estimation_2014_CVPR_paper.html)|[Code](https://github.com/chaehonglee/Joint_Depth_Esimation_and_Deblur)|
 |2019|WACV|[Single Image Deblurring and Camera Motion Estimation With Depth Map](https://ieeexplore.ieee.org/document/8658686)||
-|2019|CVPR|[DAVANet: Stereo Deblurring With View Aggregation](http://openaccess.thecvf.com/content_CVPR_2019/html/Zhou_DAVANet_Stereo_Deblurring_With_View_Aggregation_CVPR_2019_paper.html)|[Code](https://github.com/sczhou/DAVANet)|
-|2020|TIP|[Dynamic Scene Deblurring by Depth Guided Model](https://faculty.ucmerced.edu/mhyang/papers/tip2020_dynamic_scene_deblurring.pdf)|[Project Page](https://sites.google.com/view/lerenhanli/homepage/depth_deblurring)|
 |2020|TCSVT|[Depth-Aware Motion Deblurring Using Loopy Belief Propagation](https://www4.comp.polyu.edu.hk/~pinli/CoRR/TCSVT/TCSVT2020_2.pdf)||
 |2022|ICME|[Dast-Net: Depth-Aware Spatio-Temporal Network for Video Deblurring](https://ieeexplore.ieee.org/document/9858929)||
 |2023|SCIA|[Depth-Aware Image Compositing Model for Parallax Camera Motion Blur](https://arxiv.org/abs/2303.09334)|[Code & Project Page](https://germanftv.github.io/ParallaxICB.github.io/)|
@@ -406,10 +399,8 @@
 |2021|ICCV|[Motion Deblurring With Real Events](https://openaccess.thecvf.com/content/ICCV2021/html/Xu_Motion_Deblurring_With_Real_Events_ICCV_2021_paper.html)|[Code](https://github.com/xufangchn/Motion-Deblurring-with-Real-Events)|
 |2021|ICCV|[Bringing Events Into Video Deblurring With Non-Consecutively Blurry Frames](https://openaccess.thecvf.com/content/ICCV2021/html/Shang_Bringing_Events_Into_Video_Deblurring_With_Non-Consecutively_Blurry_Frames_ICCV_2021_paper.html)|[Code](https://github.com/shangwei5/D2Net)|
 |2021|IEEEAccess|[Robust Single Image Deblurring Using Gyroscope Sensor](https://ieeexplore.ieee.org/document/9444479)||
-|2022|ECCV|[Animation from Blur: Multi-modal Blur Decomposition with Motion Guidance](https://arxiv.org/abs/2207.10123)|[Code](https://github.com/zzh-tech/Animation-from-Blur)|
 |2022|ECCV|[Realistic Blur Synthesis for Learning Image Deblurring](https://arxiv.org/abs/2202.08771)|[Code & Dataset](https://github.com/rimchang/RSBlur)||
 |2022|ECCV|[Event-Guided Deblurring of Unknown Exposure Time Videos](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/3601_ECCV_2022_paper.php)||
-|2023|CVPR|[Blur Interpolation Transformer for Real-World Motion from Blur](https://arxiv.org/abs/2211.11423)|[Code](https://github.com/zzh-tech/BiT)|
 |2023|CVPR|[Improving Robustness of Semantic Segmentation to Motion-Blur Using Class-Centric Augmentation](https://openaccess.thecvf.com/content/CVPR2023/html/Aakanksha_Improving_Robustness_of_Semantic_Segmentation_to_Motion-Blur_Using_Class-Centric_Augmentation_CVPR_2023_paper.html)|[Code](https://github.com/aka-discover/CCMBA_CVPR23)|
 [2023]|CVPR|[Recovering 3D Hand Mesh Sequence From a Single Blurry Image: A New Dataset and Temporal Unfolding](https://openaccess.thecvf.com/content/CVPR2023/html/Oh_Recovering_3D_Hand_Mesh_Sequence_From_a_Single_Blurry_Image_CVPR_2023_paper.html)|[Code](https://github.com/JaehaKim97/BlurHand_RELEASE)|
 |2023|CVPR|[Blur Interpolation Transformer for Real-World Motion from Blur](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhong_Blur_Interpolation_Transformer_for_Real-World_Motion_From_Blur_CVPR_2023_paper.pdf)|[Code](https://github.com/zzh-tech/BiT?tab=readme-ov-file)|
@@ -475,7 +466,6 @@
 |2023|CVPR|[DP-NeRF: Deblurred Neural Radiance Field With Physical Scene Priors](https://openaccess.thecvf.com/content/CVPR2023/html/Lee_DP-NeRF_Deblurred_Neural_Radiance_Field_With_Physical_Scene_Priors_CVPR_2023_paper.html)|[Code](https://dogyoonlee.github.io/dpnerf/)|
 |2023|ICCV|[Single Image Defocus Deblurring via Implicit Neural Inverse Kernels](https://openaccess.thecvf.com/content/ICCV2023/papers/Quan_Single_Image_Defocus_Deblurring_via_Implicit_Neural_Inverse_Kernels_ICCV_2023_paper.pdf)||
 |2023|IJCV|[End-to-end Alternating Optimization for Real-World Blind Super Resolution](https://arxiv.org/abs/2308.08816)|[Code](https://github.com/greatlog/RealDAN.git)|
-|2023|Arxiv|[LaKDNet: Revisiting Image Deblurring with an Efficient ConvNet](https://arxiv.org/pdf/2302.02234.pdf)|[Code](https://github.com/lingyanruan/LaKDNet)|
 |2024|WACV|[Camera-Independent Single Image Depth Estimation From Defocus Blur](https://openaccess.thecvf.com/content/WACV2024/papers/Wijayasingha_Camera-Independent_Single_Image_Depth_Estimation_From_Defocus_Blur_WACV_2024_paper.pdf)||
 |2024|CVPR|[A Unified Framework for Microscopy Defocus Deblur with Multi-Pyramid Transformer and Contrastive Learning](https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_A_Unified_Framework_for_Microscopy_Defocus_Deblur_with_Multi-Pyramid_Transformer_CVPR_2024_paper.html)|[Code](https://github.com/PieceZhang/MPT-CataBlur)|
 |2024|CVPR|[LDP: Language-driven Dual-Pixel Image Defocus Deblurring Network](https://openaccess.thecvf.com/content/CVPR2024/html/Yang_LDP_Language-driven_Dual-Pixel_Image_Defocus_Deblurring_Network_CVPR_2024_paper.html)|[Code](https://github.com/noxsine/LDP)|
@@ -486,25 +476,11 @@
 |:---:|:---:|:---:|:---:|
 |2009|CVPR|[Understanding and evaluating blind deconvolution algorithms](http://webee.technion.ac.il/people/anat.levin/papers/deconvLevinEtalCVPR09.pdf)|[Dataset](http://webee.technion.ac.il/people/anat.levin/papers/LevinEtalCVPR09Data.rar)|
 |2012|ECCV|[Recording and playback of camera shake: benchmarking blind deconvolution with a real-world database](http://webdav.is.mpg.de/pixel/benchmark4camerashake/src_files/Pdf/Koehler_ECCV2012_Benchmark.pdf)|[Dataset](http://webdav.is.mpg.de/pixel/benchmark4camerashake/)|
-|2013|ICCP|[Edge-based blur kernel estimation using patch priors](http://cs.brown.edu/~lbsun/deblur2013/patchdeblur_iccp2013.pdf)|[Dataset](http://cs.brown.edu/~lbsun/deblur2013/deblur2013iccp.html)|
 |2016|CVPR|[A Comparative Study for Single Image Blind Deblurring](http://vllab.ucmerced.edu/wlai24/cvpr16_deblur_study/paper/cvpr16_deblur_study.pdf)|[Dataset](http://vllab.ucmerced.edu/wlai24/cvpr16_deblur_study/)|
-|2017|CVPR (GOPRO)|[Deep multi-scale convolutional neural network for dynamic scene deblurring](http://zpascal.net/cvpr2017/Nah_Deep_Multi-Scale_Convolutional_CVPR_2017_paper.pdf)|[Dataset](https://github.com/SeungjunNah/DeepDeblur_release)|
-|2017|CVPR (DVD)|[Deep Video Deblurring for Hand-Held Cameras](http://openaccess.thecvf.com/content_cvpr_2017/html/Su_Deep_Video_Deblurring_CVPR_2017_paper.html)|[Dataset](http://www.cs.ubc.ca/labs/imager/tr/2017/DeepVideoDeblurring/)|
 |2017|GCPR|[Motion deblurring in the wild](https://arxiv.org/abs/1701.01486)||
-|2019|CVPR (Stereo Blur Dataset)|[Stereo Deblurring With View Aggregation](http://openaccess.thecvf.com/content_CVPR_2019/html/Zhou_DAVANet_Stereo_Deblurring_With_View_Aggregation_CVPR_2019_paper.html)|[Dataset](https://stereoblur.shangchenzhou.com/)|
-|2019|CVPR_W (REDS)|[NTIRE 2019 Challenge on Video Deblurring and Super-Resolution: Dataset and Study](http://openaccess.thecvf.com/content_CVPRW_2019/html/NTIRE/Nah_NTIRE_2019_Challenge_on_Video_Deblurring_and_Super-Resolution_Dataset_and_CVPRW_2019_paper.html)|[Dataset](https://seungjunnah.github.io/Datasets/reds)|
-|2019|ICCV (HIDE)|[Human-Aware Motion Deblurring](https://pdfs.semanticscholar.org/20a4/b3353579525f0b76ec42e17a2284b4453f9a.pdf)|[Dataset](https://github.com/joanshen0508/HA_deblur)|
-|2020|CVPR|[Deblurring by Realistic Blurring](https://arxiv.org/abs/2004.01860)|[Dataset](https://github.com/HDCVLab/Deblurring-by-Realistic-Blurring)|
-|2020|CVPR|[Learning Event-Based Motion Deblurring](https://arxiv.org/abs/2004.05794)||
 |2020|ECCV (BSD)|[Efficient Spatio-Temporal Recurrent Neural Network for Video Deblurring](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123510188.pdf)|[Dataset](https://github.com/zzh-tech/ESTRNN)|
 |2020|ECCV|[Real-World Blur Dataset for Learning and Benchmarking Deblurring Algorithms](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123700188.pdf)|[Code & Dataset](http://cg.postech.ac.kr/research/realblur/)|
-|2021|CVPR (BS-RSCD)|[Towards Rolling Shutter Correction and Deblurring in Dynamic Scenes](https://arxiv.org/abs/2104.01601)|[Dataset](https://github.com/zzh-tech/RSCD)||
 |2021|Arxiv|[MC-Blur: A Comprehensive Benchmark for Image Deblurring](https://arxiv.org/pdf/2112.00234.pdf)|[Dataset](https://github.com/HDCVLab/MC-Blur-Dataset)||
-|2022|ECCV|[Realistic Blur Synthesis for Learning Image Deblurring](https://arxiv.org/abs/2202.08771)|[Code & Dataset](https://github.com/rimchang/RSBlur)||
-|2022|IJCV (BSD)|[Real-world Video Deblurring: A Benchmark Dataset and An Efficient Recurrent Neural Network](https://arxiv.org/abs/2106.16028)|[Dataset](https://github.com/zzh-tech/ESTRNN)|
-|2023|CVPR (RBI)|[Blur Interpolation Transformer for Real-World Motion from Blur](https://arxiv.org/abs/2211.11423)|[Code & Dataset](https://github.com/zzh-tech/BiT)|
-|2023|AAAI|[Real-world deep local motion deblurring](https://arxiv.org/abs/2204.08179)|[Code&Dataset](https://github.com/LeiaLi/ReLoBlur)|
-|2024|ECCV_W|[DAVIDE: Depth-Aware Video Deblurring](https://arxiv.org/abs/2409.01274)|[Code & Dataset](https://germanftv.github.io/DAVIDE.github.io/)|
 
 Abbreviations:
 

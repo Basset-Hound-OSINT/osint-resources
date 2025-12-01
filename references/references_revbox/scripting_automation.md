@@ -20,8 +20,6 @@ The following is a comprehensive list of tools and resources mentioned in the do
 *   [idajava (cblichmann/idajava)](https://github.com/cblichmann/idajava) (Java integration for Hex-Rays IDA Pro)
 *   [idaperl (nlitsme/idaperl)](https://github.com/nlitsme/idaperl) (Perl scripting support for IDApro)
 *   [IDA Srvr (dzzie/re_plugins)](https://github.com/dzzie/re_plugins) (WM_COPYDATA IPC server running in IDA)
-*   [IDA_JScript (dzzie/re_plugins)](https://github.com/dzzie/re_plugins) (Script IDA in Javascript)
-*   [PyIDAServer (dzzie/re_plugins)](https://github.com/dzzie/re_plugins) (Python based IPC server running in IDA)
 *   [x64dbgpy (x64dbg/x64dbgpy)](https://github.com/x64dbg/x64dbgpy) (Automating x64dbg using Python)
 *   [advancedscript (ahmadmansoor/advancedscript)](https://github.com/ahmadmansoor/advancedscript) (Add More Features for x64dbg Script System)
 *   [x64dbg_script_editor (techbliss/x64dbg_script_editor)](https://github.com/techbliss/x64dbg_script_editor)

@@ -22,15 +22,4 @@
 ## RESOLVERS
 
 - [Skype Resolver](https://www.skypeipresolver.net/index.php)
-- [https://www.skypeipresolver.net/index.php](https://www.skypeipresolver.net/index.php)
-- [PSN Resolver](https://playstationresolver.xyz)
-- [https://playstationresolver.xyz](https://playstationresolver.xyz)
-- [Cloudflare Resolver](https://www.skypeipresolver.net/cloudflare.php)
-- [https://www.skypeipresolver.net/cloudflare.php](https://www.skypeipresolver.net/cloudflare.php)
-- [Cloudflare Resolver Tool](https://shadowcrypt.net/tools/cloudflare)
-- [Discord Resolver](https://www.leaked.site/index.php?resolver/discord.0)
-- [https://www.leaked.site/index.php?resolver/discord.0](https://www.leaked.site/index.php?resolver/discord.0)
-- [Xboxresolver.com](https://xboxresolver.com)
-- [https://xboxresolver.com](https://xboxresolver.com)
 - [Vedbex DNS Resolver](https://www.vedbex.com)
-- [https://www.vedbex.com](https://www.vedbex.com)

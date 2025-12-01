@@ -8,25 +8,18 @@
 # PGP or GPG Keybase
 
 - [keybase.io](https://keybase.io)
-- [https://keybase.io](https://keybase.io)
 - [keys openpgp](https://keys.openpgp.org)
-- [https://keys.openpgp.org](https://keys.openpgp.org)
 - [ubbuntu key server](https://keyserver.ubuntu.com:11371)
-- [https://keyserver.ubuntu.com:11371](https://keyserver.ubuntu.com:11371)
 
 
 # OSINT Cryptography (Cipher)
 
 - [dcode](https://www.dcode.fr/identification-chiffrement)
 - [CyberChef](https://gchq.github.io/CyberChef)
-- [https://gchq.github.io/CyberChef](https://gchq.github.io/CyberChef)
 - [base64decode](https://www.base64decode.org)
-- [https://www.base64decode.org](https://www.base64decode.org)
 - [hashes](https://hashes.com/en/tools/hash_identifier)
 - [kali hash identifier](https://www.kali.org/tools/hash-identifier)
-- [https://www.kali.org/tools/hash-identifier](https://www.kali.org/tools/hash-identifier)
 - [rapidtables](https://www.rapidtables.com/convert)
-- [https://www.rapidtables.com/convert](https://www.rapidtables.com/convert)
 
 
 - [dcode](https://www.dcode.fr/en)
@@ -51,5 +44,4 @@
 - [RSACTFTool](https://github.com/Ganapati/RsaCtfTool)
 - [RSATool](https://github.com/ius/rsatool)
 - [Turbo Intruder](https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack)
-- [XORTool](https://github.com/hellman/xortool)
 - [padding-oracle-attacker](https://github.com/KishanBagaria/padding-oracle-attacker)

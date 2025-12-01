@@ -15,7 +15,6 @@
 - [GO DORK](https://github.com/dwisiswant0/go-dork)
 - [Dork Scanner](https://github.com/Balgogan/dorkscanner)
 - [http://WoW.com](https://WoW.com)
-- [https://WoW.com](https://WoW.com)
 - [ixss.warsong.pw](https://ixss.warsong.pw/xssor)
 - [ReconFTW](https://github.com/six2dez/reconftw)
 - [LFITester](https://github.com/kostas-pa/LFITester)
@@ -46,7 +45,6 @@
 
 - [Dorklab](https://github.com/rtwillett/DorkLab)
 - [Ominis-Osint](https://github.com/AnonCatalyst/Ominis-Osint)
-- [Go Dork](https://github.com/dwisiswant0/go-dork)
 - [Dorkish](https://github.com/yousseflahouifi/dorkish)
 - [Dork Collection](https://github.com/cipher387/Dorks-collections-list?tab=readme-ov-file)
 - [Fast Dork Scan](https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan.git)
@@ -57,29 +55,20 @@
 - [Gdorks](https://github.com/Ishanoshada/GDorks)
 - [cybdetective pastebin](https://cybdetective.com/pastebin.html)
 - [NAMINT](https://seintpl.github.io/NAMINT)
-- [https://seintpl.github.io/NAMINT](https://seintpl.github.io/NAMINT)
 - [BullsEye0 dorks](https://github.com/BullsEye0/dorks-eye)
 - [dorkgpt](https://www.dorkgpt.com)
-- [https://www.dorkgpt.com](https://www.dorkgpt.com)
 - [dorksearch](https://dorksearch.com)
-- [https://dorksearch.com](https://dorksearch.com)
 - [lullar.com](https://com.lullar.com)
-- [https://com.lullar.com](https://com.lullar.com)
 - [recruitin](https://recruitin.net)
-- [https://recruitin.net](https://recruitin.net)
 - [Dorking webcamcse](https://cipher387.github.io/webcamcse)
-- [https://cipher387.github.io/webcamcse](https://cipher387.github.io/webcamcse)
 
 
 # Dorking Other Search Engine
 
 - [YANDEX](https://seosly.com/blog/yandex-search-operators)
-- [https://seosly.com/blog/yandex-search-operators](https://seosly.com/blog/yandex-search-operators)
 - [BING](https://seosly.com/blog/bing-search-operators)
-- [https://seosly.com/blog/bing-search-operators](https://seosly.com/blog/bing-search-operators)
 - [mediasova](https://search.mediasova.com/en/index)
 - [wbmii](https://webmii.com)
-- [https://webmii.com](https://webmii.com)
 - [YaSeeker - Yandex Search Tools](https://github.com/HowToFind-bot/YaSeeker)
 
 # Google Advanced Search Tools
@@ -92,12 +81,9 @@
 
 ## DORKING
 
-- [DorkSearch](https://dorksearch.com)
-- [https://dorksearch.com](https://dorksearch.com)
 - [Google Dork Cheatsheet](https://github.com/robyfirnandoyusuf/Google-Dork-Cheatsheet)
 - [Google Hacking Database](https://www.exploit-db.com/google-hacking-database)
 - [theHarvester](https://pypi.org/project/theHarvester)
-- [https://pypi.org/project/theHarvester](https://pypi.org/project/theHarvester)
 - [metagoofil](https://github.com/opsdisk/metagoofil)
 - [webdork](https://github.com/HACKE-RC/webdork)
 - [ATSCAN](https://github.com/AlisamTechnology/ATSCAN)

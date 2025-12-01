@@ -3,156 +3,153 @@
 > select which search engines to use then open new tabs with the search queries already populated
 
 - [Google](http://google.com)
-  - input text
-  - window.open('http://google.com/search?q=' + Search01, 'Search01window');
+- input text
+- window.open('http://google.com/search?q=' + Search01, 'Search01window');
 
-- [Google Date](http://google.com)
-  - input text
-  - window.open('http://google.com/search?q=' + Search02 + '&tbs=cdr:1,cd_min:1/1/0,sbd:1', 'Search02window');
+- input text
+- window.open('http://google.com/search?q=' + Search02 + '&tbs=cdr:1,cd_min:1/1/0,sbd:1', 'Search02window');
 
 - [Google News](http://www.google.com)
-  - input text
-  - window.open('http://www.google.com/search?tbm=nws&q=' + Search03, 'Search03window');
+- input text
+- window.open('http://www.google.com/search?tbm=nws&q=' + Search03, 'Search03window');
 
 - [Google FTP](https://www.google.com)
-  - input text
-  - window.open('https://www.google.com/search?q=inurl%3Aftp%20-inurl%3A(http|https)%20' + Search05, 'Search05window');
+- input text
+- window.open('https://www.google.com/search?q=inurl%3Aftp%20-inurl%3A(http|https)%20' + Search05, 'Search05window');
 
-- [Google Index](https://www.google.com)
-  - input text
-  - window.open('https://www.google.com/search?q=intitle%3Aindex.of+' + Search06, 'Search06window');
+- input text
+- window.open('https://www.google.com/search?q=intitle%3Aindex.of+' + Search06, 'Search06window');
 
 - [Google Scholar](http://scholar.google.com)
-  - input text
-  - window.open('http://scholar.google.com/scholar?&q=' + Search07, 'Search07window');
+- input text
+- window.open('http://scholar.google.com/scholar?&q=' + Search07, 'Search07window');
 
 - [Google Patents](https://patents.google.com)
-  - input text
-  - window.open('https://patents.google.com/?q=' + Search08, 'Search08window');
+- input text
+- window.open('https://patents.google.com/?q=' + Search08, 'Search08window');
 
 - [Bing](http://bing.com)
-  - input text
-  - window.open('http://bing.com/search?q="' + Search09 + '"', 'Search09window');
+- input text
+- window.open('http://bing.com/search?q="' + Search09 + '"', 'Search09window');
 
-- [Bing News](http://bing.com)
-  - input text
-  - window.open('http://bing.com/news/search?q="' + Search10 + '"', 'Search10window');
+- input text
+- window.open('http://bing.com/news/search?q="' + Search10 + '"', 'Search10window');
 
 - [Yahoo](http://search.yahoo.com)
-  - input text
-  - window.open('http://search.yahoo.com/search?p=' + Search11, 'Search11window');
+- input text
+- window.open('http://search.yahoo.com/search?p=' + Search11, 'Search11window');
 
 - [Yandex](http://www.yandex.com)
-  - input text
-  - window.open('http://www.yandex.com/yandsearch?text=' + Search12, 'Search12window');
+- input text
+- window.open('http://www.yandex.com/yandsearch?text=' + Search12, 'Search12window');
 
 - [Baidu](http://baidu.com)
-  - input text
-  - window.open('http://baidu.com/s?wd=' + Search13, 'Search13window');
+- input text
+- window.open('http://baidu.com/s?wd=' + Search13, 'Search13window');
 
 - [Searx](https://baresearch.org)
 
 
 ```YAML
 tool_info:
-    name: Searx Instance
-    type: web
-    usage_url: baresearch.org
-    info_url: https://github.com/searxng/searxng
+name: Searx Instance
+type: web
+usage_url: baresearch.org
+info_url: https://github.com/searxng/searxng
 tool_cmd:
-    login: false
-    js: function doSearch14(Search14)
+login: false
+js: function doSearch14(Search14)
 {window.open('https://baresearch.org/?q=' + Search14, 'Search14window');}
-    target_info: fullname, phonenumber, firstname, lastname
-    target_info_opt: dob, address
-    # autopopulate use of given info type in a profile, if multiple of a type, like a phonnumber, then drop down menu listing all phonenumbers
-    # comma deliminated info types, if multiple then generate more fields on rendering site, and each field has a dropdown if multiple
-   # optional targeted info does not require its field to be populated to run the tool/search
+target_info: fullname, phonenumber, firstname, lastname
+target_info_opt: dob, address
+# autopopulate use of given info type in a profile, if multiple of a type, like a phonnumber, then drop down menu listing all phonenumbers
+# comma deliminated info types, if multiple then generate more fields on rendering site, and each field has a dropdown if multiple
+# optional targeted info does not require its field to be populated to run the tool/search
 ```
 
 - [DuckDuckGo](https://duckduckgo.com)
-  - input text
-  - window.open('https://duckduckgo.com/?q=' + Search16, 'Search16window');
+- input text
+- window.open('https://duckduckgo.com/?q=' + Search16, 'Search16window');
 
 - [StartPage](https://startpage.com)
-  - input text
-  - window.open('https://startpage.com/do/search?q=' + Search17, 'Search17window');
+- input text
+- window.open('https://startpage.com/do/search?q=' + Search17, 'Search17window');
 
 - [Qwant](https://www.qwant.com)
-  - input text
-  - window.open('https://www.qwant.com/?q=' + Search18, 'Search18window');
+- input text
+- window.open('https://www.qwant.com/?q=' + Search18, 'Search18window');
 
 - [Brave](https://search.brave.com)
-  - input text
-  - window.open('https://search.brave.com/search?q=' + Search19, 'Search19window');
+- input text
+- window.open('https://search.brave.com/search?q=' + Search19, 'Search19window');
 
 - [Wayback](https://web.archive.org)
-  - input text
-  - window.open('https://web.archive.org/web/*/' + Search20, 'Search20window');
+- input text
+- window.open('https://web.archive.org/web/*/' + Search20, 'Search20window');
 
 - [Ahmia](https://ahmia.fi)
-  - input text
-  - window.open('https://ahmia.fi/search/?q=' + Search21, 'Search21window');
+- input text
+- window.open('https://ahmia.fi/search/?q=' + Search21, 'Search21window');
 
 - [Onion - Tor.link](https://tor.link)
-  - input text
-  - window.open('https://tor.link/?q=' + Search37, 'Search37window');
+- input text
+- window.open('https://tor.link/?q=' + Search37, 'Search37window');
 
 - [Onion - Torch](http://torch4st4l57l2u2vr5wqwvwyueucvnrao4xajqr2klmcmicrv7ccaad.onion)
-  - input text
-  - window.open('http://torch4st4l57l2u2vr5wqwvwyueucvnrao4xajqr2klmcmicrv7ccaad.onion/search?query=' + Search23 + '&action=search', 'Search23window');
+- input text
+- window.open('http://torch4st4l57l2u2vr5wqwvwyueucvnrao4xajqr2klmcmicrv7ccaad.onion/search?query=' + Search23 + '&action=search', 'Search23window');
 
 - [Onion - Tor66](http://www.tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion)
-  - input text
-  - window.open('http://www.tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=' + Search24, 'Search24window');
+- input text
+- window.open('http://www.tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=' + Search24, 'Search24window');
 
 - [Onion - Haystack](http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion)
-  - input text
-  - window.open('http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=' + Search25, 'Search25window');
+- input text
+- window.open('http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=' + Search25, 'Search25window');
 
 - [Onion - Ahmia](http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion)
-  - input text
-  - window.open('http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/search/?q=' + Search26, 'Search26window');
+- input text
+- window.open('http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/search/?q=' + Search26, 'Search26window');
 
 - [Onion - SearchDemon](http://srcdemonm74icqjvejew6fprssuolyoc2usjdwflevbdpqoetw4x3ead.onion)
-  - input text
-  - window.open('http://srcdemonm74icqjvejew6fprssuolyoc2usjdwflevbdpqoetw4x3ead.onion/search?q=' + Search27, 'Search27window');
+- input text
+- window.open('http://srcdemonm74icqjvejew6fprssuolyoc2usjdwflevbdpqoetw4x3ead.onion/search?q=' + Search27, 'Search27window');
 
 - [Onion - Excavator](http://2fd6cemt4gmccflhm6imvdfvli3nf7zn6rfrwpsy7uhxrgbypvwf5fad.onion)
-  - input text
-  - window.open('http://2fd6cemt4gmccflhm6imvdfvli3nf7zn6rfrwpsy7uhxrgbypvwf5fad.onion/search/' + Search28, 'Search28window');
+- input text
+- window.open('http://2fd6cemt4gmccflhm6imvdfvli3nf7zn6rfrwpsy7uhxrgbypvwf5fad.onion/search/' + Search28, 'Search28window');
 
 - [Onion - GDark](http://zb2jtkhnbvhkya3d46twv3g7lkobi4s62tjffqmafjibixk6pmq75did.onion)
-  - input text
-  - window.open('http://zb2jtkhnbvhkya3d46twv3g7lkobi4s62tjffqmafjibixk6pmq75did.onion/gdark/search.php?query=' + Search29 + '&search=1', 'Search29window');
+- input text
+- window.open('http://zb2jtkhnbvhkya3d46twv3g7lkobi4s62tjffqmafjibixk6pmq75did.onion/gdark/search.php?query=' + Search29 + '&search=1', 'Search29window');
 
 - [Onion - Hidden Reviews](http://u5lyidiw4lpkonoctpqzxgyk6xop7w7w3oho4dzzsi272rwnjhyx7ayd.onion)
-  - input text
-  - window.open('http://u5lyidiw4lpkonoctpqzxgyk6xop7w7w3oho4dzzsi272rwnjhyx7ayd.onion/?s=' + Search30, 'Search30window');
+- input text
+- window.open('http://u5lyidiw4lpkonoctpqzxgyk6xop7w7w3oho4dzzsi272rwnjhyx7ayd.onion/?s=' + Search30, 'Search30window');
 
 - [Onion - OnionLand](http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion)
-  - input text
-  - window.open('http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=' + Search31, 'Search31window');
+- input text
+- window.open('http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=' + Search31, 'Search31window');
 
 - [Onion - Phobos](http://phobosxilamwcg75xt22id7aywkzol6q6rfl2flipcqoc4e4ahima5id.onion)
-  - input text
-  - window.open('http://phobosxilamwcg75xt22id7aywkzol6q6rfl2flipcqoc4e4ahima5id.onion/search?query=' + Search32, 'Search32window');
+- input text
+- window.open('http://phobosxilamwcg75xt22id7aywkzol6q6rfl2flipcqoc4e4ahima5id.onion/search?query=' + Search32, 'Search32window');
 
 - [Onion - Submarine](http://no6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad.onion)
-  - input text
-  - window.open('http://no6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad.onion/search.php?term=' + Search33, 'Search33window');
+- input text
+- window.open('http://no6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad.onion/search.php?term=' + Search33, 'Search33window');
 
 - [Onion - DeepSearch](http://searchgf7gdtauh7bhnbyed4ivxqmuoat3nm6zfrg3ymkq6mtnpye3ad.onion)
-  - input text
-  - window.open('http://searchgf7gdtauh7bhnbyed4ivxqmuoat3nm6zfrg3ymkq6mtnpye3ad.onion/search?q=' + Search34, 'Search34window');
+- input text
+- window.open('http://searchgf7gdtauh7bhnbyed4ivxqmuoat3nm6zfrg3ymkq6mtnpye3ad.onion/search?q=' + Search34, 'Search34window');
 
 - [Onion - OnionCenter](http://5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion)
-  - input text
-  - window.open('http://5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion/index.php?a=search&q=' + Search35, 'Search35window');
+- input text
+- window.open('http://5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion/index.php?a=search&q=' + Search35, 'Search35window');
 
 - [Onion - FreshOnion](http://freshonifyfe4rmuh6qwpsexfhdrww7wnt5qmkoertwxmcuvm4woo4ad.onion)
-  - input text
-  - window.open('http://freshonifyfe4rmuh6qwpsexfhdrww7wnt5qmkoertwxmcuvm4woo4ad.onion/?query=' + Search36, 'Search36window');
+- input text
+- window.open('http://freshonifyfe4rmuh6qwpsexfhdrww7wnt5qmkoertwxmcuvm4woo4ad.onion/?query=' + Search36, 'Search36window');
 
 
 
@@ -162,7 +159,6 @@ tool_cmd:
 - [MetaGer: Privacy Protected Search](https://metager3.de/en)
 - [Search Engines Index](https://www.searchenginesindex.com)
 - [carrot2](https://search.carrot2.org/#/search/web)
-- [Startpage](https://startpage.com)
 - [Crossref](https://search.crossref.org)
 - [Yahoo Search](https://search.yahoo.com)
 - [Ecosia](https://www.ecosia.org)
@@ -241,8 +237,6 @@ tool_cmd:
 - [XGS](https://github.com/XAMFRA/XGS)
 - [http://onion.cab](https://onion.cab)
 - [http://onion.city](https://onion.city)
-- [https://onion.cab](https://onion.cab)
-- [https://onion.city](https://onion.city)
 - [Google Email Extractor](https://chrome.google.com/webstore/detail/google-email-extractor/aabpdmlmkpedpigeignclfmodjhplllj/related)
 - [SEQE.me](https://seqe.me)
 - [Bright Local Search Result Checker](https://www.brightlocal.com/local-search-results-checker)
@@ -312,35 +306,25 @@ tool_cmd:
 
 - [100SearchEngines](https://www.100searchengines.com)
 - [Bing vs. Google](https://bvsg.org)
-- [https://bvsg.org](https://bvsg.org)
 - [DADgogo](https://dadgogo.com)
-- [https://dadgogo.com](https://dadgogo.com)
 - [Etools](https://www.etools.ch)
-- [https://www.etools.ch](https://www.etools.ch)
 - [WebCrawler](https://www.webcrawler.com)
-- [https://www.webcrawler.com](https://www.webcrawler.com)
 
 # Code Search
 
 - [Chromium Code Search](https://source.chromium.org/chromium)
 - [Code Finder](https://codefinder.dev)
-- [https://codefinder.dev](https://codefinder.dev)
 - [codefinder org](https://codefinder.org)
-- [https://codefinder.org](https://codefinder.org)
 - [Android Code Search](https://cs.android.com)
 - [CodeSeek](https://www.codeseek.co)
 - [Debian Code Search](https://codesearch.debian.net)
-- [https://codesearch.debian.net](https://codesearch.debian.net)
 - [Scala](https://www.programcreek.com/scala)
 - [SearchCode](https://searchcode.com)
 - [SourceCodeOnline](https://www.sourcecodeonline.com)
-- [https://www.sourcecodeonline.com](https://www.sourcecodeonline.com)
 - [Woboq](https://code.woboq.org)
 - [publicwww](https://publicwww.com)
-- [https://publicwww.com](https://publicwww.com)
 - [DevsecOps Secure Code](https://devsecopsguides.com/docs/rules)
 - [awesomeopensource](https://awesomeopensource.com)
-- [https://awesomeopensource.com](https://awesomeopensource.com)
 - [nerdydata](https://www.nerdydata.com/reports/new)
 - [Github code search](https://github.com/search?type=code)
 - [sourcegraph](https://sourcegraph.com/search)
@@ -348,11 +332,8 @@ tool_cmd:
 - [postman](https://www.postman.com/explore/collections)
 - [swaggerhub](https://app.swaggerhub.com/search)
 - [ecosyste](https://ecosyste.ms)
-- [https://ecosyste.ms](https://ecosyste.ms)
 - [wpdirectory](https://wpdirectory.net)
-- [https://wpdirectory.net](https://wpdirectory.net)
 - [launchpad](https://launchpad.net)
-- [https://launchpad.net](https://launchpad.net)
 - [snipplr](https://snipplr.com/all)
 
 
@@ -360,93 +341,51 @@ tool_cmd:
 # Other Search Engines
 
 - [criminalip](https://www.criminalip.io)
-- [https://www.criminalip.io](https://www.criminalip.io)
 - [us.searchboth.net](https://us.searchboth.net)
-- [https://us.searchboth.net](https://us.searchboth.net)
 - [Archive.org](https://www.arhive.org)
-- [https://www.arhive.org](https://www.arhive.org)
 - [Yandex](https://yandex.com)
 - [Pastebin](https://www.pastebin.com)
-- [https://www.pastebin.com](https://www.pastebin.com)
 - [Topix.com](https://www.topix.com)
-- [https://www.topix.com](https://www.topix.com)
 - [Shodan](https://www.shodan.io)
-- [https://www.shodan.io](https://www.shodan.io)
 - [Piratebays](https://thepiratebays.com)
-- [https://thepiratebays.com](https://thepiratebays.com)
 - [Onesearch](https://www.onesearch.com)
-- [https://www.onesearch.com](https://www.onesearch.com)
 - [Searchencrypt](https://www.searchencrypt.com/home)
-- [Duckgo](https://duckduckgo.com)
-- [https://duckduckgo.com](https://duckduckgo.com)
 - [Waymore](https://forum.seccodeid.com/d/waymore-find-way-more-from-the-wayback-machine)
 - [StartPage](https://www.startpage.com)
-- [https://www.startpage.com](https://www.startpage.com)
 - [Searx](https://searx.space)
-- [https://searx.space](https://searx.space)
 - [CommonCrawl](https://commoncrawl.org/latest-crawl)
 - [Similar Sites](https://www.similarsites.com)
-- [https://www.similarsites.com](https://www.similarsites.com)
 - [Zap Meta](https://www.zapmeta.com)
-- [https://www.zapmeta.com](https://www.zapmeta.com)
-- [Carrot Search](https://search.carrot2.org/#/search/web)
 - [Goo Search](https://www.goo.ne.jp)
-- [https://www.goo.ne.jp](https://www.goo.ne.jp)
-- [swisscows](https://swisscows.com/en)
 - [odp](https://www.odp.org/homepage.php)
-- [https://www.odp.org/homepage.php](https://www.odp.org/homepage.php)
 - [Yiipy Search](https://www.yippysearchengine.com)
-- [https://www.yippysearchengine.com](https://www.yippysearchengine.com)
 - [webarchiveviewer](https://cybdetective.com/webarchiveviewer)
-- [https://cybdetective.com/webarchiveviewer](https://cybdetective.com/webarchiveviewer)
 - [duckduckgo Bangs](https://duckduckgo.com/bangs)
 - [mediasova](https://search.mediasova.com/en/index)
 - [mojeek](https://www.mojeek.com)
-- [https://www.mojeek.com](https://www.mojeek.com)
 - [boardreader](https://boardreader.com)
-- [https://boardreader.com](https://boardreader.com)
 - [Geoint CSE search](https://cse.google.com/cse?cx=015328649639895072395:sbv3zyxzmji#gsc.tab=0&gsc.sort=)
 - [lolarchiver](https://osint.lolarchiver.com/#)
 - [wbmii](https://webmii.com)
-- [https://webmii.com](https://webmii.com)
 - [Wiki Leaks](https://wikileaks.org)
-- [https://wikileaks.org](https://wikileaks.org)
 - [bellingcat wayback-google-analytics](https://github.com/bellingcat/wayback-google-analytics)
 - [yamli Arabic search](https://www.yamli.com)
-- [https://www.yamli.com](https://www.yamli.com)
 - [ASK](https://www.ask.com)
-- [https://www.ask.com](https://www.ask.com)
 - [Baidu](https://www.baidu.com)
-- [https://www.baidu.com](https://www.baidu.com)
 - [Infospace](https://www.infospace.com)
-- [https://www.infospace.com](https://www.infospace.com)
 - [gibiru](https://gibiru.com)
-- [https://gibiru.com](https://gibiru.com)
 - [kagi](https://kagi.com)
-- [https://kagi.com](https://kagi.com)
-- [brave](https://search.brave.com)
-- [https://search.brave.com](https://search.brave.com)
 - [stract](https://stract.com)
-- [https://stract.com](https://stract.com)
 - [Google Safe Browsing](https://developers.google.com/safe-browsing/reference?hl=id)
-- [qwant](https://www.qwant.com)
 
 
 ## General Search
 
-- [Aol](https://search.aol.com)
-- [Ask](https://www.ask.com)
 - [Bing](https://www.bing.com)
-- [Brave](https://search.brave.com)
-- [DuckDuckGo](https://duckduckgo.com)
 - [Goodsearch](https://www.goodsearch.com)
-- [Google Search](https://www.google.com)
 - [Instya](https://www.instya.com)
 - [Impersonal.me](https://www.impersonal.me)
-- [https://www.impersonal.me](https://www.impersonal.me)
 - [Lycos](https://www.lycos.com)
-- [Mojeek](https://www.mojeek.com)
-- [https://www.mojeek.com](https://www.mojeek.com)
 - [Search.com](https://www.search.com)
 - [Wolfram Alpha](https://www.wolframalpha.com)
 - [Yahoo! Search](https://www.yahoo.com)
@@ -456,186 +395,53 @@ tool_cmd:
 ## Main National Search Engines
 
 - [Alleba (Philippines)](https://www.alleba.com)
-- [https://www.alleba.com](https://www.alleba.com)
-- [Baidu (China)](https://www.baidu.com)
-- [https://www.baidu.com](https://www.baidu.com)
 - [Eniro (Sweden)](https://www.eniro.se)
-- [https://www.eniro.se](https://www.eniro.se)
-- [Goo (Japan)](https://www.goo.ne.jp)
-- [https://www.goo.ne.jp](https://www.goo.ne.jp)
 - [Najdsi (Slovenia)](https://www.najdi.si)
-- [https://www.najdi.si](https://www.najdi.si)
 - [Naver (South Korea)](https://www.naver.com)
-- [https://www.naver.com](https://www.naver.com)
 - [Onet.pl (Poland)](https://www.onet.pl)
-- [https://www.onet.pl](https://www.onet.pl)
 - [Orange (France)](https://www.orange.fr)
-- [https://www.orange.fr](https://www.orange.fr)
 - [Parseek (Iran)](https://www.parseek.com)
-- [https://www.parseek.com](https://www.parseek.com)
 - [SAPO (Portugal)](https://www.sapo.pt)
-- [https://www.sapo.pt](https://www.sapo.pt)
 - [Search.ch (Switzerland)](https://www.search.ch)
-- [https://www.search.ch](https://www.search.ch)
 - [Seznam(Czech Republic)](https://seznam.cz)
 - [Walla (Israel)](https://www.walla.co.il)
-- [https://www.walla.co.il](https://www.walla.co.il)
 - [Yandex (Russia)](https://www.yandex.com)
-- [https://www.yandex.com](https://www.yandex.com)
-- [Najdi.si (Slovenia)](https://www.najdi.si)
-- [https://www.najdi.si](https://www.najdi.si)
 
 ## Meta Search
 
 - [All-in-One](https://all-io.net)
-- [https://all-io.net](https://all-io.net)
 - [AllTheInternet](https://www.alltheinternet.com)
-- [https://www.alltheinternet.com](https://www.alltheinternet.com)
-- [Etools](https://www.etools.ch)
-- [https://www.etools.ch](https://www.etools.ch)
 - [FaganFinder](https://www.faganfinder.com/engines)
-- [https://www.faganfinder.com/engines](https://www.faganfinder.com/engines)
 - [Goofram](https://www.goofram.com)
-- [https://www.goofram.com](https://www.goofram.com)
 - [iZito](https://www.izito.com)
-- [https://www.izito.com](https://www.izito.com)
 - [Myallsearch](https://www.myallsearch.com)
-- [https://www.myallsearch.com](https://www.myallsearch.com)
-- [Qwant](https://www.qwant.com)
-- [https://www.qwant.com](https://www.qwant.com)
 - [Swisscows](https://swisscows.com)
-- [https://swisscows.com](https://swisscows.com)
 
 
 
 ## SEARCH ENGINES
 
 - [IntelTechniques Search Engine](https://inteltechniques.com/tools/Search.html)
-- [Google Advanced Search](https://www.google.com/advanced_search)
 - [Searx](https://searx.info)
-- [https://searx.info](https://searx.info)
-- [Bing](https://www.bing.com)
-- [https://www.bing.com](https://www.bing.com)
-- [Yandex](https://yandex.com)
-- [https://yandex.com](https://yandex.com)
-- [MetaGer: Privacy Protected Search](https://metager3.de/en)
-- [https://metager3.de/en](https://metager3.de/en)
-- [Duck Duck Go](https://duckduckgo.com)
-- [https://duckduckgo.com](https://duckduckgo.com)
-- [Search Engines Index](https://www.searchenginesindex.com)
-- [https://www.searchenginesindex.com](https://www.searchenginesindex.com)
-- [carrot2](https://search.carrot2.org/#/search/web)
-- [Qwant](https://www.qwant.com)
-- [https://www.qwant.com](https://www.qwant.com)
-- [Startpage](https://startpage.com)
-- [https://startpage.com](https://startpage.com)
 - [Mailing List Search](https://cse.google.com/cse/publicurl?cx=013991603413798772546:sipriovnbxq)
-- [swisscows](https://swisscows.com)
-- [https://swisscows.com](https://swisscows.com)
-- [Crossref](https://search.crossref.org)
-- [https://search.crossref.org](https://search.crossref.org)
-- [Brave Search](https://search.brave.com)
-- [https://search.brave.com](https://search.brave.com)
-- [Mojeek](https://www.mojeek.com)
-- [https://www.mojeek.com](https://www.mojeek.com)
-- [Yahoo Search](https://search.yahoo.com)
-- [https://search.yahoo.com](https://search.yahoo.com)
-- [Baidu](https://www.baidu.com)
-- [https://www.baidu.com](https://www.baidu.com)
-- [Ecosia](https://www.ecosia.org)
-- [https://www.ecosia.org](https://www.ecosia.org)
-- [Dogpile](https://www.dogpile.com)
-- [https://www.dogpile.com](https://www.dogpile.com)
-- [Zoo Search](https://www.metacrawler.com)
-- [https://www.metacrawler.com](https://www.metacrawler.com)
-- [App Store and iTunes search engine](https://fnd.io)
-- [https://fnd.io](https://fnd.io)
-- [Ask](https://www.search.ask.com)
-- [https://www.search.ask.com](https://www.search.ask.com)
-- [ZorexEye](https://zorexeye.com)
-- [https://zorexeye.com](https://zorexeye.com)
 - [Yassen.com](https://yassen.com)
-- [https://yassen.com](https://yassen.com)
 - [Flippity](https://www.flippity.com)
-- [https://www.flippity.com](https://www.flippity.com)
-- [keys.openpgp.org](https://keys.openpgp.org)
-- [https://keys.openpgp.org](https://keys.openpgp.org)
-- [MIT PGP Key Server](https://pgp.mit.edu)
-- [https://pgp.mit.edu](https://pgp.mit.edu)
 - [Ipse.io](https://www.ipse.io)
-- [https://www.ipse.io](https://www.ipse.io)
-- [Ipfs-search.com](https://ipfs-search.com/#/search)
-- [Debate.cards](https://debate.cards)
-- [https://debate.cards](https://debate.cards)
-- [Argumentsearch.com](https://argumentsearch.com)
-- [https://argumentsearch.com](https://argumentsearch.com)
-- [Meganzsearch.com](https://www.meganzsearch.com)
-- [https://www.meganzsearch.com](https://www.meganzsearch.com)
-- [Engine.presearch.org](https://engine.presearch.org)
-- [https://engine.presearch.org](https://engine.presearch.org)
-- [Blockscan.com](https://blockscan.com)
-- [https://blockscan.com](https://blockscan.com)
-- [Publc.com](https://publc.com)
-- [https://publc.com](https://publc.com)
 - [GoPit Search Engine - Home](https://www.gopit.com/socialsearch/index.php?type=Social)
 - [The best document search engine](https://www.doc-txt.com)
-- [https://www.doc-txt.com](https://www.doc-txt.com)
-- [CachedViews.com](https://cachedviews.com)
-- [https://cachedviews.com](https://cachedviews.com)
 - [MAC Address Lookup](https://maclookup.app)
-- [https://maclookup.app](https://maclookup.app)
 - [sploitus](https://sploitus.com)
-- [https://sploitus.com](https://sploitus.com)
 - [https://vulmon.com/](https://vulmon.com)
 - [https://vulmon.com/](https://vulmon.com/)
 - [Vulnerability & Exploit Database](https://www.rapid7.com/db)
-- [https://www.rapid7.com/db](https://www.rapid7.com/db)
 - [Recon](https://recon222tttn4ob7ujdhbn3s4gjre7netvzybuvbq2bcqwltkiqinhad.onion.pet)
-- [https://recon222tttn4ob7ujdhbn3s4gjre7netvzybuvbq2bcqwltkiqinhad.onion.pet](https://recon222tttn4ob7ujdhbn3s4gjre7netvzybuvbq2bcqwltkiqinhad.onion.pet)
-- [Google & Bing](https://one-plus.github.io/GoogleBing)
 - [Bookmarks](https://one-plus.github.io/Bookmarks)
-- [Boardreader - Forum Search](https://boardreader.com)
-- [https://boardreader.com](https://boardreader.com)
-- [Libgen.rs](https://libgen.rs)
-- [https://libgen.rs](https://libgen.rs)
-- [Stacksearch](https://stacksear.ch)
-- [https://stacksear.ch](https://stacksear.ch)
-- [SearchTempest](https://www.searchtempest.com)
-- [https://www.searchtempest.com](https://www.searchtempest.com)
-- [2lingual](https://2lingual.com)
-- [https://2lingual.com](https://2lingual.com)
-- [SEQE - Search Engines Query Engine](https://seqe.me)
-- [https://seqe.me](https://seqe.me)
-- [Milled](https://milled.com/search)
-- [btdig](https://btdig.com)
-- [https://btdig.com](https://btdig.com)
 - [Osint Open Source Projects](https://awesomeopensource.com/projects/osint)
-- [Monster Crawler Search](https://monstercrawler.com)
-- [https://monstercrawler.com](https://monstercrawler.com)
-- [Arabo.com](https://arabo.com)
-- [https://arabo.com](https://arabo.com)
 - [Google Scholar](https://scholar.google.com)
-- [https://scholar.google.com](https://scholar.google.com)
 - [Million Short](https://millionshort.com)
-- [https://millionshort.com](https://millionshort.com)
 - [BeVigil](https://bevigil.com)
-- [https://bevigil.com](https://bevigil.com)
-- [WordPress.com](https://en.search.wordpress.com)
-- [https://en.search.wordpress.com](https://en.search.wordpress.com)
-- [Octosearch.dootech.com](https://octosearch.dootech.com)
-- [https://octosearch.dootech.com](https://octosearch.dootech.com)
-- [Search craigslist](https://searchcraigslist.org)
-- [https://searchcraigslist.org](https://searchcraigslist.org)
 - [Public AWS S3 & Azure Search](https://buckets.grayhatwarfare.com)
-- [https://buckets.grayhatwarfare.com](https://buckets.grayhatwarfare.com)
-- [Public Buckets](https://osint.sh/buckets)
-- [https://osint.sh/buckets](https://osint.sh/buckets)
 - [URL Shorteners Search](https://shorteners.grayhatwarfare.com)
-- [https://shorteners.grayhatwarfare.com](https://shorteners.grayhatwarfare.com)
 - [Mywoodle.com](https://mywoodle.com)
-- [https://mywoodle.com](https://mywoodle.com)
-- [Search Atlas](https://searchatlas.org)
-- [https://searchatlas.org](https://searchatlas.org)
 - [Google to search profiles on Stack Overflow](https://recruitin.net/stackoverflow.php)
 - [Binparcel.com](https://binparcel.com)
-- [https://binparcel.com](https://binparcel.com)

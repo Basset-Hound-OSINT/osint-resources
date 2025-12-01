@@ -1,11 +1,11 @@
 ![TOSINT](https://user-images.githubusercontent.com/76810020/118490326-bb546a80-b715-11eb-96e8-9ec87af27832.png)
 <div align="center">
-  <a href="https://awesome.re/">
-  	<img src="https://awesome.re/badge-flat2.svg">
-  </a>
+<a href="https://awesome.re/">
+<img src="https://awesome.re/badge-flat2.svg">
+</a>
 </div>
 <div align="center">
-  	<b>👉 <a href="https://github.com/ItIsMeCall911/Awesome-Telegram-OSINT/pulls">Feel Free To Contribute</a> 👈</b>
+<b>👉 <a href="https://github.com/ItIsMeCall911/Awesome-Telegram-OSINT/pulls">Feel Free To Contribute</a> 👈</b>
 </div>
 
 ## 📑 Contents

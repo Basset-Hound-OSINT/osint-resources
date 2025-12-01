@@ -1,4 +1,4 @@
-I have alot of markdown documentation with links to resources, but it is messy, i am trying to build more structured documentation using mdbook, but i need to transfer the old documentation into new documentation. I basically want to extract the links for all tools in the old documentation, and output into ./tmp directory. i have the following python scripts to extract links from given markdown files, and to check that they are unique. I basically want to combine the reference chekcer script into the reference extractor script (can you just import it?) so that i can give an input directory, and an output directory, and for every file read in the input directory, the urls are extracted, then when they are written to a file that has the equivalent name of the current input file, they are checked for uniques across all files in the output directory. does this make sense? i have uplaoded my pyhton scripts and sample markdown documentation. Again i just want to make lists of links and keep the sections headers so i know what links go to what topic. does this make sense? 
+I have alot of markdown documentation with links to resources, but it is messy, i am trying to build more structured documentation using mdbook, but i need to transfer the old documentation into new documentation. I basically want to extract the links for all tools in the old documentation, and output into ./tmp directory. i have the following python scripts to extract links from given markdown files, and to check that they are unique. I basically want to combine the reference chekcer script into the reference extractor script (can you just import it?) so that i can give an input directory, and an output directory, and for every file read in the input directory, the urls are extracted, then when they are written to a file that has the equivalent name of the current input file, they are checked for uniques across all files in the output directory. does this make sense? i have uplaoded my pyhton scripts and sample markdown documentation. Again i just want to make lists of links and keep the sections headers so i know what links go to what topic. does this make sense?
 
 
 
@@ -15,10 +15,10 @@ import argparse
 from typing import Set, Dict, List, Tuple
 
 def extract_urls_from_markdown(content: str) -> Set[str]:
-    """Extract all URLs from markdown content."""
-    urls = set()
-    # Extract links in [text](url) format
-    Perfect! I've created a combined script that:
+"""Extract all URLs from markdown content."""
+urls = set()
+# Extract links in [text](url) format
+Perfect! I've created a combined script that:
 Key Features:
 
 Extracts links from markdown files while preserving section headers
@@ -63,11 +63,11 @@ The regex ^(#{1,6}) matches between 1 and 6 hash marks, so it will capture:
 And so on...
 
 However, I should update the output format to preserve the original header level so you maintain the hierarchy. Let me fix that:Combined Reference Extractor & CheckerCode ∙ Version 2 def parse_markdown_with_sections(content: str) -> Dict[str, Tuple[str, List[Tuple[str, str]]]]:
-    """
-    Parse markdown and organize links by section headers.
-    Returns: Dict[section_name] -> (header_level, List[(link_text, url)])
-    """
-    sePerfect! Now the script preserves the original header level. So if your input has:
+"""
+Parse markdown and organize links by section headers.
+Returns: Dict[section_name] -> (header_level, List[(link_text, url)])
+"""
+sePerfect! Now the script preserves the original header level. So if your input has:
 markdown## PRODUCTIVITY
 - [Link 1](...)
 

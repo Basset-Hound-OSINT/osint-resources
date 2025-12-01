@@ -48,20 +48,11 @@
 ## Installation Priority
 
 ### Tier 1 (Essential - Install First)
-1. [x64dbg](https://github.com/x64dbg/x64dbg)
-2. [Sysinternals Suite](https://docs.microsoft.com/en-us/sysinternals/)
-3. [ProcessHacker](https://github.com/processhacker/processhacker)
 
 ### Tier 2 (Important - Install as Needed)
-1. [dnSpy](https://github.com/dnSpy/dnSpy) (if analyzing .NET)
-2. [PE-bear](https://github.com/hasherezade/pe-bear)
-3. [pestudio](https://www.winitor.com/tools/pestudio/current/pestudio.zip)
-4. [de4dot](https://github.com/de4dot/de4dot) (if deobfuscating .NET)
 
 ### Tier 3 (Specialized - Install for Specific Tasks)
-1. [DrMemory](https://github.com/dynamorio/drmemory)
 2. API Monitor
-3. [pefile](https://github.com/erocarrera/pefile)
 
 ---
 

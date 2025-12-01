@@ -17,15 +17,5 @@
 ## HASH RECOVERY
 
 - [CrackStation](https://crackstation.net)
-- [https://crackstation.net](https://crackstation.net)
 - [Hashmob Community](https://hashmob.net/search)
 - [Hashes.com](https://hashes.com/en/decrypt/hash)
-- [Online Password Hash Crack](https://www.onlinehashcrack.com)
-- [https://www.onlinehashcrack.com](https://www.onlinehashcrack.com)
-- [Md5 Decrypt & Encrypt](https://md5decrypt.net/en)
-- [https://md5decrypt.net/en](https://md5decrypt.net/en)
-- [MD5 reverse lookup](https://md5.gromweb.com)
-- [https://md5.gromweb.com](https://md5.gromweb.com)
-- [Ultimate Hashing](https://md5hashing.net)
-- [https://md5hashing.net](https://md5hashing.net)
-- [Hashes.org](https://hashes.org/search.php)

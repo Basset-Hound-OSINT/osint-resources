@@ -3,9 +3,9 @@
 ## Table of Contents
 
 - [OSINT Resources](#osint-resources)
-  - [How to Use This Documentation](#how-to-use-this-documentation)
-  - [Structure](#structure)
-  - [Integration Into Basset Hound (In Progress)](#integration-into-basset-hound-(in-progress))
+- [How to Use This Documentation](#how-to-use-this-documentation)
+- [Structure](#structure)
+- [Integration Into Basset Hound (In Progress)](#integration-into-basset-hound-(in-progress))
 
 This documentation is organized by data types and intelligence categories to help you quickly find the right tools for your investigation.
 
@@ -36,9 +36,9 @@ This documentation is organized by data types and intelligence categories to hel
 
 1. Add information to a profile in basset-hound
 2. For every piece of PII, be able to run OSINT tools against it
-   1. Command line tools, ideally automated with docker
-   2. Web based tools, ideally automated with a browser extension
+1. Command line tools, ideally automated with docker
+2. Web based tools, ideally automated with a browser extension
 3. Be able to configure/select what tools to run agains select PII
 
 ## combine_references.py
-> Python script to help digest links in Markdown files 
+> Python script to help digest links in Markdown files

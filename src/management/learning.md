@@ -289,11 +289,8 @@
 # Competitive Programming
 
 - [Hackerrank](https://www.hackerrank.com)
-- [https://www.hackerrank.com](https://www.hackerrank.com)
 - [Code chef](https://www.codechef.com)
-- [https://www.codechef.com](https://www.codechef.com)
 - [Code war](https://www.codewars.com)
-- [https://www.codewars.com](https://www.codewars.com)
 
 
 # OSINT Jobs
@@ -387,4 +384,3 @@
 - [OverTheWire - Drifter](http://overthewire.org/wargames/drifter/)
 - [OverTheWire - Semtex](http://overthewire.org/wargames/semtex/)
 - [OverTheWire - Vortex](http://overthewire.org/wargames/vortex/)
-- [pwnable.kr](http://pwnable.kr/)

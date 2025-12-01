@@ -1,10 +1,10 @@
 # Awesome Software Reverse Engineering
 
-A curated list of awesome reverse engineering resources to make you better! 
+A curated list of awesome reverse engineering resources to make you better!
 
 Managed by Reversing.ID for the reversing community.
 
-## Introduction 
+## Introduction
 
 `Software Reverse Engineering` focus on code, related data, and architecture which build a complete software.
 
@@ -20,37 +20,37 @@ In most case, the target of Software Reversing is code in compiled form (native 
 ## Table of Contents
 
 - Resources
-    - [Books](#books)
-    - [White Papers](#hite-papers)
-    - [Articles](#articles)
-    - [Courses](#courses)
-    - [Channels](#channels)
-    - [Practices](#practices)
-    - [References](#references)
+- [Books](#books)
+- [White Papers](#hite-papers)
+- [Articles](#articles)
+- [Courses](#courses)
+- [Channels](#channels)
+- [Practices](#practices)
+- [References](#references)
 - Tools
-    - [Hex Editors](#hex-editors)
-    - [Binary Format](#binary-format)
-    - [Bytecode Editor](#bytecode-editors)
-    - [Disassemblers & Decompilers](#disassemblers--decompilers)
-    - [Debuggers](#debuggers)
-    - [Behavior Analysis](#behavior-analysis)
-    - [Dynamic Binary Instrumentation](#dynamic-binary-instrumentation)
-    - [Binary Analysis Framework](#binary-analysis-framework)
-    - [Code Emulators](#code-emulators)
-    - [Injectors](#injectors)
-    - [HTTP Intercept Proxy](#http-intercept-proxy)
-    - [Reconstructors](#reconstructors)
-    - [Unpackers](#unpackers)
-    - [Obfuscators](#obfuscators)
-    - [Deobfuscators](#deobfuscators)
-    - [Binary Visualization](#binary-visualization)
-    - [Document Analysis](#document-analysis)
-    - [Misc](#misc)
+- [Hex Editors](#hex-editors)
+- [Binary Format](#binary-format)
+- [Bytecode Editor](#bytecode-editors)
+- [Disassemblers & Decompilers](#disassemblers--decompilers)
+- [Debuggers](#debuggers)
+- [Behavior Analysis](#behavior-analysis)
+- [Dynamic Binary Instrumentation](#dynamic-binary-instrumentation)
+- [Binary Analysis Framework](#binary-analysis-framework)
+- [Code Emulators](#code-emulators)
+- [Injectors](#injectors)
+- [HTTP Intercept Proxy](#http-intercept-proxy)
+- [Reconstructors](#reconstructors)
+- [Unpackers](#unpackers)
+- [Obfuscators](#obfuscators)
+- [Deobfuscators](#deobfuscators)
+- [Binary Visualization](#binary-visualization)
+- [Document Analysis](#document-analysis)
+- [Misc](#misc)
 - Scripting
-    - [IDA Pro](#ida-script)
-    - [Ghidra](#ghidra-script)
+- [IDA Pro](#ida-script)
+- [Ghidra](#ghidra-script)
 
-- - - 
+- - -
 
 ## Books
 
@@ -87,7 +87,6 @@ Specific topic on Software Reverse Engineering
 * [Intercepting DLL libraries calls. API hooking in practice](https://www.pelock.com/articles/intercepting-dll-libraries-calls-api-hooking-in-practice)
 * [Windows Hot Patching Mechanism Explained](https://dev.to/pelock/windows-hot-patching-mechanism-explained-2m1f)
 * [How to write a CrackMe for a CTF competition](https://www.pelock.com/articles/how-to-write-a-crackme-for-a-ctf-competition)
-* [Anti reverse engineering. Malware vs Antivirus Software](https://www.pelock.com/articles/reverse-engineering-tools-review)
 * [Code of destruction – malware analysis](https://www.pelock.com/articles/code-of-destruction-malware-analysis)
 * [Polymorphic Encryption Algorithms](https://www.pelock.com/articles/polymorphic-encryption-algorithms)
 * [Reversing reading]() - coming soon.
@@ -159,7 +158,7 @@ Intermediate Representation
 * [REIL](https://www.zynamics.com/binnavi/manual/html/reil_language.htm)
 * [OpenREIL](https://github.com/Cr4sh/openreil)
 
-- - - 
+- - -
 
 ## Hex Editors
 
@@ -170,7 +169,7 @@ Multi/cross platform
 * [010 Editor](http://www.sweetscape.com/010editor/)
 * [wxHexEditor](https://www.wxhexeditor.org/)
 
-Windows 
+Windows
 
 * [HxD](https://mh-nexus.de/en/hxd/)
 * [Hex Workshop](http://www.hexworkshop.com/)
@@ -210,8 +209,8 @@ Dependency check
 
 Format parser and modification
 
-* [ImHex](https://github.com/WerWolv/ImHex) - explore, edit, and represent binary structure with C++-like pattern language.  
-* [Kaitai Struct](https://kaitai.io) - develop format parsers by declarative approach 
+* [ImHex](https://github.com/WerWolv/ImHex) - explore, edit, and represent binary structure with C++-like pattern language.
+* [Kaitai Struct](https://kaitai.io) - develop format parsers by declarative approach
 * [LIEF](https://lief.quarkslab.com/) - Library to Instrument Executable Formats, easily parse, modify and abstract many file formats.
 * [QuickBMS](http://aluigi.altervista.org/quickbms.htm) - easily extract and modify file format with support of encryption, compressions, obfuscation, and other algorithms.
 
@@ -333,7 +332,6 @@ OllyDbg variant
 * [OllySnD](https://tuts4you.com/download.php?view.2061)
 * [Olly Shadow](https://tuts4you.com/download.php?view.6)
 * [Olly CiMs](https://tuts4you.com/download.php?view.1206)
-* [Olly UST_2bg](https://tuts4you.com/download.php?view.1206)
 
 Graphic Debugger
 
@@ -382,7 +380,7 @@ Misc
 
 ## Dynamic Binary Instrumentation
 
-Native 
+Native
 
 * [DynamoRIO](http://www.dynamorio.org) - runtime code manipulation system that supports code transformation on any part of program.
 * [Frida](https://frida.re) - scriptable DBI toolkit for cross-platform target.
@@ -421,7 +419,7 @@ Binary lifting
 
 Theorem prover and solver
 
-* [Z3](https://github.com/Z3Prover/z3) - cross-platform satisfiability modulo theory 
+* [Z3](https://github.com/Z3Prover/z3) - cross-platform satisfiability modulo theory
 * [STP](https://stp.github.io/)
 * [CVC4](https://cvc4.github.io/)
 * [Boolector](https://boolector.github.io/)
@@ -523,7 +521,7 @@ See also [Data & Format Reversing](_format.md).
 
 - [bingrep](https://github.com/m4b/bingrep) - grep through binaries
 
-- - - 
+- - -
 
 ## IDA Script
 
@@ -552,11 +550,11 @@ Script collection
 
 # Awesome Hardware Reverse Engineering
 
-A curated list of awesome reverse engineering resources to make you better! 
+A curated list of awesome reverse engineering resources to make you better!
 
 Managed by Reversing.ID for the reversing community.
 
-## Introduction 
+## Introduction
 
 `Hardware Reverse Engineering` focus on circuitry (boards, ICs) and intercomponent relation.
 
@@ -576,33 +574,33 @@ Some notable process:
 ## Table of Contents
 
 - Resources
-    - [Books](#books)
-    - [Courses](#courses)
-    - [Channels](#channels)
-    - [References](#references)
-    - [Communities](#communities)
-    - [Protocol List](#protocol-list)
+- [Books](#books)
+- [Courses](#courses)
+- [Channels](#channels)
+- [References](#references)
+- [Communities](#communities)
+- [Protocol List](#protocol-list)
 - Hadware Tools
-    - [Bus Interface](#bus-interface)
-    - [Programmers & Flashers](#programmers--flashers)
-    - [Hardware Debuggers](#hardware-debuggers)
-    - [Protocol Analyzers](#protocol-analyzers)
-    - [Logic Analyzers](#logic-analyzers)
-    - [Osciloscopes](#osciloscopes)
-    - [Dev & Breakout Boards](#dev--breakout-boards)
-    - [Radio Frequency](#radio-frequency)
-    - [Magnetic Strip](#magnetic-strip)
+- [Bus Interface](#bus-interface)
+- [Programmers & Flashers](#programmers--flashers)
+- [Hardware Debuggers](#hardware-debuggers)
+- [Protocol Analyzers](#protocol-analyzers)
+- [Logic Analyzers](#logic-analyzers)
+- [Osciloscopes](#osciloscopes)
+- [Dev & Breakout Boards](#dev--breakout-boards)
+- [Radio Frequency](#radio-frequency)
+- [Magnetic Strip](#magnetic-strip)
 - Software Tools
-    - [EDA](#eda)
-    - [Firmware Extract](#firmware-extract)
-    - [Disassemblers & Decompilers](#disassemblers--decompilers)
-    - [Emulators](#emulators)
-    - [Software Debuggers](#software-debuggers)
-    - [Traffic Analysis](#traffic-analysis)
+- [EDA](#eda)
+- [Firmware Extract](#firmware-extract)
+- [Disassemblers & Decompilers](#disassemblers--decompilers)
+- [Emulators](#emulators)
+- [Software Debuggers](#software-debuggers)
+- [Traffic Analysis](#traffic-analysis)
 - Software Packages & Libraries
-    - [RTOS](#rtos)
+- [RTOS](#rtos)
 
-- - - 
+- - -
 
 ## Books
 
@@ -617,7 +615,7 @@ Hardware hacking
 
 * [The Hardware Hacker: Advetures in Making and Breaking Hardware](https://amzn.com/159327758X)
 * [Hardware Hacking: Have Fun while Voiding your Warranty](https://amzn.com/B001UN2WDY)
-* [Hardware Hacking Projects for Geeks](https://amzn.com/0596003145) 
+* [Hardware Hacking Projects for Geeks](https://amzn.com/0596003145)
 * [Game Console Hacking: Xbox, PlayStation, Nintendo, Game Boy, Atari and Sega](https://amzn.com/B001V7U7AE)
 
 PCB (Printed Circuit Boards)
@@ -659,11 +657,10 @@ YouTube Channel
 
 Learning Assembly
 
-* [Low-level Code Reference](https://github.com/ReversingID/LowLevelCode-Reference)
 
 Development Boards
 
-* [Arduino](https://www.arduino.cc/) | based on AVR or ARM 
+* [Arduino](https://www.arduino.cc/) | based on AVR or ARM
 * [NodeMCU](https://www.nodemcu.com) | based on ESP8266
 * [Teensy](https://www.pjrc.com/teensy/) | based on ARM
 * [MSP430 Launchpad](http://www.ti.com/tool/MSP-EXP430G2ET) | based on TI MSP430
@@ -698,15 +695,15 @@ System communication (External)
 This protocol used for communication between modules or external system.
 
 * Wired protocol
-    - CAN: *Controller Area Network*, device communication popular in vehicle.
-    - USB: *Universal Serial Bus*
-    - UART & USART: *Universal Synchronous Asynchronous Receiver-Transmitter*
-    - RS232
+- CAN: *Controller Area Network*, device communication popular in vehicle.
+- USB: *Universal Serial Bus*
+- UART & USART: *Universal Synchronous Asynchronous Receiver-Transmitter*
+- RS232
 * Wireless protocol
-    - Bluetooth
-    - LoRaWAN
-    - WiFi
-    - ZigBee
+- Bluetooth
+- LoRaWAN
+- WiFi
+- ZigBee
 
 Debugging protocol
 
@@ -721,7 +718,7 @@ Debugging protocol
 * [Maker.pro](https://maker.pro)
 * [Maker.io](https://www.digikey.com/en/maker)
 
-- - - 
+- - -
 
 ## Bus Interface
 
@@ -735,7 +732,7 @@ Debugging protocol
 OBD adapter
 
 * [ObdDiag](http://www.obddiag.net/) - open source ELM327 OBD adapter, connect to On-Board Diagnostic (OBD) port for connecting to car's self-diagnostic system.
-* [M2](https://www.macchina.cc/m2-introduction) - 
+* [M2](https://www.macchina.cc/m2-introduction) -
 
 ## Programmers & Flashers
 
@@ -774,7 +771,7 @@ Multi
 
 * [TotalPhase Beagle](https://www.totalphase.com/products/beagle-i2cspi/) - USB/I2C/SPI
 
-USB 
+USB
 
 * Teledyn [LeCroy Voyager](https://teledynelecroy.com/protocolanalyzer/usb) series
 * [OpenVizsla](http://openvizsla.org/)
@@ -824,7 +821,7 @@ PC_based
 General-purpose
 
 * [HackRF](https://greatscottgadgets.com/hackrf/) - half duplex, 1 MHz - 6 GHz
-* [LimeSDR](https://www.crowdsupply.com/lime-micro/limesdr) - full duplex, 
+* [LimeSDR](https://www.crowdsupply.com/lime-micro/limesdr) - full duplex,
 * [RTL-SDR](https://www.rtl-sdr.com/) - RX, 500 kHz - 1766 MHz
 * [YARD Stick](https://greatscottgadgets.com/yardstickone/) - half duplex, 300-348 MHz, 391-464 MHz, 782-928 MHz
 * [nRF52840 Dongle](https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52840-Dongle) - dongle which support Bluetooth 5, Bluetooth mesh, Thread, ZigBee, 802.15.4, ANT, and 2.4 GHz proprietary protocols.
@@ -874,16 +871,14 @@ EDA (Electronic Design Automation) and ECAD (Electronic Computer-Aided Design)
 
 Multi-architecture
 
-* [Radare2](http://www.radare.org/r/) // [Cutter](https://cutter.re)
-* [objdump](http://linux.die.net/man/1/objdump)
 
 ## Emulators
 
 Full firmware emulator
 
 * [QEMU](https://www.qemu.org/) - Generic and open source machine emulator and virtualizer.
-    - [ARM-X](https://github.com/therealsaumil/armx) - Firmware emulation framework based on top of QEMU
-    - [Firmwadyne](https://github.com/firmadyne/firmadyne) - Platform for emulation and dynamic analysis of Linux-based firmware.
+- [ARM-X](https://github.com/therealsaumil/armx) - Firmware emulation framework based on top of QEMU
+- [Firmwadyne](https://github.com/firmadyne/firmadyne) - Platform for emulation and dynamic analysis of Linux-based firmware.
 * [Kopycat](https://github.com/inforion/kopycat/) - hardware emulator.
 
 ## Software Debuggers
@@ -909,14 +904,14 @@ Communication Protocol
 * [I/O Ninja](https://ioninja.com/) - Professional, scriptable, multi-purpose terminal emulator, network sniffer, and IO monitor.
 * [Bettercap](https://github.com/bettercap/bettercap) - Swiss-army knife for 802.11, BLE, and ethernet network reconnaissance and MITM attacks.
 * CAN (Controller Area Network)
-    - [CANToolz](https://github.com/CANToolz/CANToolz) - Black-box CAN network analysis framework.
+- [CANToolz](https://github.com/CANToolz/CANToolz) - Black-box CAN network analysis framework.
 * BLE (Bluetooth Low Energy)
-    - [btproxy](https://github.com/conorpp/btproxy) - MITM analysis tool for Bluetooth.
-    - [BtleJuice](https://github.com/DigitalSecurity/btlejuice) - BLE MITM framework.
-    - [btlejack](https://github.com/virtualabs/btlejack) - BLE swiss-army knife pair with BBC Micro:Bit device.
-    - Bluez - sdptool, l2ping
+- [btproxy](https://github.com/conorpp/btproxy) - MITM analysis tool for Bluetooth.
+- [BtleJuice](https://github.com/DigitalSecurity/btlejuice) - BLE MITM framework.
+- [btlejack](https://github.com/virtualabs/btlejack) - BLE swiss-army knife pair with BBC Micro:Bit device.
+- Bluez - sdptool, l2ping
 * ZigBee
-    - [KillerBee](https://github.com/riverloopsec/killerbee) - IEEE 802.15.4/ZigBee Security Research Toolkit.
+- [KillerBee](https://github.com/riverloopsec/killerbee) - IEEE 802.15.4/ZigBee Security Research Toolkit.
 
 Radio Frequency
 
@@ -924,7 +919,7 @@ Radio Frequency
 * [Inspectrum](https://github.com/miek/inspectrum) - Offline radio signal analyser
 * [GNU Radio](https://gnuradio.org/) - Software development toolkit for signal processing block to implement Software-Defined Radio and Signal-processing system.
 
-- - - 
+- - -
 
 ## RTOS
 
@@ -948,7 +943,7 @@ Commercial RTOS
 
 # Awesome Data Format Reverse Engineering
 
-A curated list of awesome reverse engineering resources to make you better! 
+A curated list of awesome reverse engineering resources to make you better!
 
 Managed by Reversing.ID for the reversing community.
 
@@ -962,15 +957,15 @@ In some cases, format reversing is done in conjunction with software which gener
 
 - Resources
 - Tools
-    - [Hex Editors](#hex-editors)
-    - [Format Identifier](#format-identifier)
-    - [Structure Parser](#structure-parser)
-    - [Binary Visualization](#binary-visualization)
-    - [String Search](#string-search)
-    - [Pattern Search](#pattern-search)
-    - [Bundle Extractor](#bundle-extractor)
+- [Hex Editors](#hex-editors)
+- [Format Identifier](#format-identifier)
+- [Structure Parser](#structure-parser)
+- [Binary Visualization](#binary-visualization)
+- [String Search](#string-search)
+- [Pattern Search](#pattern-search)
+- [Bundle Extractor](#bundle-extractor)
 
-- - - 
+- - -
 
 ## Hex Editors
 
@@ -978,39 +973,24 @@ Hex editor lets you view/edit the binary data of a file.
 
 Multi/cross platform
 
-* [010 Editor](http://www.sweetscape.com/010editor/)
-* [Kaitai Struct](https://kaitai.io)
-* [wxHexEditor](https://www.wxhexeditor.org/)
 
-Windows 
+Windows
 
-* [HxD](https://mh-nexus.de/en/hxd/)
-* [Hex Workshop](http://www.hexworkshop.com/)
-* [Hexinator](https://hexinator.com/)
 
 Mac OS X
 
-* [HexFiend](http://ridiculousfish.com/hexfiend/)
 
 ## Format Identifier
 
-* [Binwalk](https://github.com/ReFirmLabs/binwalk)
 
 ## Structure Parser
 
-* [010 Editor](http://www.sweetscape.com/010editor/)
-* [ImHex](https://github.com/WerWolv/ImHex)
-* [Kaitai Struct](https://kaitai.io)
 
 ## Binary Visualization
 
-* [Veles](https://codisec.com/veles/)
-* [..cantor.dust..](https://sites.google.com/site/xxcantorxdustxx/home)
-* [binglide](https://github.com/wapiflapi/binglide)
 
 ## String Search
 
-- [bingrep](https://github.com/m4b/bingrep) - grep through binaries
 
 ## Pattern Search
 
@@ -1026,7 +1006,7 @@ Game Assets
 
 # Awesome Database Reverse Engineering
 
-A curated list of awesome reverse engineering resources to make you better! 
+A curated list of awesome reverse engineering resources to make you better!
 
 Managed by Reversing.ID for the reversing community.
 
@@ -1045,19 +1025,19 @@ Database Reverse Engineering might used for schema recovery or remodelling.
 ## Table of Contents
 
 - Resources
-    - [Books](#books)
-    - [Courses](#courses)
-    - [DBMS List](#dbms-list)
-    - [DB Connections](#db-connections)
+- [Books](#books)
+- [Courses](#courses)
+- [DBMS List](#dbms-list)
+- [DB Connections](#db-connections)
 - [Relational Database](#relational-database)
-    - [Database Administration Client](#database-administration-client)
-    - [Code Generation](#code-generation)
-    - [Schema Modellers](#schema-modellers)
-    - [Schema Navigation & Visualization](#schema-navigation--visualization)
+- [Database Administration Client](#database-administration-client)
+- [Code Generation](#code-generation)
+- [Schema Modellers](#schema-modellers)
+- [Schema Navigation & Visualization](#schema-navigation--visualization)
 - [Non-Relational Database](#non-relational-database)
 - [Flat-File Database](#flat-file-database)
-    - [Hex Editors](#hex-editors)
-    - [Structure Parsers](#structure-parsers)
+- [Hex Editors](#hex-editors)
+- [Structure Parsers](#structure-parsers)
 
 - - -
 
@@ -1082,21 +1062,18 @@ Relational Database
 Non-Relational Database (NoSQL)
 
 * Column:
-    - [Apache Cassandra](https://cassandra.apache.org/)
-    - [Apache HBase](https://hbase.apache.org/)
-    - [ScyllaDB](https://www.scylladb.com/)
+- [Apache Cassandra](https://cassandra.apache.org/)
+- [Apache HBase](https://hbase.apache.org/)
+- [ScyllaDB](https://www.scylladb.com/)
 * Document:
-    - [Apache CouchDB](https://couchdb.apache.org/)
-    - [ArangoDB](http://arangodb.com/)
-    - [Couchbase](http://couchbase.com/)
-    - [MongoDB](https://www.mongodb.com/)
+- [Apache CouchDB](https://couchdb.apache.org/)
+- [ArangoDB](http://arangodb.com/)
+- [Couchbase](http://couchbase.com/)
+- [MongoDB](https://www.mongodb.com/)
 * Graph:
-    - [ArangoDB](http://arangodb.com/)
-    - [Neo4j](https://neo4j.com/)
-    - [Redis](https://redis.io/)
+- [Neo4j](https://neo4j.com/)
+- [Redis](https://redis.io/)
 * Key-Value Store:
-    - [ArangoDB](http://arangodb.com/)
-    - [Couchbase](http://couchbase.com/)
 
 ## DB Connections
 
@@ -1120,7 +1097,7 @@ Database connection often wrapped by API. Common used API are:
 * JDBC (Java Database Connectivity)
 * ODBC (Open Database Connectivity)
 
-- - - 
+- - -
 
 ## Relational Database
 
@@ -1167,17 +1144,17 @@ CLI
 #### Schema Navigation & Visualization
 
 * [dbdiagram.io](https://dbdiagram.io) - quick and simple online tool for drawing database relationship diagrams.
-* [dbvis](https://www.dbvis.com/) - 
+* [dbvis](https://www.dbvis.com/) -
 * [ERAlchemy](https://github.com/Alexis-benoist/eralchemy) - Entity Relation Diagrams generation tool.
 * [SchemaCrawler](https://github.com/schemacrawler/SchemaCrawler) - A free database schema discovery and comprehension tool.
 * [Schema Spy](https://github.com/schemaspy/schemaspy) - Generating your database to HTML documentation, including Entity Relationship diagrams.
 * [tbls](https://github.com/k1LoW/tbls) - CI-Friendly tool for document a database, written in Go.
 
-- - - 
+- - -
 
 ## Non-Relational Database
 
-Database Reverse Engineering for Non-Relational Database focus on models and relationship of each models. 
+Database Reverse Engineering for Non-Relational Database focus on models and relationship of each models.
 
 Non-Relational Database refers to storage and retrieval of data which is modeled in means other than tabular relations used in Relational Database.
 
@@ -1193,9 +1170,9 @@ There are many types of approaches of NoSQL, such as Column, Document, Graph, Ke
 
 `Key-Value` database use the associative array (also called map or dictionary) as their fundamental data model. In this model, data is represented as a collection of Key-Value pairs.
 
-`Object`-oriented database represent information in the form of objects as used in `Object-Oriented Programming`. 
+`Object`-oriented database represent information in the form of objects as used in `Object-Oriented Programming`.
 
-- - - 
+- - -
 
 ## Flat-File Database
 
@@ -1217,23 +1194,14 @@ Hex editor lets you view/edit the binary data of a file.
 
 Multi/cross platform
 
-* [010 Editor](http://www.sweetscape.com/010editor/)
-* [Kaitai Struct](https://kaitai.io)
-* [wxHexEditor](https://www.wxhexeditor.org/)
 
-Windows 
+Windows
 
-* [HxD](https://mh-nexus.de/en/hxd/)
-* [Hex Workshop](http://www.hexworkshop.com/)
-* [Hexinator](https://hexinator.com/)
 
 Mac OS X
 
-* [HexFiend](http://ridiculousfish.com/hexfiend/)
 
 ## Structure Parsers
 
-* [010 Editor](http://www.sweetscape.com/010editor/)
-* [Kaitai Struct](https://kaitai.io)
 
 

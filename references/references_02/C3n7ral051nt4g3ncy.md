@@ -16,7 +16,7 @@
 <br>
 
 ## Mentions 🗣️
-Thank you to @WebBreacher for using and mentionning OSINT Inception foor his project ==> https://smart.myosint.training/ 
+Thank you to @WebBreacher for using and mentionning OSINT Inception foor his project ==> https://smart.myosint.training/
 
 <br>
 
@@ -25,7 +25,7 @@ The Google Custom Search Engine specifically crawls 🕷️ the start.me pages l
 - Example: You need tools for Telegram, you can type: `"Telegram" OR "telegram"`, this search currently returns over 3 pages of data from all the startme projects listed within OSINT Inception.
 
 <br>
-OSINT Inception Startme Project Link: https://start.me/p/Pwy0X4/osint-inception 
+OSINT Inception Startme Project Link: https://start.me/p/Pwy0X4/osint-inception
 <br>
 <br>
 

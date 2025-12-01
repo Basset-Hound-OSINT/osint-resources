@@ -15,7 +15,7 @@ Work in progress as I am actively collecting these.
 - "MIPS documentation" http://www.linux-mips.org/pub/linux/mips/doc/ABI/
 - "ELF for the ARM" http://infocenter.arm.com/help/topic/com.arm.doc.ihi0044e/IHI0044E_aaelf.pdf
 - "ELF for the ARM64" http://infocenter.arm.com/help/topic/com.arm.doc.ihi0056b/IHI0056B_aaelf64.pdf
-- "How to write shared libraries" by Ulrich Drepper http://www.akkadia.org/drepper/dsohowto.pdf    
+- "How to write shared libraries" by Ulrich Drepper http://www.akkadia.org/drepper/dsohowto.pdf
 
 #### Must read
 
@@ -127,7 +127,7 @@ Work in progress as I am actively collecting these.
 
 #### Viruses & infection techniques
 
-- "UNIX VIRUSES" http://ouah.org/unix-viruses.txt 
+- "UNIX VIRUSES" http://ouah.org/unix-viruses.txt
 - "UNIX ELF PARASITES AND VIRUS" http://ouah.org/elf-pv.txt
 - "Linux viruses - ELF file format" by Marius Van Oers http://www.mcafee.com/us/resources/white-papers/wp-linux-viruses-elf-file-format.pdf
 - "Abusing .CTORS and .DTORS for fun 'n profit" http://vxer.org/lib/viz00.html
@@ -160,7 +160,7 @@ Work in progress as I am actively collecting these.
 - "Day 5: I wrote a kernel module" http://jvns.ca/blog/2013/10/07/day-5-i-wrote-a-kernel-module/
 - "Linux Rootkits 101" http://turbochaos.blogspot.sk/2013/09/linux-rootkits-101-1-of-3.html
 - "Linux Rootkits 201" http://turbochaos.blogspot.sk/2013/10/writing-linux-rootkits-201-23.html
-- "Linux Rootkits 301" http://turbochaos.blogspot.sk/2013/10/writing-linux-rootkits-301_31.html 
+- "Linux Rootkits 301" http://turbochaos.blogspot.sk/2013/10/writing-linux-rootkits-301_31.html
 - "Handling Interrupt Descriptor Table for fun and profit" http://www.phrack.org/issues.html?issue=59&id=4
 - "Intercepting System Calls and Dispatchers – Linux" https://ruinedsec.wordpress.com/2013/04/04/modifying-system-calls-dispatching-linux/
 - "Linux Kernel Rootkits" http://www.la-samhna.de/library/rootkits/index.html
@@ -224,7 +224,7 @@ Work in progress as I am actively collecting these.
 - http://www.bitlackeys.org (all of it)
 - "Effective file format fuzzing" https://www.blackhat.com/docs/eu-16/materials/eu-16-Jurczyk-Effective-File-Format-Fuzzing-Thoughts-Techniques-And-Results.pdf (not related to Linux directly, but it's pretty great)
 - "Linux kernel sanitizers and syscall fuzzer" https://www.linuxplumbersconf.org/2016/ocw//system/presentations/3471/original/Sanitizers.pdf
-- "ElfParser blog" http://www.blog.elfparser.com/ 
+- "ElfParser blog" http://www.blog.elfparser.com/
 - "ELF vs. Mach-O" http://timetobleed.com/dynamic-linking-elf-vs-mach-o/
 - "ELF vs. Mach-O 2" http://timetobleed.com/dynamic-symbol-table-duel-elf-vs-mach-o-round-2/
 - "Where did the fork go?" http://thorstenball.com/blog/2014/06/13/where-did-fork-go/
@@ -252,7 +252,7 @@ Work in progress as I am actively collecting these.
 #### Other
 
 - "Building a concrete alternative to IDA - Radare2 to the rescue!" https://recon.cx/2015/slides/recon2015-04-jeffrey-crowell-julien-voisin-Radare2-building-a-new-IDA.pdf
-- "Introduction to Reverse Engineering Software in Linux" http://ouah.org/RevEng/ 
+- "Introduction to Reverse Engineering Software in Linux" http://ouah.org/RevEng/
 - "Radare2 book" http://radare.gitbooks.io/radare2book/content/
 - "Intro to Radare2" http://rada.re/get/condret-r2talk.pdf
 - "Radare2 baby steps" http://maijin.fr/slides.pdf

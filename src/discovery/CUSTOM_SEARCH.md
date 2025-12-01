@@ -157,7 +157,6 @@
 
 - [YaSeeker](https://github.com/HowToFind-bot/YaSeeker)
 - [http://Yandex.ru](https://Yandex.ru)
-- [https://Yandex.ru](https://Yandex.ru)
 
 
 ### Servers
@@ -185,103 +184,68 @@
 
 - [CSE-UTOPIA LISTS](https://start.me/p/EL84Km/cse-utopia)
 - [40 Custom Search Engines](https://booleanstrings.com/all-the-40-forty-custom-search-engines)
-- [https://booleanstrings.com/all-the-40-forty-custom-search-engines](https://booleanstrings.com/all-the-40-forty-custom-search-engines)
 
 
 ## Specialty Search Engines
 
 - [2lingual Search](https://www.2lingual.com)
-- [https://www.2lingual.com](https://www.2lingual.com)
 - [BeVigil](https://bevigil.com/search)
 - [Biznar](https://biznar.com)
-- [https://biznar.com](https://biznar.com)
 - [CiteSeerX](https://citeseer.ist.psu.edu)
-- [https://citeseer.ist.psu.edu](https://citeseer.ist.psu.edu)
 - [Criminal IP](https://www.criminalip.io)
-- [https://www.criminalip.io](https://www.criminalip.io)
 - [Google Custom Search](https://www.google.com/cse)
-- [https://www.google.com/cse](https://www.google.com/cse)
 - [GrayhatWarfare](https://grayhatwarfare.com)
-- [https://grayhatwarfare.com](https://grayhatwarfare.com)
 - [Harmari (Unified Listings Search)](https://www.harmari.com/search/unified)
 - [Intelligence X](https://intelx.io/tools)
 - [Internet Archive](https://archive.org)
-- [https://archive.org](https://archive.org)
 - [Mamont](https://www.mmnt.ru)
-- [https://www.mmnt.ru](https://www.mmnt.ru)
 - [Million Short](https://millionshort.com)
 - [Netlas.io](https://app.netlas.io)
-- [https://app.netlas.io](https://app.netlas.io)
 - [OCCRP Aleph](https://aleph.occrp.org)
-- [https://aleph.occrp.org](https://aleph.occrp.org)
 - [Shodan](https://www.shodan.io)
-- [https://www.shodan.io](https://www.shodan.io)
 - [WIPO](https://www3.wipo.int/branddb/en)
-- [https://www3.wipo.int/branddb/en](https://www3.wipo.int/branddb/en)
 - [WorldWideScience.org](https://worldwidescience.org)
-- [https://worldwidescience.org](https://worldwidescience.org)
 - [Zanran](https://zanran.com)
-- [https://zanran.com](https://zanran.com)
 
 ## Visual Search and Clustering Search Engines
 
 - [Carrot2](https://search.carrot2.org)
 - [Zapmeta](https://www.zapmeta.com)
-- [https://www.zapmeta.com](https://www.zapmeta.com)
 
 ## Similar Sites Search
 
 - [Google Similar Pages](https://chrome.google.com/webstore/detail/google-similar-pages/pjnfggphgdjblhfjaphkjhfpiiekbbej)
 - [SimilarSites](https://www.similarsites.com)
-- [https://www.similarsites.com](https://www.similarsites.com)
 - [SitesLike](https://www.siteslike.com)
-- [https://www.siteslike.com](https://www.siteslike.com)
 
 ## Document and Slides Search
 
 - [Find-pdf-doc](https://www.findpdfdoc.com)
-- [https://www.findpdfdoc.com](https://www.findpdfdoc.com)
 - [Free Full PDF](https://www.freefullpdf.com)
-- [https://www.freefullpdf.com](https://www.freefullpdf.com)
 - [Offshore Leak Database](https://offshoreleaks.icij.org)
 - [Scribd](https://www.scribd.com)
-- [https://www.scribd.com](https://www.scribd.com)
 - [SlideShare](https://www.slideshare.net)
-- [https://www.slideshare.net](https://www.slideshare.net)
 
 ## File Search
 
 - [de digger](https://www.dedigger.com)
-- [https://www.dedigger.com](https://www.dedigger.com)
 - [File Search Engine](https://www.filesearch.link)
-- [https://www.filesearch.link](https://www.filesearch.link)
 - [FileListing](https://filelisting.com)
-- [https://filelisting.com](https://filelisting.com)
 - [FilePursuit](https://filepursuit.com)
-- [https://filepursuit.com](https://filepursuit.com)
 - [NAPALM FTP Indexer](https://www.searchftps.net)
-- [https://www.searchftps.net](https://www.searchftps.net)
 - [SearchFiles.de](https://searchfiles.de)
-- [https://searchfiles.de](https://searchfiles.de)
 
 
 ## Keywords Discovery and Research
 
 - [Google Adwords](https://adwords.google.com)
-- [https://adwords.google.com](https://adwords.google.com)
 - [Google Trends](https://www.google.com/trends)
 - [Keyword Discovery](https://www.keyworddiscovery.com)
-- [https://www.keyworddiscovery.com](https://www.keyworddiscovery.com)
 - [Keyword Spy](https://www.keywordspy.com)
-- [https://www.keywordspy.com](https://www.keywordspy.com)
 - [KeywordTool](https://keywordtool.io)
-- [https://keywordtool.io](https://keywordtool.io)
 - [One Look Reverse Dictionary](https://www.onelook.com/reverse-dictionary.shtml)
-- [https://www.onelook.com/reverse-dictionary.shtml](https://www.onelook.com/reverse-dictionary.shtml)
 - [Soovle](https://www.soovle.com)
-- [https://www.soovle.com](https://www.soovle.com)
 - [Ubersuggest](https://ubersuggest.org)
-- [https://ubersuggest.org](https://ubersuggest.org)
 - [Word Tracker](https://www.wordtracker.com)
 - [Yandex Wordstat](https://wordstat.yandex.com)
 
@@ -290,49 +254,13 @@
 ## UNIFIED SEARCH
 
 - [IntelTechniques OSINT](https://inteltechniques.com/tools)
-- [https://inteltechniques.com/tools](https://inteltechniques.com/tools)
 - [SynapsInt](https://synapsint.com)
-- [https://synapsint.com](https://synapsint.com)
-- [InfoTracer](https://infotracer.com)
-- [https://infotracer.com](https://infotracer.com)
 - [MetaDefender](https://metadefender.opswat.com)
-- [https://metadefender.opswat.com](https://metadefender.opswat.com)
 - [Username Search](https://usersearch.org)
-- [https://usersearch.org](https://usersearch.org)
-- [SpyTox](https://www.spytox.com)
-- [https://www.spytox.com](https://www.spytox.com)
-- [Effect Group](https://effectgroup.io)
-- [https://effectgroup.io](https://effectgroup.io)
-- [osrframework](https://pypi.org/project/osrframework)
-- [https://pypi.org/project/osrframework](https://pypi.org/project/osrframework)
-- [Google Custom Search](https://cse.google.com/cse?cx=017648920863780530960:lddgpbzqgoi)
-- [OSINT Search Engine](https://cse.google.com/cse/publicurl?cx=006290531980334157382:qcaf4enph7i)
 - [LinkScope](https://github.com/AccentuSoft/LinkScope_Client)
-- [IOA](https://www.io-archive.org)
-- [https://www.io-archive.org](https://www.io-archive.org)
-- [Criminal IP](https://www.criminalip.io)
-- [https://www.criminalip.io](https://www.criminalip.io)
 
 
 ## GOOGLE CSE
 
-- [Homepage Search Engine](https://cse.google.com/cse?cx=005797772976587943970:3tu7im1-rdg#gsc.tab=0)
-- [Amazon Cloud Search Engine](https://cse.google.com/cse?cx=005797772976587943970:g-6ohngosio#gsc.tab=0)
-- [Google CSE instances Search Engine](https://cse.google.com/cse?cx=009462381166450434430:vggeu3dhhgg#gsc.tab=0)
-- [Robots.txt Search Engine](https://cse.google.com/cse?cx=013991603413798772546:zu7epjqvunu)
-- [Short URL Search Engine](https://cse.google.com/cse?cx=017261104271573007538:magh-vr6t6g#gsc.tab=0)
-- [Wikispaces Search Engine](https://cse.google.com/cse/publicurl?cx=005797772976587943970:afbre9pr2ly)
-- [Dog Bites Search Engine](https://cse.google.com/cse?cx=partner-pub-8216357153102971:3267723418)
-- [Google Domain Hacker](https://cse.google.com/cse/publicurl?cx=005797772976587943970:ca2hiy6hmri)
-- [Google Drive Folder Search Engine](https://cse.google.com/cse/publicurl?cx=013991603413798772546:nwzqlcysx_w)
-- [Chrome Extension Archive Search Engine](https://cse.google.com/cse/publicurl?cx=000501358716561852263:h-5uyshsclq)
-- [Github with Awesome-List Search Engine](https://cse.google.com/cse/publicurl?cx=017261104271573007538:fqn_jyftcdq)
-- [Better Chrome Web Store Search Engine](https://cse.google.com/cse/publicurl?cx=006205189065513216365:pn3lumi80ne)
-- [App Store Custom Search Engine](https://cse.google.com/cse/publicurl?cx=006205189065513216365:aqogom-kfne)
-- [*.Google.com Hack Attack](https://cse.google.com/cse/publicurl?cx=017648920863780530960:lddgpbzqgoi)
-- [Search by FileType](https://cse.google.com/cse/publicurl?cx=013991603413798772546:mu-oio3a980)
-- [Search Engine Finder](https://cse.google.com/cse?cx=016621447308871563343:nyvaorurd5l)
-- [Mindmap Search Engine](https://cse.google.com/cse?cx=013991603413798772546:gj6rx9spox8#gsc.tab=0)
-- [https://cse.google.com/cse?cx=013991603413798772546:gj6rx9spox8#gsc.tab=0](https://cse.google.com/cse?cx=013991603413798772546:gj6rx9spox8#gsc.tab=0)
 - [Slack/Discord/Zoom Invites Search](https://cse.google.com/cse?cx=8e26eca532ec2cba3)
 - [Cloud Bucket Search Engine](https://cse.google.com/cse?cx=d80f8518b11b1438e)

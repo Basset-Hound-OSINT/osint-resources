@@ -30,23 +30,7 @@
 
 ## TWITCH
 
-- [TwitchTracker](https://twitchtracker.com)
-- [https://twitchtracker.com](https://twitchtracker.com)
 - [Twitch.fckdmca.com](https://twitch.fckdmca.com)
-- [https://twitch.fckdmca.com](https://twitch.fckdmca.com)
-- [Twitch Payout Search](https://sizeof.cat/project/twitch-payout-search)
-- [https://sizeof.cat/project/twitch-payout-search](https://sizeof.cat/project/twitch-payout-search)
-- [Search for a Twitch channel](https://sullygnome.com/channelsearch)
-- [Searchstream.live](https://searchstream.live)
-- [https://searchstream.live](https://searchstream.live)
 - [Twitch Tools](https://twitch-tools.rootonline.de)
-- [https://twitch-tools.rootonline.de](https://twitch-tools.rootonline.de)
-- [Username Availability](https://cactus.tools/twitch/username)
-- [Check channel badges](https://cactus.tools/twitch/badges)
 - [Check Twitch follow length](https://cactus.tools/twitch/followage)
-- [Twitch Following](https://cactus.tools/twitch/following)
-- [All Twitch Streamers Search](https://twitchstats.net/allstreamers)
-- [Twitchmetrics.net](https://www.twitchmetrics.net)
-- [https://www.twitchmetrics.net](https://www.twitchmetrics.net)
 - [Twitch Username Search](https://twitchusernames.com)
-- [https://twitchusernames.com](https://twitchusernames.com)

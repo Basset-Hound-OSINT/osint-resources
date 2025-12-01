@@ -14,12 +14,12 @@ Tools and packages that are used for countering forensic activities, including e
 - [Air-Imager](https://sourceforge.net/projects/air-imager/) : A GUI front-end to dd/dc3dd designed for easily creating forensic images.
 - [Bmap-tools](https://github.com/intel/bmap-tools) : Tool for copying largely sparse files using information from a block map file.
 - [dd]() : The dd command allows you to copy all or part of a disk.
-  - [Dc3dd](https://doc.ubuntu-fr.org/dc3dd) : A patched version of dd that includes a number of features useful for computer forensics.
-  - [Dcfldd](https://doc.ubuntu-fr.org/dcfldd) : DCFL (DoD Computer Forensics Lab), a dd replacement with hashing.
+- [Dc3dd](https://doc.ubuntu-fr.org/dc3dd) : A patched version of dd that includes a number of features useful for computer forensics.
+- [Dcfldd](https://doc.ubuntu-fr.org/dcfldd) : DCFL (DoD Computer Forensics Lab), a dd replacement with hashing.
 - [ddrescue](https://doc.ubuntu-fr.org/ddrescue) : GNU data recovery tool.
 - [Dmg2img](https://github.com/Lekensteyn/dmg2img) : A CLI tool to uncompress Apple's compressed DMG files to the HFS+ IMG format.
 - [Frida](https://github.com/frida/frida) : Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.
-  - [Fridump](https://github.com/Nightbringer21/fridump) : A universal memory dumper using Frida.
+- [Fridump](https://github.com/Nightbringer21/fridump) : A universal memory dumper using Frida.
 - [Imagemounter](https://github.com/ralphje/imagemounter) : Command line utility and Python package to ease the (un)mounting of forensic disk images.
 
 ### Recovering tool / Memory Extraction
@@ -53,7 +53,7 @@ Tools and packages that are used for countering forensic activities, including e
 - [LiMEaide](https://github.com/kd8bny/LiMEaide) : Remotely dump RAM of a Linux client and create a volatility profile for later analysis on your local host.
 - [MboxGrep](https://sourceforge.net/projects/mboxgrep/) : A small, non-interactive utility that scans mail folders for messages matching regular expressions. It does matching against basic and extended POSIX regular expressions, and reads and writes a variety of mailbox formats.
 - [Mobiusft](https://www.nongnu.org/mobiusft/) : An open-source forensic framework written in Python/GTK that manages cases and case items, providing an abstract interface for developing extensions.
-- [Naft](https://blog.didierstevens.com/programs/network-appliance-forensic-toolkit/) : Network Appliance Forensic Toolkit.  
+- [Naft](https://blog.didierstevens.com/programs/network-appliance-forensic-toolkit/) : Network Appliance Forensic Toolkit.
 [Networkminer](https://www.netresec.com/?page=Networkminer) A Network Forensic Analysis Tool for advanced Network Traffic Analysis, sniffer and packet analyzer.
 - [Nfex](https://github.com/deadbits/nfex) : A tool for extracting files from the network in real-time or post-capture from an offline tcpdump pcap savefile.
 - [Ntdsxtract](https://github.com/csababarta/ntdsxtract) [windows]: Active Directory forensic framework.
@@ -62,11 +62,11 @@ Tools and packages that are used for countering forensic activities, including e
 - [ReplayProxy](https://github.com/sparrowt/replayproxy) : Forensic tool to replay web-based attacks (and also general HTTP traffic) that were captured in a pcap file.
 - [Pdfbook-analyzer](https://sourceforge.net/projects/pdfbook/) : Utility for facebook memory forensics.
 - [Pdfid](https://github.com/DidierStevens/DidierStevensSuite/blob/master/pdfid.py) : Scan a file to look for certain PDF keywords.
-- [PdfResurrect](https://github.com/enferex/pdfresurrect) : A tool aimed at analyzing PDF documents.  
+- [PdfResurrect](https://github.com/enferex/pdfresurrect) : A tool aimed at analyzing PDF documents.
 - [Peepdf](https://github.com/jesparza/peepdf) : A Python tool to explore PDF files in order to find out if the file can be harmful or not.
 - [Pev](https://github.com/merces/pev) : Command line based tool for PE32/PE32+ file analysis.
 - [Rekall](https://github.com/google/rekall) : Memory Forensic Framework.
-- [Recuperabit](https://github.com/Lazza/RecuperaBit) : A tool for forensic file system reconstruction.  
+- [Recuperabit](https://github.com/Lazza/RecuperaBit) : A tool for forensic file system reconstruction.
 - [Rifiuti2](https://github.com/abelcheung/rifiuti2) : A rewrite of rifiuti, a great tool from Foundstone folks for analyzing Windows Recycle Bin INFO2 file.
 - [Rkhunter](http://rkhunter.sourceforge.net/) : Checks machines for the presence of rootkits and other unwanted tools.
 - [Sleuthkit](https://github.com/sleuthkit/sleuthkit) : A library and collection of command line digital forensics tools that allow you to investigate volume and file system data.
@@ -87,8 +87,8 @@ Tools and packages that are used for countering forensic activities, including e
 ### Hiding process
 
 - [Harness](https://github.com/droberson/harness) : Execute ELFs in memory.
-- [Unhide](http://www.unhide-forensics.info/?Linux:Download) : A forensic tool to find processes hidden by rootkits, LKMs or by other techniques.  
-- [Kaiser](https://github.com/ntraiseharderror/kaiser) : File-less persistence, attacks and anti-forensic capabilities (Windows 7 32-bit).  
+- [Unhide](http://www.unhide-forensics.info/?Linux:Download) : A forensic tool to find processes hidden by rootkits, LKMs or by other techniques.
+- [Kaiser](https://github.com/ntraiseharderror/kaiser) : File-less persistence, attacks and anti-forensic capabilities (Windows 7 32-bit).
 - [Papa Shango](https://github.com/droberson/papa-shango) : Inject code into running processes with ptrace().
 - [Saruman](https://github.com/elfmaster/saruman) : ELF anti-forensics exec, for injecting full dynamic executables into process image (With thread injection).
 
@@ -124,14 +124,14 @@ Tools and packages that are used for countering forensic activities, including e
 - [BurnEye](https://github.com/packz/binary-encryption/tree/master/binary-encryption/burneye-stripped) : ELF encryption program.
 - [cryptsetup](https://gitlab.com/cryptsetup/cryptsetup) : Utility used to conveniently set up disk encryption based
 on the DMCrypt kernel module.
-  - [cryptsetup-nuke-password](https://salsa.debian.org/pkg-security-team/cryptsetup-nuke-password) : Configure a special "nuke password" that
-    can be used to destroy the encryption keys required to unlock the encrypted partitions.
+- [cryptsetup-nuke-password](https://salsa.debian.org/pkg-security-team/cryptsetup-nuke-password) : Configure a special "nuke password" that
+can be used to destroy the encryption keys required to unlock the encrypted partitions.
 - [ELFcrypt](https://github.com/droberson/ELFcrypt) : ELF crypter.
 - [FreeOTFE](https://sourceforge.net/projects/freeotfe.mirror/) : A free "on-the-fly" transparent disk encryption program for PC & PDAs.
 - [Midgetpack](https://github.com/arisada/midgetpack) : Midgetpack is a multiplatform secure ELF packer.
 - [panic_bcast](https://github.com/niklasfemerstrand/panic_bcast) : Decentralized opsec panic button operating over UDP broadcasts and HTTP. Provides automatic ejection of encrypted drives as a safe-measure against cold-boot attacks.
 - [Sherlocked](https://github.com/elfmaster/sherlocked) : Universal script packer-- transforms any type of script into a protected ELF executable, encrypted with anti-debugging.
-  - [suicideCrypt](https://github.com/MonolithInd/suicideCrypt) : A toolset for creating cryptographically strong volumes that destroy themselves upon tampering (event) or via issued command.
+- [suicideCrypt](https://github.com/MonolithInd/suicideCrypt) : A toolset for creating cryptographically strong volumes that destroy themselves upon tampering (event) or via issued command.
 - [Tchunt-ng](https://github.com/antagon/TCHunt-ng) : Reveal encrypted files stored on a filesystem.
 - [TrueHunter](https://github.com/adoreste/truehunter) : Detect TrueCrypt containers using a fast and memory efficient approach.
 
@@ -140,7 +140,7 @@ on the DMCrypt kernel module.
 - [Auditpol](https://docs.microsoft.com/en-gb/windows-server/administration/windows-commands/auditpol) : Displays information about and performs functions to manipulate audit policies in Windows.
 - [evtkit](https://github.com/yarox24/evtkit) : Fix acquired .evt - Windows Event Log files (Forensics) [windows]
 - [Grokevt](https://github.com/ecbftw/grokevt) : A collection of scripts built for reading Windows® NT/2K/XP/2K eventlog files. [windows]
-- [Lfle](https://github.com/williballenthin/LfLe) : Recover event log entries from an image by heurisitically looking for record structures.  
+- [Lfle](https://github.com/williballenthin/LfLe) : Recover event log entries from an image by heurisitically looking for record structures.
 - [python-evtx](https://github.com/williballenthin/python-evtx) : A tool to parse the Windows XML Event Log (EVTX) format.
 - [USBGuard](https://usbguard.github.io/) : Software framework for implementing USB device authorization policies (what kind of USB devices are authorized) as well as method of use policies (how a USB device may interact with the system).
 - [wecutil](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wecutil) : Enables you to create and manage subscriptions to events that are forwarded from remote computers. The remote computer must support the WS-Management protocol. [windows]
@@ -164,7 +164,7 @@ on the DMCrypt kernel module.
 - [Steghide](http://steghide.sourceforge.net/) : Steganography program that is able to hide data in various kinds of image- and audio-files.
 - [Stegify](https://github.com/DimitarPetrov/stegify) : Go tool for LSB steganography, capable of hiding any file within an image.
 - [Stego](https://github.com/ajmwagar/stego) : stego is a steganographic swiss army knife.
-  - [StegoGAN](https://github.com/DAI-Lab/SteganoGAN) : A tool for creating steganographic images using adversarial training.
+- [StegoGAN](https://github.com/DAI-Lab/SteganoGAN) : A tool for creating steganographic images using adversarial training.
 - [stego-toolkit](https://github.com/DominicBreuker/stego-toolkit) : This project is a Docker image useful for solving Steganography challenges as those you can find at CTF platforms.
 - [StegoVeritas](https://github.com/bannsec/stegoVeritas) : Yet another Stego Tool.
 - [tweetable-polyglot-png](https://github.com/DavidBuchanan314/tweetable-polyglot-png) : Pack up to 3MB of data into a tweetable PNG polyglot file.
@@ -176,7 +176,7 @@ on the DMCrypt kernel module.
 
 ### OS/VM
 
-- [HiddenVM](https://github.com/aforensics/HiddenVM) : Use any desktop OS without leaving a trace.  
+- [HiddenVM](https://github.com/aforensics/HiddenVM) : Use any desktop OS without leaving a trace.
 - [Tails](https://tails.boum.org/index.en.html) : portable operating system that protects against surveillance and censorship.
 
 ### Hardware
@@ -184,7 +184,6 @@ on the DMCrypt kernel module.
 - [BusKill](https://github.com/BusKill/buskill-app) : BusKill is an hardware and software project that uses a hardware tripwire/dead-man-switch to trigger a computer to lock or shutdown if the user is physically separated from their machine.
 - [Day Tripper](https://github.com/dekuNukem/daytripper) : Hide-My-Windows Laser Tripwire.
 - [DoNotDisturb](https://github.com/objective-see/DoNotDisturb) : Security tool for macOS that aims to detect unauthorized physical access to your laptop.
-- [Silk Guardian](https://github.com/NateBrune/silk-guardian) : Anti-forensic kill-switch that waits for a change on your usb ports and then wipes your ram, deletes precious files, and turns off your computer.
 - [USB Kill](https://github.com/hephaest0s/usbkill) : Anti-forensic kill-switch that waits for a change on your USB ports and then immediately shuts down your computer.
 - [USB Death](https://github.com/trpt/usbdeath) : Anti-forensic tool that writes udev rules for known usb devices and do some things at unknown usb insertion or specific usb device removal.
 - [xxUSBSentinel](https://github.com/thereisnotime/xxUSBSentinel) : Windows anti-forensics USB monitoring tool.

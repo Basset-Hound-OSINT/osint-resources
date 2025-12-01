@@ -15,31 +15,31 @@ It takes time to build up collection of tools used in CTF and remember them all.
 ### Contents
 
 - [Awesome CTF](#awesome-ctf)
-  - [Create](#create)
-    - [Forensics](#forensics)
-    - [Platforms](#platforms)
-    - [Steganography](#steganography)
-    - [Web](#web)
-  - [Solve](#solve)
-    - [Attacks](#attacks)
-    - [Bruteforcers](#bruteforcers)
-    - [Cryptography](#crypto)
-    - [Exploits](#exploits)
-    - [Forensics](#forensics-1)
-    - [Networking](#networking)
-    - [Reversing](#reversing)
-    - [Services](#services)
-    - [Steganography](#steganography-1)
-    - [Web](#web-1)
+- [Create](#create)
+- [Forensics](#forensics)
+- [Platforms](#platforms)
+- [Steganography](#steganography)
+- [Web](#web)
+- [Solve](#solve)
+- [Attacks](#attacks)
+- [Bruteforcers](#bruteforcers)
+- [Cryptography](#crypto)
+- [Exploits](#exploits)
+- [Forensics](#forensics-1)
+- [Networking](#networking)
+- [Reversing](#reversing)
+- [Services](#services)
+- [Steganography](#steganography-1)
+- [Web](#web-1)
 
 - [Resources](#resources)
-  - [Operating Systems](#operating-systems)
-  - [Starter Packs](#starter-packs)
-  - [Tutorials](#tutorials)
-  - [Wargames](#wargames)
-  - [Websites](#websites)
-  - [Wikis](#wikis)
-  - [Writeups Collections](#writeups-collections)
+- [Operating Systems](#operating-systems)
+- [Starter Packs](#starter-packs)
+- [Tutorials](#tutorials)
+- [Wargames](#wargames)
+- [Websites](#websites)
+- [Wikis](#wikis)
+- [Writeups Collections](#writeups-collections)
 
 
 # Create
@@ -129,7 +129,7 @@ Check solve section for steganography.
 - [Nozzlr](https://github.com/intrd/nozzlr) - Nozzlr is a bruteforce framework, trully modular and script-friendly.
 - [Ophcrack](http://ophcrack.sourceforge.net/) - Windows password cracker based on rainbow tables.
 - [Patator](https://github.com/lanjelot/patator) - Patator is a multi-purpose brute-forcer, with a modular design.
-- [Turbo Intruder](https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack) - Burp Suite extension for sending large numbers of HTTP requests 
+- [Turbo Intruder](https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack) - Burp Suite extension for sending large numbers of HTTP requests
 
 ## Exploits
 
@@ -138,9 +138,9 @@ Check solve section for steganography.
 - [DLLInjector](https://github.com/OpenSecurityResearch/dllinjector) - Inject dlls in processes.
 - [libformatstr](https://github.com/hellman/libformatstr) - Simplify format string exploitation.
 - [Metasploit](http://www.metasploit.com/) - Penetration testing software.
-  - [Cheatsheet](https://www.comparitech.com/net-admin/metasploit-cheat-sheet/)
+- [Cheatsheet](https://www.comparitech.com/net-admin/metasploit-cheat-sheet/)
 - [one_gadget](https://github.com/david942j/one_gadget) -  A tool to find the one gadget `execve('/bin/sh', NULL, NULL)` call.
-  - `gem install one_gadget`
+- `gem install one_gadget`
 - [Pwntools](https://github.com/Gallopsled/pwntools) - CTF Framework for writing exploits.
 - [Qira](https://github.com/BinaryAnalysisPlatform/qira) - QEMU Interactive Runtime Analyser.
 - [ROP Gadget](https://github.com/JonathanSalwan/ROPgadget) - Framework for ROP exploitation.
@@ -151,11 +151,11 @@ Check solve section for steganography.
 *Tools used for solving Forensics challenges*
 
 - [Aircrack-Ng](http://www.aircrack-ng.org/) - Crack 802.11 WEP and WPA-PSK keys.
-  - `apt-get install aircrack-ng`
+- `apt-get install aircrack-ng`
 - [Audacity](http://sourceforge.net/projects/audacity/) - Analyze sound files (mp3, m4a, whatever).
-  - `apt-get install audacity`
+- `apt-get install audacity`
 - [Bkhive and Samdump2](http://sourceforge.net/projects/ophcrack/files/samdump2/) - Dump SYSTEM and SAM files.
-  - `apt-get install samdump2 bkhive`
+- `apt-get install samdump2 bkhive`
 - [CFF Explorer](http://www.ntcore.com/exsuite.php) - PE Editor.
 - [Creddump](https://github.com/moyix/creddump) - Dump windows credentials.
 - [DVCS Ripper](https://github.com/kost/dvcs-ripper) - Rips web accessible (distributed) version control systems.
@@ -163,13 +163,13 @@ Check solve section for steganography.
 - [Extundelete](http://extundelete.sourceforge.net/) - Used for recovering lost data from mountable images.
 - [Fibratus](https://github.com/rabbitstack/fibratus) - Tool for exploration and tracing of the Windows kernel.
 - [Foremost](http://foremost.sourceforge.net/) - Extract particular kind of files using headers.
-  - `apt-get install foremost`
+- `apt-get install foremost`
 - [Fsck.ext4](http://linux.die.net/man/8/fsck.ext3) - Used to fix corrupt filesystems.
 - [Malzilla](http://malzilla.sourceforge.net/) - Malware hunting tool.
 - [NetworkMiner](http://www.netresec.com/?page=NetworkMiner) - Network Forensic Analysis Tool.
 - [PDF Streams Inflater](http://malzilla.sourceforge.net/downloads.html) - Find and extract zlib files compressed in PDF files.
 - [Pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html) - Verifies the integrity of PNG and dump all of the chunk-level information in human-readable form.
-  - `apt-get install pngcheck`
+- `apt-get install pngcheck`
 - [ResourcesExtract](http://www.nirsoft.net/utils/resources_extract.html) - Extract various filetypes from exes.
 - [Shellbags](https://github.com/williballenthin/shellbags) - Investigate NT\_USER.dat files.
 - [Snow](https://sbmlabs.com/notes/snow_whitespace_steganography_tool) - A Whitespace Steganography Tool.
@@ -190,7 +190,7 @@ Check solve section for steganography.
 - [Nipe](https://github.com/GouveaHeitor/nipe) - Nipe is a script to make Tor Network your default gateway.
 - [Nmap](https://nmap.org/) - An open source utility for network discovery and security auditing.
 - [Wireshark](https://www.wireshark.org/) - Analyze the network dumps.
-  - `apt-get install wireshark`
+- `apt-get install wireshark`
 - [Zeek](https://www.zeek.org) - An open-source network security monitor.
 - [Zmap](https://zmap.io/) - An open-source network scanner.
 
@@ -264,7 +264,7 @@ Check solve section for steganography.
 - [ImageMagick](http://www.imagemagick.org/script/index.php) - Tool for manipulating images.
 - [Outguess](https://www.freebsd.org/cgi/man.cgi?query=outguess+&apropos=0&sektion=0&manpath=FreeBSD+Ports+5.1-RELEASE&format=html) - Universal steganographic tool.
 - [Pngtools](https://packages.debian.org/sid/pngtools) - For various analysis related to PNGs.
-  - `apt-get install pngtools`
+- `apt-get install pngtools`
 - [SmartDeblur](https://github.com/Y-Vladimir/SmartDeblur) - Used to deblur and fix defocused images.
 - [Steganabara](https://www.openhub.net/p/steganabara) -  Tool for stegano analysis written in Java.
 - [SteganographyOnline](https://stylesuxx.github.io/steganography/) - Online steganography encoder and decoder.
@@ -287,7 +287,7 @@ Check solve section for steganography.
 - [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) - Add on for chrome for debugging network requests.
 - [Raccoon](https://github.com/evyatarmeged/Raccoon) - A high performance offensive security tool for reconnaissance and vulnerability scanning.
 - [SQLMap](https://github.com/sqlmapproject/sqlmap) - Automatic SQL injection and database takeover tool.
-  ```pip install sqlmap```
+```pip install sqlmap```
 - [W3af](https://github.com/andresriancho/w3af) -  Web Application Attack and Audit Framework.
 - [XSSer](http://xsser.sourceforge.net/) - Automated XSS testor.
 
@@ -365,7 +365,7 @@ Check solve section for steganography.
 - [Root-Me](https://www.root-me.org/) - Hacking and Information Security learning platform.
 - [ROP Wargames](https://github.com/xelenonz/game) - ROP Wargames.
 - [SANS HHC](https://holidayhackchallenge.com/past-challenges/) - Challenges with a holiday theme
-  released annually and maintained by SANS.
+released annually and maintained by SANS.
 - [SmashTheStack](http://smashthestack.org/) - A variety of wargames maintained by the SmashTheStack Community.
 - [Viblo CTF](https://ctf.viblo.asia) - Various amazing CTF challenges, in many different categories. Has both Practice mode and Contest mode.
 - [VulnHub](https://www.vulnhub.com/) - VM-based for practical in digital security, computer application & network administration.

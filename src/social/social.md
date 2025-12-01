@@ -271,7 +271,6 @@
 - [Z History Dump](https://chrome.google.com/webstore/detail/z-history-dump/ahpkicobhkchblogldpjchdhmdnblpkm/related)
 - [Megatools](https://megous.com/git/megatools)
 - [http://Mega.nz](https://Mega.nz)
-- [https://Mega.nz](https://Mega.nz)
 - [You Get](https://github.com/soimort/you-get)
 - [SoundScrape](https://github.com/Miserlou/SoundScrape)
 - [Stream Downloader](https://github.com/lunnlew/stream-downloader)
@@ -368,7 +367,6 @@
 
 
 - [ProtOSINT - Protonmail/ProtonVPN investigation](https://github.com/pixelbubble/ProtOSINT)
-- [Prot1ntelligence - Protonmail OSINT](https://github.com/C3n7ral051nt4g3ncy/Prot1ntelligence)
 
 
 
@@ -424,94 +422,44 @@ These can be useful for osint and social engineering.
 - [Brand24](https://brand24.com)
 - [Samdesk](https://www.samdesk.io)
 - [Maltego social links](https://www.maltego.com/transform-hub/social-links-ce)
-- [https://www.maltego.com/transform-hub/social-links-ce](https://www.maltego.com/transform-hub/social-links-ce)
 - [Maltego Social Links Pro](https://www.maltego.com/transform-hub/social-links-pro)
-- [https://www.maltego.com/transform-hub/social-links-pro](https://www.maltego.com/transform-hub/social-links-pro)
 - [Social Searcher](https://www.social-searcher.com)
-- [https://www.social-searcher.com](https://www.social-searcher.com)
-- [Social Analyzer](https://github.com/qeeqbox/social-analyzer)
 - [SNSCRAPE - Scraper](https://github.com/JustAnotherArchivist/snscrape)
 - [OSINT compass](https://osint-compass-portal.onrender.com)
-- [https://osint-compass-portal.onrender.com](https://osint-compass-portal.onrender.com)
 - [Phantom Buster Scraper](https://phantombuster.com/phantombuster)
 - [Open measure](https://public.openmeasures.io)
-- [https://public.openmeasures.io](https://public.openmeasures.io)
-- [huntintel](https://www.huntintel.io)
-- [https://www.huntintel.io](https://www.huntintel.io)
 - [Sherlock Eye](https://sherlockeye.io)
-- [https://sherlockeye.io](https://sherlockeye.io)
 - [clauneck](https://github.com/serpapi/clauneck)
 - [ShadowDragon](https://shadowdragon.io)
-- [https://shadowdragon.io](https://shadowdragon.io)
 - [sociallinks](https://sociallinks.io)
-- [https://sociallinks.io](https://sociallinks.io)
 - [Crimewall](https://sociallinks.io/products/sl-crimewall)
 - [socialscan](https://pypi.org/project/socialscan)
-- [https://pypi.org/project/socialscan](https://pypi.org/project/socialscan)
 - [drone emprit](https://pers.droneemprit.id)
-- [https://pers.droneemprit.id](https://pers.droneemprit.id)
 - [brandmentions](https://brandmentions.com)
-- [https://brandmentions.com](https://brandmentions.com)
 - [meltwater](https://www.meltwater.com/en)
 
 # Social Media Management and Content Discovery
 
 - [Buffer](https://buffer.com)
 - [Coosto](https://www.coosto.com)
-- [Social Analyzer](https://github.com/qeeqbox/social-analyzer)
-- [SNSCRAPE - Scraper](https://github.com/JustAnotherArchivist/snscrape)
-- [Phantom Buster](https://phantombuster.com/phantombuster)
-- [huntintel](https://www.huntintel.io)
-- [https://www.huntintel.io](https://www.huntintel.io)
-- [Sherlock Eye](https://sherlockeye.io)
-- [https://sherlockeye.io](https://sherlockeye.io)
-- [clauneck](https://github.com/serpapi/clauneck)
-- [ShadowDragon](https://shadowdragon.io)
-- [https://shadowdragon.io](https://shadowdragon.io)
-- [sociallinks](https://sociallinks.io)
-- [https://sociallinks.io](https://sociallinks.io)
-- [Crimewall](https://sociallinks.io/products/sl-crimewall)
-- [socialscan](https://pypi.org/project/socialscan)
-- [https://pypi.org/project/socialscan](https://pypi.org/project/socialscan)
 - [socialcatfish](https://socialcatfish.com)
-- [https://socialcatfish.com](https://socialcatfish.com)
 
 # Hastag & Keyword Analysis
 
 - [keyhole](https://keyhole.co)
-- [https://keyhole.co](https://keyhole.co)
 - [brandmentions](https://app.brandmentions.com)
-- [https://app.brandmentions.com](https://app.brandmentions.com)
 - [wordtracker](https://www.wordtracker.com)
-- [https://www.wordtracker.com](https://www.wordtracker.com)
 - [keywordtool](https://keywordtool.io)
-- [https://keywordtool.io](https://keywordtool.io)
-- [tweetbinder](https://www.tweetbinder.com)
-- [https://www.tweetbinder.com](https://www.tweetbinder.com)
 - [onemilliontweetmap](https://onemilliontweetmap.com)
-- [https://onemilliontweetmap.com](https://onemilliontweetmap.com)
 - [trackmyhashtag](https://www.trackmyhashtag.com)
-- [https://www.trackmyhashtag.com](https://www.trackmyhashtag.com)
 - [Tweet Deck](https://pro.twitter.com)
-- [https://pro.twitter.com](https://pro.twitter.com)
-- [droneemprit](https://pers.droneemprit.id)
-- [https://pers.droneemprit.id](https://pers.droneemprit.id)
 - [Google Trends](https://trends.google.com/trends)
-- [https://trends.google.com/trends](https://trends.google.com/trends)
 - [Google keyword planner](https://ads.google.com/intl/en_id/home/tools/keyword-planner)
-- [https://ads.google.com/intl/en_id/home/tools/keyword-planner](https://ads.google.com/intl/en_id/home/tools/keyword-planner)
 - [keyworddiscovery](https://www.keyworddiscovery.com)
-- [https://www.keyworddiscovery.com](https://www.keyworddiscovery.com)
 - [Yandex Trends](https://wordstat.yandex.com)
-- [https://wordstat.yandex.com](https://wordstat.yandex.com)
 - [orangedatamining](https://orangedatamining.com)
-- [https://orangedatamining.com](https://orangedatamining.com)
 - [twtdata](https://www.twtdata.com)
-- [https://www.twtdata.com](https://www.twtdata.com)
 - [gephi](https://gephi.org)
-- [https://gephi.org](https://gephi.org)
-- [Tweetdeck](https://pro.twitter.com)
-- [https://pro.twitter.com](https://pro.twitter.com)
 
 
 # Blogs Search Engine
@@ -524,42 +472,27 @@ These can be useful for osint and social engineering.
 - [Facebook](https://facebook.com/livemap)
 - [Facebook lookup id](https://lookup-id.com/#)
 - [Sherlock](https://github.com/sherlock-project/sherlock)
-- [Socialsearcher Users](https://www.social-searcher.com)
-- [https://www.social-searcher.com](https://www.social-searcher.com)
 - [Nexfil](https://github.com/thewhiteh4t/nexfil)
-- [Googlesocialsearch](https://www.social-searcher.com/google-social-search)
-- [https://www.social-searcher.com/google-social-search](https://www.social-searcher.com/google-social-search)
 - [Google Social Network Transforms](https://www.maltego.com/transform-hub/google-programmable-search-engine-transforms)
-- [https://www.maltego.com/transform-hub/google-programmable-search-engine-transforms](https://www.maltego.com/transform-hub/google-programmable-search-engine-transforms)
 - [FullContact](https://www.maltego.com/transform-hub/full-contact)
-- [https://www.maltego.com/transform-hub/full-contact](https://www.maltego.com/transform-hub/full-contact)
 - [maigret](https://github.com/soxoj/maigret)
 - [Blackbird](https://github.com/p1ngul1n0/blackbird)
 - [lampyre](https://lampyre.io)
-- [https://lampyre.io](https://lampyre.io)
 
 # Steam
 
-- [STEAM DB](https://steamdb.info/calculator)
-- [https://steamdb.info/calculator](https://steamdb.info/calculator)
-- [Steam OSINT tool](https://github.com/matiash26/Steam-OSINT-TOOL)
 - [exportcomments](https://exportcomments.com)
-- [https://exportcomments.com](https://exportcomments.com)
 
 # Slack
 
-- [SlackPirate](https://github.com/emtunc/SlackPirate)
 
 # Office365
 
-- [Oh365UserFinder](https://github.com/dievus/Oh365UserFinder)
-- [o365chk](https://github.com/nixintel/o365chk)
 
 # Keybase
 
 - [sn0int keybase](https://sn0int.com/r/kpcyrd/keybase)
 - [keybase](https://keybase.io)
-- [https://keybase.io](https://keybase.io)
 
 
 # VK
@@ -570,41 +503,27 @@ These can be useful for osint and social engineering.
 # Bluesky
 
 - [Bluesky api doc](https://docs.bsky.app)
-- [https://docs.bsky.app](https://docs.bsky.app)
 - [hoaxy](https://hoaxy.osome.iu.edu)
-- [https://hoaxy.osome.iu.edu](https://hoaxy.osome.iu.edu)
 - [osintcombine](https://www.osintcombine.com/platform)
 - [bcounter](https://bcounter.nat.vg)
-- [https://bcounter.nat.vg](https://bcounter.nat.vg)
 - [vqv](https://vqv.app)
-- [https://vqv.app](https://vqv.app)
 - [realtime bluesky](https://realtime.blue)
-- [https://realtime.blue](https://realtime.blue)
 - [bluesky label](https://www.bluesky-labelers.io)
-- [https://www.bluesky-labelers.io](https://www.bluesky-labelers.io)
 - [goodfeeds](https://goodfeeds.co)
-- [https://goodfeeds.co](https://goodfeeds.co)
 - [bluesky insights](https://bluesky-insights.dwagentai.com)
-- [https://bluesky-insights.dwagentai.com](https://bluesky-insights.dwagentai.com)
 - [bluesky-crossposter](https://github.com/Linus2punkt0/bluesky-crossposter)
 
 
 # Microsoft OneDrive
 
-- [Onedrive enum](https://github.com/nyxgeek/onedrive_user_enum)
 
 # Mastodon
 
-- [Masto](https://github.com/C3n7ral051nt4g3ncy/Masto)
-- [imagstodon](https://seintpl.github.io/imagstodon)
-- [https://seintpl.github.io/imagstodon](https://seintpl.github.io/imagstodon)
-- [bluesky-crossposter](https://github.com/Linus2punkt0/bluesky-crossposter)
 
 
 # Snapchat
 
 - [Snapchat MAP](https://map.snapchat.com)
-- [https://map.snapchat.com](https://map.snapchat.com)
 - [Snapchat Map scrapping](https://github.com/nemec/snapchat-map-scraper)
 - [SnapIntel](https://github.com/Kr0wZ/SnapIntel)
 
@@ -612,133 +531,75 @@ These can be useful for osint and social engineering.
 # Parler
 
 - [Parler Vidio Map](https://kylemcdonald.net/parler/map)
-- [https://kylemcdonald.net/parler/map](https://kylemcdonald.net/parler/map)
-- [Open Measures](https://public.openmeasures.io)
-- [https://public.openmeasures.io](https://public.openmeasures.io)
 
 
 # Real-Time Search, Social Media Search, and General Social Media Tools
 
-- [Hashtatit](https://www.hashatit.com)
-- [https://www.hashatit.com](https://www.hashatit.com)
 - [Rival IQ](https://www.rivaliq.com)
 - [SocialBakers](https://www.socialbakers.com)
-- [https://www.socialbakers.com](https://www.socialbakers.com)
 - [SociaBlade](https://socialblade.com)
-- [https://socialblade.com](https://socialblade.com)
-- [Social Searcher](https://www.social-searcher.com)
-- [https://www.social-searcher.com](https://www.social-searcher.com)
 - [Mail.Ru Social Network Search](https://go.mail.ru/search_social)
 - [WATools](https://watools.io)
-- [https://watools.io](https://watools.io)
 - [Profil3r](https://github.com/Rog3rSm1th/Profil3r)
 - [Oblivion](https://github.com/loseys/Oblivion)
-- [Social Analyzer](https://github.com/qeeqbox/social-analyzer)
-- [Snsscrape](https://github.com/JustAnotherArchivist/snscrape)
 - [stratosphere](https://github.com/elehcimd/stratosphere)
-- [OSINT compass](https://osint-compass-portal.onrender.com)
-- [https://osint-compass-portal.onrender.com](https://osint-compass-portal.onrender.com)
-- [Sherlock Eye](https://sherlockeye.io)
-- [https://sherlockeye.io](https://sherlockeye.io)
-- [ShadowDragon](https://shadowdragon.io)
-- [https://shadowdragon.io](https://shadowdragon.io)
-- [sociallinks](https://sociallinks.io)
-- [https://sociallinks.io](https://sociallinks.io)
-- [Crimewall](https://sociallinks.io/products/sl-crimewall)
-- [socialscan](https://pypi.org/project/socialscan)
-- [https://pypi.org/project/socialscan](https://pypi.org/project/socialscan)
 - [inspektur](https://github.com/bgwastu/inspektur)
 
 
 # Chat Apps Investigation
 
 - [Analyze your WhatsApp Chat](https://whatsanalyze-80665.web.app)
-- [https://whatsanalyze-80665.web.app](https://whatsanalyze-80665.web.app)
-- [Chat Visualizer](https://chatvisualizer.com)
-- [https://chatvisualizer.com](https://chatvisualizer.com)
 - [WhatsApp Group Links](https://whatsgrouplink.com)
-- [https://whatsgrouplink.com](https://whatsgrouplink.com)
-- [Download WhatsApp Profile Picture](https://watools.io/download-profile-picture)
 - [WhatsApp Group Links 2](https://whatsappgroup.info)
-- [https://whatsappgroup.info](https://whatsappgroup.info)
-- [Wa tools](https://watools.io)
-- [whatsanalyze](https://whatsanalyze.com)
-- [https://whatsanalyze.com](https://whatsanalyze.com)
-- [chatvisualizer](https://chatvisualizer.com)
-- [https://chatvisualizer.com](https://chatvisualizer.com)
-- [WaGpScraper](https://github.com/riz4d/WaGpScraper)
 - [realgrouplinks](https://realgrouplinks.com)
-- [https://realgrouplinks.com](https://realgrouplinks.com)
 - [TelegramDB](https://www.telegramdb.org)
-- [https://www.telegramdb.org](https://www.telegramdb.org)
 - [tosint](https://github.com/drego85/tosint)
 - [Telegram Search Engine](https://xtea.io)
-- [https://xtea.io](https://xtea.io)
 - [Telegram Database: channels, groups and users](https://t.me/s/privatelinks)
 - [Telegram channels and groups catalog](https://tgstat.com)
-- [https://tgstat.com](https://tgstat.com)
 - [Social Finder](https://socialfinder.app/list/Telegram)
 - [Telegago](https://cse.google.com/cse?q=+&cx=006368593537057042503:efxu7xprihg#gsc.tab=0&gsc.q=%20&gsc.page=1)
 - [Lyzem Search](https://lyzem.com)
-- [https://lyzem.com](https://lyzem.com)
 - [Discover The Best Telegram Channels](https://telegramchannels.me)
-- [https://telegramchannels.me](https://telegramchannels.me)
 - [Tele Channel Overiview](https://telemetr.io)
-- [https://telemetr.io](https://telemetr.io)
 - [Telegramtrac](https://github.com/claromes/telegramtrac)
 - [TGDev](https://tgdev.io)
-- [https://tgdev.io](https://tgdev.io)
 - [Telegram Geogramint](https://github.com/Alb-310/Geogramint)
-- [Telegram-Trilateration](https://github.com/jkctech/Telegram-Trilateration)
 - [TeleTracker by Tsale](https://github.com/tsale/TeleTracker)
 - [Teletehon](https://docs.telethon.dev/en/stable/basic/installation.html)
 - [Telegram Search CSE](https://cse.google.com/cse?cx=004805129374225513871:p8lhfo0g3hg&q=)
 - [Bellingcat Telegram Joiner](https://bellingcat.github.io/telegram-group-joiner)
-- [https://bellingcat.github.io/telegram-group-joiner](https://bellingcat.github.io/telegram-group-joiner)
 
 
 # OSINT IRC Chat
 
 - [netsplit](https://netsplit.de/channels)
-- [https://netsplit.de/channels](https://netsplit.de/channels)
 - [kiwiirc](https://kiwiirc.com/search)
 - [sn0int irc-monitor](https://sn0int.com/r/kpcyrd/irc-monitor)
 
 
 # OSINT Game
 
-- [Steamdb](https://steamdb.info/calculator)
-- [https://steamdb.info/calculator](https://steamdb.info/calculator)
 - [tracker](https://tracker.gg)
-- [https://tracker.gg](https://tracker.gg)
 - [steamidfinder](https://www.steamidfinder.com)
-- [https://www.steamidfinder.com](https://www.steamidfinder.com)
-- [steamcommunity](https://steamcommunity.com/search/users)
-- [https://steamcommunity.com/search/users](https://steamcommunity.com/search/users)
 
 
 ## Major Social Networks
 
 - [Draugiem (Latvia)](https://www.draugiem.lv)
 - [Facebook](https://www.facebook.com)
-- [https://www.facebook.com](https://www.facebook.com)
 - [Instagram](https://www.instagram.com)
 - [Linkedin](https://www.linkedin.com)
 - [Mixi (Japan)](https://mixi.jp)
 - [Odnoklassniki (Russia)](https://ok.ru)
-- [https://ok.ru](https://ok.ru)
 - [Pinterest](https://www.pinterest.com)
-- [https://www.pinterest.com](https://www.pinterest.com)
 - [Qzone (China)](https://qzone.qq.com)
-- [https://qzone.qq.com](https://qzone.qq.com)
 - [Reddit](https://www.reddit.com)
 - [Taringa (Latin America)](https://www.taringa.net)
-- [https://www.taringa.net](https://www.taringa.net)
 - [Tinder](https://www.gotinder.com)
 - [Tumblr](https://www.tumblr.com)
 - [Twitter](https://twitter.com)
 - [Weibo (China)](https://weibo.com)
-- [https://weibo.com](https://weibo.com)
 - [VKontakte](https://vk.com)
 - [Xing](https://www.xing.com)
 
@@ -747,158 +608,92 @@ These can be useful for osint and social engineering.
 
 - [Audiense](https://www.audiense.com)
 - [Bottlenose](https://bottlenose.com)
-- [https://bottlenose.com](https://bottlenose.com)
 - [Brandwatch](https://www.brandwatch.com)
-- [Buffer](https://buffer.com)
 - [Buzz sumo](https://buzzsumo.com)
-- [https://buzzsumo.com](https://buzzsumo.com)
 - [Castrick](https://castrickclues.com)
 - [Epieos](https://epieos.com)
 - [Geocreepy](https://www.geocreepy.com)
-- [https://www.geocreepy.com](https://www.geocreepy.com)
 - [Hootsuite](https://hootsuite.com)
-- [https://hootsuite.com](https://hootsuite.com)
 - [IDCrawl](https://www.idcrawl.com)
-- [https://www.idcrawl.com](https://www.idcrawl.com)
 - [Klear](https://klear.com)
-- [https://klear.com](https://klear.com)
 - [Kribrum](https://kribrum.io)
-- [https://kribrum.io](https://kribrum.io)
-- [Mail.Ru Social Network Search](https://go.mail.ru/search_social)
 - [MustBePresent](https://mustbepresent.com)
-- [https://mustbepresent.com](https://mustbepresent.com)
 - [Netvibes](https://www.netvibes.com)
-- [https://www.netvibes.com](https://www.netvibes.com)
-- [Oblivion](https://github.com/loseys/Oblivion)
 - [OpinionCrawl](https://www.opinioncrawl.com)
-- [https://www.opinioncrawl.com](https://www.opinioncrawl.com)
 - [Predicta Search](https://predictasearch.com)
-- [Profil3r](https://github.com/Rog3rSm1th/Profil3r)
-- [Rival IQ](https://www.rivaliq.com)
 - [Social DownORNot](https://social.downornot.com)
-- [https://social.downornot.com](https://social.downornot.com)
-- [Social Searcher](https://www.social-searcher.com)
-- [https://www.social-searcher.com](https://www.social-searcher.com)
-- [SocialBakers](https://www.socialbakers.com)
-- [https://www.socialbakers.com](https://www.socialbakers.com)
-- [SocialBlade](https://socialblade.com)
-- [https://socialblade.com](https://socialblade.com)
 - [Tagboard](https://tagboard.com)
 - [TheWebCo](https://thewebco.ai)
 - [UVRX](https://www.uvrx.com/social.html)
-- [https://www.uvrx.com/social.html](https://www.uvrx.com/social.html)
-- [WATools](https://watools.io)
-- [https://watools.io](https://watools.io)
 
 ### Twitter
 
 - [ExportData](https://www.exportdata.io)
-- [https://www.exportdata.io](https://www.exportdata.io)
 - [Foller.me](https://foller.me)
-- [https://foller.me](https://foller.me)
 - [MyTweetAlerts](https://www.mytweetalerts.com)
-- [https://www.mytweetalerts.com](https://www.mytweetalerts.com)
-- [OneMillionTweetMap](https://onemilliontweetmap.com)
-- [https://onemilliontweetmap.com](https://onemilliontweetmap.com)
 - [RiteTag](https://ritetag.com)
 - [Sentiment140](https://www.twittersentiment.appspot.com)
-- [https://www.twittersentiment.appspot.com](https://www.twittersentiment.appspot.com)
 - [Tagdef](https://tagdef.com)
 - [Trends24](https://trends24.in)
-- [https://trends24.in](https://trends24.in)
 - [TwChat](https://twchat.com)
-- [https://twchat.com](https://twchat.com)
 - [TweetDeck](https://www.tweetdeck.com)
 - [TweetMap](https://mapd.csail.mit.edu/tweetmap)
-- [https://mapd.csail.mit.edu/tweetmap](https://mapd.csail.mit.edu/tweetmap)
 - [TweetMap](https://worldmap.harvard.edu/tweetmap)
-- [https://worldmap.harvard.edu/tweetmap](https://worldmap.harvard.edu/tweetmap)
 - [Twitter Advanced Search](https://twitter.com/search-advanced?lang=en)
 - [Twitter Audit](https://www.twitteraudit.com)
 - [Twitter Chat Schedule](https://tweetreports.com/twitter-chat-schedule)
-- [https://tweetreports.com/twitter-chat-schedule](https://tweetreports.com/twitter-chat-schedule)
 - [Twitter Search](https://search.twitter.com)
-- [https://search.twitter.com](https://search.twitter.com)
 
 ### Facebook
 
-- [Facebook Friend List Scraper](https://github.com/narkopolo/fb_friend_list_scraper)
 - [Facebook Search](https://search.fb.com)
-- [https://search.fb.com](https://search.fb.com)
 - [Fanpage Karma](https://www.fanpagekarma.com)
-- [https://www.fanpagekarma.com](https://www.fanpagekarma.com)
 - [Fb-sleep-stats](https://github.com/sqren/fb-sleep-stats)
 - [Find my Facebook ID](https://randomtools.io)
 - [haveibeenzuckered](https://haveibeenzuckered.com)
-- [https://haveibeenzuckered.com](https://haveibeenzuckered.com)
 - [Lookup-ID.com](https://lookup-id.com)
 - [SearchIsBack](https://searchisback.com)
 - [Wolfram Alpha Facebook Report](https://www.wolframalpha.com/input/?i=facebook+report)
-- [https://www.wolframalpha.com/input/?i=facebook+report](https://www.wolframalpha.com/input/?i=facebook+report)
 
 ### Instagram
 
 - [Iconosquare](https://iconosquare.com)
-- [https://iconosquare.com](https://iconosquare.com)
 - [Osintgram](https://github.com/Datalux/Osintgram)
 - [Picodash](https://www.picodash.com)
 - [Sterra](https://github.com/novitae/sterraxcyl)
-- [Toutatis](https://github.com/megadose/toutatis)
 
 ### Reddit
 
 - [Arctic Shift](https://github.com/ArthurHeitmann/arctic_shift)
 - [Imgur](https://imgur.com/search?q=)
-- [https://imgur.com/search?q=](https://imgur.com/search?q=)
 - [Mostly Harmless](https://kerrick.github.io/Mostly-Harmless/#features)
-- [https://kerrick.github.io/Mostly-Harmless/#features](https://kerrick.github.io/Mostly-Harmless/#features)
 - [Pushshift API](https://pushshift.io)
 - [here](https://www.reddit.com/r/pushshift)
-- [https://pushshift.io](https://pushshift.io)
-- [https://www.reddit.com/r/pushshift](https://www.reddit.com/r/pushshift)
 - [Pullpush](https://pullpush.io)
-- [https://pullpush.io](https://pullpush.io)
 - [REDARCS](https://the-eye.eu/redarcs)
-- [https://the-eye.eu/redarcs](https://the-eye.eu/redarcs)
 - [Reddit Archive](https://www.redditarchive.com)
-- [https://www.redditarchive.com](https://www.redditarchive.com)
 - [Reddit Suite](https://chrome.google.com/webstore/detail/reddit-enhancement-suite/kbmfpngjjgdllneeigpgjifpgocmfgmb)
 - [Reddit User Analyser](https://atomiks.github.io/reddit-user-analyser)
-- [https://atomiks.github.io/reddit-user-analyser](https://atomiks.github.io/reddit-user-analyser)
 - [RedditMetis](https://redditmetis.com)
-- [https://redditmetis.com](https://redditmetis.com)
 - [Subreddits](https://subreddits.org)
-- [https://subreddits.org](https://subreddits.org)
 - [Reddit Comment Search](https://redditcommentsearch.com)
-- [https://redditcommentsearch.com](https://redditcommentsearch.com)
 - [Universal Scammer List](https://universalscammerlist.com)
-- [https://universalscammerlist.com](https://universalscammerlist.com)
 - [Reddit Comment Lookup](https://randomtools.io/reddit-comment-search)
-- [https://randomtools.io/reddit-comment-search](https://randomtools.io/reddit-comment-search)
 
 ### VKontakte
 
 - [Дезертир](https://vk.com/app3046467)
-- [https://vk.com/app3046467](https://vk.com/app3046467)
 - [Barkov.net](https://vk.barkov.net)
-- [https://vk.barkov.net](https://vk.barkov.net)
 - [Report Tree](https://dcpu.ru/vk_repost_tree.php)
-- [https://dcpu.ru/vk_repost_tree.php](https://dcpu.ru/vk_repost_tree.php)
 - [VK5](https://vk5.city4me.com)
-- [https://vk5.city4me.com](https://vk5.city4me.com)
 - [VK Community Search](https://vk.com/communities)
-- [https://vk.com/communities](https://vk.com/communities)
 - [VK Parser](https://vkparser.ru)
-- [https://vkparser.ru](https://vkparser.ru)
 - [VK People Search](https://vk.com/people)
-- [https://vk.com/people](https://vk.com/people)
 - [VK.watch](https://vk.watch)
-- [https://vk.watch](https://vk.watch)
 
 ### Tumblr
 
 - [Tumblr Search](https://www.tumblr.com/search)
-- [https://www.tumblr.com/search](https://www.tumblr.com/search)
 
 ### LinkedIn
 
@@ -907,8 +702,6 @@ These can be useful for osint and social engineering.
 ### Telegram
 
 - [Maltego Telegram](https://github.com/vognik/maltego-telegram)
-- [Telegago](https://cse.google.com/cse?q=+&cx=006368593537057042503:efxu7xprihg#gsc.tab=0&gsc.q=%20&gsc.page=1)
-- [Telegram Nearby Map](https://github.com/tejado/telegram-nearby-map)
 
 ### Steam
 
@@ -918,28 +711,17 @@ These can be useful for osint and social engineering.
 ## Blog Search
 
 - [BlogSearchEngine](https://www.blogsearchengine.org)
-- [https://www.blogsearchengine.org](https://www.blogsearchengine.org)
 - [Notey](https://www.notey.com)
-- [https://www.notey.com](https://www.notey.com)
 - [Twingly](https://www.twingly.com)
-- [https://www.twingly.com](https://www.twingly.com)
 
 ## Forums and Discussion Boards Search
 
 - [4chan Search](https://4chansearch.com)
-- [https://4chansearch.com](https://4chansearch.com)
 - [Boardreader](https://boardreader.com)
-- [https://boardreader.com](https://boardreader.com)
 - [Built With Flarum](https://builtwithflarum.com)
-- [https://builtwithflarum.com](https://builtwithflarum.com)
-- [Facebook Groups](https://www.facebook.com)
 - [Google Groups](https://groups.google.com)
 - [LinkBase](https://link-base.org)
-- [https://link-base.org](https://link-base.org)
-- [Linkedin Groups](https://www.linkedin.com)
-- [https://www.linkedin.com](https://www.linkedin.com)
 - [Ning](https://www.ning.com)
-- [https://www.ning.com](https://www.ning.com)
 - [Xing Groups](https://www.xing.com/communities)
 - [Yahoo Groups](https://groups.yahoo.com)
 
@@ -947,28 +729,18 @@ These can be useful for osint and social engineering.
 ## Q&A Sites
 
 - [Answers.com](https://www.answers.com)
-- [https://www.answers.com](https://www.answers.com)
 - [Ask](https://www.ask.com)
-- [https://www.ask.com](https://www.ask.com)
 - [eHow](https://www.ehow.com)
-- [https://www.ehow.com](https://www.ehow.com)
 - [Quora](https://www.quora.com)
-- [https://www.quora.com](https://www.quora.com)
 - [StackExchange](https://stackexchange.com)
-- [https://stackexchange.com](https://stackexchange.com)
 - [Yahoo Answers](https://answers.yahoo.com)
-- [https://answers.yahoo.com](https://answers.yahoo.com)
 - [Ответы](https://otvet.mail.ru)
-- [https://otvet.mail.ru](https://otvet.mail.ru)
 
 
 ## Social Network Analysis
 
-- [Gephi](https://gephi.org)
 - [ORA](https://www.casos.cs.cmu.edu/projects/ora/software.php)
-- [https://www.casos.cs.cmu.edu/projects/ora/software.php](https://www.casos.cs.cmu.edu/projects/ora/software.php)
 - [Sentinel Visualizer](https://www.fmsasg.com)
-- [https://www.fmsasg.com](https://www.fmsasg.com)
 - [Visual Investigative Scenarios](https://vis.occrp.org)
 - [Wynyard Group](https://wynyardgroup.com)
 
@@ -977,7 +749,6 @@ These can be useful for osint and social engineering.
 
 - [checkwa](https://checkwa.online)
 - [WhatsApp Fake Chat](https://www.fakewhats.com/generator)
-- [https://www.fakewhats.com/generator](https://www.fakewhats.com/generator)
 - [Whatsapp Monitor](https://github.com/ErikTschierschke/WhatsappMonitor)
 - [whatsfoto](https://github.com/zoutepopcorn/whatsfoto)
 
@@ -985,118 +756,52 @@ These can be useful for osint and social engineering.
 ## Skype
 
 - [addmeContacts](https://add-me-contacts.com)
-- [https://add-me-contacts.com](https://add-me-contacts.com)
 - [ChatToday](https://chattoday.com)
 - [Skypli](https://www.skypli.com)
 
 
 ## ANALYTICS
 
-- [SEO Resources Search Engine](https://cse.google.com/cse/publicurl?cx=005797772976587943970:i7q6z1kjm1w)
-- [Hashatit](https://www.hashatit.com)
-- [https://www.hashatit.com](https://www.hashatit.com)
-- [Social Mentions](https://www.social-searcher.com/media-monitoring)
-- [https://www.social-searcher.com/media-monitoring](https://www.social-searcher.com/media-monitoring)
-- [Social Trends](https://www.social-searcher.com/social-trends)
-- [https://www.social-searcher.com/social-trends](https://www.social-searcher.com/social-trends)
 - [Mentionmapp Analytics](https://mentionmapp.com)
-- [https://mentionmapp.com](https://mentionmapp.com)
 - [Anonymous Ad Preview Tool](https://ads.google.com/anon/AdPreview)
 - [Semrush](https://www.semrush.com)
-- [https://www.semrush.com](https://www.semrush.com)
-- [Network Tool](https://osome.iu.edu/tools/networks/#)
-- [https://osome.iu.edu/tools/networks/#](https://osome.iu.edu/tools/networks/#)
-- [Trends Tool](https://osome.iu.edu/tools/trends/#)
-- [https://osome.iu.edu/tools/trends/#](https://osome.iu.edu/tools/trends/#)
 - [CoVaxxy](https://osome.iu.edu/tools/covaxxy)
 
 
 ## SOCIAL MEDIA
 
-- [Hunt Intelligence](https://www.huntintel.io)
-- [https://www.huntintel.io](https://www.huntintel.io)
 - [snscrape](https://pypi.org/project/snscrape)
-- [https://pypi.org/project/snscrape](https://pypi.org/project/snscrape)
 - [Social Profiles Finder](https://www.social-searcher.com/search-users)
-- [https://www.social-searcher.com/search-users](https://www.social-searcher.com/search-users)
 - [Who posted what](https://whopostedwhat.com)
-- [https://whopostedwhat.com](https://whopostedwhat.com)
 - [VK Search Engine](https://cse.google.com/cse?cx=f5e7cd4c6e33954ec)
-- [Skype Search Engine](https://www.skypli.com)
-- [https://www.skypli.com](https://www.skypli.com)
-- [Vimeo search tool](https://www.aware-online.com/en/osint-tools/vimeo-search-tool)
-- [https://www.aware-online.com/en/osint-tools/vimeo-search-tool](https://www.aware-online.com/en/osint-tools/vimeo-search-tool)
-- [Kribrum.io](https://kribrum.io)
-- [https://kribrum.io](https://kribrum.io)
-- [Graphtreon.com](https://graphtreon.com)
-- [https://graphtreon.com](https://graphtreon.com)
-- [Social Search Engine](https://www.socialsearchengine.org)
-- [https://www.socialsearchengine.org](https://www.socialsearchengine.org)
-- [Instagram, Reddit & Snapchat](https://one-plus.github.io/Instagram)
-- [Google to search profiles on Dribbble](https://recruitin.net/dribbble.php)
 - [Google to search profiles on Xing](https://recruitin.net/xing.php)
 - [OSINT & SOCMINT Tooling](https://osint.support/chrome-extensions/2019/09/29/osint-socmint-tooling.html)
-- [Blackbird](https://github.com/p1ngul1n0/blackbird)
-- [Social Analyzer](https://github.com/qeeqbox/social-analyzer)
 
 
 ## GOOGLE
 
-- [Google+ Photo Custom Search](https://cse.google.com/cse/publicurl?cx=006205189065513216365:uo99tr1fxjq)
 - [GHunt](https://github.com/mxrch/GHunt)
-- [Google Social Search](https://www.social-searcher.com/google-social-search)
-- [https://www.social-searcher.com/google-social-search](https://www.social-searcher.com/google-social-search)
-- [Google+ & LinkedIn](https://one-plus.github.io/G+Link)
 
 
 ## MASTODON
 
-- [Search.noc.social](https://search.noc.social)
-- [https://search.noc.social](https://search.noc.social)
 - [Mastodon Search Engine](https://cse.google.com/cse?cx=334aec4c3c73ed945)
 - [TootFinder](https://tootfinder.ch)
-- [https://tootfinder.ch](https://tootfinder.ch)
 - [Fediverse Observer](https://fediverse.observer)
-- [https://fediverse.observer](https://fediverse.observer)
 
 
 ## STEAM
 
-- [Steam Community :: Search](https://steamcommunity.com/search/users)
-- [https://steamcommunity.com/search/users](https://steamcommunity.com/search/users)
-- [Steam ID Finder](https://steamidfinder.com/lookup)
-- [https://steamidfinder.com/lookup](https://steamidfinder.com/lookup)
-- [steamdb.info/calculator](https://steamdb.info/calculator)
-- [https://steamdb.info/calculator](https://steamdb.info/calculator)
 - [SteamID.uk](https://steamid.uk)
-- [https://steamid.uk](https://steamid.uk)
 - [SteamRep](https://steamrep.com)
-- [https://steamrep.com](https://steamrep.com)
 
 ## CLUBHOUSE
 
-- [Clubhouse Database](https://clubhousedb.com)
-- [https://clubhousedb.com](https://clubhousedb.com)
-- [Rooms of Clubhouse](https://roomsofclubhouse.com)
-- [https://roomsofclubhouse.com](https://roomsofclubhouse.com)
-- [ClubSearch -- search Clubhouse rooms](https://clubsearch.io)
-- [https://clubsearch.io](https://clubsearch.io)
 
 
 ## BOT
 
-- [Bot Sentinel Dashboard ‹ Bot Sentinel](https://botsentinel.com)
-- [https://botsentinel.com](https://botsentinel.com)
-- [Botometer by OSoMe](https://botometer.osome.iu.edu)
-- [https://botometer.osome.iu.edu](https://botometer.osome.iu.edu)
-- [FollowerAudit](https://www.followeraudit.com)
-- [https://www.followeraudit.com](https://www.followeraudit.com)
-- [Twitter Bot Checker](https://circleboom.com/twitter-management-tool/twitter-circle-tool/twitter-bot-checker)
 - [BotSlayer](https://osome.iu.edu/tools/botslayer)
 
 ## BLOG
 
-- [Blogs Search Engine](https://cse.google.com/cse?cx=013991603413798772546:8c1g6f0frp8#gsc.tab=0)
-- [WordPress Content Snatcher](https://cse.google.com/cse/publicurl?cx=011081986282915606282:w8bndhohpi0)
-- [WordPress Custom Search](https://cse.google.com/cse?cx=011081986282915606282:w8bndhohpi0)
-- [OSINT Blogs Search Engine](https://cse.google.com/cse?cx=fd4729049350a76d0)

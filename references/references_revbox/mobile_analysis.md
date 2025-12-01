@@ -476,7 +476,6 @@ This response is structured as a single comprehensive markdown list containing o
 *   [iphone-backup-analyzer-2](https://github.com/piccimario/iphone-backup-analyzer-2)
 *   [fridpa](https://github.com/tanprathan/fridpa)
 *   [rootlessjb4](https://github.com/brandonplank/rootlessjb4)
-*   [dex2jar (dexpatcher)](https://github.com/dexpatcher/dex2jar)
 *   [dalvik-header-plugin](https://github.com/strazzere/dalvik-header-plugin)
 *   [adb_helper_qt_super_version](https://github.com/techbliss/adb_helper_qt_super_version)
 *   [ida_android_script](https://github.com/thecjw/ida_android_script)

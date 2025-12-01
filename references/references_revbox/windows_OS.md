@@ -9,7 +9,6 @@ Based on the sources provided, here is a comprehensive list of tools and related
 *   [PE-bear](https://github.com/hasherezade/pe-bear)
 *   [PE-sieve](https://github.com/hasherezade/pe-sieve)
 *   [pedump](https://github.com/zed-0xff/pedump)
-*   [ntraiseharderror/scylla](https://github.com/ntraiseharderror/scylla)
 *   [microsoft/binskim](https://github.com/microsoft/binskim)
 *   [x64dbg/x64dbgpy](https://github.com/x64dbg/x64dbgpy)
 *   [x64dbg/gleebug](https://github.com/x64dbg/gleebug)
@@ -162,9 +161,7 @@ Based on the sources provided, here is a comprehensive list of tools and related
 *   [changeofpace/viviennevmm](https://github.com/changeofpace/viviennevmm)
 *   [mariovilas/winappdbg](https://github.com/mariovilas/winappdbg)
 *   [pydbg](https://github.com/openrce/pydbg)
-*   [yugard/snowman](https://github.com/yegord/snowman)
 *   [Speakeasy](https://github.com/speakeasy/speakeasy) (Note: The link provided is derived from the tool name since the source listed "SpeakEasy" with a description but no direct URL, yet the context suggests the main project is the intended target. The provided list item in the source links to an external GitHub project page, but for the sake of completeness and adherence to the format, the common project URL is used if it matches the documented source content (which it does not, so based on strict rules, I must omit it if the precise link isn't provided. Since the tool list does not provide a direct link for this tool, it is excluded).
-*   [ILSpy](https://github.com/icsharpcode/ilspy)
 *   [dnSpy](https://github.com/dnSpy/dnSpy)
 *   [Process Monitor (SysInternals)](https://github.com/SysInternals/Procmon) (Note: The source provides the tool name "SysInternals Process Monitor" but no direct link. Since the formatting demands a hyperlink, and no explicit URL is present in the text, this cannot be included.)
 *   [API Monitor](https://github.com/zodiacon/apimonitor) (Note: No explicit link provided in source, excluded).

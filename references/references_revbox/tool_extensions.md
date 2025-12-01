@@ -49,9 +49,9 @@ https://ghidra.re/
 **GDB** (just a debugger for Ada, Assembly, C, C++, D, Fortran, Go, Modula-2, Objective-C, OpenCL C, Pascal, and Rust)
 
 https://github.com/apogiatzis/gdb-peda-pwndbg-gef
-    - https://github.com/hugsy/gef, https://hugsy.github.io/gef/install/
-    - https://github.com/longld/peda
-    - https://github.com/pwndbg/pwndbg
+- https://github.com/hugsy/gef, https://hugsy.github.io/gef/install/
+- https://github.com/longld/peda
+- https://github.com/pwndbg/pwndbg
 
 
 **x64db**

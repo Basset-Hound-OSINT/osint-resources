@@ -23,113 +23,113 @@ https://cybdetective.com/osintmap/
 
 ## [](#table-of-contents) Table of contents
 - [Maps, Geolocation and Transport](#maps-geolocation-and-transport)
-    - [Social media and photos](#social-media-and-photos)
-    - [Nature](#nature)
-    - [Aviation](#aviation)
-    - [Maritime](#maritime)
-    - [Railway](#railway)
-    - [Routes](#routes)
-    - [Politics, conflicts and crisis](#politics-conflicts-and-crisis)
-    - [Culture](#culture)
-    - [Urban and industrial infrastructure](#urban-and-industrial-infrastructure)
-    - [Worldwide street webcams](#worldwide-street-webcams)
-    - [Tools](#tools)
-    - [Transport](#transport)
-    - [Communications, Internet, Technologies](#communications-internet-technologies)
-    - [Anomalies and "Lost Places"](#anomalies-and-lost-places)
-    - [Street View](#street-view)
-    - [Satellite/aerial imagery](#satelliteaerial-imagery)
-    - [Military tracking](#military-tracking)
-    - [Military visualisation](#military-visualisation)
-    - [Other](#other)
+- [Social media and photos](#social-media-and-photos)
+- [Nature](#nature)
+- [Aviation](#aviation)
+- [Maritime](#maritime)
+- [Railway](#railway)
+- [Routes](#routes)
+- [Politics, conflicts and crisis](#politics-conflicts-and-crisis)
+- [Culture](#culture)
+- [Urban and industrial infrastructure](#urban-and-industrial-infrastructure)
+- [Worldwide street webcams](#worldwide-street-webcams)
+- [Tools](#tools)
+- [Transport](#transport)
+- [Communications, Internet, Technologies](#communications-internet-technologies)
+- [Anomalies and "Lost Places"](#anomalies-and-lost-places)
+- [Street View](#street-view)
+- [Satellite/aerial imagery](#satelliteaerial-imagery)
+- [Military tracking](#military-tracking)
+- [Military visualisation](#military-visualisation)
+- [Other](#other)
 - [Social Media](#social-media)
-    - [Twitter](#twitter)
-    - [YouTube](#youtube)
-    - [TikTok](#tiktok)
-    - [Protonmail](#protonmail)
-    - [Facebook](#facebook)
-    - [Clubhouse](#clubhouse)
-    - [Linkedin](#linkedin)
-    - [Xing](#xing)
-    - [Reddit](#reddit)
-    - [Onlyfans](#onlyfans)
-    - [Snapchat](#snapchat)
-    - [Twitch](#twitch)
-    - [Fidonet](#fidonet)
-    - [Usenet](#usenet)
-    - [Tumblr](#tumblr)
-    - [Flickr](#flickr)
-    - [Spotify](#spotify)
-    - [Discord](#discord)
-    - [Mastodon](#mastodon)
-    - [Yandex](#yandex)
-    - [Instagram](#instagram)
-    - [Google](#google)
-    - [Patreon](#patreon)
-    - [Github](#github)
-    - [Wikipedia](#wikipedia)
-    - [Parler](#parler)
-    - [Pornhub](#pornhub)
-    - [Bluesky](#bluesky)
-    - [Steam](#steam)
-    - [Minecraft](#minecraft)
-    - [Xbox](#xbox)
-    - [VK](#vk)
-    - [Office365](#office365)
-    - [OneDrive](#onedrive)
-    - [Udemy](#udemy)
-    - [Duolingo](#duolingo)
-    - [Universal](#universal)
+- [Twitter](#twitter)
+- [YouTube](#youtube)
+- [TikTok](#tiktok)
+- [Protonmail](#protonmail)
+- [Facebook](#facebook)
+- [Clubhouse](#clubhouse)
+- [Linkedin](#linkedin)
+- [Xing](#xing)
+- [Reddit](#reddit)
+- [Onlyfans](#onlyfans)
+- [Snapchat](#snapchat)
+- [Twitch](#twitch)
+- [Fidonet](#fidonet)
+- [Usenet](#usenet)
+- [Tumblr](#tumblr)
+- [Flickr](#flickr)
+- [Spotify](#spotify)
+- [Discord](#discord)
+- [Mastodon](#mastodon)
+- [Yandex](#yandex)
+- [Instagram](#instagram)
+- [Google](#google)
+- [Patreon](#patreon)
+- [Github](#github)
+- [Wikipedia](#wikipedia)
+- [Parler](#parler)
+- [Pornhub](#pornhub)
+- [Bluesky](#bluesky)
+- [Steam](#steam)
+- [Minecraft](#minecraft)
+- [Xbox](#xbox)
+- [VK](#vk)
+- [Office365](#office365)
+- [OneDrive](#onedrive)
+- [Udemy](#udemy)
+- [Duolingo](#duolingo)
+- [Universal](#universal)
 - [Downloaders](#downloaders)
 - [Domain/IP/Links](#domainiplinks)
-    - [Dorks/Pentest/Vulnerabilities](#dorkspentestvulnerabilities)
-    - [Searchers, scrapers, extractors, parsers](#searchers-scrapers-extractors-parsers)
-    - [Redirect lookup](#redirect-lookup)
-    - [Cookies analyze](#cookies-analyze)
-    - [Website's files metadata analyze and files downloads](#websites-files-metadata-analyze-and-files-downloads)
-    - [Backlinks analyze](#backlinks-analyze)
-    - [Website analyze](#website-analyze)
-    - [Domain/IP investigation](#domainip-investigation)
-    - [Subdomains scan/brute](#subdomains-scanbrute)
-    - [Cloudfare](#cloudfare)
-    - [Databases of domains](#databases-of-domains)
-    - [Website traffic look up](#website-traffic-look-up)
-    - [Website technology look up](#website-technology-look-up)
-    - [Source Code Analyzes](#source-code-analyzes)
-    - [Broken Links Checkers](#broken-links-checkers)
-    - [URL unshorteners](#url-unshorteners)
-    - [Text Analyze](#text-analyze)
+- [Dorks/Pentest/Vulnerabilities](#dorkspentestvulnerabilities)
+- [Searchers, scrapers, extractors, parsers](#searchers-scrapers-extractors-parsers)
+- [Redirect lookup](#redirect-lookup)
+- [Cookies analyze](#cookies-analyze)
+- [Website's files metadata analyze and files downloads](#websites-files-metadata-analyze-and-files-downloads)
+- [Backlinks analyze](#backlinks-analyze)
+- [Website analyze](#website-analyze)
+- [Domain/IP investigation](#domainip-investigation)
+- [Subdomains scan/brute](#subdomains-scanbrute)
+- [Cloudfare](#cloudfare)
+- [Databases of domains](#databases-of-domains)
+- [Website traffic look up](#website-traffic-look-up)
+- [Website technology look up](#website-technology-look-up)
+- [Source Code Analyzes](#source-code-analyzes)
+- [Broken Links Checkers](#broken-links-checkers)
+- [URL unshorteners](#url-unshorteners)
+- [Text Analyze](#text-analyze)
 - [Sound indefication and analyze](#sound-indefication-and-analyze)
 - [Sound search and analyze](#sound-search-and-analyze)
 - [Video editing and analyze](#video-editing-and-analyze)
 - [Image Search and Identification](#image-search-and-identification)
-    - [Reverse Image Search Engines and automation tools](#reverse-image-search-engines-and-automation-tools)
-    - [Image editing tools](#image-editing-tools)
-    - [Other Image Search Engines](#other-image-search-engines)
-    - [Image Analyze](#image-analyze)
-    - [Exif Analyze and editing](#exif-analyze-and-editing)
-    - [Face recognition and search](#face-recognition-and-search)
-    - [Font Indenfication](#font-indenfication)
+- [Reverse Image Search Engines and automation tools](#reverse-image-search-engines-and-automation-tools)
+- [Image editing tools](#image-editing-tools)
+- [Other Image Search Engines](#other-image-search-engines)
+- [Image Analyze](#image-analyze)
+- [Exif Analyze and editing](#exif-analyze-and-editing)
+- [Face recognition and search](#face-recognition-and-search)
+- [Font Indenfication](#font-indenfication)
 - [Cryptocurrencies](#cryptocurrencies)
 - [Messengers](#messengers)
-    - [Telegram](#telegram)
-    - [WhatsApp](#whatsapp)
-    - [Kik](#kik)
-    - [Slack](#slack)
-    - [Skype](#skype)
+- [Telegram](#telegram)
+- [WhatsApp](#whatsapp)
+- [Kik](#kik)
+- [Slack](#slack)
+- [Skype](#skype)
 - [Code](#code)
 - [Search engines](#search-engines)
-    - [Universal search tools](#universal-search-tools)
-    - [Darknet/deepweb search tools](#darknetdeepweb-search-tools)
-    - [Public buckets search tools](#public-buckets-search-tools)
-    - [Bugbounty/vulnerabilities search tools](#bugbountyvulnerabilities-search-tools)
-    - [Filesharing Search Engines](#filesharing-search-engines)
+- [Universal search tools](#universal-search-tools)
+- [Darknet/deepweb search tools](#darknetdeepweb-search-tools)
+- [Public buckets search tools](#public-buckets-search-tools)
+- [Bugbounty/vulnerabilities search tools](#bugbountyvulnerabilities-search-tools)
+- [Filesharing Search Engines](#filesharing-search-engines)
 - [Tools for DuckDuckGo](#tools-for-duckduckgo)
 - [Tools for Google](#tools-for-google)
-    - [IOT (ip search engines)](#iot-ip-search-engines)
+- [IOT (ip search engines)](#iot-ip-search-engines)
 - [Archives](#archives)
-    - [Tools for working with web archives](#tools-for-working-with-web-archives)
-    - [Tools for working with WARC (WebARChive) files](#tools-for-working-with-warc-webarchive-files)
+- [Tools for working with web archives](#tools-for-working-with-web-archives)
+- [Tools for working with WARC (WebARChive) files](#tools-for-working-with-warc-webarchive-files)
 - [Archives of documents/newspapers](#archives-of-documentsnewspapers)
 - [Science](#science)
 - [Datasets](#datasets)
@@ -140,8 +140,8 @@ https://cybdetective.com/osintmap/
 - [Universal Contact Search and Leaks Search](#universal-contact-search-and-leaks-search)
 - [Sock Puppets](#sock-puppets)
 - [NOOSINT tools](#noosint-tools)
-    - [Visualization tools](#visualization-tools)
-    - [Routine/Data Extraction Automation](#routinedata-extraction-automation)
+- [Visualization tools](#visualization-tools)
+- [Routine/Data Extraction Automation](#routinedata-extraction-automation)
 - [Browser analyze](#browser-analyze)
 - [Files](#files)
 - [IMEI and serial numbers](#imei-and-serial-numbers)
@@ -152,9 +152,9 @@ https://cybdetective.com/osintmap/
 - [Bank information search](#bank-information-search)
 - [Brand/trademark information search](#brandtrademark-information-search)
 - [Tender/shipment information search](#tendershipment-information-search)
-    - [Amazon](#amazon)
+- [Amazon](#amazon)
 - [Movies](#movies)
-    - [Netflix](#netflix)
+- [Netflix](#netflix)
 - [TV/Radio](#tvradio)
 - [Tools collections/toolkits](#tools-collectionstoolkits)
 - [Databases and data analyzes](#databases-and-data-analyzes)
@@ -292,7 +292,7 @@ https://cybdetective.com/osintmap/
 | [Frontex Migratory Map](https://frontex.europa.eu/we-know/migratory-map/) | click on a country or region to see how many illegal border crossings have been reported there in the last six months. |
 | [Safe Airspace](https://safeairspace.net/) | (Conflict Zone & Risk Database) worldwide map showing the countries where flying over may be dangerous; detailed history of incidents and official warnings for each country |
 | [Worldwide Detention Centres Map](https://www.globaldetentionproject.org/detention-centres/map-view) | This service will help in investigations related to illegal emigration, human trafficking, missing refugees and tourists.
- |
+|
 
 ### [](#culture)Culture
 
@@ -496,7 +496,6 @@ https://cybdetective.com/osintmap/
 | Link | Description |
 | --- | --- |
 | [Stweet](https://github.com/markowanga/stweet) | Opensource Python library for scraping tweets (by user, by hashtag, by keyword). NO LOGIN OR API KEY REQUIRED. |
-| [BirdHunt](https://birdhunt.co/) | A very simple tool that allows you to select a geolocation/radius and get a list of recent tweets made in that place. |
 | [Twitter account detector](https://chrome.google.com/webstore/detail/twitter-account-detector/papcdbgfejihdinhieggiamjnkclhkck/related) | A simple and fast Chrome extension that finds all Twitter accounts on a site. |
 | [Follower Wonk/Compare](https://followerwonk.com/compare/) | this service allows you to find out how many followers two (or three) Twitter accounts have in common. |
 | [Tweepsmap Unfollows](https://tweepsmap.com/dash/unfollows) | displayed unsubscribed accounts (list for the one week available for free) |
@@ -594,8 +593,7 @@ https://cybdetective.com/osintmap/
 | [Find YouTube Video](https://findyoutubevideo.thetechrobo.ca/) | An online tool that searches for information on YouTube videos by ID in the following sources: Wayback Machine; GhostArchive; #youtubearchive; Filmot |
 | [YouTube Channel Crawler](https://channelcrawler.com/) | Search across 20, 625,734 channels. Search by name, category, country, number of subscribers, views, videos and creation date. |
 | [Return YouTube Comment Username](https://chrome.google.com/webstore/detail/return-youtube-comment-us/kamibelompadnaekbellinmgbphoidmj) | YouTube has recently stopped showing user names in comments. There is an extension that solves this problem. |
-| [YouTube Lookup](https://youtube-lookup.vercel.app/) | A simple online tool to view YouTube video metadata: Snippet Statistics Status Content Geolocation Thumbnails
- |
+|
 
 ### [](#tiktok)TikTok
 
@@ -815,7 +813,7 @@ https://cybdetective.com/osintmap/
 | --- | --- |
 | [GHunt](https://github.com/mxrch/GHunt) | google account investigation tool |
 | [Ghunt Online Version](https://gmail-osint.activetk.jp/) | Get info about Google account by email: - name - default profile  and cover pictures; - calendar events and timezone; - Google Maps reviews; - Google Plus and Google Chat data;
- |
+|
 
 ### [](#patreon)Patreon
 
@@ -942,7 +940,6 @@ https://cybdetective.com/osintmap/
 | [ExportComments](https://exportcomments.com) | Export comments from social media posts to excel files (Twitter, Facebook, Instagram, Discord etc), 100 comments free |
 | [Social Media Salary Calculator](http://lickd.co/blog/social-salary-calculator) | for YouTube, TikTok, Instagram |
 | [Chat-downloader](https://github.com/xenova/chat-downloader) | download chats messages in JSON from #YouTube, #Twitch, #Reddit and #Facebook. |
-| [FindMyFBID](https://randomtools.io/) | Toolkit for collecting data from social networks |
 | [Social Analyzer](https://chrome.google.com/webstore/detail/socialanalyzer-social-sen/efeikkcpimdfpdlmlbjdecnmkknjcfcp) | extension for Google Chrome that simplifies and speeds up daily monitoring of social networks. Create your own list of keywords and regularly check what's new and related to them. |
 | [Khalil Shreateh Social Applications](https://khalil-shreateh.com/khalil.shtml/social_applications/) | More than 20 tools to extend the standard functionality of #Facebook, #TikTok, #Instagram, #Twitter (information gathering, random pickers for contests, content downloaders etc.) |
 | [SNScrape](https://github.com/JustAnotherArchivist/snscrape) | Tool for search posts and gathering information about users in Twitter, Reddit, Vkontakte, Weibo, Telegram, Facebook, Instagram, Telegram and Mastodon. |
@@ -951,7 +948,7 @@ https://cybdetective.com/osintmap/
 | [Amazing Hiring](https://chrome.google.com/webstore/detail/amazinghiring/didkfdopbffjkpolefhpcjkohcpalicd) | An extension for Chrome that allows you to find a link to Linkedin, Facebook, VK, StackOverflow, Instagram... by user Github (or other) profile |
 | [RUBY](https://github.com/jakecreps/ruby) | Simple tool for searching videos by keyword in Rumble, BitChute, YouTube and saving results (author, title, link) to CSV file. |
 | [The Visualized](https://thevisualized.com/) | visualize profile tweets to see the most popular from the last month; get info about the use of a particular hashtag (popular tweets, related hashtags, profiles that frequently use this hashtag); lists of #Twitter and #YouTube trends by country; |
- | [CommentPicker](https://commentpicker.com/) | Facebook profiles/posts ID finder Export Facebook like and comments YouTube Tag Extractor Instagram profile analyzer Twitter account data export |
+| [CommentPicker](https://commentpicker.com/) | Facebook profiles/posts ID finder Export Facebook like and comments YouTube Tag Extractor Instagram profile analyzer Twitter account data export |
 
 [](#downloaders)Downloaders
 ===========================
@@ -962,28 +959,13 @@ https://cybdetective.com/osintmap/
 | [Slideshare Downloader](https://github.com/mohan3d/slideshare-go) | A very simple and fast tool for downloading Slideshare presentations in PDF format (recommend to choose High quality at once) |
 | [Gdown](https://github.com/wkentaro/gdown) | When downloading files from Google Drive curl/wget fails (because of the security notice). But this problem is easily solved |
 | [Waybackpack](https://github.com/jsvine/waybackpack) | download the entire #WaybackMachine archive for a given URL. You can only download versions for a certain date range (date format YYYYMMDDhhss) |
-| [Chat-downloader](https://github.com/xenova/chat-downloader) | download chats messages in JSON from #YouTube, #Twitch, #Reddit and #Facebook. |
-| [Gallery-dl](https://github.com/mikf/gallery-dl) | Quick and simple tool for downloading image galleries and collections from #flickr, #danbooru, #pixiv, #deviantart, #exhentai |
-| [Spotify downloader](https://github.com/spotDL/spotify-downloader) | download spotify playlist in mp3 from YouTube |
-| [Zspotify](https://github.com/Footsiefat/zspotify) | Spotify track downloader. Download mp3 by link or by keywords |
-| [Snaptik.app](https://snaptik.app/) | TikTok Video Downloader |
-| [TikTok Scraper](https://github.com/drawrowfly/tiktok-scraper) | scrapping video from user, trend or hashtag feed, extracting video's or user's metadata, downloading video or music, processing a list of clips or users from a file |
-| [YouTube Comment Downloader](https://github.com/egbertbouman/youtube-comment-downloader) | easy to install and fast tool for downloading YouTube comments in txt/json. Does NOT require authorization or API keys. |
-| [Storysaver.net](https://www.storysaver.net) | download Instagram stories |
-| [Fdown.net](https://fdown.net) | Facebook video downloader |
-| [Untwitch.com](https://untwitch.com) | Twitch video downloader |
-| [Redditsave.com](https://redditsave.com) | Reddit video downloader |
-| [DownGit](https://minhaskamal.github.io/DownGit/#/home) | Create GitHub Resource Download Link |
 | [SaveFrom.net](https://en.savefrom.net/70/) | download video from YouTube, Vimeo, VK, Odnoklassniki and dozen of others services |
-| [Gdown](https://github.com/wkentaro/gdown) | When downloading files from Google Drive curl/wget fails (because of the security notice). But this problem is easily solved. |
 | [Download Sorter](https://chrome.google.com/webstore/detail/download-sorter/mebfblkahpknogabckmdjcmjbnpfdpcj/related) | simple tool that will help set up the distribution of files with different extensions into different folders in a minute and permanently put "Downloads" folder in order. |
 | [Z History Dump](https://chrome.google.com/webstore/detail/z-history-dump/ahpkicobhkchblogldpjchdhmdnblpkm/related) | Open chrome://history/ and download all links from browser history in json. This provides tremendous opportunities for visualization and analysis of information. |
-| [Slideshare Downloader](https://github.com/mohan3d/slideshare-go) | A very simple and fast tool for downloading Slideshare presentations in PDF format (recommend to choose High quality at once) |
 | [Megatools](https://megous.com/git/megatools) | The [http://Mega.nz](http://Mega.nz) file exchange contains links to many files, including various databases of leaked data. You can use the megatools command-line tool to automate your work with this file-sharing service. |
 | [You Get](https://github.com/soimort/you-get) | Universal content downloader: - download video from popular sites like #YouTube or #TikTok - scrape webpages and download images - download binary files and other non-html content from sites |
 | [SoundScrape](https://github.com/Miserlou/SoundScrape) | Download tracks and playlists from SoundCloud, Bandcamp, MixCloud, Audiomack, Hive com. |
 | [Stream Downloader](https://github.com/lunnlew/stream-downloader) | Download streams from different sites |
-| [Chat Downloader](https://github.com/xenova/chat-downloader) | Python tool for extracting chat messages from livestreams and broadcast. Supported sites: YouTube Twitch Reddit Zoom Facebook |
 
 [](#domainiplinks)Domain/IP/Links
 =================================
@@ -1149,7 +1131,6 @@ https://cybdetective.com/osintmap/
 | [RADB](http://radb.net/query) | Provides information collected from all the registries that form part of the Internet Routing Registry |
 | [IPinfo map](https://ipinfo.io/map) | paste up to 500,000 IPs below to see where they're located on a map |
 | [Whois XML API Whois history database](https://whois.whoisxmlapi.com/database/pricing) |     |
-| [Hakrawler](https://github.com/hakluke/hakrawler) | discover endpoints and assets |
 | [Passive DNS search](https://passivedns.mnemonic.no/) |     |
 | [Talos Intelligence Mail Server Reputation](https://talosintelligence.com/reputation_center/) |     |
 | [netbootcamp.org/websitetool.html](https://netbootcamp.org/websitetool.html) | access to 74 #tools to collect domain information from a single page |
@@ -1347,7 +1328,7 @@ https://cybdetective.com/osintmap/
 | [Immerse Zone](http://immerse.zone) | Reverse Image Search Engine. Search by uploaded image or URl; Search by sketch (it can be drawn directly in the browser); Search by quote (can be selected from the catalog) |
 | [Lexica](https://lexica.art/) | Download the image to find thousands Stable Diffusion AI artworks that are as similar to it as possible. You can also search by description and keywords. |
 | [Numlookup Reverse Image Search](https://www.numlookup.com/reverse-image-search) | The results are very different from Yandex Images and Google Lens search results, as the service only searches for links to exact matches with the original picture. |
-| [Google Reverse Image Search Fix](https://googlelens.imagesniper.eu/) | 
+| [Google Reverse Image Search Fix](https://googlelens.imagesniper.eu/) |
 Google lens is not too user friendly for investigations. But this tool will help you get back to the old Google Image Search. (in case of problems, upload images to http://Postimages.org) |
 
 
@@ -1455,11 +1436,10 @@ Google lens is not too user friendly for investigations. But this tool will help
 | [Telegram Message Analyzer](https://github.com/zqtay/Telegram-Message-Analyzer) | Export #Telegram chat (with Windows version of Telegram app) and get detailed analyze of it (message count, average message count per day, word frequency etc) |
 | [@SangMataInfo_bot](https://t.me/SangMataInfo_bot) | forward a message from the user and find out the history of their name in Telegram |
 | [@tgscanrobot](https://t.me/tgscanrobot) | telegram bot to show which telegram groups a person is member of. |
-| <a href='https://t.me/telebrellabot'>@telebrellabot</a> | telegram bot to show which telegram groups a person is member of (users in DB: 4019357, groups in DB: 1745). | 
+| <a href='https://t.me/telebrellabot'>@telebrellabot</a> | telegram bot to show which telegram groups a person is member of (users in DB: 4019357, groups in DB: 1745). |
 | [Telegram Nearby Map](https://github.com/tejado/telegram-nearby-map) | Discover the location of nearby Telegram users on OpenStreetMap |
 | [Telescan](https://github.com/pielco11/telescan) | search users in groups (and in which groups is the user) by id, username or phone number (if it's in your contacts) |
 | [Tgstat](https://tgstat.com) | one of the largest directories of Telegram channels, which has detailed information about the growth of the audience, its engagement and mentions of a particular channel in various sources. |
-| [Telescan](https://github.com/pielco11/telescan) | search users in groups (and in which groups is the user) by id, username or phone number |
 | [Telegcrack.com](https://telegcrack.com/) | search in telegra.ph |
 | [@VoiceMsgBot](https://t.me/VoiceMsgBot) | telegram bot to which you can send voice messages and it converts them into text |
 | [@transcriber_bot](https://t.me/transcriber_bot) | telegram bot, which can convert to text voice messages in 24 languages (view pic) |
@@ -1730,8 +1710,6 @@ Google lens is not too user friendly for investigations. But this tool will help
 | [EasyCache](https://gaetanlhf.github.io/EasyCache/) | quick search website old versions in different search engines and archives |
 | [cachedview.b4your.com](https://cachedview.b4your.com/en/) | quick search website old versions in different search engines and archives |
 | [Internet Archive Wayback Machine Link Ripper](https://tools.digitalmethods.net/beta/internetArchiveWaybackMachineLinkRipper/#) | Enter a host or URL to retrieve the links to the URL's archived versions at [http://wayback.archive.org](http://wayback.archive.org). A text file is produced which lists the archive URLs. |
-| [Waybackpack](https://github.com/jsvine/waybackpack) | download the entire #WaybackMachine archive for a given URL. You can only download versions for a certain date range (date format YYYYMMDDhhss) |
-| [TheTimeMachine](https://github.com/anmolksachan/TheTimeMachine) | Toolkit to use [http://archive.org](http://archive.org) to search for vulnerabilities |
 | [Waybackpy](https://github.com/akamhy/waybackpy) | If you want to write your own script to work with [http://archive.org](http://archive.org), check out the #python library Wayback Machine API. You can use it to quickly automate the extraction of all sorts of website data from the webarchive. |
 | [Archivebox](https://archivebox.io) | Create your own self-hosted web archive. Save pages from browser history, bookmarks, Pocket etc. Save html, js, css, media, pdf and other files |
 | [WaybackPDF](https://github.com/Haax9/WaybackPDF) | Collects a list of saved PDFs for the given domain from [http://archive.org](http://archive.org) and downloads them into a folder. |
@@ -1942,7 +1920,6 @@ Google lens is not too user friendly for investigations. But this tool will help
 | [Text2img](https://deepai.org/machine-learning-model/text2img) | text to image AI generator |
 | [Face Anonimyzer](https://generated.photos/anonymizer) | Upload a face photo and get set of similar AI generated faces. |
 | [AI video generator](https://www.synthesia.io/free-ai-video-demo) | Type the text (video script). Choose a character and script template. Click the "Submit a video" button. Enter your registration data and wait for the letter with the result |
-| [Movio.la](https://www.movio.la/) | Create spoken person video from text |
 | [AI Face maker](https://massless.io/tool/face-maker-ai/) | Just draw a person face (note that there is a separate tool for each part of the face) and the neural network will generate a realistic photo based on it. |
 | [SessionBox](https://chrome.google.com/webstore/detail/sessionbox-multi-login-to/megbklhjamjbcafknkgmokldgolkdfig?hl=ru) | multi-login browser extension |
 | [MultiLogin](https://chrome.google.com/webstore/detail/multilogin/ijfgglilaeakmoilplpcjcgjaoleopfi?hl=ru) | multi-login browser extension |
@@ -2226,7 +2203,6 @@ Google lens is not too user friendly for investigations. But this tool will help
 | [SEARCH Investigative and Forensic Toolbar](https://chrome.google.com/webstore/detail/search-investigative-and/idgjbdfnngdcenpahfalcamfmcjdfbcj/related) | extension with quick access to dozens of online tools for osint, forensics and othef investigations goals. |
 | [Tenssens](https://github.com/thenurhabib/tenssens) | osint framework |
 | [Collector](https://github.com/galihap76/collector) | Universal Osint Toolkit |
-| [Randomtools](https://randomtools.io/) | Several dozen online tools for a variety of purposes. Including to facilitate gathering information on #Facebook, #Twitter, #YouTube, #Instagram |
 | [Infooze](https://github.com/devXprite/infoooze) | User Recon, Mail Finder, Whois/IP/DNS/headers lookup, InstaRecon, Git Recon, Exif Metadata |
 | [ThreatPinch Lookup](https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke/related) | Helps speed up security investigations by automatically providing relevant information upon hovering over any IPv4 address, MD5 hash, SHA2 hash, and CVE title. It's designed to be completely customizable and work with any rest API(c) |
 | [Osint tool](https://osint-tool.com/) | A universal online tool for searching various services and APIs with more than a dozen different inputs (phone number, email, website address, domain, etc.). |
@@ -2251,7 +2227,6 @@ Google lens is not too user friendly for investigations. But this tool will help
 | Link | Description |
 | --- | --- |
 | [Cronodump](https://github.com/alephdata/cronodump) | When searching for information about citizens of Ukraine, Russia and other CIS countries, often have to deal with leaked databases for the Cronos program (used in government organizations). This simple utility generates Cronos files in CSV. |
-| [Jsonvisio](https://jsonvisio.com/) | Well-made JSON file renderer. Allows you to quickly understand the structure of even the most complex #JSON files. |
 | [1C Database Converter](https://github.com/soxoj/1c-database-converter) | 1C is a very popular program in CIS countries for storing data in enterprises (accounting, document management, etc.). This tool allows you to convert 1C files into CSV files. |
 | [Insight Jini](https://insightjini.com/) | Extreme quick, extreme simple and free online tool for data visalization and analysis |
 | [DIAGRAMIFY](https://diagramify.agiliq.com/) | generates flow charts from the text description. Branching and backtracking are supported  |
@@ -2301,11 +2276,7 @@ Google lens is not too user friendly for investigations. But this tool will help
 | [Quick geolocation search](https://cipher387.github.io/quickgeolocationsearch/) |     |
 | [Phone Number Search Constructor](https://cipher387.github.io/phonenumberqueryconstructor/) |     |
 | [Domain Investigation Toolbox](https://cipher387.github.io/domain_investigation_toolbox/) |     |
-| [IP adress Investigation Toolbox](https://cipher387.github.io/domain_investigation_toolbox/ip.html) |     |
 | [Quick Cache and Archive search](https://cipher387.github.io/quickcacheandarchivesearch/) |     |
-| [Grep for OSINT](https://github.com/cipher387/grep_for_osint) | Set of very simple shell scripts that will help you quickly analyze a text or a folder with files for data useful for investigation (phone numbers, bank card numbers, URLs, emails |
-| [5 Google Custom Search Engine for search 48 pastebin sites](https://cipher387.github.io/pastebinsearchengines/) |     |
-| [CSE for search 20 source code hosting services](https://cipher387.github.io/code_repository_google_custom_search_engines/) |     |
 | [Dorks collections list](https://github.com/cipher387/Dorks-collections-list) | List of Github repositories and articles with list of dorks for different search engines |
 | [APIs for OSINT](https://github.com/cipher387/API-s-for-OSINT) | List of API's for gathering information about phone numbers, addresses, domains etc |
 | [Advanced Search Operators List](https://github.com/cipher387/Advanced-search-operators-list) | List of the links to the docs for different services, which explain using of advanced search operators |

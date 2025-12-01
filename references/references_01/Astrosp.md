@@ -10,12 +10,12 @@ A list of osint tools, websites for pentration testing, Reverse Searching, Red t
 
 
 <!---<p align="center">
-	<a href="https://github.com/astrosp/osint-tools#PRODUCTIVITY" target="_blank">Productivity</a>
-	<a href="https://github.com/astrosp/osint-tools#FILE UPLOAD" target="_blank">File Upload</a>
-	<a href="https://github.com/astrosp/osint-tools#TOOLSET" target="_blank">Toolset</a></p>
+<a href="https://github.com/astrosp/osint-tools#PRODUCTIVITY" target="_blank">Productivity</a>
+<a href="https://github.com/astrosp/osint-tools#FILE UPLOAD" target="_blank">File Upload</a>
+<a href="https://github.com/astrosp/osint-tools#TOOLSET" target="_blank">Toolset</a></p>
 --->
 ## Index
- [AI](#ai) ⁕ [Breaches & Leaks](#breaches-and-leaks) ⁕ [Recon](#recon) ⁕ [Productivity](#productivity) ⁕ [File Upload](#file-upload) ⁕ [Toolset](#toolset) ⁕ [Top Search Engines](#search-engines) ⁕ [Whois](#whois) ⁕ [Source Codes](#source-codes) ⁕ [Domain / IP / DNS](#domain--ip--dns) ⁕ [Malware](#malware) ⁕ [Dataset](#dataset) ⁕ [Geo](#geo) ⁕ [IoT](#iot) ⁕ [Darknet](#darknet) ⁕ [Cryptocurrency](#cryptocurrency) ⁕ [Username](#username) ⁕ [Email](#email) ⁕ [Phone](#phone) ⁕ [Whatsapp](#whatsapp) ⁕ [Social Media](#social-media) ⁕ [Facebook](#facebook) ⁕ [Twitter](#twitter) ⁕ [Youtube](#youtube) ⁕ [Instagram](#instagram) ⁕ [Reddit](#reddit) ⁕ [LinkedIn](#linkedin) ⁕ [Google](#google) ⁕ [Discord](#discord) ⁕ [Twitch](#twitch) ⁕ [Telegram](#telegram) ⁕ [Snapchat](#snapchat) ⁕ [TikTok](#tiktok) ⁕ [Steam](#steam) ⁕ [Search Engine](#search-engines) ⁕ [News](#news) ⁕ [Clubhouse](#clubhouse) ⁕ [Bot](#bot) ⁕ [Analysis](#analytics) ⁕ [Blog](#blog) ⁕ [Throwaway Contact](#throwaway-contact) ⁕ [ID Generator](#id-generator) ⁕ [Emulator](#emulator) ⁕ [Hash Recovery](#hash-recovery) ⁕ [Downloader](#downloader) ⁕ [Privacy / Security](#privacy--security) ⁕ [Secure Communication](#secure-communication) ⁕ [Resources](#resources) ⁕ [Threat Intel](#threat-intel) ⁕ [Identity Resolution](#identity-resolution) ⁕ [People](#people) ⁕ [Google CSE](#google-cse) ⁕ [Radio](#radio) ⁕ [Open Directory](#open-directory) ⁕ [Maps](#maps) ⁕ [Data Dump](#data-dump) ⁕ [Informant](#informant) ⁕ [Public Record](#public-records) ⁕ [Government](#government) ⁕ [Image and Audio](#images-and-audio)
+[AI](#ai) ⁕ [Breaches & Leaks](#breaches-and-leaks) ⁕ [Recon](#recon) ⁕ [Productivity](#productivity) ⁕ [File Upload](#file-upload) ⁕ [Toolset](#toolset) ⁕ [Top Search Engines](#search-engines) ⁕ [Whois](#whois) ⁕ [Source Codes](#source-codes) ⁕ [Domain / IP / DNS](#domain--ip--dns) ⁕ [Malware](#malware) ⁕ [Dataset](#dataset) ⁕ [Geo](#geo) ⁕ [IoT](#iot) ⁕ [Darknet](#darknet) ⁕ [Cryptocurrency](#cryptocurrency) ⁕ [Username](#username) ⁕ [Email](#email) ⁕ [Phone](#phone) ⁕ [Whatsapp](#whatsapp) ⁕ [Social Media](#social-media) ⁕ [Facebook](#facebook) ⁕ [Twitter](#twitter) ⁕ [Youtube](#youtube) ⁕ [Instagram](#instagram) ⁕ [Reddit](#reddit) ⁕ [LinkedIn](#linkedin) ⁕ [Google](#google) ⁕ [Discord](#discord) ⁕ [Twitch](#twitch) ⁕ [Telegram](#telegram) ⁕ [Snapchat](#snapchat) ⁕ [TikTok](#tiktok) ⁕ [Steam](#steam) ⁕ [Search Engine](#search-engines) ⁕ [News](#news) ⁕ [Clubhouse](#clubhouse) ⁕ [Bot](#bot) ⁕ [Analysis](#analytics) ⁕ [Blog](#blog) ⁕ [Throwaway Contact](#throwaway-contact) ⁕ [ID Generator](#id-generator) ⁕ [Emulator](#emulator) ⁕ [Hash Recovery](#hash-recovery) ⁕ [Downloader](#downloader) ⁕ [Privacy / Security](#privacy--security) ⁕ [Secure Communication](#secure-communication) ⁕ [Resources](#resources) ⁕ [Threat Intel](#threat-intel) ⁕ [Identity Resolution](#identity-resolution) ⁕ [People](#people) ⁕ [Google CSE](#google-cse) ⁕ [Radio](#radio) ⁕ [Open Directory](#open-directory) ⁕ [Maps](#maps) ⁕ [Data Dump](#data-dump) ⁕ [Informant](#informant) ⁕ [Public Record](#public-records) ⁕ [Government](#government) ⁕ [Image and Audio](#images-and-audio)
 
 
 #### <i>Some of other OSINT tools List</i>
@@ -33,7 +33,7 @@ A list of osint tools, websites for pentration testing, Reverse Searching, Red t
 - [breachdirectory](https://breachdirectory.org/) - CHECK IF YOUR EMAIL OR USERNAME WAS COMPROMISED
 - [leakcheck](https://leakcheck.io/) - Find out if your credentials have been compromised
 - [Findemail.io](https://findemail.io/) - Find email addresses for given company.
-  
+
 ## Basic OSINT
 Data Leak, scam, username, domain, social
 - [Lampyre](https://lampyre.io/) - Data analysis & osint tool, obtain, visualize and analyze data in one place to see what other's can't.
@@ -49,7 +49,7 @@ In addition search for Wifi networks and look for planes, vessels, trains and ci
 - [Face Detection and comparison](https://6mzld2.csb.app/) - compare two uploaded faces
 - [Prospeo](https://prospeo.io/) - Find business email addresses for outreach, find mobile, domain search, email verifier.
 - [RepoAnalyzer](https://repoanalyzer.site/) - Discover authentic blockchain projects through comprehensive analysis of on-chain data, GitHub activity, and community engagement.
- <br>
+<br>
 
 ## AI
 AI tools/Site
@@ -147,14 +147,14 @@ including Arabic, Chinese, Italian, Portuguese, Dutch, Hebrew, Turkish, and Poli
 
 [⇧ Top](#index)
 
- ## OSINT Challenge
- - [billingcat](https://challenge.bellingcat.com/) - Test your open source research skills with these challenges.
+## OSINT Challenge
+- [billingcat](https://challenge.bellingcat.com/) - Test your open source research skills with these challenges.
 
- ## Whatsapp
+## Whatsapp
 
- - [checkleaked](https://whatsapp.checkleaked.cc) - check whatsapp user profile without saving contact number and some other info.
+- [checkleaked](https://whatsapp.checkleaked.cc) - check whatsapp user profile without saving contact number and some other info.
 
- ## FILE UPLOAD
+## FILE UPLOAD
 
 - [MEGA](https://mega.io/) - Secure Cloud Storage and Communication Privacy by Design Get 20GB of storage for free.
 - [transfer.sh](https://transfer.sh/) -
@@ -170,7 +170,7 @@ including Arabic, Chinese, Italian, Portuguese, Dutch, Hebrew, Turkish, and Poli
 [⇧ Top](#index)
 ## TOOLSET
 
-- [shell.how](https://www.shell.how/) - This website provides a comprehensive overview of a command's functionality, including detailed explanations of its constituent fragments. 
+- [shell.how](https://www.shell.how/) - This website provides a comprehensive overview of a command's functionality, including detailed explanations of its constituent fragments.
 - [bgp.tools](https://bgp.tools/) - BGP.tools is a website that provides a collection of tools and utilities related to the Border Gateway Protocol (BGP), which is the protocol used for routing Internet traffic between autonomous systems (ASes).
 - [Seekr](https://github.com/seekr-osint/seekr) - All-In-One OSINT tool with neat web interface
 - [CyberChef](https://gchq.github.io/CyberChef/) - Ecode/Decode strings
@@ -230,7 +230,7 @@ including Arabic, Chinese, Italian, Portuguese, Dutch, Hebrew, Turkish, and Poli
 - [Receive SMS Online](https://hs3x.com/) - receive sms online
 - [Receive SMS Online for FREE](http://freesmsverification.com/) - Free SMS Verification Receive SMS Online Verify your SMS received from any place in the World. The messages will show up on the webpage.
 - [Smstome.com](https://smstome.com/) - Virtual Temporary and Disposable Phone Numbers
-- [Amazon SNS](https://aws.amazon.com/sns/) - Amazon Simple Notification Service (SNS) sends notifications two ways, A2A and A2P. A2A provides high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications. These applications include Amazon Simple Queue Service (SQS), Amazon Kinesis Data Firehose, AWS Lambda, and other HTTPS endpoints. A2P functionality lets you send messages to your customers with SMS texts, push notifications, and email. 
+- [Amazon SNS](https://aws.amazon.com/sns/) - Amazon Simple Notification Service (SNS) sends notifications two ways, A2A and A2P. A2A provides high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications. These applications include Amazon Simple Queue Service (SQS), Amazon Kinesis Data Firehose, AWS Lambda, and other HTTPS endpoints. A2P functionality lets you send messages to your customers with SMS texts, push notifications, and email.
 - [Twilio](https://www.twilio.com/) - api for sms services
 <br>
 
@@ -299,7 +299,7 @@ including Arabic, Chinese, Italian, Portuguese, Dutch, Hebrew, Turkish, and Poli
 <br>
 
 [⇧ Top](#index)
- ## DOWNLOADER
+## DOWNLOADER
 
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) - Command-line program to download videos from YouTube.com and other video sites
 - [Media-downloader.net](https://media-downloader.net/) -
@@ -338,12 +338,10 @@ Cut down on data collection and protect your sensitive personal information, hea
 - [Speech Jammer](https://mynoise.net/NoiseMachines/audioJammerNoiseGenerator.php) - Audio jammers are popular tools used during confidential meetings. They produce a unique sound for masking and protecting conversations from external listening devices, such as a smartphone running an audio recording app, hidden in one of your guests' pocket
 - [Stutterbox](https://www.stutterbox.co.uk/) - A speech jammer is a device that inhibits a user from speaking in coherent sentences due to the user hearing their own voice played back to them with a slight delay.
 - [StegOnline](https://stegonline.georgeom.net/upload) - A web-based, enhanced and open-source port of StegSolve. Upload any image file, and the relevant options will be displayed.
-- [WhatsMyName](https://whatsmyname.app/) - This tool allows you to enumerate usernames across many websites, just enter username and this tool show you how many websites have that username.
-- [ScamSearch](https://scamsearch.io/) - Find your scammer online & report them. Don't let them get away. Search by Profile Picture, Email, Username, Pseudo Name, Phone Number, crypto address or website
 <br>
 
 [⇧ Top](#index)
- ## SECURE COMMUNICATION
+## SECURE COMMUNICATION
 
 - [Signal](https://signal.org/) - Signal is a simple, powerful, and secure messenger like whatsapp but opensource
 - [Element](https://element.io/) - Secure communication and collaboration
@@ -367,7 +365,7 @@ START FOR FREE
 <br>
 
 [⇧ Top](#index)
- ## RESOURCES
+## RESOURCES
 
 - [The Ultimate OSINT Collection](https://start.me/p/DPYPMz/the-ultimate-osint-collection) - This page is for anyone who loves open source investigating, and feels overwhelmed by the amount of resources and information out there. This is my personal one-stop shop for the best OSINT content available online, and I hope it helps you find new ways to learn from some amazing people
 - [OSINT Resources in Canada](https://start.me/p/aLe0vp/osint-resources-in-canada) - OSINT Resources in Canada. This is a free resource dedicated to open source tools located in the different provinces and territories in Canada
@@ -378,7 +376,7 @@ START FOR FREE
 - [OSINT Is A State Of Mind](https://medium.com/secjuice/osint-as-a-mindset-7d42ad72113d) - Dutch guy with Open Source Intelligence & Analysis skills • Osint • Security Awareness • Opsec
 - [sinwindie/OSINT](https://github.com/sinwindie/OSINT) - Collections of tools and methods created to aid in OSINT collection
 - [New Online Investigation (OSINT) Resources – IntelTechniques Blog](https://inteltechniques.com/blog/2019/04/09/new-online-investigation-osint-resources/) - New Online Investigation (OSINT) Resources
-- [Technisette](https://www.technisette.com/p/home) - Here you'll find my collected tutorials, tools, databases, addons, search engines and more to help you with your Open Source Intelligence (OSINT) research. 
+- [Technisette](https://www.technisette.com/p/home) - Here you'll find my collected tutorials, tools, databases, addons, search engines and more to help you with your Open Source Intelligence (OSINT) research.
 - [OSINT Framework](https://osintframework.com/) - OSINT framework focused on gathering information from free tools or resources. The intention is to help people find free OSINT resources. Some of the sites included might require registration or offer more data for $$$, but you should be able to get at least a portion of the available information for no cost.
 - [jivoi/awesome-osint](https://github.com/jivoi/awesome-osint) - A curated list of amazingly awesome OSINT
 - [Google Dork Cheatsheet](https://github.com/robyfirnandoyusuf/Google-Dork-Cheatsheet) - google dorks cheatsheet
@@ -452,7 +450,7 @@ START FOR FREE
 <br>
 
 [⇧ Top](#index)
- ## THREAT INTEL
+## THREAT INTEL
 
 - [Threatbutt](https://threatbutt.com/map/) - Threatbutt Internet Hacking Attack Attribution Map
 - [Cyberthreat Real-Time Map](https://cybermap.kaspersky.com/) - cyberthreat real-time attack map of the world
@@ -477,7 +475,7 @@ START FOR FREE
 
 [⇧ Top](#index)
 
- ## OTHER
+## OTHER
 
 - [https://cryptome.wikileaks.org/](https://cryptome.wikileaks.org/) - WikiLeaks is a multi-national media organization and associated library. It was founded by its publisher Julian Assange in 2006.
 - [Nextstrain](https://nextstrain.org/) - Real-time tracking of pathogen evolution ; pathogen genome data
@@ -542,7 +540,6 @@ You will find a lot of information related to a domain, a IP Address or to an AS
 [⇧ Top](#index)
 ## USERNAME
 
-- [WhatsMyName Web](https://whatsmyname.app/) - username search
 - [Username Checker](https://analyzeid.com/username/) - Social media username checker. Gather information on the taken username and get a summary of who the person is.
 - [Username Search](https://www.idcrawl.com/username) - Uncover social media profiles and real people behind a username
 - [maigret](https://pypi.org/project/maigret/) - Maigret collect a dossier on a person by username only, checking for accounts on a huge number of sites and gathering all the available information from web pages
@@ -562,7 +559,7 @@ You will find a lot of information related to a domain, a IP Address or to an AS
 
 [⇧ Top](#index)
 
- ## EMAIL
+## EMAIL
 
 - [Email Lookup](https://epieos.com/) - The ultimate OSINT tool for email and phone reverse lookup
 - [holehe](https://pypi.org/project/holehe/) - holehe allows you to check if the mail is used on different sites like twitter, instagram , snapchat and will retrieve information on sites with the forgotten password function.
@@ -630,7 +627,7 @@ You are searching 121 billion records.
 <br>
 
 [⇧ Top](#index)
- ## FACEBOOK
+## FACEBOOK
 
 - [Facebook Search Engine](https://cse.google.com/cse?cx=95ae46262a5f2958e)
 - [Facebook Photo Search Engine](https://cse.google.com/cse/publicurl?cx=013991603413798772546:jyvyp2ppxma)
@@ -643,7 +640,7 @@ You are searching 121 billion records.
 <br>
 
 [⇧ Top](#index)
- ## TWITTER
+## TWITTER
 
 - [BirdHunt](https://birdhunt.co/) - BirdHunt will show you all tweets within the chosen geographic location
 - [Nitter](https://github.com/zedeus/nitter/) - Alternative Twitter front-end
@@ -912,7 +909,6 @@ the number of views or likes.
 - [carrot2](https://search.carrot2.org/#/search/web) - Carrot2 organizes your search results into topics. With an instant overview of what's available, you will quickly find what you're looking for
 - [Qwant](https://www.qwant.com/) - The search engine that respects your privacy
 - [Startpage](https://startpage.com/) - A safer way to search and browse online without personal data collection, tracking or targeting.
-- [Mailing List Search](https://cse.google.com/cse/publicurl?cx=013991603413798772546:sipriovnbxq) - custom google mailing list search
 - [swisscows](https://swisscows.com/) - anonymous search engine protects the privacy of our users when searching and from inappropriate content when finding it. We do not use cookies or other tracking technologies, with us each search query remains anonymous and each user a guest without a user profile.
 - [Crossref](https://search.crossref.org/) - Search the metadata of journal articles, books, standards, datasets & more
 - [Brave](https://search.brave.com/) - Brave search engine
@@ -948,7 +944,6 @@ the number of views or likes.
 - [2lingual](https://2lingual.com/) - 2lingual makes it easy to Google Search in 2 languages. Get Google Search Results alongside Google Cross Language Search Results. In addition, a Query Translation Option can be activated or deactivated for Google Cross Language Searches.
 - [Milled](https://milled.com/search) - The search engine for ecommerce emails
 - [btdig](https://btdig.com/) - BTDigg is the BitTorrent DHT search engine.
-- [Osint Open Source Projects](https://awesomeopensource.com/projects/osint) - The Top 23 Osint Open Source Projects
 - [Monster Crawler Search](http://monstercrawler.com/) - Monster Crawler combines the power of all the leading search engines together in one search box to deliver the best combined results. This is what we call metasearch. The process is more efficient and yields many more relevant results.
 - [Arabo.com](http://arabo.com/) - The Arab Middle East Search Engine & Directory
 - [Google Scholar](https://scholar.google.com/) - Google Scholar provides a simple way to broadly search for scholarly literature. From one place, you can search across many disciplines and sources: articles, theses, books, abstracts and court opinions, from academic publishers, professional societies, online repositories, universities and other web sites. Google Scholar helps you find relevant work across the world of scholarly research.
@@ -966,7 +961,7 @@ the number of views or likes.
 
 [⇧ Top](#index)
 ## GOOGLE CSE
-    custom made google search engine for perticular fields
+custom made google search engine for perticular fields
 
 - [Homepage Search Engine](https://cse.google.com/cse?cx=005797772976587943970:3tu7im1-rdg#gsc.tab=0)
 - [Amazon Cloud Search Engine](https://cse.google.com/cse?cx=005797772976587943970:g-6ohngosio#gsc.tab=0)
@@ -1061,7 +1056,6 @@ Enter two images and the difference will show up below
 - [Planespotters.net](https://www.planespotters.net/) - Aviation Photos, Airline Fleets and more
 - [Skyscanner](https://www.skyscanner.com/) - Millions of cheap flights, hotels & cars. One simple search.
 - [RadarBox](https://www.radarbox.com/) - RadarBox is a flight tracking company that displays aircraft & flight information in real-time on a map. RadarBox offers flight data such as latitude and longitude positions, origins and destinations, flight numbers, aircraft types, altitudes, headings and speeds
-- [FlightAirMap](https://www.flightairmap.com/) - Real or virtual flights are displayed in real-time on a 2D or 3D map. Airports are also available on map. Statistics for pilots and/or owners are generated.
 <br>
 
 [⇧ Top](#index)
@@ -1168,7 +1162,6 @@ Enter two images and the difference will show up below
 - [photon](https://pypi.org/project/photon/) - Incredibly fast crawler designed for OSINT.
 - [Technology Lookup](https://osint.sh/stack/) - Technology stack checker tool. Check out the technologies used on any website.
 - [BuiltWith Technology Lookup](https://builtwith.com/) - Find out what websites are Built With
-- [OSINT.SH](https://osint.sh/) - All in one Information Gathering Tools
 - [Nmap Checker Tool](https://shadowcrypt.net/tools/nmap) - Online Free Hacking Tools - ShadowCrypt
 - [Free online network tools](https://centralops.net/co/) - Free online network tools - traceroute, nslookup, dig, whois lookup, ping - IPv6
 - [Google Transparency Report](https://transparencyreport.google.com/https/certificates) - HTTPS encryption on the web report
@@ -1202,7 +1195,6 @@ Enter two images and the difference will show up below
 - [IObit Cloud](https://cloud.iobit.com/index.php) - IObit Cloud is an advanced automated threat analysis system. We use the latest Cloud Computing technology and Heuristic Analyzing mechanic to analyze the behavior of spyware, adware, trojans, keyloggers, bots, worms, hijackers and other security-related risks in a fully automated mode.
 - [theZoo](https://github.com/ytisf/theZoo) - A repository of LIVE malwares for your own joy and pleasure. theZoo is a project created to make the possibility of malware analysis open and available to the public.
 - [Vx-underground.org](https://vx-underground.org/) - vx-underground also known as VXUG, is an educational website about malware and cybersecurity. It claims to have the largest online repository of malware.
-- [aptnotes/data](https://github.com/aptnotes/data) - APTnotes is a repository of publicly-available papers and blogs (sorted by year) related to malicious campaigns/activity/software that have been associated with vendor-defined APT (Advanced Persistent Threat) groups and/or tool-sets.
 - [exploit-database-papers](https://github.com/offensive-security/exploitdb-papers) - The legacy Exploit Database paper repository
 <br>
 
@@ -1390,14 +1382,13 @@ Enter two images and the difference will show up below
 - [Sci-Hub](http://scihub22266oqcxt.onion/) - Sci-Hub is a massive database that eliminates the barriers to getting scientific knowledge. It contains millions of scientific research documents from around the world. The site seeks to liberate information by making it free to individuals and institutions.
 - [Hidden Answers](http://answerszuvs3gg2l64e6hmnryudl5zgrmwm3vh65hzszdghblddvfiqd.onion/) -
 - Access Onion site through visible web: 1. [tor2web](https://tor2web.activetk.jp/)
-										 1. [browserling](https://www.browserling.com/)
-										 2. [4everproxy](https://www.4everproxy.com/tor-proxy)
+1. [browserling](https://www.browserling.com/)
+2. [4everproxy](https://www.4everproxy.com/tor-proxy)
 <br>
 
 [⇧ Top](#index)
 ## DATA DUMP
 
-- [Have I been pwned](https://haveibeenpwned.com/) - check if your email address is in a data breach
 - ~~[DeepSearch](http://xjypo5vzgmo7jca6b322dnqbsdnp3amd24ybx26x5nxbusccjkm4pwid.onion.pet/)~~
 - [Personal Data Leak Checker](https://cybernews.com/personal-data-leak-check/) - Find out if your email, phone number or related personal information might have fallen into the wrong hands.
 - [DDoSecrets](https://ddosecrets.com/wiki/Special:AllPages) - Distributed Denial of Secrets (DDoSecrets) is a non-profit journalist organization focused on publishing, archiving and analyzing public interest information, creating news coverage from around the world. DDoSecrets specializes in large datasets that have been leaked or hacked, and in verifying and researching the data while protecting sources
@@ -1458,7 +1449,6 @@ Enter two images and the difference will show up below
 - [Global Brownbook](https://www.brownbook.net/) - global business listing database
 - [list-org](https://www.list-org.com/) - Basic information about any Russian legal entity or entrepreneur
 - [OpenCorporates](https://opencorporates.com/) - Fresh, standardized, auditable information direct from official primary sources across 140+ jurisdictions — all underpinned by our Legal-Entity Data Principles and world-leading expertise in legal-entity data.
-- [ICIJ Offshore Leaks Database](https://offshoreleaks.icij.org/) - Find out who’s behind more than 810,000 offshore companies, foundations and trusts from the Pandora Papers, Paradise Papers, Bahamas Leaks, Panama Papers and Offshore Leaks investigations.
 - [XRefer](https://www.xrefer.com/) - Find top rated verified local companies
 - [Startup Tracker](https://startuptracker.io/home) - Discover and track startups from MVP to IPO
 - [Shopsearchengine.com](http://shopsearchengine.com/) - shopsearchengine.com the internets premiere shopping site, find it fast.
@@ -1544,7 +1534,6 @@ about police misconduct in Chicago
 - [NJParcels.com](http://njparcels.com/property/)
 - [Social Security Death Master File](https://ssdmf.info/)
 - [SortedByName.com](https://sortedbyname.com/)
-- [Sortedbybirthdate.com](https://sortedbybirthdate.com/)
 - [Cemetery.directory](https://cemetery.directory/)
 - [Social Security Death Index](https://stevemorse.org/ssdi/ssdi.html)
 - [FamilySearch’s United States Record Collections](https://stevemorse.org/fhl/websitesunitedstates.html)

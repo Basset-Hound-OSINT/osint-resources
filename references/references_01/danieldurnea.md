@@ -41,7 +41,7 @@ Tool to make OSINT to phone numbers with the help of APILayer, using its api tog
 https://github.com/cyberpunkOS/CyberPunkOS
 
 ### Chiasmodon 🥷🏼
-Command line #osint toolkit for domain information gathering. 
+Command line #osint toolkit for domain information gathering.
 Partly free.
 https://github.com/chiasmod0n/chiasmodon
 
@@ -94,7 +94,7 @@ https://github.com/AvillaDaniel/AvillaForensics
 ### BBHTv2
 ### A single script for all the tools you need for bug bounty. Thanks to the original creator of bbhtv1 for the idea >> https://github.com/nahamsec
 ### Bug Bounty Hunting Tools is a script to install the most popular tools
-### One-Liner Install curl https://raw.githubusercontent.com/unethicalnoob/BBHTv2/master/bbhtv2.sh | sudo bash 
+### One-Liner Install curl https://raw.githubusercontent.com/unethicalnoob/BBHTv2/master/bbhtv2.sh | sudo bash
 
 ### Tools OSINT/FORENSICS MOBILE
 Features
@@ -162,7 +162,7 @@ https://github.com/Hack23/cia
 ### This toolkit aims to help forensicators perform different kinds of acquisitions on iOS devices
 https://github.com/jfarley248/MEAT
 
-### Simple Imager has been created for performing live acquisition of Windows based systems in a forensically sound manner 
+### Simple Imager has been created for performing live acquisition of Windows based systems in a forensically sound manner
 https://github.com/QXJ6YW4/SimpleImager
 
 ### Autoexif want to remove sensitive data from photos or even view it? use autoexif to easily help you do that no more remembering syntaxs, -note: this is now merged into snd and phisherprice
@@ -183,7 +183,7 @@ https://github.com/privtools/ransomposts
 ### Public release of Telepathy, an OSINT toolkit for investigating Telegram chats.
 https://github.com/jordanwildon/Telepathy
 
-### An Open Source Intelligence Framework to investigate and keep track of the investigation of a certain individual 
+### An Open Source Intelligence Framework to investigate and keep track of the investigation of a certain individual
 https://github.com/MustafaAP/pinosint
 
 ### OSINT tool to scrape names and usernames from large friend lists on Facebook, without being rate limited.
@@ -192,7 +192,7 @@ https://github.com/narkopolo/fb_friend_list_scraper
 ### 🕵️‍♂️ Offensive Google framework.
 https://github.com/mxrch/GHunt
 
-### 
+###
 
 ### Docker image for osint
 https://github.com/Vault-Cyber-Security/osint
@@ -219,7 +219,7 @@ https://github.com/HSNHK/Computer-forensics
 ### SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.
 https://github.com/smicallef/spiderfoot
 
-### Hayabusa 
+### Hayabusa
 Hayabusa is a sigma-based threat hunting and fast forensics timeline generator for Windows event logs written in Rust. :
 https://github.com/Yamato-Security/hayabusa
 
@@ -246,7 +246,7 @@ A file system forensics analysis scanner and threat hunting tool. Scans file sys
 
 ### Forensics Tools
 A list of free and open forensics analysis tools and other resources. : https://github.com/mesquidar/ForensicsTools
- 
+
 ### Commit-stream
 OSINT tool for finding Github repositories by extracting commit logs in real time from the Github event API. : https://github.com/x1sec/commit-stream
 
@@ -259,7 +259,7 @@ https://github.com/megadose/quidam-maltego
 ### OnionSearch
 OnionSearch is a script that scrapes urls on different .onion search engines. : https://github.com/megadose/OnionSearch
 
-### Linux explorer 
+### Linux explorer
 Easy-to-use live forensics toolbox for Linux endpoints. : https://github.com/intezer/linux-explorer
 
 ### DaProfiler
@@ -444,16 +444,16 @@ An Open-Source Mobile Forensic Research Tool for android platform
 https://github.com/scorelab/ANDROPHSY
 
 ### RdpCacheStitcher
-RdpCacheStitcher is a tool that supports forensic analysts in 
+RdpCacheStitcher is a tool that supports forensic analysts in
 reconstructing useful images out of RDP cache bitmaps. - https://github.com/BSI-Bund/RdpCacheStitcher
 
 ### Androidqf
-Androidqf (Android Quick Forensics) helps quickly gathering forensic 
-evidence from Android devices, in order to identify potential traces of 
+Androidqf (Android Quick Forensics) helps quickly gathering forensic
+evidence from Android devices, in order to identify potential traces of
 compromise. - https://github.com/botherder/androidqf
 
 ### IPED
-IPED is an open source software that can be used to process and analyze 
+IPED is an open source software that can be used to process and analyze
 digital evidence, often seized at crime scenes by law enforcement or in a
 corporate investigation by private examiners. - https://github.com/sepinf-inc/IPED
 

@@ -5,8 +5,8 @@ List of Sec talks/videos
 A curated list of awesome Security talks
 
 ## Maintainers
-[TunnelsUp](https://twitter.com/TunnelsUp)  
-[PaulWebSec](https://twitter.com/PaulWebSec)  
+[TunnelsUp](https://twitter.com/TunnelsUp)
+[PaulWebSec](https://twitter.com/PaulWebSec)
 [Alex Novgorodov](https://twitter.com/AlexNovgorodov)
 
 *Incoming, as soon as con videos are out, push them here!*
@@ -107,7 +107,6 @@ Conference | Location | Date
 |[RuhrSec 2017 Day 2](https://www.youtube.com/playlist?list=PLbDDsIuMYNGxcXjY9gGY4j_fgm8pRsXSl) | Bochum, Germany | May 2-3, 2017 |
 |[BSides Nashville](http://www.irongeek.com/i.php?page=videos/bsidesnashville2017/mainlist) | Nashville, TN | Apr 22, 2017 |
 |[BSides Boston](https://www.youtube.com/channel/UCU03OcR9FzCUTc2V1OYLZqg) | Boston, MA | April 14-15, 2017 |
-|[BSides AIDE](http://www.irongeek.com/i.php?page=videos/bsidesnashville2017/mainlist) | Charleston, WV | Apr 3-7, 2017 |
 |[Cyphercon 2.0](http://www.irongeek.com/i.php?page=videos/cyphercon2/mainlist) | MILWAUKEE, WI | Mar 30-31, 2017 |
 |[Black Hat Asia 2017](https://www.youtube.com/watch?v=s95CQNntunQ&list=PLH15HpR5qRsWx4qw9ZlgmisHOcKG4ZcRS) ([slides](https://www.blackhat.com/asia-17/briefings.html)) | Marina Bay Sands, Singapore | March 28-31, 2017 |
 |[Bloomcon](http://www.irongeek.com/i.php?page=videos/bloomcon2017/mainlist) | Bloomsburg, PA | Mar 24-25, 2017 |
@@ -176,7 +175,6 @@ Conference | Location | Date
 |[CypherCon 2016](http://www.irongeek.com/i.php?page=videos/cyphercon2016/mainlist) | Milwaukee, WI  | Mar 11-12, 2016 |
 |[BSides San Francisco 2016](http://www.irongeek.com/i.php?page=videos/bsidessf2016/mainlist) | San Francisco, CA  | Feb 28-29, 2016 |
 |[BSides Cleveland 2016](http://www.irongeek.com/i.php?page=videos/bsidesindy2016/mainlist) | Cleveland OH | Feb 24-25, 2016 |
-|[BSides Indy 2016](http://www.irongeek.com/i.php?page=videos/bsidesindy2016/mainlist) | Indianapolis, IN  | Feb 21, 2016 |
 |[BSides Huntsville 2016](http://www.irongeek.com/i.php?page=videos/bsideshuntsville2016/mainlist) | Hunstville, AL | Feb 06, 2016 |
 |[USENIX Enigma Conference 2016](https://www.youtube.com/channel/UCIdV7bE97mSPTH1mOi_yUrw) | San Francisco, CA | Jan 25-27, 2016 |
 |[HackIT 2015](https://www.youtube.com/playlist?list=PLxRWg8ULebmzT4O36FwxCXr9dilrQD2h0) (RU/EN [slides](https://www.slideshare.net/HackIT-ukraine/presentations)) | Kharkiv, Ukraine | Sep 23, 2015 |
@@ -206,7 +204,6 @@ Conference | Location | Date
 |[Secure West Virgina 2015](https://www.youtube.com/playlist?list=PLNhlcxQZJSm8SFdoqtYpwvknOjMOdSIMY) | West Virginia, USA | Nov. 7, 2015 |
 |[BSides Toronto 2015](https://www.youtube.com/playlist?list=PL02T0JOKYEq52plvmxiJ1cSbwUgHHvP7H) | Toronto, Canada | Nov. 7, 2015 |
 |[Hackfest 2015](https://www.youtube.com/playlist?list=PLaXanmjyAPzE1IdtfIevH0CS7mofDkq2f) | Quebec city, Canada | Nov. 6/7, 2015 |
-|PacSec 2015 ([slides](https://pacsec.jp/pastevents.html)) | Tokyo, Japan | Nov 1-2, 2015 |
 |[Hackito Ergo Sum 2015](https://www.youtube.com/playlist?list=PL0n_p9YGRhHi9jDb6codB-TocS-mDU2TS) | Paris, France | Oct 29/30, 2015 |
 |[DENOG 7](https://media.ccc.de/c/denog7) | Darmstadt, Germany | Oct 29/30, 2015 |
 |[Saint Con 2015](https://www.youtube.com/channel/UCEiHGeWgdIoLCzTLm_izCoQ/videos) | Ogden, UT, USA | Oct 27-30, 2015 |
@@ -318,4 +315,3 @@ Conference | Location | Date
 ## Contributing
 
 For any missing conference, create a pull request and we will add it there.
-Ping us on Twitter: [@TunnelsUp](https://twitter.com/TunnelsUp) and [@PaulWebSec](https://twitter.com/PaulWebSec)

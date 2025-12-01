@@ -3,41 +3,41 @@
 Curated list of awesome **free** (mostly open source) forensic analysis tools and resources.
 
 - Awesome Forensics
-  - [Collections](#collections)
-  - [Tools](#tools)
-    - [Distributions](#distributions)
-    - [Frameworks](#frameworks)
-    - [Live Forensics](#live-forensics)
-    - [IOC Scanner](#ioc-scanner)
-    - [Acquisition](#acquisition)
-    - [Imaging](#imaging)
-    - [Carving](#carving)
-    - [Memory Forensics](#memory-forensics)
-    - [Network Forensics](#network-forensics)
-    - [Windows Artifacts](#windows-artifacts)
-      - [NTFS/MFT Processing](#ntfsmft-processing)
-    - [OS X Forensics](#os-x-forensics)
-    - [Mobile Forensics](#mobile-forensics)
-    - [Docker Forensics](#docker-forensics)
-    - [Internet Artifacts](#internet-artifacts)
-    - [Timeline Analysis](#timeline-analysis)
-    - [Disk image handling](#disk-image-handling)
-    - [Decryption](#decryption)
-    - [Management](#management)
-    - [Picture Analysis](#picture-analysis)
-    - [Metadata Forensics](#metadata-forensics)
-    - [Steganography](#steganography)
-  - [Learn Forensics](#learn-forensics)
-    - [CTFs and Challenges](#ctfs-and-challenges)
-  - [Resources](#resources)
-    - [Web](#web)
-    - [Blogs](#blogs)
-    - [Books](#books)
-    - [File System Corpora](#file-system-corpora)
-    - [Other](#other)
-    - [Labs](#labs)
-  - [Related Awesome Lists](#related-awesome-lists)
-  - [Contributing](#contributing)
+- [Collections](#collections)
+- [Tools](#tools)
+- [Distributions](#distributions)
+- [Frameworks](#frameworks)
+- [Live Forensics](#live-forensics)
+- [IOC Scanner](#ioc-scanner)
+- [Acquisition](#acquisition)
+- [Imaging](#imaging)
+- [Carving](#carving)
+- [Memory Forensics](#memory-forensics)
+- [Network Forensics](#network-forensics)
+- [Windows Artifacts](#windows-artifacts)
+- [NTFS/MFT Processing](#ntfsmft-processing)
+- [OS X Forensics](#os-x-forensics)
+- [Mobile Forensics](#mobile-forensics)
+- [Docker Forensics](#docker-forensics)
+- [Internet Artifacts](#internet-artifacts)
+- [Timeline Analysis](#timeline-analysis)
+- [Disk image handling](#disk-image-handling)
+- [Decryption](#decryption)
+- [Management](#management)
+- [Picture Analysis](#picture-analysis)
+- [Metadata Forensics](#metadata-forensics)
+- [Steganography](#steganography)
+- [Learn Forensics](#learn-forensics)
+- [CTFs and Challenges](#ctfs-and-challenges)
+- [Resources](#resources)
+- [Web](#web)
+- [Blogs](#blogs)
+- [Books](#books)
+- [File System Corpora](#file-system-corpora)
+- [Other](#other)
+- [Labs](#labs)
+- [Related Awesome Lists](#related-awesome-lists)
+- [Contributing](#contributing)
 
 ---
 
@@ -111,7 +111,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 - [LiME](https://github.com/504ensicsLabs/LiME) - Loadable Kernel Module (LKM), which allows the acquisition of volatile memory from Linux and Linux-based devices, formerly called DMD
 - [Magnet RAM Capture / DumpIt](https://www.magnetforensics.com/resources/magnet-dumpit-for-windows/) - A free imaging tool designed to capture the physical memory
 - [SPECTR3](https://github.com/alpine-sec/SPECTR3) - Acquire, triage and investigate remote evidence via portable iSCSI readonly access
-- [TriageHasher](https://github.com/FlipForensics/TriageHasher) - A flexible hashing tool designed for triage collections on Windows, Linux and MacOS. Only hash files with a given extension and location. 
+- [TriageHasher](https://github.com/FlipForensics/TriageHasher) - A flexible hashing tool designed for triage collections on Windows, Linux and MacOS. Only hash files with a given extension and location.
 - [UFADE](https://github.com/prosch88/UFADE) - Extract files from iOS devices on Linux and MacOS. Mostly a wrapper for pymobiledevice3. Creates iTunes-style backups and advanced logical backups.
 - [unix_collector](https://github.com/op7ic/unix_collector) - A live forensic collection script for UNIX-like systems as a single script.
 - [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using Velocidex Query Language (VQL) queries
@@ -136,7 +136,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ### Memory Forensics
 
 - [inVtero.net](https://github.com/ShaneK2/inVtero.net) - High speed memory analysis framework
-  developed in .NET supports all Windows x64, includes code integrity and write support
+developed in .NET supports all Windows x64, includes code integrity and write support
 - [KeeFarce](https://github.com/denandz/KeeFarce) - Extract KeePass passwords from memory
 - [MemProcFS](https://github.com/ufrisk/MemProcFS) - An easy and convenient way of accessing physical memory as files a virtual file system.
 - [Rekall](https://github.com/google/rekall) - Memory Forensic Framework
@@ -157,7 +157,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 - [Blauhaunt](https://github.com/cgosec/Blauhaunt) - A tool collection for filtering and visualizing logon events
 - [FRED](https://www.pinguin.lu/fred) - Cross-platform microsoft registry hive editor
 - [Hayabusa](https://github.com/Yamato-Security/hayabusa) - A a sigma-based threat hunting and fast forensics timeline generator for Windows event logs.
-- [LastActivityView](https://www.nirsoft.net/utils/computer_activity_view.html) - LastActivityView by Nirsoftis a tool for Windows operating system that collects information from various sources on a running system, and displays a log of actions made by the user and events occurred on this computer. 
+- [LastActivityView](https://www.nirsoft.net/utils/computer_activity_view.html) - LastActivityView by Nirsoftis a tool for Windows operating system that collects information from various sources on a running system, and displays a log of actions made by the user and events occurred on this computer.
 - [LogonTracer](https://github.com/JPCERTCC/LogonTracer) - Investigate malicious Windows logon by visualizing and analyzing Windows event log
 - [PyShadow](https://github.com/alicangnll/pyshadow) - A library for Windows to read shadow copies, delete shadow copies, create symbolic links to shadow copies, and create shadow copies
 - [python-evt](https://github.com/williballenthin/python-evt) - Pure Python parser for classic Windows Event Log files (.evt)
@@ -265,7 +265,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ### CTFs and Challenges
 
 - [BelkaCTF](https://belkasoft.com/ctf) - CTFs by Belkasoft
-- [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/?type=ctf) 
+- [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/?type=ctf)
 - [DefCon CTFs](https://archive.ooo) - archive of DEF CON CTF challenges.
 - [Forensics CTFs](https://github.com/apsdehal/awesome-ctf/blob/master/README.md#forensics)
 - [MagnetForensics CTF Challenge](https://www.magnetforensics.com/blog/magnet-weekly-ctf-challenge/)

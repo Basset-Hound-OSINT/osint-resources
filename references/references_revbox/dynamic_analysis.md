@@ -1,7 +1,6 @@
 ### Dynamic Analysis Tools
 
 *   [x64dbg](https://github.com/x64dbg/x64dbg)
-*   [x32dbg](https://github.com/x64dbg/x64dbg)
 *   [Frida](https://github.com/frida/frida)
 *   [Wireshark](sudo apt install wireshark)
 *   [Fiddler](https://github.com/Fiddler/Fiddler)
@@ -16,11 +15,6 @@
 *   [WinDbg](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/)
 *   [Immunity Debugger](https://github.com/kbandla/ImmunityDebugger)
 *   [OllyDbg v1.10](http://www.ollydbg.de/)
-*   [OllyDbg v2.01](http://www.ollydbg.de/)
-*   [OllySnD](http://www.ollydbg.de/)
-*   [Olly Shadow](http://www.ollydbg.de/)
-*   [Olly CiMs](http://www.ollydbg.de/)
-*   [Olly UST_2bg](http://www.ollydbg.de/)
 *   [RenderDoc](https://github.com/baldurk/renderdoc)
 *   [ProcessHacker](https://github.com/processhacker/processhacker)
 *   [Process Monitor (ProcMon)](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)

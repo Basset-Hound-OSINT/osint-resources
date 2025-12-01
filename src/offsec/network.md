@@ -54,4 +54,3 @@
 - [Wireshark](https://www.wireshark.org/)
 - [Zeek](https://www.zeek.org)
 - [Zmap](https://zmap.io/)
-- [macvendors.co](https://macvendors.co/) - Get vendor name of your network device using its mac address

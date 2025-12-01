@@ -483,7 +483,11 @@
 - [Phone Scoop](https://www.phonescoop.com/phones/)
 - [GSM Arena](https://www.gsmarena.com/)
 - [Fcc.io](http://fcc.io/)
-- [Oldphonebook.com](http://www.oldphonebook.com/) - white pages, free people search, phone directory number, historical phone book, historical white pages, old white pages,  1994,1995,1996,1997,1998,2001,2002,2003,2007,2008,background  search, c...
+- [Oldphonebook.com](http://www.oldphonebook.com/) - white pages, free people search, phone
+directory number, historical phone book, historical white
+pages, old white pages,
+1994,1995,1996,1997,1998,2001,2002,2003,2007,2008,background
+search, c...
 - [carrier lookup](https://www.carrierlookup.com/)
 - [Free Reverse Phone Lookup](https://spydialer.com/default.aspx) - Spy Dialer is the totally 100% seriously free reverse phone lookup used by millions of people. NO membership required! Have a missed call? Need to know whose number is it? Search now by phone numbe...
 - [Phonerator](https://www.martinvigo.com/tools/phonerator/)
@@ -819,7 +823,6 @@
 - [carrot2](https://search.carrot2.org/#/search/web)
 - [Qwant](https://www.qwant.com/)
 - [Startpage](https://startpage.com/)
-- [Mailing List Search](https://cse.google.com/cse/publicurl?cx=013991603413798772546:sipriovnbxq)
 - [swisscows](https://swisscows.com/)
 - [Crossref](https://search.crossref.org/)
 - [Brave Search](https://search.brave.com/)
@@ -862,7 +865,6 @@
 - [SEQE - Search Engines Query Engine](https://seqe.me/)
 - [Milled](https://milled.com/search)
 - [btdig](https://btdig.com/)
-- [Osint Open Source Projects](https://awesomeopensource.com/projects/osint)
 - [Monster Crawler Search](http://monstercrawler.com/)
 - [Arabo.com](http://arabo.com/)
 - [Google Scholar](https://scholar.google.com/)
@@ -996,7 +998,6 @@
 
 - [Marine Traffic](https://www.marinetraffic.com/) - MarineTraffic Live Ships Map. Discover information and vessel positions for vessels around the world. Search the MarineTraffic ships database of more than 550000 active and decommissioned vessels. ...
 - [VesselFinder](https://www.vesselfinder.com/)
-- [FlightAirMap](https://www.flightairmap.com/)
 - [OSINT on the Ocean](https://wondersmithrae.medium.com/osint-on-the-ocean-maritime-intelligence-gathering-techniques-2ee39e554fe1)
 - [ShipAIS.uk](https://shipais.uk/)
 - [FleetMon](https://www.fleetmon.com/)
@@ -1020,7 +1021,6 @@
 - [DorkSearch](https://dorksearch.com/)
 - [Google Dork Cheatsheet](https://github.com/robyfirnandoyusuf/Google-Dork-Cheatsheet)
 - [Google Hacking Database](https://www.exploit-db.com/google-hacking-database)
-- [theHarvester](https://pypi.org/project/theHarvester/)
 - [metagoofil](https://github.com/opsdisk/metagoofil) - metagoofil searches Google for specific types of files being publicly hosted on a web site and optionally downloads them to your local box.
 - [webdork](https://github.com/HACKE-RC/webdork) - A Python tool to automate some dorking stuff to find information disclosures.
 - [ATSCAN](https://github.com/AlisamTechnology/ATSCAN)
@@ -1094,7 +1094,6 @@
 - [Awesomelists.top](http://dev.awesomelists.top/#/)
 - [Zen](https://github.com/s0md3v/Zen)
 - [GitDorker](https://github.com/obheda12/GitDorker)
-- [PublicWWW](https://publicwww.com/) - Source-code search engine to locate tracking codes, technologies, or snippets across websites.
 
 ## WHOIS
 
@@ -1175,7 +1174,6 @@
 - [theZoo](https://github.com/ytisf/theZoo)
 - [Vx-underground.org](https://vx-underground.org/)
 - [VX Heaven](https://vx-underground.org/archive/VxHeaven/index.html)
-- [aptnotes/data](https://github.com/aptnotes/data)
 - [exploit-database-papers](https://github.com/offensive-security/exploitdb-papers)
 - [exploitdb-bin-sploits](https://github.com/offensive-security/exploitdb-bin-sploits)
 
@@ -1611,7 +1609,6 @@
 - [SeeThroughNY :: Pensions](https://www.seethroughny.net/pensions)
 - [Scotussearch.com](https://www.scotussearch.com/)
 - [Nonprofit Explorer](https://projects.propublica.org/nonprofits/)
-- [Coronavirus Bailouts](https://projects.propublica.org/coronavirus/bailouts/)
 - [Nursing Home Inspect](https://projects.propublica.org/nursing-homes/)
 - [Macron Campaign Emails](https://wikileaks.org//macron-emails/)
 - [DNC email database](https://wikileaks.org//dnc-emails/)

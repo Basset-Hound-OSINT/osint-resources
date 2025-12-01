@@ -46,9 +46,9 @@ homepage: https://my.website/page-about-this-index
 description: "A brief description about this index and what's in it."
 sources:
 - name: "Awesome Digital Preservation"
-  homepage: "https://github.com/digipres/awesome-digital-preservation/"
-  type: awesome-list
-  url: "https://raw.githubusercontent.com/digipres/awesome-digital-preservation/refs/heads/main/README.md"
+homepage: "https://github.com/digipres/awesome-digital-preservation/"
+type: awesome-list
+url: "https://raw.githubusercontent.com/digipres/awesome-digital-preservation/refs/heads/main/README.md"
 ```
 
 An example [`config.yaml`](./config.yaml) is provided that shows how it works in more detail.
@@ -94,7 +94,7 @@ cd index
 python -m http.server 8080
 ```
 
-and then the index will be accessible at <http://localhost:8080>. 
+and then the index will be accessible at <http://localhost:8080>.
 
 To share your Awesome Index, you can upload your files to a static web host like [GitHub Pages](https://pages.github.com/), [Netlify](https://www.netlify.com/) (e.g. using [Netlify Drop](https://app.netlify.com/drop)) or [these EU alternatives](https://european-alternatives.eu/category/jamstack-hosting).
 
@@ -112,12 +112,12 @@ uvx datasette serve index/records.db --metadata datasette-metadata.json
 Building an index can be integrated into GitHub Action build like this:
 
 ```
-      - name: Install uv
-        uses: astral-sh/setup-uv@v6
-        with:
-          python-version: 3.11
-      - name: Build the Awesome Index
-        run: uvx --from git+https://github.com/digipres/awesome-indexer@main awindex -c _awindex/config.yaml -o ./awesome-index
+- name: Install uv
+uses: astral-sh/setup-uv@v6
+with:
+python-version: 3.11
+- name: Build the Awesome Index
+run: uvx --from git+https://github.com/digipres/awesome-indexer@main awindex -c _awindex/config.yaml -o ./awesome-index
 ```
 
 There is an example [here](https://github.com/digipres/publications/blob/main/.github/workflows/pages.yml).

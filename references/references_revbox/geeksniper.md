@@ -8,319 +8,319 @@
 
 # Directory
 - [Windows](#2f81493de610f9b796656b269380b2de)
-    - [PE](#620af0d32e6ac1f4a3e97385d4d3efc0)
-        - [(68) Tool](#574db8bbaafbee72eeb30e28e2799458)
-        - [(324) Post](#7e890d391fa32df27beb1377a371518b)
-    - [DLL](#89f963773ee87e2af6f9170ee60a7fb2)
-        - [DLL Injection](#3b4617e54405a32290224b729ff9f2b3)
-            - [(67) Tools](#b0d50ee42d53b1f88b32988d34787137)
-            - [(70) Post](#1a0b0dab4cdbab08bbdc759bab70dbb6)
-        - [DLL Hijack](#f39e40e340f61ae168b67424baac5cc6)
-            - [(60) Post](#01e95333e07439ac8326253aa8950b4f)
-            - [(18) Tools](#c9cdcc6f4acbeda6c8ac8f4a1ba1ea6b)
-        - [Recent Add](#4dcfd9135aa5321b7fa65a88155256f9)
-            - [(16) Post](#b05f4c5cdfe64e1dde2a3c8556e85827)
-            - [(107) Tools](#9753a9d52e19c69dc119bf03e9d7c3d2)
-    - [UAC](#40fd1488e4a26ebf908f44fdcedd9675)
-        - [(29) Tools](#02517eda8c2519c564a19219e97d6237)
-        - [(123) Post](#90d7d5feb7fd506dc8fd6ee0d7e98285)
-    - [Sysmon](#0fed6a96b28f339611e7b111b8f42c23)
-        - [(12) Tools](#d48f038b58dc921660be221b4e302f70)
-        - [(131) Post](#2c8cb7fdf765b9d930569f7c64042d62)
-    - [ETW](#ac43a3ce5a889d8b18cf22acb6c31a72)
-        - [(64) Post](#11c4c804569626c1eb02140ba557bb85)
-        - [(35) Tools](#0af4bd8ca0fd27c9381a2d1fa8b71a1f)
-    - [AppLocker](#184bbacd8b9e08c30cc9ffcee9513f44)
-        - [(11) Tools](#8f1876dff78e80b60d00de25994276d9)
-        - [(93) Post](#286317d6d7c1a0578d8f5db940201320)
-    - [Tools](#b478e9a9a324c963da11437d18f04998)
-        - [(213) Other](#1afda3039b4ab9a3a1f60b179ccb3e76)
-        - [(10) .NET](#d90b60dc79837e06d8ba2a7ee1f109d3)
-        - [Recent Add](#f9fad1d4d1f0e871a174f67f63f319d8)
-        - [(5) Environment Setup](#6d2fe834b7662ecdd48c17163f732daf)
-        - [Process Injection](#8bfd27b42bb75956984994b3419fb582)
-        - [Code Injection](#1c6069610d73eb4246b58d78c64c9f44)
-        - [Memory Module](#7c1541a69da4c025a89b0571d8ce73d2)
-        - [(6) VT&&Hypbervisor](#19cfd3ea4bd01d440efb9d4dd97a64d0)
-        - [(8) Kernel&&Driver](#c3cda3278305549f4c21df25cbf638a4)
-        - [(3) Registry](#920b69cea1fc334bbc21a957dd0d9f6f)
-        - [(4) SystemCall](#d295182c016bd9c2d5479fe0e98a75df)
-        - [(3) Procmon](#518d80dfb8e9dda028d18ace1d3f3981)
-    - [Posts&&Videos](#3939f5e83ca091402022cb58e0349ab8)
-        - [Recent Add](#8e1344cae6e5f9a33e4e5718a012e292)
-        - [(5) Procmon](#af06263e9a92f6036dc5d4c4b28b9d8c)
-        - [(68) DEP](#fa89526db1f9373c57ea4ffa1ac8c39f)
+- [PE](#620af0d32e6ac1f4a3e97385d4d3efc0)
+- [(68) Tool](#574db8bbaafbee72eeb30e28e2799458)
+- [(324) Post](#7e890d391fa32df27beb1377a371518b)
+- [DLL](#89f963773ee87e2af6f9170ee60a7fb2)
+- [DLL Injection](#3b4617e54405a32290224b729ff9f2b3)
+- [(67) Tools](#b0d50ee42d53b1f88b32988d34787137)
+- [(70) Post](#1a0b0dab4cdbab08bbdc759bab70dbb6)
+- [DLL Hijack](#f39e40e340f61ae168b67424baac5cc6)
+- [(60) Post](#01e95333e07439ac8326253aa8950b4f)
+- [(18) Tools](#c9cdcc6f4acbeda6c8ac8f4a1ba1ea6b)
+- [Recent Add](#4dcfd9135aa5321b7fa65a88155256f9)
+- [(16) Post](#b05f4c5cdfe64e1dde2a3c8556e85827)
+- [(107) Tools](#9753a9d52e19c69dc119bf03e9d7c3d2)
+- [UAC](#40fd1488e4a26ebf908f44fdcedd9675)
+- [(29) Tools](#02517eda8c2519c564a19219e97d6237)
+- [(123) Post](#90d7d5feb7fd506dc8fd6ee0d7e98285)
+- [Sysmon](#0fed6a96b28f339611e7b111b8f42c23)
+- [(12) Tools](#d48f038b58dc921660be221b4e302f70)
+- [(131) Post](#2c8cb7fdf765b9d930569f7c64042d62)
+- [ETW](#ac43a3ce5a889d8b18cf22acb6c31a72)
+- [(64) Post](#11c4c804569626c1eb02140ba557bb85)
+- [(35) Tools](#0af4bd8ca0fd27c9381a2d1fa8b71a1f)
+- [AppLocker](#184bbacd8b9e08c30cc9ffcee9513f44)
+- [(11) Tools](#8f1876dff78e80b60d00de25994276d9)
+- [(93) Post](#286317d6d7c1a0578d8f5db940201320)
+- [Tools](#b478e9a9a324c963da11437d18f04998)
+- [(213) Other](#1afda3039b4ab9a3a1f60b179ccb3e76)
+- [(10) .NET](#d90b60dc79837e06d8ba2a7ee1f109d3)
+- [Recent Add](#f9fad1d4d1f0e871a174f67f63f319d8)
+- [(5) Environment Setup](#6d2fe834b7662ecdd48c17163f732daf)
+- [Process Injection](#8bfd27b42bb75956984994b3419fb582)
+- [Code Injection](#1c6069610d73eb4246b58d78c64c9f44)
+- [Memory Module](#7c1541a69da4c025a89b0571d8ce73d2)
+- [(6) VT&&Hypbervisor](#19cfd3ea4bd01d440efb9d4dd97a64d0)
+- [(8) Kernel&&Driver](#c3cda3278305549f4c21df25cbf638a4)
+- [(3) Registry](#920b69cea1fc334bbc21a957dd0d9f6f)
+- [(4) SystemCall](#d295182c016bd9c2d5479fe0e98a75df)
+- [(3) Procmon](#518d80dfb8e9dda028d18ace1d3f3981)
+- [Posts&&Videos](#3939f5e83ca091402022cb58e0349ab8)
+- [Recent Add](#8e1344cae6e5f9a33e4e5718a012e292)
+- [(5) Procmon](#af06263e9a92f6036dc5d4c4b28b9d8c)
+- [(68) DEP](#fa89526db1f9373c57ea4ffa1ac8c39f)
 - [Linux](#dc664c913dc63ec6b98b47fcced4fdf0)
-    - [ELF](#a63015576552ded272a242064f3fe8c9)
-        - [(59) Tools](#929786b8490456eedfb975a41ca9da07)
-        - [(102) Post](#72d101d0f32d5521d5d305e7e653fdd3)
-    - [Tools](#89e277bca2740d737c1aeac3192f374c)
-        - [(99) Recent Add](#203d00ef3396d68f5277c90279f4ebf3)
-    - [Post&&Videos](#f6d78e82c3e5f67d13d9f00c602c92f0)
-        - [Recent Add](#bdf33f0b1200cabea9c6815697d9e5aa)
+- [ELF](#a63015576552ded272a242064f3fe8c9)
+- [(59) Tools](#929786b8490456eedfb975a41ca9da07)
+- [(102) Post](#72d101d0f32d5521d5d305e7e653fdd3)
+- [Tools](#89e277bca2740d737c1aeac3192f374c)
+- [(99) Recent Add](#203d00ef3396d68f5277c90279f4ebf3)
+- [Post&&Videos](#f6d78e82c3e5f67d13d9f00c602c92f0)
+- [Recent Add](#bdf33f0b1200cabea9c6815697d9e5aa)
 - [Apple&&iOS&&iXxx](#069664f347ae73b1370c4f5a2ec9da9f)
-    - [Mach-O](#830f40713cef05f0665180d840d56f45)
-        - [(28) Tools](#9b0f5682dc818c93c4de3f46fc3f43d0)
-        - [(24) Post](#750700dcc62fbd83e659226db595b5cc)
-    - [JailBreak](#bba00652bff1672ab1012abd35ac9968)
-        - [(96) Tools](#ff19d5d94315d035bbcb3ef0c348c75b)
-        - [(14) Post](#cbb847a025d426a412c7cd5d8a2332b5)
-    - [LLDB](#004d0b9e325af207df8e1ca61af7b721)
-        - [(11) Tools](#c20772abc204dfe23f3e946f8c73dfda)
-        - [(17) Post](#86eca88f321a86712cc0a66df5d72e56)
-    - [XCode](#977cef2fc942ac125fa395254ab70eea)
-        - [(18) Tools](#7037d96c1017978276cb920f65be2297)
-        - [(49) Post](#a2d228a68b40162953d3d482ce009d4e)
-    - [Tools](#58cd9084afafd3cd293564c1d615dd7f)
-        - [(319) Recent Add](#d0108e91e6863289f89084ff09df39d0)
-    - [Posts&&Videos](#c97bbe32bbd26c72ceccb43400e15bf1)
-        - [Recent Add](#d4425fc7c360c2ff324be718cf3b7a78)
+- [Mach-O](#830f40713cef05f0665180d840d56f45)
+- [(28) Tools](#9b0f5682dc818c93c4de3f46fc3f43d0)
+- [(24) Post](#750700dcc62fbd83e659226db595b5cc)
+- [JailBreak](#bba00652bff1672ab1012abd35ac9968)
+- [(96) Tools](#ff19d5d94315d035bbcb3ef0c348c75b)
+- [(14) Post](#cbb847a025d426a412c7cd5d8a2332b5)
+- [LLDB](#004d0b9e325af207df8e1ca61af7b721)
+- [(11) Tools](#c20772abc204dfe23f3e946f8c73dfda)
+- [(17) Post](#86eca88f321a86712cc0a66df5d72e56)
+- [XCode](#977cef2fc942ac125fa395254ab70eea)
+- [(18) Tools](#7037d96c1017978276cb920f65be2297)
+- [(49) Post](#a2d228a68b40162953d3d482ce009d4e)
+- [Tools](#58cd9084afafd3cd293564c1d615dd7f)
+- [(319) Recent Add](#d0108e91e6863289f89084ff09df39d0)
+- [Posts&&Videos](#c97bbe32bbd26c72ceccb43400e15bf1)
+- [Recent Add](#d4425fc7c360c2ff324be718cf3b7a78)
 - [Android](#11a59671b467a8cdbdd4ea9d5e5d9b51)
-    - [Tools](#2110ded2aa5637fa933cc674bc33bf21)
-        - [(183) Recent Add1](#883a4e0dd67c6482d28a7a14228cd942)
-        - [(4) HotFix](#fa49f65b8d3c71b36c6924ce51c2ca0c)
-        - [(1) Package](#ec395c8f974c75963d88a9829af12a90)
-        - [(2) Collection](#767078c52aca04c452c095f49ad73956)
-        - [(1) App](#17408290519e1ca7745233afea62c43c)
-        - [(30) Xposed](#7f353b27e45b5de6b0e6ac472b02cbf1)
-        - [(19) Pack&&Unpack](#50f63dce18786069de2ec637630ff167)
-        - [(12) HOOK](#596b6cf8fd36bc4c819335f12850a915)
-        - [(9) Emulator](#5afa336e229e4c38ad378644c484734a)
-        - [(6) IDA](#0a668d220ce74e11ed2738c4e3ae3c9e)
-        - [(11) Debug](#bb9f8e636857320abf0502c19af6c763)
-        - [(34) Malware](#f975a85510f714ec3cc2551e868e75b8)
-        - [(5) Obfuscate](#1d83ca6d8b02950be10ac8e4b8a2d976)
-        - [(15) Reverse Engineering](#6d2b758b3269bac7d69a2d2c8b45194c)
-        - [(319) Recent Add](#63fd2c592145914e99f837cecdc5a67c)
-    - [(2) Posts&&Videos](#f0493b259e1169b5ddd269b13cfd30e6)
+- [Tools](#2110ded2aa5637fa933cc674bc33bf21)
+- [(183) Recent Add1](#883a4e0dd67c6482d28a7a14228cd942)
+- [(4) HotFix](#fa49f65b8d3c71b36c6924ce51c2ca0c)
+- [(1) Package](#ec395c8f974c75963d88a9829af12a90)
+- [(2) Collection](#767078c52aca04c452c095f49ad73956)
+- [(1) App](#17408290519e1ca7745233afea62c43c)
+- [(30) Xposed](#7f353b27e45b5de6b0e6ac472b02cbf1)
+- [(19) Pack&&Unpack](#50f63dce18786069de2ec637630ff167)
+- [(12) HOOK](#596b6cf8fd36bc4c819335f12850a915)
+- [(9) Emulator](#5afa336e229e4c38ad378644c484734a)
+- [(6) IDA](#0a668d220ce74e11ed2738c4e3ae3c9e)
+- [(11) Debug](#bb9f8e636857320abf0502c19af6c763)
+- [(34) Malware](#f975a85510f714ec3cc2551e868e75b8)
+- [(5) Obfuscate](#1d83ca6d8b02950be10ac8e4b8a2d976)
+- [(15) Reverse Engineering](#6d2b758b3269bac7d69a2d2c8b45194c)
+- [(319) Recent Add](#63fd2c592145914e99f837cecdc5a67c)
+- [(2) Posts&&Videos](#f0493b259e1169b5ddd269b13cfd30e6)
 - [IDA](#08e59e476824a221f6e4a69c0bba7d63)
-    - [Tools](#f11ab1ff46aa300cc3e86528b8a98ad7)
-        - [(97) No Category](#c39a6d8598dde6abfeef43faf931beb5)
-        - [Structure&&Class](#fb4f0c061a72fc38656691746e7c45ce)
-            - [(6) No Category](#fa5ede9a4f58d4efd98585d3158be4fb)
-            - [(8) C++ Class&&Virtual Table](#4900b1626f10791748b20630af6d6123)
-        - [(3) Collection](#a7dac37cd93b8bb42c7d6aedccb751b3)
-        - [(9) Skin&&Theme](#fabf03b862a776bbd8bcc4574943a65a)
-        - [(4) Firmware&&Embed Device](#a8f5db3ab4bc7bc3d6ca772b3b9b0b1e)
-        - [Signature(FLIRT...)&&Diff&&Match](#02088f4884be6c9effb0f1e9a3795e58)
-            - [(17) No Category](#cf04b98ea9da0056c055e2050da980c1)
-            - [FLIRT](#19360afa4287236abe47166154bc1ece)
-                - [(3) FLIRT Signature Collection](#1c9d8dfef3c651480661f98418c49197)
-                - [(2) FLIRT Signature Generate](#a9a63d23d32c6c789ca4d2e146c9b6d0)
-            - [(11) Diff&&Match](#161e5a3437461dc8959cc923e6a18ef7)
-            - [(7) Yara](#46c9dfc585ae59fe5e6f7ddf542fb31a)
-        - [(6) IDB](#5e91b280aab7f242cbc37d64ddbff82f)
-        - [(5) Collaborative RE](#206ca17fc949b8e0ae62731d9bb244cb)
-        - [(9) Sync With Debugger](#f7d311685152ac005cfce5753c006e4b)
-        - [Import Export&&Sync With Other Tools](#6fb7e41786c49cc3811305c520dfe9a1)
-            - [(13) No Category](#8ad723b704b044e664970b11ce103c09)
-            - [(5) Ghidra](#c7066b0c388cd447e980bf0eb38f39ab)
-            - [(3) BinNavi](#11139e7d6db4c1cef22718868f29fe12)
-            - [(3) BinaryNinja](#d1ff64bee76f6749aef6100d72bfbe3a)
-            - [(2) Radare2](#21ed198ae5a974877d7a635a4b039ae3)
-            - [(4) Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd)
-            - [(2) IntelPin](#dd0332da5a1482df414658250e6357f8)
-        - [Specific Target](#004c199e1dbf71769fbafcd8e58d1ead)
-            - [(26) No Category](#5578c56ca09a5804433524047840980e)
-            - [(2) GoLang](#1b17ac638aaa09852966306760fda46b)
-            - [(4) Windows Driver](#4c158ccc5aee04383755851844fdd137)
-            - [(4) PS3&&PS4](#315b1b8b41c67ae91b841fce1d4190b5)
-            - [(33) Loader&Processor](#cb59d84840e41330a7b5e275c0b81725)
-            - [(4) PDB](#f5e51763bb09d8fd47ee575a98bedca1)
-            - [(2) Flash&&SWF](#7d0681efba2cf3adaba2780330cd923a)
-            - [(4) Malware Family](#841d605300beba45c3be131988514a03)
-            - [(1) CTF](#ad44205b2d943cfa2fa805b2643f4595)
-        - [IDAPython](#ad68872e14f70db53e8d9519213ec039)
-            - [(8) No Category](#2299bc16945c25652e5ad4d48eae8eca)
-            - [(1) Cheatsheets](#c42137cf98d6042372b1fd43c3635135)
-        - [(6) Instruction Reference&&Doc](#846eebe73bef533041d74fc711cafb43)
-        - [Script Writting](#c08ebe5b7eec9fc96f8eff36d1d5cc7d)
-            - [(9) No Category](#45fd7cfce682c7c25b4f3fbc4c461ba2)
-            - [(3) Qt](#1a56a5b726aaa55ec5b7a5087d6c8968)
-            - [(3) Console&&GUI](#1721c09501e4defed9eaa78b8d708361)
-            - [(2) Template](#227fbff77e3a13569ef7b007344d5d2e)
-            - [(2) Other Lang](#8b19bb8cf9a5bc9e6ab045f3b4fabf6a)
-        - [(16) Ancient](#dc35a2b02780cdaa8effcae2b6ce623e)
-        - [Debug&&Dynamic Data](#e3e7030efc3b4de3b5b8750b7d93e6dd)
-            - [(10) No Category](#2944dda5289f494e5e636089db0d6a6a)
-            - [(10) DBI Data](#0fbd352f703b507853c610a664f024d1)
-            - [(4) Debugger Data](#b31acf6c84a9506066d497af4e702bf5)
-        - [(14) Decompiler&&AST](#d2166f4dac4eab7fadfe0fd06467fbc9)
-        - [(7) DeObfuscate](#7199e8787c0de5b428f50263f965fda7)
-        - [Nav&&Quick Access&&Graph&&Image](#fcf75a0881617d1f684bc8b359c684d7)
-            - [(15) No Category](#c5b120e1779b928d860ad64ff8d23264)
-            - [(9) GUI Enhencement](#03fac5b3abdbd56974894a261ce4e25f)
-            - [(3) Graph](#3b1dba00630ce81cba525eea8fcdae08)
-            - [(3) Search](#8f9468e9ab26128567f4be87ead108d7)
-        - [(7) Android](#66052f824f5054aa0f70785a2389a478)
-        - [Apple&&macOS&&iXxx&&Objective-C&&SWift&&Mach-O](#2adc0044b2703fb010b3bf73b1f1ea4a)
-            - [(5) No Category](#8530752bacfb388f3726555dc121cb1a)
-            - [(3) Kernel Cache](#82d0fa2d6934ce29794a651513934384)
-            - [(3) Mach-O](#d249a8d09a3f25d75bb7ba8b32bd9ec5)
-            - [(3) Swift](#1c698e298f6112a86c12881fbd8173c7)
-        - [(9) ELF](#e5e403123c70ddae7bd904d3a3005dbb)
-        - [(5) Microcode](#7a2977533ccdac70ee6e58a7853b756b)
-        - [(6) Emulator](#b38dab81610be087bd5bc7785269b8cc)
-        - [(4) Recent Add](#c39dbae63d6a3302c4df8073b4d1cdc8)
-        - [(4) Part Of Other Tool](#83de90385d03ac8ef27360bfcdc1ab48)
-        - [Vul](#1ded622dca60b67288a591351de16f8b)
-            - [(7) No Category](#385d6777d0747e79cccab0a19fa90e7e)
-            - [(2) ROP](#cf2efa7e3edb24975b92d2e26ca825d2)
-        - [(7) Patch](#7d557bc3d677d206ef6c5a35ca8b3a14)
-        - [(3) Other](#7dfd8abad50c14cd6bdc8d8b79b6f595)
-        - [Function](#90bf5d31a3897400ac07e15545d4be02)
-            - [(4) No Category](#347a2158bdd92b00cd3d4ba9a0be00ae)
-            - [(6) Rename&&Prefix&&Tag](#73813456eeb8212fd45e0ea347bec349)
-            - [(5) Nav&&Search](#e4616c414c24b58626f834e1be079ebc)
-            - [(2) demangle](#cadae88b91a57345d266c68383eb05c5)
-        - [(3) Taint Analysis&&Symbolic Execution](#34ac84853604a7741c61670f2a075d20)
-        - [(8) string](#9dcc6c7dd980bec1f92d0cc9a2209a24)
-        - [(3) encrypt&&decrypt](#06d2caabef97cf663bd29af2b1fe270c)
-    - [Video&&Post](#18c6a45392d6b383ea24b363d2f3e76b)
-        - [(6) Series-Labeless Introduction](#04cba8dbb72e95d9c721fe16a3b48783)
-        - [(24) Series-Reversing With IDA From Scrach](#1a2e56040cfc42c11c5b4fa86978cc19)
-        - [Series-Using IDAPython To Make Your Life Easier](#e838a1ecdcf3d068547dd0d7b5c446c6)
-            - [(6) Original](#7163f7c92c9443e17f3f76cc16c2d796)
-            - [(5) ZH](#fc62c644a450f3e977af313edd5ab124)
-        - [Tool&&Plugin&&Script](#3d3bc775abd7f254ff9ff90d669017c9)
-            - [(51) No Category](#cd66794473ea90aa6241af01718c3a7d)
-            - [(3) Loader&&Processor](#43a4761e949187bf737e378819752c3b)
-            - [(1) With Other Tools](#c7483f3b20296ac68084a8c866230e15)
-        - [(10) Tips&&Tricks](#a4bd25d3dc2f0be840e39674be67d66b)
-        - [(125) No Category](#4187e477ebc45d1721f045da62dbf4e8)
-        - [(5) Translate-The IDA Pro Book](#ea11818602eb33e8b165eb18d3710965)
-        - [(2) Translate-Reverse Engineering Code With IDA Pro](#ec5f7b9ed06500c537aa25851a3f2d3a)
-        - [(5) Series-Reversing C Code With IDA](#8433dd5df40aaf302b179b1fda1d2863)
-        - [REPractice](#d8e48eb05d72db3ac1e050d8ebc546e1)
-            - [(11) No Category](#374c6336120363a5c9d9a27d7d669bf3)
-            - [(15) Malware](#0b3e1936ad7c4ccc10642e994c653159)
-            - [(2) Vuln Analysis&&Vuln Hunting](#03465020d4140590326ae12c9601ecfd)
-        - [(27) Recent Add](#37634a992983db427ce41b37dd9a98c2)
-        - [(4) IDASelf](#2120fe5420607a363ae87f5d2fed459f)
-        - [(1) Microcode](#e9ce398c2c43170e69c95fe9ad8d22fc)
-        - [(1) AgainstIDA](#9c0ec56f402a2b9938417f6ecbaeaa72)
+- [Tools](#f11ab1ff46aa300cc3e86528b8a98ad7)
+- [(97) No Category](#c39a6d8598dde6abfeef43faf931beb5)
+- [Structure&&Class](#fb4f0c061a72fc38656691746e7c45ce)
+- [(6) No Category](#fa5ede9a4f58d4efd98585d3158be4fb)
+- [(8) C++ Class&&Virtual Table](#4900b1626f10791748b20630af6d6123)
+- [(3) Collection](#a7dac37cd93b8bb42c7d6aedccb751b3)
+- [(9) Skin&&Theme](#fabf03b862a776bbd8bcc4574943a65a)
+- [(4) Firmware&&Embed Device](#a8f5db3ab4bc7bc3d6ca772b3b9b0b1e)
+- [Signature(FLIRT...)&&Diff&&Match](#02088f4884be6c9effb0f1e9a3795e58)
+- [(17) No Category](#cf04b98ea9da0056c055e2050da980c1)
+- [FLIRT](#19360afa4287236abe47166154bc1ece)
+- [(3) FLIRT Signature Collection](#1c9d8dfef3c651480661f98418c49197)
+- [(2) FLIRT Signature Generate](#a9a63d23d32c6c789ca4d2e146c9b6d0)
+- [(11) Diff&&Match](#161e5a3437461dc8959cc923e6a18ef7)
+- [(7) Yara](#46c9dfc585ae59fe5e6f7ddf542fb31a)
+- [(6) IDB](#5e91b280aab7f242cbc37d64ddbff82f)
+- [(5) Collaborative RE](#206ca17fc949b8e0ae62731d9bb244cb)
+- [(9) Sync With Debugger](#f7d311685152ac005cfce5753c006e4b)
+- [Import Export&&Sync With Other Tools](#6fb7e41786c49cc3811305c520dfe9a1)
+- [(13) No Category](#8ad723b704b044e664970b11ce103c09)
+- [(5) Ghidra](#c7066b0c388cd447e980bf0eb38f39ab)
+- [(3) BinNavi](#11139e7d6db4c1cef22718868f29fe12)
+- [(3) BinaryNinja](#d1ff64bee76f6749aef6100d72bfbe3a)
+- [(2) Radare2](#21ed198ae5a974877d7a635a4b039ae3)
+- [(4) Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd)
+- [(2) IntelPin](#dd0332da5a1482df414658250e6357f8)
+- [Specific Target](#004c199e1dbf71769fbafcd8e58d1ead)
+- [(26) No Category](#5578c56ca09a5804433524047840980e)
+- [(2) GoLang](#1b17ac638aaa09852966306760fda46b)
+- [(4) Windows Driver](#4c158ccc5aee04383755851844fdd137)
+- [(4) PS3&&PS4](#315b1b8b41c67ae91b841fce1d4190b5)
+- [(33) Loader&Processor](#cb59d84840e41330a7b5e275c0b81725)
+- [(4) PDB](#f5e51763bb09d8fd47ee575a98bedca1)
+- [(2) Flash&&SWF](#7d0681efba2cf3adaba2780330cd923a)
+- [(4) Malware Family](#841d605300beba45c3be131988514a03)
+- [(1) CTF](#ad44205b2d943cfa2fa805b2643f4595)
+- [IDAPython](#ad68872e14f70db53e8d9519213ec039)
+- [(8) No Category](#2299bc16945c25652e5ad4d48eae8eca)
+- [(1) Cheatsheets](#c42137cf98d6042372b1fd43c3635135)
+- [(6) Instruction Reference&&Doc](#846eebe73bef533041d74fc711cafb43)
+- [Script Writting](#c08ebe5b7eec9fc96f8eff36d1d5cc7d)
+- [(9) No Category](#45fd7cfce682c7c25b4f3fbc4c461ba2)
+- [(3) Qt](#1a56a5b726aaa55ec5b7a5087d6c8968)
+- [(3) Console&&GUI](#1721c09501e4defed9eaa78b8d708361)
+- [(2) Template](#227fbff77e3a13569ef7b007344d5d2e)
+- [(2) Other Lang](#8b19bb8cf9a5bc9e6ab045f3b4fabf6a)
+- [(16) Ancient](#dc35a2b02780cdaa8effcae2b6ce623e)
+- [Debug&&Dynamic Data](#e3e7030efc3b4de3b5b8750b7d93e6dd)
+- [(10) No Category](#2944dda5289f494e5e636089db0d6a6a)
+- [(10) DBI Data](#0fbd352f703b507853c610a664f024d1)
+- [(4) Debugger Data](#b31acf6c84a9506066d497af4e702bf5)
+- [(14) Decompiler&&AST](#d2166f4dac4eab7fadfe0fd06467fbc9)
+- [(7) DeObfuscate](#7199e8787c0de5b428f50263f965fda7)
+- [Nav&&Quick Access&&Graph&&Image](#fcf75a0881617d1f684bc8b359c684d7)
+- [(15) No Category](#c5b120e1779b928d860ad64ff8d23264)
+- [(9) GUI Enhencement](#03fac5b3abdbd56974894a261ce4e25f)
+- [(3) Graph](#3b1dba00630ce81cba525eea8fcdae08)
+- [(3) Search](#8f9468e9ab26128567f4be87ead108d7)
+- [(7) Android](#66052f824f5054aa0f70785a2389a478)
+- [Apple&&macOS&&iXxx&&Objective-C&&SWift&&Mach-O](#2adc0044b2703fb010b3bf73b1f1ea4a)
+- [(5) No Category](#8530752bacfb388f3726555dc121cb1a)
+- [(3) Kernel Cache](#82d0fa2d6934ce29794a651513934384)
+- [(3) Mach-O](#d249a8d09a3f25d75bb7ba8b32bd9ec5)
+- [(3) Swift](#1c698e298f6112a86c12881fbd8173c7)
+- [(9) ELF](#e5e403123c70ddae7bd904d3a3005dbb)
+- [(5) Microcode](#7a2977533ccdac70ee6e58a7853b756b)
+- [(6) Emulator](#b38dab81610be087bd5bc7785269b8cc)
+- [(4) Recent Add](#c39dbae63d6a3302c4df8073b4d1cdc8)
+- [(4) Part Of Other Tool](#83de90385d03ac8ef27360bfcdc1ab48)
+- [Vul](#1ded622dca60b67288a591351de16f8b)
+- [(7) No Category](#385d6777d0747e79cccab0a19fa90e7e)
+- [(2) ROP](#cf2efa7e3edb24975b92d2e26ca825d2)
+- [(7) Patch](#7d557bc3d677d206ef6c5a35ca8b3a14)
+- [(3) Other](#7dfd8abad50c14cd6bdc8d8b79b6f595)
+- [Function](#90bf5d31a3897400ac07e15545d4be02)
+- [(4) No Category](#347a2158bdd92b00cd3d4ba9a0be00ae)
+- [(6) Rename&&Prefix&&Tag](#73813456eeb8212fd45e0ea347bec349)
+- [(5) Nav&&Search](#e4616c414c24b58626f834e1be079ebc)
+- [(2) demangle](#cadae88b91a57345d266c68383eb05c5)
+- [(3) Taint Analysis&&Symbolic Execution](#34ac84853604a7741c61670f2a075d20)
+- [(8) string](#9dcc6c7dd980bec1f92d0cc9a2209a24)
+- [(3) encrypt&&decrypt](#06d2caabef97cf663bd29af2b1fe270c)
+- [Video&&Post](#18c6a45392d6b383ea24b363d2f3e76b)
+- [(6) Series-Labeless Introduction](#04cba8dbb72e95d9c721fe16a3b48783)
+- [(24) Series-Reversing With IDA From Scrach](#1a2e56040cfc42c11c5b4fa86978cc19)
+- [Series-Using IDAPython To Make Your Life Easier](#e838a1ecdcf3d068547dd0d7b5c446c6)
+- [(6) Original](#7163f7c92c9443e17f3f76cc16c2d796)
+- [(5) ZH](#fc62c644a450f3e977af313edd5ab124)
+- [Tool&&Plugin&&Script](#3d3bc775abd7f254ff9ff90d669017c9)
+- [(51) No Category](#cd66794473ea90aa6241af01718c3a7d)
+- [(3) Loader&&Processor](#43a4761e949187bf737e378819752c3b)
+- [(1) With Other Tools](#c7483f3b20296ac68084a8c866230e15)
+- [(10) Tips&&Tricks](#a4bd25d3dc2f0be840e39674be67d66b)
+- [(125) No Category](#4187e477ebc45d1721f045da62dbf4e8)
+- [(5) Translate-The IDA Pro Book](#ea11818602eb33e8b165eb18d3710965)
+- [(2) Translate-Reverse Engineering Code With IDA Pro](#ec5f7b9ed06500c537aa25851a3f2d3a)
+- [(5) Series-Reversing C Code With IDA](#8433dd5df40aaf302b179b1fda1d2863)
+- [REPractice](#d8e48eb05d72db3ac1e050d8ebc546e1)
+- [(11) No Category](#374c6336120363a5c9d9a27d7d669bf3)
+- [(15) Malware](#0b3e1936ad7c4ccc10642e994c653159)
+- [(2) Vuln Analysis&&Vuln Hunting](#03465020d4140590326ae12c9601ecfd)
+- [(27) Recent Add](#37634a992983db427ce41b37dd9a98c2)
+- [(4) IDASelf](#2120fe5420607a363ae87f5d2fed459f)
+- [(1) Microcode](#e9ce398c2c43170e69c95fe9ad8d22fc)
+- [(1) AgainstIDA](#9c0ec56f402a2b9938417f6ecbaeaa72)
 - [Ghidra](#319821036a3319d3ade5805f384d3165)
-    - [Plugins&&Scripts](#fa45b20f6f043af1549b92f7c46c9719)
-        - [(12) Recent Add](#ce70b8d45be0a3d29705763564623aca)
-        - [Specific Target](#69dc4207618a2977fe8cd919e7903fa5)
-            - [(4) No Category](#da5d2b05da13f8e65aa26d6a1c95a8d0)
-            - [(18) Loader&&Processor](#058bb9893323f337ad1773725d61f689)
-            - [(2) Xbox](#51a2c42c6d339be24badf52acb995455)
-        - [With Other Tools](#99e3b02da53f1dbe59e0e277ef894687)
-            - [(2) Radare2](#e1cc732d1388084530b066c26e24887b)
-            - [No Category](#5923db547e1f04f708272543021701d2)
-            - [(5) IDA](#d832a81018c188bf585fcefa3ae23062)
-            - [(1) DBI](#60e86981b2c98f727587e7de927e0519)
-            - [(1) Debugger](#e81053b03a859e8ac72f7fe79e80341a)
-        - [(1) Skin&&Theme](#cccbd06c6b9b03152d07a4072152ae27)
-        - [(4) Ghidra](#2ae406afda6602c8f02d73678b2ff040)
-        - [Script Writting](#45910c8ea12447df9cdde2bea425f23f)
-            - [(1) Other](#c12ccb8e11ba94184f8f24767eb64212)
-            - [(1) Lang](#b24e162720cffd2d2456488571c1a136)
-    - [Post&&Videos](#273df546f1145fbed92bb554a327b87a)
-        - [(30) Recent Add](#ce49901b4914f3688ef54585c8f9df1a)
-        - [(4) Vuln](#b7fb955b670df2babc67e5942297444d)
-        - [Vuln Analysis](#dd0d49a5e6bd34b372d9bbf4475e8024)
-            - [(3) Vuln Analysis&&Vuln Hunting](#375c75af4fa078633150415eec7c867d)
-            - [(9) No Category](#f0ab053d7a282ab520c3a327fc91ba2e)
-            - [(9) Malware](#4e3f53845efe99da287b2cea1bdda97c)
-        - [Other](#92f60c044ed13b3ffde631794edd2756)
-        - [Tips&&Tricks](#4bfa6dcf708b3f896870c9d3638c0cde)
-        - [(5) Script Writting](#0d086cf7980f65da8f7112b901fecdc1)
-        - [(15) RecentAdd1](#8962bde3fbfb1d1130879684bdf3eed0)
+- [Plugins&&Scripts](#fa45b20f6f043af1549b92f7c46c9719)
+- [(12) Recent Add](#ce70b8d45be0a3d29705763564623aca)
+- [Specific Target](#69dc4207618a2977fe8cd919e7903fa5)
+- [(4) No Category](#da5d2b05da13f8e65aa26d6a1c95a8d0)
+- [(18) Loader&&Processor](#058bb9893323f337ad1773725d61f689)
+- [(2) Xbox](#51a2c42c6d339be24badf52acb995455)
+- [With Other Tools](#99e3b02da53f1dbe59e0e277ef894687)
+- [(2) Radare2](#e1cc732d1388084530b066c26e24887b)
+- [No Category](#5923db547e1f04f708272543021701d2)
+- [(5) IDA](#d832a81018c188bf585fcefa3ae23062)
+- [(1) DBI](#60e86981b2c98f727587e7de927e0519)
+- [(1) Debugger](#e81053b03a859e8ac72f7fe79e80341a)
+- [(1) Skin&&Theme](#cccbd06c6b9b03152d07a4072152ae27)
+- [(4) Ghidra](#2ae406afda6602c8f02d73678b2ff040)
+- [Script Writting](#45910c8ea12447df9cdde2bea425f23f)
+- [(1) Other](#c12ccb8e11ba94184f8f24767eb64212)
+- [(1) Lang](#b24e162720cffd2d2456488571c1a136)
+- [Post&&Videos](#273df546f1145fbed92bb554a327b87a)
+- [(30) Recent Add](#ce49901b4914f3688ef54585c8f9df1a)
+- [(4) Vuln](#b7fb955b670df2babc67e5942297444d)
+- [Vuln Analysis](#dd0d49a5e6bd34b372d9bbf4475e8024)
+- [(3) Vuln Analysis&&Vuln Hunting](#375c75af4fa078633150415eec7c867d)
+- [(9) No Category](#f0ab053d7a282ab520c3a327fc91ba2e)
+- [(9) Malware](#4e3f53845efe99da287b2cea1bdda97c)
+- [Other](#92f60c044ed13b3ffde631794edd2756)
+- [Tips&&Tricks](#4bfa6dcf708b3f896870c9d3638c0cde)
+- [(5) Script Writting](#0d086cf7980f65da8f7112b901fecdc1)
+- [(15) RecentAdd1](#8962bde3fbfb1d1130879684bdf3eed0)
 - [x64dbg](#b1a6c053e88e86ce01bbd78c54c63a7c)
-    - [Plugins&&Scripts](#b4a856db286f9f29b5a32d477d6b3f3a)
-        - [(63) Recent Add](#da5688c7823802e734c39b539aa39df7)
-        - [(1) x64dbg](#353ea40f2346191ecb828210a685f9db)
-    - [(21) Post&&Videos](#22894d6f2255dc43d82dd46bdbc20ba1)
+- [Plugins&&Scripts](#b4a856db286f9f29b5a32d477d6b3f3a)
+- [(63) Recent Add](#da5688c7823802e734c39b539aa39df7)
+- [(1) x64dbg](#353ea40f2346191ecb828210a685f9db)
+- [(21) Post&&Videos](#22894d6f2255dc43d82dd46bdbc20ba1)
 - [OllyDbg](#37e37e665eac00de3f55a13dcfd47320)
-    - [Plugins&&Scripts](#7834e399e48e6c64255a1a0fdb6b88f5)
-        - [(13) Recent Add](#92c44f98ff5ad8f8b0f5e10367262f9b)
-    - [(122) Post&&Videos](#8dd3e63c4e1811973288ea8f1581dfdb)
+- [Plugins&&Scripts](#7834e399e48e6c64255a1a0fdb6b88f5)
+- [(13) Recent Add](#92c44f98ff5ad8f8b0f5e10367262f9b)
+- [(122) Post&&Videos](#8dd3e63c4e1811973288ea8f1581dfdb)
 - [WinDBG](#0a506e6fb2252626add375f884c9095e)
-    - [Plugins&&Scripts](#37eea2c2e8885eb435987ccf3f467122)
-        - [(67) Recent Add](#2ef75ae7852daa9862b2217dca252cc3)
-    - [(155) Post&&Videos](#6d8bac8bfb5cda00c7e3bd38d64cbce3)
+- [Plugins&&Scripts](#37eea2c2e8885eb435987ccf3f467122)
+- [(67) Recent Add](#2ef75ae7852daa9862b2217dca252cc3)
+- [(155) Post&&Videos](#6d8bac8bfb5cda00c7e3bd38d64cbce3)
 - [Radare2](#86cb7d8f548ca76534b5828cb5b0abce)
-    - [Plugins&&Scripts](#0e08f9478ed8388319f267e75e2ef1eb)
-        - [(76) Recent Add](#6922457cb0d4b6b87a34caf39aa31dfe)
-        - [(1) Radare2](#ec3f0b5c2cf36004c4dd3d162b94b91a)
-        - [With Other Tools](#1a6652a1cb16324ab56589cb1333576f)
-            - [(4) No Category](#dfe53924d678f9225fc5ece9413b890f)
-            - [(3) IDA](#1cfe869820ecc97204a350a3361b31a7)
-        - [GUI](#f7778a5392b90b03a3e23ef94a0cc3c6)
-            - [(4) GUI](#8f151d828263d3bc038f75f8d6418758)
-            - [(5) Cutter](#df45c3c60bd074e21d650266aa85c241)
-    - [Posts&&Videos](#95fdc7692c4eda74f7ca590bb3f12982)
-        - [(167) 未分类](#a4debf888d112b91e56c90136f513ec0)
-        - [(5) Cutter](#d86e19280510aee0bcf2599f139cfbf7)
+- [Plugins&&Scripts](#0e08f9478ed8388319f267e75e2ef1eb)
+- [(76) Recent Add](#6922457cb0d4b6b87a34caf39aa31dfe)
+- [(1) Radare2](#ec3f0b5c2cf36004c4dd3d162b94b91a)
+- [With Other Tools](#1a6652a1cb16324ab56589cb1333576f)
+- [(4) No Category](#dfe53924d678f9225fc5ece9413b890f)
+- [(3) IDA](#1cfe869820ecc97204a350a3361b31a7)
+- [GUI](#f7778a5392b90b03a3e23ef94a0cc3c6)
+- [(4) GUI](#8f151d828263d3bc038f75f8d6418758)
+- [(5) Cutter](#df45c3c60bd074e21d650266aa85c241)
+- [Posts&&Videos](#95fdc7692c4eda74f7ca590bb3f12982)
+- [(167) 未分类](#a4debf888d112b91e56c90136f513ec0)
+- [(5) Cutter](#d86e19280510aee0bcf2599f139cfbf7)
 - [Cuckoo](#0ae4ddb81ff126789a7e08b0768bd693)
-    - [Tools](#5830a8f8fb3af1a336053d84dd7330a1)
-        - [(40) Recent Add](#f2b5c44c2107db2cec6c60477c6aa1d0)
-    - [(62) Post&&Videos](#ec0a441206d9a2fe1625dce0a679d466)
+- [Tools](#5830a8f8fb3af1a336053d84dd7330a1)
+- [(40) Recent Add](#f2b5c44c2107db2cec6c60477c6aa1d0)
+- [(62) Post&&Videos](#ec0a441206d9a2fe1625dce0a679d466)
 - [BinaryNinja](#afb7259851922935643857c543c4b0c2)
-    - [Plugins&&Scripts](#3034389f5aaa9d7b0be6fa7322340aab)
-        - [(58) Recent Add](#a750ac8156aa0ff337a8639649415ef1)
-        - [With Other Tools](#bba1171ac550958141dfcb0027716f41)
-            - [(2) No Category](#c2f94ad158b96c928ee51461823aa953)
-            - [(3) IDA](#713fb1c0075947956651cc21a833e074)
-    - [(12) Posts&&Videos](#2d24dd6f0c01a084e88580ad22ce5b3c)
+- [Plugins&&Scripts](#3034389f5aaa9d7b0be6fa7322340aab)
+- [(58) Recent Add](#a750ac8156aa0ff337a8639649415ef1)
+- [With Other Tools](#bba1171ac550958141dfcb0027716f41)
+- [(2) No Category](#c2f94ad158b96c928ee51461823aa953)
+- [(3) IDA](#713fb1c0075947956651cc21a833e074)
+- [(12) Posts&&Videos](#2d24dd6f0c01a084e88580ad22ce5b3c)
 - [DBI](#7ab3a7005d6aa699562b3a0a0c6f2cff)
-    - [DynamoRIO](#c8cdb0e30f24e9b7394fcd5681f2e419)
-        - [Tools](#6c4841dd91cb173093ea2c8d0b557e71)
-            - [(8) Recent Add](#ff0abe26a37095f6575195950e0b7f94)
-            - [(2) DynamoRIO](#3a577a5b4730a1b5b3b325269509bb0a)
-            - [(3) With Other Tools](#928642a55eff34b6b52622c6862addd2)
-        - [(15) Posts&&Videos](#9479ce9f475e4b9faa4497924a2e40fc)
-    - [IntelPin](#7b8a493ca344f41887792fcc008573e7)
-        - [Tools](#fe5a6d7f16890542c9e60857706edfde)
-            - [(18) Recent Add](#78a2edf9aa41eb321436cb150ea70a54)
-            - [With Other Tools](#e6a829abd8bbc5ad2e5885396e3eec04)
-                - [(8) No Category](#e129288dfadc2ab0890667109f93a76d)
-        - [Posts&&Videos](#226190bea6ceb98ee5e2b939a6515fac)
-    - [Frida](#f24f1235fd45a1aa8d280eff1f03af7e)
-        - [Tools](#a5336a0f9e8e55111bda45c8d74924c1)
-            - [(100) Recent Add](#54836a155de0c15b56f43634cd9cfecf)
-            - [With Other Tools](#74fa0c52c6104fd5656c93c08fd1ba86)
-                - [(1) No Category](#00a86c65a84e58397ee54e85ed57feaf)
-                - [(3) IDA](#d628ec92c9eea0c4b016831e1f6852b3)
-                - [(2) Binary Ninja](#f9008a00e2bbc7535c88602aa79c8fd8)
-                - [(2) Radare2](#ac053c4da818ca587d57711d2ff66278)
-            - [(1) Frida](#6d3c24e43835420063f9ca50ba805f15)
-        - [(92) Posts&&Videos](#a1a7e3dd7091b47384c75dba8f279caf)
-    - [QBDI](#b2fca17481b109a9b3b0bc290a1a1381)
-        - [(1) Tools](#e72b766bcd3b868c438a372bc365221e)
-        - [(6) Post](#2cf79f93baf02a24d95d227a0a3049d8)
-    - [Other](#5a9974bfcf7cdf9b05fe7a7dc5272213)
-        - [(4) Tools](#104bc99e36692f133ba70475ebc8825f)
-        - [(1) Post](#8f1b9c5c2737493524809684b934d49a)
+- [DynamoRIO](#c8cdb0e30f24e9b7394fcd5681f2e419)
+- [Tools](#6c4841dd91cb173093ea2c8d0b557e71)
+- [(8) Recent Add](#ff0abe26a37095f6575195950e0b7f94)
+- [(2) DynamoRIO](#3a577a5b4730a1b5b3b325269509bb0a)
+- [(3) With Other Tools](#928642a55eff34b6b52622c6862addd2)
+- [(15) Posts&&Videos](#9479ce9f475e4b9faa4497924a2e40fc)
+- [IntelPin](#7b8a493ca344f41887792fcc008573e7)
+- [Tools](#fe5a6d7f16890542c9e60857706edfde)
+- [(18) Recent Add](#78a2edf9aa41eb321436cb150ea70a54)
+- [With Other Tools](#e6a829abd8bbc5ad2e5885396e3eec04)
+- [(8) No Category](#e129288dfadc2ab0890667109f93a76d)
+- [Posts&&Videos](#226190bea6ceb98ee5e2b939a6515fac)
+- [Frida](#f24f1235fd45a1aa8d280eff1f03af7e)
+- [Tools](#a5336a0f9e8e55111bda45c8d74924c1)
+- [(100) Recent Add](#54836a155de0c15b56f43634cd9cfecf)
+- [With Other Tools](#74fa0c52c6104fd5656c93c08fd1ba86)
+- [(1) No Category](#00a86c65a84e58397ee54e85ed57feaf)
+- [(3) IDA](#d628ec92c9eea0c4b016831e1f6852b3)
+- [(2) Binary Ninja](#f9008a00e2bbc7535c88602aa79c8fd8)
+- [(2) Radare2](#ac053c4da818ca587d57711d2ff66278)
+- [(1) Frida](#6d3c24e43835420063f9ca50ba805f15)
+- [(92) Posts&&Videos](#a1a7e3dd7091b47384c75dba8f279caf)
+- [QBDI](#b2fca17481b109a9b3b0bc290a1a1381)
+- [(1) Tools](#e72b766bcd3b868c438a372bc365221e)
+- [(6) Post](#2cf79f93baf02a24d95d227a0a3049d8)
+- [Other](#5a9974bfcf7cdf9b05fe7a7dc5272213)
+- [(4) Tools](#104bc99e36692f133ba70475ebc8825f)
+- [(1) Post](#8f1b9c5c2737493524809684b934d49a)
 - [Other](#d3690e0b19c784e104273fe4d64b2362)
-    - [Post-Recent Add](#9162e3507d24e58e9e944dd3f6066c0e)
-    - [(284) Tool-Recent Add](#1d9dec1320a5d774dc8e0e7604edfcd3)
-    - [(3) Tool-Other](#bc2b78af683e7ba983205592de8c3a7a)
-    - [angr](#4fe330ae3e5ce0b39735b1bfea4528af)
-        - [(27) Tool](#1ede5ade1e55074922eb4b6386f5ca65)
-        - [(4) Post](#042ef9d415350eeb97ac2539c2fa530e)
-    - [Debug](#324874bb7c3ead94eae6f1fa1af4fb68)
-        - [(116) Tool](#d22bd989b2fdaeda14b64343b472dfb6)
-        - [Post](#136c41f2d05739a74c6ec7d8a84df1e8)
-    - [BAP](#9f8d3f2c9e46fbe6c25c22285c8226df)
-        - [(26) Tool](#f10e9553770db6f98e8619dcd74166ef)
-        - [Post](#e111826dde8fa44c575ce979fd54755d)
-    - [BinNavi](#2683839f170250822916534f1db22eeb)
-        - [(3) Tool](#2e4980c95871eae4ec0e76c42cc5c32f)
-        - [(5) Post](#ff4dc5c746cb398d41fb69a4f8dfd497)
-    - [Decompiler](#0971f295b0f67dc31b7aa45caf3f588f)
-        - [(73) Tool](#e67c18b4b682ceb6716388522f9a1417)
-        - [Post](#a748b79105651a8fd8ae856a7dc2b1de)
-    - [Disassemble](#2df6d3d07e56381e1101097d013746a0)
-        - [(30) Tool](#59f472c7575951c57d298aef21e7d73c)
-        - [Post](#a6eb5a22deb33fc1919eaa073aa29ab5)
-    - [GDB](#975d9f08e2771fccc112d9670eae1ed1)
-        - [(80) Tool](#5f4381b0a90d88dd2296c2936f7e7f70)
-        - [(102) Post](#37b17362d72f9c8793973bc4704893a2)
-    - [Monitor](#70e64e3147675c9bcd48d4f475396e7f)
-        - [(29) Tools](#cd76e644d8ddbd385939bb17fceab205)
+- [Post-Recent Add](#9162e3507d24e58e9e944dd3f6066c0e)
+- [(284) Tool-Recent Add](#1d9dec1320a5d774dc8e0e7604edfcd3)
+- [(3) Tool-Other](#bc2b78af683e7ba983205592de8c3a7a)
+- [angr](#4fe330ae3e5ce0b39735b1bfea4528af)
+- [(27) Tool](#1ede5ade1e55074922eb4b6386f5ca65)
+- [(4) Post](#042ef9d415350eeb97ac2539c2fa530e)
+- [Debug](#324874bb7c3ead94eae6f1fa1af4fb68)
+- [(116) Tool](#d22bd989b2fdaeda14b64343b472dfb6)
+- [Post](#136c41f2d05739a74c6ec7d8a84df1e8)
+- [BAP](#9f8d3f2c9e46fbe6c25c22285c8226df)
+- [(26) Tool](#f10e9553770db6f98e8619dcd74166ef)
+- [Post](#e111826dde8fa44c575ce979fd54755d)
+- [BinNavi](#2683839f170250822916534f1db22eeb)
+- [(3) Tool](#2e4980c95871eae4ec0e76c42cc5c32f)
+- [(5) Post](#ff4dc5c746cb398d41fb69a4f8dfd497)
+- [Decompiler](#0971f295b0f67dc31b7aa45caf3f588f)
+- [(73) Tool](#e67c18b4b682ceb6716388522f9a1417)
+- [Post](#a748b79105651a8fd8ae856a7dc2b1de)
+- [Disassemble](#2df6d3d07e56381e1101097d013746a0)
+- [(30) Tool](#59f472c7575951c57d298aef21e7d73c)
+- [Post](#a6eb5a22deb33fc1919eaa073aa29ab5)
+- [GDB](#975d9f08e2771fccc112d9670eae1ed1)
+- [(80) Tool](#5f4381b0a90d88dd2296c2936f7e7f70)
+- [(102) Post](#37b17362d72f9c8793973bc4704893a2)
+- [Monitor](#70e64e3147675c9bcd48d4f475396e7f)
+- [(29) Tools](#cd76e644d8ddbd385939bb17fceab205)
 
 
 # <a id="08e59e476824a221f6e4a69c0bba7d63"></a>IDA
@@ -348,133 +348,133 @@
 
 
 - [**1058**Star][17d] [Py] [fireeye/flare-ida](https://github.com/fireeye/flare-ida) Multiple IDA plugins and IDAPython scripts
-    - [StackStrings](https://github.com/fireeye/flare-ida/blob/master/plugins/stackstrings_plugin.py) recovery of manually constructed strings described [here](http://www.fireeye.com/blog/threat-research/2014/08/flare-ida-pro-script-series-automatic-recovery-of-constructed-strings-in-malware.html)
-    - [Struct Typer](https://github.com/fireeye/flare-ida/blob/master/plugins/struct_typer_plugin.py) implements the struct typing described [here](https://www.mandiant.com/blog/applying-function-types-structure-fields-ida/)
-    - [ApplyCalleeType](https://github.com/fireeye/flare-ida/blob/master/python/flare/apply_callee_type.py) specify or choose a function type for indirect calls as described [here](https://www.fireeye.com/blog/threat-research/2015/04/flare_ida_pro_script.html)
-    - [argtracker](https://github.com/fireeye/flare-ida/blob/master/python/flare/argtracker.py) identify static arguments to functions used within a program
-    - [idb2pat](https://github.com/fireeye/flare-ida/blob/master/python/flare/idb2pat.py) generate function patterns from an existing IDB database that can then be turned into FLIRT signatures to help identify similar functions in new files. [more info](https://www.fireeye.com/blog/threat-research/2015/01/flare_ida_pro_script.html)
-    - [objc2_analyzer](https://github.com/fireeye/flare-ida/blob/master/python/flare/objc2_analyzer.py) creates cross-references between selector references and their implementations as defined in the Objective-C runtime related sections of the target Mach-O executable
-    - [MSDN Annotations](https://github.com/fireeye/flare-ida/tree/master/python/flare/IDB_MSDN_Annotator) adds MSDN information from a XML file to the IDB database. [more info](https://www.fireeye.com/blog/threat-research/2014/09/flare-ida-pro-script-series-msdn-annotations-ida-pro-for-malware-analysis.html)
-    - [ironstrings](https://github.com/fireeye/flare-ida/tree/master/python/flare/ironstrings) uses code emulation to recover constructed strings (stackstrings) from malware
-    - [Shellcode Hashes](https://github.com/fireeye/flare-ida/tree/master/shellcode_hashes) create the database for hash search described in [here](https://www.mandiant.com/blog/precalculated-string-hashes-reverse-engineering-shellcode/)
+- [StackStrings](https://github.com/fireeye/flare-ida/blob/master/plugins/stackstrings_plugin.py) recovery of manually constructed strings described [here](http://www.fireeye.com/blog/threat-research/2014/08/flare-ida-pro-script-series-automatic-recovery-of-constructed-strings-in-malware.html)
+- [Struct Typer](https://github.com/fireeye/flare-ida/blob/master/plugins/struct_typer_plugin.py) implements the struct typing described [here](https://www.mandiant.com/blog/applying-function-types-structure-fields-ida/)
+- [ApplyCalleeType](https://github.com/fireeye/flare-ida/blob/master/python/flare/apply_callee_type.py) specify or choose a function type for indirect calls as described [here](https://www.fireeye.com/blog/threat-research/2015/04/flare_ida_pro_script.html)
+- [argtracker](https://github.com/fireeye/flare-ida/blob/master/python/flare/argtracker.py) identify static arguments to functions used within a program
+- [idb2pat](https://github.com/fireeye/flare-ida/blob/master/python/flare/idb2pat.py) generate function patterns from an existing IDB database that can then be turned into FLIRT signatures to help identify similar functions in new files. [more info](https://www.fireeye.com/blog/threat-research/2015/01/flare_ida_pro_script.html)
+- [objc2_analyzer](https://github.com/fireeye/flare-ida/blob/master/python/flare/objc2_analyzer.py) creates cross-references between selector references and their implementations as defined in the Objective-C runtime related sections of the target Mach-O executable
+- [MSDN Annotations](https://github.com/fireeye/flare-ida/tree/master/python/flare/IDB_MSDN_Annotator) adds MSDN information from a XML file to the IDB database. [more info](https://www.fireeye.com/blog/threat-research/2014/09/flare-ida-pro-script-series-msdn-annotations-ida-pro-for-malware-analysis.html)
+- [ironstrings](https://github.com/fireeye/flare-ida/tree/master/python/flare/ironstrings) uses code emulation to recover constructed strings (stackstrings) from malware
+- [Shellcode Hashes](https://github.com/fireeye/flare-ida/tree/master/shellcode_hashes) create the database for hash search described in [here](https://www.mandiant.com/blog/precalculated-string-hashes-reverse-engineering-shellcode/)
 - [**737**Star][7m] [Py] [devttys0/ida](https://github.com/devttys0/ida) Collection of IDA Python plugins/scripts/modules.
 
 
-    - [wpsearch](https://github.com/devttys0/ida/blob/master/scripts/wpsearch.py) Searches for immediate values commonly founds in MIPS WPS checksum implementations.
-    - [md5hash](https://github.com/devttys0/ida/tree/master/modules/md5hash) A sample implementation of MD5 in pure Python
-    - [alleycat](https://github.com/devttys0/ida/tree/master/plugins/alleycat) Finds paths to a given code block inside a function; Finds paths between two or more functions; Generates interactive call graphs
-    - [codatify](https://github.com/devttys0/ida/tree/master/plugins/codatify) Defines ASCII-strings/functions/code that IDA's auto analysis missed; Converts all undefined bytes in the data segment into DWORDs
-    - [fluorescence](https://github.com/devttys0/ida/tree/master/plugins/fluorescence) Un/highlights function call instructions
-    - [leafblower](https://github.com/devttys0/ida/tree/master/plugins/leafblower) Assists in identifying standard POSIX functions in MIPS/ARM code.
-    - [localxrefs](https://github.com/devttys0/ida/tree/master/plugins/localxrefs) Finds references to any selected text from within the current function
-    - [mipslocalvars](https://github.com/devttys0/ida/tree/master/plugins/mipslocalvars) Names stack variables used by the compiler for storing registers on the stack, simplifying stack data analysis (MIPS only)
-    - [mipsrop](https://github.com/devttys0/ida/tree/master/plugins/mipsrop) Allows you to search for suitable ROP gadgets in MIPS executable code; Built-in methods to search for common ROP gadgets
-    - [rizzo](https://github.com/devttys0/ida/tree/master/plugins/rizzo) Identifies and re-names functions between two or more IDBs
-- [**318**Star][2m] [C] [ohjeongwook/darungrim](https://github.com/ohjeongwook/darungrim) A patch analysis tool 
-    - [IDA插件](https://github.com/ohjeongwook/darungrim/tree/master/Src/IDAPlugin) 
-    - [DGEngine](https://github.com/ohjeongwook/darungrim/tree/master/Src/DGEngine) 
+- [wpsearch](https://github.com/devttys0/ida/blob/master/scripts/wpsearch.py) Searches for immediate values commonly founds in MIPS WPS checksum implementations.
+- [md5hash](https://github.com/devttys0/ida/tree/master/modules/md5hash) A sample implementation of MD5 in pure Python
+- [alleycat](https://github.com/devttys0/ida/tree/master/plugins/alleycat) Finds paths to a given code block inside a function; Finds paths between two or more functions; Generates interactive call graphs
+- [codatify](https://github.com/devttys0/ida/tree/master/plugins/codatify) Defines ASCII-strings/functions/code that IDA's auto analysis missed; Converts all undefined bytes in the data segment into DWORDs
+- [fluorescence](https://github.com/devttys0/ida/tree/master/plugins/fluorescence) Un/highlights function call instructions
+- [leafblower](https://github.com/devttys0/ida/tree/master/plugins/leafblower) Assists in identifying standard POSIX functions in MIPS/ARM code.
+- [localxrefs](https://github.com/devttys0/ida/tree/master/plugins/localxrefs) Finds references to any selected text from within the current function
+- [mipslocalvars](https://github.com/devttys0/ida/tree/master/plugins/mipslocalvars) Names stack variables used by the compiler for storing registers on the stack, simplifying stack data analysis (MIPS only)
+- [mipsrop](https://github.com/devttys0/ida/tree/master/plugins/mipsrop) Allows you to search for suitable ROP gadgets in MIPS executable code; Built-in methods to search for common ROP gadgets
+- [rizzo](https://github.com/devttys0/ida/tree/master/plugins/rizzo) Identifies and re-names functions between two or more IDBs
+- [**318**Star][2m] [C] [ohjeongwook/darungrim](https://github.com/ohjeongwook/darungrim) A patch analysis tool
+- [IDA插件](https://github.com/ohjeongwook/darungrim/tree/master/Src/IDAPlugin)
+- [DGEngine](https://github.com/ohjeongwook/darungrim/tree/master/Src/DGEngine)
 - [**312**Star][1y] [C++] [nevermoe/unity_metadata_loader](https://github.com/nevermoe/unity_metadata_loader)  load strings and method/class names in global-metadata.dat to IDA
 - [**277**Star][4m] [Py] [jpcertcc/aa-tools](https://github.com/jpcertcc/aa-tools) Multiple RE plugins and scripts
-    - [apt17scan.py](https://github.com/jpcertcc/aa-tools/blob/master/apt17scan.py) Volatility plugin for detecting APT17 related malware and extracting its config
-    - [emdivi_postdata_decoder](https://github.com/jpcertcc/aa-tools/blob/master/emdivi_postdata_decoder.py) Python script for decoding Emdivi's post data
-    - [emdivi_string_decryptor](https://github.com/jpcertcc/aa-tools/blob/master/emdivi_string_decryptor.py) IDAPython script for decrypting strings inside Emdivi
-    - [citadel_decryptor](https://github.com/jpcertcc/aa-tools/tree/master/citadel_decryptor) Data decryption tool for Citadel
-    - [adwind_string_decoder](https://github.com/jpcertcc/aa-tools/blob/master/adwind_string_decoder.py) Python script for decoding strings inside Adwind
-    - [redleavesscan](https://github.com/jpcertcc/aa-tools/blob/master/redleavesscan.py) Volatility plugin for detecting RedLeaves and extracting its config
-    - [datper_splunk](https://github.com/jpcertcc/aa-tools/blob/master/datper_splunk.py) Python script for detects Datper communication and adds result field to Splunk index
-    - [datper_elk](https://github.com/jpcertcc/aa-tools/blob/master/datper_elk.py) Python script for detects Datper communication and adds result field to Elasticsearch index
-    - [tscookie_decode](https://github.com/jpcertcc/aa-tools/blob/master/tscookie_decode.py) Python script for decrypting and parsing TSCookie configure data
-    - [wellmess_cookie_decode](https://github.com/jpcertcc/aa-tools/blob/master/wellmess_cookie_decode.py) Python script for decoding WellMess's cookie data (support Python2)
-    - [cobaltstrikescan](https://github.com/jpcertcc/aa-tools/blob/master/cobaltstrikescan.py) Volatility plugin for detecting Cobalt Strike Beacon and extracting its config
-    - [tscookie_data_decode](https://github.com/jpcertcc/aa-tools/blob/master/tscookie_data_decode.py) Python script for decrypting and parsing TSCookie configure data
+- [apt17scan.py](https://github.com/jpcertcc/aa-tools/blob/master/apt17scan.py) Volatility plugin for detecting APT17 related malware and extracting its config
+- [emdivi_postdata_decoder](https://github.com/jpcertcc/aa-tools/blob/master/emdivi_postdata_decoder.py) Python script for decoding Emdivi's post data
+- [emdivi_string_decryptor](https://github.com/jpcertcc/aa-tools/blob/master/emdivi_string_decryptor.py) IDAPython script for decrypting strings inside Emdivi
+- [citadel_decryptor](https://github.com/jpcertcc/aa-tools/tree/master/citadel_decryptor) Data decryption tool for Citadel
+- [adwind_string_decoder](https://github.com/jpcertcc/aa-tools/blob/master/adwind_string_decoder.py) Python script for decoding strings inside Adwind
+- [redleavesscan](https://github.com/jpcertcc/aa-tools/blob/master/redleavesscan.py) Volatility plugin for detecting RedLeaves and extracting its config
+- [datper_splunk](https://github.com/jpcertcc/aa-tools/blob/master/datper_splunk.py) Python script for detects Datper communication and adds result field to Splunk index
+- [datper_elk](https://github.com/jpcertcc/aa-tools/blob/master/datper_elk.py) Python script for detects Datper communication and adds result field to Elasticsearch index
+- [tscookie_decode](https://github.com/jpcertcc/aa-tools/blob/master/tscookie_decode.py) Python script for decrypting and parsing TSCookie configure data
+- [wellmess_cookie_decode](https://github.com/jpcertcc/aa-tools/blob/master/wellmess_cookie_decode.py) Python script for decoding WellMess's cookie data (support Python2)
+- [cobaltstrikescan](https://github.com/jpcertcc/aa-tools/blob/master/cobaltstrikescan.py) Volatility plugin for detecting Cobalt Strike Beacon and extracting its config
+- [tscookie_data_decode](https://github.com/jpcertcc/aa-tools/blob/master/tscookie_data_decode.py) Python script for decrypting and parsing TSCookie configure data
 - [**114**Star][1y] [Py] [vallejocc/reverse-engineering-arsenal](https://github.com/vallejocc/Reverse-Engineering-Arsenal) Useful Scripts for helping in reverse engeenering
-    - [WinDbg](https://github.com/vallejocc/Reverse-Engineering-Arsenal/blob/master/WinDbg) WinDBG script collection
-    - [IDA-set_symbols_for_addresses](https://github.com/vallejocc/Reverse-Engineering-Arsenal/blob/master/IDA/set_symbols_for_addresses.py) asks you for a file containing pairs address - symbol. It walks all segments searching for DWORDs matching the addresses of the given file of pairs address - symbols, and it will name the variable containing the address with the symbol name
-    - [IDA-stack_strings_deobfuscator_1](https://github.com/vallejocc/Reverse-Engineering-Arsenal/blob/master/IDA/stack_strings_deobfuscator_1.py) Some malware families construct strings into the stack
-    - [RevealPE](https://github.com/vallejocc/Reverse-Engineering-Arsenal/tree/master/Standalone/RevealPE) 
+- [WinDbg](https://github.com/vallejocc/Reverse-Engineering-Arsenal/blob/master/WinDbg) WinDBG script collection
+- [IDA-set_symbols_for_addresses](https://github.com/vallejocc/Reverse-Engineering-Arsenal/blob/master/IDA/set_symbols_for_addresses.py) asks you for a file containing pairs address - symbol. It walks all segments searching for DWORDs matching the addresses of the given file of pairs address - symbols, and it will name the variable containing the address with the symbol name
+- [IDA-stack_strings_deobfuscator_1](https://github.com/vallejocc/Reverse-Engineering-Arsenal/blob/master/IDA/stack_strings_deobfuscator_1.py) Some malware families construct strings into the stack
+- [RevealPE](https://github.com/vallejocc/Reverse-Engineering-Arsenal/tree/master/Standalone/RevealPE)
 - [**80**Star][4m] [Py] [takahiroharuyama/ida_haru](https://github.com/takahiroharuyama/ida_haru) scripts for IDA Pro
-    - [bindiff](https://github.com/takahiroharuyama/ida_haru/blob/master/bindiff/README.org) BinDiff wrapper script for multiple binary diffing
-    - [eset_crackme](https://github.com/takahiroharuyama/ida_haru/blob/master/eset_crackme/README.org) IDA Pro loader/processor modules for ESET CrackMe driver VM
-    - [fn_fuzzy](https://github.com/takahiroharuyama/ida_haru/blob/master/fn_fuzzy/README.org) IDAPython script for fast multiple binary diffing triage
-    - [stackstring_static](https://github.com/takahiroharuyama/ida_haru/blob/master/stackstring_static/README.org) IDAPython script statically-recovering strings constructed in stack
+- [bindiff](https://github.com/takahiroharuyama/ida_haru/blob/master/bindiff/README.org) BinDiff wrapper script for multiple binary diffing
+- [eset_crackme](https://github.com/takahiroharuyama/ida_haru/blob/master/eset_crackme/README.org) IDA Pro loader/processor modules for ESET CrackMe driver VM
+- [fn_fuzzy](https://github.com/takahiroharuyama/ida_haru/blob/master/fn_fuzzy/README.org) IDAPython script for fast multiple binary diffing triage
+- [stackstring_static](https://github.com/takahiroharuyama/ida_haru/blob/master/stackstring_static/README.org) IDAPython script statically-recovering strings constructed in stack
 - [**75**Star][10m] [Py] [secrary/ida-scripts](https://github.com/secrary/ida-scripts) IDAPro scripts/plugins
-    - [dumpDyn](https://github.com/secrary/ida-scripts/blob/master/dumpDyn/README.md) IDAPython plugin(script) which saves comments, names, breakpoints, functions from one execution to another.
-    - [idenLib](https://github.com/secrary/ida-scripts/blob/master/idenLib/README.md) Library Function Identification
-    - [IOCTL_decode](https://github.com/secrary/ida-scripts/blob/master/IOCTL_decode.py) Windows Device IO Control Code
-    - [XORCheck](https://github.com/secrary/ida-scripts/blob/master/XORCheck.py) check xor
+- [dumpDyn](https://github.com/secrary/ida-scripts/blob/master/dumpDyn/README.md) IDAPython plugin(script) which saves comments, names, breakpoints, functions from one execution to another.
+- [idenLib](https://github.com/secrary/ida-scripts/blob/master/idenLib/README.md) Library Function Identification
+- [IOCTL_decode](https://github.com/secrary/ida-scripts/blob/master/IOCTL_decode.py) Windows Device IO Control Code
+- [XORCheck](https://github.com/secrary/ida-scripts/blob/master/XORCheck.py) check xor
 - [**60**Star][2y] [Py] [tmr232/idabuddy](https://github.com/tmr232/idabuddy)  a reverse-engineer's best friend. Designed to be everything Clippy the Office Assistant was, and more!
 - [**59**Star][2y] [C++] [alexhude/loadprocconfig](https://github.com/alexhude/loadprocconfig) IDA Plugin to load processor configuration files.
 - [**59**Star][2m] [Py] [williballenthin/idawilli](https://github.com/williballenthin/idawilli) IDA Pro resources, scripts, and configurations
-    - [hint_calls](https://github.com/williballenthin/idawilli/blob/master/plugins/hint_calls/readme.md) IDA plugin to display the calls and strings referenced by a function as hints.
-    - [dynamic_hints](https://github.com/williballenthin/idawilli/blob/master/plugins/dynamic_hints/readme.md) an example plugin that demonstrates how to provide custom hints with dynamic data.
-    - [add_segment](https://github.com/williballenthin/idawilli/tree/master/scripts/add_segment) IDAPython plugin that adds the contents of a file as a new segment in an existing idb
-    - [color](https://github.com/williballenthin/idawilli/tree/master/scripts/color) IDAPython script that colors instructions
-    - [find_ptrs](https://github.com/williballenthin/idawilli/tree/master/scripts/find_ptrs) IDAPython script that scans through the .text section for values that could be pointers (32-bit).
-    - [yara_fn](https://github.com/williballenthin/idawilli/tree/master/scripts/yara_fn) IDAPython script that generates a YARA rule to match against the basic blocks of the current function
-    - [idawilli](https://github.com/williballenthin/idawilli/tree/master/idawilli) a python module that contains utilities for working with the idapython scripting interface.
-    - [themes](https://github.com/williballenthin/idawilli/tree/master/themes) colors and skins
+- [hint_calls](https://github.com/williballenthin/idawilli/blob/master/plugins/hint_calls/readme.md) IDA plugin to display the calls and strings referenced by a function as hints.
+- [dynamic_hints](https://github.com/williballenthin/idawilli/blob/master/plugins/dynamic_hints/readme.md) an example plugin that demonstrates how to provide custom hints with dynamic data.
+- [add_segment](https://github.com/williballenthin/idawilli/tree/master/scripts/add_segment) IDAPython plugin that adds the contents of a file as a new segment in an existing idb
+- [color](https://github.com/williballenthin/idawilli/tree/master/scripts/color) IDAPython script that colors instructions
+- [find_ptrs](https://github.com/williballenthin/idawilli/tree/master/scripts/find_ptrs) IDAPython script that scans through the .text section for values that could be pointers (32-bit).
+- [yara_fn](https://github.com/williballenthin/idawilli/tree/master/scripts/yara_fn) IDAPython script that generates a YARA rule to match against the basic blocks of the current function
+- [idawilli](https://github.com/williballenthin/idawilli/tree/master/idawilli) a python module that contains utilities for working with the idapython scripting interface.
+- [themes](https://github.com/williballenthin/idawilli/tree/master/themes) colors and skins
 - [**58**Star][20d] [Py] [lich4/personal_script](https://github.com/lich4/personal_script) 010Editor/BurpSuite/Frida/IDA tools and scripts collection
-    - Also In Section: [IDA->Tools->Import Export->Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd) |[DBI->Frida->Tools->Recent Add](#54836a155de0c15b56f43634cd9cfecf) |
-    - [010Editor](https://github.com/lich4/personal_script/tree/master/010Editor_Script) 010Editor scripts
-    - [ParamChecker](https://github.com/lich4/personal_script/tree/master/BurpSuite_Script) Burp插件
-    - [Frida](https://github.com/lich4/personal_script/tree/master/Frida_script) Frida Scripts
-    - [IDA](https://github.com/lich4/personal_script/tree/master/IDA_Script) IDA Scripts
-    - [IDA-read_unicode.py](https://github.com/lich4/personal_script/blob/master/IDA_Script/read_unicode.py) When there is chinese unicode character in programe, due to python's shortage, ida could not recongnized them correctly, it's what my script just do
-    - [IDA-add_xref_for_macho](https://github.com/lich4/personal_script/blob/master/IDA_Script/add_xref_for_macho.py)  When you deal with macho file with ida, you'll find out that it's not easy to find Objc-Class member function's caller and callee, (because it use msgSend instead of direct calling  convention), so we need to make some connection between the selector names and member function  pointers, it's what my script just do
-    - [IDA-add_info_for_androidgdb](https://github.com/lich4/personal_script/blob/master/IDA_Script/add_info_for_androidgdb.py) When you debug android with IDA and gdbserver, you'd find that the module list and segment is empy, while we can read info from /proc/[pid]/,
-    - [IDA-trace_instruction](https://github.com/lich4/personal_script/blob/master/IDA_Script/trace_instruction.py) this script is to trace instruction stream in one run 
-    - [IDA-detect_ollvm](https://github.com/lich4/personal_script/blob/master/IDA_Script/detect_ollvm.py) this script is to detect ollvm and fix it in some extent, apply to android and ios
-    - [IDA-add_block_for_macho](https://github.com/lich4/personal_script/blob/master/IDA_Script/add_block_for_macho.py) this script is used to analysis block structure exist in macho file, target NSConcreteStackBlock/NSConcreteGlobalBlock currently, also contain some wonderful skills
+- Also In Section: [IDA->Tools->Import Export->Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd) |[DBI->Frida->Tools->Recent Add](#54836a155de0c15b56f43634cd9cfecf) |
+- [010Editor](https://github.com/lich4/personal_script/tree/master/010Editor_Script) 010Editor scripts
+- [ParamChecker](https://github.com/lich4/personal_script/tree/master/BurpSuite_Script) Burp插件
+- [Frida](https://github.com/lich4/personal_script/tree/master/Frida_script) Frida Scripts
+- [IDA](https://github.com/lich4/personal_script/tree/master/IDA_Script) IDA Scripts
+- [IDA-read_unicode.py](https://github.com/lich4/personal_script/blob/master/IDA_Script/read_unicode.py) When there is chinese unicode character in programe, due to python's shortage, ida could not recongnized them correctly, it's what my script just do
+- [IDA-add_xref_for_macho](https://github.com/lich4/personal_script/blob/master/IDA_Script/add_xref_for_macho.py)  When you deal with macho file with ida, you'll find out that it's not easy to find Objc-Class member function's caller and callee, (because it use msgSend instead of direct calling  convention), so we need to make some connection between the selector names and member function  pointers, it's what my script just do
+- [IDA-add_info_for_androidgdb](https://github.com/lich4/personal_script/blob/master/IDA_Script/add_info_for_androidgdb.py) When you debug android with IDA and gdbserver, you'd find that the module list and segment is empy, while we can read info from /proc/[pid]/,
+- [IDA-trace_instruction](https://github.com/lich4/personal_script/blob/master/IDA_Script/trace_instruction.py) this script is to trace instruction stream in one run
+- [IDA-detect_ollvm](https://github.com/lich4/personal_script/blob/master/IDA_Script/detect_ollvm.py) this script is to detect ollvm and fix it in some extent, apply to android and ios
+- [IDA-add_block_for_macho](https://github.com/lich4/personal_script/blob/master/IDA_Script/add_block_for_macho.py) this script is used to analysis block structure exist in macho file, target NSConcreteStackBlock/NSConcreteGlobalBlock currently, also contain some wonderful skills
 - [**54**Star][1y] [Py] [zardus/idalink](https://github.com/zardus/idalink) idalink arose of the need to easily use IDA's API for analysis without wanting to be stuck in the IDA interface
 - [**52**Star][3y] [C++] [sektioneins/wwcd](https://github.com/sektioneins/wwcd) Capstone powered IDA view
 - [**51**Star][2y] [Py] [cseagle/ida_clemency](https://github.com/cseagle/ida_clemency) IDA cLEMENCy Tools
-    - [clemency_ldr](https://github.com/cseagle/ida_clemency/blob/master/clemency_ldr.py) IDA loader module to create the basic memory layout and handle the loading of 9-bit, middle-endian, cLEMENCy executables.
-    - [clemency_proc](https://github.com/cseagle/ida_clemency/blob/master/clemency_proc.py) IDA processor module to handle disassembly and assembly tasks
-    - [clemency_dump](https://github.com/cseagle/ida_clemency/blob/master/clemency_dump.py) IDA plugin to allow for dumping modified database content back to a packed 9-bit, middle-endian file 
-    - [clemency_fix](https://github.com/cseagle/ida_clemency/blob/master/clemency_fix.py)  IDA plugin to assist with fixing up poorly disassembled functions that might branch/call into regions that continue to be marked as data blocks.
+- [clemency_ldr](https://github.com/cseagle/ida_clemency/blob/master/clemency_ldr.py) IDA loader module to create the basic memory layout and handle the loading of 9-bit, middle-endian, cLEMENCy executables.
+- [clemency_proc](https://github.com/cseagle/ida_clemency/blob/master/clemency_proc.py) IDA processor module to handle disassembly and assembly tasks
+- [clemency_dump](https://github.com/cseagle/ida_clemency/blob/master/clemency_dump.py) IDA plugin to allow for dumping modified database content back to a packed 9-bit, middle-endian file
+- [clemency_fix](https://github.com/cseagle/ida_clemency/blob/master/clemency_fix.py)  IDA plugin to assist with fixing up poorly disassembled functions that might branch/call into regions that continue to be marked as data blocks.
 - [**49**Star][12m] [Py] [agustingianni/utilities](https://github.com/agustingianni/utilities) Uncategorized utilities
-    - [DumpFunctionBytes](https://github.com/agustingianni/utilities/blob/master/DumpFunctionBytes.py)  dumps the current function (you need to position the cursor on the start of the function) as a shellcode. It does a very limited analysis of the function in order to let you know that you need to fix call sites to functions
-    - [func_references](https://github.com/agustingianni/utilities/blob/master/func_references.py) print all the function calls to a given function. This is generally used to look for calls to malloc like function
-    - [arm_frequency](https://github.com/agustingianni/utilities/blob/master/arm_frequency.py) takes as input the output of objdump on an ARM binary. It will show the ammount of times every instruction was used, sorted by the most used ones.
-    - [struct_hint](https://github.com/agustingianni/utilities/blob/master/struct_hint.py) infer what's the underlying structure used by a function. Highly heuristic. Don't trust it blindly, just try to use what it gives you and work from that.
-    - [string_finder](https://github.com/agustingianni/utilities/blob/master/string_finder.py) Utility to find all the strings inside an ill formed IDA Database
-    - [simple_jack](https://github.com/agustingianni/utilities/blob/master/simple_jack.py) Simple Jack symbol porting tool by goose
-    - [renamer](https://github.com/agustingianni/utilities/blob/master/renamer.py) Rename files in a directory to its sha1 sum plus an extension.
-    - [prolog_finder](https://github.com/agustingianni/utilities/blob/master/prolog_finder.py) Find potential ARM procedures prolog
-    - [minset](https://github.com/agustingianni/utilities/blob/master/minset.py) Tool to calculate the minimum set of files that have approximatelly the best coverage.
-    - [mark_interesting](https://github.com/agustingianni/utilities/blob/master/mark_interesting.py) Small idapython script that finds all the signed comparisions and marks them with a color.
-    - [machofinder](https://github.com/agustingianni/utilities/blob/master/machofinder.py) Hacky script to gather all the mach-o file (and fat).
-    - [find_hardref](https://github.com/agustingianni/utilities/blob/master/find_hardref.py) Script to find hardcoded references inside an IDA database.
+- [DumpFunctionBytes](https://github.com/agustingianni/utilities/blob/master/DumpFunctionBytes.py)  dumps the current function (you need to position the cursor on the start of the function) as a shellcode. It does a very limited analysis of the function in order to let you know that you need to fix call sites to functions
+- [func_references](https://github.com/agustingianni/utilities/blob/master/func_references.py) print all the function calls to a given function. This is generally used to look for calls to malloc like function
+- [arm_frequency](https://github.com/agustingianni/utilities/blob/master/arm_frequency.py) takes as input the output of objdump on an ARM binary. It will show the ammount of times every instruction was used, sorted by the most used ones.
+- [struct_hint](https://github.com/agustingianni/utilities/blob/master/struct_hint.py) infer what's the underlying structure used by a function. Highly heuristic. Don't trust it blindly, just try to use what it gives you and work from that.
+- [string_finder](https://github.com/agustingianni/utilities/blob/master/string_finder.py) Utility to find all the strings inside an ill formed IDA Database
+- [simple_jack](https://github.com/agustingianni/utilities/blob/master/simple_jack.py) Simple Jack symbol porting tool by goose
+- [renamer](https://github.com/agustingianni/utilities/blob/master/renamer.py) Rename files in a directory to its sha1 sum plus an extension.
+- [prolog_finder](https://github.com/agustingianni/utilities/blob/master/prolog_finder.py) Find potential ARM procedures prolog
+- [minset](https://github.com/agustingianni/utilities/blob/master/minset.py) Tool to calculate the minimum set of files that have approximatelly the best coverage.
+- [mark_interesting](https://github.com/agustingianni/utilities/blob/master/mark_interesting.py) Small idapython script that finds all the signed comparisions and marks them with a color.
+- [machofinder](https://github.com/agustingianni/utilities/blob/master/machofinder.py) Hacky script to gather all the mach-o file (and fat).
+- [find_hardref](https://github.com/agustingianni/utilities/blob/master/find_hardref.py) Script to find hardcoded references inside an IDA database.
 - [**47**Star][4y] [Py] [jjo-sec/idataco](https://github.com/jjo-sec/idataco) IDATACO IDA Pro Plugin
-- [**46**Star][7y] [Py] [carlosgprado/milf](https://github.com/carlosgprado/milf) An IDA Pro swiss army knife 
-    - [milf](https://github.com/carlosgprado/MILF/blob/master/milf.py) Some useful methods in vulnerability discovery
+- [**46**Star][7y] [Py] [carlosgprado/milf](https://github.com/carlosgprado/milf) An IDA Pro swiss army knife
+- [milf](https://github.com/carlosgprado/MILF/blob/master/milf.py) Some useful methods in vulnerability discovery
 - [**42**Star][4y] [C++] [nihilus/guid-finder](https://github.com/nihilus/guid-finder) find GUID/UUIDs
 - [**40**Star][7m] [Visual Basic .NET] [dzzie/re_plugins](https://github.com/dzzie/re_plugins) misc reverse engineering plugins
-    - [IDASrvr](https://github.com/dzzie/re_plugins/tree/master/IDASrvr) wm_copydata IPC server running in IDA. allows you to send commands to IDA from another   process to query data and control interface display
-    - [IDA_JScript](https://github.com/dzzie/re_plugins/tree/master/IDA_JScript) Script IDA in Javascript
-    - [IDA_JScript_w_DukDbg](https://github.com/dzzie/re_plugins/tree/master/IDA_JScript_w_DukDbg) same as IDA_JScript, but using the dukdbg.ocx as full on javascript debugger
-    - [IDASrvr2](https://github.com/dzzie/re_plugins/tree/master/IDASrvr2) support x64
-    - [IdaUdpBridge](https://github.com/dzzie/re_plugins/tree/master/IdaUdpBridge) this replaces the udp command socket in idavbscript which was crashy
-    - [IdaVbScript](https://github.com/dzzie/re_plugins/tree/master/IdaVbScript)  ton of small tools for IDA all thrown into one interface
-    - [OllySrvr](https://github.com/dzzie/re_plugins/tree/master/OllySrvr)  wm_copydata IPC server running in olly
-    - [Olly_hittrace](https://github.com/dzzie/re_plugins/tree/master/Olly_hittrace) You set breakpoints in the UI and it will then run   the app automating it and logging which ones were hit.
-    - [Olly_module_bpx](https://github.com/dzzie/re_plugins/tree/master/Olly_module_bpx)    allow you to set breakpoints within modules which have not yet been loaded.
-    - [Olly_vbscript](https://github.com/dzzie/re_plugins/tree/master/Olly_vbscript) vbscript automation capability for olly including working across breakpoint events.
-    - [PyIDAServer](https://github.com/dzzie/re_plugins/tree/master/PyIDAServer) experiment to test a python based IPC server running in IDA that remote process clients can control and query IDA with.
-    - [Wingraph32](https://github.com/dzzie/re_plugins/tree/master/Wingraph32) This is another experiment at a wingraph32 replacement for ida. This one has more features to hide nodes, and can also navigate IDA to the selected function when you click on it in the graph. 
-    - [rabc_gui](https://github.com/dzzie/re_plugins/tree/master/flash_tools/rabc_gui) this is a GUI front end for RABCDAsm to disasm, reasm, and reinsert  modified script blocks back into flash files.
-    - [swfdump_gui](https://github.com/dzzie/re_plugins/tree/master/flash_tools/swfdump_gui) when run against a target swf, it will create a decompressed version of the swf and a .txt disasm log file these files will be cached and used on subsequent loads. if you wish to start over from scratch use the tools->delete cached * options.
-    - [gleegraph](https://github.com/dzzie/re_plugins/tree/master/gleegraph) a quick Wingraph32/qwingraph replacement that has some extra features such as being able to navigate IDA to the selected nodes when they are clicked on in graph view, as well as being able to rename the selected node from the  graph, or adding a prefix to all child nodes below it.
-    - [hidden_strings](https://github.com/dzzie/re_plugins/tree/master/misc_tools/hidden_strings) scans for strings being build up in char arrays at runtime to hide from traditional strings output
-    - [memdump_conglomerate](https://github.com/dzzie/re_plugins/tree/master/misc_tools/memdump_conglomerate) reads a folder full of memory dumps and puts them  all into a single dll husk so they will disassemble at the proper offsets.
-    - [memdump_embedder](https://github.com/dzzie/re_plugins/tree/master/misc_tools/memdump_embedder) takes a memory dump and embeds it into a dummy dll husk so that you can disassemble it at the target base address without having to manually reset it everytime
-    - [rtf_hexconvert](https://github.com/dzzie/re_plugins/tree/master/misc_tools/rtf_hexconvert) small tool to extract hex strings from a rtf document and show them in a listview. click on listitem to see decoded data in a hexeditor pane where you can save it
-    - [uGrapher](https://github.com/dzzie/re_plugins/tree/master/uGrapher) rename real wingraph32.exe to _wingraph.exe and put this one in its place.
-    - [wininet_hooks](https://github.com/dzzie/re_plugins/tree/master/wininet_hooks) httpsendhook.dll hooks the following wininet api calls:HttpOpenRequest,InternetConnect,InternetReadFile,InternetCrackUrl,HttpSendRequest
+- [IDASrvr](https://github.com/dzzie/re_plugins/tree/master/IDASrvr) wm_copydata IPC server running in IDA. allows you to send commands to IDA from another   process to query data and control interface display
+- [IDA_JScript](https://github.com/dzzie/re_plugins/tree/master/IDA_JScript) Script IDA in Javascript
+- [IDA_JScript_w_DukDbg](https://github.com/dzzie/re_plugins/tree/master/IDA_JScript_w_DukDbg) same as IDA_JScript, but using the dukdbg.ocx as full on javascript debugger
+- [IDASrvr2](https://github.com/dzzie/re_plugins/tree/master/IDASrvr2) support x64
+- [IdaUdpBridge](https://github.com/dzzie/re_plugins/tree/master/IdaUdpBridge) this replaces the udp command socket in idavbscript which was crashy
+- [IdaVbScript](https://github.com/dzzie/re_plugins/tree/master/IdaVbScript)  ton of small tools for IDA all thrown into one interface
+- [OllySrvr](https://github.com/dzzie/re_plugins/tree/master/OllySrvr)  wm_copydata IPC server running in olly
+- [Olly_hittrace](https://github.com/dzzie/re_plugins/tree/master/Olly_hittrace) You set breakpoints in the UI and it will then run   the app automating it and logging which ones were hit.
+- [Olly_module_bpx](https://github.com/dzzie/re_plugins/tree/master/Olly_module_bpx)    allow you to set breakpoints within modules which have not yet been loaded.
+- [Olly_vbscript](https://github.com/dzzie/re_plugins/tree/master/Olly_vbscript) vbscript automation capability for olly including working across breakpoint events.
+- [PyIDAServer](https://github.com/dzzie/re_plugins/tree/master/PyIDAServer) experiment to test a python based IPC server running in IDA that remote process clients can control and query IDA with.
+- [Wingraph32](https://github.com/dzzie/re_plugins/tree/master/Wingraph32) This is another experiment at a wingraph32 replacement for ida. This one has more features to hide nodes, and can also navigate IDA to the selected function when you click on it in the graph.
+- [rabc_gui](https://github.com/dzzie/re_plugins/tree/master/flash_tools/rabc_gui) this is a GUI front end for RABCDAsm to disasm, reasm, and reinsert  modified script blocks back into flash files.
+- [swfdump_gui](https://github.com/dzzie/re_plugins/tree/master/flash_tools/swfdump_gui) when run against a target swf, it will create a decompressed version of the swf and a .txt disasm log file these files will be cached and used on subsequent loads. if you wish to start over from scratch use the tools->delete cached * options.
+- [gleegraph](https://github.com/dzzie/re_plugins/tree/master/gleegraph) a quick Wingraph32/qwingraph replacement that has some extra features such as being able to navigate IDA to the selected nodes when they are clicked on in graph view, as well as being able to rename the selected node from the  graph, or adding a prefix to all child nodes below it.
+- [hidden_strings](https://github.com/dzzie/re_plugins/tree/master/misc_tools/hidden_strings) scans for strings being build up in char arrays at runtime to hide from traditional strings output
+- [memdump_conglomerate](https://github.com/dzzie/re_plugins/tree/master/misc_tools/memdump_conglomerate) reads a folder full of memory dumps and puts them  all into a single dll husk so they will disassemble at the proper offsets.
+- [memdump_embedder](https://github.com/dzzie/re_plugins/tree/master/misc_tools/memdump_embedder) takes a memory dump and embeds it into a dummy dll husk so that you can disassemble it at the target base address without having to manually reset it everytime
+- [rtf_hexconvert](https://github.com/dzzie/re_plugins/tree/master/misc_tools/rtf_hexconvert) small tool to extract hex strings from a rtf document and show them in a listview. click on listitem to see decoded data in a hexeditor pane where you can save it
+- [uGrapher](https://github.com/dzzie/re_plugins/tree/master/uGrapher) rename real wingraph32.exe to _wingraph.exe and put this one in its place.
+- [wininet_hooks](https://github.com/dzzie/re_plugins/tree/master/wininet_hooks) httpsendhook.dll hooks the following wininet api calls:HttpOpenRequest,InternetConnect,InternetReadFile,InternetCrackUrl,HttpSendRequest
 - [**40**Star][2y] [Py] [mxmssh/idametrics](https://github.com/mxmssh/idametrics)  static software complexity metrics collection
 - [**38**Star][2y] [Py] [saelo/ida_scripts](https://github.com/saelo/ida_scripts) Collection of IDA scripts
-    - [kernelcache](https://github.com/saelo/ida_scripts/blob/master/kernelcache.py) Identify and rename function stubs (plt entries) in an iOS kernelcache. ARM64 only.
-    - [ssdt](https://github.com/saelo/ida_scripts/blob/master/ssdt.py) Resolve syscall table entries in the Windows kernel.
+- [kernelcache](https://github.com/saelo/ida_scripts/blob/master/kernelcache.py) Identify and rename function stubs (plt entries) in an iOS kernelcache. ARM64 only.
+- [ssdt](https://github.com/saelo/ida_scripts/blob/master/ssdt.py) Resolve syscall table entries in the Windows kernel.
 - [**34**Star][4y] [Py] [madsc13ntist/idapython](https://github.com/madsc13ntist/idapython) My collection of IDAPython scripts.(No Documentation)
 - [**32**Star][5y] [Py] [iphelix/ida-pomidor](https://github.com/iphelix/ida-pomidor) a productivity plugin for Hex-Ray's IDA Pro disassembler.
 - [**28**Star][1y] [Py] [xyzz/vita-ida-physdump](https://github.com/xyzz/vita-ida-physdump) help with physical memory dump reversing
@@ -483,50 +483,49 @@
 - [**26**Star][5y] [Py] [bastkerg/recomp](https://github.com/bastkerg/recomp) IDA recompiler（No Documentation）
 - [**26**Star][8m] [C++] [offlinej/ida-rpc](https://github.com/offlinej/ida-rpc) Discord rich presence plugin for IDA Pro 7.0
 - [**25**Star][3y] [Py] [zyantific/continuum](https://github.com/zyantific/continuum) Plugin adding multi-binary project support to IDA Pro (WIP)
-- [**23**Star][3m] [Py] [rceninja/re-scripts](https://github.com/rceninja/re-scripts) 
-    - [Hyperv-Scripts](https://github.com/rceninja/re-scripts/tree/master/scripts/Hyperv-Scripts) 
-    - [IA32-MSR-Decoder](https://github.com/rceninja/re-scripts/tree/master/scripts/IA32-MSR-Decoder) an IDA script which helps you to find and decode all MSR codes inside binary files
-    - [IA32-VMX-Helper](https://github.com/rceninja/re-scripts/tree/master/scripts/IA32-VMX-Helper) an IDA script (Updated IA32 MSR Decoder) which helps you to find and decode all MSR/VMCS codes inside binary files
+- [**23**Star][3m] [Py] [rceninja/re-scripts](https://github.com/rceninja/re-scripts)
+- [Hyperv-Scripts](https://github.com/rceninja/re-scripts/tree/master/scripts/Hyperv-Scripts)
+- [IA32-MSR-Decoder](https://github.com/rceninja/re-scripts/tree/master/scripts/IA32-MSR-Decoder) an IDA script which helps you to find and decode all MSR codes inside binary files
+- [IA32-VMX-Helper](https://github.com/rceninja/re-scripts/tree/master/scripts/IA32-VMX-Helper) an IDA script (Updated IA32 MSR Decoder) which helps you to find and decode all MSR/VMCS codes inside binary files
 - [**23**Star][10m] [C++] [trojancyborg/ida_jni_rename](https://github.com/trojancyborg/ida_jni_rename) IDA JNI clal rename
 - [**22**Star][5y] [Py] [nihilus/idascope](https://github.com/nihilus/idascope)  An IDA Pro extension for easier (malware) reverse engineering（Bitbucket has newer version）
 - [**22**Star][4m] [Py] [nlitsme/idascripts](https://github.com/nlitsme/idascripts) IDApro idc and idapython script collection
-    - [enumerators](https://github.com/nlitsme/idascripts/blob/master/enumerators.py) Enumeration utilities for idapython
+- [enumerators](https://github.com/nlitsme/idascripts/blob/master/enumerators.py) Enumeration utilities for idapython
 - [**22**Star][4y] [Py] [onethawt/idapyscripts](https://github.com/onethawt/idapyscripts) IDAPython scripts
-    - [DataXrefCounter ](https://github.com/onethawt/idapyscripts/blob/master/dataxrefcounter.py)  A small IDAPython plugin which enumerates all of the the x-references in a specific segment and counts the frequency of usage
+- [DataXrefCounter ](https://github.com/onethawt/idapyscripts/blob/master/dataxrefcounter.py)  A small IDAPython plugin which enumerates all of the the x-references in a specific segment and counts the frequency of usage
 - [**22**Star][3y] [C++] [patois/idaplugins](https://github.com/patois/idaplugins) Random IDA scripts, plugins, example code (some of it may be old and not working anymore)
 - [**20**Star][1y] [Py] [hyuunnn/ida_python_scripts](https://github.com/hyuunnn/ida_python_scripts) IDAPython scripts(No Documentation)
-    - [IDA_comment](https://github.com/hyuunnn/ida_python_scripts/blob/master/IDA_comment.py) 
-    - [ida_function_rename](https://github.com/hyuunnn/ida_python_scripts/blob/master/ida_function_rename.py) 
-    - [variable_finder](https://github.com/hyuunnn/ida_python_scripts/blob/master/variable_finder.py) 
-    - [assembler_disassembler](https://github.com/hyuunnn/ida_python_scripts/blob/master/assembler_disassembler.py) 
-    - [api_visualization](https://github.com/hyuunnn/ida_python_scripts/tree/master/api_visualization) 
-    - [Decoder](https://github.com/hyuunnn/ida_python_scripts/tree/master/Decoder) Multiple malware decoders
+- [IDA_comment](https://github.com/hyuunnn/ida_python_scripts/blob/master/IDA_comment.py)
+- [ida_function_rename](https://github.com/hyuunnn/ida_python_scripts/blob/master/ida_function_rename.py)
+- [variable_finder](https://github.com/hyuunnn/ida_python_scripts/blob/master/variable_finder.py)
+- [assembler_disassembler](https://github.com/hyuunnn/ida_python_scripts/blob/master/assembler_disassembler.py)
+- [api_visualization](https://github.com/hyuunnn/ida_python_scripts/tree/master/api_visualization)
+- [Decoder](https://github.com/hyuunnn/ida_python_scripts/tree/master/Decoder) Multiple malware decoders
 - [**20**Star][2y] [C#] [zoebear/radia](https://github.com/zoebear/radia) create an interactive and immerse environment to visualize code, and to augment the task of reverse engineering binaries
 - [**20**Star][3y] [Py] [ztrix/idascript](https://github.com/ztrix/idascript) Full functional idascript with stdin/stdout handled
-- [**20**Star][1y] [Py] [hyuunnn/ida_python_scripts](https://github.com/hyuunnn/ida_python_scripts) ida python scripts
 - [**20**Star][2m] [Py] [mephi42/ida-kallsyms](https://github.com/mephi42/ida-kallsyms) (No Doc)
 - [**19**Star][1y] [Py] [a1ext/ida-embed-arch-disasm](https://github.com/a1ext/ida-embed-arch-disasm) Allows you to disassemble x86-64 code (like inlined WOW64 one) while you using 32-bit IDA database
 - [**19**Star][9m] [Py] [yellowbyte/reverse-engineering-playground](https://github.com/yellowbyte/reverse-engineering-playground) Scripts I made to aid me in everyday reversing or just for fun.
-    - [idapython-scripts](https://github.com/yellowbyte/reverse-engineering-playground/tree/master/idapython) 
-    - [IDA-ARMdetect](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/ARMdetect.py) Identifies all sections in a ARM binary that is setting up (writing to) a pin, reading a pin (using the pin as input pin), or interfacing with other devices on the board using I2C
-    - [IDA-CCCheck](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/CCCheck.py) The 0xCC byte is the byte representing int 3, or software breakpoint. When you make a software breakpoint on an instruction, the debugger replaces the first byte of the instruction to 0xCC.
-    - [IDA-Deobfuscate](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/Deobfuscate.py) directly patch the bytes in IDA so IDA will show the correct deobfuscated listing rather than writing the deobfuscated listing to a separate file
-    - [IDA-FindMain](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/FindMain.py) automatically find and rename main as "main" and then move cursor position in IDA's disassembly listing to beginning of main.(In a stripped ELF executable, IDA will not be able to identify main)
-    - [IDA-intCheck](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/intCheck.py) Interrupts are either generated by external sources, such as I/O devices, or by processor-detected exceptions in the running code
-    - [IDA-JccFlip](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/JccFlip.py) Changes a jcc instruction to its opposite representation.
-    - [IDA-LocFuncAnalyzer](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/LocFuncAnalyzer.py) In a stripped ELF binary, local functions are deprived of its original name. This is why local functions are not usually the starting point when doing analysis since without its original name, all local functions look exactly the same as one another. This script aims to change that
-    - [IDA-MalCheck](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/MalCheck.py) Checks an executable for usage of API that has a high chance of being used maliciously or for anti-reversing purposes such as IsDebuggerPresent
-    - [IDA-NopSled](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/NopSled.py) Either convert the instructions that user select/highlight or the instruction that the mouse cursor is on to NOPs
-    - [IDA-RdtscCheck](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/RdtscCheck.py) rdtsc instruction puts the number of ticks since the last system reboot in EDX:EAX
-    - [file_format_hacks](https://github.com/yellowbyte/reverse-engineering-playground/tree/master/file_format_hacks) File Format Hacks
-    - [file_analysis](https://github.com/yellowbyte/reverse-engineering-playground/tree/master/file_analysis) 
-    - [shellcode_analysis](https://github.com/yellowbyte/reverse-engineering-playground/tree/master/shellcode_analysis) Shellcode Analysis
+- [idapython-scripts](https://github.com/yellowbyte/reverse-engineering-playground/tree/master/idapython)
+- [IDA-ARMdetect](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/ARMdetect.py) Identifies all sections in a ARM binary that is setting up (writing to) a pin, reading a pin (using the pin as input pin), or interfacing with other devices on the board using I2C
+- [IDA-CCCheck](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/CCCheck.py) The 0xCC byte is the byte representing int 3, or software breakpoint. When you make a software breakpoint on an instruction, the debugger replaces the first byte of the instruction to 0xCC.
+- [IDA-Deobfuscate](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/Deobfuscate.py) directly patch the bytes in IDA so IDA will show the correct deobfuscated listing rather than writing the deobfuscated listing to a separate file
+- [IDA-FindMain](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/FindMain.py) automatically find and rename main as "main" and then move cursor position in IDA's disassembly listing to beginning of main.(In a stripped ELF executable, IDA will not be able to identify main)
+- [IDA-intCheck](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/intCheck.py) Interrupts are either generated by external sources, such as I/O devices, or by processor-detected exceptions in the running code
+- [IDA-JccFlip](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/JccFlip.py) Changes a jcc instruction to its opposite representation.
+- [IDA-LocFuncAnalyzer](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/LocFuncAnalyzer.py) In a stripped ELF binary, local functions are deprived of its original name. This is why local functions are not usually the starting point when doing analysis since without its original name, all local functions look exactly the same as one another. This script aims to change that
+- [IDA-MalCheck](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/MalCheck.py) Checks an executable for usage of API that has a high chance of being used maliciously or for anti-reversing purposes such as IsDebuggerPresent
+- [IDA-NopSled](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/NopSled.py) Either convert the instructions that user select/highlight or the instruction that the mouse cursor is on to NOPs
+- [IDA-RdtscCheck](https://github.com/yellowbyte/reverse-engineering-playground/blob/master/idapython/RdtscCheck.py) rdtsc instruction puts the number of ticks since the last system reboot in EDX:EAX
+- [file_format_hacks](https://github.com/yellowbyte/reverse-engineering-playground/tree/master/file_format_hacks) File Format Hacks
+- [file_analysis](https://github.com/yellowbyte/reverse-engineering-playground/tree/master/file_analysis)
+- [shellcode_analysis](https://github.com/yellowbyte/reverse-engineering-playground/tree/master/shellcode_analysis) Shellcode Analysis
 - [**17**Star][1y] [Py] [honeybadger1613/etm_displayer](https://github.com/honeybadger1613/etm_displayer) IDA Pro плагин для отображения результата Coresight ETM трассировки perf'а
 - [**16**Star][5y] [fabi/idacsharp](https://github.com/fabi/idacsharp) C# 'Scripts' for IDA 6.6+ based on
 - [**15**Star][8m] [CMake] [google/idaidle](https://github.com/google/idaidle) a plugin for the commercial IDA Pro disassembler that warns users if they leave their instance idling for too long
 - [**14**Star][4y] [C++] [nihilus/fast_idb2sig_and_loadmap_ida_plugins](https://github.com/nihilus/fast_idb2sig_and_loadmap_ida_plugins) ida plugins
-    - [LoadMap](https://github.com/nihilus/fast_idb2sig_and_loadmap_ida_plugins/tree/master/LoadMap)  An IDA plugin, which loads a VC/Borland/Dede map file into IDA 4.5
-    - [idb2sig](https://github.com/nihilus/fast_idb2sig_and_loadmap_ida_plugins/blob/master/idb2sig/ReadMe.txt) 
+- [LoadMap](https://github.com/nihilus/fast_idb2sig_and_loadmap_ida_plugins/tree/master/LoadMap)  An IDA plugin, which loads a VC/Borland/Dede map file into IDA 4.5
+- [idb2sig](https://github.com/nihilus/fast_idb2sig_and_loadmap_ida_plugins/blob/master/idb2sig/ReadMe.txt)
 - [**13**Star][2y] [Py] [cisco-talos/pdata_check](https://github.com/cisco-talos/pdata_check) identify unusual runtimes based on the pdata section and the last instruction of the runtime function
 - [**13**Star][1y] [C++] [nihilus/graphslick](https://github.com/nihilus/graphslick) IDA Plugin - GraphSlick
 - [**13**Star][1y] [Py] [cxm95/ida_wrapper](https://github.com/cxm95/ida_wrapper) An IDA_Wrapper for linux, shipped with an Function Identifier. It works well with Driller on static linked binaries.
@@ -539,9 +538,9 @@
 - [**9**Star][2m] [C++] [nlitsme/idcinternals](https://github.com/nlitsme/idcinternals) investigate the internals of IDA
 - [**9**Star][5y] [Ruby] [rogwfu/plympton](https://github.com/rogwfu/plympton) Library to work with yaml exported IDA Pro information and run statistics
 - [**9**Star][9m] [Py] [0xcpu/relieve](https://github.com/0xcpu/relieve) Scripts used for reverse engineering, malware analysis.
-    - [elfie](https://github.com/0xcpu/relieve/blob/master/elfie.py)  display (basic) info about an ELF, similar to readelf.
-    - [elforensics](https://github.com/0xcpu/relieve/blob/master/elforensics.py)  check ELF for entry point hooks, RWX sections, CTORS & GOT & PLT hooks, function prologue trampolines.
-    - [dololi](https://github.com/0xcpu/relieve/tree/master/dololi) unfinished, the idea is to automatically generate an executable that calls exports from DLL(s).
+- [elfie](https://github.com/0xcpu/relieve/blob/master/elfie.py)  display (basic) info about an ELF, similar to readelf.
+- [elforensics](https://github.com/0xcpu/relieve/blob/master/elforensics.py)  check ELF for entry point hooks, RWX sections, CTORS & GOT & PLT hooks, function prologue trampolines.
+- [dololi](https://github.com/0xcpu/relieve/tree/master/dololi) unfinished, the idea is to automatically generate an executable that calls exports from DLL(s).
 - [**8**Star][5y] [Py] [daniel_plohmann/idapatchwork](https://bitbucket.org/daniel_plohmann/idapatchwork) Stitching against malware families with IDA Pro
 - [**8**Star][2y] [C++] [ecx86/ida7-segmentselect](https://github.com/ecx86/ida7-segmentselect) IDA-SegmentSelect library by sirmabus, ported to IDA 7
 - [**8**Star][2y] [Py] [fireundubh/ida7-alleycat](https://github.com/fireundubh/ida7-alleycat) Alleycat plugin by devttys0, ported to IDA 7
@@ -557,7 +556,7 @@
 - [**6**Star][9m] [Py] [geosn0w/dumpanywhere64](https://github.com/geosn0w/dumpanywhere64) An IDA (Interactive Disassembler) script that can save a chunk of binary from an address.
 - [**5**Star][3y] [Py] [andreafioraldi/idavshelp](https://github.com/andreafioraldi/idavshelp) IDAPython plugin to integrate Visual Studio Help Viewer in IDA Pro >= 6.8.
 - [**5**Star][5m] [Py] [fdiskyou/ida-plugins](https://github.com/fdiskyou/ida-plugins) IDAPython scripts（No Documentation）
-    - [banned_functions](https://github.com/fdiskyou/ida-plugins/blob/master/banned_functions.py) 
+- [banned_functions](https://github.com/fdiskyou/ida-plugins/blob/master/banned_functions.py)
 - [**5**Star][3y] [Py] [gh0st3rs/idassldump](https://github.com/gh0st3rs/idassldump) Simple IDAPython script for dump ssl traffic to file
 - [**5**Star][1y] [C++] [lab313ru/m68k_fixer](https://github.com/lab313ru/m68k_fixer) IDA Pro plugin fixer for m68k
 - [**5**Star][5y] [C#] [npetrovski/ida-smartpatcher](https://github.com/npetrovski/ida-smartpatcher) IDA apply patch GUI
@@ -565,18 +564,18 @@
 - [**5**Star][2y] [abarbatei/ida-utils](https://github.com/abarbatei/ida-utils) links, information and helper scripts for IDA Pro
 - [**4**Star][3m] [Py] [gitmirar/idaextapi](https://github.com/gitmirar/idaextapi) IDA API utlitites
 - [**4**Star][3y] [Py] [hustlelabs/joseph](https://github.com/hustlelabs/joseph) IDA Viewer Plugins
-- [**4**Star][1y] [savagedd/samp-server-idb](https://github.com/savagedd/samp-server-idb) 
+- [**4**Star][1y] [savagedd/samp-server-idb](https://github.com/savagedd/samp-server-idb)
 - [**4**Star][3m] [Py] [spigwitmer/golang_struct_builder](https://github.com/spigwitmer/golang_struct_builder) IDA 7.0+ script that auto-generates structs and interfaces from runtime metadata found in golang binaries
 - [**3**Star][10m] [Py] [gdataadvancedanalytics/ida-python](https://github.com/gdataadvancedanalytics/ida-python) Random assembly of IDA Python scripts
-    - [defineIAT](https://github.com/gdataadvancedanalytics/ida-python/blob/master/Trickbot/defineIAT.py) written for the Trickbot sample with sha256 8F590AC32A7C7C0DDFBFA7A70E33EC0EE6EB8D88846DEFBDA6144FADCC23663A
-    - [stringDecryption](https://github.com/gdataadvancedanalytics/ida-python/blob/master/Trickbot/stringDecryption.py) written for the Trickbot sample with sha256 8F590AC32A7C7C0DDFBFA7A70E33EC0EE6EB8D88846DEFBDA6144FADCC23663A
+- [defineIAT](https://github.com/gdataadvancedanalytics/ida-python/blob/master/Trickbot/defineIAT.py) written for the Trickbot sample with sha256 8F590AC32A7C7C0DDFBFA7A70E33EC0EE6EB8D88846DEFBDA6144FADCC23663A
+- [stringDecryption](https://github.com/gdataadvancedanalytics/ida-python/blob/master/Trickbot/stringDecryption.py) written for the Trickbot sample with sha256 8F590AC32A7C7C0DDFBFA7A70E33EC0EE6EB8D88846DEFBDA6144FADCC23663A
 - [**3**Star][5y] [C++] [nihilus/ida-x86emu](https://github.com/nihilus/ida-x86emu) x86 emulator
 - [**3**Star][2y] [Py] [ypcrts/ida-pro-segments](https://github.com/ypcrts/ida-pro-segments) It's very hard to load multiple files in the IDA GUI without it exploding. This makes it easy.
 - [**2**Star][2y] [C++] [ecx86/ida7-oggplayer](https://github.com/ecx86/ida7-oggplayer) IDA-OggPlayer library by sirmabus, ported to IDA 7
 - [**2**Star][2y] [Py] [mayl8822/ida](https://github.com/mayl8822/ida) SearchGoogle
 - [**2**Star][4y] [Py] [nihilus/idapatchwork](https://github.com/nihilus/idapatchwork) Stitching against malware families with IDA Pro
-- [**2**Star][2y] [Py] [sbouber/idaplugins](https://github.com/sbouber/idaplugins) 
-- [**2**Star][2m] [Py] [psxvoid/idapython-debugging-dynamic-enrichment](https://github.com/psxvoid/idapython-debugging-dynamic-enrichment) 
+- [**2**Star][2y] [Py] [sbouber/idaplugins](https://github.com/sbouber/idaplugins)
+- [**2**Star][2m] [Py] [psxvoid/idapython-debugging-dynamic-enrichment](https://github.com/psxvoid/idapython-debugging-dynamic-enrichment)
 - [**1**Star][2y] [Py] [andreafioraldi/idamsdnhelp](https://github.com/andreafioraldi/idamsdnhelp) IdaPython plugin to open MSDN Search page
 - [**1**Star][1y] [Py] [farzonl/idapropluginlab4](https://github.com/farzonl/idapropluginlab4) An ida pro plugin that tracks def use chains of a given x86 binary.
 - [**1**Star][3m] [Py] [voidsec/ida-helpers](https://github.com/voidsec/ida-helpers) Collection of IDA helpers
@@ -592,46 +591,46 @@
 
 
 - [**931**Star][25d] [OCaml] [airbus-seclab/bincat](https://github.com/airbus-seclab/bincat) a static Binary Code Analysis Toolkit, designed to help reverse engineers, directly from IDA or using Python for automation.
-    - Also In Section: [IDA->Tools->Taint Analysis](#34ac84853604a7741c61670f2a075d20) |
+- Also In Section: [IDA->Tools->Taint Analysis](#34ac84853604a7741c61670f2a075d20) |
 - [**664**Star][27d] [Py] [igogo-x86/hexrayspytools](https://github.com/igogo-x86/hexrayspytools) assists in the creation of classes/structures and detection of virtual tables
 - [**168**Star][1y] [Py] [bazad/ida_kernelcache](https://github.com/bazad/ida_kernelcache) An IDA Toolkit for analyzing iOS kernelcaches
-    - Also In Section: [IDA->Tools->Apple->Kernel Cache](#82d0fa2d6934ce29794a651513934384) |
+- Also In Section: [IDA->Tools->Apple->Kernel Cache](#82d0fa2d6934ce29794a651513934384) |
 - [**140**Star][4y] [C++] [nihilus/hexrays_tools](https://github.com/nihilus/hexrays_tools) Assist in creation of new structure definitions / virtual calls detection
 - [**103**Star][4m] [Py] [lucasg/findrpc](https://github.com/lucasg/findrpc) Ida script to extract RPC interface from binaries
 - [**4**Star][3y] [C#] [andreafioraldi/idagrabstrings](https://github.com/andreafioraldi/idagrabstrings) IDAPython plugin to manipulate strings in a specified range of addresses
-    - Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |
+- Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |
 
 
 #### <a id="4900b1626f10791748b20630af6d6123"></a>C++ Class&&Virtual Table
 
 
 - [**607**Star][3m] [Py] [0xgalz/virtuailor](https://github.com/0xgalz/virtuailor) IDAPython tool for C++ vtables reconstruction
-    - Also In Section: [IDA->Tools->Debug->Debugger Data](#b31acf6c84a9506066d497af4e702bf5) |
-        <details>
-        <summary>View Details</summary>
+- Also In Section: [IDA->Tools->Debug->Debugger Data](#b31acf6c84a9506066d497af4e702bf5) |
+<details>
+<summary>View Details</summary>
 
 
-        ## 静态部分: 
-        - 检测非直接调用
-        - 利用条件断点, Hook非直接调用的值赋值过程
-        
-        ## 动态 部分
-        - 创建虚表结构
-        - 重命名函数和虚表地址
-        - 给反汇编非直接调用添加结构偏移
-        - 给非直接调用到虚表之间添加交叉引用
-        
-        ## 使用
-        - File -> Script File -> Main.py(设置断点) -> IDA调试器执行
-        </details>
+## 静态部分:
+- 检测非直接调用
+- 利用条件断点, Hook非直接调用的值赋值过程
+
+## 动态 部分
+- 创建虚表结构
+- 重命名函数和虚表地址
+- 给反汇编非直接调用添加结构偏移
+- 给非直接调用到虚表之间添加交叉引用
+
+## 使用
+- File -> Script File -> Main.py(设置断点) -> IDA调试器执行
+</details>
 
 
 - [**171**Star][10m] [C++] [ecx86/classinformer-ida7](https://github.com/ecx86/classinformer-ida7) ClassInformer backported for IDA Pro 7.0
 - [**130**Star][2y] [Py] [nccgroup/susanrtti](https://github.com/nccgroup/SusanRTTI) Another RTTI Parsing IDA plugin
 - [**90**Star][1y] [C++] [rub-syssec/marx](https://github.com/rub-syssec/marx) Uncovering Class Hierarchies in C++ Programs
-    - [IDA导出](https://github.com/rub-syssec/marx/blob/master/ida_export/export.py) 
-    - [IDA导入插件](https://github.com/rub-syssec/marx/tree/master/ida_import) 
-    - [core](https://github.com/rub-syssec/marx/tree/master/src) 
+- [IDA导出](https://github.com/rub-syssec/marx/blob/master/ida_export/export.py)
+- [IDA导入插件](https://github.com/rub-syssec/marx/tree/master/ida_import)
+- [core](https://github.com/rub-syssec/marx/tree/master/src)
 - [**69**Star][7y] [C] [nektra/vtbl-ida-pro-plugin](https://github.com/nektra/vtbl-ida-pro-plugin) Identifying Virtual Table Functions using VTBL IDA Pro Plugin + Deviare Hooking Engine
 - [**35**Star][5y] [C++] [nihilus/ida_classinformer](https://github.com/nihilus/ida_classinformer) IDA ClassInformer PlugIn
 - [**32**Star][2y] [Py] [krystalgamer/dec2struct](https://github.com/krystalgamer/dec2struct) Python plugin to easily setup vtables in IDA using declaration files
@@ -645,7 +644,7 @@
 
 - [**1771**Star][10d] [onethawt/idaplugins-list](https://github.com/onethawt/idaplugins-list) A list of IDA Plugins
 - [**363**Star][9m] [fr0gger/awesome-ida-x64-olly-plugin](https://github.com/fr0gger/awesome-ida-x64-olly-plugin) Awesome IDA, x64DBG & OllyDBG plugin
-    - Also In Section: [x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
+- Also In Section: [x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
 - [**10**Star][1y] [Py] [ecx86/ida-scripts](https://github.com/ecx86/ida-scripts) Collection of my IDA Pro/Hex-Rays scripts and plugins
 
 
@@ -667,18 +666,18 @@
 
 
 - [**5228**Star][2m] [Py] [refirmlabs/binwalk](https://github.com/ReFirmLabs/binwalk) a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
-    - [IDA插件](https://github.com/ReFirmLabs/binwalk/tree/master/src/scripts) 
-    - [binwalk](https://github.com/ReFirmLabs/binwalk/tree/master/src/binwalk) 
+- [IDA插件](https://github.com/ReFirmLabs/binwalk/tree/master/src/scripts)
+- [binwalk](https://github.com/ReFirmLabs/binwalk/tree/master/src/binwalk)
 - [**492**Star][5m] [Py] [maddiestone/idapythonembeddedtoolkit](https://github.com/maddiestone/idapythonembeddedtoolkit) a set of script to automate many of the steps associated with statically analyzing, or reverse engineering, the firmware of embedded devices in IDA Pro.
 - [**177**Star][2y] [Py] [duo-labs/idapython](https://github.com/duo-labs/idapython)  a few Python modules developed for use with IDA Pro from the researchers at Duo Labs.
-    - Also In Section: [IDA->Tools->Apple->No Category](#8530752bacfb388f3726555dc121cb1a) |
-    - [cortex_m_firmware](https://github.com/duo-labs/idapython/blob/master/cortex_m_firmware.py) grooms an IDA Pro database containing firmware from an ARM Cortex M microcontroller.
-    - [amnesia](https://github.com/duo-labs/idapython/blob/master/amnesia.py)  an IDAPython module designed to use byte level heuristics to find ARM thumb instructions in undefined bytes in an IDA Pro database
-    - [REobjc](https://github.com/duo-labs/idapython/blob/master/reobjc.py)  an IDAPython module designed to make proper cross references between calling functions and called functions in Objective-C methods
+- Also In Section: [IDA->Tools->Apple->No Category](#8530752bacfb388f3726555dc121cb1a) |
+- [cortex_m_firmware](https://github.com/duo-labs/idapython/blob/master/cortex_m_firmware.py) grooms an IDA Pro database containing firmware from an ARM Cortex M microcontroller.
+- [amnesia](https://github.com/duo-labs/idapython/blob/master/amnesia.py)  an IDAPython module designed to use byte level heuristics to find ARM thumb instructions in undefined bytes in an IDA Pro database
+- [REobjc](https://github.com/duo-labs/idapython/blob/master/reobjc.py)  an IDAPython module designed to make proper cross references between calling functions and called functions in Objective-C methods
 - [**101**Star][1m] [Py] [pagalaxylab/vxhunter](https://github.com/PAGalaxyLab/vxhunter) A ToolSet for VxWorks Based Embedded Device Analyses.
-    - [R2](https://github.com/PAGalaxyLab/vxhunter/blob/master/firmware_tools/vxhunter_r2_py2.py) 
-    - [IDA插件](https://github.com/PAGalaxyLab/vxhunter/blob/master/firmware_tools/vxhunter_ida.py) 
-    - [Ghidra插件](https://github.com/PAGalaxyLab/vxhunter/tree/master/firmware_tools/ghidra) 
+- [R2](https://github.com/PAGalaxyLab/vxhunter/blob/master/firmware_tools/vxhunter_r2_py2.py)
+- [IDA插件](https://github.com/PAGalaxyLab/vxhunter/blob/master/firmware_tools/vxhunter_ida.py)
+- [Ghidra插件](https://github.com/PAGalaxyLab/vxhunter/tree/master/firmware_tools/ghidra)
 
 
 ### <a id="02088f4884be6c9effb0f1e9a3795e58"></a>Signature(FLIRT...)&&Diff&&Match
@@ -688,9 +687,9 @@
 
 
 - [**421**Star][1m] [C] [mcgill-dmas/kam1n0-community](https://github.com/McGill-DMaS/Kam1n0-Community) a scalable assembly management and analysis platform
-    - Also In Section: [IDA->Tools->Part Of Other Tool](#83de90385d03ac8ef27360bfcdc1ab48) |
-    - [IDA插件](https://github.com/McGill-DMaS/Kam1n0-Community/tree/master2.x/kam1n0-clients/ida-plugin) 
-    - [kam1n0](https://github.com/McGill-DMaS/Kam1n0-Community/tree/master2.x/kam1n0) 
+- Also In Section: [IDA->Tools->Part Of Other Tool](#83de90385d03ac8ef27360bfcdc1ab48) |
+- [IDA插件](https://github.com/McGill-DMaS/Kam1n0-Community/tree/master2.x/kam1n0-clients/ida-plugin)
+- [kam1n0](https://github.com/McGill-DMaS/Kam1n0-Community/tree/master2.x/kam1n0)
 - [**149**Star][1y] [C++] [ajkhoury/sigmaker-x64](https://github.com/ajkhoury/SigMaker-x64) IDA Pro 7.0 compatible SigMaker plugin
 - [**131**Star][1y] [Py] [cisco-talos/bass](https://github.com/cisco-talos/bass) a framework designed to automatically generate antivirus signatures from samples belonging to previously generated malware clusters
 - [**71**Star][4y] [Py] [icewall/bindifffilter](https://github.com/icewall/bindifffilter) IDA Pro plugin making easier work on BinDiff results
@@ -705,9 +704,9 @@
 - [**18**Star][5y] [Py] [zaironne/snippetdetector](https://github.com/zaironne/snippetdetector) IDA Python scripts project for snippets detection
 - [**17**Star][8y] [C++] [alexander-pick/idb2pat](https://github.com/alexander-pick/idb2pat) idb2pat plugin, fixed to work with IDA 6.2
 - [**14**Star][8y] [Standard ML] [letsunlockiphone/iphone-baseband-ida-pro-signature-files](https://github.com/letsunlockiphone/iphone-baseband-ida-pro-signature-files) IDA Pro Signature Files iPhone Baseband Reversing
-    - Also In Section: [IDA->Tools->Apple->No Category](#8530752bacfb388f3726555dc121cb1a) |
+- Also In Section: [IDA->Tools->Apple->No Category](#8530752bacfb388f3726555dc121cb1a) |
 - [**3**Star][4y] [Py] [ayuto/discover_win](https://github.com/ayuto/discover_win) compare linux and windows binary, rename windows binary functions
-    - Also In Section: [IDA->Tools->Function->Rename](#73813456eeb8212fd45e0ea347bec349) |
+- Also In Section: [IDA->Tools->Function->Rename](#73813456eeb8212fd45e0ea347bec349) |
 - [**0**Star][1y] [Py] [gh0st3rs/idaprotosync](https://github.com/gh0st3rs/idaprotosync) IDAPython plugin for identifies functions prototypes between two or more IDBs
 
 
@@ -727,7 +726,7 @@
 
 - [**62**Star][11m] [Py] [push0ebp/allirt](https://github.com/push0ebp/allirt) Tool that converts All of libc to signatures for IDA Pro FLIRT Plugin. and utility make sig with FLAIR easily
 - [**54**Star][9m] [Py] [nwmonster/applysig](https://github.com/nwmonster/applysig) Apply IDA FLIRT signatures for Ghidra
-    - Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |[Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |
+- Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |[Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |
 
 
 
@@ -752,14 +751,13 @@
 
 
 - [**449**Star][2m] [Py] [polymorf/findcrypt-yara](https://github.com/polymorf/findcrypt-yara) IDA pro plugin to find crypto constants (and more)
-    - Also In Section: [IDA->Tools->encrypt](#06d2caabef97cf663bd29af2b1fe270c) |
+- Also In Section: [IDA->Tools->encrypt](#06d2caabef97cf663bd29af2b1fe270c) |
 - [**92**Star][2m] [Py] [hyuunnn/hyara](https://github.com/hyuunnn/Hyara) IDA Plugin that provides convenience when writing yararule.
-    - [IDA插件](https://github.com/hy00un/hyara/tree/master/IDA%20Plugin) 
-    - [BinaryNinja插件](https://github.com/hy00un/hyara/tree/master/BinaryNinja%20Plugin) 
-- [**92**Star][2m] [Py] [hyuunnn/hyara](https://github.com/hyuunnn/hyara) Yara rule making tool (IDA Pro & Binary Ninja Plugin)
+- [IDA插件](https://github.com/hy00un/hyara/tree/master/IDA%20Plugin)
+- [BinaryNinja插件](https://github.com/hy00un/hyara/tree/master/BinaryNinja%20Plugin)
 - [**83**Star][1y] [Py] [oalabs/findyara](https://github.com/oalabs/findyara) IDA python plugin to scan your binary with yara rules
 - [**16**Star][11m] [Py] [bnbdr/ida-yara-processor](https://github.com/bnbdr/ida-yara-processor) Loader and processor for YARA's compiled rule format
-    - Also In Section: [IDA->Tools->Specific Target->Loader](#cb59d84840e41330a7b5e275c0b81725) |
+- Also In Section: [IDA->Tools->Specific Target->Loader](#cb59d84840e41330a7b5e275c0b81725) |
 - [**14**Star][1y] [Py] [alexander-hanel/ida_yara](https://github.com/alexander-hanel/ida_yara) scan data within in an IDB using Yara
 - [**14**Star][1y] [Py] [souhailhammou/idaray-plugin](https://github.com/souhailhammou/idaray-plugin) IDARay is an IDA Pro plugin that matches the database against multiple YARA files which themselves may contain multiple rules.
 
@@ -791,34 +789,34 @@
 
 
 - [**471**Star][13d] [C] [bootleg/ret-sync](https://github.com/bootleg/ret-sync) a set of plugins that help to synchronize a debugging session (WinDbg/GDB/LLDB/OllyDbg/OllyDbg2/x64dbg) with IDA/Ghidra disassemblers
-    - Also In Section: [x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
-    - [GDB插件](https://github.com/bootleg/ret-sync/tree/master/ext_gdb) 
-    - [Ghidra插件](https://github.com/bootleg/ret-sync/tree/master/ext_ghidra) 
-    - [IDA插件](https://github.com/bootleg/ret-sync/tree/master/ext_ida) 
-    - [LLDB](https://github.com/bootleg/ret-sync/tree/master/ext_lldb) 
-    - [OD](https://github.com/bootleg/ret-sync/tree/master/ext_olly1) 
-    - [OD2](https://github.com/bootleg/ret-sync/tree/master/ext_olly2) 
-    - [WinDgb](https://github.com/bootleg/ret-sync/tree/master/ext_windbg/sync) 
-    - [x64dbg](https://github.com/bootleg/ret-sync/tree/master/ext_x64dbg) 
+- Also In Section: [x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
+- [GDB插件](https://github.com/bootleg/ret-sync/tree/master/ext_gdb)
+- [Ghidra插件](https://github.com/bootleg/ret-sync/tree/master/ext_ghidra)
+- [IDA插件](https://github.com/bootleg/ret-sync/tree/master/ext_ida)
+- [LLDB](https://github.com/bootleg/ret-sync/tree/master/ext_lldb)
+- [OD](https://github.com/bootleg/ret-sync/tree/master/ext_olly1)
+- [OD2](https://github.com/bootleg/ret-sync/tree/master/ext_olly2)
+- [WinDgb](https://github.com/bootleg/ret-sync/tree/master/ext_windbg/sync)
+- [x64dbg](https://github.com/bootleg/ret-sync/tree/master/ext_x64dbg)
 - [**292**Star][11m] [C] [a1ext/labeless](https://github.com/a1ext/labeless) Seamless synchronization of labels, function names, comments and global variables (w/wo demangling); Dynamic dumping of debugged process memory regions
-    - [IDA插件](https://github.com/a1ext/labeless/tree/master/labeless_ida) 
-    - [OD](https://github.com/a1ext/labeless/tree/master/labeless_olly) 
-    - [OD2](https://github.com/a1ext/labeless/tree/master/labeless_olly2) 
-    - [x64dbg](https://github.com/a1ext/labeless/tree/master/labeless_x64dbg) 
+- [IDA插件](https://github.com/a1ext/labeless/tree/master/labeless_ida)
+- [OD](https://github.com/a1ext/labeless/tree/master/labeless_olly)
+- [OD2](https://github.com/a1ext/labeless/tree/master/labeless_olly2)
+- [x64dbg](https://github.com/a1ext/labeless/tree/master/labeless_x64dbg)
 - [**179**Star][1y] [Py] [andreafioraldi/idangr](https://github.com/andreafioraldi/idangr) Use angr in the IDA Pro debugger generating a state from the current debug session
 - [**132**Star][2y] [Py] [comsecuris/gdbida](https://github.com/comsecuris/gdbida) a visual bridge between a GDB session and IDA Pro's disassembler
-    - [IDA插件](https://github.com/comsecuris/gdbida/blob/master/ida_gdb_bridge.py) 
-    - [GDB脚本](https://github.com/comsecuris/gdbida/blob/master/gdb_ida_bridge_client.py) 
+- [IDA插件](https://github.com/comsecuris/gdbida/blob/master/ida_gdb_bridge.py)
+- [GDB脚本](https://github.com/comsecuris/gdbida/blob/master/gdb_ida_bridge_client.py)
 - [**97**Star][4y] [C++] [quarkslab/qb-sync](https://github.com/quarkslab/qb-sync) add some helpful glue between IDA Pro and Windbg
-    - [GDB插件](https://github.com/quarkslab/qb-sync/tree/master/ext_gdb) 
-    - [IDA插件](https://github.com/quarkslab/qb-sync/tree/master/ext_ida) 
-    - [LLDB](https://github.com/quarkslab/qb-sync/tree/master/ext_lldb) 
-    - [OD2](https://github.com/quarkslab/qb-sync/tree/master/ext_olly2) 
-    - [WinDbg](https://github.com/quarkslab/qb-sync/tree/master/ext_windbg/sync) 
-    - [x64dbg](https://github.com/quarkslab/qb-sync/tree/master/ext_x64dbg) 
+- [GDB插件](https://github.com/quarkslab/qb-sync/tree/master/ext_gdb)
+- [IDA插件](https://github.com/quarkslab/qb-sync/tree/master/ext_ida)
+- [LLDB](https://github.com/quarkslab/qb-sync/tree/master/ext_lldb)
+- [OD2](https://github.com/quarkslab/qb-sync/tree/master/ext_olly2)
+- [WinDbg](https://github.com/quarkslab/qb-sync/tree/master/ext_windbg/sync)
+- [x64dbg](https://github.com/quarkslab/qb-sync/tree/master/ext_x64dbg)
 - [**46**Star][4m] [JS] [sinakarvandi/windbg2ida](https://github.com/sinakarvandi/windbg2ida) dump each step in Windbg then shows these steps in IDA Windbg2ida
-    - [Windbg脚本](https://github.com/sinakarvandi/windbg2ida/blob/master/windbg2ida.js) JavaScript
-    - [IDA脚本](https://github.com/sinakarvandi/windbg2ida/blob/master/IDAScript.py) 
+- [Windbg脚本](https://github.com/sinakarvandi/windbg2ida/blob/master/windbg2ida.js) JavaScript
+- [IDA脚本](https://github.com/sinakarvandi/windbg2ida/blob/master/IDAScript.py)
 - [**36**Star][10m] [Py] [anic/ida2pwntools](https://github.com/anic/ida2pwntools) a IDA 7.0 plugins that helps to attach process created by pwntools and debug pwn
 - [**29**Star][2y] [Py] [iweizime/dbghider](https://github.com/iweizime/dbghider) hide IDA Winddows debugger from processes.
 - [**19**Star][7y] [Py] [rmadair/windbg2ida](https://github.com/rmadair/windbg2ida) Import debugging traces from WinDBG into IDA. Color the graph, fill in the value of all operands, etc.
@@ -831,17 +829,17 @@
 
 
 - [**163**Star][2m] [Py] [x64dbg/x64dbgida](https://github.com/x64dbg/x64dbgida) Official x64dbg plugin for IDA Pro.
-    - Also In Section: [x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
+- Also In Section: [x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
 - [**148**Star][2m] [C++] [alschwalm/dwarfexport](https://github.com/alschwalm/dwarfexport) Export dwarf debug information from IDA Pro
 - [**96**Star][2y] [Py] [robindavid/idasec](https://github.com/robindavid/idasec) IDA plugin for reverse-engineering and dynamic interactions with the Binsec platform
 - [**67**Star][1y] [Py] [lucasg/idamagnum](https://github.com/lucasg/idamagnum)  a plugin for integrating MagnumDB requests within IDA
 - [**59**Star][2m] [Py] [binaryanalysisplatform/bap-ida-python](https://github.com/binaryanalysisplatform/bap-ida-python) interoperatibility between BAP and IDA Pro
 - [**35**Star][5y] [Py] [siberas/ida2sym](https://github.com/siberas/ida2sym) IDAScript to create Symbol file which can be loaded in WinDbg via AddSyntheticSymbol
 - [**28**Star][6y] [C++] [oct0xor/deci3dbg](https://github.com/oct0xor/deci3dbg) Ida Pro debugger module for Playstation 3
-    - Also In Section: [IDA->Tools->Specific Target->PS3](#315b1b8b41c67ae91b841fce1d4190b5) |
+- Also In Section: [IDA->Tools->Specific Target->PS3](#315b1b8b41c67ae91b841fce1d4190b5) |
 - [**28**Star][5m] [C++] [thalium/idatag](https://github.com/thalium/idatag) IDA plugin to explore and browse tags
 - [**19**Star][2y] [Py] [brandon-everhart/angryida](https://github.com/brandon-everhart/angryida) Python based angr plug in for IDA Pro.
-    - Also In Section: [Other->angr->Tool](#1ede5ade1e55074922eb4b6386f5ca65) |
+- Also In Section: [Other->angr->Tool](#1ede5ade1e55074922eb4b6386f5ca65) |
 - [**16**Star][4y] [C++] [m417z/mapimp](https://github.com/m417z/mapimp) an OllyDbg plugin which will help you to import map files exported by IDA, Dede, IDR, Microsoft and Borland linkers.
 - [**16**Star][5y] [Py] [danielmgmi/virusbattle-ida-plugin](https://github.com/danielmgmi/virusbattle-ida-plugin) The plugin is an integration of Virus Battle API to the well known IDA Disassembler.
 - [**8**Star][7y] [C++] [patois/madnes](https://github.com/patois/madnes) IDA plugin to export symbols and names from IDA db so they can be loaded into FCEUXD SP
@@ -852,86 +850,74 @@
 
 
 - [**299**Star][4m] [Py] [cisco-talos/ghida](https://github.com/cisco-talos/ghida) an IDA Pro plugin that integrates the Ghidra decompiler in IDA.
-    - Also In Section: [Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |
+- Also In Section: [Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |
 - [**238**Star][9m] [Py] [daenerys-sre/source](https://github.com/daenerys-sre/source)  A framework for interoperability between IDA and Ghidra
-    - Also In Section: [Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |
+- Also In Section: [Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |
 - [**88**Star][4m] [Py] [cisco-talos/ghidraaas](https://github.com/cisco-talos/ghidraaas) a simple web server that exposes Ghidra analysis through REST APIs
-    - Also In Section: [Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |
-- [**54**Star][9m] [Py] [nwmonster/applysig](https://github.com/nwmonster/applysig) Apply IDA FLIRT signatures for Ghidra
-    - Also In Section: [IDA->Tools->Signature(FLIRT...)->FLIRT->FLIRT Signature Generate](#a9a63d23d32c6c789ca4d2e146c9b6d0) |[Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |
+- Also In Section: [Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |
+- Also In Section: [IDA->Tools->Signature(FLIRT...)->FLIRT->FLIRT Signature Generate](#a9a63d23d32c6c789ca4d2e146c9b6d0) |[Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |
 - [**47**Star][2m] [Py] [utkonos/lst2x64dbg](https://github.com/utkonos/lst2x64dbg) Extract labels from IDA .lst or Ghidra .csv file and export x64dbg database.
-    - Also In Section: [Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |[x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
+- Also In Section: [Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |[x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
 
 
 #### <a id="11139e7d6db4c1cef22718868f29fe12"></a>BinNavi
 
 
 - [**382**Star][26d] [C++] [google/binexport](https://github.com/google/binexport) Export disassemblies into Protocol Buffers and to BinNavi databases
-    - Also In Section: [Other->BinNavi->Tool](#2e4980c95871eae4ec0e76c42cc5c32f) |
+- Also In Section: [Other->BinNavi->Tool](#2e4980c95871eae4ec0e76c42cc5c32f) |
 - [**213**Star][4y] [PLpgSQL] [cseagle/freedom](https://github.com/cseagle/freedom) capstone based disassembler for extracting to binnavi
-    - Also In Section: [Other->BinNavi->Tool](#2e4980c95871eae4ec0e76c42cc5c32f) |
+- Also In Section: [Other->BinNavi->Tool](#2e4980c95871eae4ec0e76c42cc5c32f) |
 - [**25**Star][7y] [Py] [tosanjay/bopfunctionrecognition](https://github.com/tosanjay/bopfunctionrecognition) plugin to BinNavi tool to analyze a x86 binanry file to find buffer overflow prone functions. Such functions are important for vulnerability analysis.
-    - Also In Section: [Other->BinNavi->Tool](#2e4980c95871eae4ec0e76c42cc5c32f) |
+- Also In Section: [Other->BinNavi->Tool](#2e4980c95871eae4ec0e76c42cc5c32f) |
 
 
 #### <a id="d1ff64bee76f6749aef6100d72bfbe3a"></a>BinaryNinja
 
 
 - [**68**Star][9m] [Py] [lunixbochs/revsync](https://github.com/lunixbochs/revsync) realtime cross-tool collaborative reverse engineering
-    - Also In Section: [BinaryNinja->Plugins->With Other Tools->IDA](#713fb1c0075947956651cc21a833e074) |
+- Also In Section: [BinaryNinja->Plugins->With Other Tools->IDA](#713fb1c0075947956651cc21a833e074) |
 - [**61**Star][6m] [Py] [zznop/bnida](https://github.com/zznop/bnida) Suite of plugins that provide the ability to transfer analysis data between Binary Ninja and IDA
-    - Also In Section: [BinaryNinja->Plugins->With Other Tools->IDA](#713fb1c0075947956651cc21a833e074) |
-    - [ida_export](https://github.com/zznop/bnida/blob/master/ida/ida_export.py) 将数据从IDA中导入
-    - [ida_import](https://github.com/zznop/bnida/blob/master/ida/ida_import.py) 将数据导入到IDA
-    - [binja_export](https://github.com/zznop/bnida/blob/master/binja_export.py) 将数据从BinaryNinja中导出
-    - [binja_import](https://github.com/zznop/bnida/blob/master/binja_import.py) 将数据导入到BinaryNinja
+- Also In Section: [BinaryNinja->Plugins->With Other Tools->IDA](#713fb1c0075947956651cc21a833e074) |
+- [ida_export](https://github.com/zznop/bnida/blob/master/ida/ida_export.py) 将数据从IDA中导入
+- [ida_import](https://github.com/zznop/bnida/blob/master/ida/ida_import.py) 将数据导入到IDA
+- [binja_export](https://github.com/zznop/bnida/blob/master/binja_export.py) 将数据从BinaryNinja中导出
+- [binja_import](https://github.com/zznop/bnida/blob/master/binja_import.py) 将数据导入到BinaryNinja
 - [**14**Star][6m] [Py] [cryptogenic/idc_importer](https://github.com/cryptogenic/idc_importer) A Binary Ninja plugin for importing IDC database dumps from IDA.
-    - Also In Section: [BinaryNinja->Plugins->With Other Tools->IDA](#713fb1c0075947956651cc21a833e074) |
+- Also In Section: [BinaryNinja->Plugins->With Other Tools->IDA](#713fb1c0075947956651cc21a833e074) |
 
 
 #### <a id="21ed198ae5a974877d7a635a4b039ae3"></a>Radare2
 
 
 - [**125**Star][8m] [Py] [danigargu/syms2elf](https://github.com/danigargu/syms2elf) A plugin for Hex-Ray's IDA Pro and radare2 to export the symbols recognized to the ELF symbol table
-    - Also In Section: [IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[IDA->Tools->Function->No Category](#347a2158bdd92b00cd3d4ba9a0be00ae) |[Radare2->Plugins->With Other Tools->IDA](#1cfe869820ecc97204a350a3361b31a7) |
+- Also In Section: [IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[IDA->Tools->Function->No Category](#347a2158bdd92b00cd3d4ba9a0be00ae) |[Radare2->Plugins->With Other Tools->IDA](#1cfe869820ecc97204a350a3361b31a7) |
 - [**123**Star][2m] [Py] [radare/radare2ida](https://github.com/radare/radare2ida) Tools, documentation and scripts to move projects from IDA to R2 and viceversa
-    - Also In Section: [Radare2->Plugins->With Other Tools->IDA](#1cfe869820ecc97204a350a3361b31a7) |
+- Also In Section: [Radare2->Plugins->With Other Tools->IDA](#1cfe869820ecc97204a350a3361b31a7) |
 
 
 #### <a id="a1cf7f7f849b4ca2101bd31449c2a0fd"></a>Frida
 
 
 - [**128**Star][3y] [Py] [friedappleteam/frapl](https://github.com/friedappleteam/frapl) a reverse engineering framework created to simplify dynamic instrumentation with Frida
-    - Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[DBI->Frida->Tools->With Other Tools->IDA](#d628ec92c9eea0c4b016831e1f6852b3) |
-    - [IDA插件](https://github.com/FriedAppleTeam/FRAPL/tree/master/Framework/FridaLink) 
-    - [Frida脚本](https://github.com/FriedAppleTeam/FRAPL/tree/master/Framework/FRAPL) 
+- Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[DBI->Frida->Tools->With Other Tools->IDA](#d628ec92c9eea0c4b016831e1f6852b3) |
+- [IDA插件](https://github.com/FriedAppleTeam/FRAPL/tree/master/Framework/FridaLink)
+- [Frida脚本](https://github.com/FriedAppleTeam/FRAPL/tree/master/Framework/FRAPL)
 - [**83**Star][5y] [Py] [techbliss/frida_for_ida_pro](https://github.com/techbliss/frida_for_ida_pro) plugin for ida pro thar uses the Frida api
-    - Also In Section: [DBI->Frida->Tools->With Other Tools->IDA](#d628ec92c9eea0c4b016831e1f6852b3) |
-- [**58**Star][20d] [Py] [lich4/personal_script](https://github.com/lich4/personal_script) 010Editor/BurpSuite/Frida/IDA tools and scripts collection
-    - Also In Section: [IDA->Tools->No Category](#c39a6d8598dde6abfeef43faf931beb5) |[DBI->Frida->Tools->Recent Add](#54836a155de0c15b56f43634cd9cfecf) |
-    - [010Editor](https://github.com/lich4/personal_script/tree/master/010Editor_Script) 010Editor scripts
-    - [ParamChecker](https://github.com/lich4/personal_script/tree/master/BurpSuite_Script) Burp插件
-    - [Frida](https://github.com/lich4/personal_script/tree/master/Frida_script) Frida Scripts
-    - [IDA](https://github.com/lich4/personal_script/tree/master/IDA_Script) IDA Scripts
-    - [IDA-read_unicode.py](https://github.com/lich4/personal_script/blob/master/IDA_Script/read_unicode.py) When there is chinese unicode character in programe, due to python's shortage, ida could not recongnized them correctly, it's what my script just do
-    - [IDA-add_xref_for_macho](https://github.com/lich4/personal_script/blob/master/IDA_Script/add_xref_for_macho.py)  When you deal with macho file with ida, you'll find out that it's not easy to find Objc-Class member function's caller and callee, (because it use msgSend instead of direct calling  convention), so we need to make some connection between the selector names and member function  pointers, it's what my script just do
-    - [IDA-add_info_for_androidgdb](https://github.com/lich4/personal_script/blob/master/IDA_Script/add_info_for_androidgdb.py) When you debug android with IDA and gdbserver, you'd find that the module list and segment is empy, while we can read info from /proc/[pid]/,
-    - [IDA-trace_instruction](https://github.com/lich4/personal_script/blob/master/IDA_Script/trace_instruction.py) this script is to trace instruction stream in one run 
-    - [IDA-detect_ollvm](https://github.com/lich4/personal_script/blob/master/IDA_Script/detect_ollvm.py) this script is to detect ollvm and fix it in some extent, apply to android and ios
-    - [IDA-add_block_for_macho](https://github.com/lich4/personal_script/blob/master/IDA_Script/add_block_for_macho.py) this script is used to analysis block structure exist in macho file, target NSConcreteStackBlock/NSConcreteGlobalBlock currently, also contain some wonderful skills
+- Also In Section: [DBI->Frida->Tools->With Other Tools->IDA](#d628ec92c9eea0c4b016831e1f6852b3) |
+- Also In Section: [IDA->Tools->No Category](#c39a6d8598dde6abfeef43faf931beb5) |[DBI->Frida->Tools->Recent Add](#54836a155de0c15b56f43634cd9cfecf) |
 - [**40**Star][2y] [Py] [agustingianni/memrepl](https://github.com/agustingianni/memrepl) a frida based script that aims to help a researcher in the task of exploitation of memory corruption related bugs
-    - Also In Section: [DBI->Frida->Tools->Recent Add](#54836a155de0c15b56f43634cd9cfecf) |
+- Also In Section: [DBI->Frida->Tools->Recent Add](#54836a155de0c15b56f43634cd9cfecf) |
 
 
 #### <a id="dd0332da5a1482df414658250e6357f8"></a>IntelPin
 
 
 - [**134**Star][1y] [Py] [carlosgprado/jarvis](https://github.com/carlosgprado/jarvis) "Just Another ReVersIng Suite" or whatever other bullshit you can think of
-    - Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[IDA->Tools->Vul->No Category](#385d6777d0747e79cccab0a19fa90e7e) |[DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
-    - [IDA插件](https://github.com/carlosgprado/jarvis/tree/master/IDAPlugin) 
-    - [PinTracer](https://github.com/carlosgprado/jarvis/tree/master/PinTracer) 
+- Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[IDA->Tools->Vul->No Category](#385d6777d0747e79cccab0a19fa90e7e) |[DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
+- [IDA插件](https://github.com/carlosgprado/jarvis/tree/master/IDAPlugin)
+- [PinTracer](https://github.com/carlosgprado/jarvis/tree/master/PinTracer)
 - [**44**Star][3y] [Batchfile] [maldiohead/idapin](https://github.com/maldiohead/idapin) plugin of ida with pin
-    - Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
+- Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
 
 
 
@@ -943,13 +929,13 @@
 
 
 - [**542**Star][2y] [Py] [anatolikalysch/vmattack](https://github.com/anatolikalysch/vmattack) static and dynamic virtualization-based packed analysis and deobfuscation.
-    - Also In Section: [IDA->Tools->DeObfuscate](#7199e8787c0de5b428f50263f965fda7) |
+- Also In Section: [IDA->Tools->DeObfuscate](#7199e8787c0de5b428f50263f965fda7) |
 - [**199**Star][4y] [Py] [f8left/decllvm](https://github.com/f8left/decllvm) IDA plugin for OLLVM analysis
 - [**117**Star][1y] [Py] [xerub/idastuff](https://github.com/xerub/idastuff) IDA Pro/Hexrays plugins, mainly targeted at ARM processors
 - [**101**Star][12d] [Py] [fboldewin/com-code-helper](https://github.com/fboldewin/com-code-helper) Two IDAPython Scripts help you to reconstruct Microsoft COM (Component Object Model) Code
 - [**93**Star][4m] [Py] [themadinventor/ida-xtensa](https://github.com/themadinventor/ida-xtensa) IDAPython plugin for Tensilica Xtensa (as seen in ESP8266)
 - [**82**Star][4y] [C++] [wjp/idados](https://github.com/wjp/idados) Eric Fry's IDA/DOSBox debugger plugin
-    - Also In Section: [IDA->Tools->Debug->No Category](#2944dda5289f494e5e636089db0d6a6a) |
+- Also In Section: [IDA->Tools->Debug->No Category](#2944dda5289f494e5e636089db0d6a6a) |
 - [**75**Star][3m] [Py] [coldzer0/ida-for-delphi](https://github.com/coldzer0/ida-for-delphi) IDA Python Script to Get All function names from Event Constructor (VCL)
 - [**59**Star][2y] [Py] [isra17/nrs](https://github.com/isra17/nrs) NSIS Reversing Suite with IDA Plugins
 - [**59**Star][6m] [C++] [troybowman/dtxmsg](https://github.com/troybowman/dtxmsg) an IDA plugin that helped me reverse-engineer the DTXConnectionServices framework.
@@ -959,7 +945,7 @@
 - [**33**Star][3y] [Py] [sam-b/windows_syscalls_dumper](https://github.com/sam-b/windows_syscalls_dumper) A dirty IDAPython script to dump windows system call number/name pairs as JSON
 - [**24**Star][3y] [C++] [sektioneins/aarch64_cryptoextension](https://github.com/sektioneins/aarch64_cryptoextension) IDA AArch64 processor extender extension: Adding crypto extension instructions (AES/SHA1/SHA256)
 - [**23**Star][12m] [Py] [howmp/comfinder](https://github.com/howmp/comfinder) IDA plugin for COM
-    - Also In Section: [IDA->Tools->Function->Rename](#73813456eeb8212fd45e0ea347bec349) |
+- Also In Section: [IDA->Tools->Function->Rename](#73813456eeb8212fd45e0ea347bec349) |
 - [**23**Star][3y] [Py] [pfalcon/ida-xtensa2](https://github.com/pfalcon/ida-xtensa2) IDAPython plugin for Tensilica Xtensa (as seen in ESP8266), version 2
 - [**20**Star][5y] [Py] [digitalbond/ibal](https://github.com/digitalbond/ibal) IDA Pro Bootrom Analysis Library, which contains a number of useful functions for analyzing embedded ROMs
 - [**19**Star][2y] [C] [andywhittaker/idaproboschme7x](https://github.com/andywhittaker/idaproboschme7x) IDA Pro Bosch ME7x C16x Disassembler Helper
@@ -970,7 +956,7 @@
 - [**3**Star][5m] [C] [extremlapin/glua_c_headers_for_ida](https://github.com/extremlapin/glua_c_headers_for_ida) Glua module C headers for IDA
 - [**2**Star][6m] [Py] [lucienmp/idapro_m68k](https://github.com/lucienmp/idapro_m68k) Extends existing support in IDA for the m68k by adding gdb step-over and type information support
 - [**0**Star][9m] [C] [0xd0cf11e/idcscripts](https://github.com/0xd0cf11e/idcscripts) Scripts used when analyzing files in IDA
-    - [emotet-decode](https://github.com/0xd0cf11e/idcscripts/blob/master/emotet/emotet-decode.idc) 解码emotet
+- [emotet-decode](https://github.com/0xd0cf11e/idcscripts/blob/master/emotet/emotet-decode.idc) 解码emotet
 - [**0**Star][3m] [C++] [marakew/emuppc](https://github.com/marakew/emuppc) simple PowerPC emulator for unpack into IDAPro some PowerPC binary
 
 
@@ -979,7 +965,7 @@
 
 - [**205**Star][1y] [Py] [fireeye/idawasm](https://github.com/fireeye/idawasm) IDA Pro loader and processor modules for WebAssembly
 - [**161**Star][2m] [Py] [nforest/droidimg](https://github.com/nforest/droidimg) Android/Linux vmlinux loader
-    - Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |[IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |[Android->Tools->Recent Add](#63fd2c592145914e99f837cecdc5a67c) |
+- Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |[IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |[Android->Tools->Recent Add](#63fd2c592145914e99f837cecdc5a67c) |
 - [**155**Star][2y] [Py] [crytic/ida-evm](https://github.com/crytic/ida-evm) IDA Processor Module for the Ethereum Virtual Machine (EVM)
 - [**146**Star][29d] [Py] [argp/iboot64helper](https://github.com/argp/iboot64helper) IDAPython loader to help with AArch64 iBoot, iBEC, and SecureROM reverse engineering
 - [**131**Star][2y] [C] [gsmk/hexagon](https://github.com/gsmk/hexagon) IDA processor module for the hexagon (QDSP6) processor
@@ -999,8 +985,7 @@
 - [**20**Star][3y] [C++] [patois/ndsldr](https://github.com/patois/ndsldr) Nintendo DS ROM loader module for IDA Pro
 - [**18**Star][8y] [Py] [rpw/flsloader](https://github.com/rpw/flsloader) IDA Pro loader module for Infineon/Intel-based iPhone baseband firmwares
 - [**17**Star][9m] [C++] [gocha/ida-snes-ldr](https://github.com/gocha/ida-snes-ldr) SNES ROM Cartridge File Loader for IDA (Interactive Disassembler) 6.x
-- [**16**Star][11m] [Py] [bnbdr/ida-yara-processor](https://github.com/bnbdr/ida-yara-processor) Loader and processor for YARA's compiled rule format
-    - Also In Section: [IDA->Tools->Signature(FLIRT...)->Yara](#46c9dfc585ae59fe5e6f7ddf542fb31a) |
+- Also In Section: [IDA->Tools->Signature(FLIRT...)->Yara](#46c9dfc585ae59fe5e6f7ddf542fb31a) |
 - [**16**Star][9m] [C++] [gocha/ida-65816-module](https://github.com/gocha/ida-65816-module) SNES 65816 processor plugin for IDA (Interactive Disassembler) 6.x
 - [**16**Star][1y] [Py] [lcq2/riscv-ida](https://github.com/lcq2/riscv-ida) RISC-V ISA processor module for IDAPro 7.x
 - [**16**Star][1y] [Py] [ptresearch/nios2](https://github.com/ptresearch/nios2) IDA Pro processor module for Altera Nios II Classic/Gen2 microprocessor architecture
@@ -1036,9 +1021,8 @@
 - [**69**Star][3m] [C] [aerosoul94/ida_gel](https://github.com/aerosoul94/ida_gel) A collection of IDA loaders for various game console ELF's. (PS3, PSVita, WiiU)
 - [**55**Star][7y] [C++] [kakaroto/ps3ida](https://github.com/kakaroto/ps3ida) IDA scripts and plugins for PS3
 - [**44**Star][2y] [C] [aerosoul94/dynlib](https://github.com/aerosoul94/dynlib) IDA Pro plugin to aid PS4 user mode ELF reverse engineering.
-    - Also In Section: [IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |
-- [**28**Star][6y] [C++] [oct0xor/deci3dbg](https://github.com/oct0xor/deci3dbg) Ida Pro debugger module for Playstation 3
-    - Also In Section: [IDA->Tools->Import Export->No Category](#8ad723b704b044e664970b11ce103c09) |
+- Also In Section: [IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |
+- Also In Section: [IDA->Tools->Import Export->No Category](#8ad723b704b044e664970b11ce103c09) |
 
 
 #### <a id="f5e51763bb09d8fd47ee575a98bedca1"></a>PDB
@@ -1062,10 +1046,10 @@
 
 - [**9**Star][2y] [Py] [d00rt/easy_way_nymaim](https://github.com/d00rt/easy_way_nymaim) An IDA Pro script for creating a clearer idb for nymaim malware
 - [**8**Star][3y] [Py] [thngkaiyuan/mynaim](https://github.com/thngkaiyuan/mynaim) IDAPython Deobfuscation Scripts for Nymaim Samples
-    - Also In Section: [IDA->Tools->DeObfuscate](#7199e8787c0de5b428f50263f965fda7) |
+- Also In Section: [IDA->Tools->DeObfuscate](#7199e8787c0de5b428f50263f965fda7) |
 - [**4**Star][2y] [Py] [immortalp0ny/fyvmdisassembler](https://github.com/immortalp0ny/fyvmdisassembler) IDAPython scripts for devirtualization/disassembly FinSpy VM
 - [**4**Star][8m] [C] [lacike/gandcrab_string_decryptor](https://github.com/lacike/gandcrab_string_decryptor) IDC script for decrypting strings in the GandCrab v5.1-5.3
-    - Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |
+- Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |
 
 
 #### <a id="ad44205b2d943cfa2fa805b2643f4595"></a>CTF
@@ -1086,7 +1070,7 @@
 - [**373**Star][3m] [Py] [tmr232/sark](https://github.com/tmr232/sark) IDAPython Made Easy
 - [**248**Star][2y] [Py] [intezer/docker-ida](https://github.com/intezer/docker-ida) Run IDA Pro disassembler in Docker containers for automating, scaling and distributing the use of IDAPython scripts.
 - [**82**Star][4y] [idapython/bin](https://github.com/idapython/bin) IDAPython binaries
-- [**69**Star][2y] [Py] [alexander-hanel/idapython6to7](https://github.com/alexander-hanel/idapython6to7) 
+- [**69**Star][2y] [Py] [alexander-hanel/idapython6to7](https://github.com/alexander-hanel/idapython6to7)
 - [**43**Star][1y] [Py] [nirizr/pytest-idapro](https://github.com/nirizr/pytest-idapro) A pytest module for The Interactive Disassembler and IDAPython; Record and Replay IDAPython API, execute inside IDA or use mockups of IDAPython API.
 - [**29**Star][3y] [Py] [kerrigan29a/idapython_virtualenv](https://github.com/kerrigan29a/idapython_virtualenv) Enable Virtualenv or Conda in IDAPython
 - [**23**Star][3y] [Py] [devttys0/idascript](https://github.com/devttys0/idascript) a wrapper around IDA Pro that makes it easy to automate the execution of IDA scripts  against target files from the command line
@@ -1105,7 +1089,7 @@
 
 - [**497**Star][1y] [PLpgSQL] [nologic/idaref](https://github.com/nologic/idaref) IDA Pro Instruction Reference Plugin
 - [**449**Star][4m] [C++] [alexhude/friend](https://github.com/alexhude/friend) Flexible Register/Instruction Extender aNd Documentation
-    - Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
+- Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
 - [**250**Star][2y] [Py] [gdelugre/ida-arm-system-highlight](https://github.com/gdelugre/ida-arm-system-highlight) IDA script for highlighting and decoding ARM system instructions
 - [**106**Star][2m] [Py] [neatmonster/amie](https://github.com/neatmonster/amie) A Minimalist Instruction Extender for the ARM architecture and IDA Pro
 - [**45**Star][8y] [Py] [zynamics/msdn-plugin-ida](https://github.com/zynamics/msdn-plugin-ida) Imports MSDN documentation into IDA Pro
@@ -1119,13 +1103,13 @@
 
 
 - [**393**Star][3y] [Py] [36hours/idaemu](https://github.com/36hours/idaemu) an IDA Pro Plugin use for emulating code in IDA Pro.
-    - Also In Section: [IDA->Tools->Emulator](#b38dab81610be087bd5bc7785269b8cc) |
+- Also In Section: [IDA->Tools->Emulator](#b38dab81610be087bd5bc7785269b8cc) |
 - [**282**Star][2m] [Py] [fireeye/flare-emu](https://github.com/fireeye/flare-emu) marries a supported binary analysis framework, such as IDA Pro or Radare2, with Unicorn’s emulation framework to provide the user with an easy to use and flexible interface for scripting emulation tasks
-    - Also In Section: [IDA->Tools->Emulator](#b38dab81610be087bd5bc7785269b8cc) |
+- Also In Section: [IDA->Tools->Emulator](#b38dab81610be087bd5bc7785269b8cc) |
 - [**137**Star][26d] [Py] [arizvisa/ida-minsc](https://github.com/arizvisa/ida-minsc) a plugin for IDA Pro that assists a user with scripting the IDAPython plugin that is bundled with the disassembler.
 - [**104**Star][1m] [Py] [patois/idapyhelper](https://github.com/patois/idapyhelper) IDAPyHelper is a script for the Interactive Disassembler that helps writing IDAPython scripts and plugins.
 - [**74**Star][5m] [C++] [0xeb/ida-qscripts](https://github.com/0xeb/ida-qscripts) An IDA plugin to increase productivity when developing scripts for IDA
-    - Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
+- Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
 - [**42**Star][6m] [C++] [0xeb/ida-climacros](https://github.com/0xeb/ida-climacros) Create and use macros in IDA's CLIs
 - [**32**Star][2y] [CMake] [zyantific/ida-cmake](https://github.com/zyantific/ida-cmake) IDA plugin CMake build-script
 - [**22**Star][1y] [Py] [nirizr/idasix](https://github.com/nirizr/idasix) IDAPython compatibility library. idasix aims to create a smooth ida development process and allow a single codebase to function with multiple IDA/IDAPython versions
@@ -1172,15 +1156,15 @@
 - [**95**Star][5y] [Py] [nihilus/ida-idc-scripts](https://github.com/nihilus/ida-idc-scripts) Varoius IDC-scripts I've collected during the years.
 - [**82**Star][6y] [Py] [einstein-/hexrays-python](https://github.com/einstein-/hexrays-python) Python bindings for the Hexrays Decompiler
 - [**76**Star][5y] [PHP] [v0s/plus22](https://github.com/v0s/plus22) Tool to analyze 64-bit binaries with 32-bit Hex-Rays Decompiler
-- [**63**Star][5y] [C] [nihilus/idastealth](https://github.com/nihilus/idastealth) 
+- [**63**Star][5y] [C] [nihilus/idastealth](https://github.com/nihilus/idastealth)
 - [**40**Star][6y] [C++] [wirepair/idapinlogger](https://github.com/wirepair/idapinlogger) Logs instruction hits to a file which can be fed into IDA Pro to highlight which instructions were called.
 - [**39**Star][10y] [izsh/ida-python-scripts](https://github.com/izsh/ida-python-scripts) IDA Python Scripts
 - [**39**Star][8y] [Py] [zynamics/bincrowd-plugin-ida](https://github.com/zynamics/bincrowd-plugin-ida) BinCrowd Plugin for IDA Pro
-- [**35**Star][8y] [Py] [zynamics/ida2sql-plugin-ida](https://github.com/zynamics/ida2sql-plugin-ida) 
+- [**35**Star][8y] [Py] [zynamics/ida2sql-plugin-ida](https://github.com/zynamics/ida2sql-plugin-ida)
 - [**27**Star][4y] [C++] [luorui110120/idaplugins](https://github.com/luorui110120/idaplugins) IDA plugins, No Doc
 - [**21**Star][10y] [C++] [sporst/ida-pro-plugins](https://github.com/sporst/ida-pro-plugins) Collection of IDA Pro plugins I wrote over the years
 - [**18**Star][10y] [Py] [binrapt/ida](https://github.com/binrapt/ida) Python script which extracts procedures from IDA Win32 LST files and converts them to correctly dynamically linked compilable Visual C++ inline assembly.
-- [**16**Star][7y] [Py] [nihilus/optimice](https://github.com/nihilus/optimice) 
+- [**16**Star][7y] [Py] [nihilus/optimice](https://github.com/nihilus/optimice)
 - [**10**Star][10y] [jeads-sec/etherannotate_ida](https://github.com/jeads-sec/etherannotate_ida) EtherAnnotate IDA Pro Plugin - Parse EtherAnnotate trace files and markup IDA disassemblies with runtime values
 - [**6**Star][10y] [C] [jeads-sec/etherannotate_xen](https://github.com/jeads-sec/etherannotate_xen) EtherAnnotate Xen Ether Modification - Adds a feature to Ether that pulls register values and potential string values at each instruction during an instruction trace.
 
@@ -1192,15 +1176,14 @@
 
 
 - [**395**Star][1y] [C++] [cseagle/sk3wldbg](https://github.com/cseagle/sk3wldbg) Debugger plugin for IDA Pro backed by the Unicorn Engine
-    - Also In Section: [IDA->Tools->Emulator](#b38dab81610be087bd5bc7785269b8cc) |
+- Also In Section: [IDA->Tools->Emulator](#b38dab81610be087bd5bc7785269b8cc) |
 - [**187**Star][5y] [C++] [nihilus/scyllahide](https://github.com/nihilus/scyllahide) an x64/x86 usermode Anti-Anti-Debug library
 - [**107**Star][23d] [Py] [danielplohmann/apiscout](https://github.com/danielplohmann/apiscout) simplifying Windows API import recovery on arbitrary memory dumps
-- [**82**Star][4y] [C++] [wjp/idados](https://github.com/wjp/idados) Eric Fry's IDA/DOSBox debugger plugin
-    - Also In Section: [IDA->Tools->Specific Target->No Category](#5578c56ca09a5804433524047840980e) |
+- Also In Section: [IDA->Tools->Specific Target->No Category](#5578c56ca09a5804433524047840980e) |
 - [**57**Star][8y] [Py] [cr4sh/ida-vmware-gdb](https://github.com/cr4sh/ida-vmware-gdb) Helper script for Windows kernel debugging with IDA Pro on VMware + GDB stub
 - [**42**Star][5y] [Py] [nihilus/idasimulator](https://github.com/nihilus/idasimulator) a plugin that extends IDA's conditional breakpoint support, making it easy to augment / replace complex executable code inside a debugged process with Python code.
 - [**39**Star][2y] [Py] [thecjw/ida_android_script](https://github.com/thecjw/ida_android_script) some idapython scripts for android debugging.
-    - Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |[Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
+- Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |[Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
 - [**22**Star][5y] [Py] [techbliss/scylladumper](https://github.com/techbliss/scylladumper) Ida Plugin to Use the Awsome Scylla plugin
 - [**14**Star][5y] [Py] [techbliss/free_the_debuggers](https://github.com/techbliss/free_the_debuggers) Free_the_Debuggers
 - [**0**Star][2y] [Py] [benh11235/ida-windbglue](https://github.com/benh11235/ida-windbglue) Humble suite of scripts to assist with remote debugging using IDA pro client and winDBG server.
@@ -1210,75 +1193,68 @@
 
 
 - [**943**Star][1y] [Py] [gaasedelen/lighthouse](https://github.com/gaasedelen/lighthouse) Code Coverage Explorer for IDA Pro & Binary Ninja
-    - Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |[DBI->Frida->Tools->With Other Tools->IDA](#d628ec92c9eea0c4b016831e1f6852b3) |[DBI->Frida->Tools->With Other Tools->Binary Ninja](#f9008a00e2bbc7535c88602aa79c8fd8) |
-    - [coverage-frida](https://github.com/gaasedelen/lighthouse/blob/master/coverage/frida/README.md) 使用Frida收集信息
-    - [coverage-pin](https://github.com/gaasedelen/lighthouse/blob/master/coverage/pin/README.md) 使用Pin收集覆盖信息
-    - [插件](https://github.com/gaasedelen/lighthouse/blob/master/plugin/lighthouse_plugin.py) 支持IDA和BinNinja
-- [**134**Star][1y] [Py] [carlosgprado/jarvis](https://github.com/carlosgprado/jarvis) "Just Another ReVersIng Suite" or whatever other bullshit you can think of
-    - Also In Section: [IDA->Tools->Import Export->IntelPin](#dd0332da5a1482df414658250e6357f8) |[IDA->Tools->Vul->No Category](#385d6777d0747e79cccab0a19fa90e7e) |[DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
-    - [IDA插件](https://github.com/carlosgprado/jarvis/tree/master/IDAPlugin) 
-    - [PinTracer](https://github.com/carlosgprado/jarvis/tree/master/PinTracer) 
-- [**128**Star][3y] [Py] [friedappleteam/frapl](https://github.com/friedappleteam/frapl) a reverse engineering framework created to simplify dynamic instrumentation with Frida
-    - Also In Section: [IDA->Tools->Import Export->Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd) |[DBI->Frida->Tools->With Other Tools->IDA](#d628ec92c9eea0c4b016831e1f6852b3) |
-    - [IDA插件](https://github.com/FriedAppleTeam/FRAPL/tree/master/Framework/FridaLink) 
-    - [Frida脚本](https://github.com/FriedAppleTeam/FRAPL/tree/master/Framework/FRAPL) 
+- Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |[DBI->Frida->Tools->With Other Tools->IDA](#d628ec92c9eea0c4b016831e1f6852b3) |[DBI->Frida->Tools->With Other Tools->Binary Ninja](#f9008a00e2bbc7535c88602aa79c8fd8) |
+- [coverage-frida](https://github.com/gaasedelen/lighthouse/blob/master/coverage/frida/README.md) 使用Frida收集信息
+- [coverage-pin](https://github.com/gaasedelen/lighthouse/blob/master/coverage/pin/README.md) 使用Pin收集覆盖信息
+- [插件](https://github.com/gaasedelen/lighthouse/blob/master/plugin/lighthouse_plugin.py) 支持IDA和BinNinja
+- Also In Section: [IDA->Tools->Import Export->IntelPin](#dd0332da5a1482df414658250e6357f8) |[IDA->Tools->Vul->No Category](#385d6777d0747e79cccab0a19fa90e7e) |[DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
+- Also In Section: [IDA->Tools->Import Export->Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd) |[DBI->Frida->Tools->With Other Tools->IDA](#d628ec92c9eea0c4b016831e1f6852b3) |
 - [**122**Star][5y] [C++] [zachriggle/ida-splode](https://github.com/zachriggle/ida-splode) Augmenting Static Reverse Engineering with Dynamic Analysis and Instrumentation
-    - Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
-    - [IDA插件](https://github.com/zachriggle/ida-splode/tree/master/py) 
-    - [PinTool](https://github.com/zachriggle/ida-splode/tree/master/src) 
+- Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
+- [IDA插件](https://github.com/zachriggle/ida-splode/tree/master/py)
+- [PinTool](https://github.com/zachriggle/ida-splode/tree/master/src)
 - [**117**Star][2y] [C++] [0xphoenix/mazewalker](https://github.com/0xphoenix/mazewalker) Toolkit for enriching and speeding up static malware analysis
-    - Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
-    - [mazeui](https://github.com/0xphoenix/mazewalker/blob/master/MazeUI/mazeui.py) 在IDA中显示界面
-    - [PyScripts](https://github.com/0xPhoeniX/MazeWalker/tree/master/MazeTracer/PyScripts) Python脚本，处理收集到的数据
-    - [PinClient](https://github.com/0xPhoeniX/MazeWalker/tree/master/MazeTracer/src) 
+- Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
+- [mazeui](https://github.com/0xphoenix/mazewalker/blob/master/MazeUI/mazeui.py) 在IDA中显示界面
+- [PyScripts](https://github.com/0xPhoeniX/MazeWalker/tree/master/MazeTracer/PyScripts) Python脚本，处理收集到的数据
+- [PinClient](https://github.com/0xPhoeniX/MazeWalker/tree/master/MazeTracer/src)
 - [**89**Star][8y] [C] [neuroo/runtime-tracer](https://github.com/neuroo/runtime-tracer) Dynamic tracing for binary applications (using PIN), IDA plugin to visualize and interact with the traces
-    - Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
-    - [PinTool](https://github.com/neuroo/runtime-tracer/tree/master/tracer) 
-    - [IDA插件](https://github.com/neuroo/runtime-tracer/tree/master/ida-pin) 
+- Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
+- [PinTool](https://github.com/neuroo/runtime-tracer/tree/master/tracer)
+- [IDA插件](https://github.com/neuroo/runtime-tracer/tree/master/ida-pin)
 - [**80**Star][3y] [Py] [davidkorczynski/repeconstruct](https://github.com/davidkorczynski/repeconstruct)  automatically unpacking binaries and rebuild the binaries in a manner well-suited for further analysis, specially focused on further manual analysis in IDA pro.
 - [**52**Star][12m] [Py] [cisco-talos/dyndataresolver](https://github.com/cisco-talos/dyndataresolver) Dynamic Data Resolver (DDR) IDA Pro Plug-in
-    - Also In Section: [DBI->DynamoRIO->Tools->With Other Tools](#928642a55eff34b6b52622c6862addd2) |
-    - [DDR](https://github.com/cisco-talos/dyndataresolver/blob/master/VS_project/ddr/ddr.sln) 基于DyRIO的Client
-    - [IDA插件](https://github.com/cisco-talos/dyndataresolver/tree/master/IDAplugin) 
+- Also In Section: [DBI->DynamoRIO->Tools->With Other Tools](#928642a55eff34b6b52622c6862addd2) |
+- [DDR](https://github.com/cisco-talos/dyndataresolver/blob/master/VS_project/ddr/ddr.sln) 基于DyRIO的Client
+- [IDA插件](https://github.com/cisco-talos/dyndataresolver/tree/master/IDAplugin)
 - [**20**Star][9m] [C++] [secrary/findloop](https://github.com/secrary/findloop) find possible encryption/decryption or compression/decompression code
-    - Also In Section: [DBI->DynamoRIO->Tools->With Other Tools](#928642a55eff34b6b52622c6862addd2) |
+- Also In Section: [DBI->DynamoRIO->Tools->With Other Tools](#928642a55eff34b6b52622c6862addd2) |
 - [**15**Star][1y] [C++] [agustingianni/instrumentation](https://github.com/agustingianni/instrumentation) Collection of tools implemented using pintools aimed to help in the task of reverse engineering.
-    - Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
-    - [CodeCoverage](https://github.com/agustingianni/instrumentation/tree/master/CodeCoverage) 
-    - [Pinnacle](https://github.com/agustingianni/instrumentation/tree/master/Pinnacle) 
-    - [Recoverer](https://github.com/agustingianni/instrumentation/tree/master/Recoverer) 
-    - [Resolver](https://github.com/agustingianni/instrumentation/tree/master/Resolver) 
+- Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
+- [CodeCoverage](https://github.com/agustingianni/instrumentation/tree/master/CodeCoverage)
+- [Pinnacle](https://github.com/agustingianni/instrumentation/tree/master/Pinnacle)
+- [Recoverer](https://github.com/agustingianni/instrumentation/tree/master/Recoverer)
+- [Resolver](https://github.com/agustingianni/instrumentation/tree/master/Resolver)
 
 
 #### <a id="b31acf6c84a9506066d497af4e702bf5"></a>Debugger Data
 
 
-- [**607**Star][3m] [Py] [0xgalz/virtuailor](https://github.com/0xgalz/virtuailor) IDAPython tool for C++ vtables reconstruction
-    - Also In Section: [IDA->Tools->Structure->C++ Class](#4900b1626f10791748b20630af6d6123) |
-        <details>
-        <summary>View Details</summary>
+- Also In Section: [IDA->Tools->Structure->C++ Class](#4900b1626f10791748b20630af6d6123) |
+<details>
+<summary>View Details</summary>
 
 
-        ## 静态部分: 
-        - 检测非直接调用
-        - 利用条件断点, Hook非直接调用的值赋值过程
-        
-        ## 动态 部分
-        - 创建虚表结构
-        - 重命名函数和虚表地址
-        - 给反汇编非直接调用添加结构偏移
-        - 给非直接调用到虚表之间添加交叉引用
-        
-        ## 使用
-        - File -> Script File -> Main.py(设置断点) -> IDA调试器执行
-        </details>
+## 静态部分:
+- 检测非直接调用
+- 利用条件断点, Hook非直接调用的值赋值过程
+
+## 动态 部分
+- 创建虚表结构
+- 重命名函数和虚表地址
+- 给反汇编非直接调用添加结构偏移
+- 给非直接调用到虚表之间添加交叉引用
+
+## 使用
+- File -> Script File -> Main.py(设置断点) -> IDA调试器执行
+</details>
 
 
 - [**386**Star][5m] [Py] [ynvb/die](https://github.com/ynvb/die)  an IDA python plugin designed to enrich IDA`s static analysis with dynamic data
 - [**380**Star][4y] [Py] [deresz/funcap](https://github.com/deresz/funcap) IDA Pro script to add some useful runtime info to static analysis
 - [**104**Star][3y] [Py] [c0demap/codemap](https://github.com/c0demap/codemap) a binary analysis tool for "run-trace visualization" provided as IDA plugin.
-    - [IDA插件](https://github.com/c0demap/codemap/blob/master/idapythonrc.py) 
-    - [Web服务器](https://github.com/c0demap/codemap/tree/master/codemap/server) 
+- [IDA插件](https://github.com/c0demap/codemap/blob/master/idapythonrc.py)
+- [Web服务器](https://github.com/c0demap/codemap/tree/master/codemap/server)
 
 
 
@@ -1287,43 +1263,43 @@
 
 
 - [**1672**Star][7m] [C++] [yegord/snowman](https://github.com/yegord/snowman)  a native code to C/C++ decompiler, supporting x86, AMD64, and ARM architectures
-    - Also In Section: [x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
-    - [IDA插件](https://github.com/yegord/snowman/tree/master/src/ida-plugin) 
-    - [snowman](https://github.com/yegord/snowman/tree/master/src/snowman) QT界面
-    - [nocode](https://github.com/yegord/snowman/tree/master/src/nocode) 命令行工具
-    - [nc](https://github.com/yegord/snowman/tree/master/src/nc) 核心代码，可作为库使用
+- Also In Section: [x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
+- [IDA插件](https://github.com/yegord/snowman/tree/master/src/ida-plugin)
+- [snowman](https://github.com/yegord/snowman/tree/master/src/snowman) QT界面
+- [nocode](https://github.com/yegord/snowman/tree/master/src/nocode) 命令行工具
+- [nc](https://github.com/yegord/snowman/tree/master/src/nc) 核心代码，可作为库使用
 - [**1329**Star][1y] [C++] [rehints/hexrayscodexplorer](https://github.com/rehints/hexrayscodexplorer) Hex-Rays Decompiler plugin for better code navigation
-    - Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
-        <details>
-        <summary>View Details</summary>
+- Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
+<details>
+<summary>View Details</summary>
 
 
-        - 自动类型重建
-        - 虚表识别/导航(反编译窗口)
-        - C-tree可视化与导出
-        - 对象浏览
-        </details>
+- 自动类型重建
+- 虚表识别/导航(反编译窗口)
+- C-tree可视化与导出
+- 对象浏览
+</details>
 
 
 - [**467**Star][4y] [Py] [einstein-/decompiler](https://github.com/EiNSTeiN-/decompiler) A decompiler with multiple backend support, written in Python. Works with IDA and Capstone.
 - [**418**Star][3m] [C++] [avast/retdec-idaplugin](https://github.com/avast/retdec-idaplugin) RetDec plugin for IDA
 - [**293**Star][5y] [C++] [smartdec/smartdec](https://github.com/smartdec/smartdec) SmartDec decompiler
-    - [IDA插件](https://github.com/smartdec/smartdec/tree/master/src/ida-plugin) 
-    - [nocode](https://github.com/smartdec/smartdec/tree/master/src/nocode) 命令行反编译器
-    - [smartdec](https://github.com/smartdec/smartdec/tree/master/src/smartdec) 带GUI界面的反编译器
-    - [nc](https://github.com/smartdec/smartdec/tree/master/src/nc) 反编译器的核心代码
+- [IDA插件](https://github.com/smartdec/smartdec/tree/master/src/ida-plugin)
+- [nocode](https://github.com/smartdec/smartdec/tree/master/src/nocode) 命令行反编译器
+- [smartdec](https://github.com/smartdec/smartdec/tree/master/src/smartdec) 带GUI界面的反编译器
+- [nc](https://github.com/smartdec/smartdec/tree/master/src/nc) 反编译器的核心代码
 - [**286**Star][5y] [Py] [aaronportnoy/toolbag](https://github.com/aaronportnoy/toolbag) The IDA Toolbag is a plugin providing supplemental functionality to Hex-Rays IDA Pro disassembler.
 - [**235**Star][7m] [Py] [patois/dsync](https://github.com/patois/dsync) IDAPython plugin that synchronizes disassembler and decompiler views
-    - Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
+- Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
 - [**180**Star][29d] [Py] [fireeye/fidl](https://github.com/fireeye/fidl) A sane API for IDA Pro's decompiler. Useful for malware RE and vulnerability research
 - [**167**Star][1y] [Py] [tintinweb/ida-batch_decompile](https://github.com/tintinweb/ida-batch_decompile) IDA Batch Decompile plugin and script for Hex-Ray's IDA Pro that adds the ability to batch decompile multiple files and their imports with additional annotations (xref, stack var size) to the pseudocode .c file
 - [**150**Star][1y] [Py] [ax330d/hrdev](https://github.com/ax330d/hrdev) Hex-Rays Decompiler Enhanced View
-    - Also In Section: [IDA->Tools->Nav->GUI Enhencement](#03fac5b3abdbd56974894a261ce4e25f) |
+- Also In Section: [IDA->Tools->Nav->GUI Enhencement](#03fac5b3abdbd56974894a261ce4e25f) |
 - [**103**Star][13d] [Py] [sibears/hrast](https://github.com/sibears/hrast) PoC of modifying HexRays AST
 - [**90**Star][6m] [Py] [patois/hrdevhelper](https://github.com/patois/hrdevhelper) HexRays decompiler plugin that visualizes the ctree of decompiled functions.
-    - Also In Section: [IDA->Tools->Nav->GUI Enhencement](#03fac5b3abdbd56974894a261ce4e25f) |
+- Also In Section: [IDA->Tools->Nav->GUI Enhencement](#03fac5b3abdbd56974894a261ce4e25f) |
 - [**70**Star][13d] [Py] [patois/mrspicky](https://github.com/patois/mrspicky) An IDAPython decompiler script that helps auditing calls to the memcpy() and memmove() functions.
-    - Also In Section: [IDA->Tools->Vul->No Category](#385d6777d0747e79cccab0a19fa90e7e) |
+- Also In Section: [IDA->Tools->Vul->No Category](#385d6777d0747e79cccab0a19fa90e7e) |
 - [**25**Star][2y] [C++] [dougallj/dj_ida_plugins](https://github.com/dougallj/dj_ida_plugins) Plugins for IDA Pro and Hex-Rays
 
 
@@ -1331,20 +1307,18 @@
 
 
 - [**1365**Star][3m] [Py] [fireeye/flare-floss](https://github.com/fireeye/flare-floss) Automatically extract obfuscated strings from malware.
-    - Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |
-    - [floss](https://github.com/fireeye/flare-floss/tree/master/floss) 
-    - [IDA插件](https://github.com/fireeye/flare-floss/blob/master/scripts/idaplugin.py) 
-- [**542**Star][2y] [Py] [anatolikalysch/vmattack](https://github.com/anatolikalysch/vmattack) static and dynamic virtualization-based packed analysis and deobfuscation.
-    - Also In Section: [IDA->Tools->Specific Target->No Category](#5578c56ca09a5804433524047840980e) |
+- Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |
+- [floss](https://github.com/fireeye/flare-floss/tree/master/floss)
+- [IDA插件](https://github.com/fireeye/flare-floss/blob/master/scripts/idaplugin.py)
+- Also In Section: [IDA->Tools->Specific Target->No Category](#5578c56ca09a5804433524047840980e) |
 - [**304**Star][4m] [C++] [rolfrolles/hexraysdeob](https://github.com/rolfrolles/hexraysdeob) Hex-Rays microcode API plugin for breaking an obfuscating compiler
-    - Also In Section: [IDA->Tools->Microcode](#7a2977533ccdac70ee6e58a7853b756b) |
+- Also In Section: [IDA->Tools->Microcode](#7a2977533ccdac70ee6e58a7853b756b) |
 - [**202**Star][2y] [Py] [tkmru/nao](https://github.com/tkmru/nao) Simple No-meaning Assembly Omitter for IDA Pro (CURRENTLY UNDER DEVELOPMENT)
-    - Also In Section: [IDA->Tools->Emulator](#b38dab81610be087bd5bc7785269b8cc) |
+- Also In Section: [IDA->Tools->Emulator](#b38dab81610be087bd5bc7785269b8cc) |
 - [**47**Star][2y] [Py] [riscure/drop-ida-plugin](https://github.com/riscure/drop-ida-plugin) Experimental opaque predicate detection for IDA Pro
 - [**23**Star][5m] [Py] [jonathansalwan/x-tunnel-opaque-predicates](https://github.com/jonathansalwan/x-tunnel-opaque-predicates) IDA+Triton plugin in order to extract opaque predicates using a Forward-Bounded DSE. Example with X-Tunnel.
-    - Also In Section: [IDA->Tools->Taint Analysis](#34ac84853604a7741c61670f2a075d20) |
-- [**8**Star][3y] [Py] [thngkaiyuan/mynaim](https://github.com/thngkaiyuan/mynaim) IDAPython Deobfuscation Scripts for Nymaim Samples
-    - Also In Section: [IDA->Tools->Specific Target->Malware Family](#841d605300beba45c3be131988514a03) |
+- Also In Section: [IDA->Tools->Taint Analysis](#34ac84853604a7741c61670f2a075d20) |
+- Also In Section: [IDA->Tools->Specific Target->Malware Family](#841d605300beba45c3be131988514a03) |
 
 
 ### <a id="fcf75a0881617d1f684bc8b359c684d7"></a>Nav&&Quick Access&&Graph&&Image
@@ -1353,48 +1327,44 @@
 #### <a id="c5b120e1779b928d860ad64ff8d23264"></a>No Category
 
 
-- [**1329**Star][1y] [C++] [rehints/hexrayscodexplorer](https://github.com/rehints/hexrayscodexplorer) Hex-Rays Decompiler plugin for better code navigation
-    - Also In Section: [IDA->Tools->Decompiler](#d2166f4dac4eab7fadfe0fd06467fbc9) |
-        <details>
-        <summary>View Details</summary>
+- Also In Section: [IDA->Tools->Decompiler](#d2166f4dac4eab7fadfe0fd06467fbc9) |
+<details>
+<summary>View Details</summary>
 
 
-        - 自动类型重建
-        - 虚表识别/导航(反编译窗口)
-        - C-tree可视化与导出
-        - 对象浏览
-        </details>
+- 自动类型重建
+- 虚表识别/导航(反编译窗口)
+- C-tree可视化与导出
+- 对象浏览
+</details>
 
 
-- [**449**Star][4m] [C++] [alexhude/friend](https://github.com/alexhude/friend) Flexible Register/Instruction Extender aNd Documentation
-    - Also In Section: [IDA->Tools->Instruction Reference](#846eebe73bef533041d74fc711cafb43) |
+- Also In Section: [IDA->Tools->Instruction Reference](#846eebe73bef533041d74fc711cafb43) |
 - [**372**Star][3m] [Py] [l4ys/lazyida](https://github.com/l4ys/lazyida) Make your IDA Lazy!
-    - Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |[IDA->Tools->Vul->No Category](#385d6777d0747e79cccab0a19fa90e7e) |
-        <details>
-        <summary>View Details</summary>
+- Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |[IDA->Tools->Vul->No Category](#385d6777d0747e79cccab0a19fa90e7e) |
+<details>
+<summary>View Details</summary>
 
 
-        ### 功能
-        - 快速移除函数返回类型
-        - 数据格式(format)快速转换
-        - 扫描字符串格式化漏洞
-        - 双击跳转vtable函数
-        - 快捷键: w/c/v
-        </details>
+### 功能
+- 快速移除函数返回类型
+- 数据格式(format)快速转换
+- 扫描字符串格式化漏洞
+- 双击跳转vtable函数
+- 快捷键: w/c/v
+</details>
 
 
 - [**329**Star][4m] [Py] [pfalcon/scratchabit](https://github.com/pfalcon/scratchabit) Easily retargetable and hackable interactive disassembler with IDAPython-compatible plugin API
-- [**235**Star][7m] [Py] [patois/dsync](https://github.com/patois/dsync) IDAPython plugin that synchronizes disassembler and decompiler views
-    - Also In Section: [IDA->Tools->Decompiler](#d2166f4dac4eab7fadfe0fd06467fbc9) |
+- Also In Section: [IDA->Tools->Decompiler](#d2166f4dac4eab7fadfe0fd06467fbc9) |
 - [**192**Star][2m] [Py] [danigargu/dereferencing](https://github.com/danigargu/dereferencing) IDA Pro plugin that implements more user-friendly register and stack views
 - [**130**Star][2y] [Py] [comsecuris/ida_strcluster](https://github.com/comsecuris/ida_strcluster) extending IDA's string navigation capabilities
-    - Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |
+- Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |
 - [**99**Star][1y] [Py] [darx0r/stingray](https://github.com/darx0r/stingray) IDAPython plugin for finding function strings recursively
-    - Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |[IDA->Tools->Function->Nav](#e4616c414c24b58626f834e1be079ebc) |
+- Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |[IDA->Tools->Function->Nav](#e4616c414c24b58626f834e1be079ebc) |
 - [**81**Star][15d] [Py] [ax330d/functions-plus](https://github.com/ax330d/functions-plus) IDA Pro plugin to show functions in a tree view
-    - Also In Section: [IDA->Tools->Function->Nav](#e4616c414c24b58626f834e1be079ebc) |
-- [**74**Star][5m] [C++] [0xeb/ida-qscripts](https://github.com/0xeb/ida-qscripts) An IDA plugin to increase productivity when developing scripts for IDA
-    - Also In Section: [IDA->Tools->Script Writting->No Category](#45fd7cfce682c7c25b4f3fbc4c461ba2) |
+- Also In Section: [IDA->Tools->Function->Nav](#e4616c414c24b58626f834e1be079ebc) |
+- Also In Section: [IDA->Tools->Script Writting->No Category](#45fd7cfce682c7c25b4f3fbc4c461ba2) |
 - [**48**Star][8d] [C++] [jinmo/ifred](https://github.com/jinmo/ifred) IDA command palette & more (Ctrl+Shift+P, Ctrl+P)
 - [**40**Star][5m] [Py] [tmr232/brutal-ida](https://github.com/tmr232/brutal-ida) Block Redo & Undo To Achieve Legacy IDA
 - [**23**Star][7y] [C++] [cr4sh/ida-ubigraph](https://github.com/cr4sh/ida-ubigraph) IDA Pro plug-in and tools for displaying 3D graphs of procedures using UbiGraph
@@ -1406,17 +1376,15 @@
 
 
 - [**208**Star][1m] [Py] [patois/idacyber](https://github.com/patois/idacyber) Data Visualization Plugin for IDA Pro
-- [**150**Star][1y] [Py] [ax330d/hrdev](https://github.com/ax330d/hrdev) Hex-Rays Decompiler Enhanced View
-    - Also In Section: [IDA->Tools->Decompiler](#d2166f4dac4eab7fadfe0fd06467fbc9) |
+- Also In Section: [IDA->Tools->Decompiler](#d2166f4dac4eab7fadfe0fd06467fbc9) |
 - [**105**Star][2y] [Py] [danigargu/idatropy](https://github.com/danigargu/idatropy) a plugin for Hex-Ray's IDA Pro designed to generate charts of entropy and histograms using the power of idapython and matplotlib.
-- [**90**Star][6m] [Py] [patois/hrdevhelper](https://github.com/patois/hrdevhelper) HexRays decompiler plugin that visualizes the ctree of decompiled functions.
-    - Also In Section: [IDA->Tools->Decompiler](#d2166f4dac4eab7fadfe0fd06467fbc9) |
+- Also In Section: [IDA->Tools->Decompiler](#d2166f4dac4eab7fadfe0fd06467fbc9) |
 - [**52**Star][1m] [Py] [patois/xray](https://github.com/patois/xray) Hexrays decompiler plugin that colorizes and filters the decompiler's output based on regular expressions
 - [**20**Star][4m] [C++] [revspbird/hightlight](https://github.com/revspbird/hightlight) a plugin for ida of version 7.2 to help know F5 window codes better
 - [**5**Star][3y] [Py] [oct0xor/ida_pro_graph_styling](https://github.com/oct0xor/ida_pro_graph_styling) Advanced Ida Pro Instruction Highlighting
 - [**5**Star][2y] [C] [teppay/ida](https://github.com/teppay/ida) my files related to IDA
 - [**3**Star][2y] [Py] [andreafioraldi/idaretaddr](https://github.com/andreafioraldi/idaretaddr) Highlight the return address of a function in the Ida Pro debugger
-    - Also In Section: [IDA->Tools->Function->No Category](#347a2158bdd92b00cd3d4ba9a0be00ae) |
+- Also In Section: [IDA->Tools->Function->No Category](#347a2158bdd92b00cd3d4ba9a0be00ae) |
 
 
 #### <a id="3b1dba00630ce81cba525eea8fcdae08"></a>Graph
@@ -1431,7 +1399,7 @@
 
 
 - [**150**Star][15d] [Py] [ga-ryo/idafuzzy](https://github.com/ga-ryo/idafuzzy) Fuzzy search tool for IDA Pro.
-    - Also In Section: [IDA->Tools->Function->Nav](#e4616c414c24b58626f834e1be079ebc) |
+- Also In Section: [IDA->Tools->Function->Nav](#e4616c414c24b58626f834e1be079ebc) |
 - [**64**Star][3y] [Py] [xorpd/idsearch](https://github.com/xorpd/idsearch) A search tool for IDA
 - [**23**Star][6m] [Py] [alexander-hanel/hansel](https://github.com/alexander-hanel/hansel) a simple but flexible search for IDA
 
@@ -1442,19 +1410,17 @@
 
 
 - [**246**Star][28d] [C++] [strazzere/android-scripts](https://github.com/strazzere/android-scripts) Collection of Android reverse engineering scripts
-    - Also In Section: [Android->Tools->Reverse Engineering](#6d2b758b3269bac7d69a2d2c8b45194c) |
-- [**161**Star][2m] [Py] [nforest/droidimg](https://github.com/nforest/droidimg) Android/Linux vmlinux loader
-    - Also In Section: [IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[IDA->Tools->Specific Target->Loader](#cb59d84840e41330a7b5e275c0b81725) |[Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |[Android->Tools->Recent Add](#63fd2c592145914e99f837cecdc5a67c) |
+- Also In Section: [Android->Tools->Reverse Engineering](#6d2b758b3269bac7d69a2d2c8b45194c) |
+- Also In Section: [IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[IDA->Tools->Specific Target->Loader](#cb59d84840e41330a7b5e275c0b81725) |[Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |[Android->Tools->Recent Add](#63fd2c592145914e99f837cecdc5a67c) |
 - [**118**Star][4y] [Py] [cvvt/dumpdex](https://github.com/cvvt/dumpdex) IDA python script to dynamically dump DEX in memory
-    - Also In Section: [Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
+- Also In Section: [Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
 - [**83**Star][2y] [Py] [zhkl0228/androidattacher](https://github.com/zhkl0228/androidattacher) IDA debugging plugin for android armv7 so
-    - Also In Section: [Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
+- Also In Section: [Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
 - [**39**Star][5y] [Py] [techbliss/adb_helper_qt_super_version](https://github.com/techbliss/adb_helper_qt_super_version) All You Need For Ida Pro And Android Debugging
-    - Also In Section: [Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
-- [**39**Star][2y] [Py] [thecjw/ida_android_script](https://github.com/thecjw/ida_android_script) some idapython scripts for android debugging.
-    - Also In Section: [IDA->Tools->Debug->No Category](#2944dda5289f494e5e636089db0d6a6a) |[Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
+- Also In Section: [Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
+- Also In Section: [IDA->Tools->Debug->No Category](#2944dda5289f494e5e636089db0d6a6a) |[Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
 - [**16**Star][7y] [C++] [strazzere/dalvik-header-plugin](https://github.com/strazzere/dalvik-header-plugin) Dalvik Header Plugin for IDA Pro
-    - Also In Section: [Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
+- Also In Section: [Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
 
 
 ### <a id="2adc0044b2703fb010b3bf73b1f1ea4a"></a>Apple&&macOS&&iXxx&&Objective-C&&SWift&&Mach-O
@@ -1463,23 +1429,17 @@
 #### <a id="8530752bacfb388f3726555dc121cb1a"></a>No Category
 
 
-- [**177**Star][2y] [Py] [duo-labs/idapython](https://github.com/duo-labs/idapython)  a few Python modules developed for use with IDA Pro from the researchers at Duo Labs.
-    - Also In Section: [IDA->Tools->Firmware](#a8f5db3ab4bc7bc3d6ca772b3b9b0b1e) |
-    - [cortex_m_firmware](https://github.com/duo-labs/idapython/blob/master/cortex_m_firmware.py) grooms an IDA Pro database containing firmware from an ARM Cortex M microcontroller.
-    - [amnesia](https://github.com/duo-labs/idapython/blob/master/amnesia.py)  an IDAPython module designed to use byte level heuristics to find ARM thumb instructions in undefined bytes in an IDA Pro database
-    - [REobjc](https://github.com/duo-labs/idapython/blob/master/reobjc.py)  an IDAPython module designed to make proper cross references between calling functions and called functions in Objective-C methods
+- Also In Section: [IDA->Tools->Firmware](#a8f5db3ab4bc7bc3d6ca772b3b9b0b1e) |
 - [**167**Star][8y] [Py] [zynamics/objc-helper-plugin-ida](https://github.com/zynamics/objc-helper-plugin-ida) Simplifies working with Objective-C binaries in IDA Pro
 - [**21**Star][3y] [aozhimin/ios-monitor-resources](https://github.com/aozhimin/ios-monitor-resources) 对各厂商的 iOS SDK 性能监控方案的整理和收集后的资源
 - [**17**Star][9y] [C++] [alexander-pick/patchdiff2_ida6](https://github.com/alexander-pick/patchdiff2_ida6) patched up patchdiff2 to compile and work with IDA 6 on OSX
-- [**14**Star][8y] [Standard ML] [letsunlockiphone/iphone-baseband-ida-pro-signature-files](https://github.com/letsunlockiphone/iphone-baseband-ida-pro-signature-files) IDA Pro Signature Files iPhone Baseband Reversing
-    - Also In Section: [IDA->Tools->Signature(FLIRT...)->No Category](#cf04b98ea9da0056c055e2050da980c1) |
+- Also In Section: [IDA->Tools->Signature(FLIRT...)->No Category](#cf04b98ea9da0056c055e2050da980c1) |
 
 
 #### <a id="82d0fa2d6934ce29794a651513934384"></a>Kernel Cache
 
 
-- [**168**Star][1y] [Py] [bazad/ida_kernelcache](https://github.com/bazad/ida_kernelcache) An IDA Toolkit for analyzing iOS kernelcaches
-    - Also In Section: [IDA->Tools->Structure->No Category](#fa5ede9a4f58d4efd98585d3158be4fb) |
+- Also In Section: [IDA->Tools->Structure->No Category](#fa5ede9a4f58d4efd98585d3158be4fb) |
 - [**140**Star][8y] [stefanesser/ida-ios-toolkit](https://github.com/stefanesser/ida-ios-toolkit) Collection of idapython scripts for dealing with the iOS kernelcache
 - [**50**Star][1y] [Py] [synacktiv-contrib/kernelcache-laundering](https://github.com/Synacktiv-contrib/kernelcache-laundering) load iOS12 kernelcaches and PAC code in IDA
 
@@ -1498,7 +1458,7 @@
 - [**52**Star][3y] [Py] [tobefuturer/ida-swift-demangle](https://github.com/tobefuturer/ida-swift-demangle) A tool to demangle Swift function names in IDA.
 - [**17**Star][3y] [Py] [tylerha97/swiftdemang](https://github.com/0xtyh/swiftdemang) Demangle Swift
 - [**17**Star][4y] [Py] [gsingh93/ida-swift-demangle](https://github.com/gsingh93/ida-swift-demangle) An IDA plugin to demangle Swift function names
-    - Also In Section: [IDA->Tools->Function->demangle](#cadae88b91a57345d266c68383eb05c5) |
+- Also In Section: [IDA->Tools->Function->demangle](#cadae88b91a57345d266c68383eb05c5) |
 
 
 
@@ -1507,18 +1467,15 @@
 
 
 - [**525**Star][2y] [C] [lunixbochs/patchkit](https://github.com/lunixbochs/patchkit) binary patching from Python
-    - Also In Section: [IDA->Tools->Patch](#7d557bc3d677d206ef6c5a35ca8b3a14) |
-    - [IDA插件](https://github.com/lunixbochs/patchkit/tree/master/ida) 
-    - [patchkit](https://github.com/lunixbochs/patchkit/tree/master/core) 
+- Also In Section: [IDA->Tools->Patch](#7d557bc3d677d206ef6c5a35ca8b3a14) |
+- [IDA插件](https://github.com/lunixbochs/patchkit/tree/master/ida)
+- [patchkit](https://github.com/lunixbochs/patchkit/tree/master/core)
 - [**206**Star][6y] [C] [snare/ida-efiutils](https://github.com/snare/ida-efiutils) Some scripts for IDA Pro to assist with reverse engineering EFI binaries
-- [**161**Star][2m] [Py] [nforest/droidimg](https://github.com/nforest/droidimg) Android/Linux vmlinux loader
-    - Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |[IDA->Tools->Specific Target->Loader](#cb59d84840e41330a7b5e275c0b81725) |[Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |[Android->Tools->Recent Add](#63fd2c592145914e99f837cecdc5a67c) |
-- [**125**Star][8m] [Py] [danigargu/syms2elf](https://github.com/danigargu/syms2elf) A plugin for Hex-Ray's IDA Pro and radare2 to export the symbols recognized to the ELF symbol table
-    - Also In Section: [IDA->Tools->Import Export->Radare2](#21ed198ae5a974877d7a635a4b039ae3) |[IDA->Tools->Function->No Category](#347a2158bdd92b00cd3d4ba9a0be00ae) |[Radare2->Plugins->With Other Tools->IDA](#1cfe869820ecc97204a350a3361b31a7) |
+- Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |[IDA->Tools->Specific Target->Loader](#cb59d84840e41330a7b5e275c0b81725) |[Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |[Android->Tools->Recent Add](#63fd2c592145914e99f837cecdc5a67c) |
+- Also In Section: [IDA->Tools->Import Export->Radare2](#21ed198ae5a974877d7a635a4b039ae3) |[IDA->Tools->Function->No Category](#347a2158bdd92b00cd3d4ba9a0be00ae) |[Radare2->Plugins->With Other Tools->IDA](#1cfe869820ecc97204a350a3361b31a7) |
 - [**92**Star][3y] [C++] [gdbinit/efiswissknife](https://github.com/gdbinit/efiswissknife) An IDA plugin to improve (U)EFI reversing
 - [**84**Star][19d] [Py] [yeggor/uefi_retool](https://github.com/yeggor/uefi_retool) finding proprietary protocols in UEFI firmware and UEFI modules analysing
-- [**44**Star][2y] [C] [aerosoul94/dynlib](https://github.com/aerosoul94/dynlib) IDA Pro plugin to aid PS4 user mode ELF reverse engineering.
-    - Also In Section: [IDA->Tools->Specific Target->PS3](#315b1b8b41c67ae91b841fce1d4190b5) |
+- Also In Section: [IDA->Tools->Specific Target->PS3](#315b1b8b41c67ae91b841fce1d4190b5) |
 - [**44**Star][4y] [Py] [danse-macabre/ida-efitools](https://github.com/danse-macabre/ida-efitools) Some scripts for IDA Pro to assist with reverse engineering EFI binaries
 - [**43**Star][4y] [Py] [strazzere/idant-wanna](https://github.com/strazzere/idant-wanna) ELF header abuse
 
@@ -1526,8 +1483,7 @@
 ### <a id="7a2977533ccdac70ee6e58a7853b756b"></a>Microcode
 
 
-- [**304**Star][4m] [C++] [rolfrolles/hexraysdeob](https://github.com/rolfrolles/hexraysdeob) Hex-Rays microcode API plugin for breaking an obfuscating compiler
-    - Also In Section: [IDA->Tools->DeObfuscate](#7199e8787c0de5b428f50263f965fda7) |
+- Also In Section: [IDA->Tools->DeObfuscate](#7199e8787c0de5b428f50263f965fda7) |
 - [**185**Star][5m] [C++] [chrisps/hexext](https://github.com/chrisps/Hexext) a plugin to improve the output of the hexrays decompiler through microcode manipulation.
 - [**65**Star][1m] [Py] [patois/genmc](https://github.com/patois/genmc) Display Hex-Rays Microcode
 - [**54**Star][3m] [Py] [idapython/pyhexraysdeob](https://github.com/idapython/pyhexraysdeob) A port of Rolf Rolles hexraysdeob
@@ -1538,14 +1494,10 @@
 
 
 - [**504**Star][20d] [Py] [alexhude/uemu](https://github.com/alexhude/uemu) Tiny cute emulator plugin for IDA based on unicorn.
-- [**395**Star][1y] [C++] [cseagle/sk3wldbg](https://github.com/cseagle/sk3wldbg) Debugger plugin for IDA Pro backed by the Unicorn Engine
-    - Also In Section: [IDA->Tools->Debug->No Category](#2944dda5289f494e5e636089db0d6a6a) |
-- [**393**Star][3y] [Py] [36hours/idaemu](https://github.com/36hours/idaemu) an IDA Pro Plugin use for emulating code in IDA Pro.
-    - Also In Section: [IDA->Tools->Script Writting->No Category](#45fd7cfce682c7c25b4f3fbc4c461ba2) |
-- [**282**Star][2m] [Py] [fireeye/flare-emu](https://github.com/fireeye/flare-emu) marries a supported binary analysis framework, such as IDA Pro or Radare2, with Unicorn’s emulation framework to provide the user with an easy to use and flexible interface for scripting emulation tasks
-    - Also In Section: [IDA->Tools->Script Writting->No Category](#45fd7cfce682c7c25b4f3fbc4c461ba2) |
-- [**202**Star][2y] [Py] [tkmru/nao](https://github.com/tkmru/nao) Simple No-meaning Assembly Omitter for IDA Pro (CURRENTLY UNDER DEVELOPMENT)
-    - Also In Section: [IDA->Tools->DeObfuscate](#7199e8787c0de5b428f50263f965fda7) |
+- Also In Section: [IDA->Tools->Debug->No Category](#2944dda5289f494e5e636089db0d6a6a) |
+- Also In Section: [IDA->Tools->Script Writting->No Category](#45fd7cfce682c7c25b4f3fbc4c461ba2) |
+- Also In Section: [IDA->Tools->Script Writting->No Category](#45fd7cfce682c7c25b4f3fbc4c461ba2) |
+- Also In Section: [IDA->Tools->DeObfuscate](#7199e8787c0de5b428f50263f965fda7) |
 - [**126**Star][3y] [Py] [codypierce/pyemu](https://github.com/codypierce/pyemu) x86 Emulator in Python
 
 
@@ -1553,14 +1505,11 @@
 
 
 - [**1542**Star][28d] [Py] [lifting-bits/mcsema](https://github.com/lifting-bits/mcsema) Framework for lifting x86, amd64, and aarch64 program binaries to LLVM bitcode
-    - [IDA7插件](https://github.com/lifting-bits/mcsema/tree/master/tools/mcsema_disass/ida7) 用于反汇编二进制文件并生成控制流程图
-    - [IDA插件](https://github.com/lifting-bits/mcsema/tree/master/tools/mcsema_disass/ida) 用于反汇编二进制文件并生成控制流程图
-    - [Binja插件](https://github.com/lifting-bits/mcsema/tree/master/tools/mcsema_disass/binja) 用于反汇编二进制文件并生成控制流程图
-    - [mcsema](https://github.com/lifting-bits/mcsema/tree/master/mcsema) 
-- [**421**Star][1m] [C] [mcgill-dmas/kam1n0-community](https://github.com/McGill-DMaS/Kam1n0-Community) a scalable assembly management and analysis platform
-    - Also In Section: [IDA->Tools->Signature(FLIRT...)->No Category](#cf04b98ea9da0056c055e2050da980c1) |
-    - [IDA插件](https://github.com/McGill-DMaS/Kam1n0-Community/tree/master2.x/kam1n0-clients/ida-plugin) 
-    - [kam1n0](https://github.com/McGill-DMaS/Kam1n0-Community/tree/master2.x/kam1n0) 
+- [IDA7插件](https://github.com/lifting-bits/mcsema/tree/master/tools/mcsema_disass/ida7) 用于反汇编二进制文件并生成控制流程图
+- [IDA插件](https://github.com/lifting-bits/mcsema/tree/master/tools/mcsema_disass/ida) 用于反汇编二进制文件并生成控制流程图
+- [Binja插件](https://github.com/lifting-bits/mcsema/tree/master/tools/mcsema_disass/binja) 用于反汇编二进制文件并生成控制流程图
+- [mcsema](https://github.com/lifting-bits/mcsema/tree/master/mcsema)
+- Also In Section: [IDA->Tools->Signature(FLIRT...)->No Category](#cf04b98ea9da0056c055e2050da980c1) |
 - [**27**Star][4y] [Scheme] [yifanlu/cgen](https://github.com/yifanlu/cgen) CGEN with support for generating IDA Pro IDP modules
 - [**23**Star][2y] [Py] [tintinweb/unbox](https://github.com/tintinweb/unbox) a convenient one-click unpack and decompiler tool that wraps existing 3rd party applications like IDA Pro, JD-Cli, Dex2Src, and others to provide a convenient archiver liker command line interfaces to unpack and decompile various types of files
 
@@ -1573,35 +1522,30 @@
 
 - [**492**Star][7m] [Py] [danigargu/heap-viewer](https://github.com/danigargu/heap-viewer) An IDA Pro plugin to examine the glibc heap, focused on exploit development
 - [**376**Star][2y] [Py] [1111joe1111/ida_ea](https://github.com/1111joe1111/ida_ea) A set of exploitation/reversing aids for IDA
-- [**372**Star][3m] [Py] [l4ys/lazyida](https://github.com/l4ys/lazyida) Make your IDA Lazy!
-    - Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |[IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
-        <details>
-        <summary>View Details</summary>
+- Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |[IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
+<details>
+<summary>View Details</summary>
 
 
-        ### 功能
-        - 快速移除函数返回类型
-        - 数据格式(format)快速转换
-        - 扫描字符串格式化漏洞
-        - 双击跳转vtable函数
-        - 快捷键: w/c/v
-        </details>
+### 功能
+- 快速移除函数返回类型
+- 数据格式(format)快速转换
+- 扫描字符串格式化漏洞
+- 双击跳转vtable函数
+- 快捷键: w/c/v
+</details>
 
 
 - [**138**Star][8m] [Py] [iphelix/ida-sploiter](https://github.com/iphelix/ida-sploiter) a plugin for Hex-Ray's IDA Pro disassembler designed to enhance IDA's capabilities as an exploit development and vulnerability research tool.
-- [**134**Star][1y] [Py] [carlosgprado/jarvis](https://github.com/carlosgprado/jarvis) "Just Another ReVersIng Suite" or whatever other bullshit you can think of
-    - Also In Section: [IDA->Tools->Import Export->IntelPin](#dd0332da5a1482df414658250e6357f8) |[IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
-    - [IDA插件](https://github.com/carlosgprado/jarvis/tree/master/IDAPlugin) 
-    - [PinTracer](https://github.com/carlosgprado/jarvis/tree/master/PinTracer) 
-- [**70**Star][13d] [Py] [patois/mrspicky](https://github.com/patois/mrspicky) An IDAPython decompiler script that helps auditing calls to the memcpy() and memmove() functions.
-    - Also In Section: [IDA->Tools->Decompiler](#d2166f4dac4eab7fadfe0fd06467fbc9) |
+- Also In Section: [IDA->Tools->Import Export->IntelPin](#dd0332da5a1482df414658250e6357f8) |[IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
+- Also In Section: [IDA->Tools->Decompiler](#d2166f4dac4eab7fadfe0fd06467fbc9) |
 - [**32**Star][6y] [Py] [coldheat/quicksec](https://github.com/coldheat/quicksec) IDAPython script for quick vulnerability analysis
 
 
 #### <a id="cf2efa7e3edb24975b92d2e26ca825d2"></a>ROP
 
 
-- [**54**Star][3y] [Py] [patois/drgadget](https://github.com/patois/drgadget) IDAPython plugin for the Interactive Disassembler 
+- [**54**Star][3y] [Py] [patois/drgadget](https://github.com/patois/drgadget) IDAPython plugin for the Interactive Disassembler
 - [**19**Star][2y] [Py] [lucasg/idarop](https://github.com/lucasg/idarop) ROP database plugin for IDA
 
 
@@ -1611,10 +1555,7 @@
 
 
 - [**727**Star][1y] [Py] [keystone-engine/keypatch](https://github.com/keystone-engine/keypatch) Multi-architecture assembler for IDA Pro. Powered by Keystone Engine.
-- [**525**Star][2y] [C] [lunixbochs/patchkit](https://github.com/lunixbochs/patchkit) binary patching from Python
-    - Also In Section: [IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |
-    - [IDA插件](https://github.com/lunixbochs/patchkit/tree/master/ida) 
-    - [patchkit](https://github.com/lunixbochs/patchkit/tree/master/core) 
+- Also In Section: [IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |
 - [**89**Star][5y] [Py] [iphelix/ida-patcher](https://github.com/iphelix/ida-patcher) a plugin for Hex-Ray's IDA Pro disassembler designed to enhance IDA's ability to patch binary files and memory.
 - [**42**Star][3y] [C++] [mrexodia/idapatch](https://github.com/mrexodia/idapatch) IDA plugin to patch IDA Pro in memory.
 - [**31**Star][4m] [Py] [scottmudge/debugautopatch](https://github.com/scottmudge/debugautopatch) Patching system improvement plugin for IDA.
@@ -1626,7 +1567,7 @@
 
 
 - [**123**Star][2y] [Shell] [feicong/ida_for_mac_green](https://github.com/feicong/ida_for_mac_green) IDAPro for macOS
-- [**34**Star][6m] [angelkitty/ida7.0](https://github.com/angelkitty/ida7.0) 
+- [**34**Star][6m] [angelkitty/ida7.0](https://github.com/angelkitty/ida7.0)
 - [**16**Star][2y] [jas502n/ida7.0-pro](https://github.com/jas502n/ida7.0-pro) IDA7.0  download
 
 
@@ -1636,11 +1577,9 @@
 #### <a id="347a2158bdd92b00cd3d4ba9a0be00ae"></a>No Category
 
 
-- [**125**Star][8m] [Py] [danigargu/syms2elf](https://github.com/danigargu/syms2elf) A plugin for Hex-Ray's IDA Pro and radare2 to export the symbols recognized to the ELF symbol table
-    - Also In Section: [IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[IDA->Tools->Import Export->Radare2](#21ed198ae5a974877d7a635a4b039ae3) |[Radare2->Plugins->With Other Tools->IDA](#1cfe869820ecc97204a350a3361b31a7) |
+- Also In Section: [IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[IDA->Tools->Import Export->Radare2](#21ed198ae5a974877d7a635a4b039ae3) |[Radare2->Plugins->With Other Tools->IDA](#1cfe869820ecc97204a350a3361b31a7) |
 - [**11**Star][2y] [C++] [fireundubh/ida7-functionstringassociate](https://github.com/fireundubh/ida7-functionstringassociate) FunctionStringAssociate plugin by sirmabus, ported to IDA 7
-- [**3**Star][2y] [Py] [andreafioraldi/idaretaddr](https://github.com/andreafioraldi/idaretaddr) Highlight the return address of a function in the Ida Pro debugger
-    - Also In Section: [IDA->Tools->Nav->GUI Enhencement](#03fac5b3abdbd56974894a261ce4e25f) |
+- Also In Section: [IDA->Tools->Nav->GUI Enhencement](#03fac5b3abdbd56974894a261ce4e25f) |
 - [**2**Star][5m] [Py] [farzonl/idapropluginlab3](https://github.com/farzonl/idapropluginlab3) An Ida plugin that does static analysis to describe what malware is doing.
 
 
@@ -1651,30 +1590,24 @@
 - [**119**Star][5y] [C++] [zyantific/retypedef](https://github.com/zyantific/retypedef) Name substitution plugin for IDA Pro
 - [**95**Star][2y] [Py] [gaasedelen/prefix](https://github.com/gaasedelen/prefix) Function Prefixing for IDA Pro
 - [**48**Star][3y] [Py] [alessandrogario/ida-function-tagger](https://github.com/alessandrogario/ida-function-tagger) This IDAPython script tags subroutines according to their use of imported functions
-- [**23**Star][12m] [Py] [howmp/comfinder](https://github.com/howmp/comfinder) IDA plugin for COM
-    - Also In Section: [IDA->Tools->Specific Target->No Category](#5578c56ca09a5804433524047840980e) |
-- [**3**Star][4y] [Py] [ayuto/discover_win](https://github.com/ayuto/discover_win) compare linux and windows binary, rename windows binary functions
-    - Also In Section: [IDA->Tools->Signature(FLIRT...)->No Category](#cf04b98ea9da0056c055e2050da980c1) |
+- Also In Section: [IDA->Tools->Specific Target->No Category](#5578c56ca09a5804433524047840980e) |
+- Also In Section: [IDA->Tools->Signature(FLIRT...)->No Category](#cf04b98ea9da0056c055e2050da980c1) |
 
 
 #### <a id="e4616c414c24b58626f834e1be079ebc"></a>Nav&&Search
 
 
 - [**180**Star][6m] [Py] [hasherezade/ida_ifl](https://github.com/hasherezade/ida_ifl) IFL - Interactive Functions List (plugin for IDA Pro)
-- [**150**Star][15d] [Py] [ga-ryo/idafuzzy](https://github.com/ga-ryo/idafuzzy) Fuzzy search tool for IDA Pro.
-    - Also In Section: [IDA->Tools->Nav->Search](#8f9468e9ab26128567f4be87ead108d7) |
-- [**99**Star][1y] [Py] [darx0r/stingray](https://github.com/darx0r/stingray) IDAPython plugin for finding function strings recursively
-    - Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |[IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
-- [**81**Star][15d] [Py] [ax330d/functions-plus](https://github.com/ax330d/functions-plus) IDA Pro plugin to show functions in a tree view
-    - Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
+- Also In Section: [IDA->Tools->Nav->Search](#8f9468e9ab26128567f4be87ead108d7) |
+- Also In Section: [IDA->Tools->string](#9dcc6c7dd980bec1f92d0cc9a2209a24) |[IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
+- Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
 - [**34**Star][3y] [Py] [darx0r/reef](https://github.com/darx0r/reef) IDAPython plugin for finding Xrefs from a function
 
 
 #### <a id="cadae88b91a57345d266c68383eb05c5"></a>demangle
 
 
-- [**17**Star][4y] [Py] [gsingh93/ida-swift-demangle](https://github.com/gsingh93/ida-swift-demangle) An IDA plugin to demangle Swift function names
-    - Also In Section: [IDA->Tools->Apple->Swift](#1c698e298f6112a86c12881fbd8173c7) |
+- Also In Section: [IDA->Tools->Apple->Swift](#1c698e298f6112a86c12881fbd8173c7) |
 - [**14**Star][1y] [Py] [ax330d/exports-plus](https://github.com/ax330d/exports-plus) IDA Pro plugin to view Exports
 
 
@@ -1683,55 +1616,44 @@
 ### <a id="34ac84853604a7741c61670f2a075d20"></a>Taint Analysis&&Symbolic Execution
 
 
-- [**931**Star][25d] [OCaml] [airbus-seclab/bincat](https://github.com/airbus-seclab/bincat) a static Binary Code Analysis Toolkit, designed to help reverse engineers, directly from IDA or using Python for automation.
-    - Also In Section: [IDA->Tools->Structure->No Category](#fa5ede9a4f58d4efd98585d3158be4fb) |
+- Also In Section: [IDA->Tools->Structure->No Category](#fa5ede9a4f58d4efd98585d3158be4fb) |
 - [**868**Star][2y] [C++] [illera88/ponce](https://github.com/illera88/ponce) Symbolic Execution just one-click away!
-- [**23**Star][5m] [Py] [jonathansalwan/x-tunnel-opaque-predicates](https://github.com/jonathansalwan/x-tunnel-opaque-predicates) IDA+Triton plugin in order to extract opaque predicates using a Forward-Bounded DSE. Example with X-Tunnel.
-    - Also In Section: [IDA->Tools->DeObfuscate](#7199e8787c0de5b428f50263f965fda7) |
+- Also In Section: [IDA->Tools->DeObfuscate](#7199e8787c0de5b428f50263f965fda7) |
 
 
 ### <a id="9dcc6c7dd980bec1f92d0cc9a2209a24"></a>string
 
 
-- [**1365**Star][3m] [Py] [fireeye/flare-floss](https://github.com/fireeye/flare-floss) Automatically extract obfuscated strings from malware.
-    - Also In Section: [IDA->Tools->DeObfuscate](#7199e8787c0de5b428f50263f965fda7) |
-    - [floss](https://github.com/fireeye/flare-floss/tree/master/floss) 
-    - [IDA插件](https://github.com/fireeye/flare-floss/blob/master/scripts/idaplugin.py) 
-- [**372**Star][3m] [Py] [l4ys/lazyida](https://github.com/l4ys/lazyida) Make your IDA Lazy!
-    - Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |[IDA->Tools->Vul->No Category](#385d6777d0747e79cccab0a19fa90e7e) |
-        <details>
-        <summary>View Details</summary>
+- Also In Section: [IDA->Tools->DeObfuscate](#7199e8787c0de5b428f50263f965fda7) |
+- Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |[IDA->Tools->Vul->No Category](#385d6777d0747e79cccab0a19fa90e7e) |
+<details>
+<summary>View Details</summary>
 
 
-        ### 功能
-        - 快速移除函数返回类型
-        - 数据格式(format)快速转换
-        - 扫描字符串格式化漏洞
-        - 双击跳转vtable函数
-        - 快捷键: w/c/v
-        </details>
+### 功能
+- 快速移除函数返回类型
+- 数据格式(format)快速转换
+- 扫描字符串格式化漏洞
+- 双击跳转vtable函数
+- 快捷键: w/c/v
+</details>
 
 
 - [**181**Star][2m] [Py] [joxeankoret/idamagicstrings](https://github.com/joxeankoret/idamagicstrings) An IDA Python script to extract information from string constants.
-- [**130**Star][2y] [Py] [comsecuris/ida_strcluster](https://github.com/comsecuris/ida_strcluster) extending IDA's string navigation capabilities
-    - Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
-- [**99**Star][1y] [Py] [darx0r/stingray](https://github.com/darx0r/stingray) IDAPython plugin for finding function strings recursively
-    - Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |[IDA->Tools->Function->Nav](#e4616c414c24b58626f834e1be079ebc) |
+- Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |
+- Also In Section: [IDA->Tools->Nav->No Category](#c5b120e1779b928d860ad64ff8d23264) |[IDA->Tools->Function->Nav](#e4616c414c24b58626f834e1be079ebc) |
 - [**45**Star][5y] [Py] [kyrus/ida-translator](https://github.com/kyrus/ida-translator) A plugin for IDA Pro that assists in decoding arbitrary character sets in an IDA Pro database into Unicode, then automatically invoking a web-based translation service (currently Google Translate) to translate that foreign text into English.
-- [**4**Star][3y] [C#] [andreafioraldi/idagrabstrings](https://github.com/andreafioraldi/idagrabstrings) IDAPython plugin to manipulate strings in a specified range of addresses
-    - Also In Section: [IDA->Tools->Structure->No Category](#fa5ede9a4f58d4efd98585d3158be4fb) |
-- [**4**Star][8m] [C] [lacike/gandcrab_string_decryptor](https://github.com/lacike/gandcrab_string_decryptor) IDC script for decrypting strings in the GandCrab v5.1-5.3
-    - Also In Section: [IDA->Tools->Specific Target->Malware Family](#841d605300beba45c3be131988514a03) |
+- Also In Section: [IDA->Tools->Structure->No Category](#fa5ede9a4f58d4efd98585d3158be4fb) |
+- Also In Section: [IDA->Tools->Specific Target->Malware Family](#841d605300beba45c3be131988514a03) |
 
 
 ### <a id="06d2caabef97cf663bd29af2b1fe270c"></a>encrypt&&decrypt
 
 
-- [**449**Star][2m] [Py] [polymorf/findcrypt-yara](https://github.com/polymorf/findcrypt-yara) IDA pro plugin to find crypto constants (and more)
-    - Also In Section: [IDA->Tools->Signature(FLIRT...)->Yara](#46c9dfc585ae59fe5e6f7ddf542fb31a) |
+- Also In Section: [IDA->Tools->Signature(FLIRT...)->Yara](#46c9dfc585ae59fe5e6f7ddf542fb31a) |
 - [**136**Star][25d] [Py] [you0708/ida](https://github.com/you0708/ida) A Python implementation of FindCrypt plugin.
-    - [IDA主题](https://github.com/you0708/ida/tree/master/theme) 
-    - [findcrypt](https://github.com/you0708/ida/tree/master/idapython_tools/findcrypt) IDA FindCrypt/FindCrypt2 插件的Python版本
+- [IDA主题](https://github.com/you0708/ida/tree/master/theme)
+- [findcrypt](https://github.com/you0708/ida/tree/master/idapython_tools/findcrypt) IDA FindCrypt/FindCrypt2 插件的Python版本
 - [**42**Star][7y] [C++] [vlad902/findcrypt2-with-mmx](https://github.com/vlad902/findcrypt2-with-mmx) IDA Pro findcrypt2 plug-in with MMX AES instruction finding support
 
 
@@ -1832,10 +1754,7 @@
 - 2014.08 [3xp10it] [ida插件使用备忘录](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2017/12/27/ida%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E5%A4%87%E5%BF%98%E5%BD%95/)
 - 2014.08 [3xp10it] [ida通过usb调试ios下的app](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2017/12/25/ida%E9%80%9A%E8%BF%87usb%E8%B0%83%E8%AF%95ios%E4%B8%8B%E7%9A%84app/)
 - 2014.08 [3xp10it] [ida批量下断点追踪函数调用](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2018/12/21/ida%E6%89%B9%E9%87%8F%E4%B8%8B%E6%96%AD%E7%82%B9%E8%BF%BD%E8%B8%AA%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/)
-- 2014.08 [3xp10it] [ida插件使用备忘录](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2017/12/27/ida%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E5%A4%87%E5%BF%98%E5%BD%95/)
 - 2014.08 [3xp10it] [ida插件mynav](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2018/01/22/ida%E6%8F%92%E4%BB%B6mynav/)
-- 2014.08 [3xp10it] [ida通过usb调试ios下的app](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2017/12/25/ida%E9%80%9A%E8%BF%87usb%E8%B0%83%E8%AF%95ios%E4%B8%8B%E7%9A%84app/)
-- 2014.08 [3xp10it] [ida批量下断点追踪函数调用](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2018/12/21/ida%E6%89%B9%E9%87%8F%E4%B8%8B%E6%96%AD%E7%82%B9%E8%BF%BD%E8%B8%AA%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/)
 - 2014.07 [hexblog] [IDA Dalvik debugger: tips and tricks](http://www.hexblog.com/?p=809)
 - 2014.04 [hexblog] [Extending IDAPython in IDA 6.5: Be careful about the GIL](http://www.hexblog.com/?p=788)
 - 2014.03 [zdziarski] [The Importance of Forensic Tools Validation](https://www.zdziarski.com/blog/?p=3112)
@@ -2046,7 +1965,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2015.03 [joxeankoret] [Diaphora, a program diffing plugin for IDA Pro](http://joxeankoret.com/blog/2015/03/13/diaphora-a-program-diffing-plugin-for-ida-pro/)
 - 2014.10 [devttys0] [A Code Signature Plugin for IDA](http://www.devttys0.com/2014/10/a-code-signature-plugin-for-ida/)
 - 2014.09 [freebuf] [火眼（FireEye）实验室FLARE IDA Pro脚本系列：MSDN注释插件](http://www.freebuf.com/sectool/43334.html)
-- 2014.08 [3xp10it] [ida插件mynav](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2018/01/22/ida%E6%8F%92%E4%BB%B6mynav/)
 - 2014.05 [oct0xor] [Deci3dbg - Ida Pro Debugger Module for Playstation 3](http://oct0xor.github.io/2014/05/30/deci3dbg/)
 - 2013.11 [quarkslab] [IDA processor module](https://blog.quarkslab.com/ida-processor-module.html)
 - 2013.06 [redplait] [IDA loader of .dcu files from XE4](http://redplait.blogspot.com/2013/06/ida-loader-of-dcu-files-from-xe4.html)
@@ -2133,7 +2051,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2017.11 [OALabs] [Unpacking Process Injection Malware With IDA PRO (Part 1)](https://www.youtube.com/watch?v=ScBB-Hi7NxQ)
 - 2017.06 [hackers] [Reverse Engineering Malware, Part 3:  IDA Pro Introduction](https://www.hackers-arise.com/single-post/2017/06/22/Reverse-Engineering-Malware-Part-3-IDA-Pro-Introduction)
 - 2017.05 [4hou] [逆向分析——使用IDA动态调试WanaCrypt0r中的tasksche.exe](http://www.4hou.com/technology/4832.html)
-- 2017.05 [3gstudent] [逆向分析——使用IDA动态调试WanaCrypt0r中的tasksche.exe](https://3gstudent.github.io/3gstudent.github.io/%E9%80%86%E5%90%91%E5%88%86%E6%9E%90-%E4%BD%BF%E7%94%A8IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95WanaCrypt0r%E4%B8%AD%E7%9A%84tasksche.exe/)
 - 2012.06 [trustwave] [Defeating Flame String Obfuscation with IDAPython](https://www.trustwave.com/Resources/SpiderLabs-Blog/Defeating-Flame-String-Obfuscation-with-IDAPython/)
 
 
@@ -2182,18 +2099,18 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 
 
 - [**455**Star][9m] [YARA] [ghidraninja/ghidra_scripts](https://github.com/ghidraninja/ghidra_scripts) Scripts for the Ghidra software reverse engineering suite.
-    - [binwalk](https://github.com/ghidraninja/ghidra_scripts/blob/master/binwalk.py) Runs binwalk on the current program and bookmarks the findings
-    - [yara](https://github.com/ghidraninja/ghidra_scripts/blob/master/yara.py) Automatically find crypto constants in the loaded program - allows to very quickly identify crypto code.
-    - [swift_demangler](https://github.com/ghidraninja/ghidra_scripts/blob/master/swift_demangler.py) Automatically demangle swift function names
-    - [golang_renamer](https://github.com/ghidraninja/ghidra_scripts/blob/master/golang_renamer.py) Restores function names from a stripped Go binary
+- [binwalk](https://github.com/ghidraninja/ghidra_scripts/blob/master/binwalk.py) Runs binwalk on the current program and bookmarks the findings
+- [yara](https://github.com/ghidraninja/ghidra_scripts/blob/master/yara.py) Automatically find crypto constants in the loaded program - allows to very quickly identify crypto code.
+- [swift_demangler](https://github.com/ghidraninja/ghidra_scripts/blob/master/swift_demangler.py) Automatically demangle swift function names
+- [golang_renamer](https://github.com/ghidraninja/ghidra_scripts/blob/master/golang_renamer.py) Restores function names from a stripped Go binary
 - [**204**Star][8m] [Java] [rolfrolles/ghidrapal](https://github.com/rolfrolles/ghidrapal) Ghidra Program Analysis Library(No Doc)
 - [**83**Star][16d] [allsafecybersecurity/awesome-ghidra](https://github.com/allsafecybersecurity/awesome-ghidra) A curated list of awesome Ghidra materials
 - [**53**Star][9m] [aldelaro5/ghidra-gekko-broadway-lang](https://github.com/aldelaro5/ghidra-gekko-broadway-lang) Ghidra language definition for the Gekko and Broadway CPU variant used in the Nintendo GameCube and Nintendo Wii respectively
 - [**51**Star][2m] [Makefile] [blacktop/docker-ghidra](https://github.com/blacktop/docker-ghidra) Ghidra Client/Server Docker Image
 - [**36**Star][2m] [Java] [ayrx/jnianalyzer](https://github.com/ayrx/jnianalyzer) Analysis scripts for Ghidra to work with Android NDK libraries.
 - [**34**Star][2m] [Py] [pagalaxylab/ghidra_scripts](https://github.com/pagalaxylab/ghidra_scripts) Scripts for the Ghidra.
-    - [AnalyzeOCMsgSend](https://github.com/pagalaxylab/ghidra_scripts/blob/master/AnalyzeOCMsgSend.py) 
-    - [trace_function_call_parm_value](https://github.com/pagalaxylab/ghidra_scripts/blob/master/trace_function_call_parm_value.py) 
+- [AnalyzeOCMsgSend](https://github.com/pagalaxylab/ghidra_scripts/blob/master/AnalyzeOCMsgSend.py)
+- [trace_function_call_parm_value](https://github.com/pagalaxylab/ghidra_scripts/blob/master/trace_function_call_parm_value.py)
 - [**19**Star][9m] [Java] [kant2002/ghidra](https://github.com/kant2002/ghidra) As it is obvious from the name this is version of NSA Ghidra which actually could be built from sources
 - [**18**Star][2m] [Java] [threatrack/ghidra-patchdiff-correlator](https://github.com/threatrack/ghidra-patchdiff-correlator) This project tries to provide additional Ghidra Version Tracking Correlators suitable for patch diffing.
 - [**16**Star][5m] [hedgeberg/rl78_sleigh](https://github.com/hedgeberg/rl78_sleigh) An implementation of the RL78 ISA for Ghidra SRE
@@ -2217,13 +2134,13 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 
 
 - [**90**Star][3m] [Java] [adubbz/ghidra-switch-loader](https://github.com/adubbz/ghidra-switch-loader) Nintendo Switch loader for Ghidra
-- [**79**Star][2m] [Py] [leveldown-security/svd-loader-ghidra](https://github.com/leveldown-security/svd-loader-ghidra) 
+- [**79**Star][2m] [Py] [leveldown-security/svd-loader-ghidra](https://github.com/leveldown-security/svd-loader-ghidra)
 - [**65**Star][24d] [Java] [beardypig/ghidra-emotionengine](https://github.com/beardypig/ghidra-emotionengine) Ghidra Processor for the Play Station 2's Emotion Engine MIPS based CPU
 - [**56**Star][5m] [Assembly] [xyzz/ghidra-mep](https://github.com/xyzz/ghidra-mep) Toshiba MeP processor module for GHIDRA
 - [**54**Star][1m] [Java] [cuyler36/ghidra-gamecube-loader](https://github.com/cuyler36/ghidra-gamecube-loader) A Nintendo GameCube binary loader for Ghidra
 - [**53**Star][10m] [Java] [jogolden/ghidraps4loader](https://github.com/jogolden/ghidraps4loader) A Ghidra loader for PlayStation 4 binaries.
 - [**44**Star][3m] [Java] [nalen98/ebpf-for-ghidra](https://github.com/nalen98/ebpf-for-ghidra) eBPF Processor for Ghidra
-- [**34**Star][6m] [Java] [idl3r/ghidravmlinuxloader](https://github.com/idl3r/ghidravmlinuxloader) 
+- [**34**Star][6m] [Java] [idl3r/ghidravmlinuxloader](https://github.com/idl3r/ghidravmlinuxloader)
 - [**32**Star][9d] [Java] [zerokilo/n64loaderwv](https://github.com/zerokilo/n64loaderwv) Ghidra Loader Module for N64 ROMs
 - [**30**Star][5m] [cturt/gameboy_ghidrasleigh](https://github.com/cturt/gameboy_ghidrasleigh) Ghidra Processor support for Nintendo Game Boy
 - [**28**Star][9d] [Java] [zerokilo/xexloaderwv](https://github.com/zerokilo/xexloaderwv) Ghidra Loader Module for X360 XEX Files
@@ -2257,39 +2174,34 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 
 
 - [**175**Star][14d] [C++] [radareorg/r2ghidra-dec](https://github.com/radareorg/r2ghidra-dec) Deep ghidra decompiler integration for radare2
-    - Also In Section: [Radare2->Plugins->With Other Tools->IDA](#1cfe869820ecc97204a350a3361b31a7) |
+- Also In Section: [Radare2->Plugins->With Other Tools->IDA](#1cfe869820ecc97204a350a3361b31a7) |
 - [**36**Star][5m] [Java] [radare/ghidra-r2web](https://github.com/radare/ghidra-r2web) Ghidra plugin to start an r2 webserver to let r2 interact with it
 
 
 #### <a id="d832a81018c188bf585fcefa3ae23062"></a>IDA
 
 
-- [**299**Star][4m] [Py] [cisco-talos/ghida](https://github.com/cisco-talos/ghida) an IDA Pro plugin that integrates the Ghidra decompiler in IDA.
-    - Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |
-- [**238**Star][9m] [Py] [daenerys-sre/source](https://github.com/daenerys-sre/source)  A framework for interoperability between IDA and Ghidra
-    - Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |
-- [**88**Star][4m] [Py] [cisco-talos/ghidraaas](https://github.com/cisco-talos/ghidraaas) a simple web server that exposes Ghidra analysis through REST APIs
-    - Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |
-- [**54**Star][9m] [Py] [nwmonster/applysig](https://github.com/nwmonster/applysig) Apply IDA FLIRT signatures for Ghidra
-    - Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |[IDA->Tools->Signature(FLIRT...)->FLIRT->FLIRT Signature Generate](#a9a63d23d32c6c789ca4d2e146c9b6d0) |
-- [**47**Star][2m] [Py] [utkonos/lst2x64dbg](https://github.com/utkonos/lst2x64dbg) Extract labels from IDA .lst or Ghidra .csv file and export x64dbg database.
-    - Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |[x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
+- Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |
+- Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |
+- Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |
+- Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |[IDA->Tools->Signature(FLIRT...)->FLIRT->FLIRT Signature Generate](#a9a63d23d32c6c789ca4d2e146c9b6d0) |
+- Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |[x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
 
 
 #### <a id="60e86981b2c98f727587e7de927e0519"></a>DBI
 
 
 - [**102**Star][4m] [Java] [0ffffffffh/dragondance](https://github.com/0ffffffffh/dragondance) Binary code coverage visualizer plugin for Ghidra
-    - Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
-    - [Ghidra插件](https://github.com/0ffffffffh/dragondance/blob/master/README.md) 
-    - [coverage-pin](https://github.com/0ffffffffh/dragondance/blob/master/coveragetools/README.md) 使用Pin收集信息
+- Also In Section: [DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |
+- [Ghidra插件](https://github.com/0ffffffffh/dragondance/blob/master/README.md)
+- [coverage-pin](https://github.com/0ffffffffh/dragondance/blob/master/coveragetools/README.md) 使用Pin收集信息
 
 
 #### <a id="e81053b03a859e8ac72f7fe79e80341a"></a>Debugger
 
 
 - [**42**Star][2m] [Java] [revolver-ocelot-saa/ghidrax64dbg](https://github.com/revolver-ocelot-saa/ghidrax64dbg) Extract annoations from Ghidra into an X32/X64 dbg database
-    - Also In Section: [x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
+- Also In Section: [x64dbg->Plugins->Recent Add](#da5688c7823802e734c39b539aa39df7) |
 
 
 
@@ -2470,39 +2382,21 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 ### <a id="da5688c7823802e734c39b539aa39df7"></a>Recent Add
 
 
-- [**1672**Star][7m] [C++] [yegord/snowman](https://github.com/yegord/snowman)  a native code to C/C++ decompiler, supporting x86, AMD64, and ARM architectures
-    - Also In Section: [IDA->Tools->Decompiler](#d2166f4dac4eab7fadfe0fd06467fbc9) |
-    - [IDA插件](https://github.com/yegord/snowman/tree/master/src/ida-plugin) 
-    - [snowman](https://github.com/yegord/snowman/tree/master/src/snowman) QT界面
-    - [nocode](https://github.com/yegord/snowman/tree/master/src/nocode) 命令行工具
-    - [nc](https://github.com/yegord/snowman/tree/master/src/nc) 核心代码，可作为库使用
+- Also In Section: [IDA->Tools->Decompiler](#d2166f4dac4eab7fadfe0fd06467fbc9) |
 - [**1341**Star][1m] [C] [x64dbg/x64dbgpy](https://github.com/x64dbg/x64dbgpy) Automating x64dbg using Python, Snapshots:
 - [**1133**Star][2y] [C++] [x64dbg/gleebug](https://github.com/x64dbg/gleebug) Debugging Framework for Windows.
-- [**471**Star][13d] [C] [bootleg/ret-sync](https://github.com/bootleg/ret-sync) a set of plugins that help to synchronize a debugging session (WinDbg/GDB/LLDB/OllyDbg/OllyDbg2/x64dbg) with IDA/Ghidra disassemblers
-    - Also In Section: [IDA->Tools->Sync With Debugger](#f7d311685152ac005cfce5753c006e4b) |
-    - [GDB插件](https://github.com/bootleg/ret-sync/tree/master/ext_gdb) 
-    - [Ghidra插件](https://github.com/bootleg/ret-sync/tree/master/ext_ghidra) 
-    - [IDA插件](https://github.com/bootleg/ret-sync/tree/master/ext_ida) 
-    - [LLDB](https://github.com/bootleg/ret-sync/tree/master/ext_lldb) 
-    - [OD](https://github.com/bootleg/ret-sync/tree/master/ext_olly1) 
-    - [OD2](https://github.com/bootleg/ret-sync/tree/master/ext_olly2) 
-    - [WinDgb](https://github.com/bootleg/ret-sync/tree/master/ext_windbg/sync) 
-    - [x64dbg](https://github.com/bootleg/ret-sync/tree/master/ext_x64dbg) 
-- [**363**Star][9m] [fr0gger/awesome-ida-x64-olly-plugin](https://github.com/fr0gger/awesome-ida-x64-olly-plugin) Awesome IDA, x64DBG & OllyDBG plugin
-    - Also In Section: [IDA->Tools->Collection](#a7dac37cd93b8bb42c7d6aedccb751b3) |
-- [**163**Star][2m] [Py] [x64dbg/x64dbgida](https://github.com/x64dbg/x64dbgida) Official x64dbg plugin for IDA Pro.
-    - Also In Section: [IDA->Tools->Import Export->No Category](#8ad723b704b044e664970b11ce103c09) |
+- Also In Section: [IDA->Tools->Sync With Debugger](#f7d311685152ac005cfce5753c006e4b) |
+- Also In Section: [IDA->Tools->Collection](#a7dac37cd93b8bb42c7d6aedccb751b3) |
+- Also In Section: [IDA->Tools->Import Export->No Category](#8ad723b704b044e664970b11ce103c09) |
 - [**78**Star][12d] [C] [horsicq/nfdx64dbg](https://github.com/horsicq/nfdx64dbg) Plugin for x64dbg Linker/Compiler/Tool detector.
 - [**77**Star][3m] [C] [ahmadmansoor/advancedscript](https://github.com/ahmadmansoor/advancedscript) Add More Features for x64dbg Script System,with some Functions which will help Plugin Coder
 - [**75**Star][4y] [C++] [x64dbg/xedparse](https://github.com/x64dbg/xedparse)  A MASM-like, single-line plaintext assembler
 - [**72**Star][2y] [C] [0ffffffffh/api-break-for-x64dbg](https://github.com/0ffffffffh/api-break-for-x64dbg) x64dbg plugin to set breakpoints automatically to Win32/64 APIs
 - [**71**Star][2y] [Py] [x64dbg/mona](https://github.com/x64dbg/mona) Fork of mona.py with x64dbg support
 - [**70**Star][12d] [C] [horsicq/stringsx64dbg](https://github.com/horsicq/stringsx64dbg) Strings plugin for x64dbg
-- [**47**Star][2m] [Py] [utkonos/lst2x64dbg](https://github.com/utkonos/lst2x64dbg) Extract labels from IDA .lst or Ghidra .csv file and export x64dbg database.
-    - Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |[Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |
+- Also In Section: [IDA->Tools->Import Export->Ghidra](#c7066b0c388cd447e980bf0eb38f39ab) |[Ghidra->Plugins->With Other Tools->IDA](#d832a81018c188bf585fcefa3ae23062) |
 - [**43**Star][7m] [YARA] [x64dbg/yarasigs](https://github.com/x64dbg/yarasigs) Various Yara signatures (possibly to be included in a release later).
-- [**42**Star][2m] [Java] [revolver-ocelot-saa/ghidrax64dbg](https://github.com/revolver-ocelot-saa/ghidrax64dbg) Extract annoations from Ghidra into an X32/X64 dbg database
-    - Also In Section: [Ghidra->Plugins->With Other Tools->Debugger](#e81053b03a859e8ac72f7fe79e80341a) |
+- Also In Section: [Ghidra->Plugins->With Other Tools->Debugger](#e81053b03a859e8ac72f7fe79e80341a) |
 - [**41**Star][12d] [C] [horsicq/pex64dbg](https://github.com/horsicq/pex64dbg) pe viewer
 - [**40**Star][3y] [C++] [x64dbg/interobfu](https://github.com/x64dbg/interobfu) Intermediate x86 instruction representation for use in obfuscation/deobfuscation.
 - [**38**Star][3y] [C] [changeofpace/force-page-protection](https://github.com/changeofpace/force-page-protection) This x64dbg plugin sets the page protection for memory mapped views in scenarios which cause NtProtectVirtualMemory to fail.
@@ -2776,8 +2670,8 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**62**Star][2m] [JS] [hugsy/windbg_js_scripts](https://github.com/hugsy/windbg_js_scripts) Toy scripts for playing with WinDbg JS API
 - [**60**Star][3m] [C++] [imugee/pegasus](https://github.com/imugee/pegasus) reverse engineering extension plugin for windbg
 - [**59**Star][3y] [C++] [markhc/windbg_to_c](https://github.com/markhc/windbg_to_c) Translates WinDbg "dt" structure dump to a C structure
-- [**58**Star][3y] [rehints/windbg](https://github.com/rehints/windbg) 
-- [**51**Star][2y] [Py] [cisco-talos/dotnet_windbg](https://github.com/cisco-talos/dotnet_windbg) 
+- [**58**Star][3y] [rehints/windbg](https://github.com/rehints/windbg)
+- [**51**Star][2y] [Py] [cisco-talos/dotnet_windbg](https://github.com/cisco-talos/dotnet_windbg)
 - [**51**Star][4y] [C++] [fishstiqz/poolinfo](https://github.com/fishstiqz/poolinfo) kernel pool windbg extension
 - [**50**Star][2y] [C#] [zodiacon/windbgx](https://github.com/zodiacon/windbgx) An attempt to create a friendly version of WinDbg
 - [**45**Star][2y] [Py] [kukfa/bindbg](https://github.com/kukfa/bindbg) Binary Ninja plugin that syncs WinDbg to Binary Ninja
@@ -2812,7 +2706,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**7**Star][8y] [C] [pcguru34/windbgshark](https://github.com/pcguru34/windbgshark) Automatically exported from code.google.com/p/windbgshark
 - [**7**Star][10m] [C#] [xquintana/dumpreport](https://github.com/xquintana/dumpreport) Console application that creates an HTML report from a Windows user-mode dump file, using WinDBG or CDB debuggers. Although it's been mainly designed for crash dump analysis of Windows applications developed in C++, it can also be used to read hang dumps or .Net dumps.
 - [**6**Star][5y] [lallousx86/windbg-scripts](https://github.com/lallousx86/windbg-scripts) Windbg scripts
-- [**5**Star][6y] [Py] [bannedit/windbg](https://github.com/bannedit/windbg) 
+- [**5**Star][6y] [Py] [bannedit/windbg](https://github.com/bannedit/windbg)
 - [**5**Star][5y] [C++] [dshikashio/pywindbg](https://github.com/dshikashio/pywindbg) Python Windbg extension
 - [**5**Star][2m] [repnz/windbg-cheat-sheet](https://github.com/repnz/windbg-cheat-sheet) My personal cheat sheet for using WinDbg for kernel debugging
 - [**5**Star][3y] [Py] [saaramar/nl_windbg](https://github.com/saaramar/nl_windbg) Base library for Windows kernel debugging
@@ -2900,11 +2794,9 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2015.07 [topsec] [隐藏在windbg下面的攻防对抗](http://blog.topsec.com.cn/ad_lab/%e9%9a%90%e8%97%8f%e5%9c%a8windbg%e4%b8%8b%e9%9d%a2%e7%9a%84%e6%94%bb%e9%98%b2%e5%af%b9%e6%8a%97/)
 - 2015.06 [pediy] [[原创]windbg 脚本化扩展 xcwd](https://bbs.pediy.com/thread-201704.htm)
 - 2015.01 [jlospinoso] [Tools for fixing symbols issues in WinDbg](https://lospi.net/developing/kernel%20mode/operating%20systems/software/software%20engineering/windows%20internals/2015/01/12/tools-for-fixing-symbols-issues-in-windbg.html)
-- 2015.01 [jlospinoso] [Tools for fixing symbols issues in WinDbg](https://lospi.net/developing/kernel%20mode/operating%20systems/software/software%20engineering/windows%20internals/2015/01/12/tools-for-fixing-symbols-issues-in-windbg.html)
 - 2015.01 [jlospinoso] [Tools for fixing symbols issues in WinDbg](https://jlospinoso.github.io/developing/kernel%20mode/operating%20systems/software/software%20engineering/windows%20internals/2015/01/12/tools-for-fixing-symbols-issues-in-windbg.html)
 - 2014.12 [nul] [windbg 着色](http://www.nul.pw/2014/12/13/39.html)
 - 2014.11 [codemachine] [WinDBG : A rodent killer](http://codemachine.com/article_poisonivy.html)
-- 2014.08 [3xp10it] [windbg命令](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2016/12/02/windbg%E5%91%BD%E4%BB%A4/)
 - 2014.08 [3xp10it] [windbg命令](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2016/12/02/windbg%E5%91%BD%E4%BB%A4/)
 - 2014.06 [TheSourceLens] [Introduction to Windbg Series 1 Part 19 - Conditional breakpoints](https://www.youtube.com/watch?v=4_ddicRWCVY)
 - 2014.06 [TheSourceLens] [Introduction to Windbg Series 1 Part 17 -  Command bu or breakpoint unresolved.](https://www.youtube.com/watch?v=e8cfu_q-BJc)
@@ -3010,7 +2902,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**3649**Star][2m] [C++] [anbox/anbox](https://github.com/anbox/anbox)  a container-based approach to boot a full Android system on a regular GNU/Linux system
 - [**2314**Star][1y] [Java] [csploit/android](https://github.com/csploit/android) cSploit - The most complete and advanced IT security professional toolkit on Android.
 - [**2120**Star][9m] [Py] [linkedin/qark](https://github.com/linkedin/qark) Tool to look for several security related Android application vulnerabilities
-- [**2095**Star][10m] [jermic/android-crack-tool](https://github.com/jermic/android-crack-tool) 
+- [**2095**Star][10m] [jermic/android-crack-tool](https://github.com/jermic/android-crack-tool)
 - [**2051**Star][21d] [Py] [sensepost/objection](https://github.com/sensepost/objection)  runtimemobile exploration
 - [**2011**Star][8m] [Py] [fsecurelabs/drozer](https://github.com/FSecureLABS/drozer) The Leading Security Assessment Framework for Android.
 - [**1976**Star][9d] [Java] [kyson/androidgodeye](https://github.com/kyson/androidgodeye) AndroidGodEye:A performance monitor tool , like "Android Studio profiler" for Android , you can easily monitor the performance of your app real time in pc browser
@@ -3050,7 +2942,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**471**Star][2y] [Smali] [sensepost/kwetza](https://github.com/sensepost/kwetza) Python script to inject existing Android applications with a Meterpreter payload.
 - [**451**Star][3y] [C++] [vusec/drammer](https://github.com/vusec/drammer) Native binary for testing Android phones for the Rowhammer bug
 - [**450**Star][12m] [Kotlin] [shadowsocks/kcptun-android](https://github.com/shadowsocks/kcptun-android) kcptun for Android.
-- [**443**Star][1m] [TS] [shroudedcode/apk-mitm](https://github.com/shroudedcode/apk-mitm) 
+- [**443**Star][1m] [TS] [shroudedcode/apk-mitm](https://github.com/shroudedcode/apk-mitm)
 - [**431**Star][13d] [C] [guardianproject/orbot](https://github.com/guardianproject/orbot) The Github home of Orbot: Tor on Android (Also available on gitlab!)
 - [**426**Star][19d] [Py] [thehackingsage/hacktronian](https://github.com/thehackingsage/hacktronian) All in One Hacking Tool for Linux & Android
 - [**412**Star][4m] [Java] [megatronking/netbare](https://github.com/megatronking/netbare) Net packets capture & injection library designed for Android
@@ -3100,8 +2992,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**173**Star][7y] [Py] [trivio/common_crawl_index](https://github.com/trivio/common_crawl_index) billions of pages randomly crawled from the internet
 - [**170**Star][10m] [thehackingsage/hackdroid](https://github.com/thehackingsage/hackdroid) Penetration Testing Apps for Android
 - [**167**Star][24d] [Java] [pwittchen/reactivewifi](https://github.com/pwittchen/reactivewifi) Android library listening available WiFi Access Points and related information with RxJava Observables
-- [**161**Star][2m] [Py] [nforest/droidimg](https://github.com/nforest/droidimg) Android/Linux vmlinux loader
-    - Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |[IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[IDA->Tools->Specific Target->Loader](#cb59d84840e41330a7b5e275c0b81725) |[Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
+- Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |[IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[IDA->Tools->Specific Target->Loader](#cb59d84840e41330a7b5e275c0b81725) |[Android->Tools->IDA](#0a668d220ce74e11ed2738c4e3ae3c9e) |
 - [**161**Star][1y] [Java] [iqiyi/dexsplitter](https://github.com/iqiyi/dexsplitter) Analyze contribution rate of each module to the apk size
 - [**160**Star][10m] [Py] [sch3m4/androidpatternlock](https://github.com/sch3m4/androidpatternlock) A little Python tool to crack the Pattern Lock on Android devices
 - [**160**Star][4y] [Py] [appknox/afe](https://github.com/appknox/AFE) Android Framework for Exploitation, is a framework for exploiting android based devices
@@ -3118,7 +3009,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**127**Star][4y] [C++] [chago/advmp](https://github.com/chago/advmp) 大自然的搬运工-Android虚拟机保护Demo
 - [**125**Star][5y] [Ruby] [mttkay/replicant](https://github.com/mttkay/replicant) A REPL for the Android Debug Bridge (ADB)
 - [**124**Star][2y] [Shell] [nccgroup/lazydroid](https://github.com/nccgroup/lazydroid) bash script to facilitate some aspects of an Android application assessment
-- [**123**Star][5y] [jacobsoo/androidslides](https://github.com/jacobsoo/androidslides) 
+- [**123**Star][5y] [jacobsoo/androidslides](https://github.com/jacobsoo/androidslides)
 - [**122**Star][3m] [Java] [aaronjwood/portauthority](https://github.com/aaronjwood/portauthority) A handy systems and security-focused tool, Port Authority is a very fast Android port scanner. Port Authority also allows you to quickly discover hosts on your network and will display useful network information about your device and other hosts.
 - [**116**Star][1y] [C++] [melonwxd/elfhooker](https://github.com/melonwxd/elfhooker) 兼容Android 32位和64位。基于EFL文件格式Hook的demo，hook了SurfaceFlinger进程的eglSwapBuffers函数，替换为new_eglSwapBuffers
 - [**114**Star][1m] [Java] [stringcare/androidlibrary](https://github.com/stringcare/androidlibrary) Android library to reveal or obfuscate strings and assets at runtime
@@ -3143,7 +3034,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**85**Star][2m] [Java] [rikkaapps/wadb](https://github.com/rikkaapps/wadb) A simple switch for adb (Android Debug Bridge) over network.
 - [**83**Star][1y] [Kotlin] [pvasa/easycrypt](https://github.com/pvasa/easycrypt) Android cryptography library with SecureRandom patches.
 - [**81**Star][2m] [Kotlin] [linkedin/dex-test-parser](https://github.com/linkedin/dex-test-parser) Find all test methods in an Android instrumentation APK
-- [**79**Star][3y] [Py] [dancezarp/tbdex](https://github.com/dancezarp/tbdex) 
+- [**79**Star][3y] [Py] [dancezarp/tbdex](https://github.com/dancezarp/tbdex)
 - [**76**Star][11d] [Py] [tp7309/ttdedroid](https://github.com/tp7309/ttdedroid) 一键反编译工具One key for quickly decompile apk/aar/dex/jar, support by jadx/dex2jar/enjarify/cfr.
 - [**74**Star][3y] [wtsxdev/android-security-list](https://github.com/wtsxdev/android-security-list) Collection of Android security related resources
 - [**73**Star][11d] [jawz101/mobileadtrackers](https://github.com/jawz101/mobileadtrackers) Taken from DNS logs while actively using Android apps over the years. Formatted in hostfile format.
@@ -3160,7 +3051,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**61**Star][7m] [Java] [ajnas/wifips](https://github.com/ajnas/wifips) WiFi Based Indoor Positioning System, A MVP android Application
 - [**61**Star][6y] [Java] [isecpartners/android-killpermandsigchecks](https://github.com/isecpartners/android-killpermandsigchecks) Bypass signature and permission checks for IPCs
 - [**61**Star][6y] [Java] [gat3way/airpirate](https://github.com/gat3way/airpirate) Android 802.11 pentesting tool
-- [**60**Star][3m] [Java] [aagarwal1012/image-steganography-library-android](https://github.com/aagarwal1012/image-steganography-library-android) 
+- [**60**Star][3m] [Java] [aagarwal1012/image-steganography-library-android](https://github.com/aagarwal1012/image-steganography-library-android)
 - [**60**Star][2y] [Java] [geeksonsecurity/android-overlay-malware-example](https://github.com/geeksonsecurity/android-overlay-malware-example) Harmless Android malware using the overlay technique to steal user credentials.
 - [**60**Star][2y] [Java] [globalpolicy/phonemonitor](https://github.com/globalpolicy/phonemonitor) A Remote Administration Tool for Android devices
 - [**59**Star][13d] [C] [watf-team/watf-bank](https://github.com/watf-team/watf-bank) WaTF Bank - What a Terrible Failure Mobile Banking Application for Android and iOS
@@ -3227,11 +3118,11 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**18**Star][1y] [Shell] [plowsec/android-ducky](https://github.com/plowsec/android-ducky) Rubber Ducky with Android
 - [**16**Star][7m] [zyrikby/stadyna](https://github.com/zyrikby/stadyna) Addressing the Problem of Dynamic Code Updates in the Security Analysis of Android Applications
 - [**15**Star][2y] [Kotlin] [ttymsd/traffic-monitor](https://github.com/ttymsd/traffic-monitor) traffic debugging library for android
-- [**13**Star][1y] [C] [gtoad/android_inline_hook_arm_example](https://github.com/gtoad/android_inline_hook_arm_example) 
+- [**13**Star][1y] [C] [gtoad/android_inline_hook_arm_example](https://github.com/gtoad/android_inline_hook_arm_example)
 - [**13**Star][5y] [seattleandrew/digibrutedroid](https://github.com/seattleandrew/digibrutedroid) A 4-Digit PIN Brute Force attack for USB-OTG Android devices
 - [**12**Star][2y] [Java] [1van/activityhijacker](https://github.com/1van/activityhijacker) Hijack and AntiHijack for Android activity.
 - [**12**Star][12m] [C++] [vito11/camerahook](https://github.com/vito11/camerahook) An prototype to hook android camera preview data of third-party and system apps
-- [**10**Star][1y] [C] [gtoad/android_inline_hook_thumb_example](https://github.com/gtoad/android_inline_hook_thumb_example) 
+- [**10**Star][1y] [C] [gtoad/android_inline_hook_thumb_example](https://github.com/gtoad/android_inline_hook_thumb_example)
 - [**10**Star][3m] [Rust] [timvisee/apbf](https://github.com/timvisee/apbf) Tool to brute force Android security pattern through TWRP recovery.
 - [**10**Star][2y] [Java] [yesterselga/password-strength-checker-android](https://github.com/yesterselga/password-strength-checker-android) Check password strength (Weak, Medium, Strong, Very Strong). Setting optional requirements by required length, with at least 1 special character, numbers and letters in uppercase or lowercase.
 - [**7**Star][5y] [Perl] [pentestpartners/android](https://github.com/pentestpartners/android) android
@@ -3260,7 +3151,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**3**Star][2y] [Java] [alexeyzatsepin/cp-tester](https://github.com/alexeyzatsepin/cp-tester) Android application for finding vulnerabilities in all of content providers based on SQLite databases on your device with sql-injection
 - [**3**Star][3y] [Kotlin] [alilotfi/virustotalclient](https://github.com/alilotfi/virustotalclient) VirusTotal for Android checks the applications installed in your Android phone against VirusTotal (
 - [**3**Star][Py] [btx3/ipwebcam-destroyer](https://github.com/btx3/ipwebcam-destroyer) Android IP Webcam DoS Tool
-- [**3**Star][10m] [d4wu/unity3d-android-reverse-demo](https://github.com/d4wu/unity3d-android-reverse-demo) 
+- [**3**Star][10m] [d4wu/unity3d-android-reverse-demo](https://github.com/d4wu/unity3d-android-reverse-demo)
 - [**3**Star][6y] [C] [hiikezoe/libfb_mem_exploit](https://github.com/hiikezoe/libfb_mem_exploit) CVE-2013-2596 exploit for android
 - [**3**Star][2y] [Java] [leetcodes/poc-android-malware](https://github.com/leetcodes/poc-android-malware) A simple andorid malware uploading basic info to remote server
 - [**3**Star][5y] [Py] [niejuhu/pocs](https://github.com/niejuhu/pocs) Android漏洞验证程序
@@ -3294,10 +3185,10 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**1**Star][8y] [utkanos/android_device_htc_rezound](https://github.com/utkanos/android_device_htc_rezound) working POC device for building bootable recovery
 - [**1**Star][8y] [utkanos/android_device_htc_vigor](https://github.com/utkanos/android_device_htc_vigor) poc cwmr port for htc rezound
 - [**1**Star][12m] [Java] [oxagast/ansvif_android](https://github.com/oxagast/ansvif_android) An Android frontend for ansvif fuzzing
-- [**1**Star][4y] [C] [ru-faraon/pixiewps-android](https://github.com/ru-faraon/pixiewps-android) 
+- [**1**Star][4y] [C] [ru-faraon/pixiewps-android](https://github.com/ru-faraon/pixiewps-android)
 - [**1**Star][6y] [PHP] [akibsayyed/poc-android-malware-files](https://github.com/akibsayyed/poc-android-malware-files) PHP Files for Android malware
 - [**0**Star][5y] [Java] [anonim1133/ctf](https://github.com/anonim1133/ctf) Simple Android app to play Caputre The Flag. By using GPS and wifi it allows you to "capture the flags".
-- [**0**Star][3y] [Java] [artwyman/android_ctf](https://github.com/artwyman/android_ctf) 
+- [**0**Star][3y] [Java] [artwyman/android_ctf](https://github.com/artwyman/android_ctf)
 - [**0**Star][2y] [Py] [bizdak/silverboxcc](https://github.com/bizdak/silverboxcc) Reverse engineered android malware, and this is a C&C server for it
 - [**0**Star][7m] [Py] [brant-ruan/idf4apev](https://github.com/brant-ruan/idf4apev) Integrated Detection Framework for Android's Privilege Escalation Vulnerabilites
 - [**0**Star][4y] [C] [c0d3st0rm/android_kernel_tesco_ht7s3](https://github.com/c0d3st0rm/android_kernel_tesco_ht7s3) Android kernel source for Tesco's first Hudl (HT7S3). This is here only for reference, as Tesco don't host kernel sources anymore, and is unbuildable - the kernel configs are missing and so are some of the essential parts of the kernel, eg WiFi drivers.
@@ -3306,8 +3197,8 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**0**Star][6y] [Java] [ctz/android-keystore](https://github.com/ctz/android-keystore) POC for Android keystore leak
 - [**0**Star][5m] [Perl] [debos99/droidvenom](https://github.com/debos99/droidvenom) DroidVenom is simple perl script for creating custom payload for android
 - [**0**Star][6y] [C] [enjens/android_kernel_sony_pollux_windy_stock](https://github.com/enjens/android_kernel_sony_pollux_windy_stock) Stock kernel with kexec patches for Sony Tablet Z WIFI
-- [**0**Star][4y] [Py] [eward9/android-backdoor-factory](https://github.com/eward9/android-backdoor-factory) 
-- [**0**Star][3y] [Java] [fathulkirom22/androidctf](https://github.com/fathulkirom22/androidctf) 
+- [**0**Star][4y] [Py] [eward9/android-backdoor-factory](https://github.com/eward9/android-backdoor-factory)
+- [**0**Star][3y] [Java] [fathulkirom22/androidctf](https://github.com/fathulkirom22/androidctf)
 - [**0**Star][6y] [Groovy] [jhong01/ctfpro](https://github.com/jhong01/ctfpro) Android Capture the Flag Pro
 - [**0**Star][5y] [Java] [kappaetakappa/robot-ctf-android](https://github.com/kappaetakappa/robot-ctf-android) Controller software for the Expo project
 - [**0**Star][10m] [Smali] [moviet/space-ghost](https://github.com/moviet/space-ghost) A simple example source codes of an initial android app cloner
@@ -3325,11 +3216,11 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 ### <a id="883a4e0dd67c6482d28a7a14228cd942"></a>Recent Add1
 
 
-- [**183**Star][30d] [Kotlin] [iammert/applocker](https://github.com/iammert/applocker) 
+- [**183**Star][30d] [Kotlin] [iammert/applocker](https://github.com/iammert/applocker)
 - [**157**Star][2m] [Java] [reddr/libscout](https://github.com/reddr/libscout) Third-party library detector for Java/Android apps
 - [**154**Star][4m] [Java] [rednaga/axmlprinter](https://github.com/rednaga/axmlprinter) Library for parsing and printing compiled Android manifest files
 - [**149**Star][2y] [Py] [mhelwig/apk-anal](https://github.com/mhelwig/apk-anal) Android APK analyzer based on radare2 and others.
-    - Also In Section: [Radare2->Plugins->Recent Add](#6922457cb0d4b6b87a34caf39aa31dfe) |
+- Also In Section: [Radare2->Plugins->Recent Add](#6922457cb0d4b6b87a34caf39aa31dfe) |
 - [**146**Star][10m] [Java] [lanchon/haystack](https://github.com/lanchon/haystack) Signature Spoofing Patcher for Android
 - [**142**Star][2m] [Java] [joshjdevl/libsodium-jni](https://github.com/joshjdevl/libsodium-jni) (Android) Networking and Cryptography Library (NaCL) JNI binding. JNI is utilized for fastest access to native code. Accessible either in Android or Java application. Uses SWIG to generate Java JNI bindings. SWIG definitions are extensible to other languages.
 - [**139**Star][3m] [nathanchance/android-kernel-clang](https://github.com/nathanchance/android-kernel-clang) Information on compiling Android kernels with Clang
@@ -3384,7 +3275,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**65**Star][6y] [C++] [trevd/android_root](https://github.com/trevd/android_root) Got Root!
 - [**65**Star][8y] [C] [robclemons/arpspoof](https://github.com/robclemons/Arpspoof) Android port of Arpspoof
 - [**64**Star][3m] [Java] [flankerhqd/bindump4j](https://github.com/flankerhqd/bindump4j) A portable utility to locate android binder service
-- [**64**Star][7y] [C] [hiikezoe/android_run_root_shell](https://github.com/hiikezoe/android_run_root_shell) 
+- [**64**Star][7y] [C] [hiikezoe/android_run_root_shell](https://github.com/hiikezoe/android_run_root_shell)
 - [**62**Star][2y] [C] [wlach/orangutan](https://github.com/wlach/orangutan) Simulate native events on Android-like devices
 - [**61**Star][7y] [Java] [intrepidusgroup/iglogger](https://github.com/intrepidusgroup/iglogger) Class to help with adding logging function in smali output from 3rd party Android apps.
 - [**58**Star][5y] [C] [poliva/dexinfo](https://github.com/poliva/dexinfo) A very rudimentary Android DEX file parser
@@ -3435,9 +3326,9 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**30**Star][8m] [Java] [pnfsoftware/jeb2-plugin-oat](https://github.com/pnfsoftware/jeb2-plugin-oat) Android OAT Plugin for JEB
 - [**30**Star][3y] [Java] [amitshekhariitbhu/applock](https://github.com/amitshekhariitbhu/applock) Android Application for app lock
 - [**29**Star][1y] [C] [calebfenton/native-harness-target](https://github.com/calebfenton/native-harness-target) Android app for demonstrating native library harnessing
-- [**29**Star][1m] [JS] [fsecurelabs/android-keystore-audit](https://github.com/fsecurelabs/android-keystore-audit) 
+- [**29**Star][1m] [JS] [fsecurelabs/android-keystore-audit](https://github.com/fsecurelabs/android-keystore-audit)
 - [**28**Star][3y] [Java] [martinstyk/apkanalyzer](https://github.com/martinstyk/apkanalyzer) Java tool for analyzing Android APK files
-- [**27**Star][4y] [C] [anarcheuz/android-pocs](https://github.com/anarcheuz/android-pocs) 
+- [**27**Star][4y] [C] [anarcheuz/android-pocs](https://github.com/anarcheuz/android-pocs)
 - [**27**Star][3m] [Py] [cryptax/droidlysis](https://github.com/cryptax/droidlysis) Property extractor for Android apps
 - [**27**Star][3m] [grapheneos/os_issue_tracker](https://github.com/grapheneos/os_issue_tracker) Issue tracker for GrapheneOS Android Open Source Project hardening work. Standalone projects like Auditor, AttestationServer and hardened_malloc have their own dedicated trackers.
 - [**26**Star][1y] [Ruby] [ajitsing/apktojava](https://github.com/ajitsing/apktojava) View android apk as java code in gui
@@ -3449,7 +3340,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**24**Star][2m] [Java] [snail007/goproxy-ss-plugin-android](https://github.com/snail007/goproxy-ss-plugin-android) goproxy安卓全局代理，ss goproxy安卓插件, goproxy :
 - [**22**Star][1m] [Smali] [aress31/sci](https://github.com/aress31/sci) Framework designed to automate the process of assembly code injection (trojanising) within Android applications.
 - [**21**Star][7y] [C] [0xroot/whitesnow](https://github.com/0xroot/whitesnow) An experimental rootkit for Android
-- [**21**Star][1y] [Smali] [dan7800/vulnerableandroidapporacle](https://github.com/dan7800/vulnerableandroidapporacle) 
+- [**21**Star][1y] [Smali] [dan7800/vulnerableandroidapporacle](https://github.com/dan7800/vulnerableandroidapporacle)
 - [**20**Star][10m] [Rust] [gamozolabs/slime_tree](https://github.com/gamozolabs/slime_tree) Worst Android kernel fuzzer
 - [**20**Star][5y] [snifer/l4bsforandroid](https://github.com/snifer/l4bsforandroid) Repositorio de APK para Hacking y Seguridad
 - [**19**Star][3m] [C] [cybersaxostiger/androiddump](https://github.com/cybersaxostiger/androiddump) A tool pulls loaded binaries ordered by memory regions
@@ -3474,7 +3365,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**13**Star][2y] [Scala] [fschrofner/glassdoor](https://github.com/fschrofner/glassdoor) glassdoor is a modern, autonomous security framework for Android APKs. POC, unmaintained unfortunately.
 - [**13**Star][6y] [Shell] [k3170makan/droidsploit](https://github.com/k3170makan/droidsploit) A collection of scripts to find common application vulnerabilities in Android Applications
 - [**13**Star][5y] [Py] [lifeasageek/morula](https://github.com/lifeasageek/morula) Morula is a secure replacement of Zygote to fortify weakened ASLR on Android
-- [**13**Star][1y] [Shell] [theyahya/android-decompile](https://github.com/theyahya/android-decompile) 
+- [**13**Star][1y] [Shell] [theyahya/android-decompile](https://github.com/theyahya/android-decompile)
 - [**12**Star][3m] [Py] [clviper/droidstatx](https://github.com/clviper/droidstatx) Python tool that generates an Xmind map with all the information gathered and any evidence of possible vulnerabilities identified via static analysis. The map itself is an Android Application Pentesting Methodology component, which assists Pentesters to cover all important areas during an assessment.
 - [**12**Star][1y] [JS] [integrity-sa/android](https://github.com/integrity-sa/android) Repository with research related to Android
 - [**12**Star][7y] [Java] [jeffers102/keystorecracker](https://github.com/jeffers102/keystorecracker) Helps retrieve forgotten keystore passwords using your commonly used segments. Great for those forgotten Android keystore passphrases, which is exactly why I created this tool in the first place!
@@ -3488,7 +3379,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**10**Star][5y] [C] [christianpapathanasiou/defcon-18-android-rootkit-mindtrick](https://github.com/christianpapathanasiou/defcon-18-android-rootkit-mindtrick) Worlds first Google Android kernel rootkit as featured at DEF CON 18
 - [**10**Star][4y] [Java] [cyberscions/digitalbank](https://github.com/cyberscions/digitalbank) Android Digital Bank Vulnerable Mobile App
 - [**9**Star][3y] [C++] [android-art-intel/nougat](https://github.com/android-art-intel/nougat) ART-Extension for Android Nougat
-- [**9**Star][5y] [Shell] [bbqlinux/android-udev-rules](https://github.com/bbqlinux/android-udev-rules) 
+- [**9**Star][5y] [Shell] [bbqlinux/android-udev-rules](https://github.com/bbqlinux/android-udev-rules)
 - [**9**Star][2y] [Java] [djkovrik/comicser](https://github.com/djkovrik/comicser) Udacity Android Developer Nanodegree - Capstone project.
 - [**9**Star][4y] [C] [ele7enxxh/fakeodex](https://github.com/ele7enxxh/fakeodex) modify field(modWhen, crc) in android odex file;安卓APP“寄生兽”漏洞
 - [**9**Star][2y] [Java] [optimistanoop/android-developer-nanodegree](https://github.com/optimistanoop/android-developer-nanodegree) This repo contains all 8 Apps developed during Udacity Android Developer Nanodegree. These all Apps met expectation during code review process of Udacity Android Developer Nanodegree.
@@ -3561,7 +3452,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**214**Star][1y] [Kotlin] [paphonb/androidp-ify](https://github.com/paphonb/androidp-ify) [Xposed] Use features introduced in Android P on your O+ Device!
 - [**204**Star][1y] [C] [gtoad/android_inline_hook](https://github.com/gtoad/android_inline_hook) Build an so file to automatically do the android_native_hook work. Supports thumb-2/arm32 and ARM64 ! With this, tools like Xposed can do android native hook.
 - [**127**Star][2y] [Java] [bmax121/budhook](https://github.com/bmax121/budhook) An Android hook framework written like Xposed,based on YAHFA.
-- [**120**Star][3y] [Java] [rastapasta/pokemon-go-xposed](https://github.com/rastapasta/pokemon-go-xposed) 
+- [**120**Star][3y] [Java] [rastapasta/pokemon-go-xposed](https://github.com/rastapasta/pokemon-go-xposed)
 - [**79**Star][4m] [Go] [tillson/git-hound](https://github.com/tillson/git-hound) GitHound pinpoints exposed API keys on GitHub using pattern matching, commit history searching, and a unique result scoring system. A batch-catching, pattern-matching, patch-attacking secret snatcher.
 - [**71**Star][1m] [Java] [lianglixin/sandvxposed](https://github.com/lianglixin/sandvxposed) Xposed environment without root (OS 5.0 - 10.0)
 - [**64**Star][10m] [FreeMarker] [dvdandroid/xposedmoduletemplate](https://github.com/dvdandroid/xposedmoduletemplate) Easily create a Xposed Module with Android Studio
@@ -3601,11 +3492,11 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 ### <a id="596b6cf8fd36bc4c819335f12850a915"></a>HOOK
 
 
-- [**1500**Star][27d] [C] [iqiyi/xhook](https://github.com/iqiyi/xhook) a PLT (Procedure Linkage Table) hook library for Android native ELF 
+- [**1500**Star][27d] [C] [iqiyi/xhook](https://github.com/iqiyi/xhook) a PLT (Procedure Linkage Table) hook library for Android native ELF
 - [**1494**Star][9d] [C++] [jmpews/dobby](https://github.com/jmpews/Dobby) a lightweight, multi-platform, multi-architecture hook framework.
 - [**804**Star][25d] [C++] [aslody/whale](https://github.com/aslody/whale) Hook Framework for Android/IOS/Linux/MacOS
 - [**530**Star][7m] [Java] [aslody/andhook](https://github.com/asLody/AndHook) Android dynamic instrumentation framework
-- [**400**Star][3y] [Java] [pqpo/inputmethodholder](https://github.com/pqpo/inputmethodholder) A keyboard listener for Android which by hooking the InputMethodManager. 
+- [**400**Star][3y] [Java] [pqpo/inputmethodholder](https://github.com/pqpo/inputmethodholder) A keyboard listener for Android which by hooking the InputMethodManager.
 - [**361**Star][8m] [C] [turing-technician/fasthook](https://github.com/turing-technician/fasthook) Android ART Hook
 - [**216**Star][3y] [Java] [zhengmin1989/wechatsportcheat](https://github.com/zhengmin1989/wechatsportcheat) 手把手教你当微信运动第一名 – 利用Android Hook进行微信运动作弊
 - [**190**Star][4y] [C++] [aslody/elfhook](https://github.com/aslody/elfhook) modify PLT to hook api, supported android 5\6.
@@ -3632,18 +3523,12 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 ### <a id="0a668d220ce74e11ed2738c4e3ae3c9e"></a>IDA
 
 
-- [**161**Star][2m] [Py] [nforest/droidimg](https://github.com/nforest/droidimg) Android/Linux vmlinux loader
-    - Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |[IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[IDA->Tools->Specific Target->Loader](#cb59d84840e41330a7b5e275c0b81725) |[Android->Tools->Recent Add](#63fd2c592145914e99f837cecdc5a67c) |
-- [**118**Star][4y] [Py] [cvvt/dumpdex](https://github.com/cvvt/dumpdex) IDA python script to dynamically dump DEX in memory
-    - Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |
-- [**83**Star][2y] [Py] [zhkl0228/androidattacher](https://github.com/zhkl0228/androidattacher) IDA debugging plugin for android armv7 so
-    - Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |
-- [**39**Star][5y] [Py] [techbliss/adb_helper_qt_super_version](https://github.com/techbliss/adb_helper_qt_super_version) All You Need For Ida Pro And Android Debugging
-    - Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |
-- [**39**Star][2y] [Py] [thecjw/ida_android_script](https://github.com/thecjw/ida_android_script) some idapython scripts for android debugging.
-    - Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |[IDA->Tools->Debug->No Category](#2944dda5289f494e5e636089db0d6a6a) |
-- [**16**Star][7y] [C++] [strazzere/dalvik-header-plugin](https://github.com/strazzere/dalvik-header-plugin) Dalvik Header Plugin for IDA Pro
-    - Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |
+- Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |[IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[IDA->Tools->Specific Target->Loader](#cb59d84840e41330a7b5e275c0b81725) |[Android->Tools->Recent Add](#63fd2c592145914e99f837cecdc5a67c) |
+- Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |
+- Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |
+- Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |
+- Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |[IDA->Tools->Debug->No Category](#2944dda5289f494e5e636089db0d6a6a) |
+- Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |
 
 
 ### <a id="bb9f8e636857320abf0502c19af6c763"></a>Debug
@@ -3669,7 +3554,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**347**Star][3m] [Java] [droidefense/engine](https://github.com/droidefense/engine) Droidefense: Advance Android Malware Analysis Framework
 - [**192**Star][4y] [HTML] [faber03/androidmalwareevaluatingtools](https://github.com/faber03/androidmalwareevaluatingtools) Evaluation tools for malware Android
 - [**123**Star][2y] [Java] [brompwnie/uitkyk](https://github.com/brompwnie/uitkyk) Android Frida库, 用于分析App查找恶意行为
-    - Also In Section: [DBI->Frida->Tools->Recent Add](#54836a155de0c15b56f43634cd9cfecf) |
+- Also In Section: [DBI->Frida->Tools->Recent Add](#54836a155de0c15b56f43634cd9cfecf) |
 - [**117**Star][7y] [C] [secmobi/amatutor](https://github.com/secmobi/amatutor) Android恶意代码分析教程
 - [**97**Star][2y] [Lua] [niallmcl/deep-android-malware-detection](https://github.com/niallmcl/deep-android-malware-detection) Code for Deep Android Malware Detection paper
 - [**82**Star][5y] [Py] [maldroid/maldrolyzer](https://github.com/maldroid/maldrolyzer) Simple framework to extract "actionable" data from Android malware (C&Cs, phone numbers etc.)
@@ -3683,7 +3568,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**40**Star][2y] [Java] [miwong/intellidroid](https://github.com/miwong/intellidroid) A targeted input generator for Android that improves the effectiveness of dynamic malware analysis.
 - [**40**Star][1y] [traceflight/android-malware-datasets](https://github.com/traceflight/android-malware-datasets) Popular Android malware datasets
 - [**33**Star][5y] [Shell] [vt-magnum-research/antimalware](https://github.com/vt-magnum-research/antimalware) Dynamic malware analysis for the Android platform
-- [**29**Star][2y] [virqdroid/android_malware](https://github.com/virqdroid/android_malware) 
+- [**29**Star][2y] [virqdroid/android_malware](https://github.com/virqdroid/android_malware)
 - [**27**Star][3y] [fouroctets/android-malware-samples](https://github.com/fouroctets/android-malware-samples) Android Malware Samples
 - [**24**Star][3y] [Py] [bunseokbot/androtools](https://github.com/bunseokbot/androtools) Android malware static & dynamic analysis and automated action (deprecated)
 - [**19**Star][2y] [Py] [namk12/malware-detection](https://github.com/namk12/malware-detection) Deep Learning Based Android Malware Detection Framework
@@ -3697,7 +3582,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**9**Star][2y] [Py] [mldroid/csbd](https://github.com/mldroid/csbd) The repository contains the python implementation of the Android Malware Detection paper: "Empirical assessment of machine learning-based malware detectors for Android: Measuring the Gap between In-the-Lab and In-the-Wild Validation Scenarios"
 - [**7**Star][3y] [Java] [waallen/http-sms-android-malware](https://github.com/waallen/http-sms-android-malware) HTTP and SMS spam testing application
 - [**6**Star][7y] [Java] [ssesha/malwarescanner](https://github.com/ssesha/malwarescanner) Android app performing hash based malware detection
-- [**6**Star][3y] [Py] [tuomao/android_malware_detection](https://github.com/tuomao/android_malware_detection) 
+- [**6**Star][3y] [Py] [tuomao/android_malware_detection](https://github.com/tuomao/android_malware_detection)
 - [**6**Star][8y] [Java] [twitter-university/antimalware](https://github.com/twitter-university/antimalware) An Android Eclipse project demonstrating how to build a simple anti-malware application
 - [**6**Star][1y] [Py] [aliemamalinezhad/machine-learning](https://github.com/aliemamalinezhad/machine-learning) android-malware-classification using machine learning algorithms
 
@@ -3722,8 +3607,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**545**Star][20d] [maddiestone/androidappre](https://github.com/maddiestone/androidappre) Android App Reverse Engineering Workshop
 - [**331**Star][7y] [Java] [brutall/brut.apktool](https://github.com/brutall/brut.apktool) A tool for reverse engineering Android apk files
 - [**267**Star][10m] [Dockerfile] [cryptax/androidre](https://github.com/cryptax/androidre) Reverse engineering Android
-- [**246**Star][28d] [C++] [strazzere/android-scripts](https://github.com/strazzere/android-scripts) Collection of Android reverse engineering scripts
-    - Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |
+- Also In Section: [IDA->Tools->Android](#66052f824f5054aa0f70785a2389a478) |
 - [**102**Star][3y] [feicong/android-app-sec](https://github.com/feicong/android-app-sec) ISC 2016安全训练营－安卓app逆向与安全防护 ppt
 - [**54**Star][6m] [Smali] [hellohudi/androidreversenotes](https://github.com/hellohudi/androidreversenotes) Android逆向笔记---从入门到入土
 - [**54**Star][9y] [Emacs Lisp] [nelhage/reverse-android](https://github.com/nelhage/reverse-android) Reverse-engineering tools for Android applications
@@ -3834,7 +3718,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**2016**Star][3y] [Swift] [urinx/iosapphook](https://github.com/urinx/iosapphook) 专注于非越狱环境下iOS应用逆向研究，从dylib注入，应用重签名到App Hook
 - [**1800**Star][3y] [ObjC] [kpwn/yalu102](https://github.com/kpwn/yalu102) incomplete iOS 10.2 jailbreak for 64 bit devices by qwertyoruiopz and marcograssi
 - [**1193**Star][15d] [JS] [alonemonkey/frida-ios-dump](https://github.com/alonemonkey/frida-ios-dump) pull decrypted ipa from jailbreak device
-    - Also In Section: [DBI->Frida->Tools->Recent Add](#54836a155de0c15b56f43634cd9cfecf) |
+- Also In Section: [DBI->Frida->Tools->Recent Add](#54836a155de0c15b56f43634cd9cfecf) |
 - [**642**Star][2y] [C] [coolstar/electra](https://github.com/coolstar/electra) Electra iOS 11.0 - 11.1.2 jailbreak toolkit based on async_awake
 - [**482**Star][2y] [Objective-C++] [bishopfox/bfinject](https://github.com/bishopfox/bfinject) Dylib injection for iOS 11.0 - 11.1.2 with LiberiOS and Electra jailbreaks
 - [**430**Star][2y] [ObjC] [jackrex/fakewechatloc](https://github.com/jackrex/fakewechatloc) 手把手教你制作一款iOS越狱App
@@ -3984,7 +3868,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2016.09 [pediy] [[原创]lldb使用方法(学习笔记)](https://bbs.pediy.com/thread-212731.htm)
 - 2015.01 [pediy] [[原创]修正lldb-310及以后版本的Thumb反汇编问题](https://bbs.pediy.com/thread-196735.htm)
 - 2014.08 [3xp10it] [lldb命令](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2017/12/25/lldb%E5%91%BD%E4%BB%A4/)
-- 2014.08 [3xp10it] [lldb命令](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2017/12/25/lldb%E5%91%BD%E4%BB%A4/)
 - 2014.05 [pediy] [[原创]gikdbg v1.1携手lldb震撼来袭，求内测伙伴！](https://bbs.pediy.com/thread-187657.htm)
 - 2013.03 [it] [iTunes debugging disabling ptrace with LLDB](https://blog.it-securityguard.com/itunes-exploit-development/)
 - 2005.08 [pediy] [[原创]借第一篇破文吹一下olldbg](https://bbs.pediy.com/thread-16177.htm)
@@ -4011,7 +3894,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**384**Star][3m] [JS] [johnno1962/xprobeplugin](https://github.com/johnno1962/xprobeplugin) Live Memory Browser for Apps & Xcode
 - [**179**Star][4y] [ObjC] [x43x61x69/otx](https://github.com/x43x61x69/otx) The Mach-O disassembler. Now 64bit and Xcode 6 compatible.
 - [**135**Star][1y] [Swift] [danleechina/mixplaintext](https://github.com/danleechina/mixplaintext) 可对 Xcode 项目工程所有的 objective-c 文件内包含的明文进行加密混淆，提高逆向分析难度。
-- [**135**Star][1y] [Shell] [onmyway133/swiftsnippets](https://github.com/onmyway133/SwiftSnippets) A collection of Swift snippets to be used in Xcode 
+- [**135**Star][1y] [Shell] [onmyway133/swiftsnippets](https://github.com/onmyway133/SwiftSnippets) A collection of Swift snippets to be used in Xcode
 - [**48**Star][2y] [C++] [tonyzesto/pubgprivxcode85](https://github.com/tonyzesto/pubgprivxcode85) Player ESP 3D Box ESP Nametag ESP Lightweight Code Secure Injection Dedicated Cheat Launcher Secured Against Battleye Chicken Dinner Every Day. Win more matches than ever before with CheatAutomation’s Playerunknown’s Battlegrounds cheat! Our stripped down, ESP only cheat gives you the key features you need to take out your opponents and be eatin…
 - [**45**Star][7m] [Swift] [git-kevinchuang/potatso-swift5](https://github.com/git-kevinchuang/potatso-swift5) Potatso compiled with swift5 xcode 10.2.1 mojave 10.14.5
 - [**44**Star][3y] [Shell] [vtky/resign](https://github.com/vtky/resign) XCode Project to resign .ipa files
@@ -4102,7 +3985,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**2733**Star][26d] [ObjC] [dantheman827/ios-app-signer](https://github.com/dantheman827/ios-app-signer) This is an app for OS X that can (re)sign apps and bundle them into ipa files that are ready to be installed on an iOS device.
 - [**2708**Star][2m] [ObjC] [kjcracks/clutch](https://github.com/kjcracks/clutch) Fast iOS executable dumper
 - [**2345**Star][6y] [C] [stefanesser/dumpdecrypted](https://github.com/stefanesser/dumpdecrypted) Dumps decrypted mach-o files from encrypted iPhone applications from memory to disk. This tool is necessary for security researchers to be able to look under the hood of encryption.
-- [**1801**Star][1y] [aozhimin/ios-monitor-platform](https://github.com/aozhimin/ios-monitor-platform) 
+- [**1801**Star][1y] [aozhimin/ios-monitor-platform](https://github.com/aozhimin/ios-monitor-platform)
 - [**1774**Star][3y] [ObjC] [tapwork/heapinspector-for-ios](https://github.com/tapwork/heapinspector-for-ios) Find memory issues & leaks in your iOS app without instruments
 - [**1695**Star][6m] [Py] [yelp/osxcollector](https://github.com/yelp/osxcollector) A forensic evidence collection & analysis toolkit for OS X
 - [**1683**Star][2m] [Swift] [pmusolino/wormholy](https://github.com/pmusolino/wormholy) iOS network debugging, like a wizard 🧙‍♂️
@@ -4216,7 +4099,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**147**Star][3y] [Py] [biosbits/bits](https://github.com/biosbits/bits) BIOS Implementation Test Suite
 - [**145**Star][2y] [Shell] [depoon/iosdylibinjectiondemo](https://github.com/depoon/iosdylibinjectiondemo) Using this Repository to demo how to inject dynamic libraries into cracked ipa files for jailed iOS devices
 - [**144**Star][10m] [Py] [dlcowen/fseventsparser](https://github.com/dlcowen/fseventsparser) Parser for OSX/iOS FSEvents Logs
-- [**144**Star][4y] [ObjC] [etsy/bughunt-ios](https://github.com/etsy/bughunt-ios) 
+- [**144**Star][4y] [ObjC] [etsy/bughunt-ios](https://github.com/etsy/bughunt-ios)
 - [**143**Star][2y] [C] [rodionovd/liblorgnette](https://github.com/rodionovd/liblorgnette) Interprocess dlsym() for OS X & iOS
 - [**140**Star][4m] [Go] [greenboxal/dns-heaven](https://github.com/greenboxal/dns-heaven) 通过/etc/resolv.conf 启用本地 DNS stack 来修复（愚蠢的） macOS DNS stack
 - [**139**Star][3y] [Py] [google/tcp_killer](https://github.com/google/tcp_killer) 关闭 Linux或 MacOS 的 Tcp 端口
@@ -4350,7 +4233,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**20**Star][1y] [Ruby] [martinvigo/ransombile](https://github.com/martinvigo/ransombile) Ransombile is a tool that can be used in different scenarios to compromise someone’s digital life when having physical access to a locked mobile device
 - [**19**Star][3y] [Swift] [depoon/injectiblelocationspoofing](https://github.com/depoon/injectiblelocationspoofing) Location Spoofing codes for iOS Apps via Code Injection
 - [**19**Star][1y] [ObjC] [frpccluster/frpc-ios](https://github.com/frpccluster/frpc-ios) IOS,苹果版frpc.一个快速反向代理，可帮助您将NAT或防火墙后面的本地服务器暴露给Internet。
-- [**19**Star][6y] [Logos] [iosre/iosrelottery](https://github.com/iosre/iosrelottery) 
+- [**19**Star][6y] [Logos] [iosre/iosrelottery](https://github.com/iosre/iosrelottery)
 - [**18**Star][12d] [Py] [adafruit/adafruit_circuitpython_rfm9x](https://github.com/adafruit/adafruit_circuitpython_rfm9x) CircuitPython module for the RFM95/6/7/8 LoRa wireless 433/915mhz packet radios.
 - [**16**Star][4y] [ashishb/ios-malware](https://github.com/ashishb/ios-malware) iOS malware samples
 - [**16**Star][2y] [ObjC] [mikaelbo/updateproxysettings](https://github.com/mikaelbo/updateproxysettings) A simple iOS command line tool for updating proxy settings
@@ -4372,9 +4255,8 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**10**Star][1y] [Py] [zteeed/cve-2018-4407-ios](https://github.com/zteeed/cve-2018-4407-ios) POC: Heap buffer overflow in the networking code in the XNU operating system kernel
 - [**9**Star][2y] [Logos] [asnowfish/ios-system](https://github.com/asnowfish/ios-system) iOS系统的逆向代码
 - [**9**Star][4y] [C] [yigitcanyilmaz/iohideventsystemuserclient](https://github.com/yigitcanyilmaz/iohideventsystemuserclient) iOS Kernel Race Vulnerability (Patched on iOS 9.3.2,OSX 10.11.5,tvOS 9.2.1 by Apple)
-- [**9**Star][2y] [C] [syst3ma/cisco_ios_research](https://github.com/syst3ma/cisco_ios_research) 
+- [**9**Star][2y] [C] [syst3ma/cisco_ios_research](https://github.com/syst3ma/cisco_ios_research)
 - [**9**Star][2m] [nemo-wq/privilege_escalation](https://github.com/nemo-wq/privilege_escalation) Lab exercises to practice privilege escalation scenarios in AWS IAM. These exercises and the slides go through the basics behind AWS IAM, common weaknesses in AWS deployments, specific to IAM, and how to exploit them manually. This was run as a workshop at BruCon 2019.
-- [**9**Star][2y] [C] [syst3ma/cisco_ios_research](https://github.com/syst3ma/cisco_ios_research) 
 - [**8**Star][6y] [C] [linusyang/sslpatch](https://github.com/linusyang/sslpatch) Patch iOS SSL vulnerability (CVE-2014-1266)
 - [**8**Star][2y] [pinczakko/nsa_bios_backdoor_articles](https://github.com/pinczakko/nsa_bios_backdoor_articles) PDF files of my articles on NSA BIOS backdoor
 - [**8**Star][2y] [JS] [ansjdnakjdnajkd/frinfo](https://github.com/ansjdnakjdnajkd/frinfo) Dump files, data, cookies, keychain and etc. from iOS device with one click.
@@ -4391,7 +4273,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**3**Star][3y] [ObjC] [susnmos/xituhook](https://github.com/susnmos/xituhook) 逆向分析及修复稀土掘金iOS版客户端闪退bug
 - [**3**Star][4y] [Py] [torque59/yso-mobile-security-framework](https://github.com/torque59/yso-mobile-security-framework) Mobile Security Framework is an intelligent, all-in-one open source mobile application (Android/iOS) automated pen-testing framework capable of performing static and dynamic analysis.
 - [**3**Star][1y] [tthtlc/awesome_malware_techniques](https://github.com/tthtlc/awesome_malware_techniques) This will compile a list of Android, iOS, Linux malware techniques for attacking and detection purposes.
-- [**3**Star][4y] [Py] [tudorthe1ntruder/rubber-ducky-ios-pincode-bruteforce](https://github.com/tudorthe1ntruder/rubber-ducky-ios-pincode-bruteforce) 
+- [**3**Star][4y] [Py] [tudorthe1ntruder/rubber-ducky-ios-pincode-bruteforce](https://github.com/tudorthe1ntruder/rubber-ducky-ios-pincode-bruteforce)
 - [**2**Star][3y] [Py] [alexplaskett/needle](https://github.com/alexplaskett/needle) The iOS Security Testing Framework.
 - [**2**Star][5y] [HTML] [dhirajongithub/owasp-kalp-mobile-project-ios-app](https://github.com/dhirajongithub/owasp-kalp-mobile-project-ios-app) OWASP KALP Mobile Project is an iOS application developed for users to view OWASP Top 10 (WEB and MOBILE) on mobile device.
 - [**2**Star][2y] [C] [kigkrazy/hookzz](https://github.com/kigkrazy/hookzz) a cute hook framwork for arm/arm64/ios/android
@@ -4575,7 +4457,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**249**Star][5m] [C] [ampotos/dynstruct](https://github.com/ampotos/dynstruct) Reverse engineering tool for automatic structure recovering and memory use analysis based on DynamoRIO and Capstone
 - [**119**Star][5y] [C++] [breakingmalware/selfie](https://github.com/breakingmalware/selfie) A Tool to Unpack Self-Modifying Code using DynamoRIO
 - [**119**Star][4m] [C++] [googleprojectzero/drsancov](https://github.com/googleprojectzero/drsancov) DynamoRIO plugin to get ASAN and SanitizerCoverage compatible output for closed-source executables
-- [**53**Star][4y] [C] [lgeek/dynamorio_pin_escape](https://github.com/lgeek/dynamorio_pin_escape) 
+- [**53**Star][4y] [C] [lgeek/dynamorio_pin_escape](https://github.com/lgeek/dynamorio_pin_escape)
 - [**17**Star][26d] [C] [firodj/bbtrace](https://github.com/firodj/bbtrace) Basic Block Trace: DynamoRIO client
 - [**14**Star][6m] [C++] [vanhauser-thc/afl-dynamorio](https://github.com/vanhauser-thc/afl-dynamorio) run AFL with dynamorio
 - [**10**Star][2y] [C++] [atrosinenko/afl-dr](https://github.com/atrosinenko/afl-dr) Experiment in implementation of an instrumentation for American Fuzzy Lop using DynamoRIO
@@ -4584,12 +4466,8 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 #### <a id="928642a55eff34b6b52622c6862addd2"></a>With Other Tools
 
 
-- [**52**Star][12m] [Py] [cisco-talos/dyndataresolver](https://github.com/cisco-talos/dyndataresolver) Dynamic Data Resolver (DDR) IDA Pro Plug-in
-    - Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
-    - [DDR](https://github.com/cisco-talos/dyndataresolver/blob/master/VS_project/ddr/ddr.sln) 基于DyRIO的Client
-    - [IDA插件](https://github.com/cisco-talos/dyndataresolver/tree/master/IDAplugin) 
-- [**20**Star][9m] [C++] [secrary/findloop](https://github.com/secrary/findloop) find possible encryption/decryption or compression/decompression code
-    - Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
+- Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
+- Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
 - [**6**Star][2y] [C++] [ncatlin/drgat](https://github.com/ncatlin/drgat) The DynamoRIO client for rgat
 
 
@@ -4641,7 +4519,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**36**Star][3y] [C++] [paulmehta/ablation](https://github.com/paulmehta/ablation) Augmenting Static Analysis Using Pintool: Ablation
 - [**30**Star][4y] [C++] [0xddaa/pin](https://github.com/0xddaa/pin) Use Intel Pin tools to analysis binary.
 - [**27**Star][1y] [C++] [fdiskyou/winalloctracer](https://github.com/fdiskyou/WinAllocTracer) Pintool that logs and tracks calls to RtlAllocateHeap, RtlReAllocateHeap, RtlFreeHeap, VirtualAllocEx, and VirtualFreeEx.
-- [**26**Star][7y] [C++] [jingpu/pintools](https://github.com/jingpu/pintools) 
+- [**26**Star][7y] [C++] [jingpu/pintools](https://github.com/jingpu/pintools)
 - [**25**Star][2m] [C++] [boegel/mica](https://github.com/boegel/mica) a Pin tool for collecting microarchitecture-independent workload characteristics
 - [**22**Star][6y] [C++] [jbremer/pyn](https://github.com/jbremer/pyn) Awesome Python bindings for Pintool
 - [**18**Star][1y] [bash-c/pin-in-ctf](https://github.com/bash-c/pin-in-ctf) 使用intel pin来求解一部分CTF challenge
@@ -4655,40 +4533,14 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 ##### <a id="e129288dfadc2ab0890667109f93a76d"></a>No Category
 
 
-- [**943**Star][1y] [Py] [gaasedelen/lighthouse](https://github.com/gaasedelen/lighthouse) Code Coverage Explorer for IDA Pro & Binary Ninja
-    - Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[DBI->Frida->Tools->With Other Tools->IDA](#d628ec92c9eea0c4b016831e1f6852b3) |[DBI->Frida->Tools->With Other Tools->Binary Ninja](#f9008a00e2bbc7535c88602aa79c8fd8) |
-    - [coverage-frida](https://github.com/gaasedelen/lighthouse/blob/master/coverage/frida/README.md) 使用Frida收集信息
-    - [coverage-pin](https://github.com/gaasedelen/lighthouse/blob/master/coverage/pin/README.md) 使用Pin收集覆盖信息
-    - [插件](https://github.com/gaasedelen/lighthouse/blob/master/plugin/lighthouse_plugin.py) 支持IDA和BinNinja
-- [**134**Star][1y] [Py] [carlosgprado/jarvis](https://github.com/carlosgprado/jarvis) "Just Another ReVersIng Suite" or whatever other bullshit you can think of
-    - Also In Section: [IDA->Tools->Import Export->IntelPin](#dd0332da5a1482df414658250e6357f8) |[IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[IDA->Tools->Vul->No Category](#385d6777d0747e79cccab0a19fa90e7e) |
-    - [IDA插件](https://github.com/carlosgprado/jarvis/tree/master/IDAPlugin) 
-    - [PinTracer](https://github.com/carlosgprado/jarvis/tree/master/PinTracer) 
-- [**122**Star][5y] [C++] [zachriggle/ida-splode](https://github.com/zachriggle/ida-splode) Augmenting Static Reverse Engineering with Dynamic Analysis and Instrumentation
-    - Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
-    - [IDA插件](https://github.com/zachriggle/ida-splode/tree/master/py) 
-    - [PinTool](https://github.com/zachriggle/ida-splode/tree/master/src) 
-- [**117**Star][2y] [C++] [0xphoenix/mazewalker](https://github.com/0xphoenix/mazewalker) Toolkit for enriching and speeding up static malware analysis
-    - Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
-    - [mazeui](https://github.com/0xphoenix/mazewalker/blob/master/MazeUI/mazeui.py) 在IDA中显示界面
-    - [PyScripts](https://github.com/0xPhoeniX/MazeWalker/tree/master/MazeTracer/PyScripts) Python脚本，处理收集到的数据
-    - [PinClient](https://github.com/0xPhoeniX/MazeWalker/tree/master/MazeTracer/src) 
-- [**102**Star][4m] [Java] [0ffffffffh/dragondance](https://github.com/0ffffffffh/dragondance) Binary code coverage visualizer plugin for Ghidra
-    - Also In Section: [Ghidra->Plugins->With Other Tools->DBI](#60e86981b2c98f727587e7de927e0519) |
-    - [Ghidra插件](https://github.com/0ffffffffh/dragondance/blob/master/README.md) 
-    - [coverage-pin](https://github.com/0ffffffffh/dragondance/blob/master/coveragetools/README.md) 使用Pin收集信息
-- [**89**Star][8y] [C] [neuroo/runtime-tracer](https://github.com/neuroo/runtime-tracer) Dynamic tracing for binary applications (using PIN), IDA plugin to visualize and interact with the traces
-    - Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
-    - [PinTool](https://github.com/neuroo/runtime-tracer/tree/master/tracer) 
-    - [IDA插件](https://github.com/neuroo/runtime-tracer/tree/master/ida-pin) 
-- [**44**Star][3y] [Batchfile] [maldiohead/idapin](https://github.com/maldiohead/idapin) plugin of ida with pin
-    - Also In Section: [IDA->Tools->Import Export->IntelPin](#dd0332da5a1482df414658250e6357f8) |
-- [**15**Star][1y] [C++] [agustingianni/instrumentation](https://github.com/agustingianni/instrumentation) Collection of tools implemented using pintools aimed to help in the task of reverse engineering.
-    - Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
-    - [CodeCoverage](https://github.com/agustingianni/instrumentation/tree/master/CodeCoverage) 
-    - [Pinnacle](https://github.com/agustingianni/instrumentation/tree/master/Pinnacle) 
-    - [Recoverer](https://github.com/agustingianni/instrumentation/tree/master/Recoverer) 
-    - [Resolver](https://github.com/agustingianni/instrumentation/tree/master/Resolver) 
+- Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[DBI->Frida->Tools->With Other Tools->IDA](#d628ec92c9eea0c4b016831e1f6852b3) |[DBI->Frida->Tools->With Other Tools->Binary Ninja](#f9008a00e2bbc7535c88602aa79c8fd8) |
+- Also In Section: [IDA->Tools->Import Export->IntelPin](#dd0332da5a1482df414658250e6357f8) |[IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[IDA->Tools->Vul->No Category](#385d6777d0747e79cccab0a19fa90e7e) |
+- Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
+- Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
+- Also In Section: [Ghidra->Plugins->With Other Tools->DBI](#60e86981b2c98f727587e7de927e0519) |
+- Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
+- Also In Section: [IDA->Tools->Import Export->IntelPin](#dd0332da5a1482df414658250e6357f8) |
+- Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
 
 
 
@@ -4720,8 +4572,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 #### <a id="54836a155de0c15b56f43634cd9cfecf"></a>Recent Add
 
 
-- [**1193**Star][15d] [JS] [alonemonkey/frida-ios-dump](https://github.com/alonemonkey/frida-ios-dump) pull decrypted ipa from jailbreak device
-    - Also In Section: [Apple->JailBreak->Tools](#ff19d5d94315d035bbcb3ef0c348c75b) |
+- Also In Section: [Apple->JailBreak->Tools](#ff19d5d94315d035bbcb3ef0c348c75b) |
 - [**895**Star][5m] [JS] [dpnishant/appmon](https://github.com/dpnishant/appmon) an automated framework for monitoring and tampering system API calls of native macOS, iOS and android apps. It is based on Frida.
 - [**645**Star][16d] [Py] [igio90/dwarf](https://github.com/igio90/dwarf) Full featured multi arch/os debugger built on top of PyQt5 and frida
 - [**559**Star][1m] [JS] [nccgroup/house](https://github.com/nccgroup/house) A runtime mobile application analysis toolkit with a Web GUI, powered by Frida, written in Python.
@@ -4747,8 +4598,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**138**Star][3y] [JS] [as0ler/frida-scripts](https://github.com/as0ler/frida-scripts) Repository including some useful frida script for iOS Reversing
 - [**128**Star][8m] [enovella/r2frida-wiki](https://github.com/enovella/r2frida-wiki) This repo aims at providing practical examples on how to use r2frida
 - [**124**Star][3y] [JS] [antojoseph/diff-gui](https://github.com/antojoseph/diff-gui) GUI for Frida -Scripts
-- [**123**Star][2y] [Java] [brompwnie/uitkyk](https://github.com/brompwnie/uitkyk) Android Frida库, 用于分析App查找恶意行为
-    - Also In Section: [Android->Tools->Malware](#f975a85510f714ec3cc2551e868e75b8) |
+- Also In Section: [Android->Tools->Malware](#f975a85510f714ec3cc2551e868e75b8) |
 - [**121**Star][29d] [JS] [fuzzysecurity/fermion](https://github.com/fuzzysecurity/fermion) Fermion, an electron wrapper for Frida & Monaco.
 - [**112**Star][2y] [C] [b-mueller/frida-detection-demo](https://github.com/b-mueller/frida-detection-demo) Some examples for detecting frida on Android
 - [**112**Star][25d] [C++] [frida/frida-node](https://github.com/frida/frida-node) Frida Node.js bindings
@@ -4767,34 +4617,22 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**76**Star][1m] [JS] [andreafioraldi/frida-js-afl-instr](https://github.com/andreafioraldi/frida-js-afl-instr) An example on how to do performant in-memory fuzzing with AFL++ and Frida
 - [**75**Star][4y] [Py] [antojoseph/diff-droid](https://github.com/antojoseph/diff-droid) Various Scripts for Mobile Pen-testing with Frida
 - [**65**Star][3m] [Py] [hamz-a/jeb2frida](https://github.com/hamz-a/jeb2frida) Automated Frida hook generation with JEB
-- [**58**Star][20d] [Py] [lich4/personal_script](https://github.com/lich4/personal_script) 010Editor/BurpSuite/Frida/IDA tools and scripts collection
-    - Also In Section: [IDA->Tools->No Category](#c39a6d8598dde6abfeef43faf931beb5) |[IDA->Tools->Import Export->Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd) |
-    - [010Editor](https://github.com/lich4/personal_script/tree/master/010Editor_Script) 010Editor scripts
-    - [ParamChecker](https://github.com/lich4/personal_script/tree/master/BurpSuite_Script) Burp插件
-    - [Frida](https://github.com/lich4/personal_script/tree/master/Frida_script) Frida Scripts
-    - [IDA](https://github.com/lich4/personal_script/tree/master/IDA_Script) IDA Scripts
-    - [IDA-read_unicode.py](https://github.com/lich4/personal_script/blob/master/IDA_Script/read_unicode.py) When there is chinese unicode character in programe, due to python's shortage, ida could not recongnized them correctly, it's what my script just do
-    - [IDA-add_xref_for_macho](https://github.com/lich4/personal_script/blob/master/IDA_Script/add_xref_for_macho.py)  When you deal with macho file with ida, you'll find out that it's not easy to find Objc-Class member function's caller and callee, (because it use msgSend instead of direct calling  convention), so we need to make some connection between the selector names and member function  pointers, it's what my script just do
-    - [IDA-add_info_for_androidgdb](https://github.com/lich4/personal_script/blob/master/IDA_Script/add_info_for_androidgdb.py) When you debug android with IDA and gdbserver, you'd find that the module list and segment is empy, while we can read info from /proc/[pid]/,
-    - [IDA-trace_instruction](https://github.com/lich4/personal_script/blob/master/IDA_Script/trace_instruction.py) this script is to trace instruction stream in one run 
-    - [IDA-detect_ollvm](https://github.com/lich4/personal_script/blob/master/IDA_Script/detect_ollvm.py) this script is to detect ollvm and fix it in some extent, apply to android and ios
-    - [IDA-add_block_for_macho](https://github.com/lich4/personal_script/blob/master/IDA_Script/add_block_for_macho.py) this script is used to analysis block structure exist in macho file, target NSConcreteStackBlock/NSConcreteGlobalBlock currently, also contain some wonderful skills
+- Also In Section: [IDA->Tools->No Category](#c39a6d8598dde6abfeef43faf931beb5) |[IDA->Tools->Import Export->Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd) |
 - [**57**Star][8m] [JS] [hamz-a/frida-android-libbinder](https://github.com/hamz-a/frida-android-libbinder) PoC Frida script to view Android libbinder traffic
 - [**53**Star][1m] [Py] [hamz-a/frida-android-helper](https://github.com/hamz-a/frida-android-helper) Frida Android utilities
 - [**52**Star][1m] [Py] [frida/frida-tools](https://github.com/frida/frida-tools) Frida CLI tools
-- [**50**Star][1y] [JS] [fortiguard-lion/frida-scripts](https://github.com/fortiguard-lion/frida-scripts) 
+- [**50**Star][1y] [JS] [fortiguard-lion/frida-scripts](https://github.com/fortiguard-lion/frida-scripts)
 - [**49**Star][6m] [TS] [igio90/hooah-trace](https://github.com/igio90/hooah-trace) Instructions tracing powered by frida
 - [**46**Star][1y] [JS] [maltek/swift-frida](https://github.com/maltek/swift-frida) Frida library for interacting with Swift programs.
 - [**46**Star][5m] [JS] [nowsecure/frida-trace](https://github.com/nowsecure/frida-trace) Trace APIs declaratively through Frida.
 - [**43**Star][8m] [C] [sensepost/frida-windows-playground](https://github.com/sensepost/frida-windows-playground) A collection of Frida hooks for experimentation on Windows platforms.
 - [**42**Star][2y] [HTML] [digitalinterruption/fridaworkshop](https://github.com/digitalinterruption/fridaworkshop) Break Apps with Frida workshop material
 - [**42**Star][4m] [Swift] [frida/frida-swift](https://github.com/frida/frida-swift) Frida Swift bindings
-- [**40**Star][2y] [Py] [agustingianni/memrepl](https://github.com/agustingianni/memrepl) a frida based script that aims to help a researcher in the task of exploitation of memory corruption related bugs
-    - Also In Section: [IDA->Tools->Import Export->Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd) |
+- Also In Section: [IDA->Tools->Import Export->Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd) |
 - [**39**Star][29d] [JS] [frida/frida-compile](https://github.com/frida/frida-compile) Compile a Frida script comprised of one or more Node.js modules
 - [**39**Star][4m] [TS] [oleavr/frida-agent-example](https://github.com/oleavr/frida-agent-example) Example Frida agent written in TypeScript
 - [**37**Star][9d] [CSS] [frida/frida-website](https://github.com/frida/frida-website) Frida's website
-- [**34**Star][2m] [Py] [dmaasland/mcfridafee](https://github.com/dmaasland/mcfridafee) 
+- [**34**Star][2m] [Py] [dmaasland/mcfridafee](https://github.com/dmaasland/mcfridafee)
 - [**29**Star][6m] [TS] [igio90/frida-onload](https://github.com/igio90/frida-onload) Frida module to hook module initializations on android
 - [**28**Star][1y] [JS] [ioactive/bluecrawl](https://github.com/ioactive/bluecrawl) Frida (Android) Script for extracting bluetooth information
 - [**28**Star][2y] [JS] [versprite/engage](https://github.com/versprite/engage) Tools and Materials for the Frida Engage Blog Series
@@ -4807,8 +4645,8 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**20**Star][3y] [JS] [dweinstein/node-frida-contrib](https://github.com/dweinstein/node-frida-contrib) frida utility-belt
 - [**20**Star][5m] [JS] [nowsecure/frida-uiwebview](https://github.com/nowsecure/frida-uiwebview) Inspect and manipulate UIWebView-hosted GUIs through Frida.
 - [**19**Star][7m] [JS] [iddoeldor/mplus](https://github.com/iddoeldor/mplus) Intercept android apps based on unity3d (Mono) using Frida
-- [**19**Star][2m] [Shell] [virb3/magisk-frida](https://github.com/virb3/magisk-frida) 
-- [**19**Star][26d] [JS] [cynops/frida-hooks](https://github.com/cynops/frida-hooks) 
+- [**19**Star][2m] [Shell] [virb3/magisk-frida](https://github.com/virb3/magisk-frida)
+- [**19**Star][26d] [JS] [cynops/frida-hooks](https://github.com/cynops/frida-hooks)
 - [**18**Star][5y] [JS] [frida/aurora](https://github.com/frida/aurora) Proof-of-concept web app built on top of Frida
 - [**18**Star][2y] [Py] [igio90/fridaandroidtracer](https://github.com/igio90/fridaandroidtracer) Android application tracer powered by Frida
 - [**18**Star][2y] [Py] [notsosecure/dynamic-instrumentation-with-frida](https://github.com/notsosecure/dynamic-instrumentation-with-frida) Dynamic Instrumentation with Frida
@@ -4824,7 +4662,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**9**Star][4m] [Py] [melisska/neomorph](https://github.com/melisska/neomorph) Frida Python Tool
 - [**9**Star][10m] [JS] [rubaljain/frida-jb-bypass](https://github.com/rubaljain/frida-jb-bypass) Frida script to bypass the iOS application Jailbreak Detection
 - [**6**Star][4m] [JS] [nowsecure/frida-panic](https://github.com/nowsecure/frida-panic) Easy crash-reporting for Frida-based applications.
-- [**6**Star][10m] [JS] [eybisi/fridascripts](https://github.com/eybisi/fridascripts) 
+- [**6**Star][10m] [JS] [eybisi/fridascripts](https://github.com/eybisi/fridascripts)
 - [**5**Star][2m] [TS] [nowsecure/frida-remote-stream](https://github.com/nowsecure/frida-remote-stream) Create an outbound stream over a message transport.
 - [**4**Star][5m] [JS] [davuxcom/frida-scripts](https://github.com/davuxcom/frida-scripts) Inject JS and C# into Windows apps, call COM and WinRT APIs
 - [**4**Star][2y] [JS] [frida/frida-load](https://github.com/frida/frida-load) Load a Frida script comprised of one or more Node.js modules
@@ -4833,7 +4671,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**3**Star][8d] [Py] [margular/frida-skeleton](https://github.com/margular/frida-skeleton) This repository is supposed to define infrastructure of frida on hook android including some useful functions
 - [**3**Star][2y] [JS] [myzhan/frida-examples](https://github.com/myzhan/frida-examples) Examples of using frida.
 - [**2**Star][1y] [rhofixxxx/kick-off-owasp_webapp_security_vulnerabilities](https://github.com/rhofixxxx/kick-off-OWASP_WebApp_Security_Vulnerabilities) Want to keep your Web application from getting hacked? Here's how to get serious about secure apps. So let's do it! Open Friday, Aug 2016 - Presentation Notes.
-- [**1**Star][1y] [JS] [ddurando/frida-scripts](https://github.com/ddurando/frida-scripts) 
+- [**1**Star][1y] [JS] [ddurando/frida-scripts](https://github.com/ddurando/frida-scripts)
 
 
 #### <a id="74fa0c52c6104fd5656c93c08fd1ba86"></a>With Other Tools
@@ -4848,38 +4686,26 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 ##### <a id="d628ec92c9eea0c4b016831e1f6852b3"></a>IDA
 
 
-- [**943**Star][1y] [Py] [gaasedelen/lighthouse](https://github.com/gaasedelen/lighthouse) Code Coverage Explorer for IDA Pro & Binary Ninja
-    - Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |[DBI->Frida->Tools->With Other Tools->Binary Ninja](#f9008a00e2bbc7535c88602aa79c8fd8) |
-    - [coverage-frida](https://github.com/gaasedelen/lighthouse/blob/master/coverage/frida/README.md) 使用Frida收集信息
-    - [coverage-pin](https://github.com/gaasedelen/lighthouse/blob/master/coverage/pin/README.md) 使用Pin收集覆盖信息
-    - [插件](https://github.com/gaasedelen/lighthouse/blob/master/plugin/lighthouse_plugin.py) 支持IDA和BinNinja
-- [**128**Star][3y] [Py] [friedappleteam/frapl](https://github.com/friedappleteam/frapl) a reverse engineering framework created to simplify dynamic instrumentation with Frida
-    - Also In Section: [IDA->Tools->Import Export->Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd) |[IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
-    - [IDA插件](https://github.com/FriedAppleTeam/FRAPL/tree/master/Framework/FridaLink) 
-    - [Frida脚本](https://github.com/FriedAppleTeam/FRAPL/tree/master/Framework/FRAPL) 
-- [**83**Star][5y] [Py] [techbliss/frida_for_ida_pro](https://github.com/techbliss/frida_for_ida_pro) plugin for ida pro thar uses the Frida api
-    - Also In Section: [IDA->Tools->Import Export->Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd) |
+- Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |[DBI->Frida->Tools->With Other Tools->Binary Ninja](#f9008a00e2bbc7535c88602aa79c8fd8) |
+- Also In Section: [IDA->Tools->Import Export->Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd) |[IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |
+- Also In Section: [IDA->Tools->Import Export->Frida](#a1cf7f7f849b4ca2101bd31449c2a0fd) |
 
 
 ##### <a id="f9008a00e2bbc7535c88602aa79c8fd8"></a>Binary Ninja
 
 
-- [**943**Star][1y] [Py] [gaasedelen/lighthouse](https://github.com/gaasedelen/lighthouse) Code Coverage Explorer for IDA Pro & Binary Ninja
-    - Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |[DBI->Frida->Tools->With Other Tools->IDA](#d628ec92c9eea0c4b016831e1f6852b3) |
-    - [coverage-frida](https://github.com/gaasedelen/lighthouse/blob/master/coverage/frida/README.md) 使用Frida收集信息
-    - [coverage-pin](https://github.com/gaasedelen/lighthouse/blob/master/coverage/pin/README.md) 使用Pin收集覆盖信息
-    - [插件](https://github.com/gaasedelen/lighthouse/blob/master/plugin/lighthouse_plugin.py) 支持IDA和BinNinja
+- Also In Section: [IDA->Tools->Debug->DBI Data](#0fbd352f703b507853c610a664f024d1) |[DBI->IntelPin->Tools->With Other Tools->No Category](#e129288dfadc2ab0890667109f93a76d) |[DBI->Frida->Tools->With Other Tools->IDA](#d628ec92c9eea0c4b016831e1f6852b3) |
 - [**8**Star][3m] [Py] [c3r34lk1ll3r/binrida](https://github.com/c3r34lk1ll3r/BinRida) Plugin for Frida in Binary Ninja
-    - Also In Section: [BinaryNinja->Plugins->With Other Tools->No Category](#c2f94ad158b96c928ee51461823aa953) |
+- Also In Section: [BinaryNinja->Plugins->With Other Tools->No Category](#c2f94ad158b96c928ee51461823aa953) |
 
 
 ##### <a id="ac053c4da818ca587d57711d2ff66278"></a>Radare2
 
 
 - [**378**Star][27d] [JS] [nowsecure/r2frida](https://github.com/nowsecure/r2frida) Radare2 and Frida better together.
-    - Also In Section: [Radare2->Plugins->With Other Tools->No Category](#dfe53924d678f9225fc5ece9413b890f) |
+- Also In Section: [Radare2->Plugins->With Other Tools->No Category](#dfe53924d678f9225fc5ece9413b890f) |
 - [**34**Star][12m] [CSS] [nowsecure/r2frida-book](https://github.com/nowsecure/r2frida-book) The radare2 + frida book for Mobile Application assessment
-    - Also In Section: [Radare2->Plugins->With Other Tools->No Category](#dfe53924d678f9225fc5ece9413b890f) |
+- Also In Section: [Radare2->Plugins->With Other Tools->No Category](#dfe53924d678f9225fc5ece9413b890f) |
 
 
 
@@ -5078,7 +4904,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**4610**Star][1y] [C] [upx/upx](https://github.com/upx/upx) UPX - the Ultimate Packer for eXecutables
 - [**4600**Star][12m] [Py] [ecthros/uncaptcha2](https://github.com/ecthros/uncaptcha2) defeating the latest version of ReCaptcha with 91% accuracy
 - [**4597**Star][12d] [C++] [mozilla/rr](https://github.com/mozilla/rr) Record and Replay Framework
-- [**4541**Star][4m] [TS] [apis-guru/graphql-voyager](https://github.com/apis-guru/graphql-voyager) 
+- [**4541**Star][4m] [TS] [apis-guru/graphql-voyager](https://github.com/apis-guru/graphql-voyager)
 - [**4352**Star][1y] [Py] [lennylxx/ipv6-hosts](https://github.com/lennylxx/ipv6-hosts) Fork of
 - [**4314**Star][15d] [Rust] [timvisee/ffsend](https://github.com/timvisee/ffsend) Easily and securely share files from the command line
 - [**4258**Star][12m] [JS] [butterproject/butter-desktop](https://github.com/butterproject/butter-desktop) All the free parts of Popcorn Time
@@ -5095,7 +4921,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**3773**Star][25d] [jjqqkk/chromium](https://github.com/jjqqkk/chromium) Chromium browser with SSL VPN. Use this browser to unblock websites.
 - [**3768**Star][2m] [Go] [microsoft/ethr](https://github.com/microsoft/ethr) Ethr is a Network Performance Measurement Tool for TCP, UDP & HTTP.
 - [**3749**Star][12d] [Go] [hashicorp/consul-template](https://github.com/hashicorp/consul-template) Template rendering, notifier, and supervisor for
-- [**3690**Star][21d] [JS] [lesspass/lesspass](https://github.com/lesspass/lesspass) 
+- [**3690**Star][21d] [JS] [lesspass/lesspass](https://github.com/lesspass/lesspass)
 - [**3688**Star][29d] [HTML] [hamukazu/lets-get-arrested](https://github.com/hamukazu/lets-get-arrested) This project is intended to protest against the police in Japan
 - [**3669**Star][1y] [Py] [misterch0c/shadowbroker](https://github.com/misterch0c/shadowbroker) The Shadow Brokers "Lost In Translation" leak
 - [**3627**Star][26d] [HTML] [consensys/smart-contract-best-practices](https://github.com/consensys/smart-contract-best-practices) A guide to smart contract security best practices
@@ -5136,7 +4962,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**2808**Star][10m] [Py] [plasma-disassembler/plasma](https://github.com/plasma-disassembler/plasma) Plasma is an interactive disassembler for x86/ARM/MIPS. It can generates indented pseudo-code with colored syntax.
 - [**2789**Star][13d] [C++] [qtox/qtox](https://github.com/qtox/qtox) qTox is a chat, voice, video, and file transfer IM client using the encrypted peer-to-peer Tox protocol.
 - [**2772**Star][2m] [JS] [trufflesuite/ganache-cli](https://github.com/trufflesuite/ganache-cli) Fast Ethereum RPC client for testing and development
-- [**2760**Star][10d] [TS] [webhintio/hint](https://github.com/webhintio/hint) 
+- [**2760**Star][10d] [TS] [webhintio/hint](https://github.com/webhintio/hint)
 - [**2718**Star][3m] [Py] [drivendata/cookiecutter-data-science](https://github.com/drivendata/cookiecutter-data-science) A logical, reasonably standardized, but flexible project structure for doing and sharing data science work.
 - [**2687**Star][11d] [Go] [adguardteam/adguardhome](https://github.com/adguardteam/adguardhome) Network-wide ads & trackers blocking DNS server
 - [**2631**Star][8m] [leandromoreira/linux-network-performance-parameters](https://github.com/leandromoreira/linux-network-performance-parameters) Learn where some of the network sysctl variables fit into the Linux/Kernel network flow
@@ -5198,7 +5024,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**1816**Star][29d] [Go] [gdamore/tcell](https://github.com/gdamore/tcell) Tcell is an alternate terminal package, similar in some ways to termbox, but better in others.
 - [**1786**Star][1m] [C++] [apitrace/apitrace](https://github.com/apitrace/apitrace) Tools for tracing OpenGL, Direct3D, and other graphics APIs
 - [**1781**Star][26d] [PHP] [ezyang/htmlpurifier](https://github.com/ezyang/htmlpurifier) Standards compliant HTML filter written in PHP
-- [**1779**Star][29d] [17mon/china_ip_list](https://github.com/17mon/china_ip_list) 
+- [**1779**Star][29d] [17mon/china_ip_list](https://github.com/17mon/china_ip_list)
 - [**1771**Star][3y] [ObjC] [alibaba/wax](https://github.com/alibaba/wax) Wax is a framework that lets you write native iPhone apps in Lua.
 - [**1761**Star][1y] [JS] [puppeteer/examples](https://github.com/puppeteer/examples) Use case-driven examples for using Puppeteer and headless chrome
 - [**1761**Star][13d] [C] [google/wuffs](https://github.com/google/wuffs) Wrangling Untrusted File Formats Safely
@@ -5254,7 +5080,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**265**Star][3m] [Assembly] [pret/pokeyellow](https://github.com/pret/pokeyellow) Disassembly of Pokemon Yellow
 - [**240**Star][4m] [JS] [consensys/surya](https://github.com/consensys/surya) A set of utilities for exploring Solidity contracts
 - [**224**Star][2y] [Py] [rub-syssec/syntia](https://github.com/rub-syssec/syntia) Program synthesis based deobfuscation framework for the USENIX 2017 paper "Syntia: Synthesizing the Semantics of Obfuscated Code"
-- [**214**Star][2m] [Py] [rpisec/llvm-deobfuscator](https://github.com/rpisec/llvm-deobfuscator) 
+- [**214**Star][2m] [Py] [rpisec/llvm-deobfuscator](https://github.com/rpisec/llvm-deobfuscator)
 - [**211**Star][12m] [Java] [neo23x0/fnord](https://github.com/neo23x0/fnord) Pattern Extractor for Obfuscated Code
 - [**198**Star][1m] [F#] [b2r2-org/b2r2](https://github.com/b2r2-org/b2r2) B2R2 is a collection of useful algorithms, functions, and tools for binary analysis.
 - [**194**Star][3y] [C#] [codeshark-dev/nofuserex](https://github.com/codeshark-dev/nofuserex) Free deobfuscator for ConfuserEx.
@@ -5270,7 +5096,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**139**Star][7m] [C] [glv2/bruteforce-wallet](https://github.com/glv2/bruteforce-wallet) Try to find the password of an encrypted Peercoin (or Bitcoin, Litecoin, etc...) wallet file.
 - [**137**Star][4y] [C] [xairy/kaslr-bypass-via-prefetch](https://github.com/xairy/kaslr-bypass-via-prefetch) A proof-of-concept KASLR bypass for the Linux kernel via timing prefetch (dilettante implementation, better read the original paper:
 - [**134**Star][1y] [PS] [darkoperator/posh-sysmon](https://github.com/darkoperator/posh-sysmon) PowerShell module for creating and managing Sysinternals Sysmon config files.
-- [**129**Star][3y] [Swift] [magic-akari/wannacry](https://github.com/magic-akari/wannacry) 
+- [**129**Star][3y] [Swift] [magic-akari/wannacry](https://github.com/magic-akari/wannacry)
 - [**122**Star][1y] [PS] [mattifestation/bhusa2018_sysmon](https://github.com/mattifestation/bhusa2018_sysmon) All materials from our Black Hat 2018 "Subverting Sysmon" talk
 - [**119**Star][5m] [C#] [akaion/jupiter](https://github.com/akaion/jupiter) A Windows virtual memory editing library with support for pattern scanning.
 - [**118**Star][2y] [Py] [malus-security/sandblaster](https://github.com/malus-security/sandblaster) Reversing the Apple sandbox
@@ -5287,7 +5113,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**97**Star][3y] [Py] [fdiskyou/kcshell](https://github.com/fdiskyou/kcshell) 交互式汇编/反汇编 Shell，Python3编写，基于Keystone/Capstone
 - [**97**Star][11d] [PHP] [cybercog/laravel-optimus](https://github.com/cybercog/laravel-optimus) Transform your internal id's to obfuscated integers based on Knuth's integer hash.
 - [**88**Star][2y] [PS] [danielbohannon/out-fincodedcommand](https://github.com/danielbohannon/out-fincodedcommand) POC Highlighting Obfuscation Techniques used by FIN threat actors based on cmd.exe's replace functionality and cmd.exe/powershell.exe's stdin command invocation capabilities
-- [**85**Star][11m] [C++] [basketwill/sysmon_reverse](https://github.com/basketwill/sysmon_reverse) 
+- [**85**Star][11m] [C++] [basketwill/sysmon_reverse](https://github.com/basketwill/sysmon_reverse)
 - [**82**Star][4m] [blockchainlabsnz/awesome-solidity](https://github.com/blockchainlabsnz/awesome-solidity) A curated list of awesome Solidity resources
 - [**80**Star][4m] [sbousseaden/panache_sysmon](https://github.com/sbousseaden/panache_sysmon) A Sysmon Config for APTs Techniques Detection
 - [**79**Star][5m] [Assembly] [thecodeartist/elf-parser](https://github.com/thecodeartist/elf-parser) Identifying/Extracting various sections of an ELF file
@@ -5357,8 +5183,8 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 
 
 - [**534**Star][12d] [Py] [angr/angr-doc](https://github.com/angr/angr-doc) Documentation for the angr suite
-- [**305**Star][2m] [Py] [salls/angrop](https://github.com/salls/angrop) a rop gadget finder and chain builder 
-- [**246**Star][2y] [Py] [jakespringer/angr_ctf](https://github.com/jakespringer/angr_ctf) 
+- [**305**Star][2m] [Py] [salls/angrop](https://github.com/salls/angrop) a rop gadget finder and chain builder
+- [**246**Star][2y] [Py] [jakespringer/angr_ctf](https://github.com/jakespringer/angr_ctf)
 - [**197**Star][18d] [Py] [angr/angr-management](https://github.com/angr/angr-management) A GUI for angr. Being developed *very* slowly.
 - [**195**Star][2y] [PS] [vysecurity/angrypuppy](https://github.com/vysecurity/ANGRYPUPPY) Bloodhound Attack Path Automation in CobaltStrike
 - [**169**Star][2y] [HTML] [ihebski/angryfuzzer](https://github.com/ihebski/angryfuzzer) Tools for information gathering
@@ -5377,12 +5203,11 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**23**Star][4y] [bannsec/angr-windows](https://github.com/bannsec/angr-Windows) Windows builds for use with angr framework
 - [**22**Star][23d] [Py] [fmagin/angr-cli](https://github.com/fmagin/angr-cli) Repo for various angr ipython features to give it more of a cli feeling
 - [**20**Star][2y] [PS] [mdsecactivebreach/angrypuppy](https://github.com/mdsecactivebreach/angrypuppy) Bloodhound Attack Path Automation in CobaltStrike
-- [**19**Star][2y] [Py] [brandon-everhart/angryida](https://github.com/brandon-everhart/angryida) Python based angr plug in for IDA Pro.
-    - Also In Section: [IDA->Tools->Import Export->No Category](#8ad723b704b044e664970b11ce103c09) |
+- Also In Section: [IDA->Tools->Import Export->No Category](#8ad723b704b044e664970b11ce103c09) |
 - [**12**Star][1y] [Py] [ash09/angr-static-analysis-for-vuzzer64](https://github.com/ash09/angr-static-analysis-for-vuzzer64) Angr-based static analysis tool for vusec/vuzzer64 fuzzing tool
 - [**11**Star][3y] [Py] [n00py/angryhippo](https://github.com/n00py/angryhippo) Exploiting the HippoConnect protocol for HippoRemote
 - [**8**Star][1y] [C] [shellphish/patcherex](https://github.com/shellphish/patcherex) please go to angr/patcherex instead of this!
-- [**8**Star][3y] [C++] [project64/angrylion-rdp](https://github.com/project64/angrylion-rdp) 
+- [**8**Star][3y] [C++] [project64/angrylion-rdp](https://github.com/project64/angrylion-rdp)
 - [**3**Star][2y] [Py] [futaki-futaba/angr-sample](https://github.com/futaki-futaba/angr-sample) angr 7向けのサンプルプログラムです
 
 
@@ -5391,7 +5216,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 
 - 2016.04 [] [Solving kao's toy project with symbolic execution and angr](https://0xec.blogspot.com/2016/04/solving-kaos-toy-project-with-symbolic.html)
 - 2016.02 [theobsidiantower] [Angr and me](https://theobsidiantower.com/2016/02/11/4047a80b3927bd0a09363e7ccd202effe4b336aa.html)
-- 2014.08 [3xp10it] [angr解题](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2017/11/16/angr%E8%A7%A3%E9%A2%98/)
 - 2014.08 [3xp10it] [angr解题](http://3xp10it.cc/%E4%BA%8C%E8%BF%9B%E5%88%B6/2017/11/16/angr%E8%A7%A3%E9%A2%98/)
 
 
@@ -5489,7 +5313,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**57**Star][6m] [JS] [pownjs/pown-cdb](https://github.com/pownjs/pown-cdb) Automate common Chrome Debug Protocol tasks to help debug web applications from the command-line and actively monitor and intercept HTTP requests and responses.
 - [**54**Star][3m] [C#] [southpolenator/sharpdebug](https://github.com/southpolenator/SharpDebug) C# debugging automation tool
 - [**51**Star][3m] [C#] [smourier/tracespy](https://github.com/smourier/tracespy) TraceSpy is a pure .NET, 100% free and open source, alternative to the very popular SysInternals DebugView tool.
-- [**49**Star][1y] [C++] [alphaseclab/anti-debug](https://github.com/alphaseclab/anti-debug) 
+- [**49**Star][1y] [C++] [alphaseclab/anti-debug](https://github.com/alphaseclab/anti-debug)
 - [**48**Star][4m] [blackint3/awesome-debugging](https://github.com/blackint3/awesome-debugging) Why Debugging?（为什么要调试？）
 - [**48**Star][9m] [C++] [stoyan-shopov/troll](https://github.com/stoyan-shopov/troll) troll：ARM Cortex-M 处理器 C 语言源码调试器
 - [**44**Star][1y] [C#] [micli/netcoredebugging](https://github.com/micli/netcoredebugging) A repository maintains the book of ".NET Core application debugging" sample code.
@@ -5516,7 +5340,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**27**Star][8y] [Py] [fitblip/pydbg](https://github.com/fitblip/pydbg) A pure-python win32 debugger interface.
 - [**27**Star][2y] [C] [okazakinagisa/vtbaseddebuggerwin7](https://github.com/okazakinagisa/vtbaseddebuggerwin7) Simple kernelmode driver.
 - [**26**Star][6y] [Py] [fireeye/pycommands](https://github.com/fireeye/pycommands) PyCommand Scripts for Immunity Debugger
-- [**25**Star][3y] [C] [jacktang310/kerneldebugonnexus6p](https://github.com/jacktang310/kerneldebugonnexus6p) 
+- [**25**Star][3y] [C] [jacktang310/kerneldebugonnexus6p](https://github.com/jacktang310/kerneldebugonnexus6p)
 - [**24**Star][1y] [Py] [cosine0/amphitrite](https://github.com/cosine0/amphitrite) Symbolic debugging tool using JonathanSalwan/Triton
 - [**22**Star][8m] [Py] [laanwj/dwarf_to_c](https://github.com/laanwj/dwarf_to_c) Tool to recover C headers (types, function signatures) from DWARF debug data
 - [**22**Star][1y] [C#] [malcomvetter/antidebug](https://github.com/malcomvetter/antidebug) PoC: Prevent a debugger from attaching to managed .NET processes via a watcher process code pattern.
@@ -5554,8 +5378,8 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**28**Star][5y] [Py] [infosec-au/webappsec-toolkit](https://github.com/infosec-au/webappsec-toolkit) Web Application Security related tools. Includes backdoors, proof of concepts and tricks
 - [**26**Star][2y] [JS] [bkimminich/webappsec-nutshell](https://github.com/bkimminich/webappsec-nutshell) An ultra-compact intro (or refresher) to Web Application Security.
 - [**16**Star][4y] [Py] [redcanaryco/cbapi2](https://github.com/redcanaryco/cbapi2) Red Canary Carbon Black API
-- [**16**Star][1y] [C#] [jpginc/xbapappwhitelistbypasspoc](https://github.com/jpginc/xbapappwhitelistbypasspoc) 
-- [**15**Star][2y] [Rust] [maurer/bap-rust](https://github.com/maurer/bap-rust) 
+- [**16**Star][1y] [C#] [jpginc/xbapappwhitelistbypasspoc](https://github.com/jpginc/xbapappwhitelistbypasspoc)
+- [**15**Star][2y] [Rust] [maurer/bap-rust](https://github.com/maurer/bap-rust)
 - [**11**Star][2m] [OCaml] [binaryanalysisplatform/bap-bindings](https://github.com/binaryanalysisplatform/bap-bindings) C Bindings to BAP
 - [**10**Star][3y] [Java] [rafaelrpinto/vulnerablejavawebapplication](https://github.com/rafaelrpinto/vulnerablejavawebapplication) A Java Web Application with common legacy security flaws for tests with Arachni Scanner and ModSecurity
 - [**9**Star][2y] [HTML] [mister2tone/metasploit-webapp](https://github.com/mister2tone/metasploit-webapp) Metasploit framework via HTTP services
@@ -5564,7 +5388,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**6**Star][2y] [HTML] [ambulong/dbapp_ctf_201801](https://github.com/ambulong/dbapp_ctf_201801) 安恒CTF一月赛部分POC
 - [**1**Star][20d] [C] [binaryanalysisplatform/bap-testsuite](https://github.com/binaryanalysisplatform/bap-testsuite) BAP test suite
 - [**1**Star][3y] [C] [maurer/libbap](https://github.com/maurer/libbap) C Bindings for BAP
-- [**1**Star][8m] [spy86/owaspwebapplicationsecuritytestingchecklist](https://github.com/spy86/owaspwebapplicationsecuritytestingchecklist) 
+- [**1**Star][8m] [spy86/owaspwebapplicationsecuritytestingchecklist](https://github.com/spy86/owaspwebapplicationsecuritytestingchecklist)
 - [**0**Star][3y] [C#] [jstillwell/webapppentest](https://github.com/jstillwell/webapppentest) App for testing web apps for vulnerabilities like Sql injection
 
 
@@ -5584,12 +5408,9 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 ### <a id="2e4980c95871eae4ec0e76c42cc5c32f"></a>Tool
 
 
-- [**382**Star][26d] [C++] [google/binexport](https://github.com/google/binexport) Export disassemblies into Protocol Buffers and to BinNavi databases
-    - Also In Section: [IDA->Tools->Import Export->BinNavi](#11139e7d6db4c1cef22718868f29fe12) |
-- [**213**Star][4y] [PLpgSQL] [cseagle/freedom](https://github.com/cseagle/freedom) capstone based disassembler for extracting to binnavi
-    - Also In Section: [IDA->Tools->Import Export->BinNavi](#11139e7d6db4c1cef22718868f29fe12) |
-- [**25**Star][7y] [Py] [tosanjay/bopfunctionrecognition](https://github.com/tosanjay/bopfunctionrecognition) plugin to BinNavi tool to analyze a x86 binanry file to find buffer overflow prone functions. Such functions are important for vulnerability analysis.
-    - Also In Section: [IDA->Tools->Import Export->BinNavi](#11139e7d6db4c1cef22718868f29fe12) |
+- Also In Section: [IDA->Tools->Import Export->BinNavi](#11139e7d6db4c1cef22718868f29fe12) |
+- Also In Section: [IDA->Tools->Import Export->BinNavi](#11139e7d6db4c1cef22718868f29fe12) |
+- Also In Section: [IDA->Tools->Import Export->BinNavi](#11139e7d6db4c1cef22718868f29fe12) |
 
 
 ### <a id="ff4dc5c746cb398d41fb69a4f8dfd497"></a>Post
@@ -5643,7 +5464,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**232**Star][1y] [C++] [wwwg/wasmdec](https://github.com/wwwg/wasmdec) WebAssembly to C decompiler
 - [**226**Star][11d] [C++] [boomerangdecompiler/boomerang](https://github.com/BoomerangDecompiler/boomerang) Boomerang Decompiler - Fighting the code-rot :)
 - [**196**Star][1y] [C++] [cararasu/holodec](https://github.com/cararasu/holodec) Decompiler for x86 and x86-64 ELF binaries
-- [**164**Star][3y] [C#] [jamesjlinden/unity-decompiled](https://github.com/jamesjlinden/unity-decompiled) 
+- [**164**Star][3y] [C#] [jamesjlinden/unity-decompiled](https://github.com/jamesjlinden/unity-decompiled)
 - [**148**Star][3y] [C#] [endgameinc/py2exedecompiler](https://github.com/endgameinc/py2exedecompiler) Decompiles Exe created by Py2Exe using uncompyle6 for both python 2 and 3.
 - [**136**Star][6y] [Py] [nightnord/ljd](https://github.com/nightnord/ljd) LuaJIT raw-bytecode decompiler
 - [**129**Star][6y] [Lua] [bobsayshilol/luajit-decomp](https://github.com/bobsayshilol/luajit-decomp) LuaJIT decompiler
@@ -5675,7 +5496,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**10**Star][6y] [Py] [gdelugre/fupy](https://github.com/gdelugre/fupy) A small and dirty Python 2 decompiler written in Python.
 - [**10**Star][2y] [C++] [uglyoldbob/decompiler](https://github.com/uglyoldbob/decompiler) A decompiler targeting c and similar languages.
 - [**9**Star][2y] [C++] [darknesswind/nutcracker](https://github.com/darknesswind/nutcracker) fork from DamianXVI's squirrel decompiler
-- [**9**Star][3y] [C++] [shauren/protobuf-decompiler](https://github.com/shauren/protobuf-decompiler) 
+- [**9**Star][3y] [C++] [shauren/protobuf-decompiler](https://github.com/shauren/protobuf-decompiler)
 - [**8**Star][7m] [Java] [soxs/osrsupdater](https://github.com/soxs/osrsupdater) A simple (and outdated) Old-School RuneScape decompiler/deobfuscator. Performs field and method analysis which uses ASM and bytecode patterns for identification. Identified fields could be used for creating bot clients or QoL clients. For educational use only.
 - [**8**Star][10m] [PHP] [vaibhavpandeyvpz/deapk](https://github.com/vaibhavpandeyvpz/deapk) DeAPK is an open-source, online APK decompiler which lets you upload an APK and then decompile it to Smali or Java sources. It is built using Laravel, Vue.js, Bootstrap, FontAwesome, Pusher, Redis, MySQL, apktool, jadx and hosted atop DigitalOcean cloud platform.
 - [**5**Star][1y] [C#] [fireboyd78/unluacnet](https://github.com/fireboyd78/unluacnet) A Lua 5.1 decompiler library written in C#. Based on the original Java version of "unluac" by tehtmi.
@@ -5684,8 +5505,8 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**1**Star][2y] [Haskell] [wertercatt/mrifk](https://github.com/wertercatt/mrifk) A decompiler and disassembler for the Glulx virtual machine.
 - [**1**Star][6y] [Haskell] [rel-eng/jdec](https://github.com/rel-eng/jdec) java decompiler written in haskell
 - [**1**Star][2m] [Java] [maxpixelstudios/minecraftdecompiler](https://github.com/maxpixelstudios/minecraftdecompiler) A useful tool to decompile and deobfuscate Minecraft by CFR and Proguard/SRG/CSRG/TSRG mappings
-- [**0**Star][2y] [Java] [dgileadi/dg.jdt.ls.decompiler](https://github.com/dgileadi/dg.jdt.ls.decompiler) 
-- [**None**Star][xdasm/decompiler](https://bitbucket.org/xdasm/decompiler/issues?status=new&status=open) 
+- [**0**Star][2y] [Java] [dgileadi/dg.jdt.ls.decompiler](https://github.com/dgileadi/dg.jdt.ls.decompiler)
+- [**None**Star][xdasm/decompiler](https://bitbucket.org/xdasm/decompiler/issues?status=new&status=open)
 
 
 ### <a id="a748b79105651a8fd8ae856a7dc2b1de"></a>Post
@@ -5768,7 +5589,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**152**Star][1m] [Py] [rogerhu/gdb-heap](https://github.com/rogerhu/gdb-heap) Heap Analyzer for Python
 - [**150**Star][1m] [Py] [gdbinit/lldbinit](https://github.com/gdbinit/lldbinit) A gdbinit clone for LLDB
 - [**137**Star][2y] [kevinsbobo/cheat-sheet](https://github.com/kevinsbobo/cheat-sheet) 速查表包括了 Vim, Git, Shell, Gcc, Gdb 常用命令及快捷键
-- [**132**Star][4y] [C] [espressif/esp-gdbstub](https://github.com/espressif/esp-gdbstub) 
+- [**132**Star][4y] [C] [espressif/esp-gdbstub](https://github.com/espressif/esp-gdbstub)
 - [**126**Star][3m] [Py] [deroko/lldbinit](https://github.com/deroko/lldbinit) Similar implementation of .gdbinit from fG
 - [**101**Star][3m] [Py] [cs01/pygdbmi](https://github.com/cs01/pygdbmi) A library to parse gdb mi output, as well as control gdb subprocesses
 - [**93**Star][2m] [C] [weirdnox/emacs-gdb](https://github.com/weirdnox/emacs-gdb) GDB graphical interface for GNU Emacs
@@ -5820,18 +5641,18 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**10**Star][3y] [JS] [gogoprog/atom-gdb](https://github.com/gogoprog/atom-gdb) Atom plugin to set gdb breakpoints in .gdbinit file and run an external debugger as QtCreator or ddd
 - [**10**Star][2y] [Py] [kikimo/pygdb](https://github.com/kikimo/pygdb) pygdb：Linux 调试器，支持 dwarf-2 调试信息，能调试 x86/x64 程序
 - [**10**Star][26d] [C] [resetnow/esp-gdbstub](https://github.com/resetnow/esp-gdbstub) ESP8266 debugging tool
-- [**10**Star][2y] [Py] [stephenr/gdb_scripts](https://github.com/stephenr/gdb_scripts) 
+- [**10**Star][2y] [Py] [stephenr/gdb_scripts](https://github.com/stephenr/gdb_scripts)
 - [**8**Star][5y] [Py] [ctu-iig/802.11p-wireless-regdb](https://github.com/ctu-iig/802.11p-wireless-regdb) Wireless regulatory database for CRDA
 - [**4**Star][11m] [C] [adapteva/epiphany-binutils-gdb](https://github.com/adapteva/epiphany-binutils-gdb) Merged gdb and binutils repository
 - [**3**Star][1y] [Py] [grant-h/gdbscripts](https://github.com/grant-h/gdbscripts) An assorted collection of GDB scripts.
 - [**2**Star][4m] [Py] [artem-nefedov/uefi-gdb](https://github.com/artem-nefedov/uefi-gdb) UEFI OVMF symbol load script for GDB
-- [**2**Star][9m] [C#] [sysprogs/visualgdbextensibilityexamples](https://github.com/sysprogs/visualgdbextensibilityexamples) 
+- [**2**Star][9m] [C#] [sysprogs/visualgdbextensibilityexamples](https://github.com/sysprogs/visualgdbextensibilityexamples)
 - [**2**Star][2y] [Py] [tentpegbob/ropgadget](https://github.com/tentpegbob/ropgadget) Extends ROPgadget so that it can be used inside of GDB via Python.
 - [**1**Star][3y] [elauqsap/vtgdb](https://github.com/elauqsap/vtgdb) vulnerability and threat repository using a graph architecture
 - [**1**Star][2y] [Py] [monkeyman79/janitor](https://github.com/monkeyman79/janitor) Collection of GDB commands for low-level debugging, aimed at bringing debug.exe flavor into GDB command line interface.
 - [**0**Star][4y] [Py] [0xd3d0/pygdb](https://github.com/0xd3d0/pygdb) Automatically exported from code.google.com/p/pygdb
-- [**0**Star][2y] [JS] [pgigis/routingdb](https://github.com/pgigis/routingdb) 
-- [**None**Star][sha0coder/gdb_automatization](https://bitbucket.org/sha0coder/gdb_automatization) 
+- [**0**Star][2y] [JS] [pgigis/routingdb](https://github.com/pgigis/routingdb)
+- [**None**Star][sha0coder/gdb_automatization](https://bitbucket.org/sha0coder/gdb_automatization)
 
 
 ### <a id="37b17362d72f9c8793973bc4704893a2"></a>Post
@@ -5979,7 +5800,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**27**Star][2y] [C] [openbsm/bsmtrace](https://github.com/openbsm/bsmtrace) BSM based intrusion detection system
 - [**26**Star][2y] [Go] [benjojo/traceroute-haiku](https://github.com/benjojo/traceroute-haiku) A thing you can traceroute and it gives you a haiku inside the trace
 - [**25**Star][3m] [C] [airbus-cert/pstrace](https://github.com/airbus-cert/pstrace) Trace ScriptBlock execution for powershell v2
-- [**24**Star][2y] [C++] [sshsshy/zerotrace](https://github.com/sshsshy/zerotrace) 
+- [**24**Star][2y] [C++] [sshsshy/zerotrace](https://github.com/sshsshy/zerotrace)
 - [**21**Star][2y] [C++] [microsoft/firewalleventmonitor](https://github.com/microsoft/firewalleventmonitor) Listens for Firewall rule match events generated by Microsoft Hyper-V Virtual Filter Protocol (VFP) extension.
 
 
@@ -6011,8 +5832,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**183**Star][4m] [radareorg/r2con](https://github.com/radareorg/r2con) Radare Congress Stuff
 - [**175**Star][2m] [C] [radareorg/radare2-extras](https://github.com/radareorg/radare2-extras) Source graveyard and random candy for radare2
 - [**155**Star][2y] [C] [ifding/radare2-tutorial](https://github.com/ifding/radare2-tutorial) Reverse Engineering using Radare2
-- [**149**Star][2y] [Py] [mhelwig/apk-anal](https://github.com/mhelwig/apk-anal) Android APK analyzer based on radare2 and others.
-    - Also In Section: [Android->Tools->Recent Add1](#883a4e0dd67c6482d28a7a14228cd942) |
+- Also In Section: [Android->Tools->Recent Add1](#883a4e0dd67c6482d28a7a14228cd942) |
 - [**126**Star][27d] [JS] [radareorg/radare2-r2pipe](https://github.com/radareorg/radare2-r2pipe) Access radare2 via pipe from any programming language!
 - [**123**Star][12m] [C] [wenzel/r2vmi](https://github.com/wenzel/r2vmi) Hypervisor-Level Debugger based on Radare2 / LibVMI, using VMI IO and debug plugins
 - [**108**Star][2y] [Py] [guedou/jupyter-radare2](https://github.com/guedou/jupyter-radare2) Just a simple radare2 Jupyter kernel
@@ -6022,7 +5842,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**90**Star][3m] [Py] [radareorg/r2con2019](https://github.com/radareorg/r2con2019) slides and materials
 - [**89**Star][4m] [Py] [securisec/r2wiki](https://github.com/securisec/r2wiki) Radare 2 wiki
 - [**88**Star][1y] [TeX] [zxgio/r2-cheatsheet](https://github.com/zxgio/r2-cheatsheet) Radare2 cheat-sheet
-- [**86**Star][1y] [HTML] [radareorg/r2con2018](https://github.com/radareorg/r2con2018) 
+- [**86**Star][1y] [HTML] [radareorg/r2con2018](https://github.com/radareorg/r2con2018)
 - [**82**Star][8m] [C] [nowsecure/dirtycow](https://github.com/nowsecure/dirtycow) radare2 IO plugin for Linux and Android. Modifies files owned by other users via dirtycow Copy-On-Write cache vulnerability
 - [**79**Star][1m] [Shell] [radareorg/radare2-pm](https://github.com/radareorg/radare2-pm) Package Manager for Radare2
 - [**78**Star][3y] [Py] [pinkflawd/r2graphity](https://github.com/pinkflawd/r2graphity) Creating function call graphs based on radare2 framwork, plot fancy graphs and extract behavior indicators
@@ -6046,7 +5866,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**19**Star][10m] [Py] [radare/radare2-r2pipe-api](https://github.com/radare/radare2-r2pipe-api) r2pipe-api repo
 - [**18**Star][2y] [Py] [countercept/radare2-scripts](https://github.com/countercept/radare2-scripts) A collection of useful radare2 scripts!
 - [**18**Star][4m] [C#] [radareorg/r2wars](https://github.com/radareorg/r2wars) Corewars but within r2
-- [**16**Star][2y] [arnaugamez/ncnlabs-introrewithr2](https://github.com/arnaugamez/ncnlabs-introrewithr2) 
+- [**16**Star][2y] [arnaugamez/ncnlabs-introrewithr2](https://github.com/arnaugamez/ncnlabs-introrewithr2)
 - [**16**Star][2y] [enovella/r2con-prequals-rhme3](https://github.com/enovella/r2con-prequals-rhme3) r2 the Rhme3! The RHme (Riscure Hack me) is a low level hardware CTF that comes in the form of an Arduino board (AVR architecture). It involves a set of SW and HW challenges to test your skills in different areas such as side channel analysis, fault injection, reverse-engineering and software exploitation. In our talk we will briefly recap RHme2…
 - [**16**Star][2y] [C] [safiire/radare2-dan32](https://github.com/safiire/radare2-dan32) Binary, Analysis, and Disassembler Radare2 Plugins for Dan32 architechture binaries
 - [**16**Star][5y] [Py] [tyilo/kextd_patcher](https://github.com/tyilo/kextd_patcher) Patch kextd using radare2
@@ -6062,16 +5882,16 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**10**Star][26d] [Go] [radareorg/r2pm](https://github.com/radareorg/r2pm) Radare2 cross platform package manager
 - [**9**Star][7m] [Py] [jacobpimental/r2-gohelper](https://github.com/jacobpimental/r2-gohelper) gopclntab finder and analyzer for Radare2
 - [**9**Star][2y] [Java] [redmed666/mal6raph](https://github.com/redmed666/mal6raph) mal6raph: 结合radare2 和 neo4j, 辅助函数级别的相似性分析
-- [**8**Star][2y] [montekki/r2evm](https://github.com/montekki/r2evm) 
+- [**8**Star][2y] [montekki/r2evm](https://github.com/montekki/r2evm)
 - [**8**Star][3y] [Py] [newlog/r2com](https://github.com/newlog/r2com) radare2 script to help on COM objects reverse engineering
 - [**8**Star][3y] [C] [radare/gradare2](https://github.com/radare/gradare2) Port of gradare GTK/VTE frontend to r2
 - [**7**Star][12m] [Rust] [radareorg/esil-rs](https://github.com/radareorg/esil-rs) Radare2's ESIL in Rust
 - [**7**Star][3y] [Py] [thestr4ng3r/bokken](https://github.com/thestr4ng3r/bokken) Bokken is a GUI for radare2. Don't use this, use
 - [**6**Star][2y] [Py] [d00rt/gootkit_string_patcher](https://github.com/d00rt/gootkit_string_patcher) A python script using radare2 for decrypt and patch the strings of GootKit malware
 - [**6**Star][2y] [Py] [h4ng3r/r2apktool](https://github.com/h4ng3r/r2apktool) radare2 based alternative to apktool
-- [**6**Star][27d] [Dockerfile] [kr1tzb1tz/r2playground](https://github.com/kr1tzb1tz/r2playground) 
+- [**6**Star][27d] [Dockerfile] [kr1tzb1tz/r2playground](https://github.com/kr1tzb1tz/r2playground)
 - [**6**Star][4m] [C] [radareorg/r2hexagon](https://github.com/radareorg/r2hexagon) Hexagon disassembler code generator from the official instruction manual.
-- [**5**Star][2y] [jacobpimental/intro-to-radare2](https://github.com/jacobpimental/intro-to-radare2) 
+- [**5**Star][2y] [jacobpimental/intro-to-radare2](https://github.com/jacobpimental/intro-to-radare2)
 - [**5**Star][12m] [securisec/r2wiki-rtd](https://github.com/securisec/r2wiki-rtd) r2wiki for readthedocs
 - [**4**Star][4y] [Py] [andrewaeva/strange-functions](https://github.com/andrewaeva/strange-functions) Extract functions and opcodes with radare2
 - [**4**Star][1y] [Py] [mytbk/radare-uefi](https://github.com/mytbk/radare-uefi) helper radare2 script to analyze UEFI firmware modules
@@ -6088,23 +5908,18 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 #### <a id="dfe53924d678f9225fc5ece9413b890f"></a>No Category
 
 
-- [**378**Star][27d] [JS] [nowsecure/r2frida](https://github.com/nowsecure/r2frida) Radare2 and Frida better together.
-    - Also In Section: [DBI->Frida->Tools->With Other Tools->Radare2](#ac053c4da818ca587d57711d2ff66278) |
+- Also In Section: [DBI->Frida->Tools->With Other Tools->Radare2](#ac053c4da818ca587d57711d2ff66278) |
 - [**79**Star][8m] [Py] [guedou/r2m2](https://github.com/guedou/r2m2) radare2 + miasm2 = ♥
 - [**47**Star][11m] [Py] [nowsecure/r2lldb](https://github.com/nowsecure/r2lldb) radare2-lldb integration
-- [**34**Star][12m] [CSS] [nowsecure/r2frida-book](https://github.com/nowsecure/r2frida-book) The radare2 + frida book for Mobile Application assessment
-    - Also In Section: [DBI->Frida->Tools->With Other Tools->Radare2](#ac053c4da818ca587d57711d2ff66278) |
+- Also In Section: [DBI->Frida->Tools->With Other Tools->Radare2](#ac053c4da818ca587d57711d2ff66278) |
 
 
 #### <a id="1cfe869820ecc97204a350a3361b31a7"></a>IDA
 
 
-- [**175**Star][14d] [C++] [radareorg/r2ghidra-dec](https://github.com/radareorg/r2ghidra-dec) Deep ghidra decompiler integration for radare2
-    - Also In Section: [Ghidra->Plugins->With Other Tools->Radare2](#e1cc732d1388084530b066c26e24887b) |
-- [**125**Star][8m] [Py] [danigargu/syms2elf](https://github.com/danigargu/syms2elf) A plugin for Hex-Ray's IDA Pro and radare2 to export the symbols recognized to the ELF symbol table
-    - Also In Section: [IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[IDA->Tools->Import Export->Radare2](#21ed198ae5a974877d7a635a4b039ae3) |[IDA->Tools->Function->No Category](#347a2158bdd92b00cd3d4ba9a0be00ae) |
-- [**123**Star][2m] [Py] [radare/radare2ida](https://github.com/radare/radare2ida) Tools, documentation and scripts to move projects from IDA to R2 and viceversa
-    - Also In Section: [IDA->Tools->Import Export->Radare2](#21ed198ae5a974877d7a635a4b039ae3) |
+- Also In Section: [Ghidra->Plugins->With Other Tools->Radare2](#e1cc732d1388084530b066c26e24887b) |
+- Also In Section: [IDA->Tools->ELF](#e5e403123c70ddae7bd904d3a3005dbb) |[IDA->Tools->Import Export->Radare2](#21ed198ae5a974877d7a635a4b039ae3) |[IDA->Tools->Function->No Category](#347a2158bdd92b00cd3d4ba9a0be00ae) |
+- Also In Section: [IDA->Tools->Import Export->Radare2](#21ed198ae5a974877d7a635a4b039ae3) |
 
 
 
@@ -6370,7 +6185,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**14**Star][3y] [Py] [coldheat/liil](https://github.com/coldheat/liil) Linear IL view for Binary Ninja
 - [**12**Star][2y] [Py] [gitmirar/binaryninjayaraplugin](https://github.com/gitmirar/binaryninjayaraplugin) Yara Plugin for Binary Ninja
 - [**12**Star][8m] [Py] [ktn1990/cve-2019-10869](https://github.com/ktn1990/cve-2019-10869) (Wordpress) Ninja Forms File Uploads Extension <= 3.0.22 – Unauthenticated Arbitrary File Upload
-- [**11**Star][3m] [C++] [0x1f9f1/binja-pattern](https://github.com/0x1f9f1/binja-pattern) 
+- [**11**Star][3m] [C++] [0x1f9f1/binja-pattern](https://github.com/0x1f9f1/binja-pattern)
 - [**10**Star][2y] [Py] [chokepoint/bnpincoverage](https://github.com/chokepoint/bnpincoverage) Visually analyze basic block code coverage in Binary Ninja using Pin output.
 - [**10**Star][5y] [Py] [emileaben/scapy-dns-ninja](https://github.com/emileaben/scapy-dns-ninja) Minimal DNS answering machine, for customized/programmable answers
 - [**10**Star][2m] [Py] [zznop/bn-brainfuck](https://github.com/zznop/bn-brainfuck) Brainfuck architecture module and loader for Binary Ninja
@@ -6380,7 +6195,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**8**Star][4m] [Py] [whitequark/binja-i8086](https://github.com/whitequark/binja-i8086) 16-bit x86 architecture for Binary Ninja
 - [**7**Star][1y] [Py] [rick2600/xref_call_finder](https://github.com/rick2600/xref_call_finder) Plugin for binary ninja to find calls to function recursively
 - [**6**Star][1y] [Py] [kudelskisecurity/binaryninja_cortex](https://github.com/kudelskisecurity/binaryninja_cortex) A Binary Ninja plugin to load Cortex-based MCU firmware
-- [**5**Star][6m] [Py] [0x1f9f1/binja-msvc](https://github.com/0x1f9f1/binja-msvc) 
+- [**5**Star][6m] [Py] [0x1f9f1/binja-msvc](https://github.com/0x1f9f1/binja-msvc)
 - [**5**Star][3y] [agnosticlines/binaryninja-plugins](https://github.com/agnosticlines/binaryninja-plugins) A repo with a listing of binary ninja scripts + plugins (massively inspired by
 - [**5**Star][6m] [Py] [bkerler/annotate](https://github.com/bkerler/annotate) Binary Ninja plugin for annotation of arguments for functions
 - [**5**Star][5m] [Py] [icecr4ck/bngb](https://github.com/icecr4ck/bnGB) Binary Ninja Game Boy loader and architecture plugin for analysing and disassembling GB ROM.
@@ -6404,23 +6219,15 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 
 
 - [**149**Star][2y] [Py] [hugsy/binja-retdec](https://github.com/hugsy/binja-retdec) Binary Ninja plugin to decompile binaries using RetDec API
-- [**8**Star][3m] [Py] [c3r34lk1ll3r/binrida](https://github.com/c3r34lk1ll3r/BinRida) Plugin for Frida in Binary Ninja
-    - Also In Section: [DBI->Frida->Tools->With Other Tools->Binary Ninja](#f9008a00e2bbc7535c88602aa79c8fd8) |
+- Also In Section: [DBI->Frida->Tools->With Other Tools->Binary Ninja](#f9008a00e2bbc7535c88602aa79c8fd8) |
 
 
 #### <a id="713fb1c0075947956651cc21a833e074"></a>IDA
 
 
-- [**68**Star][9m] [Py] [lunixbochs/revsync](https://github.com/lunixbochs/revsync) realtime cross-tool collaborative reverse engineering
-    - Also In Section: [IDA->Tools->Import Export->BinaryNinja](#d1ff64bee76f6749aef6100d72bfbe3a) |
-- [**61**Star][6m] [Py] [zznop/bnida](https://github.com/zznop/bnida) Suite of plugins that provide the ability to transfer analysis data between Binary Ninja and IDA
-    - Also In Section: [IDA->Tools->Import Export->BinaryNinja](#d1ff64bee76f6749aef6100d72bfbe3a) |
-    - [ida_export](https://github.com/zznop/bnida/blob/master/ida/ida_export.py) 将数据从IDA中导入
-    - [ida_import](https://github.com/zznop/bnida/blob/master/ida/ida_import.py) 将数据导入到IDA
-    - [binja_export](https://github.com/zznop/bnida/blob/master/binja_export.py) 将数据从BinaryNinja中导出
-    - [binja_import](https://github.com/zznop/bnida/blob/master/binja_import.py) 将数据导入到BinaryNinja
-- [**14**Star][6m] [Py] [cryptogenic/idc_importer](https://github.com/cryptogenic/idc_importer) A Binary Ninja plugin for importing IDC database dumps from IDA.
-    - Also In Section: [IDA->Tools->Import Export->BinaryNinja](#d1ff64bee76f6749aef6100d72bfbe3a) |
+- Also In Section: [IDA->Tools->Import Export->BinaryNinja](#d1ff64bee76f6749aef6100d72bfbe3a) |
+- Also In Section: [IDA->Tools->Import Export->BinaryNinja](#d1ff64bee76f6749aef6100d72bfbe3a) |
+- Also In Section: [IDA->Tools->Import Export->BinaryNinja](#d1ff64bee76f6749aef6100d72bfbe3a) |
 
 
 
@@ -6483,7 +6290,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**129**Star][3m] [C++] [nettitude/simplepeloader](https://github.com/nettitude/simplepeloader) In-Memory PE Loader
 - [**122**Star][3y] [C] [l0n3c0d3r/ceed](https://github.com/l0n3c0d3r/ceed) A tiny x86 compiler with ELF and PE target
 - [**111**Star][2m] [C] [hasherezade/chimera_pe](https://github.com/hasherezade/chimera_pe) ChimeraPE (a PE injector type - alternative to: RunPE, ReflectiveLoader, etc) - a template for manual loading of EXE, loading imports payload-side
-- [**111**Star][2m] [C] [hasherezade/chimera_pe](https://github.com/hasherezade/chimera_pe) ChimeraPE (a PE injector type - alternative to: RunPE, ReflectiveLoader, etc) - a template for manual loading of EXE, loading imports payload-side
 - [**110**Star][7y] [C++] [abhisek/pe-loader-sample](https://github.com/abhisek/pe-loader-sample) Proof of concept implementation of in-memory PE Loader based on ReflectiveDLLInjection Technique
 - [**105**Star][6y] [Py] [secretsquirrel/recomposer](https://github.com/secretsquirrel/recomposer) Randomly changes Win32/64 PE Files for 'safer' uploading to malware and sandbox sites.
 - [**96**Star][2y] [C++] [hasherezade/pe_recovery_tools](https://github.com/hasherezade/pe_recovery_tools) Helper tools for recovering dumped PE files
@@ -6513,7 +6319,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**17**Star][5y] [C] [maldevel/pedumper](https://github.com/maldevel/pedumper) Dump Windows PE file information in C
 - [**16**Star][2y] [Py] [aserper/ahk-dumper](https://github.com/aserper/ahk-dumper) Ahk-dumper is a tool to dump AutoHotKey code from the RDATA section of a PE file.
 - [**14**Star][7m] [Assembly] [egebalci/iat_api](https://github.com/egebalci/iat_api) Assembly block for finding and calling the windows API functions inside import address table(IAT) of the running PE file.
-- [**14**Star][2y] [C++] [wyexe/peloader](https://github.com/wyexe/PELoader) 
+- [**14**Star][2y] [C++] [wyexe/peloader](https://github.com/wyexe/PELoader)
 - [**12**Star][1y] [Go] [egebalci/mappe](https://github.com/egebalci/mappe) MapPE constructs the memory mapped image of given PE files.
 - [**10**Star][3y] [Py] [cloudtracer/pefile.pypy](https://github.com/cloudtracer/pefile.pypy) Pypy.js compatible version of pefile.py for use in offline browser implementation
 - [**10**Star][3y] [johntroony/pe-codecaving](https://github.com/johntroony/pe-codecaving) Work files for my blog post "Code Caving in a PE file.
@@ -6523,7 +6329,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**5**Star][2y] [Py] [deadbits/pe-static](https://github.com/deadbits/pe-static) Static file analysis for PE files
 - [**5**Star][2y] [C] [jmcph4/peek](https://github.com/jmcph4/peek) PEek is a simple PE file viewer.
 - [**5**Star][4y] [C++] [waleedassar/timedatestamp](https://github.com/waleedassar/timedatestamp) Discover TimeDateStamps In PE File
-- [**5**Star][11m] [Go] [abdullah2993/go-runpe](https://github.com/abdullah2993/go-runpe) 
+- [**5**Star][11m] [Go] [abdullah2993/go-runpe](https://github.com/abdullah2993/go-runpe)
 - [**3**Star][2y] [C++] [kernelm0de/runpe_detecter](https://github.com/kernelm0de/RunPE_Detecter) RunPE Detecter
 - [**2**Star][4y] [Py] [missmalware/importdict](https://github.com/missmalware/importdict) An easy way to identify imports of interest in a PE file
 - [**0**Star][9m] [Py] [0xd0cf11e/pefile](https://github.com/0xd0cf11e/pefile) Anything related to PE Files
@@ -6544,7 +6350,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2019.04 [MalwareAnalysisForHedgehogs] [Malware Theory - PE Malformations and Anomalies](https://www.youtube.com/watch?v=-0DEEbQq8jU)
 - 2019.04 [freebuf] [Xori：一款针对PE32和Shellcode的自动化反编译与静态分析库](https://www.freebuf.com/sectool/199629.html)
 - 2019.03 [hexacorn] [PE files and the DemoScene](http://www.hexacorn.com/blog/2019/03/14/pe-files-and-the-demoscene/)
-- 2019.03 [] [携带恶意PE文件的壁纸类应用出现在Google Play](http://blogs.360.cn/post/malicious_PE_files_discovered_on_Google%20Play.html)
 - 2019.03 [] [携带恶意PE文件的壁纸类应用出现在Google Play](http://blogs.360.cn/post/malicious_PE_files_discovered_on_Google%20Play.html)
 - 2019.03 [] [Malicious PE files discovered on Google Play](http://blogs.360.cn/post/malicious_PE_files_discovered_on_GooglePlay_EN.html)
 - 2019.03 [hexacorn] [PE Compilation Timestamps vs. forensics](http://www.hexacorn.com/blog/2019/03/11/pe-compilation-timestamps-vs-forensics/)
@@ -6613,7 +6418,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2017.10 [4hou] [Authenticode签名伪造——PE文件的签名伪造与签名验证劫持](http://www.4hou.com/system/7937.html)
 - 2017.10 [pediy] [[原创]由浅入深PE基础学习-菜鸟手动查询导出表、相对虚拟地址(RVA)与文件偏移地址转换(FOA)](https://bbs.pediy.com/thread-221766.htm)
 - 2017.10 [3gstudent] [Authenticode签名伪造——PE文件的签名伪造与签名验证劫持](https://3gstudent.github.io/3gstudent.github.io/Authenticode%E7%AD%BE%E5%90%8D%E4%BC%AA%E9%80%A0-PE%E6%96%87%E4%BB%B6%E7%9A%84%E7%AD%BE%E5%90%8D%E4%BC%AA%E9%80%A0%E4%B8%8E%E7%AD%BE%E5%90%8D%E9%AA%8C%E8%AF%81%E5%8A%AB%E6%8C%81/)
-- 2017.10 [3gstudent] [Authenticode签名伪造——PE文件的签名伪造与签名验证劫持](https://3gstudent.github.io/3gstudent.github.io/Authenticode%E7%AD%BE%E5%90%8D%E4%BC%AA%E9%80%A0-PE%E6%96%87%E4%BB%B6%E7%9A%84%E7%AD%BE%E5%90%8D%E4%BC%AA%E9%80%A0%E4%B8%8E%E7%AD%BE%E5%90%8D%E9%AA%8C%E8%AF%81%E5%8A%AB%E6%8C%81/)
 - 2017.10 [qmemcpy] [Manually dumping PE files from memory](https://qmemcpy.io/post/manually-dumping-pe-files-from-memory)
 - 2017.09 [pediy] [[原创]写壳的一些成果[TLS完美处理,压缩功能实现,AntiDump-过LordPE,调用sprintf?,IAT重定向]](https://bbs.pediy.com/thread-221477.htm)
 - 2017.09 [4hou] [PE文件全解析](http://www.4hou.com/system/7782.html)
@@ -6651,7 +6455,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2016.09 [pediy] [[原创]PE简单加壳_隐藏/加密重定位信息工具C++源码](https://bbs.pediy.com/thread-212994.htm)
 - 2016.09 [pediy] [[原创]献上Win PE文件格式解释源码](https://bbs.pediy.com/thread-212960.htm)
 - 2016.08 [toolswatch] [PPEE Professional PE file Explorer v1.06](http://www.toolswatch.org/2016/08/ppee-professional-pe-file-explorer-v1-06/)
-- 2016.08 [3gstudent] [隐写技巧——在PE文件的数字证书中隐藏Payload](https://3gstudent.github.io/3gstudent.github.io/%E9%9A%90%E5%86%99%E6%8A%80%E5%B7%A7-%E5%9C%A8PE%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6%E4%B8%AD%E9%9A%90%E8%97%8FPayload/)
 - 2016.08 [3gstudent] [隐写技巧——在PE文件的数字证书中隐藏Payload](https://3gstudent.github.io/3gstudent.github.io/%E9%9A%90%E5%86%99%E6%8A%80%E5%B7%A7-%E5%9C%A8PE%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6%E4%B8%AD%E9%9A%90%E8%97%8FPayload/)
 - 2016.07 [hexacorn] [PEFix – simple PE file re-aligner](http://www.hexacorn.com/blog/2016/07/09/pefix-simple-pe-file-re-aligner/)
 - 2016.06 [pediy] [[原创]菜鸟对PEid 0.95 Cave 查找功能逆向](https://bbs.pediy.com/thread-211094.htm)
@@ -6880,7 +6683,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**367**Star][1y] [PS] [netspi/pesecurity](https://github.com/NetSPI/PESecurity) PowerShell module to check if a Windows binary (EXE/DLL) has been compiled with ASLR, DEP, SafeSEH, StrongNaming, and Authenticode.
 - [**363**Star][19d] [C#] [3f/dllexport](https://github.com/3f/dllexport) .NET DllExport
 - [**296**Star][2y] [C++] [sensepost/rattler](https://github.com/sensepost/rattler) Automated DLL Enumerator
-- [**265**Star][3y] [C++] [professor-plum/reflective-driver-loader](https://github.com/professor-plum/reflective-driver-loader)  injection technique base off Reflective DLL injection 
+- [**265**Star][3y] [C++] [professor-plum/reflective-driver-loader](https://github.com/professor-plum/reflective-driver-loader)  injection technique base off Reflective DLL injection
 - [**244**Star][2y] [C#] [jephthai/openpasswordfilter](https://github.com/jephthai/openpasswordfilter) An open source custom password filter DLL and userspace service to better protect / control Active Directory domain passwords.
 - [**240**Star][10m] [C++] [wbenny/detoursnt](https://github.com/wbenny/detoursnt) Detours with just single dependency - NTDLL
 - [**230**Star][1y] [C#] [misaka-mikoto-tech/monohooker](https://github.com/Misaka-Mikoto-Tech/MonoHooker) hook C# method at runtime without modify dll file (such as UnityEditor.dll)
@@ -6903,7 +6706,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**82**Star][2y] [C] [hvqzao/foolavc](https://github.com/hvqzao/foolavc) foolav successor - loads DLL, executable or shellcode into memory and runs it effectively bypassing AV
 - [**81**Star][11m] [C] [mr-un1k0d3r/maliciousdllgenerator](https://github.com/mr-un1k0d3r/maliciousdllgenerator) DLL Generator for side loading attack
 - [**77**Star][1m] [C] [hasherezade/module_overloading](https://github.com/hasherezade/module_overloading) A more stealthy variant of "DLL hollowing"
-- [**73**Star][1y] [Batchfile] [b4rtik/hiddenpowershelldll](https://github.com/b4rtik/hiddenpowershelldll) 
+- [**73**Star][1y] [Batchfile] [b4rtik/hiddenpowershelldll](https://github.com/b4rtik/hiddenpowershelldll)
 - [**72**Star][1y] [C#] [0xbadjuju/rundotnetdll32](https://github.com/0xbadjuju/rundotnetdll32) A tool to run .Net DLLs from the command line
 - [**67**Star][4y] [C] [microwave89/rtsectiontest](https://github.com/microwave89/rtsectiontest) An Attempt to Bypass Memory Scanners By Misusing the ntdll.dll "RT" Section.
 - [**66**Star][11m] [C++] [jacksonvd/pwnedpasswordsdll](https://github.com/jacksonvd/pwnedpasswordsdll) Open source solution to check prospective AD passwords against previously breached passwords
@@ -6967,7 +6770,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**6**Star][1y] [C++] [ovidiuvio/libntdbg](https://github.com/ovidiuvio/libntdbg) ntdll native api wrapper, used by VSDebugPro
 - [**5**Star][6y] [C++] [sanje2v/mantapropertyextension](https://github.com/sanje2v/mantapropertyextension) This extension extends Windows Explorer Property System to show information about EXE, DLL, OBJ and other binary files
 - [**5**Star][3y] [C] [xiaomagexiao/gamedll](https://github.com/xiaomagexiao/gamedll) gamedll
-- [**5**Star][3y] [C++] [wyexe/newyugioh_cheatdll_x64](https://github.com/wyexe/NewYuGiOh_CheatDLL_x64) 
+- [**5**Star][3y] [C++] [wyexe/newyugioh_cheatdll_x64](https://github.com/wyexe/NewYuGiOh_CheatDLL_x64)
 - [**4**Star][1y] [C++] [aschrein/apiparse](https://github.com/aschrein/apiparse) Small project to learn windows dll hooking techniques based on sources of renderdoc and apitrace
 - [**4**Star][2y] [C] [re4lity/cve-2017-11907](https://github.com/re4lity/cve-2017-11907) Windows: heap overflow in jscript.dll in Array.sort
 - [**4**Star][1y] [C++] [rtcrowley/offensive-netsh-helper](https://github.com/rtcrowley/offensive-netsh-helper) Maintain Windows Persistence with an evil Netshell Helper DLL
@@ -6975,7 +6778,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**3**Star][4y] [C] [thomaslaurenson/cellxml-offreg](https://github.com/thomaslaurenson/cellxml-offreg) CellXML-offreg.exe is a portable Windows tool that parses an offline Windows Registry hive file and converts it to the RegXML format. CellXML-offreg leverages the Microsoft Windows offreg.dll library to aid in parsing the Registry structure.
 - [**2**Star][4y] [C#] [ericlaw1979/dllrewriter](https://github.com/ericlaw1979/dllrewriter) Rewrite Chrome.dll so Alt+F,C maps to Close Tab
 - [**2**Star][2y] [C++] [wanttobeno/dlib-attacher](https://github.com/wanttobeno/dlib-attacher) 给PE添加dll,只支持32位程序。
-- [**1**Star][2y] [c++] [C4t0ps1s/dllgrabber](https://bitbucket.org/c4t0ps1s/dllgrabber) 
+- [**1**Star][2y] [c++] [C4t0ps1s/dllgrabber](https://bitbucket.org/c4t0ps1s/dllgrabber)
 - [**1**Star][C#] [ceramicskate0/outlook_data_exfil](https://github.com/ceramicskate0/outlook_data_exfil) DLL/plugin that is a POC for data exfil via Outlook
 - [**1**Star][3y] [C#] [giovannidicanio/safearraysamples](https://github.com/giovannidicanio/safearraysamples) Mixed C++/C# project containing a native DLL that produces array data using safe arrays, that are consumed by a C# UI.
 - [**0**Star][2y] [C] [vallejocc/poc-find-chrome-ktlsprotocolmethod](https://github.com/vallejocc/poc-find-chrome-ktlsprotocolmethod) Proof of Concept code to download chrome.dll symbols from chromium symbols store and find the bssl::kTLSProtocolMethod table of pointers (usually hooked by malware)
@@ -6991,7 +6794,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2019.08 [osandamalith] [Converting an EXE to a DLL](https://osandamalith.com/2019/08/26/converting-an-exe-to-a-dll/)
 - 2019.06 [4hou] [域渗透——利用dnscmd在DNS服务器上实现远程加载Dll](https://www.4hou.com/penetration/18447.html)
 - 2019.06 [hexacorn] [Playing with Delay-Loaded DLLs…](http://www.hexacorn.com/blog/2019/06/03/playing-with-delay-loaded-dlls/)
-- 2019.05 [3gstudent] [域渗透——利用dnscmd在DNS服务器上实现远程加载Dll](https://3gstudent.github.io/3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-%E5%88%A9%E7%94%A8dnscmd%E5%9C%A8DNS%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E5%AE%9E%E7%8E%B0%E8%BF%9C%E7%A8%8B%E5%8A%A0%E8%BD%BDDll/)
 - 2019.05 [3gstudent] [域渗透——利用dnscmd在DNS服务器上实现远程加载Dll](https://3gstudent.github.io/3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-%E5%88%A9%E7%94%A8dnscmd%E5%9C%A8DNS%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E5%AE%9E%E7%8E%B0%E8%BF%9C%E7%A8%8B%E5%8A%A0%E8%BD%BDDll/)
 - 2019.05 [4sysops] [PS Protector: Convert your PowerShell module into a .NET assembly DLL](https://4sysops.com/archives/ps-protector-convert-your-powershell-module-into-a-net-assembly-dll/)
 - 2019.05 [0x00sec] [Malicious DLL execution using Apple's APSDaemon.exe signed binary](https://0x00sec.org/t/malicious-dll-execution-using-apples-apsdaemon-exe-signed-binary/13409/)
@@ -7018,7 +6820,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**273**Star][2y] [C++] [gellin/teamviewer_permissions_hook_v1](https://github.com/gellin/teamviewer_permissions_hook_v1) A proof of concept injectable C++ dll, that uses naked inline hooking and direct memory modification to change your TeamViewer permissions.
 - [**190**Star][2y] [C] [sud01oo/processinjection](https://github.com/sud01oo/ProcessInjection) Some ways to inject a DLL into a alive process
 - [**189**Star][7y] [C++] [hzphreak/vminjector](https://github.com/hzphreak/vminjector) DLL Injection tool to unlock guest VMs
-- [**189**Star][7y] [C++] [hzphreak/vminjector](https://github.com/hzphreak/VMInjector) DLL Injection tool to unlock guest VMs
 - [**188**Star][7d] [C++] [wunkolo/uwpdumper](https://github.com/wunkolo/uwpdumper) DLL and Injector for dumping UWP applications at run-time to bypass encrypted file system protection.
 - [**173**Star][12m] [C++] [jonatan1024/clrinject](https://github.com/jonatan1024/clrinject) 将 C＃EXE 或 DLL 程序集注入任意CLR 运行时或者其他进程的 AppDomain
 - [**173**Star][6m] [C++] [strivexjun/driverinjectdll](https://github.com/strivexjun/driverinjectdll) Using Driver Global Injection dll, it can hide DLL modules
@@ -7034,7 +6835,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**61**Star][9d] [C] [danielkrupinski/memject](https://github.com/danielkrupinski/memject) Simple Dll injector loading from memory. Supports PE header and entry point erasure. Written in C99.
 - [**58**Star][3y] [C++] [azerg/remote_dll_injector](https://github.com/azerg/remote_dll_injector) Stealth DLL injector
 - [**56**Star][8m] [C] [rapid7/reflectivedllinjection](https://github.com/rapid7/reflectivedllinjection) Reflective DLL injection is a library injection technique in which the concept of reflective programming is employed to perform the loading of a library from memory into a host process.
-- [**53**Star][2y] [C++] [mq1n/dllthreadinjectiondetector](https://github.com/mq1n/dllthreadinjectiondetector) 
+- [**53**Star][2y] [C++] [mq1n/dllthreadinjectiondetector](https://github.com/mq1n/dllthreadinjectiondetector)
 - [**52**Star][2y] [C] [nccgroup/ncloader](https://github.com/nccgroup/ncloader) A session-0 capable dll injection utility
 - [**51**Star][1y] [C] [adrianyy/keinject](https://github.com/adrianyy/keinject) Kernel LdrLoadDll injector
 - [**51**Star][3y] [C++] [zer0mem0ry/standardinjection](https://github.com/zer0mem0ry/standardinjection) A simple Dll Injection demonstration
@@ -7073,7 +6874,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**7**Star][2y] [C++] [pfussell/pivotal](https://github.com/pfussell/pivotal) A MITM proxy server for reflective DLL injection through WinINet
 - [**7**Star][4m] [C] [userexistserror/injectdll](https://github.com/userexistserror/injectdll) Inject a Dll from memory
 - [**6**Star][1y] [thesph1nx/covenant](https://github.com/thesph1nx/covenant) Metepreter clone - DLL Injection Backdoor
-- [**6**Star][5y] [C] [mwwolters/dll-injection](https://github.com/mwwolters/DLL-Injection) 
+- [**6**Star][5y] [C] [mwwolters/dll-injection](https://github.com/mwwolters/DLL-Injection)
 - [**5**Star][4y] [C++] [ciantic/remotethreader](https://github.com/ciantic/remotethreader) Helps you to inject your dll in another process
 - [**4**Star][6m] [C++] [reclassnet/reclass.net-memorypipeplugin](https://github.com/reclassnet/reclass.net-memorypipeplugin) A ReClass.NET plugin which allows direct memory access via dll injection.
 - [**1**Star][10m] [PS] [getrektboy724/maldll](https://github.com/getrektboy724/maldll) A bunch of malicius dll to inject to a process
@@ -7163,7 +6964,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 
 
 - [**431**Star][7m] [Pascal] [mojtabatajik/robber](https://github.com/mojtabatajik/robber) Robber is open source tool for finding executables prone to DLL hijacking
-- [**299**Star][11m] [C++] [anhkgg/superdllhijack](https://github.com/anhkgg/superdllhijack) A general DLL hijack technology, don't need to manually export the same function interface of the DLL, so easy! 
+- [**299**Star][11m] [C++] [anhkgg/superdllhijack](https://github.com/anhkgg/superdllhijack) A general DLL hijack technology, don't need to manually export the same function interface of the DLL, so easy!
 - [**175**Star][5m] [C++] [strivexjun/aheadlib-x86-x64](https://github.com/strivexjun/aheadlib-x86-x64) hijack dll Source Code Generator. support x86/x64
 - [**126**Star][1y] [PS] [itm4n/ikeext-privesc](https://github.com/itm4n/ikeext-privesc) Windows IKEEXT DLL Hijacking Exploit Tool
 - [**113**Star][5y] [C++] [adamkramer/dll_hijack_detect](https://github.com/adamkramer/dll_hijack_detect) Detects DLL hijacking in running processes on Windows systems
@@ -7174,10 +6975,10 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**44**Star][5y] [JS] [rapid7/dllhijackauditkit](https://github.com/rapid7/dllhijackauditkit) This toolkit detects applications vulnerable to DLL hijacking (released in 2010)
 - [**32**Star][12m] [Assembly] [zeffy/prxdll_templates](https://github.com/zeffy/prxdll_templates) Thread-safe and deadlock free template projects for hijacking various Windows system DLLs
 - [**28**Star][24d] [C] [myfreeer/qbittorrent-portable](https://github.com/myfreeer/qbittorrent-portable) dll-hijack based qbittorrent portable plugin
-- [**24**Star][4y] [C] [fortiguard-lion/anti-dll-hijacking](https://github.com/fortiguard-lion/anti-dll-hijacking) 
+- [**24**Star][4y] [C] [fortiguard-lion/anti-dll-hijacking](https://github.com/fortiguard-lion/anti-dll-hijacking)
 - [**23**Star][9m] [C] [djhohnstein/wlbsctrl_poc](https://github.com/djhohnstein/wlbsctrl_poc) C++ POC code for the wlbsctrl.dll hijack on IKEEXT
 - [**18**Star][9m] [C#] [djhohnstein/tsmsisrv_poc](https://github.com/djhohnstein/tsmsisrv_poc) C# POC code for the SessionEnv dll hijack by utilizing called functions of TSMSISrv.dll
-- [**12**Star][2y] [C++] [guanginuestc/dll-hijacking](https://github.com/guanginuestc/dll-hijacking) 
+- [**12**Star][2y] [C++] [guanginuestc/dll-hijacking](https://github.com/guanginuestc/dll-hijacking)
 - [**11**Star][4m] [C] [myfreeer/vscode-portable](https://github.com/myfreeer/vscode-portable) make visual studio code portable with dll-hijack
 - [**2**Star][1y] [kernelm0de/cve-2018-8090](https://github.com/kernelm0de/cve-2018-8090) DLL Hijacking in Quickheal Total Security/ Internet Security/ Antivirus Pro (Installers)
 
@@ -7187,7 +6988,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 
 - 2019.06 [4hou] [戴尔预装的SupportAssist组件存在DLL劫持漏洞，全球超过1亿台设备面临网络攻击风险](https://www.4hou.com/vulnerable/18764.html)
 - 2019.05 [4hou] [《Lateral Movement — SCM and DLL Hijacking Primer》的利用扩展](https://www.4hou.com/technology/18008.html)
-- 2019.04 [3gstudent] [《Lateral Movement — SCM and DLL Hijacking Primer》的利用扩展](https://3gstudent.github.io/3gstudent.github.io/Lateral-Movement-SCM-and-DLL-Hijacking-Primer-%E7%9A%84%E5%88%A9%E7%94%A8%E6%89%A9%E5%B1%95/)
 - 2019.04 [3gstudent] [《Lateral Movement — SCM and DLL Hijacking Primer》的利用扩展](https://3gstudent.github.io/3gstudent.github.io/Lateral-Movement-SCM-and-DLL-Hijacking-Primer-%E7%9A%84%E5%88%A9%E7%94%A8%E6%89%A9%E5%B1%95/)
 - 2019.04 [specterops] [Lateral Movement — SCM and Dll Hijacking Primer](https://medium.com/p/d2f61e8ab992)
 - 2019.01 [sans] [DLL Hijacking Like a Boss!](https://www.sans.org/cyber-security-summit/archives/file/summit_archive_1493862085.pdf)
@@ -7210,7 +7010,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2017.03 [opera] [DLL hijacking and the Opera browser](http://blogs.opera.com/security/2017/03/dll-hijacking-opera-browser/)
 - 2017.02 [4hou] [如何利用 DLL hijack 轻松绕过AMSI？](http://www.4hou.com/technology/3179.html)
 - 2016.12 [4hou] [DLL劫持漏洞自动化识别工具Rattler测试](http://www.4hou.com/technology/1156.html)
-- 2016.12 [3gstudent] [DLL劫持漏洞自动化识别工具Rattler测试](https://3gstudent.github.io/3gstudent.github.io/DLL%E5%8A%AB%E6%8C%81%E6%BC%8F%E6%B4%9E%E8%87%AA%E5%8A%A8%E5%8C%96%E8%AF%86%E5%88%AB%E5%B7%A5%E5%85%B7Rattler%E6%B5%8B%E8%AF%95/)
 - 2016.12 [3gstudent] [DLL劫持漏洞自动化识别工具Rattler测试](https://3gstudent.github.io/3gstudent.github.io/DLL%E5%8A%AB%E6%8C%81%E6%BC%8F%E6%B4%9E%E8%87%AA%E5%8A%A8%E5%8C%96%E8%AF%86%E5%88%AB%E5%B7%A5%E5%85%B7Rattler%E6%B5%8B%E8%AF%95/)
 - 2016.10 [trustfoundry] [What is DLL Hijacking?](https://trustfoundry.net/what-is-dll-hijacking/)
 - 2016.08 [hackingarticles] [Hack Remote Windows PC using Office OLE Multiple DLL Hijack Vulnerabilities](http://www.hackingarticles.in/hack-remote-windows-pc-using-office-ole-multiple-dll-hijack-vulnerabilities/)
@@ -7268,10 +7067,10 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**121**Star][9m] [C] [dimopouloselias/alpc-mmc-uac-bypass](https://github.com/dimopouloselias/alpc-mmc-uac-bypass) UAC Bypass with mmc via alpc
 - [**104**Star][3y] [C++] [cn33liz/tpminituacbypass](https://github.com/cn33liz/tpminituacbypass) Bypassing User Account Control (UAC) using TpmInit.exe
 - [**86**Star][4y] [Visual Basic .NET] [vozzie/uacscript](https://github.com/vozzie/uacscript) Windows 7 UAC Bypass Vulnerability in the Windows Script Host
-- [**79**Star][3y] [PS] [winscripting/uac-bypass](https://github.com/winscripting/uac-bypass) 
+- [**79**Star][3y] [PS] [winscripting/uac-bypass](https://github.com/winscripting/uac-bypass)
 - [**75**Star][8m] [Go] [0x9ef/golang-uacbypasser](https://github.com/0x9ef/golang-uacbypasser) UAC bypass techniques implemented and written in Go
 - [**75**Star][3m] [Py] [zenix-blurryface/sneakyexe](https://github.com/zenix-blurryface/sneakyexe) Embedding a "UAC-Bypassing" function into your custom payload
-- [**67**Star][2y] [C++] [3gstudent/use-com-objects-to-bypass-uac](https://github.com/3gstudent/use-com-objects-to-bypass-uac) 
+- [**67**Star][2y] [C++] [3gstudent/use-com-objects-to-bypass-uac](https://github.com/3gstudent/use-com-objects-to-bypass-uac)
 - [**62**Star][9m] [Ruby] [gushmazuko/winbypass](https://github.com/gushmazuko/winbypass) Windows UAC Bypass
 - [**59**Star][5y] [C++] [malwaretech/uacelevator](https://github.com/malwaretech/uacelevator) Passive UAC elevation using dll infection
 - [**53**Star][2y] [fsecurelabs/defcon25_uac_workshop](https://github.com/FSecureLABS/defcon25_uac_workshop) UAC 0Day all day!
@@ -7280,14 +7079,13 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**36**Star][3y] [C++] [cn33liz/tpminituacanniversarybypass](https://github.com/cn33liz/tpminituacanniversarybypass) Bypassing User Account Control (UAC) using TpmInit.exe
 - [**36**Star][2y] [fuzzysecurity/defcon-beijing-uac](https://github.com/fuzzysecurity/defcon-beijing-uac) Slide deck for DefCon Beijing
 - [**29**Star][1y] [C] [dro/uac-launchinf-poc](https://github.com/dro/uac-launchinf-poc) Windows 10 UAC bypass PoC using LaunchInfSection
-- [**27**Star][1y] [C++] [alphaseclab/bypass-uac](https://github.com/alphaseclab/bypass-uac) 
+- [**27**Star][1y] [C++] [alphaseclab/bypass-uac](https://github.com/alphaseclab/bypass-uac)
 - [**17**Star][1y] [C] [advancedhacker101/bypass-uac](https://github.com/advancedhacker101/bypass-uac) Small utility written in c++ to bypass windows UAC prompt
 - [**14**Star][2y] [PS] [bartblaze/dccwuacbypass](https://github.com/bartblaze/dccwuacbypass) PowerShell script to bypass UAC using DCCW
 - [**12**Star][3m] [Py] [rootm0s/uub](https://github.com/rootm0s/uub) UIAccess UAC Bypass using token duplication and keyboard events
 - [**10**Star][1y] [125k/uac_bypass_hid](https://github.com/125K/UAC_Bypass_HID) This payload bypasses the UAC
-- [**10**Star][1y] [125k/uac_bypass_hid](https://github.com/125k/uac_bypass_hid) This payload bypasses the UAC
 - [**9**Star][2m] [C++] [pedro-javierf/twicexploit](https://github.com/pedro-javierf/twicexploit) Proof of concept open source implementation of an UAC bypass exploit, based in 2 windows failures.
-- [**6**Star][3y] [Batchfile] [caledoniaproject/sdclt-win10-uacbypass](https://github.com/caledoniaproject/sdclt-win10-uacbypass) 
+- [**6**Star][3y] [Batchfile] [caledoniaproject/sdclt-win10-uacbypass](https://github.com/caledoniaproject/sdclt-win10-uacbypass)
 - [**3**Star][2y] [Batchfile] [genome21/bypassuac](https://github.com/genome21/bypassuac) Program bypasses the UAC prompt for Admin privileges when running a program.
 
 
@@ -7301,7 +7099,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2019.04 [markmotig] [Brute Forcing Admin Passwords with UAC](https://medium.com/p/e711c551ad7e)
 - 2019.03 [4hou] [通过模拟可信目录绕过UAC的利用分析](https://www.4hou.com/technology/16713.html)
 - 2019.03 [aliyun] [如何滥用Access Tokens UIAccess绕过UAC](https://xz.aliyun.com/t/4126)
-- 2019.02 [3gstudent] [通过模拟可信目录绕过UAC的利用分析](https://3gstudent.github.io/3gstudent.github.io/%E9%80%9A%E8%BF%87%E6%A8%A1%E6%8B%9F%E5%8F%AF%E4%BF%A1%E7%9B%AE%E5%BD%95%E7%BB%95%E8%BF%87UAC%E7%9A%84%E5%88%A9%E7%94%A8%E5%88%86%E6%9E%90/)
 - 2019.02 [3gstudent] [通过模拟可信目录绕过UAC的利用分析](https://3gstudent.github.io/3gstudent.github.io/%E9%80%9A%E8%BF%87%E6%A8%A1%E6%8B%9F%E5%8F%AF%E4%BF%A1%E7%9B%AE%E5%BD%95%E7%BB%95%E8%BF%87UAC%E7%9A%84%E5%88%A9%E7%94%A8%E5%88%86%E6%9E%90/)
 - 2019.02 [sans] [UAC is not all that bad really](https://isc.sans.edu/forums/diary/UAC+is+not+all+that+bad+really/24620/)
 - 2019.01 [fuzzysecurity] [Anatomy of UAC Attacks](http://fuzzysecurity.com/tutorials/27.html)
@@ -7317,7 +7114,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2018.05 [4hou] [如何利用注册表修改技术绕过UAC限制](http://www.4hou.com/web/11849.html)
 - 2018.05 [360] [利用注册表键值绕过UAC实现提权](https://www.anquanke.com/post/id/145538/)
 - 2018.05 [3gstudent] [通过COM组件IARPUninstallStringLauncher绕过UAC](https://3gstudent.github.io/3gstudent.github.io/%E9%80%9A%E8%BF%87COM%E7%BB%84%E4%BB%B6IARPUninstallStringLauncher%E7%BB%95%E8%BF%87UAC/)
-- 2018.05 [3gstudent] [通过COM组件IARPUninstallStringLauncher绕过UAC](https://3gstudent.github.io/3gstudent.github.io/%E9%80%9A%E8%BF%87COM%E7%BB%84%E4%BB%B6IARPUninstallStringLauncher%E7%BB%95%E8%BF%87UAC/)
 - 2018.03 [rehmann] [Edimax EW-7811Un, EW-7611ULB, EW-7722UTn, EW-7811UTC, EW-7822ULC, EW7833UAC USB Wifi Drivers](https://rehmann.co/blog/edimax-ew-7811un-ew-7611ulb-ew-7722utn-ew-7811utc-ew-7822ulc-ew7833uac-usb-wifi-drivers/)
 - 2018.01 [ZeroNights] [James Forshaw  - Abusing Access Tokens for UAC Bypasses](https://www.youtube.com/watch?v=UTvOfmtNVKI)
 - 2017.12 [caceriadespammers] [UAC Bypass & Research con UAC-A-Mola por @pablogonzalezpe](http://www.caceriadespammers.com.ar/2017/12/uac-bypass-research-con-uac-a-mola-pablogonzalezpe.html)
@@ -7330,7 +7126,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2017.09 [aliyun] [Empire中的Invoke-WScriptBypassUAC利用分析](https://xz.aliyun.com/t/1025)
 - 2017.09 [4hou] [Empire中的Invoke-WScriptBypassUAC利用分析](http://www.4hou.com/technology/7636.html)
 - 2017.09 [4hou] [绕过UAC系列之 SDCLT的利用](http://www.4hou.com/technology/5704.html)
-- 2017.09 [3gstudent] [Empire中的Invoke-WScriptBypassUAC利用分析](https://3gstudent.github.io/3gstudent.github.io/Empire%E4%B8%AD%E7%9A%84Invoke-WScriptBypassUAC%E5%88%A9%E7%94%A8%E5%88%86%E6%9E%90/)
 - 2017.09 [3gstudent] [Empire中的Invoke-WScriptBypassUAC利用分析](https://3gstudent.github.io/3gstudent.github.io/Empire%E4%B8%AD%E7%9A%84Invoke-WScriptBypassUAC%E5%88%A9%E7%94%A8%E5%88%86%E6%9E%90/)
 - 2017.09 [fortinet] [PowerPoint File Armed with CVE-2017-0199 and UAC Bypass](https://www.fortinet.com/blog/threat-research/powerpoint-file-armed-with-cve-2017-0199-and-uac-bypass.html)
 - 2017.08 [360] [利用CMSTP.exe实现UAC Bypass和加载DLL](https://www.anquanke.com/post/id/86685/)
@@ -7371,7 +7166,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2016.09 [360] [Bypass-UAC-帮你绕过Windows的用户账户控制](https://www.anquanke.com/post/id/84582/)
 - 2016.09 [freebuf] [Bypass UAC的一个实例分析](http://www.freebuf.com/articles/system/112823.html)
 - 2016.08 [hackingarticles] [Hack Admin Access of Remote Windows 10 PC using TpmInit UACBypass](http://www.hackingarticles.in/hack-admin-access-remote-windows-10-pc-using-tpminituacbypass/)
-- 2016.08 [3gstudent] [Study Notes Weekly No.1(Monitor WMI & ExportsToC++ & Use DiskCleanup bypass UAC)](https://3gstudent.github.io/3gstudent.github.io/Study-Notes-Weekly-No.1(Monitor-WMI_ExportsToC++_Use-DiskCleanup-bypass-UAC)/)
 - 2016.08 [3gstudent] [Study Notes Weekly No.1(Monitor WMI & ExportsToC++ & Use DiskCleanup bypass UAC)](https://3gstudent.github.io/3gstudent.github.io/Study-Notes-Weekly-No.1(Monitor-WMI_ExportsToC++_Use-DiskCleanup-bypass-UAC)/)
 - 2016.08 [ensilo] [Adding UAC Bypass to the Attacker’s Tool Set](https://blog.ensilo.com/adding-uac-bypass-to-the-attackers-tool-set)
 - 2016.08 [360] [使用EVENTVWR.EXE和注册表劫持实现“无文件”UAC绕过](https://www.anquanke.com/post/id/84411/)
@@ -7436,8 +7230,8 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**17**Star][6m] [olafhartong/sysmon-configs](https://github.com/olafhartong/sysmon-configs) Various complete configs
 - [**12**Star][4y] [defensivedepth/sysmon_ossec](https://github.com/defensivedepth/sysmon_ossec) OSSEC Decoder & Rulesets for Sysmon Events
 - [**10**Star][6m] [sametsazak/sysmon](https://github.com/sametsazak/sysmon) Sysmon and wazuh integration with Sigma sysmon rules [updated]
-- [**9**Star][1y] [PS] [davebremer/export-sysmonlogs](https://github.com/davebremer/export-sysmonlogs) 
-- [**9**Star][2y] [kidcrash22/sysmon-threat-intel](https://github.com/kidcrash22/sysmon-threat-intel) 
+- [**9**Star][1y] [PS] [davebremer/export-sysmonlogs](https://github.com/davebremer/export-sysmonlogs)
+- [**9**Star][2y] [kidcrash22/sysmon-threat-intel](https://github.com/kidcrash22/sysmon-threat-intel)
 - [**8**Star][19d] [PS] [hestat/ossec-sysmon](https://github.com/hestat/ossec-sysmon) A Ruleset to enhance detection capabilities of Ossec using Sysmon
 - [**1**Star][3y] [PS] [nick-c/sysmon-installer](https://github.com/nick-c/sysmon-installer) A Sysmon Install script using the Powershell Application Deployment Toolkit
 - [**1**Star][3m] [PS] [op7ic/sysmonfencer](https://github.com/op7ic/sysmonfencer) A tool designed to help in deployment and log collection for Sysmon across windows domain
@@ -7532,7 +7326,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2017.04 [3or] [Hunting mimikatz with sysmon: monitoring OpenProcess()](https://blog.3or.de/hunting-mimikatz-with-sysmon-monitoring-openprocess.html)
 - 2017.04 [4hou] [通过APC实现Dll注入——绕过Sysmon监控](http://www.4hou.com/technology/4393.html)
 - 2017.04 [cyberwardog] [Chronicles of a Threat Hunter: Hunting for Remotely Executed Code via Services & Lateral Movement with Sysmon, Win Event Logs, and ELK](https://cyberwardog.blogspot.com/2017/04/chronicles-of-threat-hunter-hunting-for_11.html)
-- 2017.04 [3gstudent] [通过APC实现Dll注入——绕过Sysmon监控](https://3gstudent.github.io/3gstudent.github.io/%E9%80%9A%E8%BF%87APC%E5%AE%9E%E7%8E%B0Dll%E6%B3%A8%E5%85%A5-%E7%BB%95%E8%BF%87Sysmon%E7%9B%91%E6%8E%A7/)
 - 2017.04 [3gstudent] [通过APC实现Dll注入——绕过Sysmon监控](https://3gstudent.github.io/3gstudent.github.io/%E9%80%9A%E8%BF%87APC%E5%AE%9E%E7%8E%B0Dll%E6%B3%A8%E5%85%A5-%E7%BB%95%E8%BF%87Sysmon%E7%9B%91%E6%8E%A7/)
 - 2017.04 [cyberwardog] [Chronicles of a Threat Hunter: Hunting for In-Memory Mimikatz with Sysmon, Win Event Logs, and ELK - Part III (Overpass-the-Hash - EIDs 10, 4624, 4648, 4768)](https://cyberwardog.blogspot.com/2017/04/chronicles-of-threat-hunter-hunting-for.html)
 - 2017.03 [cyberwardog] [Chronicles of a Threat Hunter: Hunting for WMImplant with Sysmon and ELK - Part I (EID 1,12, 13, 17 & 18)](https://cyberwardog.blogspot.com/2017/03/chronicles-of-threat-hunter-hunting-for_26.html)
@@ -7646,13 +7439,8 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2018.08 [4sysops] [Query multiple Windows event logs with PowerShell](https://4sysops.com/archives/query-multiple-windows-event-logs-with-powershell/)
 - 2018.07 [criteo] [Grab ETW Session, Providers and Events](http://labs.criteo.com/2018/07/grab-etw-session-providers-and-events/)
 - 2018.07 [3gstudent] [Windows Event Viewer Log (EVT)单条日志清除（三）——删除当前系统指定指定时间段evt日志记录](https://3gstudent.github.io/3gstudent.github.io/Windows-Event-Viewer-Log-(EVT)%E5%8D%95%E6%9D%A1%E6%97%A5%E5%BF%97%E6%B8%85%E9%99%A4-%E4%B8%89-%E5%88%A0%E9%99%A4%E5%BD%93%E5%89%8D%E7%B3%BB%E7%BB%9F%E6%8C%87%E5%AE%9A%E6%8C%87%E5%AE%9A%E6%97%B6%E9%97%B4%E6%AE%B5evt%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/)
-- 2018.07 [3gstudent] [Windows Event Viewer Log (EVT)单条日志清除（三）——删除当前系统指定指定时间段evt日志记录](https://3gstudent.github.io/3gstudent.github.io/Windows-Event-Viewer-Log-(EVT)%E5%8D%95%E6%9D%A1%E6%97%A5%E5%BF%97%E6%B8%85%E9%99%A4-%E4%B8%89-%E5%88%A0%E9%99%A4%E5%BD%93%E5%89%8D%E7%B3%BB%E7%BB%9F%E6%8C%87%E5%AE%9A%E6%8C%87%E5%AE%9A%E6%97%B6%E9%97%B4%E6%AE%B5evt%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/)
 - 2018.07 [pentesttoolz] [LogonTracer – Investigate Malicious Windows Logon By Visualizing And Analyzing Windows Event Log](https://pentesttoolz.com/2018/07/17/logontracer-investigate-malicious-windows-logon-by-visualizing-and-analyzing-windows-event-log/)
 - 2018.07 [dragos] [EvtxToElk: A Python Module to Load Windows Event Logs into ElasticSearch](https://dragos.com/blog/20180717EvtxToElk.html)
-- 2018.07 [3gstudent] [Windows Event Viewer Log (EVT)单条日志清除（二）——程序实现删除evt文件指定时间段的日志记录](https://3gstudent.github.io/3gstudent.github.io/Windows-Event-Viewer-Log-(EVT)%E5%8D%95%E6%9D%A1%E6%97%A5%E5%BF%97%E6%B8%85%E9%99%A4-%E4%BA%8C-%E7%A8%8B%E5%BA%8F%E5%AE%9E%E7%8E%B0%E5%88%A0%E9%99%A4evt%E6%96%87%E4%BB%B6%E6%8C%87%E5%AE%9A%E6%97%B6%E9%97%B4%E6%AE%B5%E7%9A%84%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/)
-- 2018.07 [3gstudent] [Windows Event Viewer Log (EVT)单条日志清除（二）——程序实现删除evt文件指定时间段的日志记录](https://3gstudent.github.io/3gstudent.github.io/Windows-Event-Viewer-Log-(EVT)%E5%8D%95%E6%9D%A1%E6%97%A5%E5%BF%97%E6%B8%85%E9%99%A4-%E4%BA%8C-%E7%A8%8B%E5%BA%8F%E5%AE%9E%E7%8E%B0%E5%88%A0%E9%99%A4evt%E6%96%87%E4%BB%B6%E6%8C%87%E5%AE%9A%E6%97%B6%E9%97%B4%E6%AE%B5%E7%9A%84%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/)
-- 2018.07 [3gstudent] [Windows Event Viewer Log (EVT)单条日志清除（一）——删除思路与实例](https://3gstudent.github.io/3gstudent.github.io/Windows-Event-Viewer-Log-(EVT)%E5%8D%95%E6%9D%A1%E6%97%A5%E5%BF%97%E6%B8%85%E9%99%A4-%E4%B8%80-%E5%88%A0%E9%99%A4%E6%80%9D%E8%B7%AF%E4%B8%8E%E5%AE%9E%E4%BE%8B/)
-- 2018.07 [3gstudent] [Windows Event Viewer Log (EVT)单条日志清除（一）——删除思路与实例](https://3gstudent.github.io/3gstudent.github.io/Windows-Event-Viewer-Log-(EVT)%E5%8D%95%E6%9D%A1%E6%97%A5%E5%BF%97%E6%B8%85%E9%99%A4-%E4%B8%80-%E5%88%A0%E9%99%A4%E6%80%9D%E8%B7%AF%E4%B8%8E%E5%AE%9E%E4%BE%8B/)
 - 2018.06 [hecfblog] [ETW Event Tracing for Windows and ETL Files](http://www.hecfblog.com/2018/06/etw-event-tracing-for-windows-and-etl.html)
 - 2018.04 [5yx] [Windows Event Log to the Dark Side](https://medium.com/p/9c8ad92637f2)
 - 2018.03 [intrinsec] [Centralisation des journaux avec Windows Event Forwarding](https://securite.intrinsec.com/2018/03/16/centralisation-wef-siem/)
@@ -7675,7 +7463,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2017.01 [rsa] [Logs - Collecting Windows Events with WEC](https://community.rsa.com/community/products/netwitness/blog/2017/01/30/logs-collecting-windows-events-with-wec)
 - 2017.01 [rsa] [ESA - Intrusion Detection with Windows Event Logs](https://community.rsa.com/community/products/netwitness/blog/2017/01/06/esa-intrusion-detection-with-windows-event-logs)
 - 2016.11 [4hou] [如何通过ETW实现对USB键盘的键盘记录？](http://www.4hou.com/technology/1210.html)
-- 2016.10 [3gstudent] [Study Notes Weekly No.3(Use odbcconf to load dll & Get-Exports & ETW USB Keylogger)](https://3gstudent.github.io/3gstudent.github.io/Study-Notes-Weekly-No.3(Use-odbcconf-to-load-dll-&-Get-Exports-&-ETW-USB-Keylogger)/)
 - 2016.10 [3gstudent] [Study Notes Weekly No.3(Use odbcconf to load dll & Get-Exports & ETW USB Keylogger)](https://3gstudent.github.io/3gstudent.github.io/Study-Notes-Weekly-No.3(Use-odbcconf-to-load-dll-&-Get-Exports-&-ETW-USB-Keylogger)/)
 - 2016.09 [sans] [Windows Events log for IR/Forensics ,Part 2](https://isc.sans.edu/forums/diary/Windows+Events+log+for+IRForensics+Part+2/21501/)
 - 2016.09 [sans] [Windows Events log for IR/Forensics ,Part 1](https://isc.sans.edu/forums/diary/Windows+Events+log+for+IRForensics+Part+1/21493/)
@@ -7711,9 +7498,9 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**921**Star][7m] [PS] [api0cradle/ultimateapplockerbypasslist](https://github.com/api0cradle/ultimateapplockerbypasslist) The goal of this repository is to document the most common techniques to bypass AppLocker.
 - [**132**Star][13d] [PS] [nsacyber/applocker-guidance](https://github.com/nsacyber/applocker-guidance) Configuration guidance for implementing application whitelisting with AppLocker. #nsacyber
 - [**51**Star][8m] [PS] [api0cradle/poweral](https://github.com/api0cradle/poweral) A Powershell module that helps you identify AppLocker weaknesses
-- [**40**Star][2y] [milkdevil/ultimateapplockerbypasslist](https://github.com/milkdevil/ultimateapplockerbypasslist) 
+- [**40**Star][2y] [milkdevil/ultimateapplockerbypasslist](https://github.com/milkdevil/ultimateapplockerbypasslist)
 - [**37**Star][4y] [C#] [cn33liz/sharpcat](https://github.com/cn33liz/sharpcat) SharpCat - A Simple Reversed Command Shell which can be started using InstallUtil (Bypassing AppLocker)
-- [**33**Star][2y] [C] [demonsec666/secist_applocker](https://github.com/demonsec666/secist_applocker) 
+- [**33**Star][2y] [C] [demonsec666/secist_applocker](https://github.com/demonsec666/secist_applocker)
 - [**20**Star][1y] [ivan1ee/regasm_installutil_applockerbypass](https://github.com/ivan1ee/regasm_installutil_applockerbypass) AppLocker Bypass With Regasm/InstallUtil
 - [**14**Star][2y] [XSLT] [3gstudent/use-msxsl-to-bypass-applocker](https://github.com/3gstudent/use-msxsl-to-bypass-applocker) Learn from Casey Smith@subTee
 - [**8**Star][5y] [PS] [strictlymike/invoke-schmapplocker](https://github.com/strictlymike/invoke-schmapplocker) Bypass AppLocker EXE file policies
@@ -7759,10 +7546,8 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2018.05 [oddvar] [Real whitelisting attempt using AppLocker](https://oddvar.moe/2018/05/14/real-whitelisting-attempt-using-applocker/)
 - 2018.05 [pentestlab] [AppLocker Bypass – CMSTP](https://pentestlab.blog/2018/05/10/applocker-bypass-cmstp/)
 - 2018.04 [3gstudent] [利用Assembly Load & LoadFile绕过Applocker的分析总结](https://3gstudent.github.io/3gstudent.github.io/%E5%88%A9%E7%94%A8Assembly-Load-&-LoadFile%E7%BB%95%E8%BF%87Applocker%E7%9A%84%E5%88%86%E6%9E%90%E6%80%BB%E7%BB%93/)
-- 2018.04 [3gstudent] [利用Assembly Load & LoadFile绕过Applocker的分析总结](https://3gstudent.github.io/3gstudent.github.io/%E5%88%A9%E7%94%A8Assembly-Load-&-LoadFile%E7%BB%95%E8%BF%87Applocker%E7%9A%84%E5%88%86%E6%9E%90%E6%80%BB%E7%BB%93/)
 - 2018.04 [aliyun] [利用PowerShell诊断脚本执行命令并绕过AppLocker](https://xz.aliyun.com/t/2247)
 - 2018.03 [secist] [AppLocker_Bypass List](http://www.secist.com/archives/6506.html)
-- 2018.03 [3gstudent] [使用LUA脚本绕过Applocker的测试分析](https://3gstudent.github.io/3gstudent.github.io/%E4%BD%BF%E7%94%A8LUA%E8%84%9A%E6%9C%AC%E7%BB%95%E8%BF%87Applocker%E7%9A%84%E6%B5%8B%E8%AF%95%E5%88%86%E6%9E%90/)
 - 2018.03 [3gstudent] [使用LUA脚本绕过Applocker的测试分析](https://3gstudent.github.io/3gstudent.github.io/%E4%BD%BF%E7%94%A8LUA%E8%84%9A%E6%9C%AC%E7%BB%95%E8%BF%87Applocker%E7%9A%84%E6%B5%8B%E8%AF%95%E5%88%86%E6%9E%90/)
 - 2018.03 [aliyun] [使用LUA脚本绕过Applocker的测试分析](https://xz.aliyun.com/t/2110)
 - 2018.02 [4hou] [如何利用PowerShell诊断脚本执行命令并绕过AppLocker](http://www.4hou.com/system/10274.html)
@@ -7887,9 +7672,9 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**1011**Star][1y] [C] [ionescu007/simplevisor](https://github.com/ionescu007/simplevisor) a simple, portable, Intel VT-x hypervisor with two specific goals: using the least amount of assembly code (10 lines), and having the smallest amount of VMX-related code to support dynamic hyperjacking and unhyperjacking (that is, virtualizing the host state from within the host). It works on Windows and UEFI.
 - [**717**Star][23d] [C++] [tandasat/hyperplatform](https://github.com/tandasat/hyperplatform) Intel VT-x based hypervisor aiming to provide a thin VM-exit filtering platform on Windows.
 - [**570**Star][12m] [C] [asamy/ksm](https://github.com/asamy/ksm) A fast, hackable and simple x64 VT-x hypervisor for Windows and Linux. Builtin userspace sandbox and introspection engine.
-    - Also In Section: [Linux->Tools->Recent Add](#203d00ef3396d68f5277c90279f4ebf3) |
+- Also In Section: [Linux->Tools->Recent Add](#203d00ef3396d68f5277c90279f4ebf3) |
 - [**449**Star][3y] [POV-Ray SDL] [hzqst/syscall-monitor](https://github.com/hzqst/syscall-monitor)  a system monitor program (like Sysinternal's Process Monitor) using Intel VT-X/EPT for Windows7+
-    - Also In Section: [Windows->Tools->SystemCall](#d295182c016bd9c2d5479fe0e98a75df) |
+- Also In Section: [Windows->Tools->SystemCall](#d295182c016bd9c2d5479fe0e98a75df) |
 - [**189**Star][10m] [C++] [kelvinhack/khypervisor](https://github.com/kelvinhack/khypervisor) kHypervisor is a lightweight bluepill-like nested VMM for Windows, it provides and emulating a basic function of Intel VT-x
 
 
@@ -7918,8 +7703,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 
 
 - [**725**Star][2m] [HTML] [j00ru/windows-syscalls](https://github.com/j00ru/windows-syscalls) Windows System Call Tables (NT/2000/XP/2003/Vista/2008/7/2012/8/10)
-- [**449**Star][3y] [POV-Ray SDL] [hzqst/syscall-monitor](https://github.com/hzqst/syscall-monitor)  a system monitor program (like Sysinternal's Process Monitor) using Intel VT-X/EPT for Windows7+
-    - Also In Section: [Windows->Tools->VT](#19cfd3ea4bd01d440efb9d4dd97a64d0) |
+- Also In Section: [Windows->Tools->VT](#19cfd3ea4bd01d440efb9d4dd97a64d0) |
 - [**328**Star][2m] [C] [hfiref0x/syscalltables](https://github.com/hfiref0x/syscalltables) Windows NT x64 Syscall tables
 - [**277**Star][2y] [Assembly] [tinysec/windows-syscall-table](https://github.com/tinysec/windows-syscall-table) windows syscall table from xp ~ 10 rs4
 
@@ -7940,7 +7724,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**389**Star][2m] [C#] [microsoft/binskim](https://github.com/microsoft/binskim) A binary static analysis tool that provides security and correctness results for Windows Portable Executable and *nix ELF binary formats
 - [**387**Star][19d] [Jupyter Notebook] [microsoft/windowsdefenderatp-hunting-queries](https://github.com/microsoft/windowsdefenderatp-hunting-queries) Sample queries for Advanced hunting in Microsoft Defender ATP
 - [**370**Star][27d] [Ruby] [winrb/winrm](https://github.com/winrb/winrm) Ruby library for Windows Remote Management
-- [**367**Star][1y] [PS] [netspi/pesecurity](https://github.com/netspi/pesecurity) PowerShell module to check if a Windows binary (EXE/DLL) has been compiled with ASLR, DEP, SafeSEH, StrongNaming, and Authenticode.
 - [**360**Star][12d] [C#] [digitalruby/ipban](https://github.com/digitalruby/ipban)  Monitors failed logins and bad behavior and bans ip addresses on Windows and Linux. Highly configurable, lean and powerful.
 - [**353**Star][2y] [C++] [zerosum0x0/winrepl](https://github.com/zerosum0x0/winrepl) x86 and x64 assembly "read-eval-print loop" shell for Windows
 - [**318**Star][3y] [C] [sdhand/x11fs](https://github.com/sdhand/x11fs) A tool for manipulating X windows
@@ -8181,9 +7964,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - 2017.04 [4hou] [Windows Shellcode学习笔记——利用VirtualAlloc绕过DEP](http://www.4hou.com/technology/4093.html)
 - 2017.03 [4hou] [Windows Shellcode学习笔记——通过VirtualProtect绕过DEP](http://www.4hou.com/technology/3943.html)
 - 2017.03 [3gstudent] [Windows Shellcode学习笔记——利用VirtualAlloc绕过DEP](https://3gstudent.github.io/3gstudent.github.io/Windows-Shellcode%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%88%A9%E7%94%A8VirtualAlloc%E7%BB%95%E8%BF%87DEP/)
-- 2017.03 [3gstudent] [Windows Shellcode学习笔记——利用VirtualAlloc绕过DEP](https://3gstudent.github.io/3gstudent.github.io/Windows-Shellcode%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%88%A9%E7%94%A8VirtualAlloc%E7%BB%95%E8%BF%87DEP/)
 - 2017.03 [pediy] [[原创]VUPlayer 2.49 - '.pls' Stack Buffer Overflow (Bypass DEP)](https://bbs.pediy.com/thread-216313.htm)
-- 2017.03 [3gstudent] [Windows Shellcode学习笔记——通过VirtualProtect绕过DEP](https://3gstudent.github.io/3gstudent.github.io/Windows-Shellcode%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E9%80%9A%E8%BF%87VirtualProtect%E7%BB%95%E8%BF%87DEP/)
 - 2017.03 [3gstudent] [Windows Shellcode学习笔记——通过VirtualProtect绕过DEP](https://3gstudent.github.io/3gstudent.github.io/Windows-Shellcode%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E9%80%9A%E8%BF%87VirtualProtect%E7%BB%95%E8%BF%87DEP/)
 - 2016.11 [freebuf] [“优雅”的Linux漏洞：用罕见方式绕过ASLR和DEP保护机制](http://www.freebuf.com/articles/terminal/120911.html)
 - 2016.03 [myonlinesecurity] [YOUR REFUND DEPOSIT COPY Lloyds Bank  – fake PDF malware](https://myonlinesecurity.co.uk/your-refund-deposit-copy-lloyds-bank-fake-pdf-malware/)
@@ -8281,7 +8062,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**47**Star][11m] [C] [imbushuo/boot-shim](https://github.com/imbushuo/boot-shim) Bootstraps ARM32/ARM64 ELF payloads on Qualcomm Windows platforms
 - [**46**Star][8m] [Py] [capeleidokos/elf_diff](https://github.com/capeleidokos/elf_diff) A tool to compare ELF binaries
 - [**45**Star][4m] [Py] [aencode/elf_analysis](https://github.com/aencode/elf_analysis) Perform Static and dynamic analysis on 32 bit ELF binary, and automate the process of stack based overflow exploitation.
-- [**45**Star][6m] [C] [wangyinuo/fixelfsection](https://github.com/wangyinuo/fixelfsection) 
+- [**45**Star][6m] [C] [wangyinuo/fixelfsection](https://github.com/wangyinuo/fixelfsection)
 - [**44**Star][2y] [Py] [wizh/rop-chainer](https://github.com/wizh/rop-chainer) static program analysis tool that generates return-oriented exploits for ELF binaries
 - [**41**Star][3y] [Py] [devttys0/botox](https://github.com/devttys0/botox) SIGSTOPing ELF binaries since 0x7E1
 - [**41**Star][3y] [C] [jmpews/evilelf](https://github.com/jmpews/evilelf) Malicious use of ELF such as .so inject, func hook and so on.
@@ -8310,7 +8091,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**2**Star][9m] [Py] [capeleidokos/leidokos-changereport](https://github.com/capeleidokos/leidokos-changereport) Generates change reports with elf_diff for the Kaleidoscope firmware
 - [**2**Star][2y] [C] [youben11/parself](https://github.com/youben11/parself) Yet another elf parser
 - [**2**Star][1y] [C] [tyoma/symreader](https://github.com/tyoma/symreader) C++ ELF parser
-- [**1**Star][5y] [c] [renorobert/core2elf](https://bitbucket.org/renorobert/core2elf) 
+- [**1**Star][5y] [c] [renorobert/core2elf](https://bitbucket.org/renorobert/core2elf)
 
 
 ### <a id="72d101d0f32d5521d5d305e7e653fdd3"></a>Post
@@ -8439,8 +8220,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**741**Star][2m] [C] [yrp604/rappel](https://github.com/yrp604/rappel) A linux-based assembly REPL for x86, amd64, armv7, and armv8
 - [**731**Star][17d] [C] [strace/strace](https://github.com/strace/strace) strace is a diagnostic, debugging and instructional userspace utility for Linux
 - [**585**Star][3y] [C] [ktap/ktap](https://github.com/ktap/ktap) a new scripting dynamic tracing tool for Linux
-- [**570**Star][12m] [C] [asamy/ksm](https://github.com/asamy/ksm) A fast, hackable and simple x64 VT-x hypervisor for Windows and Linux. Builtin userspace sandbox and introspection engine.
-    - Also In Section: [Windows->Tools->VT](#19cfd3ea4bd01d440efb9d4dd97a64d0) |
+- Also In Section: [Windows->Tools->VT](#19cfd3ea4bd01d440efb9d4dd97a64d0) |
 - [**565**Star][12d] [C++] [intel/linux-sgx](https://github.com/intel/linux-sgx) Intel SGX for Linux*
 - [**560**Star][2m] [Py] [autotest/autotest](https://github.com/autotest/autotest) Fully automated tests on Linux
 - [**536**Star][5m] [C++] [nytrorst/shellcodecompiler](https://github.com/nytrorst/shellcodecompiler) compiles C/C++ style code into a small, position-independent and NULL-free shellcode for Windows (x86 and x64) and Linux (x86 and x64)
@@ -8487,7 +8267,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**60**Star][2y] [C] [skeeto/ptrace-examples](https://github.com/skeeto/ptrace-examples) Examples for Linux ptrace(2)
 - [**58**Star][2y] [Go] [evilsocket/ftrace](https://github.com/evilsocket/ftrace) Go library to trace Linux syscalls using the FTRACE kernel framework.
 - [**58**Star][3m] [Java] [exalab/anlinux-adfree](https://github.com/exalab/anlinux-adfree) AnLinux, Ad free version.
-- [**58**Star][3y] [CSS] [wizardforcel/sploitfun-linux-x86-exp-tut-zh](https://github.com/wizardforcel/sploitfun-linux-x86-exp-tut-zh) 
+- [**58**Star][3y] [CSS] [wizardforcel/sploitfun-linux-x86-exp-tut-zh](https://github.com/wizardforcel/sploitfun-linux-x86-exp-tut-zh)
 - [**54**Star][1y] [Py] [k4yt3x/defense-matrix](https://github.com/k4yt3x/defense-matrix) Express security essentials deployment for Linux Servers
 - [**53**Star][10m] [C] [marcan/lsirec](https://github.com/marcan/lsirec) LSI SAS2008/SAS2108 low-level recovery tool for Linux
 - [**52**Star][1y] [C] [pymumu/jail-shell](https://github.com/pymumu/jail-shell) Jail-shell is a linux security tool mainly using chroot, namespaces technologies, limiting users to perform specific commands, and access sepcific directories.
@@ -8498,7 +8278,7 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**45**Star][6y] [JS] [cyberpython/wifiscanandmap](https://github.com/cyberpython/wifiscanandmap) A Linux Python application to create maps of 802.11 networks
 - [**45**Star][4y] [C] [shadowsocks/iptables](https://github.com/shadowsocks/iptables) iptables is the userspace command line program used to configure the Linux 2.4.x and later packet filtering ruleset. It is targeted towards system administrators.
 - [**44**Star][7m] [C] [junxzm1990/pomp](https://github.com/junxzm1990/pomp) 在 Linux 系统上开发 POMP 系统，分析崩溃后的 artifacts
-- [**43**Star][6m] [Ruby] [b1ack0wl/linux_mint_poc](https://github.com/b1ack0wl/linux_mint_poc) 
+- [**43**Star][6m] [Ruby] [b1ack0wl/linux_mint_poc](https://github.com/b1ack0wl/linux_mint_poc)
 - [**43**Star][2y] [C] [gcwnow/linux](https://github.com/gcwnow/linux) Linux kernel for GCW Zero (Ingenic JZ4770)
 - [**41**Star][3y] [Py] [fnzv/trsh](https://github.com/fnzv/trsh) trsh：使用电报 API 与 Linux 服务器通信，Python编写。
 - [**40**Star][11d] [Dockerfile] [ironpeakservices/iron-alpine](https://github.com/ironPeakServices/iron-alpine) Hardened alpine linux baseimage for Docker.
@@ -8528,6 +8308,6 @@ idawasm IDA Pro Plugin](https://www.fireeye.com/blog/threat-research/2018/10/rev
 - [**23**Star][3y] [Py] [remnux/distro](https://github.com/remnux/distro) This repository contains supplementary files for building and using the REMnux Linux distribution. See
 - [**23**Star][5y] [Assembly] [zerosum0x0/slae64](https://github.com/zerosum0x0/slae64) x64 Linux Shellcode
 - [**22**Star][3y] [Shell] [johntroony/luks-ops](https://github.com/johntroony/luks-ops) A bash script to automate the most basic usage of LUKS volumes in Linux VPS
-- [**22**Star][5y] [munmap/linux-kernel-bugs-db](https://github.com/munmap/linux-kernel-bugs-db) 
+- [**22**Star][5y] [munmap/linux-kernel-bugs-db](https://github.com/munmap/linux-kernel-bugs-db)
 - [**21**Star][1y] [Py] [syno3/babymux](https://github.com/syno3/babymux) pentesting tool for noob hackers.Runs on linux and termux
 - [**20**Star][3y] [C] [leixiangwu/cse509-rootkit](https://github.com/leixiangwu/cse509-rootkit) After attackers manage to gain access to a remote (or local) machine and elevate their privileges to "root", they typically want to maintain their access, while hiding their presence from the normal users and administrators of the system. This basic rootkit works on the Linux operating system and is a loadable kernel module which when loaded int…

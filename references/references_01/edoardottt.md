@@ -3,31 +3,31 @@ Awesome Hacker Search Engines
 A curated list of awesome search engines useful during Penetration testing, Vulnerability assessments, Red/Blue Team operations, Bug Bounty and more
 
 <p align="center">
-  <a href="#general-search-engines">General</a> •
-  <a href="#servers">Servers</a> •
-  <a href="#vulnerabilities">Vulnerabilities</a> •
-  <a href="#exploits">Exploits</a> •
-  <a href="#attack-surface">Attack surface</a> •
-  <a href="#code">Code</a> •
-  <a href="#email-addresses">Email addresses</a> •
-  <a href="#domains">Domains</a> •
-  <a href="#urls">URLs</a> •
-  <a href="#dns">DNS</a> •
-  <a href="#certificates">Certificates</a> •
-  <a href="#wifi-networks">WiFi networks</a> •
-  <a href="#device-information">Device Info</a> •
-  <a href="#credentials">Credentials</a> •
-  <a href="#leaks">Leaks</a> •
-  <a href="#hidden-services">Hidden Services</a> •
-  <a href="#social-networks">Social Networks</a> •
-  <a href="#phone-numbers">Phone numbers</a> •
-  <a href="#images">Images</a> •
-  <a href="#threat-intelligence">Threat Intelligence</a> •
-  <a href="#web-history">Web History</a> •
-  <a href="#files">Files</a> •
-  <a href="#surveillance-cameras">Surveillance cameras</a> •
-  <a href="#crypto">Crypto</a> •
-  <a href="#people">People</a>
+<a href="#general-search-engines">General</a> •
+<a href="#servers">Servers</a> •
+<a href="#vulnerabilities">Vulnerabilities</a> •
+<a href="#exploits">Exploits</a> •
+<a href="#attack-surface">Attack surface</a> •
+<a href="#code">Code</a> •
+<a href="#email-addresses">Email addresses</a> •
+<a href="#domains">Domains</a> •
+<a href="#urls">URLs</a> •
+<a href="#dns">DNS</a> •
+<a href="#certificates">Certificates</a> •
+<a href="#wifi-networks">WiFi networks</a> •
+<a href="#device-information">Device Info</a> •
+<a href="#credentials">Credentials</a> •
+<a href="#leaks">Leaks</a> •
+<a href="#hidden-services">Hidden Services</a> •
+<a href="#social-networks">Social Networks</a> •
+<a href="#phone-numbers">Phone numbers</a> •
+<a href="#images">Images</a> •
+<a href="#threat-intelligence">Threat Intelligence</a> •
+<a href="#web-history">Web History</a> •
+<a href="#files">Files</a> •
+<a href="#surveillance-cameras">Surveillance cameras</a> •
+<a href="#crypto">Crypto</a> •
+<a href="#people">People</a>
 </p>
 
 ### General Search Engines
@@ -101,8 +101,6 @@ A curated list of awesome search engines useful during Penetration testing, Vuln
 
 - [Exploit-DB](https://www.exploit-db.com/) - Exploit Database
 - [Sploitus](https://sploitus.com/) - Convenient central place for identifying the newest exploits
-- [Rapid7 - DB](https://www.rapid7.com/db/) - Vulnerability & Exploit Database
-- [Vulmon](https://vulmon.com/) - Vulnerability and exploit search engine
 - [packetstormsecurity.com](https://packetstormsecurity.com/) - Information Security Services, News, Files, Tools, Exploits, Advisories and Whitepapers
 - [0day.today](https://0day.today/) - Ultimate database of exploits and vulnerabilities
 - [Living Off The Land Binaries, Scripts and Libraries](https://lolbas-project.github.io/) - Living Off The Land Binaries, Scripts and Libraries
@@ -205,7 +203,6 @@ A curated list of awesome search engines useful during Penetration testing, Vuln
 - [verify-email.org](https://verify-email.org/) - Checks whether the mailbox exists or not
 - [Melissa - Emailcheck](https://www.melissa.com/v2/lookups/emailcheck/email/) - Check email addresses and verify they are live
 - [VoilaNorbert](https://www.voilanorbert.com/) - I can find anyone's email address
-- [SynapsInt](https://synapsint.com/) - The unified OSINT research tool
 - [skymem.info](http://www.skymem.info/) - Find email addresses of companies and people
 - [findemails.com](https://www.findemails.com/) - Find Anyone's Email Address in Seconds
 - [Experte email finder](https://www.experte.com/email-finder) - Find the right email address, even if you only know the name and the company
@@ -224,8 +221,6 @@ A curated list of awesome search engines useful during Penetration testing, Vuln
 
 ### Domains
 
-- [PhoneBook](https://phonebook.cz/) - Lists all domains, email addresses, or URLs for the given input domain
-- [IntelligenceX](https://intelx.io/) - Search engine and data archive
 - [Omnisint](https://omnisint.io/subdomain-enumeration) - Subdomain enumeration
 - [Riddler](https://riddler.io/) - Allows you to search in a high quality dataset
 - [RobTex](https://www.robtex.com/) - Various kinds of research of IP numbers, Domain names, etc
@@ -239,7 +234,6 @@ A curated list of awesome search engines useful during Penetration testing, Vuln
 - [BuiltWith](https://builtwith.com/) - Find out what websites are Built With
 - [MoonSearch](http://moonsearch.com/) - Backlinks checker & SEO Report
 - [sitereport.netcraft.com](https://sitereport.netcraft.com/) - Find out the infrastructure and technologies used by any site
-- [SynapsInt](https://synapsint.com/) - The unified OSINT research tool
 - [statscrop.com](https://www.statscrop.com/) - Millions of amazing websites across the web are being analyzed with StatsCrop
 - [securityheaders.com](https://securityheaders.com/) - Scan your site now
 - [visualsitemapper.com](http://www.visualsitemapper.com/) - Create a visual map of your site
@@ -260,8 +254,6 @@ A curated list of awesome search engines useful during Penetration testing, Vuln
 
 ### URLs
 
-- [PhoneBook](https://phonebook.cz/) - Lists all domains, email addresses, or URLs for the given input domain
-- [IntelligenceX](https://intelx.io/) - Search engine and data archive
 - [URLScan](https://urlscan.io/) - A sandbox for the web
 - [HackerTarget](https://hackertarget.com/ip-tools/) - Collect information about IP Addresses, Networks, Web Pages and DNS records
 - [MOZ Link Explorer](https://moz.com/link-explorer) - The world's best backlink checker with over 40 trillion links
@@ -281,14 +273,11 @@ A curated list of awesome search engines useful during Penetration testing, Vuln
 - [RapidDNS](https://rapiddns.io/) - DNS query tool which make querying subdomains or sites of a same ip easy
 - [DNSdb](https://docs.farsightsecurity.com/#dnsdb) - Passive DNS historical database
 - [Omnisint](https://omnisint.io/reverse-dns-lookup) - Reverse DNS lookup
-- [HackerTarget](https://hackertarget.com/ip-tools/) - Collect information about IP Addresses, Networks, Web Pages and DNS records
 - [passivedns.mnemonic.no](https://passivedns.mnemonic.no/) - Web interface for querying passive DNS data collected in our malware lab
 - [ptrarchive.com](http://ptrarchive.com/) - Over 230 billion reverse DNS entries from 2008 to the present
 - [dnshistory.org](http://dnshistory.org/) - Domain Name System Historical Record Archive
 - [DNSTwister](https://dnstwister.report/) - The anti-phishing domain name search engine and DNS monitoring service
 - [DNSviz](https://dnsviz.net/) - Tool for visualizing the status of a DNS zone
-- [C99.nl](https://api.c99.nl/) - Over 57 quality API's and growing
-- [wannabe1337.xyz](https://wannabe1337.xyz/) - Online Tools
 - [DNSlytics](https://dnslytics.com/) - Find out everything about a domain name, IP address or provider
 - [dnsrepo.noc.org](https://dnsrepo.noc.org/) - DNS Database Repository Search
 - [DNSSpy](https://dnsspy.io/) - Monitor, validate and verify your DNS configurations
@@ -308,7 +297,6 @@ A curated list of awesome search engines useful during Penetration testing, Vuln
 - [CTSearch](https://ui.ctsearch.entrust.com/ui/ctsearchui) - Certificate Transparency Search Tool
 - [tls.bufferover.run](https://tls.bufferover.run/) - Quickly find certificates in IPv4 space
 - [CertSpotter](https://sslmate.com/certspotter/) - Monitors your domains for expiring, unauthorized, and invalid SSL certificates
-- [SynapsInt](https://synapsint.com/) - The unified OSINT research tool
 - [Censys Search - Certificates](https://search.censys.io/#) - Certificates Search
 - [ciphersuite.info](https://ciphersuite.info/) - TLS Ciphersuite Search. Search for a particular cipher suite by using IANA, OpenSSL or GnuTLS name format
 - [certificatedetails](https://certificatedetails.com/) - Online certificate viewer. Inspect and download certificates from your browser
@@ -413,7 +401,6 @@ These can be useful for osint and social engineering.
 - [National Cellular Directory](https://www.nationalcellulardirectory.com/) - Begin your comprehensive people search now
 - [Phone Validator](https://www.phonevalidator.com/) - Is it a cell phone or is it a landline or is it a fake?
 - [Free Carrier Lookup](https://freecarrierlookup.com/) - Enter a phone number and we'll return the carrier name
-- [RocketReach](https://rocketreach.co/) - Your first-degree connection to any professional
 - [sync.me](https://sync.me/) - Find out who called
 - [EmobileTracker](https://www.emobiletracker.com/) - Track Mobile Owner Name, Location and Mobile Service Provider
 - [Reverse Phone Lookup](https://www.reversephonelookup.com/) - Find Out The Owner Of A Phone Number
@@ -422,8 +409,6 @@ These can be useful for osint and social engineering.
 - [usphonebook.com](https://www.usphonebook.com/) - Free Reverse Phone Number Lookup
 - [truepeoplesearch.com](https://www.truepeoplesearch.com/#) - Get current address, cell phone number, email address, relatives, friends and a lot more
 - [Tellows](https://www.tellows.com/) - Who is calling? The phone number reverse search
-- [SynapsInt](https://synapsint.com/) - The unified OSINT research tool
-- [C99.nl](https://api.c99.nl/) - Over 57 quality API's and growing
 - [ValidNumber.com](https://validnumber.com/) - Free reverse phone lookup service to let you identify a caller associated with any 10-digit phone number from the US and Canada
 - [CellIdFinder](https://cellidfinder.com/) - Nonprofit project which helps you to find GSM BTS by MCC, MNC, LAC and CellID
 - [OldPhoneBook](http://www.oldphonebook.com/) - Instantly search a large selection from the past 20 years of USA phone listings

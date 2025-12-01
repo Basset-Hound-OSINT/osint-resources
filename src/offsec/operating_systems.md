@@ -17,4 +17,3 @@
 - [REMnux](https://remnux.org/)
 - [URIX OS](http://urix.us/)
 - [Wifislax](http://www.wifislax.com/)
-- [Everything](https://www.voidtools.com)

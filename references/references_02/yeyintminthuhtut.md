@@ -14,25 +14,25 @@ You can help by sending Pull Requests to add more information.
 Table of Contents
 =================
 
- * [Initial Access](#-initial-access)
- * [Execution](#-execution)
- * [Persistence](#-persistence)
- * [Privilege Escalation](#-privilege-escalation)
- * [Defense Evasion](#-defense-evasion)
- * [Credential Access](#-credential-access)
- * [Discovery](#-discovery)
- * [Lateral Movement](#-lateral-movement)
- * [Collection](#-collection)
- * [Exfiltration](#-exfiltration)
- * [Command and Control](#-command-and-control)
- * [Embedded and Peripheral Devices Hacking](#-embedded-and-peripheral-devices-hacking)
- * [Misc](#-misc)
- * [RedTeam Gadgets](#-redteam-gadgets)
- * [Ebooks](#-ebooks)
- * [Training](#-training--free-)
- * [Certification](#-certification)
- 
- 
+* [Initial Access](#-initial-access)
+* [Execution](#-execution)
+* [Persistence](#-persistence)
+* [Privilege Escalation](#-privilege-escalation)
+* [Defense Evasion](#-defense-evasion)
+* [Credential Access](#-credential-access)
+* [Discovery](#-discovery)
+* [Lateral Movement](#-lateral-movement)
+* [Collection](#-collection)
+* [Exfiltration](#-exfiltration)
+* [Command and Control](#-command-and-control)
+* [Embedded and Peripheral Devices Hacking](#-embedded-and-peripheral-devices-hacking)
+* [Misc](#-misc)
+* [RedTeam Gadgets](#-redteam-gadgets)
+* [Ebooks](#-ebooks)
+* [Training](#-training--free-)
+* [Certification](#-certification)
+
+
 ## [↑](#table-of-contents) Initial Access
 * [The Hitchhiker’s Guide To Initial Access](https://posts.specterops.io/the-hitchhikers-guide-to-initial-access-57b66aa80dd6)
 * [How To: Empire’s Cross Platform Office Macro](https://www.blackhillsinfosec.com/empires-cross-platform-office-macro/)
@@ -70,15 +70,15 @@ Table of Contents
 * [Defense-In-Depth write-up](https://oddvar.moe/2017/09/13/defense-in-depth-writeup/)
 * [Spear Phishing 101](https://blog.inspired-sec.com/archive/2017/05/07/Phishing.html)
 
- 
-## [↑](#table-of-contents) Execution 
+
+## [↑](#table-of-contents) Execution
 * [Research on CMSTP.exe,](https://msitpros.com/?p=3960)
 * [Windows oneliners to download remote payload and execute arbitrary code](https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/)
 * [Executing Commands and Bypassing AppLocker with PowerShell Diagnostic Scripts](https://bohops.com/2017/12/02/clickonce-twice-or-thrice-a-technique-for-social-engineering-and-untrusted-command-execution/)
 * [WSH Injection: A Case Study](https://posts.specterops.io/wsh-injection-a-case-study-fd35f79d29dd)
 * [Gscript Dropper](http://lockboxx.blogspot.com/2018/02/intro-to-using-gscript-for-red-teams.html)
 
- 
+
 ## [↑](#table-of-contents) Persistence
 * [A View of Persistence](https://rastamouse.me/blog/view-of-persistence/)
 * [hiding registry keys with psreflect](https://posts.specterops.io/hiding-registry-keys-with-psreflect-b18ec5ac8353)
@@ -89,16 +89,16 @@ Table of Contents
 * [Leveraging INF-SCT Fetch & Execute Techniques For Bypass, Evasion, & Persistence](https://bohops.com/2018/02/26/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence/)
 * [Leveraging INF-SCT Fetch & Execute Techniques For Bypass, Evasion, & Persistence (Part 2)](https://bohops.com/2018/03/10/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence-part-2/)
 * [Vshadow: Abusing the Volume Shadow Service for Evasion, Persistence, and Active Directory Database Extraction](https://bohops.com/2018/02/10/vshadow-abusing-the-volume-shadow-service-for-evasion-persistence-and-active-directory-database-extraction/)
- 
+
 ## [↑](#table-of-contents) Privilege Escalation
 
 ### User Account Control Bypass
 * [First entry: Welcome and fileless UAC bypass,](https://winscripting.blog/2017/05/12/first-entry-welcome-and-uac-bypass/)
 * [Exploiting Environment Variables in Scheduled Tasks for UAC Bypass,](https://tyranidslair.blogspot.ru/2017/05/exploiting-environment-variables-in.html)
 * Reading Your Way Around UAC in 3 parts:
-   [Part 1.](https://tyranidslair.blogspot.ru/2017/05/reading-your-way-around-uac-part-1.html)
-   [Part 2.](https://tyranidslair.blogspot.ru/2017/05/reading-your-way-around-uac-part-2.html)
-   [Part 3.](https://tyranidslair.blogspot.ru/2017/05/reading-your-way-around-uac-part-3.html)
+[Part 1.](https://tyranidslair.blogspot.ru/2017/05/reading-your-way-around-uac-part-1.html)
+[Part 2.](https://tyranidslair.blogspot.ru/2017/05/reading-your-way-around-uac-part-2.html)
+[Part 3.](https://tyranidslair.blogspot.ru/2017/05/reading-your-way-around-uac-part-3.html)
 * [Bypassing UAC using App Paths,](https://enigma0x3.net/2017/03/14/bypassing-uac-using-app-paths/)
 * ["Fileless" UAC Bypass using sdclt.exe,](https://enigma0x3.net/2017/03/17/fileless-uac-bypass-using-sdclt-exe/)
 * [UAC Bypass or story about three escalations,](https://habrahabr.ru/company/pm/blog/328008/)
@@ -144,7 +144,7 @@ Table of Contents
 * [https://bohops.com/2018/01/23/loading-alternate-data-stream-ads-dll-cpl-binaries-to-bypass-applocker/](https://bohops.com/2018/01/23/loading-alternate-data-stream-ads-dll-cpl-binaries-to-bypass-applocker/)
 * [Executing Commands and Bypassing AppLocker with PowerShell Diagnostic Scripts](https://bohops.com/2018/01/07/executing-commands-and-bypassing-applocker-with-powershell-diagnostic-scripts/)
 * [mavinject.exe Functionality Deconstructed](https://posts.specterops.io/mavinject-exe-functionality-deconstructed-c29ab2cf5c0e)
-  
+
 ## [↑](#table-of-contents) Credential Access
 * [Windows Access Tokens and Alternate credentials](https://blog.cobaltstrike.com/2015/12/16/windows-access-tokens-and-alternate-credentials/)
 * [Bringing the hashes home with reGeorg & Empire](https://sensepost.com/blog/2016/bringing-the-hashes-home-with-regeorg-empire/)
@@ -157,7 +157,7 @@ Table of Contents
 * [Practical guide to NTLM Relaying](https://byt3bl33d3r.github.io/practical-guide-to-ntlm-relaying-in-2017-aka-getting-a-foothold-in-under-5-minutes.html)
 * [Dump Clear-Text Passwords for All Admins in the Domain Using Mimikatz DCSync](https://adsecurity.org/?p=2053)
 * [Dumping Domain Password Hashes](https://pentestlab.blog/2018/07/04/dumping-domain-password-hashes/)
-  
+
 ## [↑](#table-of-contents) Discovery
 * [Red Team Operating in a Modern Environment](https://www.owasp.org/images/4/4b/Red_Team_Operating_in_a_Modern_Environment.pdf)
 * [My First Go with BloodHound](https://blog.cobaltstrike.com/2016/12/14/my-first-go-with-bloodhound/)
@@ -169,15 +169,14 @@ Table of Contents
 * [The PowerView PowerUsage Series #1 - Mass User Profile Enumeration](http://www.harmj0y.net/blog/powershell/the-powerview-powerusage-series-1/)
 * [The PowerView PowerUsage Series #2 – Mapping Computer Shortnames With the Global Catalog](http://www.harmj0y.net/blog/powershell/the-powerview-powerusage-series-2/)
 * [The PowerView PowerUsage Series #3 – Enumerating GPO edit rights in a foreign domain](http://www.harmj0y.net/blog/powershell/the-powerview-powerusage-series-3/)
-* [The PowerView PowerUsage Series #4 – Finding cross-trust ACEs](http://www.harmj0y.net/blog/powershell/the-powerview-powerusage-series-3/)
 * [Aggressor PowerView](http://threat.tevora.com/aggressor-powerview/)
 * [Lay of the Land with BloodHound](http://threat.tevora.com/lay-of-the-land-with-bloodhound/)
 * [Scanning for Active Directory Privileges & Privileged Accounts](https://adsecurity.org/?p=3658)
 * [Microsoft LAPS Security & Active Directory LAPS Configuration Recon](https://adsecurity.org/?p=3164)
 * [Trust Direction: An Enabler for Active Directory Enumeration and Trust Exploitation](https://bohops.com/2017/12/02/trust-direction-an-enabler-for-active-directory-enumeration-and-trust-exploitation/)
 * [SPN Discovery](https://pentestlab.blog/2018/06/04/spn-discovery/)
-   
-## [↑](#table-of-contents) Lateral Movement 
+
+## [↑](#table-of-contents) Lateral Movement
 
 * [A Citrix Story](https://rastamouse.me/blog/a-citrix-story/)
 * [Jumping Network Segregation with RDP](https://rastamouse.me/blog/rdp-jump-boxes/)
@@ -186,13 +185,11 @@ Table of Contents
 * [Using SQL Server for attacking a Forest Trust](http://www.labofapenetrationtester.com/2017/03/using-sql-server-for-attacking-forest-trust.html)
 * [Extending BloodHound for Red Teamers](https://www.youtube.com/watch?v=Pn7GWRXfgeI)
 * [OPSEC Considerations for beacon commands](https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/)
-* [My First Go with BloodHound](https://blog.cobaltstrike.com/2016/12/14/my-first-go-with-bloodhound/)
 * [Kerberos Party Tricks: Weaponizing Kerberos Protocol Flaws](http://www.exumbraops.com/blog/2016/6/1/kerberos-party-tricks-weaponizing-kerberos-protocol-flaws)
 * [Lateral movement using excel application and dcom](https://enigma0x3.net/2017/09/11/lateral-movement-using-excel-application-and-dcom/)
-* [Lay of the Land with BloodHound](http://threat.tevora.com/lay-of-the-land-with-bloodhound/)
 * [The Most Dangerous User Right You (Probably) Have Never Heard Of](https://www.harmj0y.net/blog/activedirectory/the-most-dangerous-user-right-you-probably-have-never-heard-of/)
 * [Agentless Post Exploitation](https://blog.cobaltstrike.com/2016/11/03/agentless-post-exploitation/)
-* [A Guide to Attacking Domain Trusts](https://www.harmj0y.net/blog/redteaming/a-guide-to-attacking-domain-trusts/)   
+* [A Guide to Attacking Domain Trusts](https://www.harmj0y.net/blog/redteaming/a-guide-to-attacking-domain-trusts/)
 * [Pass-the-Hash Is Dead: Long Live LocalAccountTokenFilterPolicy](https://www.harmj0y.net/blog/redteaming/pass-the-hash-is-dead-long-live-localaccounttokenfilterpolicy/)
 * [Targeted Kerberoasting](https://www.harmj0y.net/blog/activedirectory/targeted-kerberoasting/)
 * [Kerberoasting Without Mimikatz](https://www.harmj0y.net/blog/powershell/kerberoasting-without-mimikatz/)
@@ -209,13 +206,13 @@ Table of Contents
 * [Abusing the COM Registry Structure: CLSID, LocalServer32, & InprocServer32](https://bohops.com/2018/06/28/abusing-com-registry-structure-clsid-localserver32-inprocserver32/)
 * [LethalHTA - A new lateral movement technique using DCOM and HTA](https://codewhitesec.blogspot.com/2018/07/lethalhta.html)
 * [Abusing DCOM For Yet Another Lateral Movement Technique](https://bohops.com/2018/04/28/abusing-dcom-for-yet-another-lateral-movement-technique/)
-   
-## [↑](#table-of-contents) Collection  
+
+## [↑](#table-of-contents) Collection
 * [Accessing clipboard from the lock screen in Windows 10 Part 1](https://oddvar.moe/2017/01/24/accessing-clipboard-from-the-lock-screen-in-windows-10/)
 * [Accessing clipboard from the lock screen in Windows 10 Part 2](https://oddvar.moe/2017/01/27/access-clipboard-from-lock-screen-in-windows-10-2/)
 
-  
-   
+
+
 ## [↑](#table-of-contents) Exfiltration
 * [DNS Data exfiltration — What is this and How to use?](https://blog.fosec.vn/dns-data-exfiltration-what-is-this-and-how-to-use-2f6c69998822)
 * [DNS Tunnelling](http://resources.infosecinstitute.com/dns-tunnelling/)
@@ -266,14 +263,12 @@ Table of Contents
 * [C2 with gmail](https://pentestlab.blog/2017/08/03/command-and-control-gmail/)
 * [C2 with twitter](https://pentestlab.blog/2017/09/26/command-and-control-twitter/)
 * [Office 365 for Cobalt Strike C2](https://labs.mwrinfosecurity.com/blog/tasking-office-365-for-cobalt-strike-c2/)
-* [Red Team Insights on HTTPS Domain Fronting Google Hosts Using Cobalt Strike](https://www.cyberark.com/threat-research-blog/red-team-insights-https-domain-fronting-google-hosts-using-cobalt-strike/)
 * [A stealthy Python based Windows backdoor that uses Github as a C&C server](http://securityblog.gr/4434/a-stealthy-python-based-windows-backdoor-that-uses-github-as-a-cc-server/)
 * [External C2 (Third-Party Command and Control)](https://www.cobaltstrike.com/help-externalc2)
 * [Cobalt Strike over external C2 – beacon home in the most obscure ways](https://outflank.nl/blog/2017/09/17/blogpost-cobalt-strike-over-external-c2-beacon-home-in-the-most-obscure-ways/)
 * [External C2 for Cobalt Strike](https://github.com/ryhanson/ExternalC2/)
 * [External C2 framework for Cobalt Strike](http://www.insomniacsecurity.com/2018/01/11/externalc2.html)
 * [External C2 framework - GitHub Repo](https://github.com/Und3rf10w/external_c2_framework)
-* [Hiding in the Cloud: Cobalt Strike Beacon C2 using Amazon APIs](https://github.com/Und3rf10w/external_c2_framework)
 * [Exploring Cobalt Strike's ExternalC2 framework](https://blog.xpnsec.com/exploring-cobalt-strikes-externalc2-framework/)
 
 ### Application Layer Protocol
@@ -342,7 +337,6 @@ Table of Contents
 * [Red Teaming for Pacific Rim CCDC 2017](https://bluescreenofjeff.com/2017-05-02-red-teaming-for-pacific-rim-ccdc-2017/)
 * [How I Prepared to Red Team at PRCCDC 2015](https://bluescreenofjeff.com/2015-04-15-how-i-prepared-to-red-team-at-prccdc-2015/)
 * [Red Teaming for Pacific Rim CCDC 2016](https://bluescreenofjeff.com/2016-05-24-pacific-rim-ccdc_2016/)
-* [Responsible Red Teams](https://medium.com/@malcomvetter/responsible-red-teams-1c6209fd43cc)
 * [Awesome-CobaltStrike](https://github.com/zer0yu/Awesome-CobaltStrike)
 * RedTeaming from Zero to One [Part-1](https://payatu.com/redteaming-from-zero-to-one-part-1) [Part-2](https://payatu.com/redteaming-zero-one-part-2)
 
@@ -374,7 +368,6 @@ Table of Contents
 * [Key Grabber](https://hackerwarehouse.com/product/keygrabber/)
 * [Magspoof](https://store.ryscc.com/products/magspoof%20)
 * [Poison tap](https://samy.pl/poisontap/)
-* [keysweeper](https://samy.pl/keysweeper/)
 * [USB Rubber Ducky](https://hakshop.com/collections/physical-access/products/usb-rubber-ducky-deluxe)
 * [Screen Crab](https://shop.hak5.org/collections/sale/products/screen-crab)
 * [O.MG Cable](https://shop.hak5.org/collections/featured-makers/products/o-mg-cable)

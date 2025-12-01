@@ -1,9 +1,9 @@
 Apriorit’s top reverse engineering tools
-It’s hard to name the best software for reverse engineering. There are quite a few options, and each tackles a specific task in the multistep reversing process. 
+It’s hard to name the best software for reverse engineering. There are quite a few options, and each tackles a specific task in the multistep reversing process.
 
-Static analysis tools allow reverse engineers to disassemble unknown files and examine their code without executing them. This helps them understand the structure of software and detect potential vulnerabilities. 
-Portable executable (Windows) analysis tools focus on understanding how an application behaves after launch, providing insights into its dependencies, execution flow, and modifications to system resources. 
-Dynamic analysis tools allow researchers to observe a program in action, tracking its runtime behavior, system interactions, and potential security risks. 
+Static analysis tools allow reverse engineers to disassemble unknown files and examine their code without executing them. This helps them understand the structure of software and detect potential vulnerabilities.
+Portable executable (Windows) analysis tools focus on understanding how an application behaves after launch, providing insights into its dependencies, execution flow, and modifications to system resources.
+Dynamic analysis tools allow researchers to observe a program in action, tracking its runtime behavior, system interactions, and potential security risks.
 Network traffic analysis tools monitor and dissect communication between applications, revealing data exchanges, API calls, and potential vulnerabilities in network protocols.
 Below, we overview the main tools used for different reverse engineering tasks by Apriorit researchers:
 
@@ -26,21 +26,21 @@ Fiddler
 Let’s get started.
 
 1. IDA Pro
-IDA Pro is one of the best software reverse engineering tools. This interactive disassembler has a built-in command language (IDC) and supports many executable formats for various processors and operating systems. IDA Pro also has a great number of plugins that can extend the functionality even further. 
+IDA Pro is one of the best software reverse engineering tools. This interactive disassembler has a built-in command language (IDC) and supports many executable formats for various processors and operating systems. IDA Pro also has a great number of plugins that can extend the functionality even further.
 
 Screenshot 1. IDA Pro interface
 Screenshot 1. IDA Pro interface
-The main advantage of IDA Pro is that it allows you to interactively change any element of the displayed data in many ways, including: 
+The main advantage of IDA Pro is that it allows you to interactively change any element of the displayed data in many ways, including:
 
-Giving names to functions, variables, data structures, etc. 
-Changing how data is represented (as numbers, strings in various encodings, data structures) 
-Building diagrams and code flow graphs to simplify the understanding of disassembled code 
-Using type information about function arguments and structure definitions from C++ so that arguments and variables are automatically named 
-Automatically recognizing and naming standard library functions in assembler code 
+Giving names to functions, variables, data structures, etc.
+Changing how data is represented (as numbers, strings in various encodings, data structures)
+Building diagrams and code flow graphs to simplify the understanding of disassembled code
+Using type information about function arguments and structure definitions from C++ so that arguments and variables are automatically named
+Automatically recognizing and naming standard library functions in assembler code
 Aside from the disassembler itself, let’s also look closer at some IDA plugins.
 
 Hex-Rays Decompiler
-This IDA plugin can turn native processor code into a more readable C-like version. Hex-Rays Decompiler produces rather accurate C code comparable to that produced by a human reverse engineer. It correctly decompiles code produced by various C++ compilers, no matter the architecture. 
+This IDA plugin can turn native processor code into a more readable C-like version. Hex-Rays Decompiler produces rather accurate C code comparable to that produced by a human reverse engineer. It correctly decompiles code produced by various C++ compilers, no matter the architecture.
 
 However, Hex-Rays Decompiler might have issues with processing complex assembler code, where the original code was specifically modified by adding the inline assembler or manual optimizations were made.
 
@@ -69,14 +69,14 @@ Discover how ethical reverse engineering practices can drive innovation of Windo
 
 windows software reverse engineering
 2. ImHex
-ImHex is a powerful modern cross-platform tool for inspecting, analyzing, and visualizing binary data. It provides advanced features beyond traditional hex editors, making it useful for programmers, security researchers, and reverse engineers. 
+ImHex is a powerful modern cross-platform tool for inspecting, analyzing, and visualizing binary data. It provides advanced features beyond traditional hex editors, making it useful for programmers, security researchers, and reverse engineers.
 
-This tool also supports: 
+This tool also supports:
 
-Custom pattern language — ImHex supports its own data representation language similar to C++/Rust so you can see the binary data in a convenient, structured way. It ships with some popular pattern scripts like PE, pcap, and mach-o, but you also can write your own patterns. 
-Rich data visualization features — Displaying entropy, bytes distribution, and types as a graph is very useful for analyzing binaries. 
-Disassembler — Supports popular architectures (x64, x86, ARM, and lots of others). 
-Powerful advanced searching — Search for strings, byte sequences, regexes, binary patterns, or numbers. 
+Custom pattern language — ImHex supports its own data representation language similar to C++/Rust so you can see the binary data in a convenient, structured way. It ships with some popular pattern scripts like PE, pcap, and mach-o, but you also can write your own patterns.
+Rich data visualization features — Displaying entropy, bytes distribution, and types as a graph is very useful for analyzing binaries.
+Disassembler — Supports popular architectures (x64, x86, ARM, and lots of others).
+Powerful advanced searching — Search for strings, byte sequences, regexes, binary patterns, or numbers.
 Screenshot 2. ImHex interface
 Screenshot 2. ImHex interface
 Screenshot 3. ImHex interface
@@ -94,12 +94,12 @@ Decompiler — Automatically converts the binary representation of individual fu
 Function bit patterns explorer — Discovers patterns in the bytes around function starts and returns.
 Ghidra script manager — Allows for rapid development of extended Ghidra functionality.
 4. Radare2
-The Radare2 disassembler has all the IDA features without being as robust and stable, but it’s free and open-source. Radare2 itself is a console tool, but it has a Iaito front end, which makes it a true alternative to IDA and Ghidra. 
+The Radare2 disassembler has all the IDA features without being as robust and stable, but it’s free and open-source. Radare2 itself is a console tool, but it has a Iaito front end, which makes it a true alternative to IDA and Ghidra.
 
 Screenshot 5. Radare2 interface
 Screenshot 5. Radare2 interface
- Screenshot 6. Radare 2 interface
- Screenshot 6. Radare2 interface
+Screenshot 6. Radare 2 interface
+Screenshot 6. Radare2 interface
 Alternatively, you can use Rizin, which is a fork of Radare2. Rizin combines the free and open-source nature of Radare2 with its own user-friendly GUI (called Cutter) and an improved decompiler, making it a potentially attractive alternative to commercial options like IDA or even Ghidra.
 
 5. PEiD
@@ -153,30 +153,30 @@ Screenshot 10. CFF Explorer interface
 Screenshot 10. CFF Explorer interface
 CFF Explorer streamlines tasks like editing PE files, debugging software, and ensuring compatibility across different systems. At Apriorit, we use it to inspect, modify, and understand executable files.
 
-9. x64dbg 
-x64dbg is an open-source debugger for Windows, designed for analyzing, reverse engineering, and debugging x86 (32-bit) and x64 (64-bit) applications. It is commonly used for analyzing malware, cracking software, and understanding how applications work at a low level. 
+9. x64dbg
+x64dbg is an open-source debugger for Windows, designed for analyzing, reverse engineering, and debugging x86 (32-bit) and x64 (64-bit) applications. It is commonly used for analyzing malware, cracking software, and understanding how applications work at a low level.
 
 Screenshot 11. x64dbg interface
 Screenshot 11. x64dbg interface
-Key features of x64dbg include: 
+Key features of x64dbg include:
 
-A simple and user-friendly yet powerful debugging interface 
-Ability to debug DLLs without needing to load them into a process by yourself 
-Support for plugins 
-10. Frida 
-Frida is a dynamic instrumentation toolkit that allows you to hook into and modify the behavior of software at runtime. It is widely used for reverse engineering, security research, debugging, and application testing. You can use JavaScript and Python scripts to control the runtime of the instrumented process. 
+A simple and user-friendly yet powerful debugging interface
+Ability to debug DLLs without needing to load them into a process by yourself
+Support for plugins
+10. Frida
+Frida is a dynamic instrumentation toolkit that allows you to hook into and modify the behavior of software at runtime. It is widely used for reverse engineering, security research, debugging, and application testing. You can use JavaScript and Python scripts to control the runtime of the instrumented process.
 
 Screenshot 12. Frida interface
 Screenshot 12. Frida interface
-Frida allows you to: 
+Frida allows you to:
 
-Hook into a running process, tracing system API calls without patching application code. This allows you to trace: 
-File system 
-Network 
-Registry 
-Other system API calls 
-Modify the behavior of called functions (for example, change the arguments or hijack returned values) 
-Bypass some limitations on mobile applications (such as SSL pinning when analyzing traffic for an application) 
+Hook into a running process, tracing system API calls without patching application code. This allows you to trace:
+File system
+Network
+Registry
+Other system API calls
+Modify the behavior of called functions (for example, change the arguments or hijack returned values)
+Bypass some limitations on mobile applications (such as SSL pinning when analyzing traffic for an application)
 Frida allows you to hook into applications running on Windows, macOS, Linux, iOS, and Android.
 
 11. API Monitor
@@ -193,19 +193,19 @@ How to Reverse Engineer an iOS App and macOS Software
 Explore how reverse engineering can enhance the security and reliability of your macOS or iOS solution and ensure compliance with strict security standards.
 
 blog-article-how-to-reverse-engineer-os-x-and-ios-software
-12. Wireshark 
+12. Wireshark
 Wireshark is a network analysis tool that allows you to capture, inspect, and analyze network traffic in real time. It also lets you work with already captured traffic (pcap files) and may help you with low-level protocol reverse engineering by capturing and analyzing traffic of an application, virtual machine, or any device that routes traffic through your machine.
 
 Screenshot 14. Wireshark interface
 Screenshot 14. Wireshark interface
-Wireshark supports: 
+Wireshark supports:
 
-Capturing live packets/frames from different sources, such as Wi-Fi, Ethernet, Bluetooth, and USB. 
+Capturing live packets/frames from different sources, such as Wi-Fi, Ethernet, Bluetooth, and USB.
 Displaying detailed packet information, including headers and payload
-Hundreds of network protocols, such as TCP, UDP, HTTP, DNS, TLS, and IEEE802.11. 
-Checksum verification 
+Hundreds of network protocols, such as TCP, UDP, HTTP, DNS, TLS, and IEEE802.11.
+Checksum verification
 Powerful display filtering capabilities
-Export to pcap files to work with captured traffic later 
+Export to pcap files to work with captured traffic later
 13. Fiddler
 Fiddler is a proxy that you can use to intercept, monitor, and analyze HTTP/HTTPS traffic going between your application and external services or servers. Fiddler can intercept HTTP/HTTPS traffic system-wide. You can also add plugins (such as wbxml view, which can decode wbxml) and display requests/responses in different views.
 
@@ -511,7 +511,7 @@ Let’s save and run the test application. Now, it will run as if it were packed
 In the next section, our experts show where AI can bring practical benefits and how it integrates with existing tools. We also provide a concrete example of integrating AI in reverse engineering.
 
 AI-assisted software reverse engineering
-Given the ease of integrating AI into existing reversing frameworks, AI-assisted reverse engineering is no longer a theoretical concept. Reverse engineering often involves repetitive work with decompiled code, which requires significant manual effort. Recent advances in large language models (LLMs) show that they can handle such tasks effectively, as decompiled code, like natural language, follows patterns and depends on context. 
+Given the ease of integrating AI into existing reversing frameworks, AI-assisted reverse engineering is no longer a theoretical concept. Reverse engineering often involves repetitive work with decompiled code, which requires significant manual effort. Recent advances in large language models (LLMs) show that they can handle such tasks effectively, as decompiled code, like natural language, follows patterns and depends on context.
 
 You can already use today’s general-purpose models to assist with many tasks — and they require relatively little setup. However, it’s worth noting that AI for reverse engineering should be treated as an assistant rather than an authoritative source. Each suggestion still requires human verification to avoid mistakes or misleading results.
 
@@ -525,7 +525,7 @@ These approaches vary in maturity, but even basic integrations can already reduc
 
 Note: MCP-based AI integrations are still in early development. Simple queries like asking about a single function usually work well, while complex requests (for example, bulk renaming or large-scale decompilation) often fail or only partially succeed. Always be ready to rephrase prompts and verify results.
 
-Both IDA and Ghidra now offer MCP-compatible servers, making them good candidates for experimenting with AI-assisted workflows. While MCP is not yet fully mature, it provides a promising foundation for building more robust automation in reverse engineering. 
+Both IDA and Ghidra now offer MCP-compatible servers, making them good candidates for experimenting with AI-assisted workflows. While MCP is not yet fully mature, it provides a promising foundation for building more robust automation in reverse engineering.
 
 Practical example of AI-assisted reverse engineering using Ghidra with MCP
 Our engineers use MCP, as it enables structured interactions between AI agents and reverse engineering tools. To illustrate the scope of MCP’s capabilities, we set up the following environment:
@@ -552,7 +552,7 @@ Next, we examined a TLS callback function suspected of checking for the presence
 
 Prompt for renaming variables in a function
 Screenshot 66. Prompt for renaming variables in a function
-After making these changes, we then requested a plain-language summary of the function’s purpose. 
+After making these changes, we then requested a plain-language summary of the function’s purpose.
 
 Prompt for defining the purpose of the TLS callback
 Screenshot 67. Prompt for defining the purpose of the TLS callback

@@ -7,14 +7,14 @@ Thank you for following me! https://cybdetective.com
 <div>
 <img alt="GitHub stars" src="https://img.shields.io/github/stars/cipher387/awesome-grep">
 <img alt="GitHub forks" src="https://img.shields.io/github/forks/cipher387/awesome-grep">
-  
+
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
-  
+
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fcipher387%2Fawesome-grep&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 </div>
 
-Grep is a command line utility that searches files for lines that match a regular expression. 
+Grep is a command line utility that searches files for lines that match a regular expression.
 
 
 [How regular expressions can be useful in OSINT. Theory and some practice using Google Sheets](https://medium.com/@cyb_detective/this-article-consists-of-three-short-parts-31d31efabd5)
@@ -25,10 +25,10 @@ This repository contains various modifications of grep, as well as analogues of 
 
 
 
-| Name             | Description             | Link.       | 
+| Name             | Description             | Link.       |
 |------------------|-------------------------|-------------|
-| <b>Ripgrep-all</b>  | rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. |  https://github.com/phiresky/ripgrep-all | 
-| <b>RZgrep</b>  | "Grep utility that searches through <b>zip,jar,ear,tgz,bz2</b> in any form of nesting" |  https://github.com/MoserMichael/rzgrep | 
+| <b>Ripgrep-all</b>  | rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. |  https://github.com/phiresky/ripgrep-all |
+| <b>RZgrep</b>  | "Grep utility that searches through <b>zip,jar,ear,tgz,bz2</b> in any form of nesting" |  https://github.com/MoserMichael/rzgrep |
 | <b>XLSgrep</b>  | "CLI tool to search text in <b>XLSX, XLS and ODS</b> files. It works similarly to Unix/GNU Linux grep" | https://github.com/zazuum/xlsxgrep |
 | <b>Hgrep</b>  | "Grep" for searching/replacement in html code | https://github.com/TUVIMEN/hgrep |
 | <b>BINgrep</b>  | Grep for binaries files | https://github.com/m4b/bingrep |
@@ -40,7 +40,7 @@ This repository contains various modifications of grep, as well as analogues of 
 | <b>minigrep</b>  | A minimalistic regex search and print out tool implementation as per Ch.12 of The Rust Programming Language | https://github.com/paul-michelle/minigrep|
 | <b>Hackers Grep</b>  | Utility to search for strings in PE executables including imports, exports, and debug symbols | https://github.com/codypierce/hackers-grep |
 | <b>JVgrep</b> | Grep for Japanese vimmer. You can find text from files that written in another Japanese encodings | https://github.com/mattn/jvgrep |
-| <b>LiveGrep</b>  | Online grep search in Github repositories | https://livegrep.com/ | 
+| <b>LiveGrep</b>  | Online grep search in Github repositories | https://livegrep.com/ |
 | <b>DNgrep</b>  | Graphical grep tool for Windows | https://github.com/dnGrep/dnGrep|
 | <b>Greplace.vim</b>  | Global search and replace for VI|https://github.com/skwp/greplace.vim|
 | <b>SearchInProject_SublimeText</b>  | Use ag, ack, grep and git grep directly from Sublime Text 2 and 3 | https://github.com/leonid-shevtsov/SearchInProject_SublimeText |

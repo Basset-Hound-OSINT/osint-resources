@@ -30,28 +30,12 @@
 # OSINT Property
 
 - [ZILLOW](https://www.zillow.com/homes/for_sale)
-- [https://www.zillow.com/homes/for_sale](https://www.zillow.com/homes/for_sale)
 - [trulia](https://www.trulia.com)
-- [https://www.trulia.com](https://www.trulia.com)
 
 
 ## REAL ESTATE
 
-- [PrimeLocation](https://www.primelocation.com)
-- [https://www.primelocation.com](https://www.primelocation.com)
-- [Realtor](https://www.realtor.com)
-- [https://www.realtor.com](https://www.realtor.com)
 - [EMPORIS](https://www.emporis.com)
-- [https://www.emporis.com](https://www.emporis.com)
-- [rehold](https://rehold.com)
-- [https://rehold.com](https://rehold.com)
-- [Zillow](https://www.zillow.com)
-- [https://www.zillow.com](https://www.zillow.com)
 - [Zillow Canada](https://www.zillow.com/z/canada/canada-homes)
-- [https://www.zillow.com/z/canada/canada-homes](https://www.zillow.com/z/canada/canada-homes)
-- [Zoopla](https://www.zoopla.co.uk)
-- [https://www.zoopla.co.uk](https://www.zoopla.co.uk)
 - [homemetry](https://homemetry.com)
-- [https://homemetry.com](https://homemetry.com)
-- [Explore Canada's Real Estate Market](https://www.remax.ca/find-real-estate)
 - [Onondaga County Home Sales](https://b2.caspio.com/dp.asp?AppKey=18321000d7j6h9j6c1i4e8f0i5a9)

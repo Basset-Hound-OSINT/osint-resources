@@ -1,24 +1,24 @@
-## Reverse Engineering resources  
+## Reverse Engineering resources
 [![Awesome](https://2.bp.blogspot.com/-nz0jFFFA4Hc/WHubiaz8ecI/AAAAAAAAB08/g2erX6roVBYCfwWjIGUOBYMkcB7ghRL2wCLcB/s1600/reverse%2Bengineering.png)](http://kalitut.com)
-A curated list of awesome reversing resources   
+A curated list of awesome reversing resources
 
 - [Awesome Reversing](#awesome-reversing)
-    - [Books](#books)
-    - [Courses](#courses)
-    - [Practice](#practice)
-    - [Hex Editors](#hex-editors)
-    - [Binary Format](#binary-format)
-    - [Disassemblers](#disassemblers)
-    - [Binary Analysis](#binary-analysis)
-    - [Bytecode Analysis](#bytecode-analysis)
-    - [Import Reconstruction](#import-reconstruction)
-    - [Dynamic Analysis](#dynamic-analysis)
-    - [Debugging](#debugging)
-    - [Mac Decrypt](#mac-decrypt)
-    - [Document Analysis](#document-analysis)
-    - [Scripting](#scripting)
-    - [Android](#android)
-    - [Yara](#yara)
+- [Books](#books)
+- [Courses](#courses)
+- [Practice](#practice)
+- [Hex Editors](#hex-editors)
+- [Binary Format](#binary-format)
+- [Disassemblers](#disassemblers)
+- [Binary Analysis](#binary-analysis)
+- [Bytecode Analysis](#bytecode-analysis)
+- [Import Reconstruction](#import-reconstruction)
+- [Dynamic Analysis](#dynamic-analysis)
+- [Debugging](#debugging)
+- [Mac Decrypt](#mac-decrypt)
+- [Document Analysis](#document-analysis)
+- [Scripting](#scripting)
+- [Android](#android)
+- [Yara](#yara)
 
 - - -
 
@@ -183,7 +183,6 @@ A curated list of awesome reversing resources
 * [OllySnD](https://tuts4you.com/download.php?view.2061)
 * [Olly Shadow](https://tuts4you.com/download.php?view.6)
 * [Olly CiMs](https://tuts4you.com/download.php?view.1206)
-* [Olly UST_2bg](https://tuts4you.com/download.php?view.1206)
 * [x64dbg](http://x64dbg.com/#start)
 * [gdb](sudo apt install gdb)
 * [vdb](https://github.com/vivisect/vivisect)
@@ -228,8 +227,6 @@ A curated list of awesome reversing resources
 * [Android Studio](http://developer.android.com/sdk/index.html)
 * [APKtool](http://ibotpeaches.github.io/Apktool/)
 * [dex2jar](https://github.com/pxb1988/dex2jar)
-* [Bytecode Viewer](https://bytecodeviewer.com/)
-* [IDA Pro](https://www.hex-rays.com/products/ida/index.shtml)
 * [JaDx](https://github.com/skylot/jadx)
 
 ## Yara

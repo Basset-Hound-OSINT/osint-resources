@@ -5,5 +5,4 @@
 
 - [Yoga](https://github.com/WebBreacher/yoga)
 - [storymap js](https://storymap.knightlab.com)
-- [https://storymap.knightlab.com](https://storymap.knightlab.com)
 - [Malteo CaseFile](https://docs.maltego.com/support/solutions/articles/15000018948-what-is-maltego-casefile-)

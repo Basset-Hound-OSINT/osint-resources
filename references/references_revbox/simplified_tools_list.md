@@ -27,7 +27,6 @@
 - [**Capstone**](https://github.com/aquynh/capstone) - Disassembly framework
 
 #### Code Visualization
-- [**Ghidra**](https://github.com/NationalSecurityAgency/ghidra) - Built-in graph visualization
 
 ### B. Dynamic Analysis & Execution
 
@@ -70,7 +69,6 @@
 
 ### Firmware Analysis
 - [**binwalk**](https://github.com/rampageX/firmware-mod-kit) - Firmware analysis and extraction
-- [**Ghidra**](https://github.com/NationalSecurityAgency/ghidra) - Firmware disassembly
 
 ### Bus Interface Analysis
 - [**OpenOCD**](https://github.com/openocd-org/openocd) - JTAG debugger
@@ -119,9 +117,6 @@
 - [**pefile**](https://github.com/erocarrera/pefile) - Python library for PE analysis
 
 #### .NET Analysis
-- [**dnSpy**](https://github.com/dnSpy/dnSpy) - .NET debugger and editor
-- [**ILSpy**](https://github.com/icsharpcode/ilspy) - .NET decompiler
-- [**de4dot**](https://github.com/de4dot/de4dot) - .NET deobfuscator
 
 #### Windows Internals
 - [**Sysinternals Suite**](https://docs.microsoft.com/en-us/sysinternals/) - Process Monitor, Process Explorer, Autoruns, etc.
@@ -133,15 +128,11 @@
 - **strace** - System call tracing (built-in)
 - **ltrace** - Library call tracing (built-in)
 - **ftrace** - Kernel function tracing (built-in)
-- [**LIEF**](https://github.com/lief-project/lief) - ELF manipulation
 
 ### C. Android Ecosystem
 
 #### APK Analysis
-- [**Apktool**](https://github.com/ibotpeaches/apktool) - APK decompilation/rebuild
-- [**Jadx**](https://github.com/skylot/jadx) - DEX to Java decompiler
 - [**Mobile-Security-Framework (MobSF)**](https://github.com/mobsf/mobile-security-framework-mobsf) - Automated security analysis
-- [**Frida**](https://github.com/frida/frida) - Dynamic instrumentation
 - [**objection**](https://github.com/sensepost/objection) - Frida-based runtime exploration
 
 #### Android Testing
@@ -156,8 +147,6 @@
 - **jtool2** - Mach-O analysis
 
 #### iOS Analysis
-- [**Frida**](https://github.com/frida/frida) - Dynamic instrumentation
-- [**objection**](https://github.com/sensepost/objection) - Frida-based exploration
 - **iFunbox** - iOS file manager
 - **ideviceinstaller** - iOS app management
 
@@ -205,17 +194,10 @@
 ### E. Scripting & Automation
 
 #### Scripting Frameworks
-- [**Ghidra**](https://github.com/NationalSecurityAgency/ghidra) - Python/Java scripting
-- [**Radare2**](https://github.com/radareorg/radare2) - r2pipe for multiple languages
-- [**Frida**](https://github.com/frida/frida) - JavaScript instrumentation
-- [**pwntools**](https://github.com/gallopsled/pwntools) - Python exploit development
 
 #### Python Libraries
-- [**pefile**](https://github.com/erocarrera/pefile) - PE file analysis
 - [**pyelftools**](https://github.com/eliben/pyelftools) - ELF file parsing
 - [**Capstone**](https://github.com/capstone-engine/capstone) - Disassembly library
-- [**Unicorn**](https://github.com/unicorn-engine/unicorn) - Emulation library
-- [**angr**](https://github.com/angr/angr) - Binary analysis platform
 
 ```bash
 pip install pefile pyelftools capstone unicorn angr
@@ -226,18 +208,12 @@ pip install pefile pyelftools capstone unicorn angr
 ## VII. Specialized Tools
 
 ### Malware Analysis
-- [**YARA**](https://github.com/VirusTotal/yara) - Malware pattern matching
-- [**Cuckoo Sandbox**](https://github.com/cuckoosandbox/cuckoo) - Automated analysis
-- [**FLOSS**](https://github.com/mandiant/flare-floss) - String extraction
-- [**Volatility**](https://github.com/volatilityfoundation/volatility3) - Memory forensics
 
 ### Graphics/Game Debugging
 - [**RenderDoc**](https://github.com/baldurk/renderdoc) - Graphics debugger
 - [**apitrace**](https://github.com/apitrace/apitrace) - OpenGL/DirectX tracing
 
 ### Exploit Development
-- [**pwntools**](https://github.com/gallopsled/pwntools) - CTF framework
-- [**ROPgadget**](https://github.com/jonathansalwan/ropgadget) - ROP chain construction
 - **mona.py** - Exploit development (Immunity Debugger plugin)
 
 ### Docker Images Summary
@@ -274,41 +250,21 @@ Here are useful pre-built Docker images:
 ---
 
 **Platform-Specific Additions:**
-- **Android**: [Jadx](https://github.com/skylot/jadx), [Apktool](https://github.com/ibotpeaches/apktool), [MobSF](https://github.com/mobsf/mobile-security-framework-mobsf), [objection](https://github.com/sensepost/objection)
-- **iOS**: [class-dump](https://github.com/nygard/class-dump), [objection](https://github.com/sensepost/objection), [Frida](https://github.com/frida/frida)
-- **.NET**: [dnSpy](https://github.com/dnSpy/dnSpy), [ILSpy](https://github.com/icsharpcode/ilspy), [de4dot](https://github.com/de4dot/de4dot)
-- **Java**: [CFR](https://github.com/leibnitz27/cfr), [Jadx](https://github.com/skylot/jadx)
-- **Python**: [uncompyle6](https://github.com/rocky/python-uncompyle6)
 
 **Workflow Tools:**
-- [**YARA**](https://github.com/VirusTotal/yara) - Pattern matching across all platforms
-- [**CyberChef**](https://gchq.github.io/CyberChef/) - Data transformation
-- [**pwntools**](https://github.com/gallopsled/pwntools) - Automation and exploitation
 
 ---
 
 ## Installation Priority
 
 ### Tier 1 (Essential - Install First)
-1. [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
-2. [GDB + GEF](https://github.com/hugsy/gef) (Linux) or [x64dbg](https://github.com/x64dbg/x64dbg) (Windows)
-3. [Frida](https://github.com/frida/frida)
 4. [Wireshark](sudo apt install wireshark)
 5. Python 3 + pip
 
 ### Tier 2 (Important - Install as Needed)
-1. [Radare2 + Cutter](https://github.com/radareorg/radare2)
-2. [Volatility 3](https://github.com/volatilityfoundation/volatility3)
-3. [Jadx](https://github.com/skylot/jadx) (if analyzing Android)
-4. [dnSpy](https://github.com/dnSpy/dnSpy) (if analyzing .NET)
 5. [Burp Suite Community](sudo apt install burpsuite)
-6. [QEMU](https://github.com/qemu/qemu)/[Unicorn](https://github.com/unicorn-engine/unicorn)
 
 ### Tier 3 (Specialized - Install for Specific Tasks)
-1. [Cuckoo Sandbox](https://github.com/cuckoosandbox/cuckoo)
-2. [Angr](https://github.com/angr/angr)
-3. [ROPgadget](https://github.com/jonathansalwan/ropgadget)
-4. [ImHex](https://github.com/ImHex/ImHex)
 5. Platform-specific tools as needed
 
 ## Notes

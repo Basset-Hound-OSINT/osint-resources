@@ -24,7 +24,6 @@
 - [**LIEF**](https://github.com/lief-project/lief) - Library for ELF/PE/MachO manipulation
 
 #### Code Visualization
-- [**Ghidra**](https://github.com/NationalSecurityAgency/ghidra) - Built-in graph visualization
 
 ### B. Dynamic Analysis & Execution
 
@@ -64,7 +63,6 @@
 
 ### Firmware Analysis
 - [**binwalk**](https://github.com/rampageX/firmware-mod-kit) - Firmware analysis and extraction
-- [**Ghidra**](https://github.com/NationalSecurityAgency/ghidra) - Firmware disassembly
 
 ### Bus Interface Analysis
 - [**OpenOCD**](https://github.com/openocd-org/openocd) - JTAG debugger
@@ -111,15 +109,11 @@
 - **strace** - System call tracing (built-in)
 - **ltrace** - Library call tracing (built-in)
 - **ftrace** - Kernel function tracing (built-in)
-- [**LIEF**](https://github.com/lief-project/lief) - ELF manipulation
 
 ### B. Android Ecosystem
 
 #### APK Analysis
-- [**Apktool**](https://github.com/ibotpeaches/apktool) - APK decompilation/rebuild
-- [**Jadx**](https://github.com/skylot/jadx) - DEX to Java decompiler
 - [**Mobile-Security-Framework (MobSF)**](https://github.com/mobsf/mobile-security-framework-mobsf) - Automated security analysis
-- [**Frida**](https://github.com/frida/frida) - Dynamic instrumentation
 - [**objection**](https://github.com/sensepost/objection) - Frida-based runtime exploration
 
 #### Android Testing
@@ -135,8 +129,6 @@
 - [**disarm**](https://newosxbook.com/tools/disarm.tgz) - jtool alternative
 
 #### iOS Analysis
-- [**Frida**](https://github.com/frida/frida) - Dynamic instrumentation
-- [**objection**](https://github.com/sensepost/objection) - Frida-based exploration
 - **iFunbox** - iOS file manager
 - [**ideviceinstaller**](https://github.com/libimobiledevice/ideviceinstaller) - iOS app management
 - [**iOS-Binary-Security-Analyzer**](https://github.com/saladandonionrings/iOS-Binary-Security-Analyzer)
@@ -186,13 +178,9 @@
 ### E. Scripting & Automation
 
 #### Scripting Frameworks
-- [**Ghidra**](https://github.com/NationalSecurityAgency/ghidra) - Python/Java scripting
-- [**Radare2**](https://github.com/radareorg/radare2) - r2pipe for multiple languages
-- [**Frida**](https://github.com/frida/frida) - JavaScript instrumentation
-- [**pwntools**](https://github.com/gallopsled/pwntools) - Python exploit development
 
 
-### Python packages 
+### Python packages
 
 ```bash
 pip install pefile pyelftools capstone unicorn angr
@@ -209,18 +197,12 @@ pip install pefile pyelftools capstone unicorn angr
 ## VII. Specialized Tools
 
 ### Malware Analysis
-- [**YARA**](https://github.com/VirusTotal/yara) - Malware pattern matching
-- [**Cuckoo Sandbox**](https://github.com/cuckoosandbox/cuckoo) - Automated analysis
-- [**FLOSS**](https://github.com/mandiant/flare-floss) - String extraction
-- [**Volatility**](https://github.com/volatilityfoundation/volatility3) - Memory forensics
 
 ### Graphics/Game Debugging
 - [**RenderDoc**](https://github.com/baldurk/renderdoc) - Graphics debugger
 - [**apitrace**](https://github.com/apitrace/apitrace) - OpenGL/DirectX tracing
 
 ### Exploit Development
-- [**pwntools**](https://github.com/gallopsled/pwntools) - CTF framework
-- [**ROPgadget**](https://github.com/jonathansalwan/ropgadget) - ROP chain construction
 - **mona.py** - Exploit development (Immunity Debugger plugin)
 
 ### Docker Images Summary
@@ -282,24 +264,13 @@ Here are useful pre-built Docker images:
 ## Installation Priority
 
 ### Tier 1 (Essential - Install First)
-1. [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
-2. [GDB + GEF](https://github.com/hugsy/gef) (Linux)
-3. [Frida](https://github.com/frida/frida)
 4. [Wireshark](sudo apt install wireshark)
 5. Python 3 + pip
 
 ### Tier 2 (Important - Install as Needed)
-1. [Radare2 + Cutter](https://github.com/radareorg/radare2)
-2. [Volatility 3](https://github.com/volatilityfoundation/volatility3)
-3. [Jadx](https://github.com/skylot/jadx) (if analyzing Android)
-4. [ILSpy](https://github.com/icsharpcode/ilspy) (if analyzing .NET)
 5. [Burp Suite Community](sudo apt install burpsuite)
-6. [QEMU](https://github.com/qemu/qemu)
 
 ### Tier 3 (Specialized - Install for Specific Tasks)
-1. [Cuckoo Sandbox](https://github.com/cuckoosandbox/cuckoo)
-2. [ROPgadget](https://github.com/jonathansalwan/ropgadget)
-3. [ImHex](https://github.com/ImHex/ImHex)
 4. Platform-specific tools as needed
 
 ---

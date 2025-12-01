@@ -55,9 +55,7 @@
 # IP Addresses
 
 - [Whats my ip](https://whatismyipaddress.com)
-- [https://whatismyipaddress.com](https://whatismyipaddress.com)
 - [Ip 2 location](https://www.ip2location.com)
-- [https://www.ip2location.com](https://www.ip2location.com)
 - [unwiredlabs](https://unwiredlabs.com/products)
 
 
@@ -65,35 +63,21 @@
 
 - [viewdns - IP history](https://viewdns.info/iphistory/?domain)
 - [cloudflare radar](https://radar.cloudflare.com)
-- [https://radar.cloudflare.com](https://radar.cloudflare.com)
 - [fullhunt](https://fullhunt.io)
-- [https://fullhunt.io](https://fullhunt.io)
 - [shodan](https://www.shodan.io)
-- [https://www.shodan.io](https://www.shodan.io)
 - [hunter](https://hunter.how)
-- [https://hunter.how](https://hunter.how)
 - [odin](https://search.odin.io)
-- [https://search.odin.io](https://search.odin.io)
 - [onyphe](https://search.onyphe.io)
-- [https://search.onyphe.io](https://search.onyphe.io)
 - [censys](https://search.censys.io)
-- [https://search.censys.io](https://search.censys.io)
 - [zoomeye](https://www.zoomeye.ai)
-- [https://www.zoomeye.ai](https://www.zoomeye.ai)
 - [greynoise](https://viz.greynoise.io)
-- [https://viz.greynoise.io](https://viz.greynoise.io)
 - [Testssl](https://testssl.sh)
-- [https://testssl.sh](https://testssl.sh)
 - [Nesus](https://www.tenable.com/products/nessus)
 - [securitytrails](https://securitytrails.com)
-- [https://securitytrails.com](https://securitytrails.com)
 - [SSL Scan](https://www.kali.org/tools/sslscan)
-- [https://www.kali.org/tools/sslscan](https://www.kali.org/tools/sslscan)
 - [subdomainfinder search history subdomain](https://subdomainfinder.c99.nl)
-- [https://subdomainfinder.c99.nl](https://subdomainfinder.c99.nl)
 
 
 # IP CIDR Conveter
 
 - [CIDR Conveter](https://magic-cookie.co.uk/iplist.html)
-- [https://magic-cookie.co.uk/iplist.html](https://magic-cookie.co.uk/iplist.html)

@@ -35,8 +35,6 @@
 
 - [Exploit-DB](https://www.exploit-db.com/) - Exploit Database
 - [Sploitus](https://sploitus.com/) - Convenient central place for identifying the newest exploits
-- [Rapid7 - DB](https://www.rapid7.com/db/) - Vulnerability & Exploit Database
-- [Vulmon](https://vulmon.com/) - Vulnerability and exploit search engine
 - [packetstormsecurity.com](https://packetstormsecurity.com/) - Information Security Services, News, Files, Tools, Exploits, Advisories and Whitepapers
 - [0day.today](https://0day.today/) - Ultimate database of exploits and vulnerabilities
 - [Living Off The Land Binaries, Scripts and Libraries](https://lolbas-project.github.io/) - Living Off The Land Binaries, Scripts and Libraries
@@ -74,11 +72,8 @@
 # Zero Day
 
 - [0day](https://0day.today)
-- [https://0day.today](https://0day.today)
 - [Zerodium](https://zerodium.com)
-- [https://zerodium.com](https://zerodium.com)
 - [0day fans](https://0dayfans.com)
-- [https://0dayfans.com](https://0dayfans.com)
 
 
 
