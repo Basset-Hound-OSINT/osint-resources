@@ -262,3 +262,16 @@
 - [https://bitly.com](https://bitly.com)
 - [tiny url](https://tinyurl.com)
 - [https://tinyurl.com](https://tinyurl.com)
+## Web
+- [BurpSuite](https://portswigger.net/burp)
+- [Commix](https://github.com/commixproject/commix)
+- [Hackbar](https://addons.mozilla.org/en-US/firefox/addon/hackbartool/)
+- [OWASP ZAP](https://www.owasp.org/index.php/Projects/OWASP_Zed_Attack_Proxy_Project)
+- [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
+- [Raccoon](https://github.com/evyatarmeged/Raccoon)
+- [SQLMap](https://github.com/sqlmapproject/sqlmap)
+- [W3af](https://github.com/andresriancho/w3af)
+- [XSSer](http://xsser.sourceforge.net/)
+## Services
+- [CSWSH](http://cow.cat/cswsh.html)
+- [Request Bin](https://requestbin.com/)

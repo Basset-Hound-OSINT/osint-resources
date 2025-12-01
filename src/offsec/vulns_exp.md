@@ -128,3 +128,11 @@ https://attack.mitre.org/
 https://www.cisa.gov/resources-tools/services/malware-next-generation-analysis
 
 
+## Exploits
+- [Cheatsheet](https://www.comparitech.com/net-admin/metasploit-cheat-sheet/)
+- [Metasploit](http://www.metasploit.com/)
+- [Qira](https://github.com/BinaryAnalysisPlatform/qira)
+- [ROP Gadget](https://github.com/JonathanSalwan/ROPgadget)
+- [V0lt](https://github.com/P1kachu/v0lt)
+- [libformatstr](https://github.com/hellman/libformatstr)
+- [one_gadget](https://github.com/david942j/one_gadget)

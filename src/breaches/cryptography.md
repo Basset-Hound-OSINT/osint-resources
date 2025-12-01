@@ -30,3 +30,26 @@
 
 
 - [dcode](https://www.dcode.fr/en)
+
+
+
+
+
+
+
+## Bruteforcers
+## Crypto
+- [Hashcat](https://hashcat.net/hashcat/)
+- [Hydra](https://tools.kali.org/password-attacks/hydra)
+- [John The Jumbo](https://github.com/magnumripper/JohnTheRipper)
+- [John The Ripper](http://www.openwall.com/john/)
+- [Nozzlr](https://github.com/intrd/nozzlr)
+- [Ophcrack](http://ophcrack.sourceforge.net/)
+- [Patator](https://github.com/lanjelot/patator)
+- [PkCrack](https://www.unix-ag.uni-kl.de/~conrad/krypto/pkcrack.html)
+- [QuipQuip](https://quipqiup.com)
+- [RSACTFTool](https://github.com/Ganapati/RsaCtfTool)
+- [RSATool](https://github.com/ius/rsatool)
+- [Turbo Intruder](https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack)
+- [XORTool](https://github.com/hellman/xortool)
+- [padding-oracle-attacker](https://github.com/KishanBagaria/padding-oracle-attacker)

@@ -369,3 +369,64 @@
 ## XMR Blockchain Explorers
 
 - [Blockchair](https://blockchair.com/monero)
+- [OfficerCIA Guide](https://github.com/OffcierCia/Crypto-OpSec-SelfGuard-RoadMap)
+## <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="btc" style="width:25px;" width="25" height="25" /> Bitcoin - BTC
+## BTC Address Regex
+- [3xpl.com](https://3xpl.com/bitcoin)
+- [Bitquery.io](https://www.bitquery.io/)
+- [Bitref](https://bitref.com)
+- [Blockchair](https://blockchair.com/bitcoin)
+- [Breadcrumbs.app](https://www.breadcrumbs.app/)
+- [Lampyre](https://lampyre.io/)
+- [WalletExplorer](https://www.walletexplorer.com/)
+- [Bitcoinabuse](https://www.bitcoinabuse.com/)
+- [Bitcoinwho'swho](https://www.bitcoinwhoswho.com/)
+- [Chainabuse](https://www.chainabuse.com/)
+- [Ransomwhere](https://ransomwhe.re/)
+- [Scamsearch](https://www.scamsearch.io/)
+## BTC API
+- [Aware Online](https://www.aware-online.com/en/osint-tools/cryptocurrency-search-tool/)
+- [Intelx.io](https://intelx.io/)
+- [Localbitcoin](https://localbitcoins.com/)
+## ETH Address Regex
+- [Blockchair](https://blockchair.com/bitcoin)
+- [Breadcrumbs.app](https://www.breadcrumbs.app/)
+- [ENS Domains](https://app.ens.domains/)
+- [Etherscan](https://etherscan.io/)
+- [Chainabuse](https://www.chainabuse.com/)
+- [Scamsearch](https://www.scamsearch.io/)
+- [Walletlabels](https://www.walletlabels.xyz/)
+- [Aware Online](https://www.aware-online.com/en/osint-tools/cryptocurrency-search-tool/)
+- [Onchain.industries](https://www.onchain.industries/)
+## <img src="https://cryptologos.cc/logos/monero-xmr-logo.png" alt="monero" style="width:25px;" width="25" height="25" /> [](#monero)MONERO - XMR
+## XMR Address Regex
+## XMR Blockchain Databases and Analyzers
+## <img src="https://cryptologos.cc/logos/cardano-ada-logo.png" alt="cardano" style="width:25px;" width="25" height="25" /> [](#cardano)CARDANO - ADA
+## ADA Address Regex
+- [BitQuery](https://www.bitquery.io/)
+## ADA Blockchain Databases and Analyzers
+- [Chainabuse](https://www.chainabuse.com/)
+## <img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="solana" style="width:25px;" width="25" height="25" /> [](#solana)SOLANA - SOL
+## SOL Address Regex
+## SOL Blockchain Databases and Analyzers
+- [Chainabuse](https://www.chainabuse.com/)
+## SOL Other
+- [Onchain.industries](https://www.onchain.industries/)
+## <img src="https://cryptologos.cc/logos/thumbs/toncoin.png" alt="ton" style="width:25px;" width="25" height="25" /> [](#toncoin) TONCOIN - TON
+- [ATOP](https://github.com/aaarghhh/a_TON_of_privacy)
+## TON APIs
+- [NFTfinder](https://www.nyckel.com/nft-finder/)
+- [Nftsearch](https://nftsearch.site/)
+- [Opensea](https://opensea.io/)
+## DORK
+- [Cyphertrace Explorer (Maltego Transform)](https://www.maltego.com/)
+- [Maltego](https://www.maltego.com/)
+- [Opensanctions (Maltego Transofrm)](https://www.maltego.com/)
+- [Tatum Blockchain Explorer (Maltego Transofrm)](https://www.maltego.com/)
+## 📖 RESOURCES, REFERENCES, READING
+- [Cia Operator Start.me](https://cia.start.me/p/dlaxD0/ciaofficerv2)
+- [Crypto Mindmaps](https://cryptoengineer.notion.site/cryptoengineer/9f1668632aa04a0a83a311a86e799254?v=f7c5c49231f44b91a44021411fa27e28)
+- [LeHACK Video](https://www.youtube.com/watch?v=MVHHokKEp7s&t=1101s)
+- [The Nerd in the high castle](https://thenerdinthehighcastle.wordpress.com)
+- [Tornadocash after censorship](https://hackmd.io/@gozzy/tornado-cash-post-censorship)
+- [WEB3 is going great](https://web3isgoinggreat.com/)

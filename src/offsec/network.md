@@ -47,3 +47,11 @@
 - [macaddress.io](https://macaddress.io/) - MAC address vendor lookup
 - [maclookup.app](https://maclookup.app/) - Find the vendor name of a device by entering an OUI or a MAC address
 - [macvendors.co](https://macvendors.co/) - Get vendor name of your network device using its mac address
+
+## Networking
+- [Monit](https://linoxide.com/monitoring-2/monit-linux/)
+- [Nmap](https://nmap.org/)
+- [Wireshark](https://www.wireshark.org/)
+- [Zeek](https://www.zeek.org)
+- [Zmap](https://zmap.io/)
+- [macvendors.co](https://macvendors.co/) - Get vendor name of your network device using its mac address
