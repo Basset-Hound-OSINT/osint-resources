@@ -12,6 +12,7 @@
 - [Social Finder](https://socialfinder.app)
 - [SnapIntel](https://github.com/Kr0wZ/SnapIntel)
 - [AddMeS](https://addmes.io)
+- [SnapDataHub](https://snapdatahub.com)
 
 
 ## SNAPCHAT
