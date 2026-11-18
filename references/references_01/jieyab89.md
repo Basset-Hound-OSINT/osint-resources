@@ -2876,7 +2876,7 @@ Public Transport
 # OSINT for Red Team
 
 - [PayloadsAllThePDFs](https://github.com/luigigubello/PayloadsAllThePDFs) A list of crafted malicious PDF files to test the security of PDF readers and tools
-- [resourcehacker](https://www.angusj.com/resourcehacker/) Decompiler tools and change the icon logo for application
+- [resourcehacker](https://www.angusj.com/resourcehacker/ or [Resource Cracker](https://www.pelock.com/products/resource-cracker)) Decompiler tools and change the icon logo for application
 - [php exeoutput](https://www.exeoutput.com/) make your php script to executable file. php compiler for windows
 - [python pyinstaller](https://pyinstaller.org/en/stable/) make your python script to executable file
 - [python py2exe](https://www.py2exe.org/) make your python script to executable file
