@@ -732,6 +732,7 @@
 - [python py2exe](https://www.py2exe.org/)
 - [python pyinstaller](https://pyinstaller.org/en/stable/)
 - [resourcehacker](https://www.angusj.com/resourcehacker/)
+- [Resource Cracker](https://www.pelock.com/products/resource-cracker)
 - [rustcat](https://github.com/robiot/rustcat)
 - [saveweb2zip](https://saveweb2zip.com/en)
 - [searchall](https://github.com/Naturehi666/searchall)
